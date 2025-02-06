@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "nome": "arcanista",
+    "vidaInicial": 8,
+    "vidaPorNivel": 2,
+    "manaPorNivel": 6
+  },
+  {
+    "id": 2,
+    "nome": "bárbaro",
+    "vidaInicial": 24,
+    "vidaPorNivel": 6,
+    "manaPorNivel": 3
+  },
+  {
+    "id": 3,
+    "nome": "bardo",
+    "vidaInicial": 12,
+    "vidaPorNivel": 3,
+    "manaPorNivel": 4
+  },
+  {
+    "id": 4,
+    "nome": "bucaneiro",
+    "vidaInicial": 16,
+    "vidaPorNivel": 4,
+    "manaPorNivel": 3
+  },
+  {
+    "id": 5,
+    "nome": "caçador",
+    "vidaInicial": 16,
+    "vidaPorNivel": 4,
+    "manaPorNivel": 4
+  },
+  {
+    "id": 6,
+    "nome": "cavaleiro",
+    "vidaInicial": 20,
+    "vidaPorNivel": 5,
+    "manaPorNivel": 3
+  },
+  {
+    "id": 7,
+    "nome": "clérigo",
+    "vidaInicial": 16,
+    "vidaPorNivel": 4,
+    "manaPorNivel": 5
+  },
+  {
+    "id": 8,
+    "nome": "druida",
+    "vidaInicial": 16,
+    "vidaPorNivel": 4,
+    "manaPorNivel": 4
+  },
+  {
+    "id": 9,
+    "nome": "guerreiro",
+    "vidaInicial": 20,
+    "vidaPorNivel": 5,
+    "manaPorNivel": 3
+  },
+  {
+    "id": 10,
+    "nome": "inventor",
+    "vidaInicial": 12,
+    "vidaPorNivel": 3,
+    "manaPorNivel": 4
+  },
+  {
+    "id": 11,
+    "nome": "ladino",
+    "vidaInicial": 12,
+    "vidaPorNivel": 3,
+    "manaPorNivel": 4
+  },
+  {
+    "id": 12,
+    "nome": "lutador",
+    "vidaInicial": 20,
+    "vidaPorNivel": 5,
+    "manaPorNivel": 3
+  },
+  {
+    "id": 13,
+    "nome": "nobre",
+    "vidaInicial": 16,
+    "vidaPorNivel": 4,
+    "manaPorNivel": 4
+  },
+  {
+    "id": 14,
+    "nome": "paladino",
+    "vidaInicial": 20,
+    "vidaPorNivel": 5,
+    "manaPorNivel": 3
+  }
+]

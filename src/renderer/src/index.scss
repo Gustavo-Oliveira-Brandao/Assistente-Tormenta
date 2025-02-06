@@ -1,0 +1,197 @@
+@use '@renderer/assets/variables.scss';
+
+@font-face {
+  font-family: tormenta20font;
+  src: url('@renderer/assets/fonts/Tormenta20x.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: poppins;
+  src: url('@renderer/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+input,
+select,
+textarea,
+button,
+a {
+  font-family: 'tormenta20font', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffff;
+}
+
+.poppins {
+  font-family: 'poppins', sans-serif;
+  line-height: 1.5;
+}
+
+input {
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+textarea {
+  background: transparent;
+  border-radius: 5px;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: variables.$background-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: variables.$secondary-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: variables.$red;
+  border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+select {
+  background-color: variables.$secondary-color;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+option {
+  background-color: variables.$secondary-color;
+}

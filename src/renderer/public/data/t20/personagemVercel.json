@@ -1,0 +1,338 @@
+{
+  "nome": "Personagem demo",
+  "raca": "Elfo",
+  "classe": "Guerreiro",
+  "divindade": "allihanna",
+  "origem": "taverneiro",
+  "nivel": 5,
+  "experiencia": 500,
+  "defesa": {
+    "valorAtual": 30,
+    "armaduraEquipada": "Cota de malha",
+    "escudoEquipado": "",
+    "atributo": "destreza",
+    "penalidadeArmaduraTotal": 3
+  },
+  "vida": {
+    "valorAtual": 30,
+    "valorMaximo": 40,
+    "valorTemporario": 10,
+    "bonusPorNivel": 0,
+    "bonusBase": 3
+  },
+  "mana": {
+    "valorAtual": 5,
+    "valorMaximo": 40,
+    "valorTemporario": 10,
+    "bonusPorNivel": 0,
+    "bonusBase": 3
+  },
+  "deslocamento": {
+    "caminhada": 30,
+    "voo": 10,
+    "escavacao": 5,
+    "escalada": 0,
+    "natacao": 4
+  },
+  "atributos": [
+    {
+      "nome": "forca",
+      "valorBase": 4,
+      "descricao": ""
+    },
+    {
+      "nome": "destreza",
+      "valorBase": 2,
+      "descricao": ""
+    },
+    {
+      "nome": "constituicao",
+      "valorBase": 2,
+      "descricao": ""
+    },
+    {
+      "nome": "inteligencia",
+      "valorBase": 2,
+      "descricao": ""
+    },
+    {
+      "nome": "sabedoria",
+      "valorBase": 2,
+      "descricao": ""
+    },
+    {
+      "nome": "carisma",
+      "valorBase": 2,
+      "descricao": ""
+    }
+  ],
+  "pericias": [
+    {
+      "nome": "acrobacia",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "destreza",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": true,
+      "descricao": ""
+    },
+    {
+      "nome": "adestramento",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "carisma",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "atletismo",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "forca",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "atuacao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "carisma",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "cavalgar",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "destreza",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "id": 31,
+      "nome": "conhecimento",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "cura",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "sabedoria",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "diplomacia",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "carisma",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "enganacao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "carisma",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "fortitude",
+      "ehTreinado": false,
+      "categoria": "testeResistencia",
+      "atributo": "constituicao",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "furtividade",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "destreza",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": true,
+      "descricao": ""
+    },
+    {
+      "nome": "guerra",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "iniciativa",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "destreza",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "intimidacao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "carisma",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "intuicao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "sabedoria",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "investigacao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "jogatina",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "carisma",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "ladinagem",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "destreza",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": true,
+      "descricao": ""
+    },
+    {
+      "nome": "luta",
+      "ehTreinado": false,
+      "categoria": "combate",
+      "atributo": "forca",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "misticimsmo",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "nobreza",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "id": 32,
+      "nome": "oficio",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "percepcao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "sabedoria",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "pilotagem",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "destreza",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "pontaria",
+      "ehTreinado": false,
+      "categoria": "combate",
+      "atributo": "destreza",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "reflexos",
+      "ehTreinado": false,
+      "categoria": "testeResistencia",
+      "atributo": "destreza",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "religiao",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "sabedoria",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "sobrevivencia",
+      "ehTreinado": false,
+      "categoria": "geral",
+      "atributo": "sabedoria",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    },
+    {
+      "nome": "vontade",
+      "ehTreinado": false,
+      "categoria": "testeResistencia",
+      "atributo": "sabedoria",
+      "requerTreinamento": false,
+      "sofrePenalidadeArmadura": false,
+      "descricao": ""
+    }
+  ],
+  "poderes": [],
+  "itens": [],
+  "magias": [],
+  "efeitos": []
+}

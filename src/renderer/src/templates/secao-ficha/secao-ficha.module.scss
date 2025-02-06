@@ -1,0 +1,55 @@
+@use '@renderer/assets/variables.scss';
+
+.secao {
+  width: 90%;
+  margin-top: 15px;
+
+  .titulo {
+    width: 100%;
+    height: 40px;
+    border-bottom: 4px solid variables.$red;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .atributos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .pericias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .secao {
+    .atributos {
+      gap: 0;
+    }
+
+    .pericias {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+  }
+}

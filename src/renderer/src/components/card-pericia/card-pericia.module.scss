@@ -1,0 +1,51 @@
+@use '@renderer/assets/variables.scss';
+
+.padrao {
+  background: variables.$secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+  border-radius: 5px;
+
+  button:hover {
+    .nome {
+      color: variables.$highlight-color;
+    }
+  }
+}
+
+.sidebar {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 11px;
+  flex-shrink: 0;
+  font-size: 13.3px;
+}
+
+.pericia {
+  width: 100%;
+  height: 37px;
+  flex-shrink: 0;
+
+  .titulo {
+    p {
+      text-align: left;
+    }
+
+    .nome {
+      font-size: 14px;
+    }
+  }
+
+  .rolagem {
+    display: flex;
+    align-items: center;
+
+    .treinamento {
+      color: variables.$special-text-color;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

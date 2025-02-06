@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nome": "forca",
+    "valorBase": 4,
+    "descricao": ""
+  },
+  {
+    "id": 2,
+    "nome": "destreza",
+    "valorBase": 2,
+    "descricao": ""
+  },
+  {
+    "id": 3,
+    "nome": "constituicao",
+    "valorBase": 2,
+    "descricao": ""
+  },
+  {
+    "id": 4,
+    "nome": "inteligencia",
+    "valorBase": 2,
+    "descricao": ""
+  },
+  {
+    "id": 5,
+    "nome": "sabedoria",
+    "valorBase": 2,
+    "descricao": ""
+  },
+  {
+    "id": 6,
+    "nome": "carisma",
+    "valorBase": 2,
+    "descricao": ""
+  }
+]

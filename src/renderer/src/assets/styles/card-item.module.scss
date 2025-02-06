@@ -1,0 +1,74 @@
+@use '../variables.scss';
+
+.item {
+  .itemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .itemLeft {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+      }
+
+      .itemInfo {
+        h2 {
+          font-size: 17px;
+          cursor: pointer;
+        }
+
+        h2:hover {
+          color: variables.$highlight-color;
+        }
+      }
+    }
+  }
+
+  .itemConteudo {
+    border-radius: 5px;
+    margin-top: 10px;
+
+    .itemBotoes {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.poderDescricao {
+  font-size: 14px;
+}
+
+.poderTopicos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .poderTopico {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.preRequisitos {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.poppins {
+  font-family: 'poppins', sans-serif;
+  line-height: 1.5;
+}
+
+.destaque {
+  color: variables.$red;
+}

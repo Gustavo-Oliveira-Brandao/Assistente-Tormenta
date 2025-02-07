@@ -1,6 +1,6 @@
 import { classe } from '@renderer/@types/t20/classe'
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
-import classes from "../assets/data/t20/classes/classes.json"
+import classes from '../assets/data/t20/classes/classes.json'
 
 export const carregarPersonagem = async (personagem: PersonagemT20): Promise<PersonagemT20> => {
   let vidaInicial = 0

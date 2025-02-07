@@ -1,7 +1,9 @@
+import 'reflect-metadata'
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import './api/app'
 
 function createWindow(): void {
   // Create the browser window.

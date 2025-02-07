@@ -5,7 +5,12 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 export default defineConfig({
   main: {
-    plugins: [externalizeDepsPlugin()]
+    plugins: [externalizeDepsPlugin()],
+    build: {
+      rollupOptions: {
+        external: ['sqlite3']
+      }
+    }
   },
   preload: {
     plugins: [externalizeDepsPlugin()]

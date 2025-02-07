@@ -9,6 +9,9 @@ files:
   - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
   - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!**/node_modules/sqlite3/build-tmp-napi-v3/*'
+  - '!**/node_modules/sqlite3/node-addon-api/*'
+  - '!**/node_modules/sqlite3/deps/*'
 asarUnpack:
   - resources/**
 win:

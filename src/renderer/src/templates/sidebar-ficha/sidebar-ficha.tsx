@@ -40,63 +40,62 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
             texto={personagem.origem}
           />
         </div>
+      </div>
+      <div className={styles.nome}>
+        <p>{personagem.nome}</p>
+      </div>
 
-        <div className={styles.nome}>
-          <p>{personagem.nome}</p>
+      <div className={styles.barrasRecurso}>
+        <BarraRecurso
+          css="verde"
+          atual={personagem.vida.valorAtual}
+          maximo={personagem.vida.valorMaximo}
+        />
+        <BarraRecurso
+          css="azul"
+          atual={personagem.mana.valorAtual}
+          maximo={personagem.mana.valorMaximo}
+        />
+      </div>
+
+      <div className={styles.infoSecundaria}>
+        <div className={styles.titulo}>
+          <h2>Defesa</h2>
         </div>
-
-        <div className={styles.barrasRecurso}>
-          <BarraRecurso
-            css="verde"
-            atual={personagem.vida.valorAtual}
-            maximo={personagem.vida.valorMaximo}
+        <div className={styles.recurso}>
+          <img src="./icons/default/ca.svg" alt="Defesa" />
+          <BotaoModular
+            onClickEvent={teste}
+            texto={personagem.defesa.valorAtual}
+            css="recursoSecundario"
           />
-          <BarraRecurso
-            css="azul"
-            atual={personagem.mana.valorAtual}
-            maximo={personagem.mana.valorMaximo}
+        </div>
+      </div>
+
+      <div className={styles.infoSecundaria}>
+        <div className={styles.titulo}>
+          <h2>Deslocamento</h2>
+        </div>
+        <div className={styles.recurso}>
+          <img src={'/icons/default/deslocamento.svg'} alt="Deslocamento" />
+          <BotaoModular
+            onClickEvent={teste}
+            texto={personagem.deslocamento.caminhada}
+            css="recursoSecundario"
           />
         </div>
+      </div>
 
-        <div className={styles.infoSecundaria}>
-          <div className={styles.titulo}>
-            <h2>Defesa</h2>
-          </div>
-          <div className={styles.recurso}>
-            <img src="./icons/default/ca.svg" alt="Defesa" />
-            <BotaoModular
-              onClickEvent={teste}
-              texto={personagem.defesa.valorAtual}
-              css="recursoSecundario"
-            />
-          </div>
+      <div className={styles.infoSecundaria}>
+        <div className={styles.titulo}>
+          <h2>Iniciativa</h2>
         </div>
-
-        <div className={styles.infoSecundaria}>
-          <div className={styles.titulo}>
-            <h2>Deslocamento</h2>
-          </div>
-          <div className={styles.recurso}>
-            <img src={'/icons/default/deslocamento.svg'} alt="Deslocamento" />
-            <BotaoModular
-              onClickEvent={teste}
-              texto={personagem.deslocamento.caminhada}
-              css="recursoSecundario"
-            />
-          </div>
-        </div>
-
-        <div className={styles.infoSecundaria}>
-          <div className={styles.titulo}>
-            <h2>Iniciativa</h2>
-          </div>
-          <div className={styles.pericias}>
-            {personagem.pericias.map((pericia) =>
-              pericia.nome == 'iniciativa' ? (
-                <CardPericia key={pericia.id} pericia={pericia} css="sidebar" />
-              ) : null
-            )}
-          </div>
+        <div className={styles.pericias}>
+          {personagem.pericias.map((pericia) =>
+            pericia.nome == 'iniciativa' ? (
+              <CardPericia key={pericia.id} pericia={pericia} css="sidebar" />
+            ) : null
+          )}
         </div>
       </div>
     </aside>

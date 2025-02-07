@@ -127,9 +127,10 @@ main {
 
 body {
   line-height: 1;
-  background: variables.$background-color;
+  background: variables.$primary-color;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 ol,
@@ -163,7 +164,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {

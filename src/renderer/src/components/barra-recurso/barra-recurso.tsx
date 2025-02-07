@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './barra-recurso.module.scss'
 
 const BarraRecurso = ({
@@ -11,7 +11,11 @@ const BarraRecurso = ({
   maximo: number
 }): JSX.Element => {
   const [larguraBarra, setLarguraBarra] = useState(0)
-  console.log(setLarguraBarra)
+
+  useEffect(() => {
+    setLarguraBarra((atual / maximo) * 100)
+  }, [atual, maximo])
+
   return (
     <div className={styles.barraRecurso}>
       <div className={`${styles[css]} ${styles.barra}`} style={{ width: `${larguraBarra}%` }}></div>

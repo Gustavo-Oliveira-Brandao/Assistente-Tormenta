@@ -50,16 +50,6 @@
     "descricao": ""
   },
   {
-    "id": 31,
-    "nome": "conhecimento",
-    "ehTreinado": false,
-    "categoria": "geral",
-    "atributo": "inteligencia",
-    "requerTreinamento": true,
-    "sofrePenalidadeArmadura": false,
-    "descricao": ""
-  },
-  {
     "id": 7,
     "nome": "cura",
     "ehTreinado": false,
@@ -202,16 +192,6 @@
   {
     "id": 21,
     "nome": "nobreza",
-    "ehTreinado": false,
-    "categoria": "geral",
-    "atributo": "inteligencia",
-    "requerTreinamento": true,
-    "sofrePenalidadeArmadura": false,
-    "descricao": ""
-  },
-  {
-    "id": 32,
-    "nome": "oficio",
     "ehTreinado": false,
     "categoria": "geral",
     "atributo": "inteligencia",

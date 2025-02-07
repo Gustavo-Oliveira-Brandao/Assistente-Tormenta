@@ -74,8 +74,13 @@
     .recurso {
       display: flex;
       gap: 10px;
-      align-items: left;
+      align-items: center;
       width: 90%;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -89,7 +94,7 @@
 
 @media (min-width: 992px) {
   .sidebar {
-    width: 230px;
+    width: 280px;
     height: 100%;
 
     .infoSecundaria {

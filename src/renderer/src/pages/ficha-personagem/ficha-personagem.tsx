@@ -63,14 +63,39 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                       <CardAtributo key={atributo.id} atributo={atributo} />
                     ))}
                   </SecaoFicha>
-                  <SecaoFicha header={<h2>Pericias</h2>} css="pericias">
+                  <SecaoFicha header={<h2>Pericias de combate</h2>} css="pericias">
+                    {personagem.pericias
+                      .filter((pericia) => pericia.categoria === 'combate')
+                      .map((pericia) => (
+                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                      ))}
+                  </SecaoFicha>
+                  <SecaoFicha header={<h2>Testes de resistência</h2>} css="pericias">
+                    {personagem.pericias
+                      .filter((pericia) => pericia.categoria === 'testeResistencia')
+                      .map((pericia) => (
+                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                      ))}
+                  </SecaoFicha>
+                  <SecaoFicha header={<h2>Pericias gerais</h2>} css="pericias">
                     {personagem.pericias
                       .filter(
-                        (pericia) =>
-                          pericia.nome !== 'iniciativa' &&
-                          pericia.categoria !== 'combate' &&
-                          pericia.categoria !== 'testeResistencia'
+                        (pericia) => pericia.nome !== 'iniciativa' && pericia.categoria === 'geral'
                       )
+                      .map((pericia) => (
+                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                      ))}
+                  </SecaoFicha>
+                  <SecaoFicha header={<h2>Conhecimento</h2>} css="pericias">
+                    {personagem.pericias
+                      .filter((pericia) => pericia.categoria === 'conhecimento')
+                      .map((pericia) => (
+                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                      ))}
+                  </SecaoFicha>
+                  <SecaoFicha header={<h2>Oficio</h2>} css="pericias">
+                    {personagem.pericias
+                      .filter((pericia) => pericia.categoria === 'oficio')
                       .map((pericia) => (
                         <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
                       ))}

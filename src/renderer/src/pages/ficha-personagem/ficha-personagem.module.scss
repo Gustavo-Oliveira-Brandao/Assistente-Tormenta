@@ -5,6 +5,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
 
   .conteudo {
     width: 100%;
@@ -20,6 +21,26 @@
       height: 50px;
       width: 100%;
       margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .ficha {
+    flex-direction: row;
+    overflow-y: hidden;
+
+    .conteudo {
+      overflow-y: auto;
+      background-color: variables.$background-color;
+
+      .navButtons {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: variables.$primary-color;
+        margin-top: 0;
+      }
     }
   }
 }

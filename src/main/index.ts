@@ -2,12 +2,13 @@ import 'reflect-metadata'
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
-import icon from '../../resources/icon.png?asset'
+import icon from '../../resources/icon.svg?asset'
+import './api/app'
 
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 770,
+    width: 990,
     height: 670,
     minWidth: 770,
     show: false,

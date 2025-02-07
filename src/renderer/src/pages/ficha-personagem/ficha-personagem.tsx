@@ -8,16 +8,20 @@ import { useState } from 'react'
 import SecaoFicha from '@renderer/templates/secao-ficha/secao-ficha'
 import CardAtributo from '@renderer/components/card-atributo/card-atributo'
 import CardPericia from '@renderer/components/card-pericia/card-pericia'
-import CardPoder from '@renderer/components/card-item/card-poder'
+import CardPoder from '@renderer/components/card-poder/card-poder'
+import { createPortal } from 'react-dom'
+import Modal from '@renderer/templates/modal/modal'
+import { useListarPoderesDefaultQuery } from '@renderer/hooks/useListarPoderesDefaultQuery'
+import { useAdicionarPoderMutation } from '@renderer/hooks/useAdicionarPoderMutation'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemQuery(idPersonagem)
   const queryClient = useQueryClient()
   const [aba, setAba] = useState('atributos')
   const [modal, setModal] = useState<string | null>(null)
-
-  console.log(modal)
+  const { data: listaPoderes } = useListarPoderesDefaultQuery()
   const removerPoder = useRemoverPoderMutation(queryClient)
+  const adicionarPoder = useAdicionarPoderMutation(idPersonagem, queryClient)
 
   return (
     <main>
@@ -126,29 +130,46 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                 </SecaoFicha>
               )}
               {aba == 'poderes' && (
-                <SecaoFicha
-                  header={
-                    <>
-                      <h2>Poderes</h2>
-                      <BotaoModular
-                        css="botaoAdicionar"
-                        texto="Adicionar poderes"
-                        onClickEvent={() => setModal('adicionar.poder')}
-                        icone="./icons/plus-solid.svg"
+                <>
+                  <SecaoFicha
+                    header={
+                      <>
+                        <h2>Poderes</h2>
+                        <BotaoModular
+                          css="botaoAdicionar"
+                          texto="Adicionar poderes"
+                          onClickEvent={() => setModal('adicionar.poder')}
+                          icone="./icons/plus-solid.svg"
+                        />
+                      </>
+                    }
+                    css="conteudo"
+                  >
+                    {personagem.poderes.map((poder) => (
+                      <CardPoder
+                        key={poder.id}
+                        poder={poder}
+                        onInteract={() => removerPoder.mutate(poder.id)}
+                        iconeBotaoInteracao="./icons/delete.svg"
                       />
-                    </>
-                  }
-                  css="conteudo"
-                >
-                  {personagem.poderes.map((poder) => (
-                    <CardPoder
-                      key={poder.id}
-                      poder={poder}
-                      onInteract={() => removerPoder.mutate(poder.id)}
-                      iconeBotaoInteracao="./icons/delete.svg"
-                    />
-                  ))}
-                </SecaoFicha>
+                    ))}
+                  </SecaoFicha>
+                  {modal === 'adicionar.poder' &&
+                    createPortal(
+                      <Modal titulo="Adquirir poderes" onClose={() => setModal(null)}>
+                        {listaPoderes &&
+                          listaPoderes.map((poder) => (
+                            <CardPoder
+                              key={poder.id}
+                              poder={poder}
+                              onInteract={() => adicionarPoder.mutate(poder)}
+                              iconeBotaoInteracao="/icons/plus-solid.svg"
+                            />
+                          ))}
+                      </Modal>,
+                      document.body
+                    )}
+                </>
               )}
             </div>
           </div>

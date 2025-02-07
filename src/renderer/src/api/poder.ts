@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios'
 import { Poder } from '../@types/t20/Poder'
 
-const baseURLDefaultData = '/data/t20/poderes/poderes.json'
+const baseURLDefaultData = './data/t20/poderes/poderes.json'
 const baseURL = 'http://localhost:8080/t20/personagens/poderes'
 
 export const listarPoderesDefault = async (): Promise<Poder[]> => {

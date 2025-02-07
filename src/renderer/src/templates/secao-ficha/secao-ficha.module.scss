@@ -1,10 +1,10 @@
 @use '@renderer/assets/variables.scss';
 
-.secao{
+.secao {
   width: 90%;
   margin-top: 15px;
 
-  .titulo{
+  .titulo {
     width: 100%;
     height: 40px;
     border-bottom: 4px solid variables.$red;
@@ -13,26 +13,26 @@
     align-items: center;
     justify-content: space-between;
 
-    h2{
+    h2 {
       font-size: 20px;
     }
   }
 
-  .conteudo{
+  .conteudo {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
   }
 
-  .atributos{
+  .atributos {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
   }
 
-  .pericias{
+  .pericias {
     display: flex;
     flex-direction: column;
     gap: 15px;

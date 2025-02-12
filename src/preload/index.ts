@@ -1,8 +1,14 @@
-import { contextBridge } from 'electron'
+import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
+import { Personagem } from '../main/api/entity/personagem'
+import { IPersonagemT20 } from '../main/api/@types/t20/Personagem'
 
 // Custom APIs for renderer
-const api = {}
+const api = {
+  getPersonagem: (id: number): Promise<IPersonagemT20> => ipcRenderer.invoke('get-personagem', id),
+  postPersonagem: (personagem: Partial<Personagem>): Promise<IPersonagemT20> =>
+    ipcRenderer.invoke('post-personagem', personagem)
+}
 
 // Use `contextBridge` APIs to expose Electron APIs to
 // renderer only if context isolation is enabled, otherwise

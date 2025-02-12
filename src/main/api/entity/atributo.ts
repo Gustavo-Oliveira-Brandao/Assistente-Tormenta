@@ -1,32 +1,25 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './personagem'
+import { IAtributo } from '../@types/t20/Atributo'
 
 @Entity()
-export class Atributo {
+export class Atributo implements IAtributo {
   @PrimaryGeneratedColumn({
     type: 'integer'
   })
   id: number
 
   @Column({
-    type: 'varchar'
+    type: 'varchar',
+    nullable: false
   })
   nome: string
 
   @Column({
-    type: 'integer'
-  })
-  valorAtual: number
-
-  @Column({
-    type: 'integer'
+    type: 'integer',
+    nullable: false
   })
   valorBase: number
-
-  @Column({
-    type: 'varchar'
-  })
-  descricao: string
 
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos)
   personagem: Personagem

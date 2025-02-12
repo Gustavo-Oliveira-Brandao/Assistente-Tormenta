@@ -1,8 +1,6 @@
 import SidebarFicha from '@renderer/templates/sidebar-ficha/sidebar-ficha'
 import styles from './ficha-personagem.module.scss'
 import { useExibirPersonagemQuery } from '@renderer/hooks/useExibirPersonagemQuery'
-import { useQueryClient } from '@tanstack/react-query'
-import { useRemoverPoderMutation } from '@renderer/hooks/useRemoverPoderMutation'
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
 import { useState } from 'react'
 import SecaoFicha from '@renderer/templates/secao-ficha/secao-ficha'
@@ -11,18 +9,12 @@ import CardPericia from '@renderer/components/card-pericia/card-pericia'
 import CardPoder from '@renderer/components/card-poder/card-poder'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
-import { useListarPoderesDefaultQuery } from '@renderer/hooks/useListarPoderesDefaultQuery'
-import { useAdicionarPoderMutation } from '@renderer/hooks/useAdicionarPoderMutation'
+import { criarPersonagem } from '@renderer/api/personagemApi'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemQuery(idPersonagem)
-  const queryClient = useQueryClient()
   const [aba, setAba] = useState('atributos')
   const [modal, setModal] = useState<string | null>(null)
-  const { data: listaPoderes } = useListarPoderesDefaultQuery()
-  const removerPoder = useRemoverPoderMutation(queryClient)
-  const adicionarPoder = useAdicionarPoderMutation(idPersonagem, queryClient)
-
   return (
     <main>
       {personagem && (
@@ -116,6 +108,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                   header={
                     <>
                       <h2>Grimório</h2>
+                      <button onClick={() => criarPersonagem(personagem)}>Teste</button>
                       <BotaoModular
                         css="botaoAdicionar"
                         texto="Adicionar magias"
@@ -149,7 +142,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                       <CardPoder
                         key={poder.id}
                         poder={poder}
-                        onInteract={() => removerPoder.mutate(poder.id)}
+                        onInteract={() => criarPersonagem(personagem)}
                         iconeBotaoInteracao="./icons/delete.svg"
                       />
                     ))}
@@ -157,15 +150,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                   {modal === 'adicionar.poder' &&
                     createPortal(
                       <Modal titulo="Adquirir poderes" onClose={() => setModal(null)}>
-                        {listaPoderes &&
-                          listaPoderes.map((poder) => (
-                            <CardPoder
-                              key={poder.id}
-                              poder={poder}
-                              onInteract={() => adicionarPoder.mutate(poder)}
-                              iconeBotaoInteracao="/icons/plus-solid.svg"
-                            />
-                          ))}
+                        <div></div>
                       </Modal>,
                       document.body
                     )}

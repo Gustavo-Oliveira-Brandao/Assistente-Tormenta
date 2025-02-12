@@ -6,13 +6,8 @@
   "origem": "taverneiro",
   "nivel": 5,
   "experiencia": 500,
-  "defesa": {
-    "valorAtual": 30,
-    "armaduraEquipada": "Cota de malha",
-    "escudoEquipado": "",
-    "atributo": "destreza",
-    "penalidadeArmaduraTotal": 3
-  },
+  "valorDefesa": 10,
+  "valorPenalidadeArmadura": 5,
   "vida": {
     "valorAtual": 30,
     "valorMaximo": 40,
@@ -37,32 +32,32 @@
   "atributos": [
     {
       "nome": "forca",
-      "valorBase": 4,
+      "valor": 4,
       "descricao": ""
     },
     {
       "nome": "destreza",
-      "valorBase": 2,
+      "valor": 2,
       "descricao": ""
     },
     {
       "nome": "constituicao",
-      "valorBase": 2,
+      "valor": 2,
       "descricao": ""
     },
     {
       "nome": "inteligencia",
-      "valorBase": 2,
+      "valor": 2,
       "descricao": ""
     },
     {
       "nome": "sabedoria",
-      "valorBase": 2,
+      "valor": 2,
       "descricao": ""
     },
     {
       "nome": "carisma",
-      "valorBase": 2,
+      "valor": 2,
       "descricao": ""
     }
   ],

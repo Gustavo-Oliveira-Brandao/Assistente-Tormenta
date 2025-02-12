@@ -66,7 +66,7 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
           <img src="./icons/default/ca.svg" alt="Defesa" />
           <BotaoModular
             onClickEvent={teste}
-            texto={personagem.defesa.valorAtual}
+            texto={personagem.valorDefesa}
             css="recursoSecundario"
           />
         </div>

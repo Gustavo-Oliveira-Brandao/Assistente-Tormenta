@@ -12,6 +12,12 @@ export class Mana implements IRecurso {
     type: 'integer',
     nullable: false
   })
+  valorMaximo: number
+
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
   valorAtual: number
 
   @Column({
@@ -19,16 +25,4 @@ export class Mana implements IRecurso {
     nullable: false
   })
   valorTemporario: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  bonusPorNivel: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  bonusBase: number
 }

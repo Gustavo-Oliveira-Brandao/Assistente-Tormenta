@@ -4,7 +4,10 @@ import { Personagem } from '../entity/personagem'
 
 export const getTodosPersonagens = async (): Promise<IPersonagemT20[]> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+  const personagem = await personagemRepository.find()
+  console.log(personagem)
   return await personagemRepository.find().catch((error) => {
+    console.error('Erro: ' + error)
     return error
   })
 }

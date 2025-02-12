@@ -1,5 +1,4 @@
 import { Atributo } from './Atributo'
-import { Defesa } from './Defesa'
 import { Deslocamento } from './Deslocamento'
 import { Efeito } from './Efeito'
 import { ItemInventario } from './ItemInventario'
@@ -17,7 +16,8 @@ export interface PersonagemT20 {
   divindade: string
   nivel: number
   experiencia: number
-  defesa: Defesa
+  valorDefesa: number
+  valorPenalidadeArmadura: number
   vida: Recurso
   mana: Recurso
   deslocamento: Deslocamento

@@ -9,7 +9,6 @@ import {
 import { IPersonagemT20 } from '../@types/t20/Personagem'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
-  console.log(event)
   return await getTodosPersonagens()
 })
 

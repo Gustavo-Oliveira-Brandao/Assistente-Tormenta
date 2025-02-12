@@ -1,7 +1,7 @@
 export interface Pericia {
   id: number
   nome: string
-  valorAtual: number
+  valor: number
   ehTreinado: boolean
   categoria: string
   atributo: string

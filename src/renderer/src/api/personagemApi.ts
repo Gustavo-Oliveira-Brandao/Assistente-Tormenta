@@ -1,15 +1,11 @@
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
-import axios from 'axios'
 
 export const exibirTodosPersonagens = async (): Promise<PersonagemT20[]> => {
-  const personagens = await window.api.getTodosPersonagem()
-  console.log(personagens)
-  return personagens
+  return await window.api.getTodosPersonagens()
 }
 export const exibirPersonagemPorId = async (id: number): Promise<PersonagemT20> => {
-  console.log(id)
-  let personagem = (await axios.get<PersonagemT20>('./data/t20/personagemVercel.json')).data
+  let personagem = await window.api.getPersonagem(id)
   personagem = await carregarPersonagem(personagem)
   return personagem
 }

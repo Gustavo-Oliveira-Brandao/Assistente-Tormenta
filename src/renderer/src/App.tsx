@@ -12,8 +12,8 @@ function App(): JSX.Element {
     <QueryClientProvider client={queryClient}>
       <HashRouter>
         <Routes>
-          <Route path="/naoFeitoAinda" element={<TelaSelecaoPersonagem />} />
-          <Route path="/" element={<FichaPersonagem idPersonagem={1} />} />
+          <Route path="/" element={<TelaSelecaoPersonagem />} />
+          <Route path="/personagem" element={<FichaPersonagem idPersonagem={1} />} />
         </Routes>
       </HashRouter>
     </QueryClientProvider>

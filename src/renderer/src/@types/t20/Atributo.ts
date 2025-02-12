@@ -2,6 +2,6 @@ export interface Atributo {
   id: number
   nome: string
   valorAtual: number
-  valorBase: number
+  valor: number
   descricao: string
 }

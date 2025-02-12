@@ -19,7 +19,7 @@ export class Atributo implements IAtributo {
     type: 'integer',
     nullable: false
   })
-  valorBase: number
+  valor: number
 
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos)
   personagem: Personagem

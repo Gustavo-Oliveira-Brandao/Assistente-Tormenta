@@ -1,4 +1,4 @@
-import { ITag } from './tag'
+import { ITag } from './Tag'
 import { ITopico } from './Topico'
 
 export interface IPoder {

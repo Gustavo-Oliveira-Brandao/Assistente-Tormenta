@@ -1,1 +1,15 @@
 @use '@renderer/assets/variables.scss';
+
+.selecaoPersonagem {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .personagem {
+    background-color: variables.$secondary-color;
+    width: 500px;
+    height: 500px;
+  }
+}

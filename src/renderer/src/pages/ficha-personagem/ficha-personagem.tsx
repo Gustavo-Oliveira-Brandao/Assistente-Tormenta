@@ -9,7 +9,6 @@ import CardPericia from '@renderer/components/card-pericia/card-pericia'
 import CardPoder from '@renderer/components/card-poder/card-poder'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
-import { criarPersonagem } from '@renderer/api/personagemApi'
 import { useListarPoderesQuery } from '@renderer/hooks/useListarPoderes'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {

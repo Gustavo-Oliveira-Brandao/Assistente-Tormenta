@@ -1,5 +1,4 @@
 import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Defesa } from './defesa'
 import { Vida } from './vida'
 import { Mana } from './mana'
 import { Deslocamento } from './deslocamento'
@@ -57,9 +56,17 @@ export class Personagem implements IPersonagemT20 {
   })
   experiencia: number
 
-  @OneToOne(() => Defesa, { cascade: true, eager: true, nullable: false })
-  @JoinColumn()
-  defesa: Defesa
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  valorDefesa: number
+
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  valorPenalidadeArmadura: number
 
   @OneToOne(() => Vida, { cascade: true, eager: true, nullable: false })
   @JoinColumn()

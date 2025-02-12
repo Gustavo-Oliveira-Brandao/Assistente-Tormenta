@@ -25,16 +25,4 @@ export class Vida implements IRecurso {
     nullable: false
   })
   valorTemporario: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  bonusPorNivel: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  bonusBase: number
 }

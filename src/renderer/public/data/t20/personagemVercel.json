@@ -311,7 +311,83 @@
       "descricao": ""
     }
   ],
-  "poderes": [],
+  "poderes": [
+    {
+      "id": 267,
+      "nome": "solidez",
+      "descricao": "Se estiver usando um escudo, você aplica o bônus na Defesa recebido pelo escudo em testes de resistência.",
+      "iconeURL": "./icons/shield.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "guerreiro"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "topicos": []
+    },
+    {
+      "id": 268,
+      "nome": "tornado de dor",
+      "descricao": "Você pode gastar uma ação padrão e 2 PM para desferir uma série de golpes giratórios. Faça um ataque corpo a corpo e compare-o com a Defesa de cada inimigo em seu alcance natural. Então faça uma rolagem de dano com um bônus cumulativo de +2 para cada acerto e aplique-a em cada inimigo atingido.",
+      "iconeURL": "./icons/sword-spin.svg",
+      "preRequisitos": "6º nível de guerreiro.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "guerreiro"
+        }
+      ],
+      "tempoExecucao": "ação padrão",
+      "topicos": []
+    },
+    {
+      "id": 269,
+      "nome": "valentão",
+      "descricao": "Você recebe +2 em testes de ataque e rolagens de dano contra oponentes caídos, desprevenidos, flanqueados ou indefesos.",
+      "iconeURL": "./icons/bully-minion.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "guerreiro"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "topicos": []
+    },
+    {
+      "id": 270,
+      "nome": "durão",
+      "descricao": "A partir do 3º nível, sua rijeza muscular permite que você absorva ferimentos. Sempre que sofre dano, você pode gastar 3 PM para reduzir esse dano à metade.",
+      "iconeURL": "./icons/rock-golem.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "guerreiro"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "topicos": []
+    },
+    {
+      "id": 271,
+      "nome": "ataque extra",
+      "descricao": "A partir do 6º nível, quando usa a ação agredir, você pode gastar 2 PM para realizar um ataque adicional uma vez por rodada.",
+      "iconeURL": "./icons/dripping-sword.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "guerreiro"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "topicos": []
+    }
+  ],
   "itens": [],
   "magias": [],
   "efeitos": []

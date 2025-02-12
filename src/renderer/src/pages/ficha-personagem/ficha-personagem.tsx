@@ -10,11 +10,19 @@ import CardPoder from '@renderer/components/card-poder/card-poder'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
 import { criarPersonagem } from '@renderer/api/personagemApi'
+import { useListarPoderesQuery } from '@renderer/hooks/useListarPoderes'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemQuery(idPersonagem)
+  const { data: poderesDefault } = useListarPoderesQuery()
+
   const [aba, setAba] = useState('atributos')
   const [modal, setModal] = useState<string | null>(null)
+
+  const placeholderFunction = (): void => {
+    console.log('Isso é um placeholder')
+  }
+
   return (
     <main>
       {personagem && (
@@ -29,20 +37,6 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                   onClickEvent={() => setAba('atributos')}
                   estaAtivo={aba == 'atributos' ? true : false}
                   texto={aba == 'atributos' ? 'atributos' : undefined}
-                />
-                <BotaoModular
-                  css="botaoNav"
-                  icone="./icons/default/acoes.svg"
-                  onClickEvent={() => setAba('acoes')}
-                  estaAtivo={aba == 'acoes' ? true : false}
-                  texto={aba == 'acoes' ? 'acoes' : undefined}
-                />
-                <BotaoModular
-                  css="botaoNav"
-                  icone="./icons/default/grimorio.svg"
-                  onClickEvent={() => setAba('grimorio')}
-                  estaAtivo={aba == 'grimorio' ? true : false}
-                  texto={aba == 'grimorio' ? 'grimorio' : undefined}
                 />
                 <BotaoModular
                   css="botaoNav"
@@ -82,45 +76,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
                       ))}
                   </SecaoFicha>
-                  <SecaoFicha header={<h2>Conhecimento</h2>} css="pericias">
-                    {personagem.pericias
-                      .filter((pericia) => pericia.categoria === 'conhecimento')
-                      .map((pericia) => (
-                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
-                      ))}
-                  </SecaoFicha>
-                  <SecaoFicha header={<h2>Oficio</h2>} css="pericias">
-                    {personagem.pericias
-                      .filter((pericia) => pericia.categoria === 'oficio')
-                      .map((pericia) => (
-                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
-                      ))}
-                  </SecaoFicha>
                 </>
-              )}
-              {aba == 'acoes' && (
-                <SecaoFicha header={<h2>Ações</h2>} css="conteudo">
-                  <div></div>
-                </SecaoFicha>
-              )}
-              {aba == 'grimorio' && (
-                <SecaoFicha
-                  header={
-                    <>
-                      <h2>Grimório</h2>
-                      <button onClick={() => criarPersonagem(personagem)}>Teste</button>
-                      <BotaoModular
-                        css="botaoAdicionar"
-                        texto="Adicionar magias"
-                        onClickEvent={() => setModal('adicionar.magia')}
-                        icone="./icons/plus-solid.svg"
-                      />
-                    </>
-                  }
-                  css="conteudo"
-                >
-                  <div></div>
-                </SecaoFicha>
               )}
               {aba == 'poderes' && (
                 <>
@@ -142,7 +98,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                       <CardPoder
                         key={poder.id}
                         poder={poder}
-                        onInteract={() => criarPersonagem(personagem)}
+                        onInteract={() => placeholderFunction()}
                         iconeBotaoInteracao="./icons/delete.svg"
                       />
                     ))}
@@ -150,7 +106,15 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                   {modal === 'adicionar.poder' &&
                     createPortal(
                       <Modal titulo="Adquirir poderes" onClose={() => setModal(null)}>
-                        <div></div>
+                        {poderesDefault &&
+                          poderesDefault.map((poder) => (
+                            <CardPoder
+                              key={poder.id}
+                              poder={poder}
+                              onInteract={() => placeholderFunction()}
+                              iconeBotaoInteracao="./icons/plus-solid.svg"
+                            />
+                          ))}
                       </Modal>,
                       document.body
                     )}

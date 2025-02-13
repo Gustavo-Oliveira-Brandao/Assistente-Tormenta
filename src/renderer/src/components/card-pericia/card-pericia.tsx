@@ -16,7 +16,7 @@ const CardPericia = ({ pericia, css }: { pericia: Pericia; css: string }): JSX.E
       </button>
       <div className={styles.rolagem}>
         {css !== 'sidebar' && <p className={styles.treinamento}>{treinamento}</p>}
-        <BotaoRolagem valor={pericia.valorAtual} />
+        <BotaoRolagem valor={pericia.valor} />
       </div>
     </div>
   )

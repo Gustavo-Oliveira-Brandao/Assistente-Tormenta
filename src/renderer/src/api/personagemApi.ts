@@ -1,5 +1,6 @@
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
+import axios from 'axios'
 
 export const exibirTodosPersonagens = async (): Promise<PersonagemT20[]> => {
   return await window.api.getTodosPersonagens()
@@ -20,4 +21,9 @@ export const atualizarPersonagem = async (_personagem: PersonagemT20): Promise<v
 
 export const deletarPersonagem = async (id: number): Promise<void> => {
   await window.api.deletePersonagem(id)
+}
+
+export const criarPersonagemDemo = async (): Promise<void> => {
+  const personagemDemo = (await axios.get('./data/t20/personagemVercel.json')).data
+  await window.api.postPersonagem(personagemDemo)
 }

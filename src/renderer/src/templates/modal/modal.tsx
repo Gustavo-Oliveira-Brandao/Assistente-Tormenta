@@ -17,7 +17,7 @@ const Modal = ({
         <header className={styles.modalHeader}>
           <h2>{titulo}</h2>
           <button onClick={onClose}>
-            <img src="/icons/close.svg" alt="Fechar modal" />
+            <img src="./icons/close.svg" alt="Fechar modal" />
           </button>
         </header>
         <div className={styles.modalConteudo}>{children}</div>

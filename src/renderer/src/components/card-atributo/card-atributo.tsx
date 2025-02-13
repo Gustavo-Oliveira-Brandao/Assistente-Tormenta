@@ -8,7 +8,7 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
       <div className={styles.titulo}>
         <button>{atributo.nome}</button>
       </div>
-      <BotaoRolagem valor={atributo.valorAtual} />
+      <BotaoRolagem valor={atributo.valor} />
     </div>
   )
 }

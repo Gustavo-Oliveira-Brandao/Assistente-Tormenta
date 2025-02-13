@@ -22,6 +22,8 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
     console.log('Isso é um placeholder')
   }
 
+  //TODO: Bota um botão de voltar para a tela anterior cara
+  //TODO: Criação de modal para exibição de edição de elementos na ficha
   return (
     <main>
       {personagem && (

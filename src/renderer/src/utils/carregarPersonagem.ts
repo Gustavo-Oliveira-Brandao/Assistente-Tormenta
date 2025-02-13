@@ -16,7 +16,7 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
     }
     for (const atributo of personagem.atributos) {
       if (pericia.atributo === atributo.nome) {
-        pericia.valor = Math.floor(atributo.valorAtual + valorTreinamento + personagem.nivel / 2)
+        pericia.valor = Math.floor(atributo.valor + valorTreinamento + personagem.nivel / 2)
       }
     }
   }

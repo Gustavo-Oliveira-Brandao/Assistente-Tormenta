@@ -77,7 +77,7 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
           <h2>Deslocamento</h2>
         </div>
         <div className={styles.recurso}>
-          <img src={'/icons/default/deslocamento.svg'} alt="Deslocamento" />
+          <img src={'./icons/default/deslocamento.svg'} alt="Deslocamento" />
           <BotaoModular
             onClickEvent={teste}
             texto={personagem.deslocamento.caminhada}

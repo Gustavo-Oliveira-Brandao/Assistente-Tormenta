@@ -3,7 +3,10 @@ import styles from './input-modular.module.scss'
 import { useFormContext } from 'react-hook-form'
 
 const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
-  const { register } = useFormContext()
+  const {
+    register,
+    formState: { errors }
+  } = useFormContext()
   return (
     <div className={styles.formGroup}>
       <label>{question.label}</label>
@@ -13,11 +16,11 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
           {...register(question.name, {
             min: {
               value: question.min ?? 0,
-              message: `O valor de ${question.label} deve ser entre ${question.min ?? 0} e ${question.max ?? 9999}`
+              message: `O valor minimo é ${question.min ?? 0}`
             },
             max: {
-              value: question.max ?? 9999,
-              message: `O valor de ${question.label} deve ser entre ${question.min ?? 0} e ${question.max ?? 9999}`
+              value: question.max ?? 10000,
+              message: `O valor maximo é ${question.max ?? 10000}`
             },
             required: question.required
           })}
@@ -30,11 +33,11 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
           {...register(question.name, {
             minLength: {
               value: question.minLength ?? 0,
-              message: `O minimo de caracteres é ${question.minLength}`
+              message: `O minimo de caracteres é ${question.minLength}.`
             },
             maxLength: {
-              value: question.maxLength ?? 9999,
-              message: `O maximo de caracteres é ${question.maxLength}`
+              value: question.maxLength ?? 255,
+              message: `O maximo de caracteres é ${question.maxLength}.`
             },
             required: question.required
           })}
@@ -51,6 +54,7 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
             ))}
         </select>
       )}
+      {errors[question.name] && <p role="alert">{String(errors[question.name]?.message)}</p>}
     </div>
   )
 }

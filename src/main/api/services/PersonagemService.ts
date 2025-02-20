@@ -1,8 +1,8 @@
-import { IPersonagemT20 } from '../@types/t20/Personagem'
+import { IPersonagem } from '../@types/t20/Personagem'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entity/personagem'
 
-export const getTodosPersonagens = async (): Promise<IPersonagemT20[]> => {
+export const getTodosPersonagens = async (): Promise<IPersonagem[]> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
   const personagem = await personagemRepository.find()
   console.log(personagem)
@@ -11,7 +11,7 @@ export const getTodosPersonagens = async (): Promise<IPersonagemT20[]> => {
     return error
   })
 }
-export const getPersonagem = async (id: number): Promise<IPersonagemT20> => {
+export const getPersonagem = async (id: number): Promise<IPersonagem> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
   return await personagemRepository
     .findOneBy({
@@ -22,16 +22,14 @@ export const getPersonagem = async (id: number): Promise<IPersonagemT20> => {
     })
 }
 
-export const postPersonagem = async (
-  _personagem: Partial<IPersonagemT20>
-): Promise<IPersonagemT20> => {
+export const postPersonagem = async (_personagem: Partial<IPersonagem>): Promise<IPersonagem> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
   return await personagemRepository.save(_personagem).catch((error) => {
     return error
   })
 }
 
-export const putPersonagem = async (_personagem: IPersonagemT20): Promise<IPersonagemT20> => {
+export const putPersonagem = async (_personagem: IPersonagem): Promise<IPersonagem> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
   return await personagemRepository
     .update(_personagem.id, _personagem)

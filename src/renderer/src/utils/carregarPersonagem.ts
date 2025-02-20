@@ -1,6 +1,7 @@
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 
 export const carregarPersonagem = async (personagem: PersonagemT20): Promise<PersonagemT20> => {
+  personagem.defesa.valorAtual = 10
   for (const pericia of personagem.pericias) {
     let valorTreinamento = 0
     if (pericia.ehTreinado) {

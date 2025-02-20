@@ -1,10 +1,11 @@
 import { IAtributo } from './Atributo'
+import { IDefesa } from './Defesa'
 import { IDeslocamento } from './Deslocamento'
 import { IPericia } from './Pericia'
 import { IPoder } from './Poder'
 import { IRecurso } from './Recurso'
 
-export interface IPersonagemT20 {
+export interface IPersonagem {
   id: number
   nome: string
   raca: string
@@ -13,8 +14,7 @@ export interface IPersonagemT20 {
   divindade: string
   nivel: number
   experiencia: number
-  valorDefesa: number
-  valorPenalidadeArmadura: number
+  defesa: IDefesa
   vida: IRecurso
   mana: IRecurso
   deslocamento: IDeslocamento

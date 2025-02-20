@@ -9,9 +9,10 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
   } = useFormContext()
   return (
     <div className={styles.formGroup}>
-      <label>{question.label}</label>
+      <label htmlFor={question.elementId}>{question.label}</label>
       {question.type === 'number' && (
         <input
+          id={question.elementId}
           type={question.type}
           {...register(question.name, {
             min: {
@@ -29,6 +30,7 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
       )}
       {question.type === 'text' && (
         <input
+          id={question.elementId}
           type={question.type}
           {...register(question.name, {
             minLength: {
@@ -45,7 +47,10 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
         />
       )}
       {question.type === 'dropdown' && (
-        <select {...register(question.name, { required: question.required })}>
+        <select
+          id={question.elementId}
+          {...register(question.name, { required: question.required })}
+        >
           {question.options &&
             question.options.map((opt) => (
               <option key={opt.value} value={opt.value}>

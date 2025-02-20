@@ -1,14 +1,14 @@
 import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
-import { IPersonagemT20 } from '../main/api/@types/t20/Personagem'
+import { IPersonagem } from '../main/api/@types/t20/Personagem'
 
 // Custom APIs for renderer
 const api = {
-  getTodosPersonagens: (): Promise<IPersonagemT20[]> => ipcRenderer.invoke('get-todos-personagens'),
-  getPersonagem: (id: number): Promise<IPersonagemT20> => ipcRenderer.invoke('get-personagem', id),
-  postPersonagem: (personagem: Partial<IPersonagemT20>): Promise<IPersonagemT20> =>
+  getTodosPersonagens: (): Promise<IPersonagem[]> => ipcRenderer.invoke('get-todos-personagens'),
+  getPersonagem: (id: number): Promise<IPersonagem> => ipcRenderer.invoke('get-personagem', id),
+  postPersonagem: (personagem: Partial<IPersonagem>): Promise<IPersonagem> =>
     ipcRenderer.invoke('post-personagem', personagem),
-  putPersonagem: (personagem: IPersonagemT20): Promise<IPersonagemT20> =>
+  putPersonagem: (personagem: IPersonagem): Promise<IPersonagem> =>
     ipcRenderer.invoke('put-personagem', personagem),
   deletePersonagem: (id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', id)
 }

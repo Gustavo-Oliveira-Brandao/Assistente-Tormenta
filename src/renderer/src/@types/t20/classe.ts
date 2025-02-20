@@ -1,4 +1,4 @@
-export interface classe {
+export interface ClasseT20 {
   id: number
   nome: string
   vidaInicial: number

@@ -5,10 +5,12 @@ import { Deslocamento } from './deslocamento'
 import { Atributo } from './atributo'
 import { Pericia } from './pericia'
 import { Poder } from './poder'
-import { IPersonagemT20 } from '../@types/t20/Personagem'
+import { IPersonagem } from '../@types/t20/Personagem'
+import { Defesa } from './defesa'
+import { ItemT20 } from './item'
 
 @Entity()
-export class Personagem implements IPersonagemT20 {
+export class Personagem implements IPersonagem {
   @PrimaryGeneratedColumn({
     type: 'integer'
   })
@@ -56,17 +58,9 @@ export class Personagem implements IPersonagemT20 {
   })
   experiencia: number
 
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  valorDefesa: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  valorPenalidadeArmadura: number
+  @OneToOne(() => Defesa, { cascade: true, eager: true, nullable: false })
+  @JoinColumn()
+  defesa: Defesa
 
   @OneToOne(() => Vida, { cascade: true, eager: true, nullable: false })
   @JoinColumn()
@@ -96,4 +90,7 @@ export class Personagem implements IPersonagemT20 {
 
   @OneToMany(() => Poder, (poderes) => poderes.personagem, { cascade: true, eager: true })
   poderes: Poder[]
+
+  @OneToMany(() => ItemT20, (itens) => itens.personagem, { cascade: true, eager: true })
+  itens: ItemT20[]
 }

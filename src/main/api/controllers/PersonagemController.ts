@@ -6,7 +6,7 @@ import {
   postPersonagem,
   putPersonagem
 } from '../services/PersonagemService'
-import { IPersonagemT20 } from '../@types/t20/Personagem'
+import { IPersonagem } from '../@types/t20/Personagem'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
   console.log(event)
@@ -18,15 +18,12 @@ ipcMain.handle('get-personagem', async (event: IpcMainInvokeEvent, id: number) =
   return await getPersonagem(id)
 })
 
-ipcMain.handle(
-  'post-personagem',
-  async (event: IpcMainInvokeEvent, _personagem: IPersonagemT20) => {
-    console.log(event)
-    return await postPersonagem(_personagem)
-  }
-)
+ipcMain.handle('post-personagem', async (event: IpcMainInvokeEvent, _personagem: IPersonagem) => {
+  console.log(event)
+  return await postPersonagem(_personagem)
+})
 
-ipcMain.handle('put-personagem', async (event: IpcMainInvokeEvent, _personagem: IPersonagemT20) => {
+ipcMain.handle('put-personagem', async (event: IpcMainInvokeEvent, _personagem: IPersonagem) => {
   console.log(event)
   return await putPersonagem(_personagem)
 })

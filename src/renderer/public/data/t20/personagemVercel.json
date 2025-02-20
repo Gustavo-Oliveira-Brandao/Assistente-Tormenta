@@ -6,8 +6,12 @@
   "origem": "taverneiro",
   "nivel": 5,
   "experiencia": 500,
-  "valorDefesa": 10,
-  "valorPenalidadeArmadura": 5,
+  "defesa": {
+    "armaduraEquipada": "Nenhuma",
+    "escudoEquipado": "Nenhum",
+    "penalidadeArmaduraTotal": 5,
+    "atributo": "destreza"
+  },
   "vida": {
     "valorAtual": 30,
     "valorMaximo": 40,

@@ -15,6 +15,9 @@ export class Tag implements ITag {
   })
   label: string
 
-  @ManyToOne(() => Poder, (poder) => poder.tags)
+  @ManyToOne(() => Poder, (poder) => poder.tags, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   poder: Poder
 }

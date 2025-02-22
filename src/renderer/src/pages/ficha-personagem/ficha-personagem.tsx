@@ -1,6 +1,6 @@
 import SidebarFicha from '@renderer/templates/sidebar-ficha/sidebar-ficha'
 import styles from './ficha-personagem.module.scss'
-import { useExibirPersonagemQuery } from '@renderer/hooks/useExibirPersonagemQuery'
+import { useExibirPersonagemQuery } from '@renderer/hooks/usePersonagemQueries'
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
 import { useState } from 'react'
 import SecaoFicha from '@renderer/templates/secao-ficha/secao-ficha'
@@ -9,7 +9,11 @@ import CardPericia from '@renderer/components/card-pericia/card-pericia'
 import CardPoder from '@renderer/components/card-poder/card-poder'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
-import { useListarPoderesQuery } from '@renderer/hooks/useListarPoderes'
+import { useListarPoderesQuery } from '@renderer/hooks/usePoderesDefaultQueries'
+import {
+  useAdicionarPoderMutation,
+  useDeletarPoderMutation
+} from '@renderer/hooks/usePoderMutations'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemQuery(idPersonagem)
@@ -18,10 +22,8 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
   const [aba, setAba] = useState('atributos')
   const [modal, setModal] = useState<string | null>(null)
 
-  const placeholderFunction = (): void => {
-    console.log('Isso é um placeholder')
-  }
-
+  const adicionarPoder = useAdicionarPoderMutation()
+  const deletarPoder = useDeletarPoderMutation()
   //TODO: Bota um botão de voltar para a tela anterior cara
   //TODO: Criação de modal para exibição de edição de elementos na ficha
   return (
@@ -99,7 +101,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                       <CardPoder
                         key={poder.id}
                         poder={poder}
-                        onInteract={() => placeholderFunction()}
+                        onInteract={() => deletarPoder.mutate(poder.id)}
                         iconeBotaoInteracao="./icons/delete.svg"
                       />
                     ))}
@@ -112,7 +114,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                             <CardPoder
                               key={poder.id}
                               poder={poder}
-                              onInteract={() => placeholderFunction()}
+                              onInteract={() => adicionarPoder.mutate({ poder, idPersonagem })}
                               iconeBotaoInteracao="./icons/plus-solid.svg"
                             />
                           ))}

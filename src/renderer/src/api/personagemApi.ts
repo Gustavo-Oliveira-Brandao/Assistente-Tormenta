@@ -1,4 +1,5 @@
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
+import { Poder } from '@renderer/@types/t20/Poder'
 import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
 import axios from 'axios'
 
@@ -21,6 +22,14 @@ export const atualizarPersonagem = async (_personagem: PersonagemT20): Promise<v
 
 export const deletarPersonagem = async (id: number): Promise<void> => {
   await window.api.deletePersonagem(id)
+}
+
+export const adicionarPoder = async (poder: Poder, idPersonagem: number): Promise<void> => {
+  await window.api.postPoder(poder, idPersonagem)
+}
+
+export const deletarPoder = async (id: number): Promise<void> => {
+  await window.api.deletePoder(id)
 }
 
 export const criarPersonagemDemo = async (): Promise<void> => {

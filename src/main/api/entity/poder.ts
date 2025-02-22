@@ -47,12 +47,18 @@ export class Poder implements IPoder {
   })
   preRequisitos: string
 
-  @OneToMany(() => Topico, (topicos) => topicos.poder, { eager: true, cascade: true })
+  @OneToMany(() => Topico, (topicos) => topicos.poder, {
+    eager: true,
+    cascade: true
+  })
   topicos: Topico[]
 
   @OneToMany(() => Tag, (tags) => tags.poder, { cascade: true, eager: true })
   tags: Tag[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.poderes)
+  @ManyToOne(() => Personagem, (personagem) => personagem.poderes, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   personagem: Personagem
 }

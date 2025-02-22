@@ -45,6 +45,9 @@ export class Pericia implements IPericia {
   })
   sofrePenalidadeArmadura: boolean
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.pericias)
+  @ManyToOne(() => Personagem, (personagem) => personagem.pericias, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   personagem: Personagem
 }

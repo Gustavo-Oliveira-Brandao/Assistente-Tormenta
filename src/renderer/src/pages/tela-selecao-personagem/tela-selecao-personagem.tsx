@@ -1,10 +1,8 @@
-import { useExibirTodosPersonagensQuery } from '@renderer/hooks/useExbirTodosPersonagensQuery'
 import styles from './tela-selecao-personagem.module.scss'
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
 import { useNavigate } from 'react-router-dom'
-import { useQueryClient } from '@tanstack/react-query'
-import { useCriarPersonagemMutation } from '@renderer/hooks/useCriarPersonagemMutation'
-
+import { useCriarPersonagemMutation } from '@renderer/hooks/usePersonagemMutations'
+import { useExibirTodosPersonagensQuery } from '@renderer/hooks/usePersonagemQueries'
 const TelaSelecaoPersonagem = ({
   setPersonagemSelecionado
 }: {
@@ -13,14 +11,13 @@ const TelaSelecaoPersonagem = ({
   const { data: personagens } = useExibirTodosPersonagensQuery()
 
   const navigate = useNavigate()
-  const queryClient = useQueryClient()
-
-  const criarPersonagemMutation = useCriarPersonagemMutation(queryClient)
 
   const selecionarPersonagem = (id: number): void => {
     setPersonagemSelecionado(id)
     navigate('/personagem')
   }
+
+  const criarPersonagem = useCriarPersonagemMutation()
 
   //TODO: Melhorar o visual do card de personagem para algo mais atrativo
   //TODO: Botao de voltar para a homepage
@@ -33,7 +30,7 @@ const TelaSelecaoPersonagem = ({
           icone="./icons/plus-solid.svg"
           texto="Criar personagem"
           css="botaoAdicionar"
-          onClickEvent={() => criarPersonagemMutation.mutate()}
+          onClickEvent={() => criarPersonagem.mutate()}
         />
       </header>
       {personagens &&

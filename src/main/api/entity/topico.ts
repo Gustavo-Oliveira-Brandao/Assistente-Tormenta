@@ -21,6 +21,9 @@ export class Topico implements ITopico {
   })
   texto: string
 
-  @ManyToOne(() => Poder, (poder) => poder.topicos)
+  @ManyToOne(() => Poder, (poder) => poder.topicos, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   poder: Poder
 }

@@ -3,9 +3,8 @@ import { listarPoderesDefault } from '@renderer/api/poderApi'
 import { useQuery, UseQueryResult } from '@tanstack/react-query'
 
 export const useListarPoderesQuery = (): UseQueryResult<Poder[]> => {
-  const query = useQuery({
+  return useQuery({
     queryKey: ['poderes'],
     queryFn: () => listarPoderesDefault()
   })
-  return query
 }

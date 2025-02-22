@@ -1,11 +1,11 @@
 import { IPersonagem } from '../@types/t20/Personagem'
+import { IPoder } from '../@types/t20/Poder'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entity/personagem'
+import { Poder } from '../entity/poder'
 
 export const getTodosPersonagens = async (): Promise<IPersonagem[]> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
-  const personagem = await personagemRepository.find()
-  console.log(personagem)
   return await personagemRepository.find().catch((error) => {
     console.error('Erro: ' + error)
     return error
@@ -43,5 +43,27 @@ export const putPersonagem = async (_personagem: IPersonagem): Promise<IPersonag
 
 export const deletePersonagem = async (id: number): Promise<void> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
-  personagemRepository.delete(id)
+  await personagemRepository.delete(id)
+}
+
+export const postPoder = async (_poder: IPoder, idPersonagem: number): Promise<IPoder> => {
+  const poderRepository = SQLiteDataSource.getRepository(Poder)
+  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+  const poder = poderRepository.create(_poder)
+  poder.personagem = await personagemRepository
+    .findOneBy({
+      id: idPersonagem
+    })
+    .catch((err) => {
+      return err
+    })
+
+  return await poderRepository.save(poder).catch((error) => {
+    return error
+  })
+}
+
+export const deletePoder = async (_id: number): Promise<void> => {
+  const poderRepository = SQLiteDataSource.getRepository(Poder)
+  await poderRepository.delete(_id)
 }

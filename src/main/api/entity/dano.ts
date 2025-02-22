@@ -39,6 +39,9 @@ export class Dano implements IDano {
   })
   atributo: string
 
-  @ManyToOne(() => ItemT20, (item) => item.danos)
+  @ManyToOne(() => ItemT20, (item) => item.danos, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   item: ItemT20
 }

@@ -21,6 +21,9 @@ export class Atributo implements IAtributo {
   })
   valor: number
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.atributos)
+  @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   personagem: Personagem
 }

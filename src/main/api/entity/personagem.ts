@@ -58,19 +58,43 @@ export class Personagem implements IPersonagem {
   })
   experiencia: number
 
-  @OneToOne(() => Defesa, { cascade: true, eager: true, nullable: false })
+  @OneToOne(() => Defesa, {
+    cascade: true,
+    eager: true,
+    nullable: false,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   @JoinColumn()
   defesa: Defesa
 
-  @OneToOne(() => Vida, { cascade: true, eager: true, nullable: false })
+  @OneToOne(() => Vida, {
+    cascade: true,
+    eager: true,
+    nullable: false,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   @JoinColumn()
   vida: Vida
 
-  @OneToOne(() => Mana, { cascade: true, eager: true, nullable: false })
+  @OneToOne(() => Mana, {
+    cascade: true,
+    eager: true,
+    nullable: false,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   @JoinColumn()
   mana: Mana
 
-  @OneToOne(() => Deslocamento, { cascade: true, eager: true, nullable: false })
+  @OneToOne(() => Deslocamento, {
+    cascade: true,
+    eager: true,
+    nullable: false,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   @JoinColumn()
   deslocamento: Deslocamento
 
@@ -88,9 +112,15 @@ export class Personagem implements IPersonagem {
   })
   pericias: Pericia[]
 
-  @OneToMany(() => Poder, (poderes) => poderes.personagem, { cascade: true, eager: true })
+  @OneToMany(() => Poder, (poderes) => poderes.personagem, {
+    cascade: true,
+    eager: true
+  })
   poderes: Poder[]
 
-  @OneToMany(() => ItemT20, (itens) => itens.personagem, { cascade: true, eager: true })
+  @OneToMany(() => ItemT20, (itens) => itens.personagem, {
+    cascade: true,
+    eager: true
+  })
   itens: ItemT20[]
 }

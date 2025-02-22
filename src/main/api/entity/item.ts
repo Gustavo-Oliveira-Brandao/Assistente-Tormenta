@@ -90,6 +90,9 @@ export class ItemT20 implements IItemInventario {
   })
   danos: Dano[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.itens)
+  @ManyToOne(() => Personagem, (personagem) => personagem.itens, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
   personagem: Personagem
 }

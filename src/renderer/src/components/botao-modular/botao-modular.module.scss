@@ -43,22 +43,6 @@
   background-color: variables.$red;
 }
 
-.botaoTag {
-  height: 20px;
-  width: fit-content;
-  display: flex;
-  background-color: variables.$secondary-color;
-  border-radius: 5px;
-  padding: 11px 5px;
-  align-items: center;
-  justify-content: center;
-}
-
-.botaoTag:hover {
-  background-color: variables.$red;
-  transition: 0.2s background-color ease;
-}
-
 .botaoNav {
   min-width: 50px;
   width: fit-content;
@@ -118,4 +102,17 @@
 
 .botaoInteracao:hover {
   background-color: variables.$red;
+}
+
+.botaoConfirmacao {
+  margin-top: 15px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$green;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }

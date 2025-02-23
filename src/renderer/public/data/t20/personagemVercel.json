@@ -37,32 +37,32 @@
     {
       "nome": "forca",
       "valor": 4,
-      "descricao": ""
+      "bonus": 0
     },
     {
       "nome": "destreza",
       "valor": 2,
-      "descricao": ""
+      "bonus": 0
     },
     {
       "nome": "constituicao",
       "valor": 2,
-      "descricao": ""
+      "bonus": 0
     },
     {
       "nome": "inteligencia",
       "valor": 2,
-      "descricao": ""
+      "bonus": 0
     },
     {
       "nome": "sabedoria",
       "valor": 2,
-      "descricao": ""
+      "bonus": 0
     },
     {
       "nome": "carisma",
       "valor": 2,
-      "descricao": ""
+      "bonus": 0
     }
   ],
   "pericias": [

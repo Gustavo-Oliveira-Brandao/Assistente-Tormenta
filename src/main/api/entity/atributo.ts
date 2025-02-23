@@ -21,6 +21,12 @@ export class Atributo implements IAtributo {
   })
   valor: number
 
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  bonus: number
+
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'

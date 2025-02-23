@@ -33,24 +33,11 @@ const CardPoder = ({
       </div>
       {estaExpandido && (
         <div className={styles.itemConteudo}>
-          <div className={styles.itemBotoes}>
-            <BotaoModular
-              css="botaoTag"
-              texto={poder.tempoExecucao}
-              onClickEvent={() => setEstaExpandido(false)}
-            />
-            <BotaoModular
-              css="botaoTag"
-              texto={poder.categoria}
-              onClickEvent={() => setEstaExpandido(false)}
-            />
+          <div className={styles.itemTags}>
+            <p>{poder.tempoExecucao}</p>
+            <p> {poder.categoria}</p>
             {poder.tags.map((tag, index) => (
-              <BotaoModular
-                key={index}
-                css="botaoTag"
-                texto={tag.label}
-                onClickEvent={() => setEstaExpandido(false)}
-              />
+              <p key={index}>{tag.label}</p>
             ))}
           </div>
           <p className={`${styles.poderDescricao} ${styles.poppins}`}>{poder.descricao}</p>

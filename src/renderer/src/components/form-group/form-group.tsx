@@ -1,5 +1,5 @@
 import { IFormData } from '@renderer/@types/FormData'
-import styles from './input-modular.module.scss'
+import styles from './form-group.module.scss'
 import { useFormContext } from 'react-hook-form'
 
 const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
@@ -23,7 +23,8 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
               value: question.max ?? 10000,
               message: `O valor maximo é ${question.max ?? 10000}`
             },
-            required: question.required
+            required: question.required,
+            value: question.value
           })}
           placeholder={question.placeholder}
         />
@@ -41,7 +42,8 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
               value: question.maxLength ?? 255,
               message: `O maximo de caracteres é ${question.maxLength}.`
             },
-            required: question.required
+            required: question.required,
+            value: question.value
           })}
           placeholder={question.placeholder}
         />
@@ -49,7 +51,7 @@ const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
       {question.type === 'dropdown' && (
         <select
           id={question.elementId}
-          {...register(question.name, { required: question.required })}
+          {...register(question.name, { required: question.required, value: question.value })}
         >
           {question.options &&
             question.options.map((opt) => (

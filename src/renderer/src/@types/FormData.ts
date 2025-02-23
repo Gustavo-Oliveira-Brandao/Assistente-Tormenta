@@ -1,4 +1,5 @@
 export interface IFormData {
+  value: string | number
   elementId: string
   label: string
   name: string

@@ -3,4 +3,5 @@ export interface Atributo {
   nome: string
   valor: number
   descricao: string
+  bonus: number
 }

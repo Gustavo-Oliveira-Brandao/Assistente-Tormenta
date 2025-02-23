@@ -1,1 +1,19 @@
 @use '@renderer/assets/variables.scss';
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  color: variables.$special-text-color;
+}
+
+input {
+  border-radius: 5px;
+}
+
+input[type='number'] {
+  background-color: variables.$secondary-color;
+}

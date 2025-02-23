@@ -95,7 +95,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         />
                       </>
                     }
-                    css="conteudo"
+                    css="poderes"
                   >
                     {personagem.poderes.map((poder) => (
                       <CardPoder
@@ -108,7 +108,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                   </SecaoFicha>
                   {modal === 'adicionar.poder' &&
                     createPortal(
-                      <Modal titulo="Adquirir poderes" onClose={() => setModal(null)}>
+                      <Modal titulo="Adquirir poderes" onClose={() => setModal(null)} height={'400px'}>
                         {poderesDefault &&
                           poderesDefault.map((poder) => (
                             <CardPoder

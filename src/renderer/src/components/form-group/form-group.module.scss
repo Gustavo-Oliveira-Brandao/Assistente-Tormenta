@@ -8,6 +8,7 @@
 
 label {
   color: variables.$special-text-color;
+  font-size: 13px;
 }
 
 input {
@@ -16,4 +17,6 @@ input {
 
 input[type='number'] {
   background-color: variables.$secondary-color;
+  width: 3rem;
+  height: 2rem;
 }

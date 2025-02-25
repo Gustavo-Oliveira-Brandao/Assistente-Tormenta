@@ -1,4 +1,5 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
+import { Atributo } from '@renderer/@types/t20/Atributo'
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 import { Poder } from '@renderer/@types/t20/Poder'
 
@@ -13,6 +14,7 @@ declare global {
       deletePersonagem: (id: number) => void
       postPoder: (_poder: Poder, idPersonagem: number) => Poder
       deletePoder: (id: number) => void
+      putAtributo: (atributo: Atributo) => Atributo
     }
   }
 }

@@ -195,3 +195,20 @@ select {
 option {
   background-color: variables.$secondary-color;
 }
+
+input[type='submit'] {
+  margin-top: 15px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$green;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+}

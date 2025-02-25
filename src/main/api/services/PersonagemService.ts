@@ -1,6 +1,8 @@
+import { IAtributo } from '../@types/t20/Atributo'
 import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
 import { SQLiteDataSource } from '../data-source'
+import { Atributo } from '../entity/atributo'
 import { Personagem } from '../entity/personagem'
 import { Poder } from '../entity/poder'
 
@@ -66,4 +68,16 @@ export const postPoder = async (_poder: IPoder, idPersonagem: number): Promise<I
 export const deletePoder = async (_id: number): Promise<void> => {
   const poderRepository = SQLiteDataSource.getRepository(Poder)
   await poderRepository.delete(_id)
+}
+
+export const putAtributo = async (_atributo: IAtributo): Promise<IAtributo> => {
+  const atributoRepository = SQLiteDataSource.getRepository(Atributo)
+  return await atributoRepository
+    .update(_atributo.id, _atributo)
+    .then((atributo) => {
+      return atributo
+    })
+    .catch((err) => {
+      return err
+    })
 }

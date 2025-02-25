@@ -20,7 +20,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
   const { data: poderesDefault } = useListarPoderesQuery()
 
   const [aba, setAba] = useState('atributos')
-  const [modal, setModal] = useState<string | null>(null)
+  const [loja, setLoja] = useState<string | null>(null)
 
   const adicionarPoder = useAdicionarPoderMutation()
   const deletarPoder = useDeletarPoderMutation()
@@ -90,7 +90,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         <BotaoModular
                           css="botaoAdicionar"
                           texto="Adicionar poderes"
-                          onClickEvent={() => setModal('adicionar.poder')}
+                          onClickEvent={() => setLoja('adicionar.poder')}
                           icone="./icons/plus-solid.svg"
                         />
                       </>
@@ -106,9 +106,13 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                       />
                     ))}
                   </SecaoFicha>
-                  {modal === 'adicionar.poder' &&
+                  {loja === 'adicionar.poder' &&
                     createPortal(
-                      <Modal titulo="Adquirir poderes" onClose={() => setModal(null)} height={'400px'}>
+                      <Modal
+                        titulo="Adquirir poderes"
+                        onClose={() => setLoja(null)}
+                        height={'400px'}
+                      >
                         {poderesDefault &&
                           poderesDefault.map((poder) => (
                             <CardPoder

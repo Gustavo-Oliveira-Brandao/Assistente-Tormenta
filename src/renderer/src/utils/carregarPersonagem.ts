@@ -1,6 +1,10 @@
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 
 export const carregarPersonagem = async (personagem: PersonagemT20): Promise<PersonagemT20> => {
+  for (const atributo of personagem.atributos) {
+    atributo.valorAtual = atributo.valor + atributo.bonus
+  }
+
   personagem.defesa.valorAtual = 10
   for (const pericia of personagem.pericias) {
     let valorTreinamento = 0
@@ -17,7 +21,7 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
     }
     for (const atributo of personagem.atributos) {
       if (pericia.atributo === atributo.nome) {
-        pericia.valor = Math.floor(atributo.valor + valorTreinamento + personagem.nivel / 2)
+        pericia.valor = Math.floor(atributo.valorAtual + valorTreinamento + personagem.nivel / 2)
       }
     }
   }

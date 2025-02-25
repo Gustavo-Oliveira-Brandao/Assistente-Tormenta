@@ -1,3 +1,4 @@
+import { Atributo } from '@renderer/@types/t20/Atributo'
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 import { Poder } from '@renderer/@types/t20/Poder'
 import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
@@ -35,4 +36,8 @@ export const deletarPoder = async (id: number): Promise<void> => {
 export const criarPersonagemDemo = async (): Promise<void> => {
   const personagemDemo = (await axios.get('./data/t20/personagemVercel.json')).data
   await window.api.postPersonagem(personagemDemo)
+}
+
+export const atualizarAtributo = async (atributo: Atributo): Promise<void> => {
+  await window.api.putAtributo(atributo)
 }

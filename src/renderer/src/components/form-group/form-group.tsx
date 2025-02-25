@@ -1,67 +1,43 @@
-import { IFormData } from '@renderer/@types/FormData'
 import styles from './form-group.module.scss'
 import { useFormContext } from 'react-hook-form'
 
-const FormGroup = ({ question }: { question: IFormData }): JSX.Element => {
-  const {
-    register,
-    formState: { errors }
-  } = useFormContext()
+type options = {
+  value: string | number
+  text: string
+}[]
+const FormGroup = ({
+  name,
+  options,
+  label,
+  placeholder,
+  type
+}: {
+  name: string
+  options?: options
+  label: string
+  placeholder: string
+  type: string
+}): JSX.Element => {
+  const { register } = useFormContext()
   return (
     <div className={styles.formGroup}>
-      <label htmlFor={question.elementId}>{question.label}</label>
-      {question.type === 'number' && (
-        <input
-          id={question.elementId}
-          type={question.type}
-          {...register(question.name, {
-            min: {
-              value: question.min ?? 0,
-              message: `O valor minimo é ${question.min ?? 0}`
-            },
-            max: {
-              value: question.max ?? 10000,
-              message: `O valor maximo é ${question.max ?? 10000}`
-            },
-            required: question.required,
-            value: question.value
-          })}
-          placeholder={question.placeholder}
-        />
+      <label htmlFor={name}>{label}</label>
+      {type === 'number' && (
+        <input id={name} type={type} {...register(name)} placeholder={placeholder} />
       )}
-      {question.type === 'text' && (
-        <input
-          id={question.elementId}
-          type={question.type}
-          {...register(question.name, {
-            minLength: {
-              value: question.minLength ?? 0,
-              message: `O minimo de caracteres é ${question.minLength}.`
-            },
-            maxLength: {
-              value: question.maxLength ?? 255,
-              message: `O maximo de caracteres é ${question.maxLength}.`
-            },
-            required: question.required,
-            value: question.value
-          })}
-          placeholder={question.placeholder}
-        />
+      {type === 'text' && (
+        <input id={name} type={type} {...register(name)} placeholder={placeholder} />
       )}
-      {question.type === 'dropdown' && (
-        <select
-          id={question.elementId}
-          {...register(question.name, { required: question.required, value: question.value })}
-        >
-          {question.options &&
-            question.options.map((opt) => (
+      {type === 'dropdown' && (
+        <select id={name} {...register(name)}>
+          {options &&
+            options.map((opt) => (
               <option key={opt.value} value={opt.value}>
                 {opt.text}
               </option>
             ))}
         </select>
       )}
-      {errors[question.name] && <p role="alert">{String(errors[question.name]?.message)}</p>}
     </div>
   )
 }

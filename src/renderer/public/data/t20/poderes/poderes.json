@@ -9833,7 +9833,7 @@
   {
     "id": 614,
     "nome": "visco rubro",
-    "descricao": "Você pode gastar 1 PM para cobrir sua mão com um líquido escuro, grosso e corrosivo. Até o final da cena, você recebe +1 nas rolagens de dano corpo a corpo. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.[1]",
+    "descricao": "Você pode gastar 1 PM para cobrir sua mão com um líquido escuro, grosso e corrosivo. Até o final da cena, você recebe +1 nas rolagens de dano corpo a corpo. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
     "iconeURL": "./icons/gauntlet.svg",
     "preRequisitos": "",
     "categoria": "geral",

@@ -4,15 +4,33 @@ import BotaoRolagem from '../botao-rolagem/botao-rolagem'
 import { useState } from 'react'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
-import FormularioModular from '@renderer/templates/formulario-modular/formulario-modular'
 import FormGroup from '../form-group/form-group'
-import BotaoModular from '../botao-modular/botao-modular'
+import { useAtualizarAtributoMutation } from '@renderer/hooks/useAtributoMutation'
+import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
   const [modal, abrirModal] = useState(false)
+  const atualizarAtributo = useAtualizarAtributoMutation()
 
-  const onEdit = (): void => {
+  const atributoSchema = z
+    .object({
+      atributoBonus: z.coerce.number().default(atributo.bonus)
+    })
+    .required()
+
+  const methods = useForm<z.infer<typeof atributoSchema>>({
+    resolver: zodResolver(atributoSchema),
+    defaultValues: atributoSchema.parse({})
+  })
+
+  const { handleSubmit } = methods
+
+  const onEdit: SubmitHandler<z.infer<typeof atributoSchema>> = async (data): Promise<void> => {
     console.log('teste')
+    console.log(data.atributoBonus)
+    abrirModal(false)
   }
 
   return (
@@ -21,27 +39,22 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
         <div className={styles.titulo}>
           <button onClick={() => abrirModal(true)}>{atributo.nome}</button>
         </div>
-        <BotaoRolagem valor={atributo.valor} />
+        <BotaoRolagem valor={atributo.valorAtual} />
       </div>
       {modal &&
         createPortal(
-          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height='fit-content'>
-            <FormularioModular onSubmit={() => onEdit()}>
-              <FormGroup
-                question={{
-                  value: atributo.bonus,
-                  elementId: `${atributo.nome}Bonus`,
-                  label: 'Bônus',
-                  name: 'atributoBonus',
-                  placeholder: String(atributo.bonus),
-                  required: true,
-                  type: 'number',
-                  min: -99,
-                  max: 100
-                }}
-              />
-              <BotaoModular css="botaoConfirmacao" onClickEvent={() => onEdit()} texto={'Salvar'} />
-            </FormularioModular>
+          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="fit-content">
+            <FormProvider {...methods}>
+              <form onSubmit={handleSubmit(onEdit)}>
+                <FormGroup
+                  name={'atributoBonus'}
+                  label={'bônus:'}
+                  placeholder={String(atributo.bonus)}
+                  type={'number'}
+                />
+                <input type="submit" value="Salvar" />
+              </form>
+            </FormProvider>
           </Modal>,
           document.body
         )}

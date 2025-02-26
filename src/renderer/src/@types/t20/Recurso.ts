@@ -3,6 +3,7 @@ export interface Recurso {
   valorAtual: number
   valorMaximo: number
   valorTemporario: number
-  bonusPorNivel: number
-  bonusBase: number
+  valorPorNivel: number
+  valorBase: number
+  atributo?: string
 }

@@ -1,6 +1,8 @@
 export interface IRecurso {
   id: number
-  valorMaximo: number
   valorAtual: number
+  valorBase: number
+  valorPorNivel: number
   valorTemporario: number
+  atributo?: string
 }

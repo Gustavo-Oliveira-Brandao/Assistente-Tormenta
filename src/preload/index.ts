@@ -2,8 +2,8 @@ import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 import { IPersonagem } from '../main/api/@types/t20/Personagem'
 import { IPoder } from '../main/api/@types/t20/Poder'
-import { putAtributo } from '../main/api/services/PersonagemService'
 import { IAtributo } from '../main/api/@types/t20/Atributo'
+import { IRecurso } from '../main/api/@types/t20/Recurso'
 
 // Custom APIs for renderer
 const api = {
@@ -18,7 +18,9 @@ const api = {
     ipcRenderer.invoke('post-poder', _poder, idPersonagem),
   deletePoder: (id: number): Promise<void> => ipcRenderer.invoke('delete-poder', id),
   putAtributo: (atributo: IAtributo): Promise<IAtributo> =>
-    ipcRenderer.invoke('put-atributo', atributo)
+    ipcRenderer.invoke('put-atributo', atributo),
+  putVida: (vida: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-vida', vida),
+  putMana: (mana: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-mana', mana)
 }
 
 // Use `contextBridge` APIs to expose Electron APIs to

@@ -1,10 +1,13 @@
 import { IAtributo } from '../@types/t20/Atributo'
 import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
+import { IRecurso } from '../@types/t20/Recurso'
 import { SQLiteDataSource } from '../data-source'
 import { Atributo } from '../entity/atributo'
+import { Mana } from '../entity/mana'
 import { Personagem } from '../entity/personagem'
 import { Poder } from '../entity/poder'
+import { Vida } from '../entity/vida'
 
 export const getTodosPersonagens = async (): Promise<IPersonagem[]> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
@@ -72,10 +75,37 @@ export const deletePoder = async (_id: number): Promise<void> => {
 
 export const putAtributo = async (_atributo: IAtributo): Promise<IAtributo> => {
   const atributoRepository = SQLiteDataSource.getRepository(Atributo)
+  const atributo = atributoRepository.create(_atributo)
   return await atributoRepository
-    .update(_atributo.id, _atributo)
+    .update(atributo.id, atributo)
     .then((atributo) => {
       return atributo
+    })
+    .catch((err) => {
+      return err
+    })
+}
+
+export const putVida = async (_vida: IRecurso): Promise<IRecurso> => {
+  const vidaRepository = SQLiteDataSource.getRepository(Vida)
+  const vida = vidaRepository.create(_vida)
+  return await vidaRepository
+    .update(vida.id, vida)
+    .then((vida) => {
+      return vida
+    })
+    .catch((err) => {
+      return err
+    })
+}
+
+export const putMana = async (_mana: IRecurso): Promise<IRecurso> => {
+  const manaRepository = SQLiteDataSource.getRepository(Mana)
+  const mana = manaRepository.create(_mana)
+  return await manaRepository
+    .update(mana.id, mana)
+    .then((mana) => {
+      return mana
     })
     .catch((err) => {
       return err

@@ -13,18 +13,17 @@
     "atributo": "destreza"
   },
   "vida": {
-    "valorAtual": 30,
-    "valorMaximo": 40,
+    "valorAtual": 4,
     "valorTemporario": 10,
-    "bonusPorNivel": 0,
-    "bonusBase": 3
+    "valorPorNivel": 2,
+    "valorBase": 4,
+    "atributo": "constituicao"
   },
   "mana": {
-    "valorAtual": 5,
-    "valorMaximo": 40,
+    "valorAtual": 4,
     "valorTemporario": 10,
-    "bonusPorNivel": 0,
-    "bonusBase": 3
+    "valorPorNivel": 3,
+    "valorBase": 3
   },
   "deslocamento": {
     "caminhada": 30,

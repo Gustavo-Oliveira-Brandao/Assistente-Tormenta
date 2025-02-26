@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
 import FormGroup from '../form-group/form-group'
-import { useAtualizarAtributoMutation } from '@renderer/hooks/useAtributoMutation'
+import { useAtualizarAtributoMutation } from '@renderer/hooks/useAtributoMutations'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -16,7 +16,16 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
 
   const atributoSchema = z
     .object({
-      atributoBonus: z.coerce.number().default(atributo.bonus)
+      valor: z.coerce
+        .number()
+        .min(-100, 'Atributo deve ser maior que -100')
+        .max(100, 'Atributo deve ser menor que 100')
+        .default(atributo.valor),
+      bonus: z.coerce
+        .number()
+        .min(-100, 'Bônus deve ser maior que -100')
+        .max(100, 'Bônus deve ser menor que 100')
+        .default(atributo.bonus)
     })
     .required()
 
@@ -28,8 +37,10 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
   const { handleSubmit } = methods
 
   const onEdit: SubmitHandler<z.infer<typeof atributoSchema>> = async (data): Promise<void> => {
-    console.log('teste')
-    console.log(data.atributoBonus)
+    const novoAtributo = { ...atributo }
+    novoAtributo.valor = data.valor
+    novoAtributo.bonus = data.bonus
+    atualizarAtributo.mutate(novoAtributo)
     abrirModal(false)
   }
 
@@ -47,7 +58,13 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <FormGroup
-                  name={'atributoBonus'}
+                  name="valor"
+                  label="valor base:"
+                  placeholder={String(atributo.valor)}
+                  type="number"
+                />
+                <FormGroup
+                  name={'bonus'}
                   label={'bônus:'}
                   placeholder={String(atributo.bonus)}
                   type={'number'}

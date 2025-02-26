@@ -12,17 +12,29 @@ export class Vida implements IRecurso {
     type: 'integer',
     nullable: false
   })
+  valorBase: number
+
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  valorPorNivel: number
+
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
   valorAtual: number
 
   @Column({
     type: 'integer',
     nullable: false
   })
-  valorMaximo: number
+  valorTemporario: number
 
   @Column({
-    type: 'integer',
+    type: 'varchar',
     nullable: false
   })
-  valorTemporario: number
+  atributo: string
 }

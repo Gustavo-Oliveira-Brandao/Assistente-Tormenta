@@ -18,7 +18,10 @@ const FormGroup = ({
   placeholder: string
   type: string
 }): JSX.Element => {
-  const { register } = useFormContext()
+  const {
+    register,
+    formState: { errors }
+  } = useFormContext()
   return (
     <div className={styles.formGroup}>
       <label htmlFor={name}>{label}</label>
@@ -38,6 +41,7 @@ const FormGroup = ({
             ))}
         </select>
       )}
+      {errors[name] && <p role="alert">{String(errors[name].message)}!</p>}
     </div>
   )
 }

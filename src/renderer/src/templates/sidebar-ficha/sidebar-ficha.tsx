@@ -46,16 +46,8 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
       </div>
 
       <div className={styles.barrasRecurso}>
-        <BarraRecurso
-          css="verde"
-          atual={personagem.vida.valorAtual}
-          maximo={personagem.vida.valorMaximo}
-        />
-        <BarraRecurso
-          css="azul"
-          atual={personagem.mana.valorAtual}
-          maximo={personagem.mana.valorMaximo}
-        />
+        <BarraRecurso categoria="vida" recurso={personagem.vida} />
+        <BarraRecurso categoria="mana" recurso={personagem.mana} />
       </div>
 
       <div className={styles.infoSecundaria}>

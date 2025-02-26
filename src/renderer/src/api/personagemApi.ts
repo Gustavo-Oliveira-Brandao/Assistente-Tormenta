@@ -1,6 +1,7 @@
 import { Atributo } from '@renderer/@types/t20/Atributo'
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 import { Poder } from '@renderer/@types/t20/Poder'
+import { Recurso } from '@renderer/@types/t20/Recurso'
 import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
 import axios from 'axios'
 
@@ -40,4 +41,12 @@ export const criarPersonagemDemo = async (): Promise<void> => {
 
 export const atualizarAtributo = async (atributo: Atributo): Promise<void> => {
   await window.api.putAtributo(atributo)
+}
+
+export const atualizarVida = async (vida: Recurso): Promise<void> => {
+  await window.api.putVida(vida)
+}
+
+export const atualizarMana = async (mana: Recurso): Promise<void> => {
+  await window.api.putMana(mana)
 }

@@ -7,11 +7,14 @@ import {
   postPersonagem,
   postPoder,
   putAtributo,
-  putPersonagem
+  putMana,
+  putPersonagem,
+  putVida
 } from '../services/PersonagemService'
 import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
 import { IAtributo } from '../@types/t20/Atributo'
+import { IRecurso } from '../@types/t20/Recurso'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
   event.defaultPrevented
@@ -54,4 +57,14 @@ ipcMain.handle('delete-poder', async (event: IpcMainInvokeEvent, id: number) => 
 ipcMain.handle('put-atributo', async (event: IpcMainInvokeEvent, atributo: IAtributo) => {
   event.defaultPrevented
   await putAtributo(atributo)
+})
+
+ipcMain.handle('put-vida', async (event: IpcMainInvokeEvent, vida: IRecurso) => {
+  event.defaultPrevented
+  await putVida(vida)
+})
+
+ipcMain.handle('put-mana', async (event: IpcMainInvokeEvent, mana: IRecurso) => {
+  event.defaultPrevented
+  await putMana(mana)
 })

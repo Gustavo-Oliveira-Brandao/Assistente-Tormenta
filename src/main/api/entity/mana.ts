@@ -31,4 +31,10 @@ export class Mana implements IRecurso {
     nullable: false
   })
   valorTemporario: number
+
+  @Column({
+    type: 'varchar',
+    nullable: false
+  })
+  atributo: string
 }

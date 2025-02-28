@@ -16,16 +16,8 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
 
   const atributoSchema = z
     .object({
-      valor: z.coerce
-        .number()
-        .min(-100, 'Atributo deve ser maior que -100')
-        .max(100, 'Atributo deve ser menor que 100')
-        .default(atributo.valor),
-      bonus: z.coerce
-        .number()
-        .min(-100, 'Bônus deve ser maior que -100')
-        .max(100, 'Bônus deve ser menor que 100')
-        .default(atributo.bonus)
+      valor: z.coerce.number().default(atributo.valor),
+      bonus: z.coerce.number().default(atributo.bonus)
     })
     .required()
 
@@ -34,7 +26,10 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
     defaultValues: atributoSchema.parse({})
   })
 
-  const { handleSubmit } = methods
+  const {
+    handleSubmit,
+    formState: { errors }
+  } = methods
 
   const onEdit: SubmitHandler<z.infer<typeof atributoSchema>> = async (data): Promise<void> => {
     const novoAtributo = { ...atributo }
@@ -57,18 +52,28 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
           <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="fit-content">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
-                <FormGroup
-                  name="valor"
-                  label="valor base:"
-                  placeholder={String(atributo.valor)}
-                  type="number"
-                />
-                <FormGroup
-                  name={'bonus'}
-                  label={'bônus:'}
-                  placeholder={String(atributo.bonus)}
-                  type={'number'}
-                />
+                <fieldset>
+                  <legend>Atributo</legend>
+                  <div className="d-flex">
+                    <FormGroup
+                      name="valor"
+                      label="valor:"
+                      placeholder={String(atributo.valor)}
+                      type="number"
+                    />
+                    <FormGroup
+                      name={'bonus'}
+                      label={'bônus:'}
+                      placeholder={String(atributo.bonus)}
+                      type={'number'}
+                    />
+                  </div>
+                  {Object.entries(errors).map(([field, error]) => (
+                    <p role="alert" key={field}>
+                      {error.message}!
+                    </p>
+                  ))}
+                </fieldset>
                 <input type="submit" value="Salvar" />
               </form>
             </FormProvider>

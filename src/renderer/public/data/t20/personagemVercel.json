@@ -7,9 +7,11 @@
   "nivel": 5,
   "experiencia": 500,
   "defesa": {
-    "armaduraEquipada": "Nenhuma",
-    "escudoEquipado": "Nenhum",
-    "penalidadeArmaduraTotal": 5,
+    "armadura": 0,
+    "escudo": 0,
+    "outros": 0,
+    "temporario": 0,
+    "penalidadeArmaduraTotal": 0,
     "atributo": "destreza"
   },
   "vida": {
@@ -23,7 +25,8 @@
     "valorAtual": 4,
     "valorTemporario": 10,
     "valorPorNivel": 3,
-    "valorBase": 3
+    "valorBase": 3,
+    "atributo": "nenhum"
   },
   "deslocamento": {
     "caminhada": 30,

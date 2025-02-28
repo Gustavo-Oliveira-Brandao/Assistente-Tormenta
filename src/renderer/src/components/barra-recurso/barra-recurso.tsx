@@ -23,15 +23,52 @@ const BarraRecurso = ({
   const [modal, abrirModal] = useState(false)
 
   useEffect(() => {
-    setLarguraBarra((recurso.valorAtual / recurso.valorMaximo) * 100)
+    if (recurso.valorAtual >= 0) {
+      setLarguraBarra((recurso.valorAtual / recurso.valorMaximo) * 100)
+    }
+    if (recurso.valorAtual < 0) {
+      setLarguraBarra(0)
+    }
   }, [recurso.valorAtual, recurso.valorMaximo])
+
+  const atributos = [
+    {
+      value: 'nenhum',
+      text: 'nenhum'
+    },
+    {
+      value: 'forca',
+      text: 'força'
+    },
+    {
+      value: 'destreza',
+      text: 'destreza'
+    },
+    {
+      value: 'constituicao',
+      text: 'constituição'
+    },
+    {
+      value: 'inteligencia',
+      text: 'inteligência'
+    },
+    {
+      value: 'sabedoria',
+      text: 'sabedoria'
+    },
+    {
+      value: 'carisma',
+      text: 'carisma'
+    }
+  ]
 
   const recursoSchema = z
     .object({
       valorAtual: z.coerce.number().default(recurso.valorAtual),
       valorTemporario: z.coerce.number().default(recurso.valorTemporario),
       valorPorNivel: z.coerce.number().default(recurso.valorPorNivel),
-      valorBase: z.coerce.number().default(recurso.valorBase)
+      valorBase: z.coerce.number().default(recurso.valorBase),
+      atributo: z.coerce.string().default(recurso.atributo)
     })
     .required()
 
@@ -44,6 +81,7 @@ const BarraRecurso = ({
     recursoAtualizado.valorTemporario = data.valorTemporario
     recursoAtualizado.valorBase = data.valorBase
     recursoAtualizado.valorPorNivel = data.valorPorNivel
+    recursoAtualizado.atributo = data.atributo
     if (categoria === 'vida') {
       atualizarVida.mutate(recursoAtualizado)
     }
@@ -75,30 +113,60 @@ const BarraRecurso = ({
           <Modal titulo={categoria} onClose={() => abrirModal(false)} height="fit-content">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
-                <FormGroup
-                  name="valorAtual"
-                  label={`${categoria} atual:`}
-                  placeholder={String(recurso.valorAtual)}
-                  type="number"
-                />
-                <FormGroup
-                  name="valorTemporario"
-                  label={`${categoria} temporaria:`}
-                  placeholder={String(recurso.valorTemporario)}
-                  type="number"
-                />
-                <FormGroup
-                  name="valorBase"
-                  label={`valor base:`}
-                  placeholder={String(recurso.valorBase)}
-                  type="number"
-                />
-                <FormGroup
-                  name="valorPorNivel"
-                  label="valor por nível:"
-                  placeholder={String(recurso.valorPorNivel)}
-                  type="number"
-                />
+                <fieldset>
+                  <legend>{categoria} atual</legend>
+                  <div className="d-flex">
+                    <FormGroup
+                      name="valorAtual"
+                      label={`atual:`}
+                      placeholder={String(recurso.valorAtual)}
+                      type="number"
+                    />
+                    <FormGroup
+                      name="valorTemporario"
+                      label={`temporaria:`}
+                      placeholder={String(recurso.valorTemporario)}
+                      type="number"
+                    />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>{categoria} maxima</legend>
+                  <div className="d-flex">
+                    <FormGroup
+                      name="valorBase"
+                      label={`base:`}
+                      placeholder={String(recurso.valorBase)}
+                      type="number"
+                    />
+                    <FormGroup
+                      name="valorPorNivel"
+                      label="p/ nível:"
+                      placeholder={String(recurso.valorPorNivel)}
+                      type="number"
+                    />
+                    {categoria === 'vida' && (
+                      <FormGroup
+                        name="atributo"
+                        label="atributo:"
+                        type="dropdown"
+                        options={atributos}
+                      />
+                    )}
+                  </div>
+                </fieldset>
+                {categoria === 'mana' && (
+                  <fieldset>
+                    <legend>Limite de PM:</legend>
+                    <FormGroup
+                      name="atributo"
+                      label="atributo:"
+                      placeholder={String(recurso.atributo)}
+                      type="dropdown"
+                      options={atributos}
+                    />
+                  </fieldset>
+                )}
                 <input type="submit" value="salvar" />
               </form>
             </FormProvider>

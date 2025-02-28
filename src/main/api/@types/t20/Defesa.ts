@@ -1,7 +1,9 @@
 export interface IDefesa {
   id: number
-  armaduraEquipada: string
-  escudoEquipado: string
+  armadura: number
+  escudo: number
+  outros: number
+  temporario: number
   atributo: string
   penalidadeArmaduraTotal: number
 }

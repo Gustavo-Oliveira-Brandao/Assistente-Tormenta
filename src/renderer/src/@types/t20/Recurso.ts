@@ -5,5 +5,6 @@ export interface Recurso {
   valorTemporario: number
   valorPorNivel: number
   valorBase: number
-  atributo?: string
+  atributo: string
+  limitePM?: number
 }

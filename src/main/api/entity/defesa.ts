@@ -8,15 +8,27 @@ export class Defesa implements IDefesa {
 
   @Column({
     nullable: false,
-    type: 'varchar'
+    type: 'integer'
   })
-  armaduraEquipada: string
+  armadura: number
 
   @Column({
     nullable: false,
-    type: 'varchar'
+    type: 'integer'
   })
-  escudoEquipado: string
+  escudo: number
+
+  @Column({
+    nullable: false,
+    type: 'integer'
+  })
+  outros: number
+
+  @Column({
+    nullable: false,
+    type: 'integer'
+  })
+  temporario: number
 
   @Column({
     nullable: false,

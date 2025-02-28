@@ -4,5 +4,5 @@ export interface IRecurso {
   valorBase: number
   valorPorNivel: number
   valorTemporario: number
-  atributo?: string
+  atributo: string
 }

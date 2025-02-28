@@ -2,10 +2,14 @@ import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 
 export const carregarPersonagem = async (personagem: PersonagemT20): Promise<PersonagemT20> => {
   let valorAtributoVida = 0
+  let valorAtributoMana = 0
   for (const atributo of personagem.atributos) {
     atributo.valorAtual = atributo.valor + atributo.bonus
     if (personagem.vida.atributo === atributo.nome) {
       valorAtributoVida = atributo.valorAtual
+    }
+    if (personagem.mana.atributo === atributo.nome) {
+      valorAtributoMana = atributo.valorAtual
     }
   }
 
@@ -31,7 +35,13 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
   }
 
   personagem.vida.valorMaximo =
-    valorAtributoVida + personagem.vida.valorBase + personagem.vida.valorPorNivel * personagem.nivel
-  personagem.mana.valorMaximo = personagem.mana.valorBase
+    personagem.vida.valorBase +
+    (personagem.vida.valorPorNivel + valorAtributoVida) * personagem.nivel
+
+  personagem.mana.valorMaximo =
+    personagem.mana.valorBase + personagem.mana.valorPorNivel * personagem.nivel
+
+  personagem.mana.limitePM = personagem.nivel + valorAtributoMana
+
   return personagem
 }

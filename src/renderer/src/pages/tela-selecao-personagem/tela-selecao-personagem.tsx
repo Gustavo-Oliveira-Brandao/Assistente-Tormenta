@@ -1,8 +1,9 @@
 import styles from './tela-selecao-personagem.module.scss'
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
+import { useCriarPersonagemMutation } from '@renderer/hooks/mutations/personagem/useCriarPersonagemMutation'
+import { useExibirTodosPersonagensQuery } from '@renderer/hooks/queries/personagem/useExibirTodosPersonagensQuery'
 import { useNavigate } from 'react-router-dom'
-import { useCriarPersonagemMutation } from '@renderer/hooks/usePersonagemMutations'
-import { useExibirTodosPersonagensQuery } from '@renderer/hooks/usePersonagemQueries'
+
 const TelaSelecaoPersonagem = ({
   setPersonagemSelecionado
 }: {

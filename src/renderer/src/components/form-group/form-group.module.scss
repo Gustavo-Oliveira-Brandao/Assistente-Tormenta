@@ -21,6 +21,12 @@ input[type='number'] {
   height: 2rem;
 }
 
+input[type='text'] {
+  background-color: variables.$secondary-color;
+  width: fit-content;
+  height: 2rem;
+}
+
 select {
   padding: 5px;
 }

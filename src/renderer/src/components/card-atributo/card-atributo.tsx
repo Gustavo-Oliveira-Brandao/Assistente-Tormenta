@@ -5,10 +5,10 @@ import { useState } from 'react'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
 import FormGroup from '../form-group/form-group'
-import { useAtualizarAtributoMutation } from '@renderer/hooks/useAtributoMutations'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useAtualizarAtributoMutation } from '@renderer/hooks/mutations/atributo/useAtualizarAtributoMutation'
 
 const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
   const [modal, abrirModal] = useState(false)
@@ -68,12 +68,12 @@ const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
                       type={'number'}
                     />
                   </div>
-                  {Object.entries(errors).map(([field, error]) => (
-                    <p role="alert" key={field}>
-                      {error.message}!
-                    </p>
-                  ))}
                 </fieldset>
+                {Object.entries(errors).map(([field, error]) => (
+                  <p role="alert" key={field}>
+                    {error.message}!
+                  </p>
+                ))}
                 <input type="submit" value="Salvar" />
               </form>
             </FormProvider>

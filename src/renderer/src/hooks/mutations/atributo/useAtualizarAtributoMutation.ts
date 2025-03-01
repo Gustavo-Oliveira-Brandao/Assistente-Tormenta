@@ -1,5 +1,5 @@
 import { Atributo } from '@renderer/@types/t20/Atributo'
-import { atualizarAtributo } from '@renderer/api/personagemApi'
+import { atualizarAtributo } from '@renderer/api/atributo/atualizarAtributo'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
 
 export const useAtualizarAtributoMutation = (): UseMutationResult<

@@ -7,10 +7,8 @@ import { z } from 'zod'
 import { Recurso } from '@renderer/@types/t20/Recurso'
 import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '../form-group/form-group'
-import {
-  useAtualizarManaMutation,
-  useAtualizarVidaMutation
-} from '@renderer/hooks/useRecursoMutations'
+import { useAtualizarVidaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarVidaMutation'
+import { useAtualizarManaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarManaMutation'
 
 const BarraRecurso = ({
   categoria,
@@ -95,7 +93,10 @@ const BarraRecurso = ({
     resolver: zodResolver(recursoSchema),
     defaultValues: recursoSchema.parse({})
   })
-  const { handleSubmit } = methods
+  const {
+    handleSubmit,
+    formState: { errors }
+  } = methods
 
   return (
     <>
@@ -167,6 +168,11 @@ const BarraRecurso = ({
                     />
                   </fieldset>
                 )}
+                {Object.entries(errors).map(([field, error]) => (
+                  <p role="alert" key={field}>
+                    {error.message}!
+                  </p>
+                ))}
                 <input type="submit" value="salvar" />
               </form>
             </FormProvider>

@@ -13,6 +13,7 @@ label {
 
 input {
   border-radius: 5px;
+  font-size: 13px;
 }
 
 input[type='number'] {
@@ -23,10 +24,11 @@ input[type='number'] {
 
 input[type='text'] {
   background-color: variables.$secondary-color;
-  width: fit-content;
+  width: 150px;
   height: 2rem;
 }
 
 select {
-  padding: 5px;
+  padding: 0 5px;
+  height: 2rem;
 }

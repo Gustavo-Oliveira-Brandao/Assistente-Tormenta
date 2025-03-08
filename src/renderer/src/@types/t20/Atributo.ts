@@ -3,6 +3,7 @@ export interface Atributo {
   nome: string
   valor: number
   valorAtual: number
+  racial: number
   descricao: string
   bonus: number
 }

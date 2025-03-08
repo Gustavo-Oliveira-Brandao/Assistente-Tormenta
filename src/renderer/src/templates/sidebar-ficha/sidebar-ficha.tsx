@@ -10,6 +10,11 @@ import Modal from '../modal/modal'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '@renderer/components/form-group/form-group'
+import { useAtualizarPersonagemMutation } from '@renderer/hooks/mutations/personagem/useAtualizarPersonagemMutation'
+import { detalhesSchema } from '@renderer/validators/schemas/detalhesSchema'
+import { opcoesRacas } from '@renderer/forms/select options/opcoesRacas'
+import { opcoesClasses } from '@renderer/forms/select options/opcoesClasses'
+import { opcoesDivindades } from '@renderer/forms/select options/opcoesDivindades'
 
 const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Element => {
   const teste = (): void => {
@@ -18,35 +23,33 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
 
   const [formulario, setFormulario] = useState<string | null>(null)
 
-  const detalhesSchema = z.object({
-    nome: z.coerce.string().nonempty('Nome não pode ficar vazio').default(personagem.nome),
-    raca: z.coerce.string().nonempty('Raça não pode ficar vazia').default(personagem.raca),
-    classe: z.coerce.string().nonempty('Classe não pode ficar vazia').default(personagem.classe),
-    origem: z.coerce.string().nonempty('Origem não pode ficar vazia').default(personagem.origem),
-    divindade: z.coerce
-      .string()
-      .nonempty('Divindade não pode ficar vazia')
-      .default(personagem.divindade),
-    nivel: z.coerce
-      .number()
-      .positive('Nivel não pode ser abaixo de 1')
-      .max(20, 'O nivel máximo é 20')
-      .default(personagem.nivel),
-    experiencia: z.coerce
-      .number()
-      .positive('Experiência não pode ser negativa')
-      .default(personagem.experiencia)
-  })
-
   const methodsDetalhes = useForm<z.infer<typeof detalhesSchema>>({
     resolver: zodResolver(detalhesSchema),
-    defaultValues: detalhesSchema.parse({})
+    defaultValues: {
+      nome: personagem.nome,
+      raca: personagem.raca,
+      classe: personagem.classe,
+      origem: personagem.origem,
+      divindade: personagem.divindade,
+      nivel: personagem.nivel,
+      experiencia: personagem.experiencia
+    }
   })
+
+  const atualizarDetalhesPersonagem = useAtualizarPersonagemMutation()
 
   const onEditDetalhes: SubmitHandler<z.infer<typeof detalhesSchema>> = async (
     data
   ): Promise<void> => {
-    console.log(data)
+    const personagemCopy = { ...personagem }
+    personagemCopy.nome = data.nome
+    personagemCopy.raca = data.raca
+    personagemCopy.classe = data.classe
+    personagemCopy.origem = data.origem
+    personagemCopy.divindade = data.divindade
+    personagemCopy.nivel = data.nivel
+    personagemCopy.experiencia = data.experiencia
+    atualizarDetalhesPersonagem.mutate(personagemCopy)
     setFormulario(null)
   }
 
@@ -88,29 +91,19 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
                       placeholder="Ragnar Montealto"
                       type="text"
                     />
-                    <FormGroup
-                      name="raca"
-                      label="raça:"
-                      placeholder={personagem.raca}
-                      type="text"
-                    />
+                    <FormGroup name="raca" label="raça:" type="dropdown" options={opcoesRacas} />
                     <FormGroup
                       name="classe"
                       label="classe:"
-                      placeholder={personagem.classe}
-                      type="text"
+                      type="dropdown"
+                      options={opcoesClasses}
                     />
-                    <FormGroup
-                      name="origem"
-                      label="origem:"
-                      placeholder={personagem.origem}
-                      type="text"
-                    />
+                    <FormGroup name="origem" label="origem:" placeholder="Taverneiro" type="text" />
                     <FormGroup
                       name="divindade"
                       label="divindade:"
-                      placeholder={personagem.divindade}
-                      type="text"
+                      type="dropdown"
+                      options={opcoesDivindades}
                     />
                   </div>
                 </fieldset>
@@ -125,7 +118,7 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
                     />
                     <FormGroup
                       name="experiencia"
-                      label="exp:"
+                      label="xp:"
                       placeholder={String(personagem.experiencia)}
                       type="number"
                     />

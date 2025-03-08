@@ -103,14 +103,8 @@ a {
 
 input {
   background: transparent;
-  width: 2rem;
-  height: 2rem;
   border: none;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  -webkit-appearance: none;
-  border-radius: 0;
+  padding: 0 10px;
 }
 
 textarea {
@@ -182,10 +176,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
 select {
   background-color: variables.$secondary-color;
   height: 30px;
@@ -235,7 +225,6 @@ form {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
-      justify-content: center;
       align-items: center;
     }
   }

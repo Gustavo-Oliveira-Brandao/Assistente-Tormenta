@@ -37,12 +37,24 @@ export const postPersonagem = async (_personagem: Partial<IPersonagem>): Promise
 export const putPersonagem = async (_personagem: IPersonagem): Promise<IPersonagem> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
   return await personagemRepository
-    .update(_personagem.id, _personagem)
-    .then((personagem) => {
-      return personagem
+    .findOneBy({
+      id: _personagem.id
     })
-    .catch((error) => {
-      return error
+    .then(async (personagem) => {
+      if (personagem) {
+        personagem.nome = _personagem.nome
+        personagem.raca = _personagem.raca
+        personagem.classe = _personagem.classe
+        personagem.origem = _personagem.origem
+        personagem.divindade = _personagem.divindade
+        personagem.nivel = _personagem.nivel
+        personagem.experiencia = _personagem.experiencia
+        return await personagemRepository.save(personagem)
+      }
+      return 'Personagem não encontrado'
+    })
+    .catch((err) => {
+      return err
     })
 }
 

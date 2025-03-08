@@ -1,38 +1,38 @@
 import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
+import { exibirRacas } from '@renderer/api/raca/exibirRacas'
 
 export const carregarPersonagem = async (personagem: PersonagemT20): Promise<PersonagemT20> => {
-  let valorAtributoVida = 0
-  let valorAtributoMana = 0
-  for (const atributo of personagem.atributos) {
-    atributo.valorAtual = atributo.valor + atributo.bonus
-    if (personagem.vida.atributo === atributo.nome) {
-      valorAtributoVida = atributo.valorAtual
-    }
-    if (personagem.mana.atributo === atributo.nome) {
-      valorAtributoMana = atributo.valorAtual
-    }
+  const racas = await exibirRacas()
+  const racaAtual = racas.find((raca) => raca.nome === personagem.raca.toLowerCase())
+
+  if (racaAtual) {
+    personagem.atributos.forEach((atributo) => {
+      const boost = racaAtual.atributos.find(
+        (atributoRaca) => atributoRaca.atributo === atributo.nome
+      )
+      atributo.racial = boost ? boost.valor : 0
+      atributo.valorAtual = atributo.valor + atributo.bonus + atributo.racial
+    })
   }
 
+  const valorAtributoVida =
+    personagem.atributos.find((atributo) => atributo.nome === personagem.vida.atributo || 0)
+      ?.valorAtual || 0
+  const valorAtributoMana =
+    personagem.atributos.find((atributo) => atributo.nome === personagem.mana.atributo || 0)
+      ?.valorAtual || 0
+
   personagem.defesa.valorAtual = 10
-  for (const pericia of personagem.pericias) {
-    let valorTreinamento = 0
+
+  personagem.pericias.forEach((pericia) => {
     if (pericia.ehTreinado) {
-      if (personagem.nivel >= 1 && personagem.nivel <= 6) {
-        valorTreinamento = 2
-      }
-      if (personagem.nivel > 6 && personagem.nivel <= 14) {
-        valorTreinamento = 4
-      }
-      if (personagem.nivel > 14 && personagem.nivel <= 20) {
-        valorTreinamento = 6
-      }
-    }
-    for (const atributo of personagem.atributos) {
-      if (pericia.atributo === atributo.nome) {
+      const valorTreinamento = personagem.nivel <= 6 ? 2 : personagem.nivel <= 14 ? 4 : 6
+      const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
+      if (atributo) {
         pericia.valor = Math.floor(atributo.valorAtual + valorTreinamento + personagem.nivel / 2)
       }
     }
-  }
+  })
 
   personagem.vida.valorMaximo =
     personagem.vida.valorBase +

@@ -15,7 +15,6 @@ import { Dano } from './entity/dano'
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
   database: './src/main/userData/db.sqlite',
-  logging: true,
   entities: [
     Personagem,
     Deslocamento,

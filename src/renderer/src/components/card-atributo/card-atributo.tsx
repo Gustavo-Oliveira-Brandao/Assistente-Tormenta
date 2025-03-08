@@ -9,21 +9,18 @@ import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarAtributoMutation } from '@renderer/hooks/mutations/atributo/useAtualizarAtributoMutation'
+import { atributoSchema } from '@renderer/validators/schemas/atributoSchema'
 
 const CardAtributo = ({ atributo }: { atributo: Atributo }): JSX.Element => {
   const [modal, abrirModal] = useState(false)
   const atualizarAtributo = useAtualizarAtributoMutation()
 
-  const atributoSchema = z
-    .object({
-      valor: z.coerce.number().default(atributo.valor),
-      bonus: z.coerce.number().default(atributo.bonus)
-    })
-    .required()
-
   const methods = useForm<z.infer<typeof atributoSchema>>({
     resolver: zodResolver(atributoSchema),
-    defaultValues: atributoSchema.parse({})
+    defaultValues: {
+      valor: atributo.valor,
+      bonus: atributo.bonus
+    }
   })
 
   const {

@@ -9,6 +9,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '../form-group/form-group'
 import { useAtualizarVidaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarVidaMutation'
 import { useAtualizarManaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarManaMutation'
+import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 
 const BarraRecurso = ({
   categoria,
@@ -60,16 +61,6 @@ const BarraRecurso = ({
     }
   ]
 
-  const recursoSchema = z
-    .object({
-      valorAtual: z.coerce.number().default(recurso.valorAtual),
-      valorTemporario: z.coerce.number().default(recurso.valorTemporario),
-      valorPorNivel: z.coerce.number().default(recurso.valorPorNivel),
-      valorBase: z.coerce.number().default(recurso.valorBase),
-      atributo: z.coerce.string().default(recurso.atributo)
-    })
-    .required()
-
   const atualizarVida = useAtualizarVidaMutation()
   const atualizarMana = useAtualizarManaMutation()
 
@@ -91,7 +82,13 @@ const BarraRecurso = ({
 
   const methods = useForm<z.infer<typeof recursoSchema>>({
     resolver: zodResolver(recursoSchema),
-    defaultValues: recursoSchema.parse({})
+    defaultValues: {
+      valorAtual: recurso.valorAtual,
+      valorTemporario: recurso.valorTemporario,
+      valorPorNivel: recurso.valorPorNivel,
+      valorBase: recurso.valorBase,
+      atributo: recurso.atributo
+    }
   })
   const {
     handleSubmit,
@@ -109,6 +106,7 @@ const BarraRecurso = ({
           <p>{recurso.valorAtual + '/' + recurso.valorMaximo}</p>
         </div>
       </div>
+
       {modal &&
         createPortal(
           <Modal titulo={categoria} onClose={() => abrirModal(false)} height="fit-content">
@@ -125,7 +123,7 @@ const BarraRecurso = ({
                     />
                     <FormGroup
                       name="valorTemporario"
-                      label={`temporaria:`}
+                      label={`temp:`}
                       placeholder={String(recurso.valorTemporario)}
                       type="number"
                     />
@@ -142,7 +140,7 @@ const BarraRecurso = ({
                     />
                     <FormGroup
                       name="valorPorNivel"
-                      label="p/ nível:"
+                      label="p/nível:"
                       placeholder={String(recurso.valorPorNivel)}
                       type="number"
                     />

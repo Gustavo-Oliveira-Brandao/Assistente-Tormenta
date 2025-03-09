@@ -10,6 +10,7 @@ import FormGroup from '../form-group/form-group'
 import { useAtualizarVidaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarVidaMutation'
 import { useAtualizarManaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarManaMutation'
 import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
+import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
 
 const BarraRecurso = ({
   categoria,
@@ -29,37 +30,6 @@ const BarraRecurso = ({
       setLarguraBarra(0)
     }
   }, [recurso.valorAtual, recurso.valorMaximo])
-
-  const atributos = [
-    {
-      value: 'nenhum',
-      text: 'nenhum'
-    },
-    {
-      value: 'forca',
-      text: 'força'
-    },
-    {
-      value: 'destreza',
-      text: 'destreza'
-    },
-    {
-      value: 'constituicao',
-      text: 'constituição'
-    },
-    {
-      value: 'inteligencia',
-      text: 'inteligência'
-    },
-    {
-      value: 'sabedoria',
-      text: 'sabedoria'
-    },
-    {
-      value: 'carisma',
-      text: 'carisma'
-    }
-  ]
 
   const atualizarVida = useAtualizarVidaMutation()
   const atualizarMana = useAtualizarManaMutation()
@@ -149,7 +119,7 @@ const BarraRecurso = ({
                         name="atributo"
                         label="atributo:"
                         type="dropdown"
-                        options={atributos}
+                        options={opcoesAtributos}
                       />
                     )}
                   </div>
@@ -162,7 +132,7 @@ const BarraRecurso = ({
                       label="atributo:"
                       placeholder={String(recurso.atributo)}
                       type="dropdown"
-                      options={atributos}
+                      options={opcoesAtributos}
                     />
                   </fieldset>
                 )}

@@ -15,12 +15,13 @@ import { detalhesSchema } from '@renderer/validators/schemas/detalhesSchema'
 import { opcoesRacas } from '@renderer/forms/select options/opcoesRacas'
 import { opcoesClasses } from '@renderer/forms/select options/opcoesClasses'
 import { opcoesDivindades } from '@renderer/forms/select options/opcoesDivindades'
+import { defesaSchema } from '@renderer/validators/schemas/defesaSchema'
+import { useAtualizarDefesaMutation } from '@renderer/hooks/mutations/defesa/useAtualizarDefesaMutation'
+import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
+import { deslocamentoSchema } from '@renderer/validators/schemas/deslocamentoSchema'
+import { useAtualizarDeslocamentoMutation } from '@renderer/hooks/mutations/deslocamento/useAtualizarDeslocamentoMutation'
 
 const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Element => {
-  const teste = (): void => {
-    console.log('teste')
-  }
-
   const [formulario, setFormulario] = useState<string | null>(null)
 
   const methodsDetalhes = useForm<z.infer<typeof detalhesSchema>>({
@@ -36,7 +37,32 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
     }
   })
 
+  const methodsDefesa = useForm<z.infer<typeof defesaSchema>>({
+    resolver: zodResolver(defesaSchema),
+    defaultValues: {
+      armadura: personagem.defesa.armadura,
+      escudo: personagem.defesa.escudo,
+      outros: personagem.defesa.outros,
+      temporario: personagem.defesa.temporario,
+      atributo: personagem.defesa.atributo,
+      penalidadeArmaduraTotal: personagem.defesa.penalidadeArmaduraTotal
+    }
+  })
+
+  const methodsDeslocamento = useForm<z.infer<typeof deslocamentoSchema>>({
+    resolver: zodResolver(deslocamentoSchema),
+    defaultValues: {
+      caminhada: personagem.deslocamento.caminhada,
+      escalada: personagem.deslocamento.escalada,
+      natacao: personagem.deslocamento.natacao,
+      voo: personagem.deslocamento.voo,
+      escavacao: personagem.deslocamento.escavacao
+    }
+  })
+
   const atualizarDetalhesPersonagem = useAtualizarPersonagemMutation()
+  const atualizarDefesa = useAtualizarDefesaMutation()
+  const atualizarDeslocamento = useAtualizarDeslocamentoMutation()
 
   const onEditDetalhes: SubmitHandler<z.infer<typeof detalhesSchema>> = async (
     data
@@ -50,6 +76,31 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
     personagemCopy.nivel = data.nivel
     personagemCopy.experiencia = data.experiencia
     atualizarDetalhesPersonagem.mutate(personagemCopy)
+    setFormulario(null)
+  }
+
+  const onEditDefesa: SubmitHandler<z.infer<typeof defesaSchema>> = async (data): Promise<void> => {
+    const defesaCopy = { ...personagem.defesa }
+    defesaCopy.armadura = data.armadura
+    defesaCopy.escudo = data.escudo
+    defesaCopy.outros = data.outros
+    defesaCopy.temporario = data.temporario
+    defesaCopy.atributo = data.atributo
+    defesaCopy.penalidadeArmaduraTotal = data.penalidadeArmaduraTotal
+    atualizarDefesa.mutate(defesaCopy)
+    setFormulario(null)
+  }
+
+  const onEditDeslocamento: SubmitHandler<z.infer<typeof deslocamentoSchema>> = async (
+    data
+  ): Promise<void> => {
+    const deslocamentoCopy = { ...personagem.deslocamento }
+    deslocamentoCopy.caminhada = data.caminhada
+    deslocamentoCopy.escalada = data.escalada
+    deslocamentoCopy.escavacao = data.escavacao
+    deslocamentoCopy.natacao = data.natacao
+    deslocamentoCopy.voo = data.voo
+    atualizarDeslocamento.mutate(deslocamentoCopy)
     setFormulario(null)
   }
 
@@ -75,6 +126,55 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
             <img src={'./icons/default/divindade.svg'} alt="Raça" />
             <p>{personagem.divindade}</p>
           </div>
+        </div>
+      </div>
+
+      <div className={styles.nome}>
+        <p>{personagem.nome}</p>
+      </div>
+      <div className={styles.barrasRecurso}>
+        <BarraRecurso categoria="vida" recurso={personagem.vida} />
+        <BarraRecurso categoria="mana" recurso={personagem.mana} />
+      </div>
+
+      <div className={styles.infoSecundaria}>
+        <div className={styles.titulo}>
+          <h2>Defesa</h2>
+        </div>
+        <div className={styles.recurso}>
+          <img src="./icons/default/ca.svg" alt="Defesa" />
+          <BotaoModular
+            onClickEvent={() => setFormulario('defesa')}
+            texto={personagem.defesa.valorAtual}
+            css="recursoSecundario"
+          />
+        </div>
+      </div>
+
+      <div className={styles.infoSecundaria}>
+        <div className={styles.titulo}>
+          <h2>Deslocamento</h2>
+        </div>
+        <div className={styles.recurso}>
+          <img src={'./icons/default/deslocamento.svg'} alt="Deslocamento" />
+          <BotaoModular
+            onClickEvent={() => setFormulario('deslocamento')}
+            texto={personagem.deslocamento.caminhada}
+            css="recursoSecundario"
+          />
+        </div>
+      </div>
+
+      <div className={styles.infoSecundaria}>
+        <div className={styles.titulo}>
+          <h2>Iniciativa</h2>
+        </div>
+        <div className={styles.pericias}>
+          {personagem.pericias.map((pericia) =>
+            pericia.nome == 'iniciativa' ? (
+              <CardPericia key={pericia.id} pericia={pericia} css="sidebar" />
+            ) : null
+          )}
         </div>
       </div>
       {formulario === 'detalhes' &&
@@ -135,54 +235,64 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
           </Modal>,
           document.body
         )}
-      <div className={styles.nome}>
-        <p>{personagem.nome}</p>
-      </div>
-      <div className={styles.barrasRecurso}>
-        <BarraRecurso categoria="vida" recurso={personagem.vida} />
-        <BarraRecurso categoria="mana" recurso={personagem.mana} />
-      </div>
-
-      <div className={styles.infoSecundaria}>
-        <div className={styles.titulo}>
-          <h2>Defesa</h2>
-        </div>
-        <div className={styles.recurso}>
-          <img src="./icons/default/ca.svg" alt="Defesa" />
-          <BotaoModular
-            onClickEvent={teste}
-            texto={personagem.defesa.valorAtual}
-            css="recursoSecundario"
-          />
-        </div>
-      </div>
-
-      <div className={styles.infoSecundaria}>
-        <div className={styles.titulo}>
-          <h2>Deslocamento</h2>
-        </div>
-        <div className={styles.recurso}>
-          <img src={'./icons/default/deslocamento.svg'} alt="Deslocamento" />
-          <BotaoModular
-            onClickEvent={teste}
-            texto={personagem.deslocamento.caminhada}
-            css="recursoSecundario"
-          />
-        </div>
-      </div>
-
-      <div className={styles.infoSecundaria}>
-        <div className={styles.titulo}>
-          <h2>Iniciativa</h2>
-        </div>
-        <div className={styles.pericias}>
-          {personagem.pericias.map((pericia) =>
-            pericia.nome == 'iniciativa' ? (
-              <CardPericia key={pericia.id} pericia={pericia} css="sidebar" />
-            ) : null
-          )}
-        </div>
-      </div>
+      {formulario === 'defesa' &&
+        createPortal(
+          <Modal titulo="Defesa" onClose={() => setFormulario(null)} height="fit-content">
+            <FormProvider {...methodsDefesa}>
+              <form onSubmit={methodsDefesa.handleSubmit(onEditDefesa)}>
+                <fieldset>
+                  <legend>Valores de defesa</legend>
+                  <div className="d-flex">
+                    <FormGroup name="armadura" label="armadura:" placeholder="0" type="number" />
+                    <FormGroup name="escudo" label="escudo:" placeholder="0" type="number" />
+                    <FormGroup name="outros" label="outros:" placeholder="0" type="number" />
+                    <FormGroup name="temporario" label="temp:" placeholder="0" type="number" />
+                    <FormGroup
+                      name="atributo"
+                      label="atributo:"
+                      type="dropdown"
+                      options={opcoesAtributos}
+                    />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Penalidade de armadura</legend>
+                  <div className="d-flex">
+                    <FormGroup
+                      name="penalidadeArmaduraTotal"
+                      label="Valor:"
+                      placeholder="0"
+                      type="number"
+                    />
+                  </div>
+                </fieldset>
+                <input type="submit" value="Salvar" />
+              </form>
+            </FormProvider>
+          </Modal>,
+          document.body
+        )}
+      {formulario === 'deslocamento' &&
+        createPortal(
+          <Modal titulo="Deslocamento" onClose={() => setFormulario(null)} height="fit-content">
+            <FormProvider {...methodsDeslocamento}>
+              <form onSubmit={methodsDeslocamento.handleSubmit(onEditDeslocamento)}>
+                <fieldset>
+                  <legend>Valores de deslocamento</legend>
+                  <div className="d-flex">
+                    <FormGroup name="caminhada" label="caminhada:" placeholder="9" type="number" />
+                    <FormGroup name="voo" label="vôo:" placeholder="0" type="number" />
+                    <FormGroup name="natacao" label="natação:" placeholder="0" type="number" />
+                    <FormGroup name="escalada" label="escalada:" placeholder="0" type="number" />
+                    <FormGroup name="escavacao" label="escavação:" placeholder="0" type="number" />
+                  </div>
+                </fieldset>
+                <input type="submit" value="Salvar" />
+              </form>
+            </FormProvider>
+          </Modal>,
+          document.body
+        )}
     </aside>
   )
 }

@@ -1,9 +1,13 @@
 import { IAtributo } from '../@types/t20/Atributo'
+import { IDefesa } from '../@types/t20/Defesa'
+import { IDeslocamento } from '../@types/t20/Deslocamento'
 import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
 import { IRecurso } from '../@types/t20/Recurso'
 import { SQLiteDataSource } from '../data-source'
 import { Atributo } from '../entity/atributo'
+import { Defesa } from '../entity/defesa'
+import { Deslocamento } from '../entity/deslocamento'
 import { Mana } from '../entity/mana'
 import { Personagem } from '../entity/personagem'
 import { Poder } from '../entity/poder'
@@ -118,6 +122,32 @@ export const putMana = async (_mana: IRecurso): Promise<IRecurso> => {
     .update(mana.id, mana)
     .then((mana) => {
       return mana
+    })
+    .catch((err) => {
+      return err
+    })
+}
+
+export const putDefesa = async (_defesa: IDefesa): Promise<IDefesa> => {
+  const defesaRepository = SQLiteDataSource.getRepository(Defesa)
+  const defesa = defesaRepository.create(_defesa)
+  return await defesaRepository
+    .update(defesa.id, defesa)
+    .then((defesa) => {
+      return defesa
+    })
+    .catch((err) => {
+      return err
+    })
+}
+
+export const putDeslocamento = async (_deslocamento: IDeslocamento): Promise<IDeslocamento> => {
+  const deslocamentoRepository = SQLiteDataSource.getRepository(Deslocamento)
+  const deslocamento = deslocamentoRepository.create(_deslocamento)
+  return await deslocamentoRepository
+    .update(deslocamento.id, deslocamento)
+    .then((deslocamento) => {
+      return deslocamento
     })
     .catch((err) => {
       return err

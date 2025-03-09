@@ -28,7 +28,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
     <main>
       {personagem && (
         <>
-          <div className={styles.ficha}>
+          <section className={styles.ficha}>
             <SidebarFicha personagem={personagem} />
             <div className={styles.conteudo}>
               <nav className={styles.navButtons}>
@@ -126,7 +126,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                 </>
               )}
             </div>
-          </div>
+          </section>
         </>
       )}
     </main>

@@ -7,6 +7,8 @@ import {
   postPersonagem,
   postPoder,
   putAtributo,
+  putDefesa,
+  putDeslocamento,
   putMana,
   putPersonagem,
   putVida
@@ -15,6 +17,8 @@ import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
 import { IAtributo } from '../@types/t20/Atributo'
 import { IRecurso } from '../@types/t20/Recurso'
+import { IDefesa } from '../@types/t20/Defesa'
+import { IDeslocamento } from '../@types/t20/Deslocamento'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
   event.defaultPrevented
@@ -68,3 +72,16 @@ ipcMain.handle('put-mana', async (event: IpcMainInvokeEvent, mana: IRecurso) => 
   event.defaultPrevented
   await putMana(mana)
 })
+
+ipcMain.handle('put-defesa', async (event: IpcMainInvokeEvent, defesa: IDefesa) => {
+  event.defaultPrevented
+  await putDefesa(defesa)
+})
+
+ipcMain.handle(
+  'put-deslocamento',
+  async (event: IpcMainInvokeEvent, deslocamento: IDeslocamento) => {
+    event.defaultPrevented
+    await putDeslocamento(deslocamento)
+  }
+)

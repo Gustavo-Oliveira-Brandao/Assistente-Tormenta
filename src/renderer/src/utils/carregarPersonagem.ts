@@ -22,7 +22,17 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
     personagem.atributos.find((atributo) => atributo.nome === personagem.mana.atributo || 0)
       ?.valorAtual || 0
 
-  personagem.defesa.valorAtual = 10
+  const valorAtributoDefesa =
+    personagem.atributos.find((atributo) => atributo.nome === personagem.defesa.atributo)
+      ?.valorAtual || 0
+
+  personagem.defesa.valorAtual =
+    10 +
+    personagem.defesa.armadura +
+    personagem.defesa.escudo +
+    personagem.defesa.outros +
+    personagem.defesa.temporario +
+    valorAtributoDefesa
 
   personagem.pericias.forEach((pericia) => {
     let valorTreinamento = 0
@@ -32,6 +42,9 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
     if (atributo) {
       pericia.valor = Math.floor(atributo.valorAtual + valorTreinamento + personagem.nivel / 2)
+      if (pericia.sofrePenalidadeArmadura) {
+        pericia.valor -= personagem.defesa.penalidadeArmaduraTotal
+      }
     }
   })
 

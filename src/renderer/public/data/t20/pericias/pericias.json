@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "acrobacia",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "destreza",
     "requerTreinamento": false,
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "nome": "adestramento",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "carisma",
     "requerTreinamento": true,
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "nome": "atletismo",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "forca",
     "requerTreinamento": false,
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "nome": "atuacao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "carisma",
     "requerTreinamento": false,
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "nome": "cavalgar",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "destreza",
     "requerTreinamento": false,
@@ -52,7 +52,7 @@
   {
     "id": 7,
     "nome": "cura",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "sabedoria",
     "requerTreinamento": false,
@@ -62,7 +62,7 @@
   {
     "id": 8,
     "nome": "diplomacia",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "carisma",
     "requerTreinamento": false,
@@ -72,7 +72,7 @@
   {
     "id": 9,
     "nome": "enganacao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "carisma",
     "requerTreinamento": false,
@@ -82,7 +82,7 @@
   {
     "id": 10,
     "nome": "fortitude",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "testeResistencia",
     "atributo": "constituicao",
     "requerTreinamento": false,
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "nome": "furtividade",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "destreza",
     "requerTreinamento": false,
@@ -102,7 +102,7 @@
   {
     "id": 12,
     "nome": "guerra",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "inteligencia",
     "requerTreinamento": true,
@@ -112,7 +112,7 @@
   {
     "id": 13,
     "nome": "iniciativa",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "destreza",
     "requerTreinamento": false,
@@ -122,7 +122,7 @@
   {
     "id": 14,
     "nome": "intimidacao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "carisma",
     "requerTreinamento": false,
@@ -132,7 +132,7 @@
   {
     "id": 15,
     "nome": "intuicao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "sabedoria",
     "requerTreinamento": false,
@@ -142,7 +142,7 @@
   {
     "id": 16,
     "nome": "investigacao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "inteligencia",
     "requerTreinamento": false,
@@ -152,7 +152,7 @@
   {
     "id": 17,
     "nome": "jogatina",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "carisma",
     "requerTreinamento": true,
@@ -162,7 +162,7 @@
   {
     "id": 18,
     "nome": "ladinagem",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "destreza",
     "requerTreinamento": true,
@@ -172,7 +172,7 @@
   {
     "id": 19,
     "nome": "luta",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "combate",
     "atributo": "forca",
     "requerTreinamento": false,
@@ -182,7 +182,7 @@
   {
     "id": 20,
     "nome": "misticimsmo",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "inteligencia",
     "requerTreinamento": true,
@@ -192,7 +192,7 @@
   {
     "id": 21,
     "nome": "nobreza",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "inteligencia",
     "requerTreinamento": true,
@@ -202,7 +202,7 @@
   {
     "id": 23,
     "nome": "percepcao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "sabedoria",
     "requerTreinamento": false,
@@ -212,7 +212,7 @@
   {
     "id": 24,
     "nome": "pilotagem",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "destreza",
     "requerTreinamento": true,
@@ -222,7 +222,7 @@
   {
     "id": 25,
     "nome": "pontaria",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "combate",
     "atributo": "destreza",
     "requerTreinamento": false,
@@ -232,7 +232,7 @@
   {
     "id": 26,
     "nome": "reflexos",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "testeResistencia",
     "atributo": "destreza",
     "requerTreinamento": false,
@@ -242,7 +242,7 @@
   {
     "id": 27,
     "nome": "religiao",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "sabedoria",
     "requerTreinamento": true,
@@ -252,7 +252,7 @@
   {
     "id": 28,
     "nome": "sobrevivencia",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "geral",
     "atributo": "sabedoria",
     "requerTreinamento": false,
@@ -262,7 +262,7 @@
   {
     "id": 29,
     "nome": "vontade",
-    "ehTreinado": false,
+    "treinamento": "destreinado",
     "categoria": "testeResistencia",
     "atributo": "sabedoria",
     "requerTreinamento": false,

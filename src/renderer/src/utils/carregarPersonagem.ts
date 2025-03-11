@@ -36,7 +36,7 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
 
   personagem.pericias.forEach((pericia) => {
     let valorTreinamento = 0
-    if (pericia.ehTreinado) {
+    if (pericia.treinamento === 'treinado') {
       valorTreinamento = personagem.nivel <= 6 ? 2 : personagem.nivel <= 14 ? 4 : 6
     }
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)

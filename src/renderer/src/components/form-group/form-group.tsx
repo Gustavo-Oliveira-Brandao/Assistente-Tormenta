@@ -28,6 +28,7 @@ const FormGroup = ({
       {type === 'text' && (
         <input id={name} type={type} {...register(name)} placeholder={placeholder} />
       )}
+      {type === 'checkbox' && <input id={name} type={type} {...register(name)} />}
       {type === 'dropdown' && (
         <select id={name} {...register(name)}>
           {options &&

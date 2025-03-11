@@ -129,8 +129,13 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
         </div>
       </div>
 
-      <div className={styles.nome}>
-        <p>{personagem.nome}</p>
+      <div className={styles.personagemInfo}>
+        <div className={styles.nome}>
+          <p>{personagem.nome}</p>
+        </div>
+        <div className={styles.nivel}>
+          <p>{personagem.nivel}</p>
+        </div>
       </div>
       <div className={styles.barrasRecurso}>
         <BarraRecurso categoria="vida" recurso={personagem.vida} />

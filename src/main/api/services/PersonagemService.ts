@@ -1,6 +1,7 @@
 import { IAtributo } from '../@types/t20/Atributo'
 import { IDefesa } from '../@types/t20/Defesa'
 import { IDeslocamento } from '../@types/t20/Deslocamento'
+import { IPericia } from '../@types/t20/Pericia'
 import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
 import { IRecurso } from '../@types/t20/Recurso'
@@ -9,6 +10,7 @@ import { Atributo } from '../entity/atributo'
 import { Defesa } from '../entity/defesa'
 import { Deslocamento } from '../entity/deslocamento'
 import { Mana } from '../entity/mana'
+import { Pericia } from '../entity/pericia'
 import { Personagem } from '../entity/personagem'
 import { Poder } from '../entity/poder'
 import { Vida } from '../entity/vida'
@@ -148,6 +150,19 @@ export const putDeslocamento = async (_deslocamento: IDeslocamento): Promise<IDe
     .update(deslocamento.id, deslocamento)
     .then((deslocamento) => {
       return deslocamento
+    })
+    .catch((err) => {
+      return err
+    })
+}
+
+export const putPericia = async (_pericia: IPericia): Promise<IPericia> => {
+  const periciaRepository = SQLiteDataSource.getRepository(Pericia)
+  const pericia = periciaRepository.create(_pericia)
+  return await periciaRepository
+    .update(pericia.id, pericia)
+    .then((pericia) => {
+      return pericia
     })
     .catch((err) => {
       return err

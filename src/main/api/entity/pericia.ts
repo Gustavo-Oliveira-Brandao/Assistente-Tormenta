@@ -16,10 +16,10 @@ export class Pericia implements IPericia {
   nome: string
 
   @Column({
-    type: 'boolean',
+    type: 'varchar',
     nullable: false
   })
-  ehTreinado: boolean
+  treinamento: string
 
   @Column({
     type: 'varchar',

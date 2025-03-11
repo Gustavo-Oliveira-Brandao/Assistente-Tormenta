@@ -10,6 +10,7 @@ import {
   putDefesa,
   putDeslocamento,
   putMana,
+  putPericia,
   putPersonagem,
   putVida
 } from '../services/PersonagemService'
@@ -19,6 +20,7 @@ import { IAtributo } from '../@types/t20/Atributo'
 import { IRecurso } from '../@types/t20/Recurso'
 import { IDefesa } from '../@types/t20/Defesa'
 import { IDeslocamento } from '../@types/t20/Deslocamento'
+import { IPericia } from '../@types/t20/Pericia'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
   event.defaultPrevented
@@ -85,3 +87,8 @@ ipcMain.handle(
     await putDeslocamento(deslocamento)
   }
 )
+
+ipcMain.handle('put-pericia', async (event: IpcMainInvokeEvent, pericia: IPericia) => {
+  event.defaultPrevented
+  await putPericia(pericia)
+})

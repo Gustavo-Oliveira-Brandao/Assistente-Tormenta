@@ -3,7 +3,7 @@ import { Defesa } from './Defesa'
 import { Deslocamento } from './Deslocamento'
 import { Efeito } from './Efeito'
 import { ItemInventario } from './ItemInventario'
-import { Magia } from './Magia'
+import { IMagia } from './Magia'
 import { Pericia } from './Pericia'
 import { Poder } from './Poder'
 import { Recurso } from './Recurso'
@@ -25,6 +25,6 @@ export interface PersonagemT20 {
   pericias: Pericia[]
   poderes: Poder[]
   itens: ItemInventario[]
-  magias: Magia[]
+  magias: IMagia[]
   efeitos: Efeito[]
 }

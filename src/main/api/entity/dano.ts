@@ -1,6 +1,7 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { IDano } from '../@types/t20/Dano'
 import { ItemT20 } from './item'
+import { Magia } from './magia'
 
 @Entity()
 export class Dano implements IDano {
@@ -44,4 +45,10 @@ export class Dano implements IDano {
     orphanedRowAction: 'delete'
   })
   item: ItemT20
+
+  @ManyToOne(() => Magia, (magia) => magia.danos, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  magia: Magia
 }

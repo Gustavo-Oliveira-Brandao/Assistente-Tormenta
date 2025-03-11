@@ -1,4 +1,4 @@
-import { Dano } from './Dano'
+import { IDano } from './Dano'
 import { PropriedadeItem } from './PropriedadeItem'
 
 export interface ItemInventario {
@@ -15,7 +15,7 @@ export interface ItemInventario {
   bonusAcerto?: number
   margemCritico?: number
   multiplicadorCritico?: number
-  danos?: Dano[]
+  danos?: IDano[]
   penalidadeArmadura?: number
   propriedades?: PropriedadeItem[]
 }

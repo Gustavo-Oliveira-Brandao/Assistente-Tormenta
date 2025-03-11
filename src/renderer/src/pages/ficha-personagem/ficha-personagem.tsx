@@ -12,6 +12,7 @@ import { useExibirPersonagemPorIdQuery } from '@renderer/hooks/queries/personage
 import { useExibirLojaPoderesQuery } from '@renderer/hooks/queries/poder/useExibirLojaPoderesQuery'
 import { useAdicionarPoderMutation } from '@renderer/hooks/mutations/poder/useAdicionarPoderMutation'
 import { useRemoverPoderMutation } from '@renderer/hooks/mutations/poder/useRemoverPoderMutation'
+import CardMagia from '@renderer/components/card-magia/card-magia'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
@@ -123,6 +124,32 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                       </Modal>,
                       document.body
                     )}
+                </>
+              )}
+              {aba == 'magias' && (
+                <>
+                  <SecaoFicha
+                    header={
+                      <>
+                        <h2>Magias</h2>
+                        <BotaoModular
+                          css="botaoAdicionar"
+                          texto="adicionar magias"
+                          onClickEvent={() => setLoja('adicionar.magia')}
+                          icone="./icons/spell-book.svg"
+                        />
+                      </>
+                    }
+                    css="poderes"
+                  >
+                    {personagem.magias.map((magia) => (
+                      <CardMagia
+                        key={magia.id}
+                        magia={magia}
+                        iconeBotaoInteracao="./icons/delete.svg"
+                      />
+                    ))}
+                  </SecaoFicha>
                 </>
               )}
             </div>

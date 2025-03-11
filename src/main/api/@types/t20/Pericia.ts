@@ -1,7 +1,7 @@
 export interface IPericia {
   id: number
   nome: string
-  ehTreinado: boolean
+  treinamento: string
   categoria: string
   atributo: string
   requerTreinamento: boolean

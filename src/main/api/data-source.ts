@@ -11,6 +11,8 @@ import { Vida } from './entity/vida'
 import { Defesa } from './entity/defesa'
 import { ItemT20 } from './entity/item'
 import { Dano } from './entity/dano'
+import { Magia } from './entity/magia'
+import { AprimoramentoMagia } from './entity/aprimoramentoMagia'
 
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
@@ -27,7 +29,9 @@ export const SQLiteDataSource = new DataSource({
     Topico,
     Tag,
     ItemT20,
-    Dano
+    Dano,
+    Magia,
+    AprimoramentoMagia
   ],
   synchronize: true
 })

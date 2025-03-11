@@ -8,6 +8,7 @@ import { Poder } from './poder'
 import { IPersonagem } from '../@types/t20/Personagem'
 import { Defesa } from './defesa'
 import { ItemT20 } from './item'
+import { Magia } from './magia'
 
 @Entity()
 export class Personagem implements IPersonagem {
@@ -114,13 +115,22 @@ export class Personagem implements IPersonagem {
 
   @OneToMany(() => Poder, (poderes) => poderes.personagem, {
     cascade: true,
-    eager: true
+    eager: true,
+    nullable: true
   })
   poderes: Poder[]
 
   @OneToMany(() => ItemT20, (itens) => itens.personagem, {
     cascade: true,
-    eager: true
+    eager: true,
+    nullable: true
   })
   itens: ItemT20[]
+
+  @OneToMany(() => Magia, (magias) => magias.personagem, {
+    cascade: true,
+    eager: true,
+    nullable: true
+  })
+  magias: Magia[]
 }

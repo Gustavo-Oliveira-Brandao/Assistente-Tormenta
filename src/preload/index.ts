@@ -6,6 +6,7 @@ import { IAtributo } from '../main/api/@types/t20/Atributo'
 import { IRecurso } from '../main/api/@types/t20/Recurso'
 import { IDefesa } from '../main/api/@types/t20/Defesa'
 import { IDeslocamento } from '../main/api/@types/t20/Deslocamento'
+import { IPericia } from '../main/api/@types/t20/Pericia'
 
 // Custom APIs for renderer
 const api = {
@@ -25,7 +26,8 @@ const api = {
   putMana: (mana: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-mana', mana),
   putDefesa: (defesa: IDefesa): Promise<IDefesa> => ipcRenderer.invoke('put-defesa', defesa),
   putDeslocamento: (deslocamento: IDeslocamento): Promise<IDeslocamento> =>
-    ipcRenderer.invoke('put-deslocamento', deslocamento)
+    ipcRenderer.invoke('put-deslocamento', deslocamento),
+  putPericia: (pericia: IPericia): Promise<IPericia> => ipcRenderer.invoke('put-pericia', pericia)
 }
 
 // Use `contextBridge` APIs to expose Electron APIs to

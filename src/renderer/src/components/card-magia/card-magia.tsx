@@ -35,10 +35,26 @@ const CardMagia = ({
         <div className={styles.itemConteudo}>
           <div className={styles.itemTags}>
             <p>{magia.execucao}</p>
-            <p>{magia.tradição}</p>
+            <p>{magia.tradicao}</p>
             <p>{magia.escola}</p>
           </div>
           <p className={`${styles.poderDescricao} ${styles.poppins}`}>{magia.descricao}</p>
+          {magia.aprimoramentos.length !== 0 && (
+            <div className={styles.poderTopicos}>
+              {magia.aprimoramentos.map((aprimoramento, index) => (
+                <div key={index} className={styles.poderTopico}>
+                  <p>
+                    {aprimoramento.custo === 0 ? (
+                      <span className={styles.destaque}>TRUQUE: </span>
+                    ) : (
+                      <span className={styles.destaque}>+{aprimoramento.custo} PM: </span>
+                    )}
+                    <span className={styles.poppins}>{aprimoramento.descricao}</span>
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>

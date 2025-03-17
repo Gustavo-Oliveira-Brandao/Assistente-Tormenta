@@ -5,15 +5,18 @@ export interface IMagia {
   id: number
   nome: string
   iconeURL: string
-  alvoAreaEfeito: string
+  alvo: string
+  area: string
+  efeito: string
   execucao: string
-  testeResistencia: string
+  resistencia: string
   descricao: string
   duracao: string
   nivelCirculo: number
   alcance: string
-  tradição: string
+  tradicao: string
+  publicacao: string
   escola: string
   danos?: IDano[]
-  aprimoramentos?: AprimoramentoMagia[]
+  aprimoramentos: AprimoramentoMagia[]
 }

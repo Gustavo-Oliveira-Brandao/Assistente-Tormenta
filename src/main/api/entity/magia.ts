@@ -66,7 +66,7 @@ export class Magia implements IMagia {
     type: 'varchar',
     nullable: false
   })
-  tradição: string
+  tradicao: string
 
   @Column({
     type: 'varchar',

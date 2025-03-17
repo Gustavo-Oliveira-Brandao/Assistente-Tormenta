@@ -13,10 +13,12 @@ import { useExibirLojaPoderesQuery } from '@renderer/hooks/queries/poder/useExib
 import { useAdicionarPoderMutation } from '@renderer/hooks/mutations/poder/useAdicionarPoderMutation'
 import { useRemoverPoderMutation } from '@renderer/hooks/mutations/poder/useRemoverPoderMutation'
 import CardMagia from '@renderer/components/card-magia/card-magia'
+import { useExibirLojaMagiasQuery } from '@renderer/hooks/queries/magia/useExibirLojaMagiasQuery'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
   const { data: poderesDefault } = useExibirLojaPoderesQuery()
+  const { data: magiasDefault } = useExibirLojaMagiasQuery()
 
   const [aba, setAba] = useState('atributos')
   const [loja, setLoja] = useState<string | null>(null)
@@ -46,6 +48,13 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                   onClickEvent={() => setAba('poderes')}
                   estaAtivo={aba == 'poderes' ? true : false}
                   texto={aba == 'poderes' ? 'poderes' : undefined}
+                />
+                <BotaoModular
+                  css="botaoNav"
+                  icone="./icons/spell-book.svg"
+                  onClickEvent={() => setAba('magias')}
+                  estaAtivo={aba == 'magias' ? true : false}
+                  texto={aba == 'magias' ? 'magias' : undefined}
                 />
               </nav>
               {aba == 'atributos' && (
@@ -142,13 +151,14 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                     }
                     css="poderes"
                   >
-                    {personagem.magias.map((magia) => (
-                      <CardMagia
-                        key={magia.id}
-                        magia={magia}
-                        iconeBotaoInteracao="./icons/delete.svg"
-                      />
-                    ))}
+                    {magiasDefault &&
+                      magiasDefault.map((magia) => (
+                        <CardMagia
+                          key={magia.id}
+                          magia={magia}
+                          iconeBotaoInteracao="./icons/delete.svg"
+                        />
+                      ))}
                   </SecaoFicha>
                 </>
               )}

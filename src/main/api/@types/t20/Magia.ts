@@ -12,7 +12,7 @@ export interface IMagia {
   duracao: string
   nivelCirculo: number
   alcance: string
-  tradição: string
+  tradicao: string
   escola: string
   danos?: IDano[]
   aprimoramentos?: IAprimoramentoMagia[]

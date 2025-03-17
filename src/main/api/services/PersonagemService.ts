@@ -22,6 +22,7 @@ export const getTodosPersonagens = async (): Promise<IPersonagem[]> => {
     return error
   })
 }
+
 export const getPersonagem = async (id: number): Promise<IPersonagem> => {
   const personagemRepository = SQLiteDataSource.getRepository(Personagem)
   return await personagemRepository

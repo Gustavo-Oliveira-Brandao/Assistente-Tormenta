@@ -6,6 +6,10 @@
   "origem": "taverneiro",
   "nivel": 5,
   "experiencia": 500,
+  "tipoCriatura": "humanoide",
+  "categoria": "pj",
+  "tamanho": "medio",
+  "alinhamento": "n",
   "defesa": {
     "armadura": 0,
     "escudo": 0,

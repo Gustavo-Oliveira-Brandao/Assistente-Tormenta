@@ -1,5 +1,5 @@
-import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
+import { ICriatura } from '@renderer/@types/t20/Criatura'
 
-export const exibirTodosPersonagens = async (): Promise<PersonagemT20[]> => {
+export const exibirTodosPersonagens = async (): Promise<ICriatura[]> => {
   return await window.api.getTodosPersonagens()
 }

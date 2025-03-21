@@ -1,29 +1,29 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
-import { Atributo } from '@renderer/@types/t20/Atributo'
-import { Defesa } from '@renderer/@types/t20/Defesa'
-import { Deslocamento } from '@renderer/@types/t20/Deslocamento'
-import { Pericia } from '@renderer/@types/t20/Pericia'
-import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
-import { Poder } from '@renderer/@types/t20/Poder'
-import { Recurso } from '@renderer/@types/t20/Recurso'
+import { IAtributo } from '@renderer/@types/t20/Atributo'
+import { ICriatura } from '@renderer/@types/t20/Criatura'
+import { IDefesa } from '@renderer/@types/t20/Defesa'
+import { IDeslocamento } from '@renderer/@types/t20/Deslocamento'
+import { IPericia } from '@renderer/@types/t20/Pericia'
+import { IPoder } from '@renderer/@types/t20/Poder'
+import { IRecurso } from '@renderer/@types/t20/Recurso'
 
 declare global {
   interface Window {
     electron: ElectronAPI
     api: {
-      getTodosPersonagens: () => PersonagemT20[]
-      getPersonagem: (id: number) => PersonagemT20
-      postPersonagem: (personagem: Partial<PersonagemT20>) => PersonagemT20
-      putPersonagem: (personagem: PersonagemT20) => PersonagemT20
+      getTodosPersonagens: () => ICriatura[]
+      getPersonagem: (id: number) => ICriatura
+      postPersonagem: (personagem: Partial<ICriatura>) => ICriatura
+      putPersonagem: (personagem: ICriatura) => ICriatura
       deletePersonagem: (id: number) => void
-      postPoder: (_poder: Poder, idPersonagem: number) => Poder
+      postPoder: (_poder: IPoder, idPersonagem: number) => Poder
       deletePoder: (id: number) => void
-      putAtributo: (atributo: Atributo) => Atributo
-      putVida: (vida: Recurso) => Recurso
-      putMana: (mana: Recurso) => Recurso
-      putDefesa: (defesa: Defesa) => Defesa
-      putDeslocamento: (deslocamento: Deslocamento) => Deslocamento
-      putPericia: (pericia: Pericia) => Pericia
+      putAtributo: (atributo: IAtributo) => IAtributo
+      putVida: (vida: IRecurso) => IRecurso
+      putMana: (mana: IRecurso) => IRecurso
+      putDefesa: (defesa: IDefesa) => IDefesa
+      putDeslocamento: (deslocamento: IDeslocamento) => IDeslocamento
+      putPericia: (pericia: IPericia) => IPericia
     }
   }
 }

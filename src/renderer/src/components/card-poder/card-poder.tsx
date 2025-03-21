@@ -1,4 +1,4 @@
-import { Poder } from '@renderer/@types/t20/Poder'
+import { IPoder } from '@renderer/@types/t20/Poder'
 import styles from '@renderer/assets/styles/card-item.module.scss'
 import { useState } from 'react'
 import BotaoModular from '../botao-modular/botao-modular'
@@ -8,7 +8,7 @@ const CardPoder = ({
   onInteract,
   iconeBotaoInteracao
 }: {
-  poder: Poder
+  poder: IPoder
   onInteract?: () => void
   iconeBotaoInteracao: string
 }): JSX.Element => {

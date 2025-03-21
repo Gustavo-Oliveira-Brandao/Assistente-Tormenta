@@ -1,3 +1,5 @@
+import { IBonus } from './Bonus'
+
 export interface IDano {
   id: number
   quantidade: number
@@ -5,4 +7,5 @@ export interface IDano {
   tipo: string
   aplicaModificador: boolean
   atributo: string
+  bonus: IBonus[]
 }

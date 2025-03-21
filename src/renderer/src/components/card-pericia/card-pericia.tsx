@@ -1,4 +1,3 @@
-import { Pericia } from '@renderer/@types/t20/Pericia'
 import styles from './card-pericia.module.scss'
 import { useState } from 'react'
 import BotaoRolagem from '../botao-rolagem/botao-rolagem'
@@ -12,8 +11,9 @@ import { useAtualizarPericiaMutation } from '@renderer/hooks/mutations/pericia/u
 import FormGroup from '../form-group/form-group'
 import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
 import { opcoesTreinamento } from '@renderer/forms/select options/opcoesTreinamento'
+import { IPericia } from '@renderer/@types/t20/Pericia'
 
-const CardPericia = ({ pericia, css }: { pericia: Pericia; css: string }): JSX.Element => {
+const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.Element => {
   const [modal, setModal] = useState(false)
   const atualizarPericia = useAtualizarPericiaMutation()
 

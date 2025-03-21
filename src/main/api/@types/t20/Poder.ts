@@ -1,5 +1,5 @@
 import { ITag } from './Tag'
-import { ITopico } from './Topico'
+import { IExtra } from './Extra'
 
 export interface IPoder {
   id: number
@@ -9,6 +9,6 @@ export interface IPoder {
   descricao: string
   categoria: string
   preRequisitos: string
-  topicos: ITopico[]
+  extras: IExtra[]
   tags: ITag[]
 }

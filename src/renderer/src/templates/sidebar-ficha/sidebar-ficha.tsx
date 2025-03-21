@@ -1,6 +1,5 @@
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
 import styles from './sidebar-ficha.module.scss'
-import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
 import BarraRecurso from '@renderer/components/barra-recurso/barra-recurso'
 import CardPericia from '@renderer/components/card-pericia/card-pericia'
 import { z } from 'zod'
@@ -20,8 +19,9 @@ import { useAtualizarDefesaMutation } from '@renderer/hooks/mutations/defesa/use
 import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
 import { deslocamentoSchema } from '@renderer/validators/schemas/deslocamentoSchema'
 import { useAtualizarDeslocamentoMutation } from '@renderer/hooks/mutations/deslocamento/useAtualizarDeslocamentoMutation'
+import { ICriatura } from '@renderer/@types/t20/Criatura'
 
-const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Element => {
+const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element => {
   const [formulario, setFormulario] = useState<string | null>(null)
 
   const methodsDetalhes = useForm<z.infer<typeof detalhesSchema>>({
@@ -42,7 +42,6 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
     defaultValues: {
       armadura: personagem.defesa.armadura,
       escudo: personagem.defesa.escudo,
-      outros: personagem.defesa.outros,
       temporario: personagem.defesa.temporario,
       atributo: personagem.defesa.atributo,
       penalidadeArmaduraTotal: personagem.defesa.penalidadeArmaduraTotal
@@ -83,7 +82,6 @@ const SidebarFicha = ({ personagem }: { personagem: PersonagemT20 }): JSX.Elemen
     const defesaCopy = { ...personagem.defesa }
     defesaCopy.armadura = data.armadura
     defesaCopy.escudo = data.escudo
-    defesaCopy.outros = data.outros
     defesaCopy.temporario = data.temporario
     defesaCopy.atributo = data.atributo
     defesaCopy.penalidadeArmaduraTotal = data.penalidadeArmaduraTotal

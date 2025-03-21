@@ -1,4 +1,4 @@
-export interface RacaT20 {
+export interface IRacaT20 {
   id: number
   nome: string
   descricao: string

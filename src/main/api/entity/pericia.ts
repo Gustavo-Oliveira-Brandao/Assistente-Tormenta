@@ -1,6 +1,9 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Personagem } from './personagem'
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { IPericia } from '../@types/t20/Pericia'
+import { Bonus } from './bonus'
+import { IBonus } from '../@types/t20/Bonus'
+import { Criatura } from './criatura'
+import type { ICriatura } from '../@types/t20/Criatura'
 
 @Entity()
 export class Pericia implements IPericia {
@@ -45,9 +48,16 @@ export class Pericia implements IPericia {
   })
   sofrePenalidadeArmadura: boolean
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.pericias, {
+  @OneToMany(() => Bonus, (bonus) => bonus.pericia, {
+    cascade: true,
+    eager: true,
+    nullable: true
+  })
+  bonus: IBonus[]
+
+  @ManyToOne(() => Criatura, (personagem) => personagem.pericias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  personagem: Personagem
+  personagem: ICriatura
 }

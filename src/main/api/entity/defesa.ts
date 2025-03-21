@@ -1,5 +1,7 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { IDefesa } from '../@types/t20/Defesa'
+import { Bonus } from './bonus'
+import { IBonus } from '../@types/t20/Bonus'
 
 @Entity()
 export class Defesa implements IDefesa {
@@ -22,12 +24,6 @@ export class Defesa implements IDefesa {
     nullable: false,
     type: 'integer'
   })
-  outros: number
-
-  @Column({
-    nullable: false,
-    type: 'integer'
-  })
   temporario: number
 
   @Column({
@@ -41,4 +37,11 @@ export class Defesa implements IDefesa {
     type: 'integer'
   })
   penalidadeArmaduraTotal: number
+
+  @OneToMany(() => Bonus, (bonus) => bonus.defesa, {
+    cascade: true,
+    eager: true,
+    nullable: true
+  })
+  bonus: IBonus[]
 }

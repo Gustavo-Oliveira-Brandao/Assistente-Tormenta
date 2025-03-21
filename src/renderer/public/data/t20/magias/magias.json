@@ -5803,7 +5803,7 @@
     "efeito": "",
     "execucao": "padrão",
     "resistencia": "Vontade parcial",
-    "descricao": "Você pronuncia uma palavra do idioma primordial da Criação, que causa um dos efeitos abaixo, a sua escolha.Atordoar: a criatura fica atordoada por 1d4+1 rodadas (apenas uma vez por cena). Se passar no teste de resistência, ou se já foi atordoada por esta magia, fica desprevenida por 1d4 rodadas.Cegar: a criatura fica Cego. Se passar no teste de resistência, fica Sangrando.",
+    "descricao": "Você pronuncia uma palavra do idioma primordial da Criação, que causa um dos efeitos abaixo, a sua escolha. Atordoar: a criatura fica atordoada por 1d4+1 rodadas (apenas uma vez por cena). Se passar no teste de resistência, ou se já foi atordoada por esta magia, fica desprevenida por 1d4 rodadas. Cegar: a criatura fica Cego. Se passar no teste de resistência, fica Sangrando.",
     "duracao": "instantânea ou veja texto",
     "nivelCirculo": 5,
     "alcance": "curto",

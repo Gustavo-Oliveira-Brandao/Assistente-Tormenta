@@ -12,7 +12,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 7,
@@ -102,7 +102,7 @@
       }
     ],
     "tempoExecucao": "acao de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 9,
@@ -132,7 +132,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 10,
@@ -147,7 +147,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 11,
@@ -162,7 +162,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 12,
@@ -177,7 +177,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 13,
@@ -192,7 +192,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 14,
@@ -207,7 +207,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 15,
@@ -222,7 +222,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 16,
@@ -237,7 +237,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 17,
@@ -252,7 +252,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 18,
@@ -267,7 +267,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 19,
@@ -282,7 +282,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 20,
@@ -297,7 +297,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 21,
@@ -312,7 +312,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 22,
@@ -327,7 +327,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 23,
@@ -342,7 +342,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 24,
@@ -357,7 +357,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 25,
@@ -372,7 +372,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 26,
@@ -387,7 +387,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 27,
@@ -402,7 +402,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 28,
@@ -417,7 +417,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 29,
@@ -432,7 +432,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 30,
@@ -447,7 +447,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 31,
@@ -462,7 +462,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 32,
@@ -477,7 +477,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 33,
@@ -492,7 +492,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 34,
@@ -507,7 +507,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 35,
@@ -522,7 +522,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 36,
@@ -537,7 +537,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 37,
@@ -552,7 +552,7 @@
       }
     ],
     "tempoExecucao": "acao de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 38,
@@ -567,7 +567,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 39,
@@ -582,7 +582,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 40,
@@ -597,7 +597,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 41,
@@ -612,7 +612,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 42,
@@ -627,7 +627,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 43,
@@ -642,7 +642,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 44,
@@ -657,7 +657,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 45,
@@ -672,7 +672,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 46,
@@ -687,7 +687,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 47,
@@ -702,7 +702,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 48,
@@ -717,7 +717,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 49,
@@ -732,7 +732,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 50,
@@ -747,7 +747,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 51,
@@ -762,7 +762,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 52,
@@ -777,7 +777,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 53,
@@ -792,7 +792,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 54,
@@ -807,7 +807,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 55,
@@ -822,7 +822,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 56,
@@ -840,7 +840,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 57,
@@ -858,7 +858,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 58,
@@ -876,7 +876,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 59,
@@ -891,7 +891,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 60,
@@ -906,7 +906,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 61,
@@ -921,7 +921,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 62,
@@ -936,7 +936,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 63,
@@ -951,7 +951,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 64,
@@ -966,7 +966,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 65,
@@ -981,7 +981,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 66,
@@ -996,7 +996,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "borboleta:",
         "texto": "A CD dos testes de Vontade para resistir a suas magias aumenta em +1."
@@ -1052,7 +1052,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 68,
@@ -1067,7 +1067,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 69,
@@ -1082,7 +1082,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 70,
@@ -1097,7 +1097,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 71,
@@ -1112,7 +1112,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 72,
@@ -1127,7 +1127,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 73,
@@ -1142,7 +1142,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 74,
@@ -1157,7 +1157,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 75,
@@ -1172,7 +1172,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 76,
@@ -1187,7 +1187,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 77,
@@ -1202,7 +1202,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 78,
@@ -1217,7 +1217,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 79,
@@ -1235,7 +1235,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "Básica:",
         "texto": "Você soma seu Carisma em seus pontos de vida iniciais e recebe redução de dano 5 ao tipo escolhido."
@@ -1266,7 +1266,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "Básica:",
         "texto": "Você se torna treinado em Enganação e aprende uma magia de 1º círculo de encantamento ou ilusão, arcana ou divina, a sua escolha."
@@ -1297,7 +1297,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "Básica:",
         "texto": "Você recebe um poder da Tormenta. Além disso, pode perder outro atributo em vez de Carisma por poderes da Tormenta."
@@ -1325,7 +1325,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 83,
@@ -1340,7 +1340,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 84,
@@ -1355,7 +1355,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 85,
@@ -1370,7 +1370,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 86,
@@ -1385,7 +1385,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 87,
@@ -1400,7 +1400,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 88,
@@ -1415,7 +1415,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 89,
@@ -1430,7 +1430,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 90,
@@ -1445,7 +1445,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 91,
@@ -1460,7 +1460,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 92,
@@ -1475,7 +1475,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 93,
@@ -1490,7 +1490,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 94,
@@ -1505,7 +1505,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 95,
@@ -1520,7 +1520,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 96,
@@ -1535,7 +1535,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 97,
@@ -1550,7 +1550,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 98,
@@ -1565,7 +1565,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 99,
@@ -1580,7 +1580,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 100,
@@ -1595,7 +1595,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "coruja:",
         "texto": "A sábia coruja guia seus discípulos. Você pode lançar Orientação."
@@ -1643,7 +1643,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 102,
@@ -1658,7 +1658,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 103,
@@ -1673,7 +1673,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 104,
@@ -1688,7 +1688,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 105,
@@ -1703,7 +1703,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 106,
@@ -1718,7 +1718,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 107,
@@ -1733,7 +1733,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 108,
@@ -1748,7 +1748,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 109,
@@ -1763,7 +1763,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 110,
@@ -1778,7 +1778,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 111,
@@ -1793,7 +1793,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 112,
@@ -1808,7 +1808,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 113,
@@ -1823,7 +1823,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 114,
@@ -1838,7 +1838,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 115,
@@ -1853,7 +1853,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 116,
@@ -1868,7 +1868,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 117,
@@ -1883,7 +1883,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 118,
@@ -1901,7 +1901,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 119,
@@ -1919,7 +1919,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 120,
@@ -1937,7 +1937,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 121,
@@ -1952,7 +1952,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 122,
@@ -1967,7 +1967,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 123,
@@ -1982,7 +1982,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 124,
@@ -1997,7 +1997,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 125,
@@ -2012,7 +2012,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 126,
@@ -2027,7 +2027,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 127,
@@ -2042,7 +2042,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 128,
@@ -2057,7 +2057,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 129,
@@ -2072,7 +2072,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 130,
@@ -2087,7 +2087,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 131,
@@ -2102,7 +2102,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 132,
@@ -2117,7 +2117,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 133,
@@ -2132,7 +2132,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 134,
@@ -2147,7 +2147,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 135,
@@ -2162,7 +2162,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 136,
@@ -2180,7 +2180,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 137,
@@ -2198,7 +2198,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 138,
@@ -2213,7 +2213,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 139,
@@ -2228,7 +2228,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 140,
@@ -2243,7 +2243,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 141,
@@ -2258,7 +2258,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 142,
@@ -2273,7 +2273,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 143,
@@ -2288,7 +2288,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 144,
@@ -2303,7 +2303,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 145,
@@ -2318,7 +2318,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 146,
@@ -2333,7 +2333,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 147,
@@ -2348,7 +2348,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 148,
@@ -2363,7 +2363,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 149,
@@ -2378,7 +2378,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 150,
@@ -2393,7 +2393,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 151,
@@ -2408,7 +2408,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 152,
@@ -2423,7 +2423,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 153,
@@ -2438,7 +2438,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 154,
@@ -2453,7 +2453,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 155,
@@ -2471,7 +2471,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 156,
@@ -2489,7 +2489,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 157,
@@ -2507,7 +2507,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 158,
@@ -2525,7 +2525,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 159,
@@ -2540,7 +2540,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 160,
@@ -2555,7 +2555,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 161,
@@ -2570,7 +2570,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 162,
@@ -2585,7 +2585,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 163,
@@ -2600,7 +2600,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 164,
@@ -2615,7 +2615,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 165,
@@ -2630,7 +2630,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 166,
@@ -2645,7 +2645,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 167,
@@ -2660,7 +2660,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 168,
@@ -2675,7 +2675,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 169,
@@ -2690,7 +2690,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 170,
@@ -2705,7 +2705,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 171,
@@ -2720,7 +2720,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 172,
@@ -2735,7 +2735,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 173,
@@ -2750,7 +2750,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 174,
@@ -2765,7 +2765,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 175,
@@ -2780,7 +2780,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 176,
@@ -2795,7 +2795,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 177,
@@ -2810,7 +2810,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 178,
@@ -2825,7 +2825,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 179,
@@ -2840,7 +2840,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 180,
@@ -2855,7 +2855,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 181,
@@ -2870,7 +2870,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 182,
@@ -2885,7 +2885,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 183,
@@ -2900,7 +2900,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 184,
@@ -2915,7 +2915,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 185,
@@ -2930,7 +2930,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 186,
@@ -2945,7 +2945,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 187,
@@ -2960,7 +2960,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 188,
@@ -2975,7 +2975,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 189,
@@ -2990,7 +2990,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 190,
@@ -3005,7 +3005,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 191,
@@ -3020,7 +3020,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 192,
@@ -3038,7 +3038,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 193,
@@ -3056,7 +3056,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 194,
@@ -3074,7 +3074,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 195,
@@ -3092,7 +3092,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 196,
@@ -3110,7 +3110,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 197,
@@ -3128,7 +3128,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 198,
@@ -3143,7 +3143,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 199,
@@ -3158,7 +3158,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 200,
@@ -3173,7 +3173,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 201,
@@ -3188,7 +3188,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "bastião:",
         "texto": "Se estiver usando armadura pesada, você recebe redução de dano 5 (cumulativa com a RD fornecida por Especialização em Armadura)."
@@ -3212,7 +3212,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 203,
@@ -3227,7 +3227,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 204,
@@ -3242,7 +3242,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 205,
@@ -3257,7 +3257,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 206,
@@ -3272,7 +3272,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 207,
@@ -3287,7 +3287,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 208,
@@ -3302,7 +3302,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 209,
@@ -3317,7 +3317,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 210,
@@ -3332,7 +3332,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 211,
@@ -3347,7 +3347,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 212,
@@ -3362,7 +3362,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 213,
@@ -3377,7 +3377,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 214,
@@ -3395,7 +3395,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 215,
@@ -3413,7 +3413,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 216,
@@ -3431,7 +3431,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 217,
@@ -3449,7 +3449,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 218,
@@ -3467,7 +3467,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 219,
@@ -3482,7 +3482,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 220,
@@ -3497,7 +3497,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 221,
@@ -3512,7 +3512,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 222,
@@ -3527,7 +3527,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 223,
@@ -3542,7 +3542,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 224,
@@ -3557,7 +3557,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 225,
@@ -3572,7 +3572,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 226,
@@ -3587,7 +3587,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 227,
@@ -3602,7 +3602,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 228,
@@ -3617,7 +3617,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": [
+    "extras": [
       {
         "titulo": "Ajudante:",
         "texto": "Corvo, macaco, raposa, serpente ou outro animal ágil ou esperto."
@@ -3657,7 +3657,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 230,
@@ -3672,7 +3672,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 231,
@@ -3687,7 +3687,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 232,
@@ -3702,7 +3702,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 233,
@@ -3717,7 +3717,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 234,
@@ -3732,7 +3732,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 235,
@@ -3747,7 +3747,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 236,
@@ -3762,7 +3762,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 237,
@@ -3777,7 +3777,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 238,
@@ -3792,7 +3792,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 239,
@@ -3807,7 +3807,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 240,
@@ -3822,7 +3822,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 241,
@@ -3837,7 +3837,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 242,
@@ -3852,7 +3852,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 243,
@@ -3867,7 +3867,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 244,
@@ -3882,7 +3882,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 245,
@@ -3897,7 +3897,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 246,
@@ -3915,7 +3915,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": [
+    "extras": [
       {
         "titulo": "aprimorada:",
         "texto": "Você recebe Destreza +4, deslocamento +3m e duas armas naturais (como acima, mas com dano de 1d8). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
@@ -3942,7 +3942,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": [
+    "extras": [
       {
         "titulo": "aprimorada:",
         "texto": "Você recebe Força +5, +4 na Defesa e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
@@ -3969,7 +3969,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": [
+    "extras": [
       {
         "titulo": "aprimorada:",
         "texto": "Você recebe Força +3, +8 na Defesa, redução de dano 8 e uma arma natural que causa 1d8 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
@@ -3996,7 +3996,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": [
+    "extras": [
       {
         "titulo": "aprimorada:",
         "texto": "Você recebe Destreza +4. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
@@ -4023,7 +4023,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": [
+    "extras": [
       {
         "titulo": "aprimorada:",
         "texto": "Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m."
@@ -4047,7 +4047,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 252,
@@ -4062,7 +4062,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 253,
@@ -4077,7 +4077,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 254,
@@ -4092,7 +4092,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 255,
@@ -4107,7 +4107,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 256,
@@ -4122,7 +4122,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 257,
@@ -4137,7 +4137,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 258,
@@ -4152,7 +4152,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 259,
@@ -4167,7 +4167,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 260,
@@ -4182,7 +4182,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 261,
@@ -4197,7 +4197,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 262,
@@ -4212,7 +4212,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": [
+    "extras": [
       {
         "titulo": "amplo (+3 PM)",
         "texto": "Seu ataque atinge todas as criaturas em alcance curto (incluindo aliados, mas não você mesmo). Faça um único teste de ataque e compare com a Defesa de cada criatura."
@@ -4296,7 +4296,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 264,
@@ -4311,7 +4311,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 265,
@@ -4326,7 +4326,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 266,
@@ -4341,7 +4341,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 267,
@@ -4356,7 +4356,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 268,
@@ -4371,7 +4371,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 269,
@@ -4386,7 +4386,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 270,
@@ -4401,7 +4401,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 271,
@@ -4416,7 +4416,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 272,
@@ -4431,7 +4431,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 273,
@@ -4446,7 +4446,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 274,
@@ -4461,7 +4461,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 275,
@@ -4476,7 +4476,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 276,
@@ -4491,7 +4491,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 277,
@@ -4506,7 +4506,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 278,
@@ -4521,7 +4521,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 279,
@@ -4536,7 +4536,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 280,
@@ -4551,7 +4551,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 281,
@@ -4566,7 +4566,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 282,
@@ -4581,7 +4581,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 283,
@@ -4596,7 +4596,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 284,
@@ -4611,7 +4611,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 285,
@@ -4626,7 +4626,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 286,
@@ -4641,7 +4641,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 287,
@@ -4656,7 +4656,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 288,
@@ -4671,7 +4671,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 289,
@@ -4686,7 +4686,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 290,
@@ -4701,7 +4701,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 291,
@@ -4716,7 +4716,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 292,
@@ -4731,7 +4731,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 293,
@@ -4746,7 +4746,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 294,
@@ -4761,7 +4761,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 295,
@@ -4776,7 +4776,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 296,
@@ -4791,7 +4791,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 297,
@@ -4806,7 +4806,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 298,
@@ -4821,7 +4821,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 299,
@@ -4836,7 +4836,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 300,
@@ -4851,7 +4851,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 301,
@@ -4866,7 +4866,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 302,
@@ -4881,7 +4881,7 @@
       }
     ],
     "tempoExecucao": "1 hora",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 303,
@@ -4896,7 +4896,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 304,
@@ -4911,7 +4911,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 305,
@@ -4926,7 +4926,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 306,
@@ -4941,7 +4941,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 307,
@@ -4956,7 +4956,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 308,
@@ -4971,7 +4971,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 309,
@@ -4986,7 +4986,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 310,
@@ -5001,7 +5001,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 311,
@@ -5016,7 +5016,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 312,
@@ -5031,7 +5031,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 313,
@@ -5046,7 +5046,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 314,
@@ -5061,7 +5061,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 315,
@@ -5076,7 +5076,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 316,
@@ -5091,7 +5091,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 317,
@@ -5106,7 +5106,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 318,
@@ -5121,7 +5121,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 319,
@@ -5136,7 +5136,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 320,
@@ -5151,7 +5151,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 321,
@@ -5166,7 +5166,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 322,
@@ -5181,7 +5181,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 323,
@@ -5196,7 +5196,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 324,
@@ -5211,7 +5211,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 325,
@@ -5226,7 +5226,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 326,
@@ -5241,7 +5241,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 327,
@@ -5256,7 +5256,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 328,
@@ -5271,7 +5271,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 329,
@@ -5286,7 +5286,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 330,
@@ -5301,7 +5301,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 331,
@@ -5316,7 +5316,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 332,
@@ -5331,7 +5331,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 333,
@@ -5346,7 +5346,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 334,
@@ -5361,7 +5361,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 335,
@@ -5376,7 +5376,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 336,
@@ -5391,7 +5391,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 337,
@@ -5406,7 +5406,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 338,
@@ -5421,7 +5421,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 339,
@@ -5436,7 +5436,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 340,
@@ -5451,7 +5451,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 341,
@@ -5466,7 +5466,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 342,
@@ -5481,7 +5481,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 343,
@@ -5496,7 +5496,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 344,
@@ -5511,7 +5511,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 345,
@@ -5526,7 +5526,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 346,
@@ -5541,7 +5541,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 347,
@@ -5556,7 +5556,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 348,
@@ -5571,7 +5571,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 349,
@@ -5586,7 +5586,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 350,
@@ -5601,7 +5601,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 351,
@@ -5616,7 +5616,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 352,
@@ -5631,7 +5631,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 353,
@@ -5646,7 +5646,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 354,
@@ -5661,7 +5661,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 355,
@@ -5676,7 +5676,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 356,
@@ -5691,7 +5691,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 357,
@@ -5706,7 +5706,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 358,
@@ -5721,7 +5721,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 359,
@@ -5736,7 +5736,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 360,
@@ -5751,7 +5751,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 361,
@@ -5766,7 +5766,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 362,
@@ -5781,7 +5781,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 363,
@@ -5796,7 +5796,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 364,
@@ -5811,7 +5811,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 365,
@@ -5826,7 +5826,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 366,
@@ -5841,7 +5841,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 367,
@@ -5856,7 +5856,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 368,
@@ -5871,7 +5871,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 369,
@@ -5886,7 +5886,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 370,
@@ -5901,7 +5901,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 371,
@@ -5916,7 +5916,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 372,
@@ -5931,7 +5931,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 373,
@@ -5946,7 +5946,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 374,
@@ -5961,7 +5961,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 375,
@@ -5976,7 +5976,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 376,
@@ -5991,7 +5991,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 377,
@@ -6006,7 +6006,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 378,
@@ -6021,7 +6021,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 379,
@@ -6036,7 +6036,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 380,
@@ -6051,7 +6051,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 381,
@@ -6066,7 +6066,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 382,
@@ -6081,7 +6081,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 383,
@@ -6096,7 +6096,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 384,
@@ -6111,7 +6111,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 385,
@@ -6126,7 +6126,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 386,
@@ -6141,7 +6141,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 387,
@@ -6156,7 +6156,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 388,
@@ -6171,7 +6171,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 389,
@@ -6186,7 +6186,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 390,
@@ -6201,7 +6201,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 391,
@@ -6216,7 +6216,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 392,
@@ -6231,7 +6231,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 393,
@@ -6246,7 +6246,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 394,
@@ -6261,7 +6261,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 395,
@@ -6276,7 +6276,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 396,
@@ -6291,7 +6291,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 397,
@@ -6306,7 +6306,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 398,
@@ -6321,7 +6321,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 399,
@@ -6336,7 +6336,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 400,
@@ -6354,7 +6354,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 401,
@@ -6372,7 +6372,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 402,
@@ -6390,7 +6390,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 403,
@@ -6408,7 +6408,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 404,
@@ -6426,7 +6426,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 405,
@@ -6444,7 +6444,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 406,
@@ -6462,7 +6462,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 407,
@@ -6480,7 +6480,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 408,
@@ -6498,7 +6498,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 409,
@@ -6513,7 +6513,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 410,
@@ -6531,7 +6531,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 411,
@@ -6549,7 +6549,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 412,
@@ -6567,7 +6567,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 413,
@@ -6585,7 +6585,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 414,
@@ -6603,7 +6603,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 415,
@@ -6618,7 +6618,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 416,
@@ -6633,7 +6633,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 417,
@@ -6648,7 +6648,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 418,
@@ -6663,7 +6663,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 419,
@@ -6678,7 +6678,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 420,
@@ -6693,7 +6693,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 421,
@@ -6708,7 +6708,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 422,
@@ -6723,7 +6723,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 423,
@@ -6738,7 +6738,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 424,
@@ -6753,7 +6753,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 425,
@@ -6768,7 +6768,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 426,
@@ -6783,7 +6783,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 427,
@@ -6798,7 +6798,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 428,
@@ -6813,7 +6813,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 429,
@@ -6828,7 +6828,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 430,
@@ -6843,7 +6843,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 431,
@@ -6858,7 +6858,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 432,
@@ -6873,7 +6873,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 433,
@@ -6888,7 +6888,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 434,
@@ -6903,7 +6903,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 435,
@@ -6918,7 +6918,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 436,
@@ -6933,7 +6933,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 437,
@@ -6948,7 +6948,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 438,
@@ -6963,7 +6963,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 439,
@@ -6978,7 +6978,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 440,
@@ -6993,7 +6993,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 441,
@@ -7008,7 +7008,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 442,
@@ -7023,7 +7023,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 443,
@@ -7038,7 +7038,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 444,
@@ -7053,7 +7053,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 445,
@@ -7068,7 +7068,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 446,
@@ -7083,7 +7083,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 447,
@@ -7098,7 +7098,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 448,
@@ -7113,7 +7113,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 449,
@@ -7128,7 +7128,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 450,
@@ -7143,7 +7143,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 451,
@@ -7158,7 +7158,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 452,
@@ -7173,7 +7173,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 453,
@@ -7188,7 +7188,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 454,
@@ -7203,7 +7203,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 455,
@@ -7218,7 +7218,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 456,
@@ -7233,7 +7233,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 457,
@@ -7248,7 +7248,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 458,
@@ -7263,7 +7263,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 459,
@@ -7278,7 +7278,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 460,
@@ -7293,7 +7293,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 461,
@@ -7308,7 +7308,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 462,
@@ -7323,7 +7323,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 463,
@@ -7338,7 +7338,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 464,
@@ -7353,7 +7353,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 465,
@@ -7368,7 +7368,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 466,
@@ -7383,7 +7383,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 467,
@@ -7398,7 +7398,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 468,
@@ -7413,7 +7413,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 469,
@@ -7428,7 +7428,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 470,
@@ -7443,7 +7443,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 471,
@@ -7458,7 +7458,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 472,
@@ -7473,7 +7473,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 473,
@@ -7488,7 +7488,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 474,
@@ -7503,7 +7503,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 475,
@@ -7518,7 +7518,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 476,
@@ -7533,7 +7533,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 477,
@@ -7548,7 +7548,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 478,
@@ -7563,7 +7563,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 479,
@@ -7578,7 +7578,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 480,
@@ -7593,7 +7593,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 481,
@@ -7608,7 +7608,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 482,
@@ -7623,7 +7623,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 483,
@@ -7638,7 +7638,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 484,
@@ -7653,7 +7653,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 485,
@@ -7668,7 +7668,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 486,
@@ -7683,7 +7683,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 487,
@@ -7698,7 +7698,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 488,
@@ -7713,7 +7713,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 489,
@@ -7728,7 +7728,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 490,
@@ -7743,7 +7743,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 491,
@@ -7758,7 +7758,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 492,
@@ -7773,7 +7773,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 493,
@@ -7788,7 +7788,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 494,
@@ -7803,7 +7803,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 495,
@@ -7818,7 +7818,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 496,
@@ -7833,7 +7833,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 497,
@@ -7848,7 +7848,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 498,
@@ -7863,7 +7863,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 499,
@@ -7878,7 +7878,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 500,
@@ -7893,7 +7893,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 501,
@@ -7908,7 +7908,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 502,
@@ -7923,7 +7923,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 503,
@@ -7938,7 +7938,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 504,
@@ -7953,7 +7953,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 505,
@@ -7968,7 +7968,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 506,
@@ -7983,7 +7983,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 507,
@@ -7998,7 +7998,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 508,
@@ -8013,7 +8013,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 509,
@@ -8028,7 +8028,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 510,
@@ -8043,7 +8043,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 511,
@@ -8058,7 +8058,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 512,
@@ -8073,7 +8073,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 513,
@@ -8088,7 +8088,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 514,
@@ -8103,7 +8103,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 515,
@@ -8118,7 +8118,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 516,
@@ -8133,7 +8133,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 517,
@@ -8148,7 +8148,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 518,
@@ -8163,7 +8163,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 519,
@@ -8178,7 +8178,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 520,
@@ -8193,7 +8193,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 521,
@@ -8211,7 +8211,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 522,
@@ -8232,7 +8232,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 523,
@@ -8250,7 +8250,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 524,
@@ -8268,7 +8268,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 525,
@@ -8286,7 +8286,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 526,
@@ -8304,7 +8304,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 527,
@@ -8322,7 +8322,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 528,
@@ -8343,7 +8343,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 529,
@@ -8361,7 +8361,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 530,
@@ -8379,7 +8379,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 531,
@@ -8397,7 +8397,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 532,
@@ -8415,7 +8415,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 533,
@@ -8433,7 +8433,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 534,
@@ -8451,7 +8451,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 535,
@@ -8469,7 +8469,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 536,
@@ -8487,7 +8487,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 537,
@@ -8505,7 +8505,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 538,
@@ -8532,7 +8532,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 539,
@@ -8550,7 +8550,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 540,
@@ -8568,7 +8568,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 541,
@@ -8586,7 +8586,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 542,
@@ -8604,7 +8604,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 543,
@@ -8622,7 +8622,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 544,
@@ -8640,7 +8640,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 545,
@@ -8658,7 +8658,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 546,
@@ -8676,7 +8676,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 547,
@@ -8694,7 +8694,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 548,
@@ -8712,7 +8712,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 549,
@@ -8730,7 +8730,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 550,
@@ -8748,7 +8748,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 551,
@@ -8766,7 +8766,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 552,
@@ -8787,7 +8787,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 553,
@@ -8805,7 +8805,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 554,
@@ -8823,7 +8823,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 555,
@@ -8841,7 +8841,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 556,
@@ -8859,7 +8859,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 557,
@@ -8877,7 +8877,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 558,
@@ -8895,7 +8895,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 559,
@@ -8913,7 +8913,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 560,
@@ -8931,7 +8931,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 561,
@@ -8949,7 +8949,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 562,
@@ -8967,7 +8967,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 563,
@@ -8985,7 +8985,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 564,
@@ -9003,7 +9003,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 565,
@@ -9021,7 +9021,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 566,
@@ -9039,7 +9039,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 567,
@@ -9057,7 +9057,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 568,
@@ -9078,7 +9078,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 569,
@@ -9096,7 +9096,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 570,
@@ -9114,7 +9114,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 571,
@@ -9132,7 +9132,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 572,
@@ -9150,7 +9150,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 573,
@@ -9171,7 +9171,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 574,
@@ -9189,7 +9189,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 575,
@@ -9207,7 +9207,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 576,
@@ -9225,7 +9225,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 577,
@@ -9243,7 +9243,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 578,
@@ -9261,7 +9261,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 579,
@@ -9279,7 +9279,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 580,
@@ -9297,7 +9297,7 @@
       }
     ],
     "tempoExecucao": "ação padrão",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 581,
@@ -9315,7 +9315,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 582,
@@ -9333,7 +9333,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 583,
@@ -9351,7 +9351,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 584,
@@ -9369,7 +9369,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 585,
@@ -9387,7 +9387,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 586,
@@ -9405,7 +9405,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 587,
@@ -9423,7 +9423,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 588,
@@ -9441,7 +9441,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 589,
@@ -9459,7 +9459,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 590,
@@ -9477,7 +9477,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 591,
@@ -9495,7 +9495,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 592,
@@ -9513,7 +9513,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 593,
@@ -9528,7 +9528,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 594,
@@ -9543,7 +9543,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 595,
@@ -9558,7 +9558,7 @@
       }
     ],
     "tempoExecucao": "ação de movimento",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 596,
@@ -9573,7 +9573,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 597,
@@ -9588,7 +9588,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 598,
@@ -9603,7 +9603,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 599,
@@ -9618,7 +9618,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 600,
@@ -9633,7 +9633,7 @@
       }
     ],
     "tempoExecucao": "ação completa",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 601,
@@ -9648,7 +9648,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 602,
@@ -9663,7 +9663,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 603,
@@ -9678,7 +9678,7 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 604,
@@ -9693,7 +9693,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 605,
@@ -9708,7 +9708,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 606,
@@ -9723,7 +9723,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 607,
@@ -9738,7 +9738,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 608,
@@ -9753,7 +9753,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 609,
@@ -9768,7 +9768,7 @@
       }
     ],
     "tempoExecucao": "reação",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 610,
@@ -9783,7 +9783,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 611,
@@ -9798,7 +9798,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 612,
@@ -9813,7 +9813,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 613,
@@ -9828,7 +9828,7 @@
       }
     ],
     "tempoExecucao": "passivo",
-    "topicos": []
+    "extras": []
   },
   {
     "id": 614,
@@ -9843,6 +9843,6 @@
       }
     ],
     "tempoExecucao": "ação livre",
-    "topicos": []
+    "extras": []
   }
 ]

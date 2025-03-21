@@ -1,4 +1,4 @@
-export interface Deslocamento {
+export interface IDeslocamento {
   id: number
   caminhada: number
   escalada: number

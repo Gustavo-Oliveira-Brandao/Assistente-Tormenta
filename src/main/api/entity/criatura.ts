@@ -5,13 +5,16 @@ import { Deslocamento } from './deslocamento'
 import { Atributo } from './atributo'
 import { Pericia } from './pericia'
 import { Poder } from './poder'
-import { IPersonagem } from '../@types/t20/Personagem'
 import { Defesa } from './defesa'
 import { ItemT20 } from './item'
 import { Magia } from './magia'
+import { ICriatura } from '../@types/t20/Criatura'
+import { IPoder } from '../@types/t20/Poder'
+import { IItemInventario } from '../@types/t20/Item'
+import { IMagia } from '../@types/t20/Magia'
 
 @Entity()
-export class Personagem implements IPersonagem {
+export class Criatura implements ICriatura {
   @PrimaryGeneratedColumn({
     type: 'integer'
   })
@@ -27,23 +30,35 @@ export class Personagem implements IPersonagem {
     type: 'varchar',
     nullable: false
   })
-  raca: string
+  tipoCriatura: string
 
   @Column({
     type: 'varchar',
     nullable: false
+  })
+  categoria: string
+
+  @Column({
+    type: 'varchar',
+    nullable: false
+  })
+  raca: string
+
+  @Column({
+    type: 'varchar',
+    nullable: true
   })
   classe: string
 
   @Column({
     type: 'varchar',
-    nullable: false
+    nullable: true
   })
   origem: string
 
   @Column({
     type: 'varchar',
-    nullable: false
+    nullable: true
   })
   divindade: string
 
@@ -55,9 +70,21 @@ export class Personagem implements IPersonagem {
 
   @Column({
     type: 'integer',
-    nullable: false
+    nullable: true
   })
   experiencia: number
+
+  @Column({
+    type: 'varchar',
+    nullable: false
+  })
+  tamanho: string
+
+  @Column({
+    type: 'varchar',
+    nullable: false
+  })
+  alinhamento: string
 
   @OneToOne(() => Defesa, {
     cascade: true,
@@ -118,19 +145,19 @@ export class Personagem implements IPersonagem {
     eager: true,
     nullable: true
   })
-  poderes: Poder[]
+  poderes: IPoder[]
 
   @OneToMany(() => ItemT20, (itens) => itens.personagem, {
     cascade: true,
     eager: true,
     nullable: true
   })
-  itens: ItemT20[]
+  itens: IItemInventario[]
 
   @OneToMany(() => Magia, (magias) => magias.personagem, {
     cascade: true,
     eager: true,
     nullable: true
   })
-  magias: Magia[]
+  magias: IMagia[]
 }

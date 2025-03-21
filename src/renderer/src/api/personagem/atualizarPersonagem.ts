@@ -1,5 +1,5 @@
-import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
+import { ICriatura } from '@renderer/@types/t20/Criatura'
 
-export const atualizarPersonagem = async (_personagem: PersonagemT20): Promise<void> => {
+export const atualizarPersonagem = async (_personagem: ICriatura): Promise<void> => {
   await window.api.putPersonagem(_personagem)
 }

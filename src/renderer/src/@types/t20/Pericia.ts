@@ -1,4 +1,6 @@
-export interface Pericia {
+import { IBonus } from './Bonus'
+
+export interface IPericia {
   id: number
   nome: string
   valor: number
@@ -7,5 +9,6 @@ export interface Pericia {
   atributo: string
   requerTreinamento: boolean
   sofrePenalidadeArmadura: boolean
+  bonus: IBonus[]
   descricao: string
 }

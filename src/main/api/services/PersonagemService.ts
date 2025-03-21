@@ -1,30 +1,30 @@
 import { IAtributo } from '../@types/t20/Atributo'
+import { ICriatura } from '../@types/t20/Criatura'
 import { IDefesa } from '../@types/t20/Defesa'
 import { IDeslocamento } from '../@types/t20/Deslocamento'
 import { IPericia } from '../@types/t20/Pericia'
-import { IPersonagem } from '../@types/t20/Personagem'
 import { IPoder } from '../@types/t20/Poder'
 import { IRecurso } from '../@types/t20/Recurso'
 import { SQLiteDataSource } from '../data-source'
 import { Atributo } from '../entity/atributo'
+import { Criatura } from '../entity/criatura'
 import { Defesa } from '../entity/defesa'
 import { Deslocamento } from '../entity/deslocamento'
 import { Mana } from '../entity/mana'
 import { Pericia } from '../entity/pericia'
-import { Personagem } from '../entity/personagem'
 import { Poder } from '../entity/poder'
 import { Vida } from '../entity/vida'
 
-export const getTodosPersonagens = async (): Promise<IPersonagem[]> => {
-  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+export const getTodosPersonagens = async (): Promise<ICriatura[]> => {
+  const personagemRepository = SQLiteDataSource.getRepository(Criatura)
   return await personagemRepository.find().catch((error) => {
     console.error('Erro: ' + error)
     return error
   })
 }
 
-export const getPersonagem = async (id: number): Promise<IPersonagem> => {
-  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+export const getPersonagem = async (id: number): Promise<ICriatura> => {
+  const personagemRepository = SQLiteDataSource.getRepository(Criatura)
   return await personagemRepository
     .findOneBy({
       id: id
@@ -34,28 +34,33 @@ export const getPersonagem = async (id: number): Promise<IPersonagem> => {
     })
 }
 
-export const postPersonagem = async (_personagem: Partial<IPersonagem>): Promise<IPersonagem> => {
-  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
-  return await personagemRepository.save(_personagem).catch((error) => {
+export const postPersonagem = async (_personagem: Partial<ICriatura>): Promise<ICriatura> => {
+  const personagemRepository = SQLiteDataSource.getRepository(Criatura)
+  const personagem = personagemRepository.create(_personagem)
+  return await personagemRepository.save(personagem).catch((error) => {
+    console.log(error)
     return error
   })
 }
 
-export const putPersonagem = async (_personagem: IPersonagem): Promise<IPersonagem> => {
-  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+export const putPersonagem = async (_personagem: ICriatura): Promise<ICriatura> => {
+  const personagemRepository = SQLiteDataSource.getRepository(Criatura)
   return await personagemRepository
     .findOneBy({
       id: _personagem.id
     })
     .then(async (personagem) => {
-      if (personagem) {
+      if (personagem && personagem.categoria === 'pj') {
         personagem.nome = _personagem.nome
         personagem.raca = _personagem.raca
-        personagem.classe = _personagem.classe
-        personagem.origem = _personagem.origem
-        personagem.divindade = _personagem.divindade
+        personagem.classe = _personagem.classe ?? 'guerreiro'
+        personagem.origem = _personagem.origem ?? 'taverneiro'
+        personagem.divindade = _personagem.divindade ?? 'nenhum'
         personagem.nivel = _personagem.nivel
-        personagem.experiencia = _personagem.experiencia
+        personagem.experiencia = _personagem.experiencia ?? 0
+        personagem.alinhamento = _personagem.alinhamento
+        personagem.tamanho = _personagem.tamanho
+        personagem.tipoCriatura = _personagem.tipoCriatura
         return await personagemRepository.save(personagem)
       }
       return 'Personagem não encontrado'
@@ -66,13 +71,13 @@ export const putPersonagem = async (_personagem: IPersonagem): Promise<IPersonag
 }
 
 export const deletePersonagem = async (id: number): Promise<void> => {
-  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+  const personagemRepository = SQLiteDataSource.getRepository(Criatura)
   await personagemRepository.delete(id)
 }
 
 export const postPoder = async (_poder: IPoder, idPersonagem: number): Promise<IPoder> => {
   const poderRepository = SQLiteDataSource.getRepository(Poder)
-  const personagemRepository = SQLiteDataSource.getRepository(Personagem)
+  const personagemRepository = SQLiteDataSource.getRepository(Criatura)
   const poder = poderRepository.create(_poder)
   poder.personagem = await personagemRepository
     .findOneBy({

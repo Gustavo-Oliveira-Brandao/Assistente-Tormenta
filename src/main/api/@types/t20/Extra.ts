@@ -1,4 +1,4 @@
-export interface ITopico {
+export interface IExtra {
   id: number
   titulo: string
   texto: string

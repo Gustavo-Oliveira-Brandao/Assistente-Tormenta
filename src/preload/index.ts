@@ -1,20 +1,20 @@
 import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
-import { IPersonagem } from '../main/api/@types/t20/Personagem'
 import { IPoder } from '../main/api/@types/t20/Poder'
 import { IAtributo } from '../main/api/@types/t20/Atributo'
 import { IRecurso } from '../main/api/@types/t20/Recurso'
 import { IDefesa } from '../main/api/@types/t20/Defesa'
 import { IDeslocamento } from '../main/api/@types/t20/Deslocamento'
 import { IPericia } from '../main/api/@types/t20/Pericia'
+import { ICriatura } from '../main/api/@types/t20/Criatura'
 
 // Custom APIs for renderer
 const api = {
-  getTodosPersonagens: (): Promise<IPersonagem[]> => ipcRenderer.invoke('get-todos-personagens'),
-  getPersonagem: (id: number): Promise<IPersonagem> => ipcRenderer.invoke('get-personagem', id),
-  postPersonagem: (personagem: Partial<IPersonagem>): Promise<IPersonagem> =>
+  getTodosPersonagens: (): Promise<ICriatura[]> => ipcRenderer.invoke('get-todos-personagens'),
+  getPersonagem: (id: number): Promise<ICriatura> => ipcRenderer.invoke('get-personagem', id),
+  postPersonagem: (personagem: Partial<ICriatura>): Promise<ICriatura> =>
     ipcRenderer.invoke('post-personagem', personagem),
-  putPersonagem: (personagem: IPersonagem): Promise<IPersonagem> =>
+  putPersonagem: (personagem: ICriatura): Promise<ICriatura> =>
     ipcRenderer.invoke('put-personagem', personagem),
   deletePersonagem: (id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', id),
   postPoder: (_poder: IPoder, idPersonagem: number): Promise<IPoder> =>

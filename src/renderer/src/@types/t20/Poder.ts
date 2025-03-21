@@ -1,6 +1,6 @@
-import { tag } from './tag'
+import { ITag } from './Tag'
 
-export interface Poder {
+export interface IPoder {
   id: number
   nome: string
   iconeURL: string
@@ -12,5 +12,5 @@ export interface Poder {
     titulo: string
     texto: string
   }[]
-  tags: tag[]
+  tags: ITag[]
 }

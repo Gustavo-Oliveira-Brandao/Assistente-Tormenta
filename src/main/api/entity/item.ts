@@ -1,7 +1,8 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { IItemInventario } from '../@types/t20/Item'
 import { Dano } from './dano'
-import { Personagem } from './personagem'
+import { Criatura } from './criatura'
+import type { ICriatura } from '../@types/t20/Criatura'
 
 @Entity()
 export class ItemT20 implements IItemInventario {
@@ -90,9 +91,9 @@ export class ItemT20 implements IItemInventario {
   })
   danos: Dano[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.itens, {
+  @ManyToOne(() => Criatura, (personagem) => personagem.itens, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  personagem: Personagem
+  personagem: ICriatura
 }

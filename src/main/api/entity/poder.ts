@@ -1,8 +1,9 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Topico } from './topico'
+import { Extra } from './topico'
 import { Tag } from './tag'
-import { Personagem } from './personagem'
 import { IPoder } from '../@types/t20/Poder'
+import { Criatura } from './criatura'
+import type { ICriatura } from '../@types/t20/Criatura'
 
 @Entity()
 export class Poder implements IPoder {
@@ -47,18 +48,18 @@ export class Poder implements IPoder {
   })
   preRequisitos: string
 
-  @OneToMany(() => Topico, (topicos) => topicos.poder, {
+  @OneToMany(() => Extra, (extras) => extras.poder, {
     eager: true,
     cascade: true
   })
-  topicos: Topico[]
+  extras: Extra[]
 
   @OneToMany(() => Tag, (tags) => tags.poder, { cascade: true, eager: true })
   tags: Tag[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.poderes, {
+  @ManyToOne(() => Criatura, (personagem) => personagem.poderes, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  personagem: Personagem
+  personagem: ICriatura
 }

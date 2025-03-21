@@ -1,4 +1,4 @@
-export interface Recurso {
+export interface IRecurso {
   id: number
   valorAtual: number
   valorMaximo: number

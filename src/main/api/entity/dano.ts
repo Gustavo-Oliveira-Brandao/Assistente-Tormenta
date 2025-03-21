@@ -1,7 +1,9 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { IDano } from '../@types/t20/Dano'
 import { ItemT20 } from './item'
 import { Magia } from './magia'
+import { Bonus } from './bonus'
+import { IBonus } from '../@types/t20/Bonus'
 
 @Entity()
 export class Dano implements IDano {
@@ -39,6 +41,13 @@ export class Dano implements IDano {
     type: 'varchar'
   })
   atributo: string
+
+  @OneToMany(() => Bonus, (bonus) => bonus.dano, {
+    cascade: true,
+    eager: true,
+    nullable: true
+  })
+  bonus: IBonus[]
 
   @ManyToOne(() => ItemT20, (item) => item.danos, {
     onDelete: 'CASCADE',

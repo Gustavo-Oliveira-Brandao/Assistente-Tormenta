@@ -1,10 +1,11 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { IMagia } from '../@types/t20/Magia'
-import { Personagem } from './personagem'
 import { AprimoramentoMagia } from './aprimoramentoMagia'
 import { IAprimoramentoMagia } from '../@types/t20/AprimoramentoMagia'
 import { Dano } from './dano'
 import { IDano } from '../@types/t20/Dano'
+import { Criatura } from './criatura'
+import type { ICriatura } from '../@types/t20/Criatura'
 
 @Entity()
 export class Magia implements IMagia {
@@ -94,9 +95,9 @@ export class Magia implements IMagia {
   })
   aprimoramentos: IAprimoramentoMagia[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.magias, {
+  @ManyToOne(() => Criatura, (personagem) => personagem.magias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  personagem: Personagem
+  personagem: ICriatura
 }

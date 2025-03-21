@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { Recurso } from '@renderer/@types/t20/Recurso'
+import { IRecurso } from '@renderer/@types/t20/Recurso'
 import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '../form-group/form-group'
 import { useAtualizarVidaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarVidaMutation'
@@ -17,7 +17,7 @@ const BarraRecurso = ({
   recurso
 }: {
   categoria: string
-  recurso: Recurso
+  recurso: IRecurso
 }): JSX.Element => {
   const [larguraBarra, setLarguraBarra] = useState(0)
   const [modal, abrirModal] = useState(false)

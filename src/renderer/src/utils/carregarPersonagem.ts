@@ -1,7 +1,7 @@
-import { PersonagemT20 } from '@renderer/@types/t20/Personagem'
+import { ICriatura } from '@renderer/@types/t20/Criatura'
 import { exibirRacas } from '@renderer/api/raca/exibirRacas'
 
-export const carregarPersonagem = async (personagem: PersonagemT20): Promise<PersonagemT20> => {
+export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatura> => {
   const racas = await exibirRacas()
   const racaAtual = racas.find((raca) => raca.nome === personagem.raca.toLowerCase())
 
@@ -11,7 +11,12 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
         (atributoRaca) => atributoRaca.atributo === atributo.nome
       )
       atributo.racial = boost ? boost.valor : 0
-      atributo.valorAtual = atributo.valor + atributo.bonus + atributo.racial
+      atributo.valorAtual = atributo.valor + atributo.racial
+      atributo.bonus.forEach((bonus) => {
+        if (bonus.estaAtivo) {
+          atributo.valorAtual += bonus.valor
+        }
+      })
     })
   }
 
@@ -30,9 +35,14 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
     10 +
     personagem.defesa.armadura +
     personagem.defesa.escudo +
-    personagem.defesa.outros +
     personagem.defesa.temporario +
     valorAtributoDefesa
+
+  personagem.defesa.bonus.forEach((bonus) => {
+    if (bonus.estaAtivo) {
+      personagem.defesa.valorAtual += bonus.valor
+    }
+  })
 
   personagem.pericias.forEach((pericia) => {
     let valorTreinamento = 0
@@ -46,6 +56,11 @@ export const carregarPersonagem = async (personagem: PersonagemT20): Promise<Per
         pericia.valor -= personagem.defesa.penalidadeArmaduraTotal
       }
     }
+    pericia.bonus.forEach((bonus) => {
+      if (bonus.estaAtivo) {
+        pericia.valor += bonus.valor
+      }
+    })
   })
 
   personagem.vida.valorMaximo =

@@ -1,4 +1,4 @@
-import { AprimoramentoMagia } from './AprimoramentoMagia'
+import { IAprimoramentoMagia } from './AprimoramentoMagia'
 import { IDano } from './Dano'
 
 export interface IMagia {
@@ -18,5 +18,5 @@ export interface IMagia {
   publicacao: string
   escola: string
   danos?: IDano[]
-  aprimoramentos: AprimoramentoMagia[]
+  aprimoramentos: IAprimoramentoMagia[]
 }

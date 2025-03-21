@@ -1,6 +1,9 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Personagem } from './personagem'
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { Criatura } from './criatura'
 import { IAtributo } from '../@types/t20/Atributo'
+import { Bonus } from './bonus'
+import { IBonus } from '../@types/t20/Bonus'
+import type { ICriatura } from '../@types/t20/Criatura'
 
 @Entity()
 export class Atributo implements IAtributo {
@@ -21,15 +24,16 @@ export class Atributo implements IAtributo {
   })
   valor: number
 
-  @Column({
-    type: 'integer',
-    nullable: false
+  @OneToMany(() => Bonus, (bonus) => bonus.atributo, {
+    cascade: true,
+    eager: true,
+    nullable: true
   })
-  bonus: number
+  bonus: IBonus[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {
+  @ManyToOne(() => Criatura, (personagem) => personagem.atributos, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  personagem: Personagem
+  personagem: ICriatura
 }

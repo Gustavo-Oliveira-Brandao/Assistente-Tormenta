@@ -1,9 +1,9 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Poder } from './poder'
-import { ITopico } from '../@types/t20/Topico'
+import { IExtra } from '../@types/t20/Extra'
 
 @Entity()
-export class Topico implements ITopico {
+export class Extra implements IExtra {
   @PrimaryGeneratedColumn({
     type: 'integer'
   })
@@ -21,7 +21,7 @@ export class Topico implements ITopico {
   })
   texto: string
 
-  @ManyToOne(() => Poder, (poder) => poder.topicos, {
+  @ManyToOne(() => Poder, (poder) => poder.extras, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })

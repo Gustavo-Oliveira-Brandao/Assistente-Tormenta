@@ -5,7 +5,6 @@ export interface IDano {
   quantidade: number
   dado: number
   tipo: string
-  aplicaModificador: boolean
   atributo: string
   bonus: IBonus[]
 }

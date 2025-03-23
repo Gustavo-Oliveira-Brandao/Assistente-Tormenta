@@ -82,7 +82,7 @@ export class Criatura implements ICriatura {
 
   @Column({
     type: 'varchar',
-    nullable: false
+    nullable: true
   })
   alinhamento: string
 

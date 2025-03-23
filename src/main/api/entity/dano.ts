@@ -32,12 +32,6 @@ export class Dano implements IDano {
 
   @Column({
     nullable: false,
-    type: 'boolean'
-  })
-  aplicaModificador: boolean
-
-  @Column({
-    nullable: false,
     type: 'varchar'
   })
   atributo: string

@@ -5,4 +5,5 @@ export interface IRecurso {
   valorPorNivel: number
   valorTemporario: number
   atributo: string
+  limitePM?: number
 }

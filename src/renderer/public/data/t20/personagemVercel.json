@@ -30,6 +30,7 @@
     "valorTemporario": 10,
     "valorPorNivel": 3,
     "valorBase": 3,
+    "limitePM": 0,
     "atributo": "nenhum"
   },
   "deslocamento": {
@@ -43,32 +44,38 @@
     {
       "nome": "forca",
       "valor": 4,
-      "bonus": 0
+      "bonus": [
+        {
+          "label": "sla",
+          "valor": 2,
+          "estaAtivo": false
+        }
+      ]
     },
     {
       "nome": "destreza",
       "valor": 2,
-      "bonus": 0
+      "bonus": []
     },
     {
       "nome": "constituicao",
       "valor": 2,
-      "bonus": 0
+      "bonus": []
     },
     {
       "nome": "inteligencia",
       "valor": 2,
-      "bonus": 0
+      "bonus": []
     },
     {
       "nome": "sabedoria",
       "valor": 2,
-      "bonus": 0
+      "bonus": []
     },
     {
       "nome": "carisma",
       "valor": 2,
-      "bonus": 0
+      "bonus": []
     }
   ],
   "pericias": [

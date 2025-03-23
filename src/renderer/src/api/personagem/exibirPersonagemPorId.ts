@@ -4,5 +4,6 @@ import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
 export const exibirPersonagemPorId = async (id: number): Promise<ICriatura> => {
   let personagem = await window.api.getPersonagem(id)
   personagem = await carregarPersonagem(personagem)
+  console.log(personagem)
   return personagem
 }

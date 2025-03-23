@@ -56,12 +56,6 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
                       placeholder={String(atributo.valor)}
                       type="number"
                     />
-                    <FormGroup
-                      name={'bonus'}
-                      label={'bônus:'}
-                      placeholder={String(atributo.bonus)}
-                      type={'number'}
-                    />
                   </div>
                 </fieldset>
                 {Object.entries(errors).map(([field, error]) => (

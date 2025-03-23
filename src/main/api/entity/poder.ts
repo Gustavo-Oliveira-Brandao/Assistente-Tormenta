@@ -1,5 +1,5 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Extra } from './topico'
+import { Extra } from './extra'
 import { Tag } from './tag'
 import { IPoder } from '../@types/t20/Poder'
 import { Criatura } from './criatura'
@@ -32,7 +32,8 @@ export class Poder implements IPoder {
 
   @Column({
     type: 'varchar',
-    nullable: false
+    nullable: false,
+    length: 1000
   })
   descricao: string
 

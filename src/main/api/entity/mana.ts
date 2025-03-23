@@ -37,4 +37,10 @@ export class Mana implements IRecurso {
     nullable: false
   })
   atributo: string
+
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  limitePM?: number
 }

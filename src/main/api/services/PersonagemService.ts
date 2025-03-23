@@ -2,56 +2,61 @@ import { ICriatura } from '../@types/t20/Criatura'
 import { criaturaRepository } from '../repositories/CriaturaRepository'
 
 export const getTodosPersonagens = async (): Promise<ICriatura[]> => {
-  return await criaturaRepository.find().catch((error) => {
-    console.error('Erro: ' + error)
-    return error
-  })
+  try {
+    const personagensEncontrados = await criaturaRepository.find()
+    return personagensEncontrados
+  } catch (err) {
+    throw new Error('Erro ao exibir personagens.')
+  }
 }
 
 export const getPersonagem = async (id: number): Promise<ICriatura> => {
-  return await criaturaRepository
-    .findOneBy({
-      id: id
-    })
-    .catch((error) => {
-      return error
-    })
+  try {
+    const personagemEncontrado = await criaturaRepository.findOneBy({ id: id })
+    if (personagemEncontrado) {
+      return personagemEncontrado
+    }
+    throw new Error('Personagem não encontrado.')
+  } catch (err) {
+    throw new Error('Erro ao exibir personagem.')
+  }
 }
 
 export const postPersonagem = async (_personagem: Partial<ICriatura>): Promise<ICriatura> => {
-  const personagem = criaturaRepository.create(_personagem)
-  return await criaturaRepository.save(personagem).catch((error) => {
-    console.log(error)
-    return error
-  })
+  try {
+    const personagem = criaturaRepository.create(_personagem)
+    return await criaturaRepository.save(personagem)
+  } catch (err) {
+    throw new Error('Erro ao criar personagem.')
+  }
 }
 
 export const putPersonagem = async (_personagem: ICriatura): Promise<ICriatura> => {
-  return await criaturaRepository
-    .findOneBy({
-      id: _personagem.id
-    })
-    .then(async (personagem) => {
-      if (personagem && personagem.categoria === 'pj') {
-        personagem.nome = _personagem.nome
-        personagem.raca = _personagem.raca
-        personagem.classe = _personagem.classe ?? 'guerreiro'
-        personagem.origem = _personagem.origem ?? 'taverneiro'
-        personagem.divindade = _personagem.divindade ?? 'nenhum'
-        personagem.nivel = _personagem.nivel
-        personagem.experiencia = _personagem.experiencia ?? 0
-        personagem.alinhamento = _personagem.alinhamento ?? 'n'
-        personagem.tamanho = _personagem.tamanho
-        personagem.tipoCriatura = _personagem.tipoCriatura
-        return await criaturaRepository.save(personagem)
-      }
-      return 'Personagem não encontrado'
-    })
-    .catch((err) => {
-      return err
-    })
+  try {
+    const personagemEncontrado = await criaturaRepository.findOneBy({ id: _personagem.id })
+    if (personagemEncontrado && personagemEncontrado.categoria === 'pj') {
+      personagemEncontrado.nome = _personagem.nome
+      personagemEncontrado.raca = _personagem.raca
+      personagemEncontrado.classe = _personagem.classe ?? 'guerreiro'
+      personagemEncontrado.origem = _personagem.origem ?? 'taverneiro'
+      personagemEncontrado.divindade = _personagem.divindade ?? 'nenhum'
+      personagemEncontrado.nivel = _personagem.nivel
+      personagemEncontrado.experiencia = _personagem.experiencia ?? 0
+      personagemEncontrado.alinhamento = _personagem.alinhamento ?? 'n'
+      personagemEncontrado.tamanho = _personagem.tamanho
+      personagemEncontrado.tipoCriatura = _personagem.tipoCriatura
+      return await criaturaRepository.save(personagemEncontrado)
+    }
+    throw new Error('Personagem não encontrado.')
+  } catch (err) {
+    throw new Error('Erro ao atualizar o personagem.')
+  }
 }
 
 export const deletePersonagem = async (id: number): Promise<void> => {
-  await criaturaRepository.delete(id)
+  try {
+    await criaturaRepository.delete(id)
+  } catch (err) {
+    throw new Error('Erro ao deletar personagem.')
+  }
 }

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
 import FormGroup from '../form-group/form-group'
-import { DeepPartial, FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
+import { FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarAtributoMutation } from '@renderer/hooks/mutations/atributo/useAtualizarAtributoMutation'
@@ -53,7 +53,7 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
       </div>
       {modal &&
         createPortal(
-          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="450px">
+          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="fit-content">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <fieldset>
@@ -73,7 +73,7 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
                     <div key={field.id} className="d-flex">
                       <FormGroup
                         name={`bonus.${index}.label`}
-                        label="descrição:"
+                        label="nome:"
                         placeholder="Forma selvagem"
                         type="text"
                       />

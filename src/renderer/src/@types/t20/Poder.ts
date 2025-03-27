@@ -8,7 +8,7 @@ export interface IPoder {
   descricao: string
   categoria: string
   preRequisitos: string
-  topicos: {
+  extras: {
     titulo: string
     texto: string
   }[]

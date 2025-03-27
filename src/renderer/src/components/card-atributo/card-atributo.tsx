@@ -4,12 +4,13 @@ import { useState } from 'react'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
 import FormGroup from '../form-group/form-group'
-import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
+import { DeepPartial, FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarAtributoMutation } from '@renderer/hooks/mutations/atributo/useAtualizarAtributoMutation'
 import { atributoSchema } from '@renderer/validators/schemas/atributoSchema'
 import { IAtributo } from '@renderer/@types/t20/Atributo'
+import BotaoModular from '../botao-modular/botao-modular'
 
 const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
   const [modal, abrirModal] = useState(false)
@@ -18,18 +19,26 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
   const methods = useForm<z.infer<typeof atributoSchema>>({
     resolver: zodResolver(atributoSchema),
     defaultValues: {
-      valor: atributo.valor
+      valor: atributo.valor,
+      bonus: atributo.bonus
     }
   })
 
   const {
+    control,
     handleSubmit,
     formState: { errors }
   } = methods
 
+  const { fields, append, remove } = useFieldArray({
+    control,
+    name: 'bonus'
+  })
+
   const onEdit: SubmitHandler<z.infer<typeof atributoSchema>> = async (data): Promise<void> => {
     const novoAtributo = { ...atributo }
     novoAtributo.valor = data.valor
+    novoAtributo.bonus = data.bonus
     atualizarAtributo.mutate(novoAtributo)
     abrirModal(false)
   }
@@ -44,7 +53,7 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
       </div>
       {modal &&
         createPortal(
-          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="fit-content">
+          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="450px">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <fieldset>
@@ -58,6 +67,44 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
                     />
                   </div>
                 </fieldset>
+                <fieldset>
+                  <legend>Bônus</legend>
+                  {fields.map((field, index) => (
+                    <div key={field.id} className="d-flex">
+                      <FormGroup
+                        name={`bonus.${index}.label`}
+                        label="descrição:"
+                        placeholder="Forma selvagem"
+                        type="text"
+                      />
+                      <FormGroup
+                        name={`bonus.${index}.valor`}
+                        label="valor:"
+                        placeholder="0"
+                        type="number"
+                      />
+                      <FormGroup name={`bonus.${index}.estaAtivo`} label="Ativo:" type="checkbox" />
+                      <BotaoModular
+                        css="botaoInteracao"
+                        icone="./icons/delete.svg"
+                        onClickEvent={() => remove(index)}
+                      />
+                    </div>
+                  ))}
+                  <BotaoModular
+                    css="botaoAdicionar"
+                    onClickEvent={() =>
+                      append({
+                        label: 'Buff',
+                        valor: 0,
+                        estaAtivo: false
+                      })
+                    }
+                    texto="Adicionar modificador"
+                    icone="./icons/plus-solid.svg"
+                  />
+                </fieldset>
+
                 {Object.entries(errors).map(([field, error]) => (
                   <p role="alert" key={field}>
                     {error.message}!

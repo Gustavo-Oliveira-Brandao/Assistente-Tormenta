@@ -3,6 +3,6 @@ import { IDefesa } from '../@types/t20/Defesa'
 import { putDefesa } from '../services/DefesaService'
 
 ipcMain.handle('put-defesa', async (event: IpcMainInvokeEvent, defesa: IDefesa) => {
-  event.defaultPrevented
+  console.log(`Evento recebido com frameID: ${event.frameId}`)
   await putDefesa(defesa)
 })

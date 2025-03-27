@@ -41,13 +41,13 @@ const CardPoder = ({
             ))}
           </div>
           <p className={`${styles.poderDescricao} ${styles.poppins}`}>{poder.descricao}</p>
-          {poder.topicos.length !== 0 && (
-            <div className={styles.poderTopicos}>
-              {poder.topicos.map((topico, index) => (
-                <div key={index} className={styles.poderTopico}>
+          {poder.extras.length !== 0 && (
+            <div className={styles.poderExtras}>
+              {poder.extras.map((extra, index) => (
+                <div key={index} className={styles.poderExtra}>
                   <p>
-                    <span className={styles.destaque}>{topico.titulo}</span>{' '}
-                    <span className={styles.poppins}>{topico.texto}</span>
+                    <span className={styles.destaque}>{extra.titulo}</span>{' '}
+                    <span className={styles.poppins}>{extra.texto}</span>
                   </p>
                 </div>
               ))}

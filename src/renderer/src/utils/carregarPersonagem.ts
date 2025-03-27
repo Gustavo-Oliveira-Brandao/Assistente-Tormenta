@@ -7,6 +7,7 @@ export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatu
 
   if (racaAtual) {
     personagem.atributos.forEach((atributo) => {
+      console.log(atributo)
       const boost = racaAtual.atributos.find(
         (atributoRaca) => atributoRaca.atributo === atributo.nome
       )

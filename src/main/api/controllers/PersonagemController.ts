@@ -9,26 +9,26 @@ import {
 import { ICriatura } from '../@types/t20/Criatura'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
-  event.defaultPrevented
+  console.log(`Evento recebido com frameID: ${event.frameId}`)
   return await getTodosPersonagens()
 })
 
 ipcMain.handle('get-personagem', async (event: IpcMainInvokeEvent, id: number) => {
-  event.defaultPrevented
+  console.log(`Evento recebido com frameID: ${event.frameId}`)
   return await getPersonagem(id)
 })
 
 ipcMain.handle('post-personagem', async (event: IpcMainInvokeEvent, _personagem: ICriatura) => {
-  event.defaultPrevented
+  console.log(`Evento recebido com frameID: ${event.frameId}`)
   return await postPersonagem(_personagem)
 })
 
 ipcMain.handle('put-personagem', async (event: IpcMainInvokeEvent, _personagem: ICriatura) => {
-  event.defaultPrevented
+  console.log(`Evento recebido com frameID: ${event.frameId}`)
   return await putPersonagem(_personagem)
 })
 
 ipcMain.handle('delete-personagem', async (event: IpcMainInvokeEvent, id: number) => {
-  event.defaultPrevented
+  console.log(`Evento recebido com frameID: ${event.frameId}`)
   await deletePersonagem(id)
 })

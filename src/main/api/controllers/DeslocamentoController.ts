@@ -5,7 +5,7 @@ import { putDeslocamento } from '../services/DeslocamentoService'
 ipcMain.handle(
   'put-deslocamento',
   async (event: IpcMainInvokeEvent, deslocamento: IDeslocamento) => {
-    event.defaultPrevented
+    console.log(`Evento recebido com frameID: ${event.frameId}`)
     await putDeslocamento(deslocamento)
   }
 )

@@ -1,5 +1,5 @@
 export interface IBonus {
-  id: number
+  id?: number
   label: string
   valor: number
   estaAtivo: boolean

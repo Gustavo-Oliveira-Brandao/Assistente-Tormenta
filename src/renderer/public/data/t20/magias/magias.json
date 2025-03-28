@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "nome": "Abençoar Alimentos",
     "iconeURL": "./icons/shiny-apple.svg",
     "publicacao": "Edição jogo do ano",
@@ -31,7 +30,6 @@
     ]
   },
   {
-    "id": 2,
     "nome": "Acalmar Animal",
     "iconeURL": "./icons/sitting-dog.svg",
     "publicacao": "Edição jogo do ano",
@@ -66,7 +64,6 @@
     ]
   },
   {
-    "id": 3,
     "nome": "Açoite Flamejante",
     "iconeURL": "./icons/fluffy-flame.svg",
     "publicacao": "Edição jogo do ano",
@@ -97,7 +94,6 @@
     ]
   },
   {
-    "id": 4,
     "nome": "Adaga Mental",
     "iconeURL": "./icons/flying-dagger.svg",
     "publicacao": "Edição jogo do ano",
@@ -128,7 +124,6 @@
     ]
   },
   {
-    "id": 5,
     "nome": "Alarme",
     "iconeURL": "./icons/ringing-bell.svg",
     "publicacao": "Edição jogo do ano",
@@ -159,7 +154,6 @@
     ]
   },
   {
-    "id": 6,
     "nome": "Amedrontar",
     "iconeURL": "./icons/dread.svg",
     "publicacao": "Edição jogo do ano",
@@ -190,7 +184,6 @@
     ]
   },
   {
-    "id": 7,
     "nome": "Arma Espiritual",
     "iconeURL": "./icons/magic-axe.svg",
     "publicacao": "Edição jogo do ano",
@@ -233,7 +226,6 @@
     ]
   },
   {
-    "id": 8,
     "nome": "Arma Mágica",
     "iconeURL": "./icons/magic-axe.svg",
     "publicacao": "Edição jogo do ano",
@@ -264,7 +256,6 @@
     ]
   },
   {
-    "id": 9,
     "nome": "Armadura Arcana",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -295,7 +286,6 @@
     ]
   },
   {
-    "id": 10,
     "nome": "Armamento da Natureza",
     "iconeURL": "./icons/fangs.svg",
     "publicacao": "Edição jogo do ano",
@@ -330,7 +320,6 @@
     ]
   },
   {
-    "id": 11,
     "nome": "Aviso",
     "iconeURL": "./icons/telepathy.svg",
     "publicacao": "Edição jogo do ano",
@@ -365,7 +354,6 @@
     ]
   },
   {
-    "id": 12,
     "nome": "Bênção",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -392,7 +380,6 @@
     ]
   },
   {
-    "id": 13,
     "nome": "Caminhos da Natureza",
     "iconeURL": "./icons/spectre.svg",
     "publicacao": "Edição jogo do ano",
@@ -423,7 +410,6 @@
     ]
   },
   {
-    "id": 14,
     "nome": "Comando",
     "iconeURL": "./icons/conqueror.svg",
     "publicacao": "Edição jogo do ano",
@@ -450,7 +436,6 @@
     ]
   },
   {
-    "id": 15,
     "nome": "Compreensão",
     "iconeURL": "./icons/classical-knowledge.svg",
     "publicacao": "Edição jogo do ano",
@@ -485,7 +470,6 @@
     ]
   },
   {
-    "id": 16,
     "nome": "Concentração de Combate",
     "iconeURL": "./icons/eye-target.svg",
     "publicacao": "Edição jogo do ano",
@@ -520,7 +504,6 @@
     ]
   },
   {
-    "id": 17,
     "nome": "Conjurar Monstro",
     "iconeURL": "./icons/monster-grasp.svg",
     "publicacao": "Edição jogo do ano",
@@ -587,7 +570,6 @@
     ]
   },
   {
-    "id": 18,
     "nome": "Consagrar",
     "iconeURL": "./icons/aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -618,7 +600,6 @@
     ]
   },
   {
-    "id": 19,
     "nome": "Controlar Plantas",
     "iconeURL": "./icons/leaf-swirl.svg",
     "publicacao": "Edição jogo do ano",
@@ -653,7 +634,6 @@
     ]
   },
   {
-    "id": 20,
     "nome": "Criar Elementos",
     "iconeURL": "./icons/flame.svg",
     "publicacao": "Edição jogo do ano",
@@ -684,7 +664,6 @@
     ]
   },
   {
-    "id": 21,
     "nome": "Criar Ilusão",
     "iconeURL": "./icons/magick-trick.svg",
     "publicacao": "Edição jogo do ano",
@@ -735,7 +714,6 @@
     ]
   },
   {
-    "id": 22,
     "nome": "Curar Ferimentos",
     "iconeURL": "./icons/healing.svg",
     "publicacao": "Edição jogo do ano",
@@ -774,7 +752,6 @@
     ]
   },
   {
-    "id": 23,
     "nome": "Dardo Gélido",
     "iconeURL": "./icons/ice-spell-cast.svg",
     "publicacao": "Edição jogo do ano",
@@ -801,7 +778,6 @@
     ]
   },
   {
-    "id": 24,
     "nome": "Despedaçar",
     "iconeURL": "./icons/tearing.svg",
     "publicacao": "Edição jogo do ano",
@@ -844,7 +820,6 @@
     ]
   },
   {
-    "id": 25,
     "nome": "Detectar Ameaças",
     "iconeURL": "./icons/ringing-bell.svg",
     "publicacao": "Edição jogo do ano",
@@ -871,7 +846,6 @@
     ]
   },
   {
-    "id": 26,
     "nome": "Disfarce Ilusório",
     "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
@@ -910,7 +884,6 @@
     ]
   },
   {
-    "id": 27,
     "nome": "Enfeitiçar",
     "iconeURL": "./icons/charm.svg",
     "publicacao": "Edição jogo do ano",
@@ -941,7 +914,6 @@
     ]
   },
   {
-    "id": 28,
     "nome": "Escudo da Fé",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -980,7 +952,6 @@
     ]
   },
   {
-    "id": 29,
     "nome": "Escuridão",
     "iconeURL": "./icons/sly.svg",
     "publicacao": "Edição jogo do ano",
@@ -1019,7 +990,6 @@
     ]
   },
   {
-    "id": 30,
     "nome": "Explosão de Chamas",
     "iconeURL": "./icons/flamed-leaf.svg",
     "publicacao": "Edição jogo do ano",
@@ -1050,7 +1020,6 @@
     ]
   },
   {
-    "id": 31,
     "nome": "Hipnotismo",
     "iconeURL": "./icons/charm.svg",
     "publicacao": "Edição jogo do ano",
@@ -1093,7 +1062,6 @@
     ]
   },
   {
-    "id": 32,
     "nome": "Imagem Espelhada",
     "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
@@ -1120,7 +1088,6 @@
     ]
   },
   {
-    "id": 33,
     "nome": "Infligir Ferimentos",
     "iconeURL": "./icons/evil-hand.svg",
     "publicacao": "Edição jogo do ano",
@@ -1155,7 +1122,6 @@
     ]
   },
   {
-    "id": 34,
     "nome": "Jato Corrosivo",
     "iconeURL": "./icons/acid-blob.svg",
     "publicacao": "Edição jogo do ano",
@@ -1182,7 +1148,6 @@
     ]
   },
   {
-    "id": 35,
     "nome": "Leque Cromático",
     "iconeURL": "./icons/lightning-tree.svg",
     "publicacao": "Edição jogo do ano",
@@ -1213,7 +1178,6 @@
     ]
   },
   {
-    "id": 36,
     "nome": "Luz",
     "iconeURL": "./icons/dungeon-light.svg",
     "publicacao": "Edição jogo do ano",
@@ -1260,7 +1224,6 @@
     ]
   },
   {
-    "id": 37,
     "nome": "Névoa",
     "iconeURL": "./icons/fluffy-cloud.svg",
     "publicacao": "Edição jogo do ano",
@@ -1303,7 +1266,6 @@
     ]
   },
   {
-    "id": 38,
     "nome": "Orientação",
     "iconeURL": "./icons/classical-knowledge.svg",
     "publicacao": "Edição jogo do ano",
@@ -1334,7 +1296,6 @@
     ]
   },
   {
-    "id": 39,
     "nome": "Perdição",
     "iconeURL": "./icons/voodoo-doll.svg",
     "publicacao": "Edição jogo do ano",
@@ -1357,7 +1318,6 @@
     ]
   },
   {
-    "id": 40,
     "nome": "Primor Atlético",
     "iconeURL": "./icons/weight-lifting-up.svg",
     "publicacao": "Edição jogo do ano",
@@ -1392,7 +1352,6 @@
     ]
   },
   {
-    "id": 41,
     "nome": "Profanar",
     "iconeURL": "./icons/evil-hand.svg",
     "publicacao": "Edição jogo do ano",
@@ -1423,7 +1382,6 @@
     ]
   },
   {
-    "id": 42,
     "nome": "Proteção Divina",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -1458,7 +1416,6 @@
     ]
   },
   {
-    "id": 43,
     "nome": "Queda Suave",
     "iconeURL": "./icons/falling-leaf.svg",
     "publicacao": "Edição jogo do ano",
@@ -1489,7 +1446,6 @@
     ]
   },
   {
-    "id": 44,
     "nome": "Raio do Enfraquecimento",
     "iconeURL": "./icons/weight-lifting-down.svg",
     "publicacao": "Edição jogo do ano",
@@ -1520,7 +1476,6 @@
     ]
   },
   {
-    "id": 45,
     "nome": "Resistência à Energia",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -1559,7 +1514,6 @@
     ]
   },
   {
-    "id": 46,
     "nome": "Santuário",
     "iconeURL": "./icons/temple-gate.svg",
     "publicacao": "Edição jogo do ano",
@@ -1586,7 +1540,6 @@
     ]
   },
   {
-    "id": 47,
     "nome": "Seta Infalível de Talude",
     "iconeURL": "./icons/energy-arrow.svg",
     "publicacao": "Edição jogo do ano",
@@ -1621,7 +1574,6 @@
     ]
   },
   {
-    "id": 48,
     "nome": "Sono",
     "iconeURL": "./icons/sleepy.svg",
     "publicacao": "Edição jogo do ano",
@@ -1652,7 +1604,6 @@
     ]
   },
   {
-    "id": 49,
     "nome": "Suporte Ambiental",
     "iconeURL": "./icons/fallout-shelter.svg",
     "publicacao": "Edição jogo do ano",
@@ -1675,7 +1626,6 @@
     ]
   },
   {
-    "id": 50,
     "nome": "Teia",
     "iconeURL": "./icons/spider-web.svg",
     "publicacao": "Edição jogo do ano",
@@ -1706,7 +1656,6 @@
     ]
   },
   {
-    "id": 51,
     "nome": "Toque Chocante",
     "iconeURL": "./icons/bolt-spell-cast.svg",
     "publicacao": "Edição jogo do ano",
@@ -1737,7 +1686,6 @@
     ]
   },
   {
-    "id": 52,
     "nome": "Tranca Arcana",
     "iconeURL": "./icons/locked-box.svg",
     "publicacao": "Edição jogo do ano",
@@ -1772,7 +1720,6 @@
     ]
   },
   {
-    "id": 53,
     "nome": "Tranquilidade",
     "iconeURL": "./icons/waves.svg",
     "publicacao": "Edição jogo do ano",
@@ -1803,7 +1750,6 @@
     ]
   },
   {
-    "id": 54,
     "nome": "Transmutar Objetos",
     "iconeURL": "./icons/anvil-impact.svg",
     "publicacao": "Edição jogo do ano",
@@ -1846,7 +1792,6 @@
     ]
   },
   {
-    "id": 55,
     "nome": "Visão Mística",
     "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
@@ -1877,7 +1822,6 @@
     ]
   },
   {
-    "id": 56,
     "nome": "Vitalidade Fantasma",
     "iconeURL": "./icons/ghost-ally.svg",
     "publicacao": "Edição jogo do ano",
@@ -1904,7 +1848,6 @@
     ]
   },
   {
-    "id": 57,
     "nome": "Área Escorregadia",
     "iconeURL": "./icons/spill.svg",
     "publicacao": "Edição jogo do ano",
@@ -1936,7 +1879,6 @@
   },
 
   {
-    "id": 58,
     "nome": "Aliado Animal",
     "iconeURL": "./icons/sitting-dog.svg",
     "publicacao": "Edição jogo do ano",
@@ -1967,7 +1909,6 @@
     ]
   },
   {
-    "id": 59,
     "nome": "Alterar Tamanho",
     "iconeURL": "./icons/giant.svg",
     "publicacao": "Edição jogo do ano",
@@ -2002,7 +1943,6 @@
     ]
   },
   {
-    "id": 60,
     "nome": "Amarras Etéreas",
     "iconeURL": "./icons/quicksand.svg",
     "publicacao": "Edição jogo do ano",
@@ -2033,7 +1973,6 @@
     ]
   },
   {
-    "id": 61,
     "nome": "Aparência Perfeita",
     "iconeURL": "./icons/self-love.svg",
     "publicacao": "Edição jogo do ano",
@@ -2056,7 +1995,6 @@
     ]
   },
   {
-    "id": 62,
     "nome": "Augúrio",
     "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
@@ -2091,7 +2029,6 @@
     ]
   },
   {
-    "id": 63,
     "nome": "Bola de Fogo",
     "iconeURL": "./icons/pyromaniac.svg",
     "publicacao": "Edição jogo do ano",
@@ -2122,7 +2059,6 @@
     ]
   },
   {
-    "id": 64,
     "nome": "Campo de Força",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -2161,7 +2097,6 @@
     ]
   },
   {
-    "id": 65,
     "nome": "Camuflagem Ilusória",
     "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
@@ -2188,7 +2123,6 @@
     ]
   },
   {
-    "id": 66,
     "nome": "Condição",
     "iconeURL": "./icons/eye-target.svg",
     "publicacao": "Edição jogo do ano",
@@ -2215,7 +2149,6 @@
     ]
   },
   {
-    "id": 67,
     "nome": "Conjurar Mortos-Vivos",
     "iconeURL": "./icons/shambling-zombie.svg",
     "publicacao": "Edição jogo do ano",
@@ -2262,7 +2195,6 @@
     ]
   },
   {
-    "id": 68,
     "nome": "Controlar Fogo",
     "iconeURL": "./icons/flame.svg",
     "publicacao": "Edição jogo do ano",
@@ -2293,7 +2225,6 @@
     ]
   },
   {
-    "id": 69,
     "nome": "Controlar Madeira",
     "iconeURL": "./icons/wood-pile.svg",
     "publicacao": "Edição jogo do ano",
@@ -2328,7 +2259,6 @@
     ]
   },
   {
-    "id": 70,
     "nome": "Crânio Voador de Vladislav",
     "iconeURL": "./icons/skull-bolt.svg",
     "publicacao": "Edição jogo do ano",
@@ -2355,7 +2285,6 @@
     ]
   },
   {
-    "id": 71,
     "nome": "Círculo da Justiça",
     "iconeURL": "./icons/scales.svg",
     "publicacao": "Edição jogo do ano",
@@ -2386,7 +2315,6 @@
     ]
   },
   {
-    "id": 72,
     "nome": "Desespero Esmagador",
     "iconeURL": "./icons/shattered-heart.svg",
     "publicacao": "Edição jogo do ano",
@@ -2417,7 +2345,6 @@
     ]
   },
   {
-    "id": 73,
     "nome": "Dissipar Magia",
     "iconeURL": "./icons/spell-book.svg",
     "publicacao": "Edição jogo do ano",
@@ -2440,7 +2367,6 @@
     ]
   },
   {
-    "id": 74,
     "nome": "Enxame de Pestes",
     "iconeURL": "./icons/earwig.svg",
     "publicacao": "Edição jogo do ano",
@@ -2475,7 +2401,6 @@
     ]
   },
   {
-    "id": 75,
     "nome": "Esculpir Sons",
     "iconeURL": "./icons/sound-waves.svg",
     "publicacao": "Edição jogo do ano",
@@ -2498,7 +2423,6 @@
     ]
   },
   {
-    "id": 76,
     "nome": "Flecha Ácida",
     "iconeURL": "./icons/chemical-arrow.svg",
     "publicacao": "Edição jogo do ano",
@@ -2529,7 +2453,6 @@
     ]
   },
   {
-    "id": 77,
     "nome": "Físico Divino",
     "iconeURL": "./icons/weight-lifting-up.svg",
     "publicacao": "Edição jogo do ano",
@@ -2564,7 +2487,6 @@
     ]
   },
   {
-    "id": 78,
     "nome": "Globo da Verdade de Gwen",
     "iconeURL": "./icons/glass-ball.svg",
     "publicacao": "Edição jogo do ano",
@@ -2599,7 +2521,6 @@
     ]
   },
   {
-    "id": 79,
     "nome": "Invisibilidade",
     "iconeURL": "./icons/invisible.svg",
     "publicacao": "Edição jogo do ano",
@@ -2634,7 +2555,6 @@
     ]
   },
   {
-    "id": 80,
     "nome": "Invocar Fagulha Elemental",
     "iconeURL": "./icons/spark-spirit.svg",
     "publicacao": "Edição jogo do ano",
@@ -2661,7 +2581,6 @@
     ]
   },
   {
-    "id": 81,
     "nome": "Ligação Telepática",
     "iconeURL": "./icons/telepathy.svg",
     "publicacao": "Edição jogo do ano",
@@ -2688,7 +2607,6 @@
     ]
   },
   {
-    "id": 82,
     "nome": "Localização",
     "iconeURL": "./icons/glass-ball.svg",
     "publicacao": "Edição jogo do ano",
@@ -2715,7 +2633,6 @@
     ]
   },
   {
-    "id": 83,
     "nome": "Mapear",
     "iconeURL": "./icons/treasure-map.svg",
     "publicacao": "Edição jogo do ano",
@@ -2738,7 +2655,6 @@
     ]
   },
   {
-    "id": 84,
     "nome": "Marca da Obediência",
     "iconeURL": "./icons/charm.svg",
     "publicacao": "Edição jogo do ano",
@@ -2765,7 +2681,6 @@
     ]
   },
   {
-    "id": 85,
     "nome": "Mente Divina",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -2800,7 +2715,6 @@
     ]
   },
   {
-    "id": 86,
     "nome": "Metamorfose",
     "iconeURL": "./icons/bear-head.svg",
     "publicacao": "Edição jogo do ano",
@@ -2847,7 +2761,6 @@
     ]
   },
   {
-    "id": 87,
     "nome": "Miasma Mefítico",
     "iconeURL": "./icons/fallout-shelter.svg",
     "publicacao": "Edição jogo do ano",
@@ -2878,7 +2791,6 @@
     ]
   },
   {
-    "id": 88,
     "nome": "Momento de Tormenta",
     "iconeURL": "./icons/bolt-eye.svg",
     "publicacao": "Edição jogo do ano",
@@ -2909,7 +2821,6 @@
     ]
   },
   {
-    "id": 89,
     "nome": "Montaria Arcana",
     "iconeURL": "./icons/mounted-knight.svg",
     "publicacao": "Edição jogo do ano",
@@ -2944,7 +2855,6 @@
     ]
   },
   {
-    "id": 90,
     "nome": "Oração",
     "iconeURL": "./icons/prayer.svg",
     "publicacao": "Edição jogo do ano",
@@ -2979,7 +2889,6 @@
     ]
   },
   {
-    "id": 91,
     "nome": "Purificação",
     "iconeURL": "./icons/healing.svg",
     "publicacao": "Edição jogo do ano",
@@ -3014,7 +2923,6 @@
     ]
   },
   {
-    "id": 92,
     "nome": "Raio Solar",
     "iconeURL": "./icons/sunbeams.svg",
     "publicacao": "Edição jogo do ano",
@@ -3049,7 +2957,6 @@
     ]
   },
   {
-    "id": 93,
     "nome": "Refúgio",
     "iconeURL": "./icons/bell-shield.svg",
     "publicacao": "Edição jogo do ano",
@@ -3084,7 +2991,6 @@
     ]
   },
   {
-    "id": 94,
     "nome": "Relâmpago",
     "iconeURL": "./icons/lightning-storm.svg",
     "publicacao": "Edição jogo do ano",
@@ -3111,7 +3017,6 @@
     ]
   },
   {
-    "id": 95,
     "nome": "Rogar Maldição",
     "iconeURL": "./icons/voodoo-doll.svg",
     "publicacao": "Edição jogo do ano",
@@ -3138,7 +3043,6 @@
     ]
   },
   {
-    "id": 96,
     "nome": "Runa de Proteção",
     "iconeURL": "./icons/explosive-materials.svg",
     "publicacao": "Edição jogo do ano",
@@ -3169,7 +3073,6 @@
     ]
   },
   {
-    "id": 97,
     "nome": "Salto Dimensional",
     "iconeURL": "./icons/magic-gate.svg",
     "publicacao": "Edição jogo do ano",
@@ -3204,7 +3107,6 @@
     ]
   },
   {
-    "id": 98,
     "nome": "Servos Invisíveis",
     "iconeURL": "./icons/invisible.svg",
     "publicacao": "Edição jogo do ano",
@@ -3231,7 +3133,6 @@
     ]
   },
   {
-    "id": 99,
     "nome": "Silêncio",
     "iconeURL": "./icons/sound-off.svg",
     "publicacao": "Edição jogo do ano",
@@ -3258,7 +3159,6 @@
     ]
   },
   {
-    "id": 100,
     "nome": "Soco de Arsenal",
     "iconeURL": "./icons/armor-punch.svg",
     "publicacao": "Edição jogo do ano",
@@ -3293,7 +3193,6 @@
     ]
   },
   {
-    "id": 101,
     "nome": "Sopro das Uivantes",
     "iconeURL": "./icons/energy-breath.svg",
     "publicacao": "Edição jogo do ano",
@@ -3320,7 +3219,6 @@
     ]
   },
   {
-    "id": 102,
     "nome": "Sussurros Insanos",
     "iconeURL": "./icons/potion-of-madness.svg",
     "publicacao": "Edição jogo do ano",
@@ -3351,7 +3249,6 @@
     ]
   },
   {
-    "id": 103,
     "nome": "Tempestade Divina",
     "iconeURL": "./icons/lightning-storm.svg",
     "publicacao": "Edição jogo do ano",
@@ -3394,7 +3291,6 @@
     ]
   },
   {
-    "id": 104,
     "nome": "Toque Vampírico",
     "iconeURL": "./icons/monster-grasp.svg",
     "publicacao": "Edição jogo do ano",
@@ -3425,7 +3321,6 @@
     ]
   },
   {
-    "id": 105,
     "nome": "Velocidade",
     "iconeURL": "./icons/fire-dash.svg",
     "publicacao": "Edição jogo do ano",
@@ -3456,7 +3351,6 @@
     ]
   },
   {
-    "id": 106,
     "nome": "Vestimenta da Fé",
     "iconeURL": "./icons/fedora.svg",
     "publicacao": "Edição jogo do ano",
@@ -3487,7 +3381,6 @@
     ]
   },
   {
-    "id": 107,
     "nome": "Voz Divina",
     "iconeURL": "./icons/public-speaker.svg",
     "publicacao": "Edição jogo do ano",
@@ -3515,7 +3408,6 @@
   },
 
   {
-    "id": 108,
     "nome": "Anular a Luz",
     "iconeURL": "./icons/sly.svg",
     "publicacao": "Edição jogo do ano",
@@ -3546,7 +3438,6 @@
     ]
   },
   {
-    "id": 109,
     "nome": "Banimento",
     "iconeURL": "./icons/banging-gavel.svg",
     "publicacao": "Edição jogo do ano",
@@ -3569,7 +3460,6 @@
     ]
   },
   {
-    "id": 110,
     "nome": "Coluna de Chamas",
     "iconeURL": "./icons/fire-wave.svg",
     "publicacao": "Edição jogo do ano",
@@ -3596,7 +3486,6 @@
     ]
   },
   {
-    "id": 111,
     "nome": "Comunhão com a Natureza",
     "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
@@ -3631,7 +3520,6 @@
     ]
   },
   {
-    "id": 112,
     "nome": "Contato Extraplanar",
     "iconeURL": "./icons/alien-stare.svg",
     "publicacao": "Edição jogo do ano",
@@ -3658,7 +3546,6 @@
     ]
   },
   {
-    "id": 113,
     "nome": "Controlar Terra",
     "iconeURL": "./icons/earth-spit.svg",
     "publicacao": "Edição jogo do ano",
@@ -3685,7 +3572,6 @@
     ]
   },
   {
-    "id": 114,
     "nome": "Controlar Água",
     "iconeURL": "./icons/water-drop.svg",
     "publicacao": "Edição jogo do ano",
@@ -3708,7 +3594,6 @@
     ]
   },
   {
-    "id": 115,
     "nome": "Convocação Instantânea",
     "iconeURL": "./icons/magick-trick.svg",
     "publicacao": "Edição jogo do ano",
@@ -3743,7 +3628,6 @@
     ]
   },
   {
-    "id": 116,
     "nome": "Despertar Consciência",
     "iconeURL": "./icons/brain.svg",
     "publicacao": "Edição jogo do ano",
@@ -3770,7 +3654,6 @@
     ]
   },
   {
-    "id": 117,
     "nome": "Dificultar Detecção",
     "iconeURL": "./icons/invisible.svg",
     "publicacao": "Edição jogo do ano",
@@ -3797,7 +3680,6 @@
     ]
   },
   {
-    "id": 118,
     "nome": "Dispersar as Trevas",
     "iconeURL": "./icons/sunbeams.svg",
     "publicacao": "Edição jogo do ano",
@@ -3832,7 +3714,6 @@
     ]
   },
   {
-    "id": 119,
     "nome": "Enxame Rubro de Ichabod",
     "iconeURL": "./icons/earwig.svg",
     "publicacao": "Edição jogo do ano",
@@ -3875,7 +3756,6 @@
     ]
   },
   {
-    "id": 120,
     "nome": "Erupção Glacial",
     "iconeURL": "./icons/earth-spit.svg",
     "publicacao": "Edição jogo do ano",
@@ -3902,7 +3782,6 @@
     ]
   },
   {
-    "id": 121,
     "nome": "Ferver Sangue",
     "iconeURL": "./icons/spatter.svg",
     "publicacao": "Edição jogo do ano",
@@ -3929,7 +3808,6 @@
     ]
   },
   {
-    "id": 122,
     "nome": "Globo de Invulnerabilidade",
     "iconeURL": "./icons/glass-ball.svg",
     "publicacao": "Edição jogo do ano",
@@ -3956,7 +3834,6 @@
     ]
   },
   {
-    "id": 123,
     "nome": "Heroísmo",
     "iconeURL": "./icons/icicles-aura.svg",
     "publicacao": "Edição jogo do ano",
@@ -3979,7 +3856,6 @@
     ]
   },
   {
-    "id": 124,
     "nome": "Ilusão Lacerante",
     "iconeURL": "./icons/magick-trick.svg",
     "publicacao": "Edição jogo do ano",
@@ -4006,7 +3882,6 @@
     ]
   },
   {
-    "id": 125,
     "nome": "Imobilizar",
     "iconeURL": "./icons/quicksand.svg",
     "publicacao": "Edição jogo do ano",
@@ -4037,7 +3912,6 @@
     ]
   },
   {
-    "id": 126,
     "nome": "Lança Ígnea de Aleph",
     "iconeURL": "./icons/sun-spear.svg",
     "publicacao": "Edição jogo do ano",
@@ -4064,7 +3938,6 @@
     ]
   },
   {
-    "id": 127,
     "nome": "Lendas e Histórias",
     "iconeURL": "./icons/classical-knowledge.svg",
     "publicacao": "Edição jogo do ano",
@@ -4087,7 +3960,6 @@
     ]
   },
   {
-    "id": 128,
     "nome": "Manto de Sombras",
     "iconeURL": "./icons/sly.svg",
     "publicacao": "Edição jogo do ano",
@@ -4110,7 +3982,6 @@
     ]
   },
   {
-    "id": 129,
     "nome": "Miragem",
     "iconeURL": "./icons/oasis.svg",
     "publicacao": "Edição jogo do ano",
@@ -4137,7 +4008,6 @@
     ]
   },
   {
-    "id": 130,
     "nome": "Missão Divina",
     "iconeURL": "./icons/public-speaker.svg",
     "publicacao": "Edição jogo do ano",
@@ -4164,7 +4034,6 @@
     ]
   },
   {
-    "id": 131,
     "nome": "Muralha Elemental",
     "iconeURL": "./icons/fire-wave.svg",
     "publicacao": "Edição jogo do ano",
@@ -4195,7 +4064,6 @@
     ]
   },
   {
-    "id": 132,
     "nome": "Pele de Pedra",
     "iconeURL": "./icons/rock-golem.svg",
     "publicacao": "Edição jogo do ano",
@@ -4234,7 +4102,6 @@
     ]
   },
   {
-    "id": 133,
     "nome": "Poeira da Podridão",
     "iconeURL": "./icons/apple-maggot.svg",
     "publicacao": "Edição jogo do ano",
@@ -4257,7 +4124,6 @@
     ]
   },
   {
-    "id": 134,
     "nome": "Potência Divina",
     "iconeURL": "./icons/embrassed-energy.svg",
     "publicacao": "Edição jogo do ano",
@@ -4288,7 +4154,6 @@
     ]
   },
   {
-    "id": 135,
     "nome": "Proteção Contra Magia",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4319,7 +4184,6 @@
     ]
   },
   {
-    "id": 136,
     "nome": "Selo de Mana",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4342,7 +4206,6 @@
     ]
   },
   {
-    "id": 137,
     "nome": "Servo Divino",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4369,7 +4232,6 @@
     ]
   },
   {
-    "id": 138,
     "nome": "Servo Morto-Vivo",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4400,7 +4262,6 @@
     ]
   },
   {
-    "id": 139,
     "nome": "Sopro da Salvação",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4431,7 +4292,6 @@
     ]
   },
   {
-    "id": 140,
     "nome": "Telecinésia",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4454,7 +4314,6 @@
     ]
   },
   {
-    "id": 141,
     "nome": "Teletransporte",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4485,7 +4344,6 @@
     ]
   },
   {
-    "id": 142,
     "nome": "Tentáculos de Trevas",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4512,7 +4370,6 @@
     ]
   },
   {
-    "id": 143,
     "nome": "Transformação de Guerra",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4539,7 +4396,6 @@
     ]
   },
   {
-    "id": 144,
     "nome": "Viagem Arbórea",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4562,7 +4418,6 @@
     ]
   },
   {
-    "id": 145,
     "nome": "Vidência",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4580,7 +4435,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 146,
     "nome": "Voo",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4611,7 +4465,6 @@
     ]
   },
   {
-    "id": 147,
     "nome": "Âncora Dimensional",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4651,7 +4504,6 @@
   },
 
   {
-    "id": 148,
     "nome": "Alterar Memória",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4678,7 +4530,6 @@
     ]
   },
   {
-    "id": 149,
     "nome": "Animar Objetos",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4701,7 +4552,6 @@
     ]
   },
   {
-    "id": 150,
     "nome": "Assassino Fantasmagórico",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4719,7 +4569,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 151,
     "nome": "Campo Antimagia",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4737,7 +4586,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 152,
     "nome": "Conceder Milagre",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4760,7 +4608,6 @@
     ]
   },
   {
-    "id": 153,
     "nome": "Conjurar Elemental",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4787,7 +4634,6 @@
     ]
   },
   {
-    "id": 154,
     "nome": "Controlar a Gravidade",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4805,7 +4651,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 155,
     "nome": "Controlar o Clima",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4828,7 +4673,6 @@
     ]
   },
   {
-    "id": 156,
     "nome": "Círculo da Restauração",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4851,7 +4695,6 @@
     ]
   },
   {
-    "id": 157,
     "nome": "Cólera de Azgher",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4882,7 +4725,6 @@
     ]
   },
   {
-    "id": 158,
     "nome": "Cúpula de Repulsão",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4909,7 +4751,6 @@
     ]
   },
   {
-    "id": 159,
     "nome": "Desintegrar",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4932,7 +4773,6 @@
     ]
   },
   {
-    "id": 160,
     "nome": "Duplicata Ilusória",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4955,7 +4795,6 @@
     ]
   },
   {
-    "id": 161,
     "nome": "Explosão Caleidoscópica",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4973,7 +4812,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 162,
     "nome": "Forma Etérea",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -4996,7 +4834,6 @@
     ]
   },
   {
-    "id": 163,
     "nome": "Guardião Divino",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5014,7 +4851,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 164,
     "nome": "Libertação",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5053,7 +4889,6 @@
     ]
   },
   {
-    "id": 165,
     "nome": "Ligação Sombria",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5076,7 +4911,6 @@
     ]
   },
   {
-    "id": 166,
     "nome": "Manto do Cruzado",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5094,7 +4928,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 167,
     "nome": "Marionete",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5112,7 +4945,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 168,
     "nome": "Muralha de Ossos",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5139,7 +4971,6 @@
     ]
   },
   {
-    "id": 169,
     "nome": "Mão Poderosa de Talude",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5166,7 +4997,6 @@
     ]
   },
   {
-    "id": 170,
     "nome": "Premonição",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5193,7 +5023,6 @@
     ]
   },
   {
-    "id": 171,
     "nome": "Raio Polar",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5220,7 +5049,6 @@
     ]
   },
   {
-    "id": 172,
     "nome": "Relâmpago Flamejante de Reynard",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5243,7 +5071,6 @@
     ]
   },
   {
-    "id": 173,
     "nome": "Sonho",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5270,7 +5097,6 @@
     ]
   },
   {
-    "id": 174,
     "nome": "Talho Invisível de Edauros",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5297,7 +5123,6 @@
     ]
   },
   {
-    "id": 175,
     "nome": "Terremoto",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5315,7 +5140,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 176,
     "nome": "Transformação em Dragão",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5354,7 +5178,6 @@
     ]
   },
   {
-    "id": 177,
     "nome": "Viagem Planar",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5377,7 +5200,6 @@
     ]
   },
   {
-    "id": 178,
     "nome": "Visão da Verdade",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5413,7 +5235,6 @@
   },
 
   {
-    "id": 179,
     "nome": "Alterar Destino",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5431,7 +5252,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 180,
     "nome": "Aprisionamento",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5449,7 +5269,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 181,
     "nome": "Aura Divina",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5472,7 +5291,6 @@
     ]
   },
   {
-    "id": 182,
     "nome": "Barragem elemental de Vectorius",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5499,7 +5317,6 @@
     ]
   },
   {
-    "id": 183,
     "nome": "Buraco Negro",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5522,7 +5339,6 @@
     ]
   },
   {
-    "id": 184,
     "nome": "Chuva de Meteoros",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5545,7 +5361,6 @@
     ]
   },
   {
-    "id": 185,
     "nome": "Controlar o Tempo",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5563,7 +5378,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 186,
     "nome": "Deflagração de Mana",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5590,7 +5404,6 @@
     ]
   },
   {
-    "id": 187,
     "nome": "Desejo",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5608,7 +5421,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 188,
     "nome": "Engenho de Mana",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5635,7 +5447,6 @@
     ]
   },
   {
-    "id": 189,
     "nome": "Fúria do Panteão",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5653,7 +5464,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 190,
     "nome": "Intervenção Divina",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5671,7 +5481,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 191,
     "nome": "Invulnerabilidade",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5694,7 +5503,6 @@
     ]
   },
   {
-    "id": 192,
     "nome": "Katana Celestial",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5721,7 +5529,6 @@
     ]
   },
   {
-    "id": 193,
     "nome": "Legião",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5744,7 +5551,6 @@
     ]
   },
   {
-    "id": 194,
     "nome": "Lágrimas de Wynna",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5771,7 +5577,6 @@
     ]
   },
   {
-    "id": 195,
     "nome": "Mata-Dragão",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5794,7 +5599,6 @@
     ]
   },
   {
-    "id": 196,
     "nome": "Palavra Primordial",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5812,7 +5616,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 197,
     "nome": "Possessão",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5843,7 +5646,6 @@
     ]
   },
   {
-    "id": 198,
     "nome": "Projetar Consciência",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5866,7 +5668,6 @@
     ]
   },
   {
-    "id": 199,
     "nome": "Reanimação Impura",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5884,7 +5685,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 200,
     "nome": "Roubar a Alma",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5911,7 +5711,6 @@
     ]
   },
   {
-    "id": 201,
     "nome": "Réquiem",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5929,7 +5728,6 @@
     "aprimoramentos": []
   },
   {
-    "id": 202,
     "nome": "Segunda Chance",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5960,7 +5758,6 @@
     ]
   },
   {
-    "id": 203,
     "nome": "Semiplano",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -5987,7 +5784,6 @@
     ]
   },
   {
-    "id": 204,
     "nome": "Sombra Assassina",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",
@@ -6010,7 +5806,6 @@
     ]
   },
   {
-    "id": 205,
     "nome": "Toque da Morte",
     "iconeURL": "./icons/",
     "publicacao": "Edição jogo do ano",

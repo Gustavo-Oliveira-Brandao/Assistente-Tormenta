@@ -6,6 +6,7 @@ import { IDeslocamento } from '@renderer/@types/t20/Deslocamento'
 import { IPericia } from '@renderer/@types/t20/Pericia'
 import { IPoder } from '@renderer/@types/t20/Poder'
 import { IRecurso } from '@renderer/@types/t20/Recurso'
+import { DeepPartial } from 'react-hook-form'
 
 declare global {
   interface Window {
@@ -13,7 +14,7 @@ declare global {
     api: {
       getTodosPersonagens: () => ICriatura[]
       getPersonagem: (id: number) => ICriatura
-      postPersonagem: (personagem: Partial<ICriatura>) => ICriatura
+      postPersonagem: (personagem: DeepPartial<ICriatura>) => ICriatura
       putPersonagem: (personagem: ICriatura) => ICriatura
       deletePersonagem: (id: number) => void
       postPoder: (_poder: IPoder, idPersonagem: number) => Poder

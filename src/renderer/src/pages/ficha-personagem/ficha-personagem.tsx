@@ -124,9 +124,9 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         height={'400px'}
                       >
                         {poderesDefault &&
-                          poderesDefault.map((poder) => (
+                          poderesDefault.map((poder, index) => (
                             <CardPoder
-                              key={poder.id}
+                              key={index}
                               poder={poder}
                               onInteract={() => adicionarPoder.mutate({ poder, idPersonagem })}
                               iconeBotaoInteracao="./icons/plus-solid.svg"
@@ -147,7 +147,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                           css="botaoAdicionar"
                           texto="adicionar magias"
                           onClickEvent={() => setLoja('adicionar.magia')}
-                          icone="./icons/spell-book.svg"
+                          icone="./icons/plus-solid.svg"
                         />
                       </>
                     }

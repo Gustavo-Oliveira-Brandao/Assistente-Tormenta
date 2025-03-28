@@ -8,7 +8,6 @@ export const putVida = async (_vida: IRecurso): Promise<IRecurso> => {
     const vidaEncontrada = await vidaRepository.findOneBy({ id: vida.id })
     if (vidaEncontrada) {
       const vidaAtualizada = { ...vida }
-      vidaAtualizada.bonus = { ...vida.bonus }
       return await vidaRepository.save(vidaAtualizada)
     }
     throw new Error('Recurso não encontrado')
@@ -23,7 +22,6 @@ export const putMana = async (_mana: IRecurso): Promise<IRecurso> => {
     const manaEncontrada = await manaRepository.findOneBy({ id: mana.id })
     if (manaEncontrada) {
       const manaAtualizada = { ...mana }
-      manaAtualizada.bonus = { ...mana.bonus }
       return await manaRepository.save(manaAtualizada)
     }
     throw new Error('Recurso não encontrado')

@@ -1,3 +1,4 @@
+import { DeepPartial } from 'typeorm'
 import { ICriatura } from '../@types/t20/Criatura'
 import { criaturaRepository } from '../repositories/CriaturaRepository'
 
@@ -22,7 +23,7 @@ export const getPersonagem = async (id: number): Promise<ICriatura> => {
   }
 }
 
-export const postPersonagem = async (_personagem: Partial<ICriatura>): Promise<ICriatura> => {
+export const postPersonagem = async (_personagem: DeepPartial<ICriatura>): Promise<ICriatura> => {
   try {
     const personagem = criaturaRepository.create(_personagem)
     return await criaturaRepository.save(personagem)

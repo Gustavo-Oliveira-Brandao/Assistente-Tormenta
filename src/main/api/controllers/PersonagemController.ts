@@ -7,6 +7,7 @@ import {
   putPersonagem
 } from '../services/PersonagemService'
 import { ICriatura } from '../@types/t20/Criatura'
+import { DeepPartial } from 'typeorm'
 
 ipcMain.handle('get-todos-personagens', async (event: IpcMainInvokeEvent) => {
   console.log(`Evento recebido com frameID: ${event.frameId}`)
@@ -18,10 +19,13 @@ ipcMain.handle('get-personagem', async (event: IpcMainInvokeEvent, id: number) =
   return await getPersonagem(id)
 })
 
-ipcMain.handle('post-personagem', async (event: IpcMainInvokeEvent, _personagem: ICriatura) => {
-  console.log(`Evento recebido com frameID: ${event.frameId}`)
-  return await postPersonagem(_personagem)
-})
+ipcMain.handle(
+  'post-personagem',
+  async (event: IpcMainInvokeEvent, _personagem: DeepPartial<ICriatura>) => {
+    console.log(`Evento recebido com frameID: ${event.frameId}`)
+    return await postPersonagem(_personagem)
+  }
+)
 
 ipcMain.handle('put-personagem', async (event: IpcMainInvokeEvent, _personagem: ICriatura) => {
   console.log(`Evento recebido com frameID: ${event.frameId}`)

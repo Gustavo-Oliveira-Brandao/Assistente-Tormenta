@@ -7,12 +7,13 @@ import { IDefesa } from '../main/api/@types/t20/Defesa'
 import { IDeslocamento } from '../main/api/@types/t20/Deslocamento'
 import { IPericia } from '../main/api/@types/t20/Pericia'
 import { ICriatura } from '../main/api/@types/t20/Criatura'
+import { DeepPartial } from 'typeorm'
 
 // Custom APIs for renderer
 const api = {
   getTodosPersonagens: (): Promise<ICriatura[]> => ipcRenderer.invoke('get-todos-personagens'),
   getPersonagem: (id: number): Promise<ICriatura> => ipcRenderer.invoke('get-personagem', id),
-  postPersonagem: (personagem: Partial<ICriatura>): Promise<ICriatura> =>
+  postPersonagem: (personagem: DeepPartial<ICriatura>): Promise<ICriatura> =>
     ipcRenderer.invoke('post-personagem', personagem),
   putPersonagem: (personagem: ICriatura): Promise<ICriatura> =>
     ipcRenderer.invoke('put-personagem', personagem),

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from './barra-recurso.module.scss'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
-import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
+import { FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { IRecurso } from '@renderer/@types/t20/Recurso'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -11,6 +11,7 @@ import { useAtualizarVidaMutation } from '@renderer/hooks/mutations/recurso/useA
 import { useAtualizarManaMutation } from '@renderer/hooks/mutations/recurso/useAtualizarManaMutation'
 import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
+import BotaoModular from '../botao-modular/botao-modular'
 
 const BarraRecurso = ({
   categoria,
@@ -38,9 +39,8 @@ const BarraRecurso = ({
     const recursoAtualizado = { ...recurso }
     recursoAtualizado.valorAtual = data.valorAtual
     recursoAtualizado.valorTemporario = data.valorTemporario
-    recursoAtualizado.valorBase = data.valorBase
-    recursoAtualizado.valorPorNivel = data.valorPorNivel
     recursoAtualizado.atributo = data.atributo
+    recursoAtualizado.bonus = data.bonus
     if (categoria === 'vida') {
       atualizarVida.mutate(recursoAtualizado)
     }
@@ -55,15 +55,21 @@ const BarraRecurso = ({
     defaultValues: {
       valorAtual: recurso.valorAtual,
       valorTemporario: recurso.valorTemporario,
-      valorPorNivel: recurso.valorPorNivel,
-      valorBase: recurso.valorBase,
-      atributo: recurso.atributo
+      atributo: recurso.atributo,
+      bonus: recurso.bonus
     }
   })
+
   const {
+    control,
     handleSubmit,
     formState: { errors }
   } = methods
+
+  const { fields, append, remove } = useFieldArray({
+    control,
+    name: 'bonus'
+  })
 
   return (
     <>
@@ -102,18 +108,6 @@ const BarraRecurso = ({
                 <fieldset>
                   <legend>{categoria} maxima</legend>
                   <div className="d-flex">
-                    <FormGroup
-                      name="valorBase"
-                      label={`base:`}
-                      placeholder={String(recurso.valorBase)}
-                      type="number"
-                    />
-                    <FormGroup
-                      name="valorPorNivel"
-                      label="p/nível:"
-                      placeholder={String(recurso.valorPorNivel)}
-                      type="number"
-                    />
                     {categoria === 'vida' && (
                       <FormGroup
                         name="atributo"
@@ -136,6 +130,50 @@ const BarraRecurso = ({
                     />
                   </fieldset>
                 )}
+                <fieldset>
+                  <legend>Modificadores de vida maxima</legend>
+                  {fields.map((field, index) => (
+                    <div className="d-flex" key={field.id}>
+                      <FormGroup
+                        name={`bonus.${index}.label`}
+                        label="nome:"
+                        placeholder="Robusto"
+                        type="text"
+                      />
+                      <FormGroup
+                        name={`bonus.${index}.valor`}
+                        label="valor:"
+                        placeholder="0"
+                        type="number"
+                      />
+                      <FormGroup name={`bonus.${index}.estaAtivo`} label="ativo:" type="checkbox" />
+                      <FormGroup
+                        name={`bonus.${index}.ehPorNivel`}
+                        label="P/ nivel?"
+                        type="checkbox"
+                      />
+                      <BotaoModular
+                        css="botaoInteracao"
+                        icone="./icons/delete.svg"
+                        onClickEvent={() => remove(index)}
+                      />
+                    </div>
+                  ))}
+
+                  <BotaoModular
+                    css="botaoAdicionar"
+                    onClickEvent={() =>
+                      append({
+                        label: 'Buff',
+                        valor: 0,
+                        estaAtivo: false,
+                        ehPorNivel: false
+                      })
+                    }
+                    texto="Adicionar modificador"
+                    icone="./icons/plus-solid.svg"
+                  />
+                </fieldset>
                 {Object.entries(errors).map(([field, error]) => (
                   <p role="alert" key={field}>
                     {error.message}!

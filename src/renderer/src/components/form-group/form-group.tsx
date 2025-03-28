@@ -1,10 +1,6 @@
 import styles from './form-group.module.scss'
 import { useFormContext } from 'react-hook-form'
 
-type options = {
-  value: string | number
-  text: string
-}[]
 const FormGroup = ({
   name,
   options,
@@ -13,7 +9,7 @@ const FormGroup = ({
   type
 }: {
   name: string
-  options?: options
+  options?: string[]
   label: string
   placeholder?: string
   type: string
@@ -38,8 +34,8 @@ const FormGroup = ({
         <select id={name} {...register(name)}>
           {options &&
             options.map((opt) => (
-              <option key={opt.value} value={opt.value}>
-                {opt.text}
+              <option key={opt} value={opt}>
+                {opt}
               </option>
             ))}
         </select>

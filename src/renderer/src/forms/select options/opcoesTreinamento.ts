@@ -1,10 +1,1 @@
-export const opcoesTreinamento = [
-  {
-    value: 'destreinado',
-    text: 'Destreinado'
-  },
-  {
-    value: 'treinado',
-    text: 'Treinado'
-  }
-]
+export const opcoesTreinamento = ['destreinado', 'treinado']

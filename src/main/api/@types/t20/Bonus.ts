@@ -3,4 +3,5 @@ export interface IBonus {
   label: string
   valor: number
   estaAtivo: boolean
+  ehPorNivel: boolean
 }

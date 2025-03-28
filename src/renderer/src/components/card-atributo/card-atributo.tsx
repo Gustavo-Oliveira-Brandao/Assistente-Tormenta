@@ -68,7 +68,7 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
                   </div>
                 </fieldset>
                 <fieldset>
-                  <legend>Bônus</legend>
+                  <legend>Modificadores</legend>
                   {fields.map((field, index) => (
                     <div key={field.id} className="d-flex">
                       <FormGroup
@@ -97,7 +97,8 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
                       append({
                         label: 'Buff',
                         valor: 0,
-                        estaAtivo: false
+                        estaAtivo: false,
+                        ehPorNivel: false
                       })
                     }
                     texto="Adicionar modificador"

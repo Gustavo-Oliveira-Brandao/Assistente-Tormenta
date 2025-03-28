@@ -70,7 +70,7 @@ const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.
                   </div>
                 </fieldset>
                 <fieldset>
-                  <legend>Bônus</legend>
+                  <legend>Modificadores</legend>
                   {fields.map((field, index) => (
                     <div key={field.id} className="d-flex">
                       <FormGroup
@@ -99,7 +99,8 @@ const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.
                       append({
                         label: 'Buff',
                         valor: 0,
-                        estaAtivo: false
+                        estaAtivo: false,
+                        ehPorNivel: false
                       })
                     }
                     texto="Adicionar modificador"

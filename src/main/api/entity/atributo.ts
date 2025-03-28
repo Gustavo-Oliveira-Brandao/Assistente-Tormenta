@@ -24,6 +24,12 @@ export class Atributo implements IAtributo {
   })
   valor: number
 
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  ordem: number
+
   @OneToMany(() => Bonus, (bonus) => bonus.atributo, {
     cascade: true,
     eager: true,

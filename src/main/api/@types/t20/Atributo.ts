@@ -5,4 +5,5 @@ export interface IAtributo {
   nome: string
   valor: number
   bonus: IBonus[]
+  ordem: number
 }

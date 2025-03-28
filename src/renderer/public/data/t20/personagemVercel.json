@@ -4,8 +4,8 @@
   "classe": "guerreiro",
   "divindade": "allihanna",
   "origem": "taverneiro",
-  "nivel": 5,
-  "experiencia": 500,
+  "nivel": 1,
+  "experiencia": 0,
   "tipoCriatura": "humanoide",
   "categoria": "pj",
   "tamanho": "medio",
@@ -19,62 +19,60 @@
     "atributo": "destreza"
   },
   "vida": {
-    "valorAtual": 4,
-    "valorTemporario": 10,
-    "valorPorNivel": 2,
-    "valorBase": 4,
-    "atributo": "constituicao"
+    "valorAtual": 1,
+    "valorTemporario": 0,
+    "atributo": "constituicao",
+    "bonus": []
   },
   "mana": {
-    "valorAtual": 4,
-    "valorTemporario": 10,
-    "valorPorNivel": 3,
-    "valorBase": 3,
+    "valorAtual": 1,
+    "valorTemporario": 0,
     "limitePM": 0,
-    "atributo": "nenhum"
+    "atributo": "nenhum",
+    "bonus": []
   },
   "deslocamento": {
     "caminhada": 30,
-    "voo": 10,
+    "voo": 0,
     "escavacao": 5,
     "escalada": 0,
-    "natacao": 4
+    "natacao": 0
   },
   "atributos": [
     {
       "nome": "forca",
-      "valor": 4,
-      "bonus": [
-        {
-          "label": "sla",
-          "valor": 2,
-          "estaAtivo": false
-        }
-      ]
+      "valor": 0,
+      "ordem": 1,
+      "bonus": []
     },
     {
       "nome": "destreza",
-      "valor": 2,
+      "valor": 0,
+      "ordem": 2,
       "bonus": []
     },
     {
       "nome": "constituicao",
-      "valor": 2,
+      "valor": 0,
+      "ordem": 3,
       "bonus": []
     },
     {
       "nome": "inteligencia",
-      "valor": 2,
+      "valor": 0,
+      "ordem": 4,
       "bonus": []
     },
     {
       "nome": "sabedoria",
-      "valor": 2,
+      "valor": 0,
+      "ordem": 5,
       "bonus": []
     },
     {
       "nome": "carisma",
-      "valor": 2,
+      "valor": 0,
+      "ordem": 6,
       "bonus": []
     }
   ],
@@ -323,83 +321,7 @@
       "descricao": ""
     }
   ],
-  "poderes": [
-    {
-      "id": 267,
-      "nome": "solidez",
-      "descricao": "Se estiver usando um escudo, você aplica o bônus na Defesa recebido pelo escudo em testes de resistência.",
-      "iconeURL": "./icons/shield.svg",
-      "preRequisitos": "",
-      "categoria": "classe",
-      "tags": [
-        {
-          "label": "guerreiro"
-        }
-      ],
-      "tempoExecucao": "passivo",
-      "topicos": []
-    },
-    {
-      "id": 268,
-      "nome": "tornado de dor",
-      "descricao": "Você pode gastar uma ação padrão e 2 PM para desferir uma série de golpes giratórios. Faça um ataque corpo a corpo e compare-o com a Defesa de cada inimigo em seu alcance natural. Então faça uma rolagem de dano com um bônus cumulativo de +2 para cada acerto e aplique-a em cada inimigo atingido.",
-      "iconeURL": "./icons/sword-spin.svg",
-      "preRequisitos": "6º nível de guerreiro.",
-      "categoria": "classe",
-      "tags": [
-        {
-          "label": "guerreiro"
-        }
-      ],
-      "tempoExecucao": "ação padrão",
-      "topicos": []
-    },
-    {
-      "id": 269,
-      "nome": "valentão",
-      "descricao": "Você recebe +2 em testes de ataque e rolagens de dano contra oponentes caídos, desprevenidos, flanqueados ou indefesos.",
-      "iconeURL": "./icons/bully-minion.svg",
-      "preRequisitos": "",
-      "categoria": "classe",
-      "tags": [
-        {
-          "label": "guerreiro"
-        }
-      ],
-      "tempoExecucao": "passivo",
-      "topicos": []
-    },
-    {
-      "id": 270,
-      "nome": "durão",
-      "descricao": "A partir do 3º nível, sua rijeza muscular permite que você absorva ferimentos. Sempre que sofre dano, você pode gastar 3 PM para reduzir esse dano à metade.",
-      "iconeURL": "./icons/rock-golem.svg",
-      "preRequisitos": "",
-      "categoria": "classe",
-      "tags": [
-        {
-          "label": "guerreiro"
-        }
-      ],
-      "tempoExecucao": "reação",
-      "topicos": []
-    },
-    {
-      "id": 271,
-      "nome": "ataque extra",
-      "descricao": "A partir do 6º nível, quando usa a ação agredir, você pode gastar 2 PM para realizar um ataque adicional uma vez por rodada.",
-      "iconeURL": "./icons/dripping-sword.svg",
-      "preRequisitos": "",
-      "categoria": "classe",
-      "tags": [
-        {
-          "label": "guerreiro"
-        }
-      ],
-      "tempoExecucao": "reação",
-      "topicos": []
-    }
-  ],
+  "poderes": [],
   "itens": [],
   "magias": [],
   "efeitos": []

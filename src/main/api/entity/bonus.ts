@@ -4,6 +4,8 @@ import { Atributo } from './atributo'
 import { Pericia } from './pericia'
 import { Defesa } from './defesa'
 import { Dano } from './dano'
+import { Vida } from './vida'
+import { Mana } from './mana'
 
 @Entity()
 export class Bonus implements IBonus {
@@ -30,6 +32,12 @@ export class Bonus implements IBonus {
   })
   estaAtivo: boolean
 
+  @Column({
+    type: 'boolean',
+    nullable: false
+  })
+  ehPorNivel: boolean
+
   @ManyToOne(() => Atributo, (atributo) => atributo.bonus, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
@@ -53,4 +61,16 @@ export class Bonus implements IBonus {
     orphanedRowAction: 'delete'
   })
   dano: Dano
+
+  @ManyToOne(() => Vida, (vida) => vida.bonus, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  vida: Vida
+
+  @ManyToOne(() => Mana, (mana) => mana.bonus, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  mana: Mana
 }

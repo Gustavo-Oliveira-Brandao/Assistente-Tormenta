@@ -60,9 +60,11 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
               {aba == 'atributos' && (
                 <>
                   <SecaoFicha header={<h2>Atributos</h2>} css="atributos">
-                    {personagem.atributos.map((atributo) => (
-                      <CardAtributo key={atributo.id} atributo={atributo} />
-                    ))}
+                    {personagem.atributos
+                      .sort((a, b) => a.ordem - b.ordem)
+                      .map((atributo) => (
+                        <CardAtributo key={atributo.id} atributo={atributo} />
+                      ))}
                   </SecaoFicha>
                   <SecaoFicha header={<h2>Pericias de combate</h2>} css="pericias">
                     {personagem.pericias

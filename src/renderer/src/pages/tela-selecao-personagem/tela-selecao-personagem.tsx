@@ -2,6 +2,10 @@ import styles from './tela-selecao-personagem.module.scss'
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
 import { useCriarPersonagemMutation } from '@renderer/hooks/mutations/personagem/useCriarPersonagemMutation'
 import { useExibirTodosPersonagensQuery } from '@renderer/hooks/queries/personagem/useExibirTodosPersonagensQuery'
+import Modal from '@renderer/templates/modal/modal'
+import { useState } from 'react'
+import { createPortal } from 'react-dom'
+import { FormProvider, useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 
 const TelaSelecaoPersonagem = ({
@@ -10,13 +14,15 @@ const TelaSelecaoPersonagem = ({
   setPersonagemSelecionado: React.Dispatch<React.SetStateAction<number>>
 }): JSX.Element => {
   const { data: personagens } = useExibirTodosPersonagensQuery()
-
+  const [modal, setModal] = useState(false)
   const navigate = useNavigate()
 
   const selecionarPersonagem = (id: number): void => {
     setPersonagemSelecionado(id)
     navigate('/personagem')
   }
+
+  const methods = useForm<z.infer
 
   const criarPersonagem = useCriarPersonagemMutation()
 
@@ -50,6 +56,12 @@ const TelaSelecaoPersonagem = ({
             </div>
           </div>
         ))}
+      {modal &&
+        createPortal(
+          <Modal titulo='Criação de personagem' onClose={() => setModal(false)} height='fit-content'>
+            <FormProvider
+        </Modal>
+      )}
     </div>
   )
 }

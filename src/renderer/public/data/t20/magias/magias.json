@@ -12,8 +12,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Transmutação)",
-    "escola": "Divina 1 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -42,8 +42,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Encantamento)",
-    "escola": "Divina 1 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -76,8 +76,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Convocação)",
-    "escola": "Arcana 1 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -106,8 +106,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Encantamento)",
-    "escola": "Arcana 1 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -136,8 +136,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Abjuração)",
-    "escola": "Arcana 1 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -166,8 +166,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Necromancia)",
-    "escola": "Arcana 1 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -196,8 +196,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Divina 1 (Convocação)",
-    "escola": "Divina 1 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -238,8 +238,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Universal 1 (Transmutação)",
-    "escola": "Universal 1 (Transmutação)",
+    "tradicao": "Universal",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -268,8 +268,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Abjuração)",
-    "escola": "Arcana 1 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -298,8 +298,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Divina 1 (Transmutação)",
-    "escola": "Divina 1 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -332,8 +332,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "longo",
-    "tradicao": "Universal 1 (Adivinhação)",
-    "escola": "Universal 1 (Adivinhação)",
+    "tradicao": "Universal",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -366,8 +366,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Encantamento)",
-    "escola": "Divina 1 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -392,8 +392,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Convocação)",
-    "escola": "Divina 1 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -422,8 +422,8 @@
     "duracao": "1 rodada",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Encantamento)",
-    "escola": "Divina 1 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -448,8 +448,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Universal 1 (Adivinhação)",
-    "escola": "Universal 1 (Adivinhação)",
+    "tradicao": "Universal",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -482,8 +482,8 @@
     "duracao": "1 rodada",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Adivinhação)",
-    "escola": "Arcana 1 (Adivinhação)",
+    "tradicao": "Arcana",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -516,8 +516,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Convocação)",
-    "escola": "Arcana 1 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -582,8 +582,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 1,
     "alcance": "longo",
-    "tradicao": "Divina 1 (Evocação)",
-    "escola": "Divina 1 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -612,8 +612,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Transmutação)",
-    "escola": "Divina 1 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -646,8 +646,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Convocação)",
-    "escola": "Divina 1 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -676,8 +676,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "médio",
-    "tradicao": "Arcana 1 (Ilusão)",
-    "escola": "Arcana 1 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -726,8 +726,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Divina 1 (Evocação)",
-    "escola": "Divina 1 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -764,8 +764,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Evocação)",
-    "escola": "Arcana 1 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -790,8 +790,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Evocação)",
-    "escola": "Divina 1 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -832,8 +832,8 @@
     "duracao": "Cena, até ser descarregada",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Divina 1 (Adivinhação)",
-    "escola": "Divina 1 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -858,8 +858,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Ilusão)",
-    "escola": "Arcana 1 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -896,8 +896,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Encantamento)",
-    "escola": "Arcana 1 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -926,8 +926,8 @@
     "duracao": "1 turno",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Abjuração)",
-    "escola": "Divina 1 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -964,8 +964,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Universal 1 (Necromancia)",
-    "escola": "Universal 1 (Necromancia)",
+    "tradicao": "Universal",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1002,8 +1002,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Evocação)",
-    "escola": "Arcana 1 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -1032,8 +1032,8 @@
     "duracao": "1d4 Rodadas",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Encantamento)",
-    "escola": "Arcana 1 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -1074,8 +1074,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Ilusão)",
-    "escola": "Arcana 1 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1100,8 +1100,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Divina 1 (Necromancia)",
-    "escola": "Divina 1 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1134,8 +1134,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Evocação)",
-    "escola": "Arcana 1 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1160,8 +1160,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Ilusão)",
-    "escola": "Arcana 1 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1190,8 +1190,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Universal 1 (Evocação)",
-    "escola": "Universal 1 (Evocação)",
+    "tradicao": "Universal",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1236,8 +1236,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Universal 1 (Convocação)",
-    "escola": "Universal 1 (Convocação)",
+    "tradicao": "Universal",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1278,8 +1278,8 @@
     "duracao": "1 rodada",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Adivinhação)",
-    "escola": "Divina 1 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1308,8 +1308,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Necromancia)",
-    "escola": "Divina 1 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1330,8 +1330,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Arcana 1 (Transmutação)",
-    "escola": "Arcana 1 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1364,8 +1364,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 1,
     "alcance": "longo",
-    "tradicao": "Divina 1 (Necromancia)",
-    "escola": "Divina 1 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1394,8 +1394,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Divina 1 (Abjuração)",
-    "escola": "Divina 1 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1428,8 +1428,8 @@
     "duracao": "até chegar ao solo ou cena, o que vier primeiro",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Transmutação)",
-    "escola": "Arcana 1 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -1458,8 +1458,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Necromancia)",
-    "escola": "Arcana 1 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -1488,8 +1488,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Universal 1 (Abjuração)",
-    "escola": "Universal 1 (Abjuração)",
+    "tradicao": "Universal",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1526,8 +1526,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Divina 1 (Abjuração)",
-    "escola": "Divina 1 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1552,8 +1552,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "médio",
-    "tradicao": "Arcana 1 (Evocação)",
-    "escola": "Arcana 1 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1586,8 +1586,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Encantamento)",
-    "escola": "Arcana 1 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1616,8 +1616,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Divina 1 (Abjuração)",
-    "escola": "Divina 1 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -1638,8 +1638,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Convocação)",
-    "escola": "Arcana 1 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1668,8 +1668,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Arcana 1 (Evocação)",
-    "escola": "Arcana 1 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1698,8 +1698,8 @@
     "duracao": "permanente",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Arcana 1 (Abjuração)",
-    "escola": "Arcana 1 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -1732,8 +1732,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Divina 1 (Encantamento)",
-    "escola": "Divina 1 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1762,8 +1762,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "toque",
-    "tradicao": "Arcana 1 (Transmutação)",
-    "escola": "Arcana 1 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -1804,8 +1804,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Universal 1 (Adivinhação)",
-    "escola": "Universal 1 (Adivinhação)",
+    "tradicao": "Universal",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1834,8 +1834,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 1,
     "alcance": "pessoal",
-    "tradicao": "Arcana 1 (Necromancia)",
-    "escola": "Arcana 1 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1860,8 +1860,8 @@
     "duracao": "cena",
     "nivelCirculo": 1,
     "alcance": "curto",
-    "tradicao": "Arcana 1 (Convocação)",
-    "escola": "Arcana 1 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1891,8 +1891,8 @@
     "duracao": "0 dia",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Encantamento)",
-    "escola": "Divina 2 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1921,8 +1921,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Transmutação)",
-    "escola": "Arcana 2 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -1955,8 +1955,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Arcana 2 (Convocação)",
-    "escola": "Arcana 2 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -1985,8 +1985,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Ilusão)",
-    "escola": "Arcana 2 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2007,8 +2007,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Divina 2 (Adivinhação)",
-    "escola": "Divina 2 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2041,8 +2041,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Arcana 2 (Evocação)",
-    "escola": "Arcana 2 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2071,8 +2071,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Abjuração)",
-    "escola": "Arcana 2 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2109,8 +2109,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Arcana 2 (Ilusão)",
-    "escola": "Arcana 2 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2135,8 +2135,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Adivinhação)",
-    "escola": "Divina 2 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2161,8 +2161,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Universal 2 (Necromancia)",
-    "escola": "Universal 2 (Necromancia)",
+    "tradicao": "Universal",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2207,8 +2207,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Evocação)",
-    "escola": "Divina 2 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2237,8 +2237,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Divina 2 (Transmutação)",
-    "escola": "Divina 2 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2271,8 +2271,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Arcana 2 (Necromancia)",
-    "escola": "Arcana 2 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2297,8 +2297,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Abjuração)",
-    "escola": "Divina 2 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2327,8 +2327,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Encantamento)",
-    "escola": "Arcana 2 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2357,8 +2357,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Universal 2 (Abjuração)",
-    "escola": "Universal 2 (Abjuração)",
+    "tradicao": "Universal",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 12,
@@ -2379,8 +2379,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Divina 2 (Convocação)",
-    "escola": "Divina 2 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2413,8 +2413,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Arcana 2 (Ilusão)",
-    "escola": "Arcana 2 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2435,8 +2435,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Arcana 2 (Evocação)",
-    "escola": "Arcana 2 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2465,8 +2465,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Divina 2 (Transmutação)",
-    "escola": "Divina 2 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2499,8 +2499,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Adivinhação)",
-    "escola": "Divina 2 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2533,8 +2533,8 @@
     "duracao": "1 rodada",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Ilusão)",
-    "escola": "Arcana 2 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2567,8 +2567,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Convocação)",
-    "escola": "Arcana 2 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2593,8 +2593,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Arcana 2 (Adivinhação)",
-    "escola": "Arcana 2 (Adivinhação)",
+    "tradicao": "Arcana",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2619,8 +2619,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Adivinhação)",
-    "escola": "Arcana 2 (Adivinhação)",
+    "tradicao": "Arcana",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -2645,8 +2645,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Arcana 2 (Adivinhação)",
-    "escola": "Arcana 2 (Adivinhação)",
+    "tradicao": "Arcana",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2667,8 +2667,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Universal 2 (Encantamento)",
-    "escola": "Universal 2 (Encantamento)",
+    "tradicao": "Universal",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2693,8 +2693,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Divina 2 (Adivinhação)",
-    "escola": "Divina 2 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2727,8 +2727,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Transmutação)",
-    "escola": "Arcana 2 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2773,8 +2773,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Divina 2 (Necromancia)",
-    "escola": "Divina 2 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -2803,8 +2803,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Universal 2 (Convocação)",
-    "escola": "Universal 2 (Convocação)",
+    "tradicao": "Universal",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -2833,8 +2833,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Convocação)",
-    "escola": "Arcana 2 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -2867,8 +2867,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Encantamento)",
-    "escola": "Divina 2 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2901,8 +2901,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Divina 2 (Evocação)",
-    "escola": "Divina 2 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -2935,8 +2935,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Divina 2 (Evocação)",
-    "escola": "Divina 2 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -2969,8 +2969,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Abjuração)",
-    "escola": "Arcana 2 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3003,8 +3003,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Arcana 2 (Evocação)",
-    "escola": "Arcana 2 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3029,8 +3029,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Divina 2 (Necromancia)",
-    "escola": "Divina 2 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -3055,8 +3055,8 @@
     "duracao": "permanente até ser descarregada",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Universal 2 (Abjuração)",
-    "escola": "Universal 2 (Abjuração)",
+    "tradicao": "Universal",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3085,8 +3085,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Convocação)",
-    "escola": "Arcana 2 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3119,8 +3119,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "longo",
-    "tradicao": "Arcana 2 (Convocação)",
-    "escola": "Arcana 2 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3145,8 +3145,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Divina 2 (Ilusão)",
-    "escola": "Divina 2 (Ilusão)",
+    "tradicao": "Divina",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3171,8 +3171,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "médio",
-    "tradicao": "Divina 2 (Convocação)",
-    "escola": "Divina 2 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3205,8 +3205,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Arcana 2 (Evocação)",
-    "escola": "Arcana 2 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3231,8 +3231,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Encantamento)",
-    "escola": "Arcana 2 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3261,8 +3261,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "longo",
-    "tradicao": "Divina 2 (Evocação)",
-    "escola": "Divina 2 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3303,8 +3303,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Arcana 2 (Necromancia)",
-    "escola": "Arcana 2 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3333,8 +3333,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 2,
     "alcance": "curto",
-    "tradicao": "Arcana 2 (Transmutação)",
-    "escola": "Arcana 2 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -3363,8 +3363,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 2,
     "alcance": "toque",
-    "tradicao": "Divina 2 (Abjuração)",
-    "escola": "Divina 2 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -3393,8 +3393,8 @@
     "duracao": "cena",
     "nivelCirculo": 2,
     "alcance": "pessoal",
-    "tradicao": "Divina 2 (Adivinhação)",
-    "escola": "Divina 2 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3420,8 +3420,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Divina 3 (Necromancia)",
-    "escola": "Divina 3 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3450,8 +3450,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "curto",
-    "tradicao": "Divina 3 (Abjuração)",
-    "escola": "Divina 3 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 0,
@@ -3472,8 +3472,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "longo",
-    "tradicao": "Divina 3 (Evocação)",
-    "escola": "Divina 3 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3498,8 +3498,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Divina 3 (Adivinhação)",
-    "escola": "Divina 3 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3532,8 +3532,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Arcana 3 (Adivinhação)",
-    "escola": "Arcana 3 (Adivinhação)",
+    "tradicao": "Arcana",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3558,8 +3558,8 @@
     "duracao": "",
     "nivelCirculo": 3,
     "alcance": "longo",
-    "tradicao": "Divina 3 (Transmutação)",
-    "escola": "Divina 3 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3584,8 +3584,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "longo",
-    "tradicao": "Divina 3 (Transmutação)",
-    "escola": "Divina 3 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3606,8 +3606,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "ilimitado (veja texto)",
-    "tradicao": "Arcana 3 (Convocação)",
-    "escola": "Arcana 3 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3640,8 +3640,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Divina 3 (Encantamento)",
-    "escola": "Divina 3 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -3666,8 +3666,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Arcana 3 (Abjuração)",
-    "escola": "Arcana 3 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -3692,8 +3692,8 @@
     "duracao": "veja texto",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Divina 3 (Evocação)",
-    "escola": "Divina 3 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3726,8 +3726,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Convocação)",
-    "escola": "Arcana 3 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3768,8 +3768,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Evocação)",
-    "escola": "Arcana 3 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -3794,8 +3794,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "curto",
-    "tradicao": "Arcana 3 (Necromancia)",
-    "escola": "Arcana 3 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3820,8 +3820,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Arcana 3 (Abjuração)",
-    "escola": "Arcana 3 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -3846,8 +3846,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Divina 3 (Encantamento)",
-    "escola": "Divina 3 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -3868,8 +3868,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Ilusão)",
-    "escola": "Arcana 3 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -3894,8 +3894,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "curto",
-    "tradicao": "Universal 3 (Encantamento)",
-    "escola": "Universal 3 (Encantamento)",
+    "tradicao": "Universal",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -3924,8 +3924,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Evocação)",
-    "escola": "Arcana 3 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -3950,8 +3950,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Universal 3 (Adivinhação)",
-    "escola": "Universal 3 (Adivinhação)",
+    "tradicao": "Universal",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -3972,8 +3972,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Universal 3 (Ilusão)",
-    "escola": "Universal 3 (Ilusão)",
+    "tradicao": "Universal",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -3994,8 +3994,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 3,
     "alcance": "longo",
-    "tradicao": "Arcana 3 (Ilusão)",
-    "escola": "Arcana 3 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -4020,8 +4020,8 @@
     "duracao": "1 semana ou até ser descarregada",
     "nivelCirculo": 3,
     "alcance": "curto",
-    "tradicao": "Divina 3 (Encantamento)",
-    "escola": "Divina 3 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4046,8 +4046,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Evocação)",
-    "escola": "Arcana 3 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4076,8 +4076,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Universal 3 (Transmutação)",
-    "escola": "Universal 3 (Transmutação)",
+    "tradicao": "Universal",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -4114,8 +4114,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Divina 3 (Necromancia)",
-    "escola": "Divina 3 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4136,8 +4136,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Divina 3 (Transmutação)",
-    "escola": "Divina 3 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4155,7 +4155,7 @@
   },
   {
     "nome": "Proteção Contra Magia",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4166,8 +4166,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Divina 3 (Abjuração)",
-    "escola": "Divina 3 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -4185,7 +4185,7 @@
   },
   {
     "nome": "Selo de Mana",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4196,8 +4196,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Universal 3 (Encantamento)",
-    "escola": "Universal 3 (Encantamento)",
+    "tradicao": "Universal",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -4207,7 +4207,7 @@
   },
   {
     "nome": "Servo Divino",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/embrassed-energy.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -4218,8 +4218,8 @@
     "duracao": "Cena ou até ser descarregada",
     "nivelCirculo": 3,
     "alcance": "curto",
-    "tradicao": "Divina 3 (Convocação)",
-    "escola": "Divina 3 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -4233,7 +4233,7 @@
   },
   {
     "nome": "Servo Morto-Vivo",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/shambling-zombie.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 cadáver",
     "area": "",
@@ -4244,8 +4244,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Universal 3 (Necromancia)",
-    "escola": "Universal 3 (Necromancia)",
+    "tradicao": "Universal",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -4263,7 +4263,7 @@
   },
   {
     "nome": "Sopro da Salvação",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/energy-breath.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "cone de 9m",
@@ -4274,8 +4274,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Divina 3 (Evocação)",
-    "escola": "Divina 3 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4293,7 +4293,7 @@
   },
   {
     "nome": "Telecinésia",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "veja texto;",
     "area": "",
@@ -4304,8 +4304,8 @@
     "duracao": "sustentada ou instantânea (veja texto)",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Transmutação)",
-    "escola": "Arcana 3 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -4315,7 +4315,7 @@
   },
   {
     "nome": "Teletransporte",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "até 5 criaturas voluntárias",
     "area": "",
@@ -4326,8 +4326,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 3,
     "alcance": "toque",
-    "tradicao": "Arcana 3 (Convocação)",
-    "escola": "Arcana 3 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4345,7 +4345,7 @@
   },
   {
     "nome": "Tentáculos de Trevas",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/suckered-tentacle.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera com 6m de raio",
@@ -4356,8 +4356,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "médio",
-    "tradicao": "Arcana 3 (Necromancia)",
-    "escola": "Arcana 3 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4371,7 +4371,7 @@
   },
   {
     "nome": "Transformação de Guerra",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/tank.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "você",
     "area": "",
@@ -4382,8 +4382,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Arcana 3 (Transmutação)",
-    "escola": "Arcana 3 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4397,7 +4397,7 @@
   },
   {
     "nome": "Viagem Arbórea",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/tree-face.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "você",
     "area": "",
@@ -4408,8 +4408,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Divina 3 (Convocação)",
-    "escola": "Divina 3 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4419,7 +4419,7 @@
   },
   {
     "nome": "Vidência",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4430,13 +4430,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 3,
     "alcance": "ilimitado (veja texto)",
-    "tradicao": "Universal 3 (Adivinhação)",
-    "escola": "Universal 3 (Adivinhação)",
+    "tradicao": "Universal",
+    "escola": "Adivinhação",
     "aprimoramentos": []
   },
   {
     "nome": "Voo",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/fluffy-cloud.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "você",
     "area": "",
@@ -4447,8 +4447,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "pessoal",
-    "tradicao": "Arcana 3 (Transmutação)",
-    "escola": "Arcana 3 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -4466,7 +4466,7 @@
   },
   {
     "nome": "Âncora Dimensional",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/anchor.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura ou objeto",
     "area": "",
@@ -4477,8 +4477,8 @@
     "duracao": "cena",
     "nivelCirculo": 3,
     "alcance": "curto",
-    "tradicao": "Arcana 3 (Abjuração)",
-    "escola": "Arcana 3 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4505,7 +4505,7 @@
 
   {
     "nome": "Alterar Memória",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/brain.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4516,8 +4516,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "toque",
-    "tradicao": "Arcana 4 (Encantamento)",
-    "escola": "Arcana 4 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4531,7 +4531,7 @@
   },
   {
     "nome": "Animar Objetos",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "Até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme",
     "area": "",
@@ -4542,8 +4542,8 @@
     "duracao": "cena",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Transmutação)",
-    "escola": "Arcana 4 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -4553,7 +4553,7 @@
   },
   {
     "nome": "Assassino Fantasmagórico",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/ghost.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4564,13 +4564,13 @@
     "duracao": "cena, até ser descarregada",
     "nivelCirculo": 4,
     "alcance": "longo",
-    "tradicao": "Arcana 4 (Necromancia)",
-    "escola": "Arcana 4 (Necromancia)",
+    "tradicao": "Arcana",
+    "escola": "Necromancia",
     "aprimoramentos": []
   },
   {
     "nome": "Campo Antimagia",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/bell-shield.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "Você",
     "area": "",
@@ -4581,13 +4581,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Arcana 4 (Abjuração)",
-    "escola": "Arcana 4 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": []
   },
   {
     "nome": "Conceder Milagre",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/sunbeams.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4598,8 +4598,8 @@
     "duracao": "permanente ou até ser descarregada",
     "nivelCirculo": 4,
     "alcance": "toque",
-    "tradicao": "Divina 4 (Encantamento)",
-    "escola": "Divina 4 (Encantamento)",
+    "tradicao": "Divina",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -4609,7 +4609,7 @@
   },
   {
     "nome": "Conjurar Elemental",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/spark-spirit.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -4620,8 +4620,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Convocação)",
-    "escola": "Arcana 4 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -4635,7 +4635,7 @@
   },
   {
     "nome": "Controlar a Gravidade",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/spoutnik.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "cubo de 12m de lado",
@@ -4646,13 +4646,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Transmutação)",
-    "escola": "Arcana 4 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": []
   },
   {
     "nome": "Controlar o Clima",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/leaf-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera com 2km de raio",
@@ -4663,8 +4663,8 @@
     "duracao": "4d12 horas",
     "nivelCirculo": 4,
     "alcance": "2km",
-    "tradicao": "Divina 4 (Transmutação)",
-    "escola": "Divina 4 (Transmutação)",
+    "tradicao": "Divina",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -4674,7 +4674,7 @@
   },
   {
     "nome": "Círculo da Restauração",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/healing.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera de 3m de raio",
@@ -4685,8 +4685,8 @@
     "duracao": "5 rodadas",
     "nivelCirculo": 4,
     "alcance": "curto",
-    "tradicao": "Divina 4 (Evocação)",
-    "escola": "Divina 4 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4696,7 +4696,7 @@
   },
   {
     "nome": "Cólera de Azgher",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/sunbeams.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera com 6m de raio",
@@ -4707,8 +4707,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Divina 4 (Evocação)",
-    "escola": "Divina 4 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4726,7 +4726,7 @@
   },
   {
     "nome": "Cúpula de Repulsão",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/bell-shield.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "Você",
     "area": "",
@@ -4737,8 +4737,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Divina 4 (Abjuração)",
-    "escola": "Divina 4 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4752,7 +4752,7 @@
   },
   {
     "nome": "Desintegrar",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/disintegrate.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura ou objeto",
     "area": "",
@@ -4763,8 +4763,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Transmutação)",
-    "escola": "Arcana 4 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 4,
@@ -4774,7 +4774,7 @@
   },
   {
     "nome": "Duplicata Ilusória",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -4785,8 +4785,8 @@
     "duracao": "cena",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Ilusão)",
-    "escola": "Arcana 4 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -4796,7 +4796,7 @@
   },
   {
     "nome": "Explosão Caleidoscópica",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/sunbeams.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera com 6m de raio",
@@ -4807,13 +4807,13 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "curto",
-    "tradicao": "Arcana 4 (Ilusão)",
-    "escola": "Arcana 4 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": []
   },
   {
     "nome": "Forma Etérea",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "Você",
     "area": "",
@@ -4824,8 +4824,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Arcana 4 (Transmutação)",
-    "escola": "Arcana 4 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -4835,7 +4835,7 @@
   },
   {
     "nome": "Guardião Divino",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/spark-spirit.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -4846,13 +4846,13 @@
     "duracao": "Cena ou até ser descarregado",
     "nivelCirculo": 4,
     "alcance": "curto",
-    "tradicao": "Divina 4 (Convocação)",
-    "escola": "Divina 4 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": []
   },
   {
     "nome": "Libertação",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/embrassed-energy.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4863,8 +4863,8 @@
     "duracao": "cena",
     "nivelCirculo": 4,
     "alcance": "curto",
-    "tradicao": "Universal 4 (Abjuração)",
-    "escola": "Universal 4 (Abjuração)",
+    "tradicao": "Universal",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -4890,7 +4890,7 @@
   },
   {
     "nome": "Ligação Sombria",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/handcuffs.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4901,8 +4901,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 4,
     "alcance": "longo",
-    "tradicao": "Divina 4 (Necromancia)",
-    "escola": "Divina 4 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -4912,7 +4912,7 @@
   },
   {
     "nome": "Manto do Cruzado",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/burning-passion.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "vocẽ",
     "area": "",
@@ -4923,13 +4923,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Divina 4 (Evocação)",
-    "escola": "Divina 4 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": []
   },
   {
     "nome": "Marionete",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/puppet.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -4940,13 +4940,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Encantamento)",
-    "escola": "Arcana 4 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": []
   },
   {
     "nome": "Muralha de Ossos",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/joint.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -4957,8 +4957,8 @@
     "duracao": "cena",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Universal 4 (Necromancia)",
-    "escola": "Universal 4 (Necromancia)",
+    "tradicao": "Universal",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -4972,7 +4972,7 @@
   },
   {
     "nome": "Mão Poderosa de Talude",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -4983,8 +4983,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Convocação)",
-    "escola": "Arcana 4 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -4998,7 +4998,7 @@
   },
   {
     "nome": "Premonição",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "você",
     "area": "",
@@ -5009,8 +5009,8 @@
     "duracao": "cena",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Divina 4 (Adivinhação)",
-    "escola": "Divina 4 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -5024,7 +5024,7 @@
   },
   {
     "nome": "Raio Polar",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/ice-spell-cast.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5035,8 +5035,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Evocação)",
-    "escola": "Arcana 4 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -5050,7 +5050,7 @@
   },
   {
     "nome": "Relâmpago Flamejante de Reynard",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/fire-wave.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -5061,8 +5061,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "médio",
-    "tradicao": "Arcana 4 (Evocação)",
-    "escola": "Arcana 4 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5072,7 +5072,7 @@
   },
   {
     "nome": "Sonho",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/dream-catcher.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura viva",
     "area": "",
@@ -5083,8 +5083,8 @@
     "duracao": "Veja Texto",
     "nivelCirculo": 4,
     "alcance": "ilimitado (veja texto)",
-    "tradicao": "Arcana 4 (Adivinhação)",
-    "escola": "Arcana 4 (Adivinhação)",
+    "tradicao": "Arcana",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5098,7 +5098,7 @@
   },
   {
     "nome": "Talho Invisível de Edauros",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/flying-dagger.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "cone de 9m",
@@ -5109,8 +5109,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Arcana 4 (Evocação)",
-    "escola": "Arcana 4 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5124,7 +5124,7 @@
   },
   {
     "nome": "Terremoto",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/earth-spit.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera com 30m de raio",
@@ -5135,13 +5135,13 @@
     "duracao": "1 rodada",
     "nivelCirculo": 4,
     "alcance": "longo",
-    "tradicao": "Divina 4 (Evocação)",
-    "escola": "Divina 4 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": []
   },
   {
     "nome": "Transformação em Dragão",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/dragon-head.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "você",
     "area": "",
@@ -5152,8 +5152,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Arcana 4 (Transmutação)",
-    "escola": "Arcana 4 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5179,7 +5179,7 @@
   },
   {
     "nome": "Viagem Planar",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-gate.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "pessoal",
     "area": "",
@@ -5190,8 +5190,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 4,
     "alcance": "toque",
-    "tradicao": "Universal 4 (Convocação)",
-    "escola": "Universal 4 (Convocação)",
+    "tradicao": "Universal",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5201,7 +5201,7 @@
   },
   {
     "nome": "Visão da Verdade",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "você",
     "area": "",
@@ -5212,8 +5212,8 @@
     "duracao": "cena",
     "nivelCirculo": 4,
     "alcance": "pessoal",
-    "tradicao": "Universal 4 (Adivinhação)",
-    "escola": "Universal 4 (Adivinhação)",
+    "tradicao": "Universal",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -5236,7 +5236,7 @@
 
   {
     "nome": "Alterar Destino",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/all-seeing-eye.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "Você",
     "area": "",
@@ -5247,13 +5247,13 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "pessoal",
-    "tradicao": "Arcana 5 (Abjuração)",
-    "escola": "Arcana 5 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": []
   },
   {
     "nome": "Aprisionamento",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/handcuffs.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5264,13 +5264,13 @@
     "duracao": "permanente",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Arcana 5 (Abjuração)",
-    "escola": "Arcana 5 (Abjuração)",
+    "tradicao": "Arcana",
+    "escola": "Abjuração",
     "aprimoramentos": []
   },
   {
     "nome": "Aura Divina",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/embrassed-energy.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera com 9m de raio",
@@ -5281,8 +5281,8 @@
     "duracao": "cena",
     "nivelCirculo": 5,
     "alcance": "pessoal",
-    "tradicao": "Divina 5 (Abjuração)",
-    "escola": "Divina 5 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5292,7 +5292,7 @@
   },
   {
     "nome": "Barragem elemental de Vectorius",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/bell-shield.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -5303,8 +5303,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "longo",
-    "tradicao": "Arcana 5 (Evocação)",
-    "escola": "Arcana 5 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -5318,7 +5318,7 @@
   },
   {
     "nome": "Buraco Negro",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/vortex.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -5329,8 +5329,8 @@
     "duracao": "3 rodadas",
     "nivelCirculo": 5,
     "alcance": "longo",
-    "tradicao": "Universal 5 (Abjuração)",
-    "escola": "Universal 5 (Abjuração)",
+    "tradicao": "Universal",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -5340,7 +5340,7 @@
   },
   {
     "nome": "Chuva de Meteoros",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/meteor-impact.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "quadrado com 18m de lado",
@@ -5351,8 +5351,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "longo",
-    "tradicao": "Arcana 5 (Convocação)",
-    "escola": "Arcana 5 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5362,7 +5362,7 @@
   },
   {
     "nome": "Controlar o Tempo",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/clockwork.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "veja texto",
     "area": "",
@@ -5373,13 +5373,13 @@
     "duracao": "veja texto",
     "nivelCirculo": 5,
     "alcance": "veja texto",
-    "tradicao": "Arcana 5 (Transmutação)",
-    "escola": "Arcana 5 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": []
   },
   {
     "nome": "Deflagração de Mana",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "esfera de 15m de raio",
@@ -5390,8 +5390,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "pessoal",
-    "tradicao": "Arcana 5 (Evocação)",
-    "escola": "Arcana 5 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -5405,7 +5405,7 @@
   },
   {
     "nome": "Desejo",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/djinn.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "veja texto",
     "area": "",
@@ -5416,13 +5416,13 @@
     "duracao": "veja texto",
     "nivelCirculo": 5,
     "alcance": "veja texto",
-    "tradicao": "Arcana 5 (Transmutação)",
-    "escola": "Arcana 5 (Transmutação)",
+    "tradicao": "Arcana",
+    "escola": "Transmutação",
     "aprimoramentos": []
   },
   {
     "nome": "Engenho de Mana",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/metal-disc.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -5433,8 +5433,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 5,
     "alcance": "médio",
-    "tradicao": "Divina 5 (Abjuração)",
-    "escola": "Divina 5 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -5448,7 +5448,7 @@
   },
   {
     "nome": "Fúria do Panteão",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/lightning-storm.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "cubo de 90m",
@@ -5459,13 +5459,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 5,
     "alcance": "longo",
-    "tradicao": "Divina 5 (Evocação)",
-    "escola": "Divina 5 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": []
   },
   {
     "nome": "Intervenção Divina",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/sunbeams.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "veja texto",
     "area": "",
@@ -5476,13 +5476,13 @@
     "duracao": "",
     "nivelCirculo": 5,
     "alcance": "veja texto",
-    "tradicao": "Divina 5 (Convocação)",
-    "escola": "Divina 5 (Convocação)",
+    "tradicao": "Divina",
+    "escola": "Convocação",
     "aprimoramentos": []
   },
   {
     "nome": "Invulnerabilidade",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/bell-shield.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "Você",
     "area": "",
@@ -5493,8 +5493,8 @@
     "duracao": "cena",
     "nivelCirculo": 5,
     "alcance": "pessoal",
-    "tradicao": "Universal 5 (Abjuração)",
-    "escola": "Universal 5 (Abjuração)",
+    "tradicao": "Universal",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -5504,7 +5504,7 @@
   },
   {
     "nome": "Katana Celestial",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/katana.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "linha de 60m ou duas linhas de 30m",
@@ -5515,8 +5515,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "pessoal",
-    "tradicao": "Divina 5 (Evocação)",
-    "escola": "Divina 5 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 3,
@@ -5530,7 +5530,7 @@
   },
   {
     "nome": "Legião",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/charm.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "até 10 criaturas na área",
     "area": "",
@@ -5541,8 +5541,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 5,
     "alcance": "médio",
-    "tradicao": "Arcana 5 (Encantamento)",
-    "escola": "Arcana 5 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -5552,7 +5552,7 @@
   },
   {
     "nome": "Lágrimas de Wynna",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-swirl.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5563,8 +5563,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Divina 5 (Abjuração)",
-    "escola": "Divina 5 (Abjuração)",
+    "tradicao": "Divina",
+    "escola": "Abjuração",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5578,7 +5578,7 @@
   },
   {
     "nome": "Mata-Dragão",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/dragon-head.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "cone de 30m",
@@ -5589,8 +5589,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "pessoal",
-    "tradicao": "Arcana 5 (Evocação)",
-    "escola": "Arcana 5 (Evocação)",
+    "tradicao": "Arcana",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -5600,7 +5600,7 @@
   },
   {
     "nome": "Palavra Primordial",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/public-speaker.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura com menos níveis que você",
     "area": "",
@@ -5611,13 +5611,13 @@
     "duracao": "instantânea ou veja texto",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Universal 5 (Encantamento)",
-    "escola": "Universal 5 (Encantamento)",
+    "tradicao": "Universal",
+    "escola": "Encantamento",
     "aprimoramentos": []
   },
   {
     "nome": "Possessão",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/puppet.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5628,8 +5628,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 5,
     "alcance": "longo",
-    "tradicao": "Arcana 5 (Encantamento)",
-    "escola": "Arcana 5 (Encantamento)",
+    "tradicao": "Arcana",
+    "escola": "Encantamento",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -5647,7 +5647,7 @@
   },
   {
     "nome": "Projetar Consciência",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "local ou criatura conhecidos",
     "area": "",
@@ -5658,8 +5658,8 @@
     "duracao": "sustentada",
     "nivelCirculo": 5,
     "alcance": "ilimitado (veja texto)",
-    "tradicao": "Divina 5 (Adivinhação)",
-    "escola": "Divina 5 (Adivinhação)",
+    "tradicao": "Divina",
+    "escola": "Adivinhação",
     "aprimoramentos": [
       {
         "custo": 10,
@@ -5669,7 +5669,7 @@
   },
   {
     "nome": "Reanimação Impura",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/shambling-zombie.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5680,13 +5680,13 @@
     "duracao": "cena",
     "nivelCirculo": 5,
     "alcance": "toque",
-    "tradicao": "Divina 5 (Necromancia)",
-    "escola": "Divina 5 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": []
   },
   {
     "nome": "Roubar a Alma",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-lamp.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5697,8 +5697,8 @@
     "duracao": "permanente",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Divina 5 (Necromancia)",
-    "escola": "Divina 5 (Necromancia)",
+    "tradicao": "Divina",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 5,
@@ -5712,7 +5712,7 @@
   },
   {
     "nome": "Réquiem",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/misdirection.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "criaturas escolhidas",
     "area": "",
@@ -5723,13 +5723,13 @@
     "duracao": "sustentada",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Arcana 5 (Ilusão)",
-    "escola": "Arcana 5 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": []
   },
   {
     "nome": "Segunda Chance",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/hawk-emblem.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5740,8 +5740,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "toque",
-    "tradicao": "Divina 5 (Evocação)",
-    "escola": "Divina 5 (Evocação)",
+    "tradicao": "Divina",
+    "escola": "Evocação",
     "aprimoramentos": [
       {
         "custo": 1,
@@ -5759,7 +5759,7 @@
   },
   {
     "nome": "Semiplano",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/magic-gate.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "",
     "area": "",
@@ -5770,8 +5770,8 @@
     "duracao": "1 dia",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Arcana 5 (Convocação)",
-    "escola": "Arcana 5 (Convocação)",
+    "tradicao": "Arcana",
+    "escola": "Convocação",
     "aprimoramentos": [
       {
         "custo": 2,
@@ -5785,7 +5785,7 @@
   },
   {
     "nome": "Sombra Assassina",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/relationship-bounds.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5796,8 +5796,8 @@
     "duracao": "cena",
     "nivelCirculo": 5,
     "alcance": "curto",
-    "tradicao": "Arcana 5 (Ilusão)",
-    "escola": "Arcana 5 (Ilusão)",
+    "tradicao": "Arcana",
+    "escola": "Ilusão",
     "aprimoramentos": [
       {
         "custo": 10,
@@ -5807,7 +5807,7 @@
   },
   {
     "nome": "Toque da Morte",
-    "iconeURL": "./icons/",
+    "iconeURL": "./icons/disintegrate.svg",
     "publicacao": "Edição jogo do ano",
     "alvo": "1 criatura",
     "area": "",
@@ -5818,8 +5818,8 @@
     "duracao": "instantânea",
     "nivelCirculo": 5,
     "alcance": "toque",
-    "tradicao": "Universal 5 (Necromancia)",
-    "escola": "Universal 5 (Necromancia)",
+    "tradicao": "Universal",
+    "escola": "Necromancia",
     "aprimoramentos": [
       {
         "custo": 2,

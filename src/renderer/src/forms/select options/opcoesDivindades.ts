@@ -1,4 +1,5 @@
 export const opcoesDivindades = [
+  'nenhuma',
   'aharadak',
   'allihanna',
   'arsenal',

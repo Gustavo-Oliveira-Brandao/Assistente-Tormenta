@@ -40,9 +40,9 @@ const CardMagia = ({
           </div>
           <p className={`${styles.poderDescricao} ${styles.poppins}`}>{magia.descricao}</p>
           {magia.aprimoramentos.length !== 0 && (
-            <div className={styles.poderTopicos}>
+            <div className={styles.poderExtras}>
               {magia.aprimoramentos.map((aprimoramento, index) => (
-                <div key={index} className={styles.poderTopico}>
+                <div key={index} className={styles.poderExtra}>
                   <p>
                     {aprimoramento.custo === 0 ? (
                       <span className={styles.destaque}>TRUQUE: </span>

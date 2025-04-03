@@ -17,6 +17,7 @@ import { opcoesRacas } from '@renderer/forms/select options/opcoesRacas'
 import { opcoesClasses } from '@renderer/forms/select options/opcoesClasses'
 import { opcoesTamanhos } from '@renderer/forms/select options/opcoesTamanhos'
 import { opcoesDivindades } from '@renderer/forms/select options/opcoesDivindades'
+import { opcoesTiposCriaturas } from '@renderer/forms/select options/opcoesTiposCriaturas'
 
 const TelaSelecaoPersonagem = ({
   setPersonagemSelecionado
@@ -35,6 +36,7 @@ const TelaSelecaoPersonagem = ({
   const methods = useForm<z.infer<typeof personagemSchema>>({
     resolver: zodResolver(personagemSchema),
     defaultValues: {
+      divindade: 'nenhuma',
       tipoCriatura: 'humanoide',
       tamanho: 'medio'
     }
@@ -145,8 +147,8 @@ const TelaSelecaoPersonagem = ({
                     <FormGroup
                       name="tipoCriatura"
                       label="tipo de criatura:"
-                      placeholder="humanóide"
-                      type="text"
+                      options={opcoesTiposCriaturas}
+                      type="dropdown"
                     />
                     <FormGroup name="raca" label="Raça:" type="dropdown" options={opcoesRacas} />
                     <FormGroup

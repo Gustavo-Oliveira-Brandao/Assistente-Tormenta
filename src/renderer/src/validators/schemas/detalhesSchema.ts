@@ -8,7 +8,7 @@ export const detalhesSchema = z.object({
   divindade: z.coerce.string().nonempty('Divindade não pode ficar vazia'),
   nivel: z.coerce
     .number()
-    .positive('Nivel não pode ser abaixo de 1')
+    .nonnegative('Nivel não pode ser abaixo de 1')
     .max(20, 'O nivel máximo é 20'),
   experiencia: z.coerce.number().positive('Experiência não pode ser negativa')
 })

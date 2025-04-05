@@ -1,41 +1,23 @@
-import { useEffect, useState } from 'react'
-import styles from './barra-recurso.module.scss'
+import { IRecurso } from '@renderer/@types/t20/Recurso'
+import styles from './card-recurso.module.scss'
+import BotaoModular from '../botao-modular/botao-modular'
+import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
 import { FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { IRecurso } from '@renderer/@types/t20/Recurso'
+import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '../form-group/form-group'
-import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
-import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
-import BotaoModular from '../botao-modular/botao-modular'
-import { useAtualizarRecursoMutation } from '@renderer/hooks/mutations/recurso/useAtualizarRecursoMutation'
 
-const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
-  const [larguraBarra, setLarguraBarra] = useState(0)
-  const [modal, abrirModal] = useState(false)
-
-  useEffect(() => {
-    if (recurso.valorAtual >= 0) {
-      setLarguraBarra((recurso.valorAtual / recurso.valorMaximo) * 100)
-    }
-    if (recurso.valorAtual < 0) {
-      setLarguraBarra(0)
-    }
-  }, [recurso.valorAtual, recurso.valorMaximo])
-
-  const atualizarRecurso = useAtualizarRecursoMutation()
-
-  const onEdit: SubmitHandler<z.infer<typeof recursoSchema>> = async (data): Promise<void> => {
-    const recursoAtualizado = { ...recurso }
-    recursoAtualizado.valorAtual = data.valorAtual
-    recursoAtualizado.valorTemporario = data.valorTemporario
-    recursoAtualizado.atributo = data.atributo
-    recursoAtualizado.bonus = data.bonus
-    atualizarRecurso.mutate(recursoAtualizado)
-    abrirModal(false)
-  }
+export const CardRecurso = ({
+  recurso,
+  icon
+}: {
+  recurso: IRecurso
+  icon: string
+}): JSX.Element => {
+  const [modal, setModal] = useState(false)
 
   const methods = useForm<z.infer<typeof recursoSchema>>({
     resolver: zodResolver(recursoSchema),
@@ -58,21 +40,23 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
     name: 'bonus'
   })
 
+  const onEdit: SubmitHandler<z.infer<typeof recursoSchema>> = async (data): Promise<void> => {
+    console.log(data)
+  }
+
   return (
     <>
-      <div onClick={() => abrirModal(true)} className={styles.barraRecurso}>
-        <div
-          className={`${styles[recurso.categoria]} ${styles.barra}`}
-          style={{ width: `${larguraBarra}%` }}
-        ></div>
-        <div className={styles.texto}>
-          <p>{recurso.valorAtual + '/' + recurso.valorMaximo}</p>
-        </div>
+      <div className={styles.recurso}>
+        <img src={icon} alt={recurso.categoria} />
+        <BotaoModular
+          onClickEvent={() => setModal(true)}
+          texto={recurso.valorAtual}
+          css="recursoSecundario"
+        />
       </div>
-
       {modal &&
         createPortal(
-          <Modal titulo={recurso.categoria} onClose={() => abrirModal(false)} height="fit-content">
+          <Modal titulo={recurso.categoria} onClose={() => setModal(false)} height="400px">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <fieldset>
@@ -80,43 +64,18 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
                   <div className="d-flex">
                     <FormGroup
                       name="valorAtual"
-                      label={`atual:`}
+                      label="atual:"
                       placeholder={String(recurso.valorAtual)}
                       type="number"
                     />
                     <FormGroup
                       name="valorTemporario"
-                      label={`temp:`}
+                      label="temp:"
                       placeholder={String(recurso.valorTemporario)}
                       type="number"
                     />
                   </div>
                 </fieldset>
-                <fieldset>
-                  <legend>{recurso.categoria} maxima</legend>
-                  <div className="d-flex">
-                    {recurso.categoria === 'vida' && (
-                      <FormGroup
-                        name="atributo"
-                        label="atributo:"
-                        type="dropdown"
-                        options={opcoesAtributos}
-                      />
-                    )}
-                  </div>
-                </fieldset>
-                {recurso.categoria === 'mana' && (
-                  <fieldset>
-                    <legend>Limite de PM:</legend>
-                    <FormGroup
-                      name="atributo"
-                      label="atributo:"
-                      placeholder={String(recurso.atributo)}
-                      type="dropdown"
-                      options={opcoesAtributos}
-                    />
-                  </fieldset>
-                )}
                 <fieldset>
                   <legend>Modificadores de {recurso.categoria} maxima</legend>
                   {fields.map((field, index) => (
@@ -175,5 +134,3 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
     </>
   )
 }
-
-export default BarraRecurso

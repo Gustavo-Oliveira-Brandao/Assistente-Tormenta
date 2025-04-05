@@ -65,34 +65,36 @@ const TelaSelecaoPersonagem = ({
       experiencia: 0,
       tamanho: data.tamanho,
       alinhamento: data.alinhamento,
-      defesa: {
-        armadura: 0,
-        escudo: 0,
-        temporario: 0,
-        atributo: 'destreza',
-        penalidadeArmaduraTotal: 0,
-        bonus: []
-      },
-      vida: {
-        valorAtual: 1,
-        valorTemporario: 0,
-        atributo: 'constituicao',
-        bonus: []
-      },
-      mana: {
-        valorAtual: 1,
-        valorTemporario: 0,
-        atributo: 'nenhum',
-        bonus: [],
-        limitePM: 0
-      },
-      deslocamento: {
-        caminhada: 0,
-        escalada: 0,
-        natacao: 0,
-        voo: 0,
-        escavacao: 0
-      },
+      recursos: [
+        {
+          categoria: 'vida',
+          valorAtual: 1,
+          valorTemporario: 0,
+          atributo: 'constituicao',
+          bonus: []
+        },
+        {
+          categoria: 'mana',
+          valorAtual: 1,
+          valorTemporario: 0,
+          atributo: 'constituicao',
+          bonus: []
+        },
+        {
+          categoria: 'deslocamento',
+          valorAtual: 1,
+          valorTemporario: 0,
+          atributo: 'constituicao',
+          bonus: []
+        },
+        {
+          categoria: 'defesa',
+          valorAtual: 1,
+          valorTemporario: 0,
+          atributo: 'constituicao',
+          bonus: []
+        }
+      ],
       atributos: atributosDefault,
       pericias: periciasDefault,
       poderes: []

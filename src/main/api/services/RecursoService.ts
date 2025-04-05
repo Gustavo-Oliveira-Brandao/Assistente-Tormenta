@@ -1,31 +1,16 @@
 import { IRecurso } from '../@types/t20/Recurso'
-import { manaRepository } from '../repositories/ManaRepository'
-import { vidaRepository } from '../repositories/VidaRepository'
+import { recursoRepository } from '../repositories/RecursoRepository'
 
-export const putVida = async (_vida: IRecurso): Promise<IRecurso> => {
+export const putRecurso = async (_recurso: IRecurso): Promise<IRecurso> => {
   try {
-    const vida = vidaRepository.create(_vida)
-    const vidaEncontrada = await vidaRepository.findOneBy({ id: vida.id })
-    if (vidaEncontrada) {
-      const vidaAtualizada = { ...vida }
-      return await vidaRepository.save(vidaAtualizada)
+    const recurso = recursoRepository.create(_recurso)
+    const recursoEncontrado = await recursoRepository.findOneBy({ id: recurso.id })
+    if (recursoEncontrado) {
+      const recursoAtualizada = { ...recurso }
+      return await recursoRepository.save(recursoAtualizada)
     }
     throw new Error('Recurso não encontrado')
   } catch (err) {
-    throw new Error('Erro ao atualizar vida.')
-  }
-}
-
-export const putMana = async (_mana: IRecurso): Promise<IRecurso> => {
-  try {
-    const mana = manaRepository.create(_mana)
-    const manaEncontrada = await manaRepository.findOneBy({ id: mana.id })
-    if (manaEncontrada) {
-      const manaAtualizada = { ...mana }
-      return await manaRepository.save(manaAtualizada)
-    }
-    throw new Error('Recurso não encontrado')
-  } catch (err) {
-    throw new Error('Erro ao atualizar mana.')
+    throw new Error('Erro ao atualizar o recurso.')
   }
 }

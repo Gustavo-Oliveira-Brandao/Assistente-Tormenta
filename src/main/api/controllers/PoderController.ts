@@ -5,7 +5,7 @@ import { postPoder, deletePoder } from '../services/PoderService'
 ipcMain.handle(
   'post-poder',
   async (event: IpcMainInvokeEvent, _poder: IPoder, idPersonagem: number) => {
-    console.log(`Evento recebido com frameID: ${event.frameId}`)
+    console.log(`Evento recebido com frameID: ${event.frameId} date: ${Date.now()}`)
     await postPoder(_poder, idPersonagem)
   }
 )

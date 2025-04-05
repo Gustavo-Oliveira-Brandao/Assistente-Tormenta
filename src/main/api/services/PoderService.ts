@@ -8,7 +8,7 @@ export const postPoder = async (_poder: IPoder, idPersonagem: number): Promise<I
     poder.personagem = await criaturaRepository.findOneBy({ id: idPersonagem }).catch((err) => {
       return err
     })
-
+    console.log(`adicionei o poder: ${Date.now()}`)
     return await poderRepository.save(poder)
   } catch (err) {
     throw new Error('Erro ao adicionar poder ao personagem.')

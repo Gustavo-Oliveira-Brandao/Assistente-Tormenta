@@ -1,6 +1,5 @@
 import { IAtributo } from './Atributo'
-import { IDefesa } from './Defesa'
-import { IDeslocamento } from './Deslocamento'
+import { IMagia } from './Magia'
 import { IPericia } from './Pericia'
 import { IPoder } from './Poder'
 import { IRecurso } from './Recurso'
@@ -18,11 +17,10 @@ export interface ICriatura {
   experiencia?: number
   tamanho: string
   alinhamento: string
-  defesa: IDefesa
-  vida: IRecurso
-  mana: IRecurso
-  deslocamento: IDeslocamento
+  penalidadeArmadura: number
+  recursos: IRecurso[]
   atributos: IAtributo[]
   pericias: IPericia[]
   poderes: IPoder[]
+  magias: IMagia[]
 }

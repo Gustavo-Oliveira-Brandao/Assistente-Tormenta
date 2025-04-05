@@ -2,10 +2,8 @@ import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { IBonus } from '../@types/t20/Bonus'
 import { Atributo } from './atributo'
 import { Pericia } from './pericia'
-import { Defesa } from './defesa'
 import { Dano } from './dano'
-import { Vida } from './vida'
-import { Mana } from './mana'
+import { Recurso } from './recurso'
 
 @Entity()
 export class Bonus implements IBonus {
@@ -50,27 +48,15 @@ export class Bonus implements IBonus {
   })
   pericia: Pericia
 
-  @ManyToOne(() => Defesa, (defesa) => defesa.bonus, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  defesa: Defesa
-
   @ManyToOne(() => Dano, (dano) => dano.bonus, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
   dano: Dano
 
-  @ManyToOne(() => Vida, (vida) => vida.bonus, {
+  @ManyToOne(() => Recurso, (recurso) => recurso.bonus, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  vida: Vida
-
-  @ManyToOne(() => Mana, (mana) => mana.bonus, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  mana: Mana
+  recurso: Recurso
 }

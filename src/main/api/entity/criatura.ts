@@ -1,11 +1,8 @@
-import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Vida } from './vida'
-import { Mana } from './mana'
-import { Deslocamento } from './deslocamento'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { Recurso } from './recurso'
 import { Atributo } from './atributo'
 import { Pericia } from './pericia'
 import { Poder } from './poder'
-import { Defesa } from './defesa'
 import { ItemT20 } from './item'
 import { Magia } from './magia'
 import { ICriatura } from '../@types/t20/Criatura'
@@ -75,6 +72,12 @@ export class Criatura implements ICriatura {
   experiencia: number
 
   @Column({
+    type: 'integer',
+    nullable: true
+  })
+  penalidadeArmadura?: number
+
+  @Column({
     type: 'varchar',
     nullable: false
   })
@@ -86,45 +89,12 @@ export class Criatura implements ICriatura {
   })
   alinhamento: string
 
-  @OneToOne(() => Defesa, {
+  @OneToMany(() => Recurso, (recursos) => recursos.personagem, {
     cascade: true,
     eager: true,
-    nullable: false,
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
+    nullable: false
   })
-  @JoinColumn()
-  defesa: Defesa
-
-  @OneToOne(() => Vida, {
-    cascade: true,
-    eager: true,
-    nullable: false,
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  @JoinColumn()
-  vida: Vida
-
-  @OneToOne(() => Mana, {
-    cascade: true,
-    eager: true,
-    nullable: false,
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  @JoinColumn()
-  mana: Mana
-
-  @OneToOne(() => Deslocamento, {
-    cascade: true,
-    eager: true,
-    nullable: false,
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  @JoinColumn()
-  deslocamento: Deslocamento
+  recursos: Recurso[]
 
   @OneToMany(() => Atributo, (atributos) => atributos.personagem, {
     cascade: true,
@@ -156,7 +126,7 @@ export class Criatura implements ICriatura {
 
   @OneToMany(() => Magia, (magias) => magias.personagem, {
     cascade: true,
-    eager: true,
+    eager: false,
     nullable: true
   })
   magias: IMagia[]

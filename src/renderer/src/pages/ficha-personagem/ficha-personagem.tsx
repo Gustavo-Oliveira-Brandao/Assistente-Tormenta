@@ -14,6 +14,8 @@ import { useAdicionarPoderMutation } from '@renderer/hooks/mutations/poder/useAd
 import { useRemoverPoderMutation } from '@renderer/hooks/mutations/poder/useRemoverPoderMutation'
 import CardMagia from '@renderer/components/card-magia/card-magia'
 import { useExibirLojaMagiasQuery } from '@renderer/hooks/queries/magia/useExibirLojaMagiasQuery'
+import { useAdicionarMagiaMutation } from '@renderer/hooks/mutations/magia/useAdicionarMagiaMutation'
+import { useRemoverMagiaMutation } from '@renderer/hooks/mutations/magia/useRemoverMagiaMutation'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
@@ -25,6 +27,8 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
 
   const adicionarPoder = useAdicionarPoderMutation()
   const removerPoder = useRemoverPoderMutation()
+  const adicionarMagia = useAdicionarMagiaMutation()
+  const removerMagia = useRemoverMagiaMutation()
   //TODO: Bota um botão de voltar para a tela anterior cara
   //TODO: Criação de modal para exibição de edição de elementos na ficha
   return (
@@ -153,15 +157,30 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                     }
                     css="poderes"
                   >
-                    {magiasDefault &&
-                      magiasDefault.map((magia) => (
-                        <CardMagia
-                          key={magia.id}
-                          magia={magia}
-                          iconeBotaoInteracao="./icons/delete.svg"
-                        />
-                      ))}
+                    {personagem.magias.map((magia) => (
+                      <CardMagia
+                        key={magia.id}
+                        magia={magia}
+                        onInteract={() => removerMagia.mutate(magia.id)}
+                        iconeBotaoInteracao="./icons/delete.svg"
+                      />
+                    ))}
                   </SecaoFicha>
+                  {loja === 'adicionar.magia' &&
+                    createPortal(
+                      <Modal titulo="Adquirir magias" onClose={() => setLoja(null)} height="400px">
+                        {magiasDefault &&
+                          magiasDefault.map((magia, index) => (
+                            <CardMagia
+                              key={index}
+                              magia={magia}
+                              onInteract={() => adicionarMagia.mutate({ magia, idPersonagem })}
+                              iconeBotaoInteracao="./icons/plus-solid.svg"
+                            />
+                          ))}
+                      </Modal>,
+                      document.body
+                    )}
                 </>
               )}
             </div>

@@ -1,11 +1,10 @@
 import { SQLiteDataSource } from './data-source'
 import './controllers/AtributoController'
-import './controllers/DefesaController'
-import './controllers/DeslocamentoController'
 import './controllers/PericiaController'
 import './controllers/PersonagemController'
 import './controllers/PoderController'
 import './controllers/RecursoController'
+import './controllers/MagiaController'
 
 const AppDataSource = SQLiteDataSource
 

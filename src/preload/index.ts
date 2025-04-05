@@ -3,11 +3,10 @@ import { electronAPI } from '@electron-toolkit/preload'
 import { IPoder } from '../main/api/@types/t20/Poder'
 import { IAtributo } from '../main/api/@types/t20/Atributo'
 import { IRecurso } from '../main/api/@types/t20/Recurso'
-import { IDefesa } from '../main/api/@types/t20/Defesa'
-import { IDeslocamento } from '../main/api/@types/t20/Deslocamento'
 import { IPericia } from '../main/api/@types/t20/Pericia'
 import { ICriatura } from '../main/api/@types/t20/Criatura'
 import { DeepPartial } from 'typeorm'
+import { IMagia } from '../main/api/@types/t20/Magia'
 
 // Custom APIs for renderer
 const api = {
@@ -23,12 +22,11 @@ const api = {
   deletePoder: (id: number): Promise<void> => ipcRenderer.invoke('delete-poder', id),
   putAtributo: (atributo: IAtributo): Promise<IAtributo> =>
     ipcRenderer.invoke('put-atributo', atributo),
-  putVida: (vida: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-vida', vida),
-  putMana: (mana: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-mana', mana),
-  putDefesa: (defesa: IDefesa): Promise<IDefesa> => ipcRenderer.invoke('put-defesa', defesa),
-  putDeslocamento: (deslocamento: IDeslocamento): Promise<IDeslocamento> =>
-    ipcRenderer.invoke('put-deslocamento', deslocamento),
-  putPericia: (pericia: IPericia): Promise<IPericia> => ipcRenderer.invoke('put-pericia', pericia)
+  putRecurso: (recurso: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-recurso', recurso),
+  putPericia: (pericia: IPericia): Promise<IPericia> => ipcRenderer.invoke('put-pericia', pericia),
+  postMagia: (_magia: IMagia, idPersonagem: number): Promise<IMagia> =>
+    ipcRenderer.invoke('post-magia', _magia, idPersonagem),
+  deleteMagia: (id: number): Promise<void> => ipcRenderer.invoke('delete-magia', id)
 }
 
 // Use `contextBridge` APIs to expose Electron APIs to

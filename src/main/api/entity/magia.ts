@@ -2,8 +2,6 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'ty
 import { IMagia } from '../@types/t20/Magia'
 import { AprimoramentoMagia } from './aprimoramentoMagia'
 import { IAprimoramentoMagia } from '../@types/t20/AprimoramentoMagia'
-import { Dano } from './dano'
-import { IDano } from '../@types/t20/Dano'
 import { Criatura } from './criatura'
 import type { ICriatura } from '../@types/t20/Criatura'
 
@@ -30,7 +28,19 @@ export class Magia implements IMagia {
     type: 'varchar',
     nullable: false
   })
-  alvoAreaEfeito: string
+  alvo: string
+
+  @Column({
+    type: 'varchar',
+    nullable: false
+  })
+  area: string
+
+  @Column({
+    type: 'varchar',
+    nullable: false
+  })
+  efeito: string
 
   @Column({
     type: 'varchar',
@@ -42,7 +52,7 @@ export class Magia implements IMagia {
     type: 'varchar',
     nullable: false
   })
-  testeResistencia: string
+  resistencia: string
 
   @Column({
     type: 'varchar',
@@ -81,12 +91,11 @@ export class Magia implements IMagia {
   })
   duracao: string
 
-  @OneToMany(() => Dano, (danos) => danos.magia, {
-    cascade: true,
-    eager: true,
-    nullable: true
+  @Column({
+    type: 'varchar',
+    nullable: false
   })
-  danos: IDano[]
+  publicacao: string
 
   @OneToMany(() => AprimoramentoMagia, (aprimoramentos) => aprimoramentos.magia, {
     cascade: true,

@@ -1,8 +1,7 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
 import { IAtributo } from '@renderer/@types/t20/Atributo'
 import { ICriatura } from '@renderer/@types/t20/Criatura'
-import { IDefesa } from '@renderer/@types/t20/Defesa'
-import { IDeslocamento } from '@renderer/@types/t20/Deslocamento'
+import { IMagia } from '@renderer/@types/t20/Magia'
 import { IPericia } from '@renderer/@types/t20/Pericia'
 import { IPoder } from '@renderer/@types/t20/Poder'
 import { IRecurso } from '@renderer/@types/t20/Recurso'
@@ -17,14 +16,13 @@ declare global {
       postPersonagem: (personagem: DeepPartial<ICriatura>) => ICriatura
       putPersonagem: (personagem: ICriatura) => ICriatura
       deletePersonagem: (id: number) => void
-      postPoder: (_poder: IPoder, idPersonagem: number) => Poder
+      postPoder: (_poder: IPoder, idPersonagem: number) => IPoder
       deletePoder: (id: number) => void
       putAtributo: (atributo: IAtributo) => IAtributo
-      putVida: (vida: IRecurso) => IRecurso
-      putMana: (mana: IRecurso) => IRecurso
-      putDefesa: (defesa: IDefesa) => IDefesa
-      putDeslocamento: (deslocamento: IDeslocamento) => IDeslocamento
+      putRecurso: (recurso: IRecurso) => IRecurso
       putPericia: (pericia: IPericia) => IPericia
+      postMagia: (magia: IMagia, idPersonagem: number) => IMagia
+      deleteMagia: (id: number) => void
     }
   }
 }

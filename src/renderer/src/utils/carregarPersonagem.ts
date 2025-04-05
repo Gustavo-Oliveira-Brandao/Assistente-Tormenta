@@ -23,32 +23,27 @@ export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatu
     })
   }
 
-  const valorAtributoVida = extrairValorAtributo(personagem.vida.atributo, personagem.atributos)
-  const valorAtributoMana = extrairValorAtributo(personagem.mana.atributo, personagem.atributos)
-  const valorAtributoDefesa = extrairValorAtributo(personagem.defesa.atributo, personagem.atributos)
+  for (const recurso of personagem.recursos) {
+    const valorAtributoRecurso = extrairValorAtributo(recurso.atributo, personagem.atributos)
+    const recursoBonusTotal = calcularBonus(recurso.bonus, personagem.nivel)
 
-  if (classeEscolhida) {
-    const vidaBonusTotal = calcularBonus(personagem.vida.bonus, personagem.nivel)
-    const manaBonusTotal = calcularBonus(personagem.mana.bonus, personagem.nivel)
-
-    personagem.vida.valorMaximo =
-      classeEscolhida.vidaInicial +
-      classeEscolhida.vidaPorNivel * personagem.nivel +
-      valorAtributoVida +
-      vidaBonusTotal
-
-    personagem.mana.valorMaximo =
-      classeEscolhida.manaPorNivel * personagem.nivel + valorAtributoMana + manaBonusTotal
+    if (classeEscolhida) {
+      if (recurso.categoria === 'vida') {
+        recurso.valorMaximo =
+          classeEscolhida.vidaInicial +
+          classeEscolhida.vidaPorNivel * personagem.nivel +
+          valorAtributoRecurso +
+          recursoBonusTotal
+      }
+      if (recurso.categoria === 'mana') {
+        recurso.valorMaximo =
+          classeEscolhida.manaPorNivel * personagem.nivel + valorAtributoRecurso + recursoBonusTotal
+      }
+      if (recurso.categoria === 'defesa') {
+        recurso.valorAtual = 10 + valorAtributoRecurso + recursoBonusTotal
+      }
+    }
   }
-
-  const defesaBonusTotal = calcularBonus(personagem.defesa.bonus, personagem.nivel)
-  personagem.defesa.valorAtual =
-    10 +
-    personagem.defesa.armadura +
-    personagem.defesa.escudo +
-    personagem.defesa.temporario +
-    valorAtributoDefesa +
-    defesaBonusTotal
 
   personagem.pericias.forEach((pericia) => {
     let valorTreinamento = 0
@@ -62,11 +57,10 @@ export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatu
         atributo.valorAtual + valorTreinamento + periciaBonusTotal + personagem.nivel / 2
       )
       if (pericia.sofrePenalidadeArmadura) {
-        pericia.valor -= personagem.defesa.penalidadeArmaduraTotal
+        pericia.valor -= personagem.penalidadeArmadura
       }
     }
   })
-
   return personagem
 }
 

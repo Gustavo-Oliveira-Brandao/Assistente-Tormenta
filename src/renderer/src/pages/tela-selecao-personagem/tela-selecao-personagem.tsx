@@ -96,8 +96,7 @@ const TelaSelecaoPersonagem = ({
         }
       ],
       atributos: atributosDefault,
-      pericias: periciasDefault,
-      poderes: []
+      pericias: periciasDefault
     }
 
     criarPersonagem.mutate(novoPersonagem)

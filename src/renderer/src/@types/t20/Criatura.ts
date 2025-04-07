@@ -1,7 +1,5 @@
 import { IAtributo } from './Atributo'
-import { IMagia } from './Magia'
 import { IPericia } from './Pericia'
-import { IPoder } from './Poder'
 import { IRecurso } from './Recurso'
 
 export interface ICriatura {
@@ -21,6 +19,4 @@ export interface ICriatura {
   recursos: IRecurso[]
   atributos: IAtributo[]
   pericias: IPericia[]
-  poderes: IPoder[]
-  magias: IMagia[]
 }

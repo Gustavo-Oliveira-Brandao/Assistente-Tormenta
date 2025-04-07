@@ -112,14 +112,14 @@ export class Criatura implements ICriatura {
 
   @OneToMany(() => Poder, (poderes) => poderes.personagem, {
     cascade: true,
-    eager: true,
+    eager: false,
     nullable: true
   })
   poderes: IPoder[]
 
   @OneToMany(() => ItemT20, (itens) => itens.personagem, {
     cascade: true,
-    eager: true,
+    eager: false,
     nullable: true
   })
   itens: IItemInventario[]

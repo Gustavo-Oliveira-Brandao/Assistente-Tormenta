@@ -17,6 +17,8 @@ const api = {
   putPersonagem: (personagem: ICriatura): Promise<ICriatura> =>
     ipcRenderer.invoke('put-personagem', personagem),
   deletePersonagem: (id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', id),
+  getPoderesPersonagem: (_idPersonagem: number): Promise<IPoder[]> =>
+    ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
   postPoder: (_poder: IPoder, idPersonagem: number): Promise<IPoder> =>
     ipcRenderer.invoke('post-poder', _poder, idPersonagem),
   deletePoder: (id: number): Promise<void> => ipcRenderer.invoke('delete-poder', id),
@@ -24,6 +26,8 @@ const api = {
     ipcRenderer.invoke('put-atributo', atributo),
   putRecurso: (recurso: IRecurso): Promise<IRecurso> => ipcRenderer.invoke('put-recurso', recurso),
   putPericia: (pericia: IPericia): Promise<IPericia> => ipcRenderer.invoke('put-pericia', pericia),
+  getMagiasPersonagem: (_idPersonagem: number): Promise<IMagia[]> =>
+    ipcRenderer.invoke('get-magias-personagem', _idPersonagem),
   postMagia: (_magia: IMagia, idPersonagem: number): Promise<IMagia> =>
     ipcRenderer.invoke('post-magia', _magia, idPersonagem),
   deleteMagia: (id: number): Promise<void> => ipcRenderer.invoke('delete-magia', id)

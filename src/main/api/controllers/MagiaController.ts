@@ -1,6 +1,14 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import { IMagia } from '../@types/t20/Magia'
-import { deleteMagia, postMagia } from '../services/MagiaService'
+import { deleteMagia, getMagiasPorPersonagem, postMagia } from '../services/MagiaService'
+
+ipcMain.handle(
+  'get-magias-personagem',
+  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
+    console.log(`Evento recebido com frameID: ${event.frameId}`)
+    return await getMagiasPorPersonagem(_idPersonagem)
+  }
+)
 
 ipcMain.handle(
   'post-magia',

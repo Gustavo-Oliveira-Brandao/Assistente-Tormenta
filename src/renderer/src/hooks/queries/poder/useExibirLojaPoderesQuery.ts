@@ -4,7 +4,7 @@ import { UseQueryResult, useQuery } from '@tanstack/react-query'
 
 export const useExibirLojaPoderesQuery = (): UseQueryResult<IPoder[]> => {
   return useQuery({
-    queryKey: ['poderes'],
+    queryKey: ['poderesDefault'],
     queryFn: () => exibirLojaPoderes()
   })
 }

@@ -1,6 +1,14 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import { IPoder } from '../@types/t20/Poder'
-import { postPoder, deletePoder } from '../services/PoderService'
+import { postPoder, deletePoder, getPoderesPorPersonagem } from '../services/PoderService'
+
+ipcMain.handle(
+  'get-poderes-personagem',
+  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
+    console.log(`Evento recebido com frameID: ${event.frameId}`)
+    return await getPoderesPorPersonagem(_idPersonagem)
+  }
+)
 
 ipcMain.handle(
   'post-poder',

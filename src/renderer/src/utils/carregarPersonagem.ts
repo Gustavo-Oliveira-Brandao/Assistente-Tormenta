@@ -40,7 +40,10 @@ export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatu
           classeEscolhida.manaPorNivel * personagem.nivel + valorAtributoRecurso + recursoBonusTotal
       }
       if (recurso.categoria === 'defesa') {
-        recurso.valorAtual = 10 + valorAtributoRecurso + recursoBonusTotal
+        recurso.valorMaximo = 10 + valorAtributoRecurso + recursoBonusTotal
+      }
+      if (recurso.categoria === 'deslocamento') {
+        recurso.valorMaximo = recurso.valorAtual + recursoBonusTotal
       }
     }
   }

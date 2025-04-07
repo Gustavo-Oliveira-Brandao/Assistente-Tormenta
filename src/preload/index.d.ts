@@ -16,11 +16,13 @@ declare global {
       postPersonagem: (personagem: DeepPartial<ICriatura>) => ICriatura
       putPersonagem: (personagem: ICriatura) => ICriatura
       deletePersonagem: (id: number) => void
+      getPoderesPersonagem: (_idPersonagem: number) => IPoder[]
       postPoder: (_poder: IPoder, idPersonagem: number) => IPoder
       deletePoder: (id: number) => void
       putAtributo: (atributo: IAtributo) => IAtributo
       putRecurso: (recurso: IRecurso) => IRecurso
       putPericia: (pericia: IPericia) => IPericia
+      getMagiasPersonagem: (_idPersonagem: number) => IMagia[]
       postMagia: (magia: IMagia, idPersonagem: number) => IMagia
       deleteMagia: (id: number) => void
     }

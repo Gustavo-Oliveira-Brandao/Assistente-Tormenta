@@ -6,6 +6,6 @@ export const useRemoverPoderMutation = (): UseMutationResult<void, Error, number
 
   return useMutation({
     mutationFn: (id: number) => removerPoder(id),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['poderes'] })
   })
 }

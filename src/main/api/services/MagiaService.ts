@@ -2,6 +2,15 @@ import { IMagia } from '../@types/t20/Magia'
 import { criaturaRepository } from '../repositories/CriaturaRepository'
 import { magiaRepository } from '../repositories/MagiaRepository'
 
+export const getMagiasPorPersonagem = async (_idPersonagem: number): Promise<IMagia[]> => {
+  try {
+    const magias = await magiaRepository.find({ where: { personagem: { id: _idPersonagem } } })
+    return magias
+  } catch (err) {
+    throw new Error('Erro ao buscar magias')
+  }
+}
+
 export const postMagia = async (_magia: IMagia, idPersonagem: number): Promise<IMagia> => {
   try {
     const magia = magiaRepository.create(_magia)

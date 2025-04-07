@@ -4,7 +4,7 @@ import { useQuery, UseQueryResult } from '@tanstack/react-query'
 
 export const useExibirLojaMagiasQuery = (): UseQueryResult<IMagia[]> => {
   return useQuery({
-    queryKey: ['magias'],
+    queryKey: ['magiasDefault'],
     queryFn: () => exibirLojaMagias()
   })
 }

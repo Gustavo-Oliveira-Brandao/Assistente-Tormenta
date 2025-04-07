@@ -6,6 +6,6 @@ export const useRemoverMagiaMutation = (): UseMutationResult<void, Error, number
 
   return useMutation({
     mutationFn: (id: number) => removerMagia(id),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['magias'] })
   })
 }

@@ -23,7 +23,6 @@ export const CardRecurso = ({
     resolver: zodResolver(recursoSchema),
     defaultValues: {
       valorAtual: recurso.valorAtual,
-      valorTemporario: recurso.valorTemporario,
       atributo: recurso.atributo,
       bonus: recurso.bonus
     }
@@ -50,7 +49,7 @@ export const CardRecurso = ({
         <img src={icon} alt={recurso.categoria} />
         <BotaoModular
           onClickEvent={() => setModal(true)}
-          texto={recurso.valorAtual}
+          texto={recurso.valorMaximo}
           css="recursoSecundario"
         />
       </div>
@@ -64,20 +63,14 @@ export const CardRecurso = ({
                   <div className="d-flex">
                     <FormGroup
                       name="valorAtual"
-                      label="atual:"
+                      label="base:"
                       placeholder={String(recurso.valorAtual)}
-                      type="number"
-                    />
-                    <FormGroup
-                      name="valorTemporario"
-                      label="temp:"
-                      placeholder={String(recurso.valorTemporario)}
                       type="number"
                     />
                   </div>
                 </fieldset>
                 <fieldset>
-                  <legend>Modificadores de {recurso.categoria} maxima</legend>
+                  <legend>Modificadores de {recurso.categoria}</legend>
                   {fields.map((field, index) => (
                     <div className="d-flex" key={field.id}>
                       <FormGroup

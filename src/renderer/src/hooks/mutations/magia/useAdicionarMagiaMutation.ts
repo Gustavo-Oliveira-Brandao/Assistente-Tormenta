@@ -13,6 +13,6 @@ export const useAdicionarMagiaMutation = (): UseMutationResult<
   return useMutation({
     mutationFn: ({ magia, idPersonagem }: { magia: IMagia; idPersonagem: number }) =>
       adicionarMagia(magia, idPersonagem),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['magias'] })
   })
 }

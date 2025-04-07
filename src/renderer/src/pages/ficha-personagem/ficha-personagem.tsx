@@ -16,9 +16,13 @@ import CardMagia from '@renderer/components/card-magia/card-magia'
 import { useExibirLojaMagiasQuery } from '@renderer/hooks/queries/magia/useExibirLojaMagiasQuery'
 import { useAdicionarMagiaMutation } from '@renderer/hooks/mutations/magia/useAdicionarMagiaMutation'
 import { useRemoverMagiaMutation } from '@renderer/hooks/mutations/magia/useRemoverMagiaMutation'
+import { useExbirMagiasPersonagemQuery } from '@renderer/hooks/queries/magia/useExbirMagiasPersonagemQuery'
+import { useExibirPoderesPersonagemQuery } from '@renderer/hooks/queries/poder/useExibirPoderesPersonagemQuery'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
+  const { data: magias } = useExbirMagiasPersonagemQuery(idPersonagem)
+  const { data: poderes } = useExibirPoderesPersonagemQuery(idPersonagem)
   const { data: poderesDefault } = useExibirLojaPoderesQuery()
   const { data: magiasDefault } = useExibirLojaMagiasQuery()
 
@@ -111,14 +115,15 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                     }
                     css="poderes"
                   >
-                    {personagem.poderes.map((poder) => (
-                      <CardPoder
-                        key={poder.id}
-                        poder={poder}
-                        onInteract={() => removerPoder.mutate(poder.id)}
-                        iconeBotaoInteracao="./icons/delete.svg"
-                      />
-                    ))}
+                    {poderes &&
+                      poderes.map((poder) => (
+                        <CardPoder
+                          key={poder.id}
+                          poder={poder}
+                          onInteract={() => removerPoder.mutate(poder.id)}
+                          iconeBotaoInteracao="./icons/delete.svg"
+                        />
+                      ))}
                   </SecaoFicha>
                   {loja === 'adicionar.poder' &&
                     createPortal(
@@ -157,14 +162,15 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                     }
                     css="poderes"
                   >
-                    {personagem.magias.map((magia) => (
-                      <CardMagia
-                        key={magia.id}
-                        magia={magia}
-                        onInteract={() => removerMagia.mutate(magia.id)}
-                        iconeBotaoInteracao="./icons/delete.svg"
-                      />
-                    ))}
+                    {magias &&
+                      magias.map((magia) => (
+                        <CardMagia
+                          key={magia.id}
+                          magia={magia}
+                          onInteract={() => removerMagia.mutate(magia.id)}
+                          iconeBotaoInteracao="./icons/delete.svg"
+                        />
+                      ))}
                   </SecaoFicha>
                   {loja === 'adicionar.magia' &&
                     createPortal(

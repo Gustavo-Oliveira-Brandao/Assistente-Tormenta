@@ -20,7 +20,6 @@ export const postMagia = async (_magia: IMagia, idPersonagem: number): Promise<I
 
     return await magiaRepository.save(magia)
   } catch (err) {
-    console.log(err)
     throw new Error('Erro ao adicionar magia ao personagem.')
   }
 }

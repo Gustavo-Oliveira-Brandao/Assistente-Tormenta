@@ -24,7 +24,10 @@ export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatu
   }
 
   for (const recurso of personagem.recursos) {
-    const valorAtributoRecurso = extrairValorAtributo(recurso.atributo, personagem.atributos)
+    let valorAtributoRecurso = 0
+    if (recurso.atributo) {
+      valorAtributoRecurso = extrairValorAtributo(recurso.atributo, personagem.atributos)
+    }
     const recursoBonusTotal = calcularBonus(recurso.bonus, personagem.nivel)
 
     if (classeEscolhida) {

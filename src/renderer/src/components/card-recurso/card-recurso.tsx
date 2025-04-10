@@ -1,7 +1,6 @@
 import { IRecurso } from '@renderer/@types/t20/Recurso'
 import styles from './card-recurso.module.scss'
 import BotaoModular from '../botao-modular/botao-modular'
-import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
 import { FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
@@ -9,6 +8,10 @@ import { z } from 'zod'
 import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '../form-group/form-group'
+import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
 export const CardRecurso = ({
   recurso,
@@ -17,8 +20,8 @@ export const CardRecurso = ({
   recurso: IRecurso
   icon: string
 }): JSX.Element => {
-  const [modal, setModal] = useState(false)
-
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
   const methods = useForm<z.infer<typeof recursoSchema>>({
     resolver: zodResolver(recursoSchema),
     defaultValues: {
@@ -48,14 +51,14 @@ export const CardRecurso = ({
       <div className={styles.recurso}>
         <img src={icon} alt={recurso.categoria} />
         <BotaoModular
-          onClickEvent={() => setModal(true)}
+          onClickEvent={() => dispatch(abrirModal(`RECURSO_${recurso.categoria}_EDICAO_MODAL`))}
           texto={recurso.valorMaximo}
           css="recursoSecundario"
         />
       </div>
-      {modal &&
+      {modalAberto == `RECURSO_${recurso.categoria}_EDICAO_MODAL` &&
         createPortal(
-          <Modal titulo={recurso.categoria} onClose={() => setModal(false)} height="400px">
+          <Modal titulo={recurso.categoria} onClose={() => dispatch(fecharModal())} height="400px">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <fieldset>
@@ -66,6 +69,12 @@ export const CardRecurso = ({
                       label="base:"
                       placeholder={String(recurso.valorAtual)}
                       type="number"
+                    />
+                    <FormGroup
+                      name="atributo"
+                      label="atributo:"
+                      type="dropdown"
+                      options={opcoesAtributos}
                     />
                   </div>
                 </fieldset>

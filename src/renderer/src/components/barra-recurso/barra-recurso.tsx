@@ -11,10 +11,14 @@ import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
 import BotaoModular from '../botao-modular/botao-modular'
 import { useAtualizarRecursoMutation } from '@renderer/hooks/mutations/recurso/useAtualizarRecursoMutation'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
 const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
   const [larguraBarra, setLarguraBarra] = useState(0)
-  const [modal, abrirModal] = useState(false)
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
   useEffect(() => {
     if (recurso.valorAtual >= 0) {
@@ -34,17 +38,12 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
     recursoAtualizado.atributo = data.atributo
     recursoAtualizado.bonus = data.bonus
     atualizarRecurso.mutate(recursoAtualizado)
-    abrirModal(false)
+    dispatch(fecharModal())
   }
 
   const methods = useForm<z.infer<typeof recursoSchema>>({
     resolver: zodResolver(recursoSchema),
-    defaultValues: {
-      valorAtual: recurso.valorAtual,
-      valorTemporario: recurso.valorTemporario,
-      atributo: recurso.atributo,
-      bonus: recurso.bonus
-    }
+    defaultValues: recursoSchema.parse(recurso)
   })
 
   const {
@@ -60,7 +59,10 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
 
   return (
     <>
-      <div onClick={() => abrirModal(true)} className={styles.barraRecurso}>
+      <div
+        onClick={() => dispatch(abrirModal(`RECURSO_${recurso.categoria}_EDICAO_MODAL`))}
+        className={styles.barraRecurso}
+      >
         <div
           className={`${styles[recurso.categoria]} ${styles.barra}`}
           style={{ width: `${larguraBarra}%` }}
@@ -70,9 +72,13 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
         </div>
       </div>
 
-      {modal &&
+      {modalAberto == `RECURSO_${recurso.categoria}_EDICAO_MODAL` &&
         createPortal(
-          <Modal titulo={recurso.categoria} onClose={() => abrirModal(false)} height="fit-content">
+          <Modal
+            titulo={recurso.categoria}
+            onClose={() => dispatch(fecharModal())}
+            height="fit-content"
+          >
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <fieldset>
@@ -92,29 +98,17 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
                     />
                   </div>
                 </fieldset>
-                <fieldset>
-                  <legend>{recurso.categoria} maxima</legend>
-                  <div className="d-flex">
-                    {recurso.categoria === 'vida' && (
+                {recurso.atributo && (
+                  <fieldset>
+                    <legend>{recurso.categoria} maxima</legend>
+                    <div className="d-flex">
                       <FormGroup
                         name="atributo"
                         label="atributo:"
                         type="dropdown"
                         options={opcoesAtributos}
                       />
-                    )}
-                  </div>
-                </fieldset>
-                {recurso.categoria === 'mana' && (
-                  <fieldset>
-                    <legend>Limite de PM:</legend>
-                    <FormGroup
-                      name="atributo"
-                      label="atributo:"
-                      placeholder={String(recurso.atributo)}
-                      type="dropdown"
-                      options={opcoesAtributos}
-                    />
+                    </div>
                   </fieldset>
                 )}
                 <fieldset>

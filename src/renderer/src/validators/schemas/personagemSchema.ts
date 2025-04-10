@@ -9,6 +9,11 @@ export const personagemSchema = z
     origem: z.string().nonempty('Origem não pode ser vazio'),
     divindade: z.string().nonempty('Divindade não pode ser vazio'),
     tamanho: z.string().nonempty('Tamanho não pode ser vazio'),
-    alinhamento: z.string().nonempty('Alinhamento não pode ser vazio')
+    alinhamento: z.string().nonempty('Alinhamento não pode ser vazio'),
+    nivel: z.coerce
+      .number()
+      .positive('Nivel não pode ser abaixo de 1')
+      .max(20, 'O nivel máximo é 20'),
+    experiencia: z.coerce.number().nonnegative('Experiência não pode ser um valor negativo')
   })
   .required()

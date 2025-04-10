@@ -1,6 +1,4 @@
 import styles from './card-pericia.module.scss'
-import { useState } from 'react'
-import BotaoRolagem from '../botao-rolagem/botao-rolagem'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
 import { FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
@@ -13,10 +11,15 @@ import { opcoesAtributos } from '@renderer/forms/select options/opcoesAtributos'
 import { opcoesTreinamento } from '@renderer/forms/select options/opcoesTreinamento'
 import { IPericia } from '@renderer/@types/t20/Pericia'
 import BotaoModular from '../botao-modular/botao-modular'
+import { rolarDados } from '@renderer/utils/rodarDados'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
 const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.Element => {
-  const [modal, setModal] = useState(false)
   const atualizarPericia = useAtualizarPericiaMutation()
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
   const methods = useForm<z.infer<typeof periciaSchema>>({
     resolver: zodResolver(periciaSchema),
@@ -42,14 +45,14 @@ const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.
     novaPericia.atributo = data.atributo
     novaPericia.bonus = data.bonus
     atualizarPericia.mutate(novaPericia)
-    setModal(false)
+    dispatch(fecharModal())
   }
 
   return (
     <>
-      {modal &&
+      {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
         createPortal(
-          <Modal titulo={pericia.nome} onClose={() => setModal(false)} height="fit-content">
+          <Modal titulo={pericia.nome} onClose={() => dispatch(fecharModal())} height="fit-content">
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEditPericia)}>
                 <fieldset>
@@ -114,12 +117,20 @@ const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.
           document.body
         )}
       <div className={`${styles[css]} ${styles.padrao}`}>
-        <button className={styles.titulo} onClick={() => setModal(true)}>
+        <button
+          className={styles.titulo}
+          onClick={() => dispatch(abrirModal(`PERICIA_${pericia.nome}_EDICAO_MODAL`))}
+        >
           <p className={styles.nome}>{pericia.nome}</p>
         </button>
         <div className={styles.rolagem}>
           {css !== 'sidebar' && <p className={styles.treinamento}>{pericia.treinamento}</p>}
-          <BotaoRolagem valor={pericia.valor} />
+          <BotaoModular
+            css="rollBtn"
+            icone="./icons/dados/d20.svg"
+            onClickEvent={() => rolarDados()}
+            texto={pericia.valor}
+          />
         </div>
       </div>
     </>

@@ -5,7 +5,6 @@ import { useCriarPersonagemMutation } from '@renderer/hooks/mutations/personagem
 import { useExibirTodosPersonagensQuery } from '@renderer/hooks/queries/personagem/useExibirTodosPersonagensQuery'
 import Modal from '@renderer/templates/modal/modal'
 import { personagemSchema } from '@renderer/validators/schemas/personagemSchema'
-import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
@@ -18,6 +17,9 @@ import { opcoesClasses } from '@renderer/forms/select options/opcoesClasses'
 import { opcoesTamanhos } from '@renderer/forms/select options/opcoesTamanhos'
 import { opcoesDivindades } from '@renderer/forms/select options/opcoesDivindades'
 import { opcoesTiposCriaturas } from '@renderer/forms/select options/opcoesTiposCriaturas'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
 const TelaSelecaoPersonagem = ({
   setPersonagemSelecionado
@@ -25,13 +27,15 @@ const TelaSelecaoPersonagem = ({
   setPersonagemSelecionado: React.Dispatch<React.SetStateAction<number>>
 }): JSX.Element => {
   const { data: personagens } = useExibirTodosPersonagensQuery()
-  const [modal, setModal] = useState(false)
   const navigate = useNavigate()
 
   const selecionarPersonagem = (id: number): void => {
     setPersonagemSelecionado(id)
     navigate('/personagem')
   }
+
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
   const methods = useForm<z.infer<typeof personagemSchema>>({
     resolver: zodResolver(personagemSchema),
@@ -77,21 +81,21 @@ const TelaSelecaoPersonagem = ({
           categoria: 'mana',
           valorAtual: 1,
           valorTemporario: 0,
-          atributo: 'constituicao',
+          atributo: 'nenhum',
           bonus: []
         },
         {
           categoria: 'deslocamento',
           valorAtual: 1,
           valorTemporario: 0,
-          atributo: 'constituicao',
+          atributo: 'nenhum',
           bonus: []
         },
         {
           categoria: 'defesa',
           valorAtual: 1,
           valorTemporario: 0,
-          atributo: 'constituicao',
+          atributo: 'destreza',
           bonus: []
         }
       ],
@@ -100,7 +104,7 @@ const TelaSelecaoPersonagem = ({
     }
 
     criarPersonagem.mutate(novoPersonagem)
-    setModal(false)
+    dispatch(fecharModal())
   }
   //TODO: Melhorar o visual do card de personagem para algo mais atrativo
   //TODO: Botao de voltar para a homepage
@@ -113,7 +117,7 @@ const TelaSelecaoPersonagem = ({
           icone="./icons/plus-solid.svg"
           texto="Criar personagem"
           css="botaoAdicionar"
-          onClickEvent={() => setModal(true)}
+          onClickEvent={() => dispatch(abrirModal(`PERSONAGEM_CRIACAO_MODAL`))}
         />
       </header>
       {personagens &&
@@ -132,11 +136,11 @@ const TelaSelecaoPersonagem = ({
             </div>
           </div>
         ))}
-      {modal &&
+      {modalAberto == `PERSONAGEM_CRIACAO_MODAL` &&
         createPortal(
           <Modal
             titulo="Criação de personagem"
-            onClose={() => setModal(false)}
+            onClose={() => dispatch(fecharModal())}
             height="fit-content"
           >
             <FormProvider {...methods}>

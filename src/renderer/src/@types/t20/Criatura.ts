@@ -16,6 +16,7 @@ export interface ICriatura {
   tamanho: string
   alinhamento: string
   penalidadeArmadura: number
+  atributoChaveMagia: string
   recursos: IRecurso[]
   atributos: IAtributo[]
   pericias: IPericia[]

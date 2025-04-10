@@ -3,7 +3,7 @@ export const opcoesClasses = [
   'barbaro',
   'bardo',
   'bucaneiro',
-  'cacador',
+  'caçador',
   'cavaleiro',
   'clerigo',
   'druida',

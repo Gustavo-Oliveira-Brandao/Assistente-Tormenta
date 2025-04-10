@@ -1,9 +1,6 @@
 import { IRecurso } from './Recurso'
 import { IAtributo } from './Atributo'
 import { IPericia } from './Pericia'
-import { IPoder } from './Poder'
-import { IItemInventario } from './Item'
-import { IMagia } from './Magia'
 
 export interface ICriatura {
   id: number
@@ -22,7 +19,4 @@ export interface ICriatura {
   recursos: IRecurso[]
   atributos: IAtributo[]
   pericias: IPericia[]
-  poderes?: IPoder[]
-  itens?: IItemInventario[]
-  magias?: IMagia[]
 }

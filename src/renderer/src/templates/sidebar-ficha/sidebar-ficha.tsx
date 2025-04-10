@@ -2,27 +2,32 @@ import styles from './sidebar-ficha.module.scss'
 import BarraRecurso from '@renderer/components/barra-recurso/barra-recurso'
 import CardPericia from '@renderer/components/card-pericia/card-pericia'
 import { z } from 'zod'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import Modal from '../modal/modal'
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import FormGroup from '@renderer/components/form-group/form-group'
 import { useAtualizarPersonagemMutation } from '@renderer/hooks/mutations/personagem/useAtualizarPersonagemMutation'
-import { detalhesSchema } from '@renderer/validators/schemas/detalhesSchema'
 import { opcoesRacas } from '@renderer/forms/select options/opcoesRacas'
 import { opcoesClasses } from '@renderer/forms/select options/opcoesClasses'
 import { opcoesDivindades } from '@renderer/forms/select options/opcoesDivindades'
 import { ICriatura } from '@renderer/@types/t20/Criatura'
 import { CardRecurso } from '@renderer/components/card-recurso/card-recurso'
+import { personagemSchema } from '@renderer/validators/schemas/personagemSchema'
+import { opcoesTamanhos } from '@renderer/forms/select options/opcoesTamanhos'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
 const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element => {
-  const [formulario, setFormulario] = useState<string | null>(null)
-
   useEffect(() => {}, [personagem])
 
-  const methodsDetalhes = useForm<z.infer<typeof detalhesSchema>>({
-    resolver: zodResolver(detalhesSchema),
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
+
+  const methodsDetalhes = useForm<z.infer<typeof personagemSchema>>({
+    resolver: zodResolver(personagemSchema),
     defaultValues: {
       nome: personagem.nome,
       raca: personagem.raca,
@@ -30,13 +35,15 @@ const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element =>
       origem: personagem.origem,
       divindade: personagem.divindade,
       nivel: personagem.nivel,
-      experiencia: personagem.experiencia
+      experiencia: personagem.experiencia,
+      tamanho: personagem.tamanho,
+      alinhamento: personagem.alinhamento
     }
   })
 
   const atualizarDetalhesPersonagem = useAtualizarPersonagemMutation()
 
-  const onEditDetalhes: SubmitHandler<z.infer<typeof detalhesSchema>> = async (
+  const onEditDetalhes: SubmitHandler<z.infer<typeof personagemSchema>> = async (
     data
   ): Promise<void> => {
     const personagemCopy = { ...personagem }
@@ -47,13 +54,18 @@ const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element =>
     personagemCopy.divindade = data.divindade
     personagemCopy.nivel = data.nivel
     personagemCopy.experiencia = data.experiencia
+    personagemCopy.alinhamento = data.alinhamento
+    personagemCopy.tamanho = data.tamanho
     atualizarDetalhesPersonagem.mutate(personagemCopy)
-    setFormulario(null)
+    dispatch(fecharModal())
   }
 
   return (
     <aside className={styles.sidebar}>
-      <div onClick={() => setFormulario('detalhes')} className={styles.fotoPersonagem}>
+      <div
+        onClick={() => dispatch(abrirModal(`DETALHES_EDICAO_MODAL`))}
+        className={styles.fotoPersonagem}
+      >
         <img src={'./character.png'} alt="" />
         <span className={styles.opacidade}></span>
         <div className={styles.detalhes}>
@@ -126,9 +138,9 @@ const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element =>
           )}
         </div>
       </div>
-      {formulario === 'detalhes' &&
+      {modalAberto === 'DETALHES_EDICAO_MODAL' &&
         createPortal(
-          <Modal titulo="Detalhes" onClose={() => setFormulario(null)} height="fit-content">
+          <Modal titulo="Detalhes" onClose={() => dispatch(fecharModal())} height="fit-content">
             <FormProvider {...methodsDetalhes}>
               <form onSubmit={methodsDetalhes.handleSubmit(onEditDetalhes)}>
                 <fieldset>
@@ -153,6 +165,18 @@ const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element =>
                       label="divindade:"
                       type="dropdown"
                       options={opcoesDivindades}
+                    />
+                    <FormGroup
+                      name="tamanho"
+                      label="tamanho:"
+                      type="dropdown"
+                      options={opcoesTamanhos}
+                    />
+                    <FormGroup
+                      name="alinhamento"
+                      label="alinhamento:"
+                      type="text"
+                      placeholder="Neutro e bom"
                     />
                   </div>
                 </fieldset>

@@ -8,7 +8,7 @@
   },
   {
     "id": 2,
-    "nome": "bárbaro",
+    "nome": "barbaro",
     "vidaInicial": 24,
     "vidaPorNivel": 6,
     "manaPorNivel": 3
@@ -43,7 +43,7 @@
   },
   {
     "id": 7,
-    "nome": "clérigo",
+    "nome": "clerigo",
     "vidaInicial": 16,
     "vidaPorNivel": 4,
     "manaPorNivel": 5

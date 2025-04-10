@@ -19,8 +19,8 @@ const BotaoModular = ({
 
   return (
     <button type="button" onClick={onClickEvent} className={btnClass}>
-      {icone && <img className={styles.icone} src={icone} alt={String(texto)} />}
-      {texto && <p>{texto}</p>}
+      {icone && <img src={icone} alt={String(texto)} />}
+      {texto != null && <p>{texto}</p>}
     </button>
   )
 }

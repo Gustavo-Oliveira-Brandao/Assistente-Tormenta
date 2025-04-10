@@ -18,6 +18,9 @@ import { useAdicionarMagiaMutation } from '@renderer/hooks/mutations/magia/useAd
 import { useRemoverMagiaMutation } from '@renderer/hooks/mutations/magia/useRemoverMagiaMutation'
 import { useExbirMagiasPersonagemQuery } from '@renderer/hooks/queries/magia/useExbirMagiasPersonagemQuery'
 import { useExibirPoderesPersonagemQuery } from '@renderer/hooks/queries/poder/useExibirPoderesPersonagemQuery'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
@@ -27,7 +30,9 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
   const { data: magiasDefault } = useExibirLojaMagiasQuery()
 
   const [aba, setAba] = useState('atributos')
-  const [loja, setLoja] = useState<string | null>(null)
+
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
   const adicionarPoder = useAdicionarPoderMutation()
   const removerPoder = useRemoverPoderMutation()
@@ -108,7 +113,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         <BotaoModular
                           css="botaoAdicionar"
                           texto="Adicionar poderes"
-                          onClickEvent={() => setLoja('adicionar.poder')}
+                          onClickEvent={() => dispatch(abrirModal(`PODERES_LOJA_MODAL`))}
                           icone="./icons/plus-solid.svg"
                         />
                       </>
@@ -125,11 +130,11 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         />
                       ))}
                   </SecaoFicha>
-                  {loja === 'adicionar.poder' &&
+                  {modalAberto === 'PODERES_LOJA_MODAL' &&
                     createPortal(
                       <Modal
                         titulo="Adquirir poderes"
-                        onClose={() => setLoja(null)}
+                        onClose={() => dispatch(fecharModal())}
                         height={'400px'}
                       >
                         {poderesDefault &&
@@ -155,7 +160,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         <BotaoModular
                           css="botaoAdicionar"
                           texto="adicionar magias"
-                          onClickEvent={() => setLoja('adicionar.magia')}
+                          onClickEvent={() => dispatch(abrirModal(`MAGIAS_LOJA_MODAL`))}
                           icone="./icons/plus-solid.svg"
                         />
                       </>
@@ -172,9 +177,13 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         />
                       ))}
                   </SecaoFicha>
-                  {loja === 'adicionar.magia' &&
+                  {modalAberto === 'MAGIAS_LOJA_MODAL' &&
                     createPortal(
-                      <Modal titulo="Adquirir magias" onClose={() => setLoja(null)} height="400px">
+                      <Modal
+                        titulo="Adquirir magias"
+                        onClose={() => dispatch(fecharModal())}
+                        height="400px"
+                      >
                         {magiasDefault &&
                           magiasDefault.map((magia, index) => (
                             <CardMagia

@@ -6,7 +6,6 @@ export interface IRecurso {
   valorAtual: number
   valorMaximo: number
   valorTemporario: number
-  atributo: string
-  limitePM?: number
+  atributo: string | null
   bonus: IBonus[]
 }

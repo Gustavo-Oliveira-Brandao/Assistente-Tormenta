@@ -1,6 +1,4 @@
 import styles from './card-atributo.module.scss'
-import BotaoRolagem from '../botao-rolagem/botao-rolagem'
-import { useState } from 'react'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
 import FormGroup from '../form-group/form-group'
@@ -11,9 +9,15 @@ import { useAtualizarAtributoMutation } from '@renderer/hooks/mutations/atributo
 import { atributoSchema } from '@renderer/validators/schemas/atributoSchema'
 import { IAtributo } from '@renderer/@types/t20/Atributo'
 import BotaoModular from '../botao-modular/botao-modular'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
+import { rolarDados } from '@renderer/utils/rodarDados'
 
 const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
-  const [modal, abrirModal] = useState(false)
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
+
   const atualizarAtributo = useAtualizarAtributoMutation()
 
   const methods = useForm<z.infer<typeof atributoSchema>>({
@@ -40,20 +44,31 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
     novoAtributo.valor = data.valor
     novoAtributo.bonus = data.bonus
     atualizarAtributo.mutate(novoAtributo)
-    abrirModal(false)
+    dispatch(fecharModal())
   }
 
   return (
     <>
       <div className={styles.atributo}>
         <div className={styles.titulo}>
-          <button onClick={() => abrirModal(true)}>{atributo.nome}</button>
+          <button onClick={() => dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))}>
+            {atributo.nome}
+          </button>
         </div>
-        <BotaoRolagem valor={atributo.valorAtual} />
+        <BotaoModular
+          css="rollBtn"
+          icone="./icons/dados/d20.svg"
+          texto={atributo.valorAtual}
+          onClickEvent={() => rolarDados()}
+        />
       </div>
-      {modal &&
+      {modalAberto == `ATRIBUTO_${atributo.nome}_EDICAO_MODAL` &&
         createPortal(
-          <Modal titulo={atributo.nome} onClose={() => abrirModal(false)} height="fit-content">
+          <Modal
+            titulo={atributo.nome}
+            onClose={() => dispatch(fecharModal())}
+            height="fit-content"
+          >
             <FormProvider {...methods}>
               <form onSubmit={handleSubmit(onEdit)}>
                 <fieldset>

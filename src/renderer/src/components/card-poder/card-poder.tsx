@@ -1,67 +1,48 @@
 import { IPoder } from '@renderer/@types/t20/Poder'
-import styles from '@renderer/assets/styles/card-item.module.scss'
-import { useState } from 'react'
-import BotaoModular from '../botao-modular/botao-modular'
+import styles from '@renderer/assets/styles/cards-especificos.module.scss'
+import Card from '../generic-card/card'
 
-const CardPoder = ({
-  poder,
-  onInteract,
-  iconeBotaoInteracao
-}: {
+interface CardPoderProps {
   poder: IPoder
   onInteract?: () => void
   iconeBotaoInteracao: string
-}): JSX.Element => {
-  const [estaExpandido, setEstaExpandido] = useState(false)
+}
 
+const CardPoder = ({ poder, onInteract, iconeBotaoInteracao }: CardPoderProps): JSX.Element => {
   return (
-    <div className={styles.item}>
-      <div className={styles.itemHeader}>
-        <div className={styles.itemTitulo}>
-          <img src={poder.iconeURL} alt={poder.nome} loading="lazy" />
-          <div className={styles.itemInfo}>
-            <h2 onClick={() => setEstaExpandido(!estaExpandido)}>{poder.nome}</h2>
-          </div>
-        </div>
-        {onInteract && (
-          <BotaoModular
-            css="botaoInteracao"
-            icone={iconeBotaoInteracao}
-            onClickEvent={onInteract}
-          />
-        )}
+    <Card
+      titulo={poder.nome}
+      onInteract={onInteract}
+      iconeURL={poder.iconeURL}
+      iconeBotaoInteracao={iconeBotaoInteracao}
+    >
+      <div className={styles.itemTags}>
+        <p>{poder.tempoExecucao}</p>
+        <p> {poder.categoria}</p>
+        {poder.tags.map((tag, index) => (
+          <p key={index}>{tag.label}</p>
+        ))}
       </div>
-      {estaExpandido && (
-        <div className={styles.itemConteudo}>
-          <div className={styles.itemTags}>
-            <p>{poder.tempoExecucao}</p>
-            <p> {poder.categoria}</p>
-            {poder.tags.map((tag, index) => (
-              <p key={index}>{tag.label}</p>
-            ))}
-          </div>
-          <p className={`${styles.poderDescricao} ${styles.poppins}`}>{poder.descricao}</p>
-          {poder.extras.length !== 0 && (
-            <div className={styles.poderExtras}>
-              {poder.extras.map((extra, index) => (
-                <div key={index} className={styles.poderExtra}>
-                  <p>
-                    <span className={styles.destaque}>{extra.titulo}</span>{' '}
-                    <span className={styles.poppins}>{extra.texto}</span>
-                  </p>
-                </div>
-              ))}
+      <p className={`${styles.descricao} sourceSansPro`}>{poder.descricao}</p>
+      {poder.extras.length !== 0 && (
+        <div className={styles.poderExtras}>
+          {poder.extras.map((extra, index) => (
+            <div key={index} className={styles.poderExtra}>
+              <p>
+                <span className={styles.destaque}>{extra.titulo}</span>{' '}
+                <span className="sourceSansPro">{extra.texto}</span>
+              </p>
             </div>
-          )}
-          {poder.preRequisitos !== '' && (
-            <p className={styles.preRequisitos}>
-              <span className={styles.destaque}>Pré requisitos:</span>{' '}
-              <span className={styles.poppins}>{poder.preRequisitos}</span>
-            </p>
-          )}
+          ))}
         </div>
       )}
-    </div>
+      {poder.preRequisitos !== '' && (
+        <p className={styles.preRequisitos}>
+          <span className={styles.destaque}>Pré requisitos:</span>{' '}
+          <span className="sourceSansPro">{poder.preRequisitos}</span>
+        </p>
+      )}
+    </Card>
   )
 }
 

@@ -1,18 +1,21 @@
 import classNames from 'classnames'
 import styles from './botao-modular.module.scss'
+
+interface BotaoModularProps {
+  icone?: string
+  css: string
+  texto?: string | number
+  onClickEvent: () => void
+  estaAtivo?: boolean
+}
+
 const BotaoModular = ({
   icone,
   css,
   texto,
   onClickEvent,
   estaAtivo
-}: {
-  icone?: string
-  css: string
-  texto?: string | number
-  onClickEvent: () => void
-  estaAtivo?: boolean
-}): JSX.Element => {
+}: BotaoModularProps): JSX.Element => {
   const btnClass = classNames(styles[css], {
     [styles.ativo]: estaAtivo
   })

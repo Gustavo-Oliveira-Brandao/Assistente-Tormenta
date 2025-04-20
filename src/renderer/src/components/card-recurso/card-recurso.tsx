@@ -13,13 +13,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@renderer/store/store'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
-export const CardRecurso = ({
-  recurso,
-  icon
-}: {
+interface RecursoProps {
   recurso: IRecurso
-  icon: string
-}): JSX.Element => {
+  icone: string
+}
+
+export const Recurso = ({ recurso, icone }: RecursoProps): JSX.Element => {
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
   const methods = useForm<z.infer<typeof recursoSchema>>({
@@ -49,7 +48,7 @@ export const CardRecurso = ({
   return (
     <>
       <div className={styles.recurso}>
-        <img src={icon} alt={recurso.categoria} />
+        <img src={icone} alt={recurso.categoria} />
         <BotaoModular
           onClickEvent={() => dispatch(abrirModal(`RECURSO_${recurso.categoria}_EDICAO_MODAL`))}
           texto={recurso.valorMaximo}

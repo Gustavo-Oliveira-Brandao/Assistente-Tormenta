@@ -32,11 +32,11 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
   const atualizarRecurso = useAtualizarRecursoMutation()
 
   const onEdit: SubmitHandler<z.infer<typeof recursoSchema>> = async (data): Promise<void> => {
-    const recursoAtualizado = { ...recurso }
-    recursoAtualizado.valorAtual = data.valorAtual
-    recursoAtualizado.valorTemporario = data.valorTemporario
-    recursoAtualizado.atributo = data.atributo
-    recursoAtualizado.bonus = data.bonus
+    const recursoAtualizado = {
+      ...recurso,
+      ...data
+    }
+
     atualizarRecurso.mutate(recursoAtualizado)
     dispatch(fecharModal())
   }
@@ -140,7 +140,6 @@ const BarraRecurso = ({ recurso }: { recurso: IRecurso }): JSX.Element => {
                       />
                     </div>
                   ))}
-
                   <BotaoModular
                     css="botaoAdicionar"
                     onClickEvent={() =>

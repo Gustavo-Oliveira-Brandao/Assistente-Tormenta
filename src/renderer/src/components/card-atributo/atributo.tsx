@@ -1,4 +1,4 @@
-import styles from './card-atributo.module.scss'
+import styles from './atributo.module.scss'
 import Modal from '@renderer/templates/modal/modal'
 import { createPortal } from 'react-dom'
 import FormGroup from '../form-group/form-group'
@@ -14,7 +14,7 @@ import { RootState } from '@renderer/store/store'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 import { rolarDados } from '@renderer/utils/rodarDados'
 
-const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
+const Atributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
@@ -136,4 +136,4 @@ const CardAtributo = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
   )
 }
 
-export default CardAtributo
+export default Atributo

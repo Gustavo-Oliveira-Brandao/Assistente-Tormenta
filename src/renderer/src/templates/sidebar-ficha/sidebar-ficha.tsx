@@ -1,6 +1,6 @@
 import styles from './sidebar-ficha.module.scss'
 import BarraRecurso from '@renderer/components/barra-recurso/barra-recurso'
-import CardPericia from '@renderer/components/card-pericia/card-pericia'
+import CardPericia from '@renderer/components/card-pericia/pericia'
 import { z } from 'zod'
 import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
@@ -13,12 +13,12 @@ import { opcoesRacas } from '@renderer/forms/select options/opcoesRacas'
 import { opcoesClasses } from '@renderer/forms/select options/opcoesClasses'
 import { opcoesDivindades } from '@renderer/forms/select options/opcoesDivindades'
 import { ICriatura } from '@renderer/@types/t20/Criatura'
-import { CardRecurso } from '@renderer/components/card-recurso/card-recurso'
 import { personagemSchema } from '@renderer/validators/schemas/personagemSchema'
 import { opcoesTamanhos } from '@renderer/forms/select options/opcoesTamanhos'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@renderer/store/store'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
+import { Recurso } from '@renderer/components/card-recurso/card-recurso'
 
 const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element => {
   useEffect(() => {}, [personagem])
@@ -120,8 +120,8 @@ const SidebarFicha = ({ personagem }: { personagem: ICriatura }): JSX.Element =>
             <div className={styles.titulo}>
               <h2>{recurso.categoria}</h2>
             </div>
-            <CardRecurso
-              icon={`./icons/default/${recurso.categoria === 'defesa' ? 'ca' : 'deslocamento'}.svg`}
+            <Recurso
+              icone={`./icons/default/${recurso.categoria === 'defesa' ? 'ca' : 'deslocamento'}.svg`}
               recurso={recurso}
             />
           </div>

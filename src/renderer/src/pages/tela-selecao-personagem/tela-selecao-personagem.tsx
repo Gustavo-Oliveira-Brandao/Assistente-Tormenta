@@ -107,7 +107,6 @@ const TelaSelecaoPersonagem = ({
     dispatch(fecharModal())
   }
   //TODO: Melhorar o visual do card de personagem para algo mais atrativo
-  //TODO: Botao de voltar para a homepage
   //TODO: Melhorar o visual do botão de criar personagem
   return (
     <div className={styles.selecaoPersonagem}>

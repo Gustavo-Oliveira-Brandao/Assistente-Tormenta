@@ -1,4 +1,4 @@
-import styles from './card-pericia.module.scss'
+import styles from './pericia.module.scss'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
 import { FormProvider, SubmitHandler, useFieldArray, useForm } from 'react-hook-form'
@@ -16,7 +16,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@renderer/store/store'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 
-const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.Element => {
+interface PericiaProps {
+  pericia: IPericia
+  css: string
+}
+
+const Pericia = ({ pericia, css }: PericiaProps): JSX.Element => {
   const atualizarPericia = useAtualizarPericiaMutation()
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
@@ -137,4 +142,4 @@ const CardPericia = ({ pericia, css }: { pericia: IPericia; css: string }): JSX.
   )
 }
 
-export default CardPericia
+export default Pericia

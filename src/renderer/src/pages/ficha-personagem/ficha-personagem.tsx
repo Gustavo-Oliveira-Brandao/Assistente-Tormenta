@@ -3,8 +3,6 @@ import styles from './ficha-personagem.module.scss'
 import BotaoModular from '@renderer/components/botao-modular/botao-modular'
 import { useState } from 'react'
 import SecaoFicha from '@renderer/templates/secao-ficha/secao-ficha'
-import CardAtributo from '@renderer/components/card-atributo/card-atributo'
-import CardPericia from '@renderer/components/card-pericia/card-pericia'
 import CardPoder from '@renderer/components/card-poder/card-poder'
 import { createPortal } from 'react-dom'
 import Modal from '@renderer/templates/modal/modal'
@@ -21,6 +19,8 @@ import { useExibirPoderesPersonagemQuery } from '@renderer/hooks/queries/poder/u
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@renderer/store/store'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
+import Atributo from '@renderer/components/card-atributo/atributo'
+import Pericia from '@renderer/components/card-pericia/pericia'
 
 const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
@@ -39,7 +39,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
   const adicionarMagia = useAdicionarMagiaMutation()
   const removerMagia = useRemoverMagiaMutation()
   //TODO: Bota um botão de voltar para a tela anterior cara
-  //TODO: Criação de modal para exibição de edição de elementos na ficha
+  //TODO: Trazer melhorias de UI/UX para as abas poderes e magias
   return (
     <main>
       {personagem && (
@@ -76,21 +76,21 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                     {personagem.atributos
                       .sort((a, b) => a.ordem - b.ordem)
                       .map((atributo) => (
-                        <CardAtributo key={atributo.id} atributo={atributo} />
+                        <Atributo key={atributo.id} atributo={atributo} />
                       ))}
                   </SecaoFicha>
                   <SecaoFicha header={<h2>Pericias de combate</h2>} css="pericias">
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'combate')
                       .map((pericia) => (
-                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                        <Pericia key={pericia.id} pericia={pericia} css="pericia" />
                       ))}
                   </SecaoFicha>
                   <SecaoFicha header={<h2>Testes de resistência</h2>} css="pericias">
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'testeResistencia')
                       .map((pericia) => (
-                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                        <Pericia key={pericia.id} pericia={pericia} css="pericia" />
                       ))}
                   </SecaoFicha>
                   <SecaoFicha header={<h2>Pericias gerais</h2>} css="pericias">
@@ -99,7 +99,7 @@ const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Elemen
                         (pericia) => pericia.nome !== 'iniciativa' && pericia.categoria === 'geral'
                       )
                       .map((pericia) => (
-                        <CardPericia key={pericia.id} pericia={pericia} css="pericia" />
+                        <Pericia key={pericia.id} pericia={pericia} css="pericia" />
                       ))}
                   </SecaoFicha>
                 </>

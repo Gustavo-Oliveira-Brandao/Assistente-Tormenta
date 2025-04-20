@@ -1,19 +1,15 @@
 import styles from './form-group.module.scss'
 import { useFormContext } from 'react-hook-form'
 
-const FormGroup = ({
-  name,
-  options,
-  label,
-  placeholder,
-  type
-}: {
+interface FormGroupProps {
   name: string
   options?: string[]
   label: string
   placeholder?: string
   type: string
-}): JSX.Element => {
+}
+
+const FormGroup = ({ name, options, label, placeholder, type }: FormGroupProps): JSX.Element => {
   const { register } = useFormContext()
   return (
     <div className={styles.formGroup}>

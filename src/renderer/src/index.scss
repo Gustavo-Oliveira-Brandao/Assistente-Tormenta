@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: poppins;
-  src: url('@renderer/assets/fonts/Poppins/Poppins-Regular.ttf');
+  font-family: sourceSansPro;
+  src: url('@renderer/assets/fonts/SourceSansPro-Regular.otf');
 }
 
 *,
@@ -96,8 +96,8 @@ a {
   color: #ffff;
 }
 
-.poppins {
-  font-family: 'poppins', sans-serif;
+.sourceSansPro {
+  font-family: 'sourceSansPro', sans-serif;
   line-height: 1.5;
 }
 

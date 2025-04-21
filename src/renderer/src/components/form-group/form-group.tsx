@@ -14,10 +14,7 @@ const FormGroup = ({ name, options, label, placeholder, type }: FormGroupProps):
   return (
     <div className={styles.formGroup}>
       <label htmlFor={name}>{label}</label>
-      {type === 'number' && (
-        <input id={name} type={type} {...register(name)} placeholder={placeholder} />
-      )}
-      {type === 'text' && (
+      {(type === 'text' || type === 'number') && (
         <input id={name} type={type} {...register(name)} placeholder={placeholder} />
       )}
       {type === 'checkbox' && (

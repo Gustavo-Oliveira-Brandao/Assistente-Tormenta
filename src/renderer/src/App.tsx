@@ -1,14 +1,12 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import FichaPersonagem from './pages/ficha-personagem/ficha-personagem'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import TelaSelecaoPersonagem from './pages/tela-selecao-personagem/tela-selecao-personagem'
-import { useState } from 'react'
+import { MenuPrincipal } from './pages/menu-principal/menu-principal'
 
 function App(): JSX.Element {
   // const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
 
   const queryClient = new QueryClient()
-  const [personagemSelecionado, setPersonagemSelecionado] = useState<number>(0)
 
   //TODO: Criar uma homepage
   //TODO: Criar uma tela de criação de personagem
@@ -18,16 +16,8 @@ function App(): JSX.Element {
     <QueryClientProvider client={queryClient}>
       <HashRouter>
         <Routes>
-          <Route
-            path="/"
-            element={<TelaSelecaoPersonagem setPersonagemSelecionado={setPersonagemSelecionado} />}
-          />
-          {personagemSelecionado && (
-            <Route
-              path="/personagem"
-              element={<FichaPersonagem idPersonagem={personagemSelecionado} />}
-            />
-          )}
+          <Route path="/" element={<MenuPrincipal />} />
+          <Route path="/personagem" element={<FichaPersonagem />} />
         </Routes>
       </HashRouter>
     </QueryClientProvider>

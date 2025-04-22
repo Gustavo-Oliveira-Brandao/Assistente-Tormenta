@@ -1,10 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import modalReducer from './slices/modalSlice'
+import personagemReducer from './slices/personagemSlice'
 
 const store = configureStore({
-  reducer: {
-    modal: modalReducer
-  }
+  reducer: combineReducers({
+    modal: modalReducer,
+    personagem: personagemReducer
+  })
 })
 
 export default store

@@ -7,7 +7,7 @@ import { opcoesRacas } from '@renderer/utils/select options/opcoesRacas'
 import { opcoesTamanhos } from '@renderer/utils/select options/opcoesTamanhos'
 import { opcoesTiposCriaturas } from '@renderer/utils/select options/opcoesTiposCriaturas'
 import { useCriarPersonagemMutation } from '@renderer/hooks/mutations/personagem/useCriarPersonagemMutation'
-import { fecharModal } from '@renderer/store/slices/modalSlice'
+import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 import { personagemSchema } from '@renderer/validators/schemas/personagemSchema'
 import { useForm, SubmitHandler, FormProvider } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
@@ -86,7 +86,7 @@ export const PersonagemForm = (): JSX.Element => {
     }
 
     criarPersonagem.mutate(novoPersonagem)
-    dispatch(fecharModal())
+    dispatch(abrirModal('PERSONAGEM_SELECAO_MODAL'))
   }
   return (
     <FormProvider {...methods}>

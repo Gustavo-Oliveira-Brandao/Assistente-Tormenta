@@ -22,7 +22,9 @@ import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 import Atributo from '@renderer/components/card-atributo/atributo'
 import Pericia from '@renderer/components/card-pericia/pericia'
 
-const FichaPersonagem = ({ idPersonagem }: { idPersonagem: number }): JSX.Element => {
+const FichaPersonagem = (): JSX.Element => {
+  const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
+
   const { data: personagem } = useExibirPersonagemPorIdQuery(idPersonagem)
   const { data: magias } = useExbirMagiasPersonagemQuery(idPersonagem)
   const { data: poderes } = useExibirPoderesPersonagemQuery(idPersonagem)

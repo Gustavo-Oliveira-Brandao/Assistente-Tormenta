@@ -5,12 +5,14 @@ const Modal = ({
   titulo,
   onClose,
   children,
-  height
+  height,
+  footer
 }: {
   titulo: string
   onClose: () => void
   children: ReactNode
   height: string
+  footer?: ReactNode
 }): JSX.Element => {
   return (
     <div className={styles.cover}>
@@ -25,6 +27,7 @@ const Modal = ({
         <div className={styles.modalConteudo} style={{ height: height }}>
           {children}
         </div>
+        {footer && <footer className={styles.modalFooter}>{footer}</footer>}
       </div>
     </div>
   )

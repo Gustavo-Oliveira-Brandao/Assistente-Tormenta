@@ -149,3 +149,25 @@
 .botaoInteracao:hover {
   background-color: variables.$red;
 }
+
+.botaoAba {
+  width: 200px;
+  height: 40px;
+  background-color: variables.$red;
+  border-radius: 5px;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.botaoConfirm {
+  width: 200px;
+  height: 40px;
+  background-color: variables.$green;
+  border-radius: 5px;
+
+  p {
+    font-size: 16px;
+  }
+}

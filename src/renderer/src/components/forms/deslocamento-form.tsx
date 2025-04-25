@@ -8,6 +8,7 @@ import { fecharModal } from '@renderer/store/slices/modalSlice'
 import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 import { z } from 'zod'
 import { useDispatch } from 'react-redux'
+import styles from '@renderer/assets/styles/forms.module.scss'
 
 export const DeslocamentoForm = ({ deslocamento }: { deslocamento: IRecurso }): JSX.Element => {
   const atualizarRecurso = useAtualizarRecursoMutation()
@@ -41,10 +42,10 @@ export const DeslocamentoForm = ({ deslocamento }: { deslocamento: IRecurso }): 
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={handleSubmit(onEdit)}>
-        <fieldset>
+      <form className={styles.form} onSubmit={handleSubmit(onEdit)}>
+        <fieldset className={styles.fieldset}>
           <legend>Deslocamento atual</legend>
-          <div className="d-flex">
+          <div className={styles.rowFields}>
             <FormGroup
               name="valorAtual"
               label={`atual:`}
@@ -53,10 +54,10 @@ export const DeslocamentoForm = ({ deslocamento }: { deslocamento: IRecurso }): 
             />
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.fieldset}>
           <legend>Modificadores de deslocamento</legend>
           {fields.map((field, index) => (
-            <div className="d-flex" key={field.id}>
+            <div className={styles.rowFields} key={field.id}>
               <FormGroup
                 name={`bonus.${index}.label`}
                 label="nome:"
@@ -93,11 +94,11 @@ export const DeslocamentoForm = ({ deslocamento }: { deslocamento: IRecurso }): 
           />
         </fieldset>
         {Object.entries(errors).map(([field, error]) => (
-          <p role="alert" key={field}>
+          <p className={styles.alert} role="alert" key={field}>
             {error.message}!
           </p>
         ))}
-        <input type="submit" value="salvar" />
+        <input className={styles.submitButton} type="submit" value="salvar" />
       </form>
     </FormProvider>
   )

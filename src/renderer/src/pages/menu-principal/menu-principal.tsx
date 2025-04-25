@@ -9,6 +9,7 @@ import { useExibirTodosPersonagensQuery } from '@renderer/hooks/queries/personag
 import { selecionarPersonagem } from '@renderer/store/slices/personagemSlice'
 import { useNavigate } from 'react-router-dom'
 import { PersonagemForm } from '@renderer/components/forms/personagem-form'
+import { useState } from 'react'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -20,6 +21,8 @@ export const MenuPrincipal = (): JSX.Element => {
     dispatch(selecionarPersonagem(id))
     navigate('/personagem')
   }
+
+  const [etapaFormulario, setEtapaFormulario] = useState('bio')
 
   return (
     <main className={styles.mainMenu}>
@@ -53,6 +56,7 @@ export const MenuPrincipal = (): JSX.Element => {
             titulo="Selecionar personagem"
             onClose={() => dispatch(fecharModal())}
             height="500px"
+            width="350px"
             footer={
               <BotaoModular
                 css="botaoConfirm"
@@ -90,9 +94,61 @@ export const MenuPrincipal = (): JSX.Element => {
           <Modal
             titulo="Criar personagem"
             onClose={() => dispatch(abrirModal('PERSONAGEM_SELECAO_MODAL'))}
-            height="fit-content"
+            height="400px"
+            width="800px"
+            overflow="hidden"
+            footer={
+              <>
+                {etapaFormulario === 'bio' && (
+                  <div>
+                    <BotaoModular
+                      css="botaoConfirm"
+                      texto="Raça"
+                      onClickEvent={() => setEtapaFormulario('raca')}
+                    />
+                  </div>
+                )}
+                {etapaFormulario === 'raca' && (
+                  <div className={styles.spaceBetween}>
+                    <BotaoModular
+                      css="botaoConfirm"
+                      texto="Detalhes"
+                      onClickEvent={() => setEtapaFormulario('bio')}
+                    />
+                    <BotaoModular
+                      css="botaoConfirm"
+                      texto="Classe"
+                      onClickEvent={() => setEtapaFormulario('classe')}
+                    />
+                  </div>
+                )}
+                {etapaFormulario === 'classe' && (
+                  <div className={styles.spaceBetween}>
+                    <BotaoModular
+                      css="botaoConfirm"
+                      texto="Raça"
+                      onClickEvent={() => setEtapaFormulario('raca')}
+                    />
+                    <BotaoModular
+                      css="botaoConfirm"
+                      texto="Atributos"
+                      onClickEvent={() => setEtapaFormulario('atributos')}
+                    />
+                  </div>
+                )}
+                {etapaFormulario === 'atributos' && (
+                  <div className={styles.spaceBetween}>
+                    <BotaoModular
+                      css="botaoConfirm"
+                      texto="classe"
+                      onClickEvent={() => setEtapaFormulario('classe')}
+                    />
+                  </div>
+                )}
+              </>
+            }
           >
-            <PersonagemForm />
+            <PersonagemForm etapaFormulario={etapaFormulario} />
           </Modal>,
           document.body
         )}

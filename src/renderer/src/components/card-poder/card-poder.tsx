@@ -5,7 +5,7 @@ import Card from '../generic-card/card'
 interface CardPoderProps {
   poder: IPoder
   onInteract?: () => void
-  iconeBotaoInteracao: string
+  iconeBotaoInteracao?: string
 }
 
 const CardPoder = ({ poder, onInteract, iconeBotaoInteracao }: CardPoderProps): JSX.Element => {
@@ -15,6 +15,7 @@ const CardPoder = ({ poder, onInteract, iconeBotaoInteracao }: CardPoderProps): 
       onInteract={onInteract}
       iconeURL={poder.iconeURL}
       iconeBotaoInteracao={iconeBotaoInteracao}
+      css="completo"
     >
       <div className={styles.itemTags}>
         <p>{poder.tempoExecucao}</p>

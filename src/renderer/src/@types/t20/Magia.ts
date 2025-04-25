@@ -3,6 +3,7 @@ import { IDano } from './Dano'
 
 export interface IMagia {
   id: number
+  key?: number
   nome: string
   iconeURL: string
   alvo: string

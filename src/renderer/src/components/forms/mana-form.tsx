@@ -9,6 +9,7 @@ import { fecharModal } from '@renderer/store/slices/modalSlice'
 import { recursoSchema } from '@renderer/validators/schemas/recursoSchema'
 import { useDispatch } from 'react-redux'
 import { z } from 'zod'
+import styles from '@renderer/assets/styles/forms.module.scss'
 
 export const ManaForm = ({ mana }: { mana: IRecurso }): JSX.Element => {
   const atualizarRecurso = useAtualizarRecursoMutation()
@@ -42,10 +43,10 @@ export const ManaForm = ({ mana }: { mana: IRecurso }): JSX.Element => {
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={handleSubmit(onEdit)}>
-        <fieldset>
+      <form className={styles.form} onSubmit={handleSubmit(onEdit)}>
+        <fieldset className={styles.fieldset}>
           <legend>Mana atual</legend>
-          <div className="d-flex">
+          <div className={styles.rowFields}>
             <FormGroup
               name="valorAtual"
               label={`atual:`}
@@ -60,9 +61,9 @@ export const ManaForm = ({ mana }: { mana: IRecurso }): JSX.Element => {
             />
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.fieldset}>
           <legend>Mana maxima</legend>
-          <div className="d-flex">
+          <div className={styles.rowFields}>
             <FormGroup
               name="atributo"
               label="atributo:"
@@ -71,10 +72,10 @@ export const ManaForm = ({ mana }: { mana: IRecurso }): JSX.Element => {
             />
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.fieldset}>
           <legend>Modificadores de Mana maxima</legend>
           {fields.map((field, index) => (
-            <div className="d-flex" key={field.id}>
+            <div className={styles.rowFields} key={field.id}>
               <FormGroup
                 name={`bonus.${index}.label`}
                 label="nome:"
@@ -111,11 +112,11 @@ export const ManaForm = ({ mana }: { mana: IRecurso }): JSX.Element => {
           />
         </fieldset>
         {Object.entries(errors).map(([field, error]) => (
-          <p role="alert" key={field}>
+          <p className={styles.alert} role="alert" key={field}>
             {error.message}!
           </p>
         ))}
-        <input type="submit" value="salvar" />
+        <input className={styles.submitButton} type="submit" value="salvar" />
       </form>
     </FormProvider>
   )

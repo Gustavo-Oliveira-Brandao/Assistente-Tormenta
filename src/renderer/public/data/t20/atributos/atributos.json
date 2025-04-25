@@ -2,7 +2,6 @@
   {
     "nome": "forca",
     "valor": 0,
-    "racial": 0,
     "bonus": [],
     "descricao": "",
     "ordem": 1
@@ -10,7 +9,6 @@
   {
     "nome": "destreza",
     "valor": 0,
-    "racial": 0,
     "bonus": [],
     "descricao": "",
     "ordem": 2
@@ -18,7 +16,6 @@
   {
     "nome": "constituicao",
     "valor": 0,
-    "racial": 0,
     "bonus": [],
     "descricao": "",
     "ordem": 3
@@ -26,7 +23,6 @@
   {
     "nome": "inteligencia",
     "valor": 0,
-    "racial": 0,
     "bonus": [],
     "descricao": "",
     "ordem": 4
@@ -34,7 +30,6 @@
   {
     "nome": "sabedoria",
     "valor": 0,
-    "racial": 0,
     "bonus": [],
     "descricao": "",
     "ordem": 5
@@ -42,7 +37,6 @@
   {
     "nome": "carisma",
     "valor": 0,
-    "racial": 0,
     "bonus": [],
     "descricao": "",
     "ordem": 6

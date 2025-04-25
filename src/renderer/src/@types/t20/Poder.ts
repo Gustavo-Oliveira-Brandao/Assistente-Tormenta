@@ -2,6 +2,7 @@ import { ITag } from './Tag'
 
 export interface IPoder {
   id: number
+  key?: number
   nome: string
   iconeURL: string
   tempoExecucao: string

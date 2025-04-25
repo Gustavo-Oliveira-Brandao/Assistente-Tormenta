@@ -7,6 +7,9 @@ export interface ICriatura {
   nome: string
   tipoCriatura: string
   categoria: string
+  idade: number
+  altura: string
+  peso: string
   raca: string
   classe?: string
   origem?: string

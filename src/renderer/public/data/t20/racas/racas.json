@@ -16,7 +16,10 @@
         "atributo": "livre",
         "valor": 1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 2,
@@ -35,7 +38,10 @@
         "atributo": "destreza",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 6 }]
   },
   {
     "id": 3,
@@ -54,7 +60,10 @@
         "atributo": "inteligencia",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 4,
@@ -73,7 +82,10 @@
         "atributo": "constituicao",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 12 }]
   },
   {
     "id": 5,
@@ -92,7 +104,10 @@
         "atributo": "carisma",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Pequeno",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 6,
@@ -115,7 +130,10 @@
         "atributo": "carisma",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Monstro",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 7,
@@ -134,7 +152,10 @@
         "atributo": "sabedoria",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 8,
@@ -153,7 +174,10 @@
         "atributo": "sabedoria",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 9,
@@ -172,7 +196,10 @@
         "atributo": "carisma",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Construto",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 10,
@@ -191,7 +218,10 @@
         "atributo": "forca",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Pequeno",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 6 }]
   },
   {
     "id": 11,
@@ -210,7 +240,10 @@
         "atributo": "forca",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 12,
@@ -225,7 +258,10 @@
         "atributo": "carisma",
         "valor": 1
       }
-    ]
+    ],
+    "tipoCriatura": "Monstro",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 13,
@@ -248,12 +284,15 @@
         "atributo": "constituicao",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "morto-vivo",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 14,
     "nome": "sereia/tritao",
-    "descricao": "Sendo chamadas sereias quando femininas e tritões quando masculinos, os membros desta raça de torso humanoide e corpo de peixe podem adotar forma bípede para caminhar em terras emersas — algo que têm feito com cada vez mais frequência. Enquanto algumas sereias temem ou desprezam os humanos, outras enxergam Arton como um mundo misterioso, exótico, cheio de oportunidades e aventuras.",
+    "descricao": "Sendo chamadas sereias quando femininas e tritões quando masculinos, os membros desta raça de torso Humanoide e corpo de peixe podem adotar forma bípede para caminhar em terras emersas — algo que têm feito com cada vez mais frequência. Enquanto algumas sereias temem ou desprezam os humanos, outras enxergam Arton como um mundo misterioso, exótico, cheio de oportunidades e aventuras.",
     "atributos": [
       {
         "atributo": "livre",
@@ -266,6 +305,15 @@
       {
         "atributo": "livre",
         "valor": 1
+      }
+    ],
+    "categoria": "Humanoide",
+    "tamanho": "Medio",
+    "deslocamentos": [
+      { "tipo": "Caminhada", "valor": 9 },
+      {
+        "tipo": "Natacão",
+        "valor": 12
       }
     ]
   },
@@ -286,7 +334,10 @@
         "atributo": "forca",
         "valor": -2
       }
-    ]
+    ],
+    "tipoCriatura": "Espirito",
+    "tamanho": "Minusculo",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 16,
@@ -301,7 +352,10 @@
         "atributo": "carisma",
         "valor": 1
       }
-    ]
+    ],
+    "tipoCriatura": "Espirito",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 17,
@@ -316,7 +370,10 @@
         "atributo": "inteligencia",
         "valor": 1
       }
-    ]
+    ],
+    "tipoCriatura": "Espirito",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   },
   {
     "id": 18,
@@ -335,6 +392,9 @@
         "atributo": "inteligencia",
         "valor": -1
       }
-    ]
+    ],
+    "tipoCriatura": "Monstro",
+    "tamanho": "Medio",
+    "deslocamentos": [{ "tipo": "Caminhada", "valor": 9 }]
   }
 ]

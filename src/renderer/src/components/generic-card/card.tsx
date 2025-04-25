@@ -1,13 +1,16 @@
 import { ReactNode, useState } from 'react'
 import styles from './card.module.scss'
 import BotaoModular from '../botao-modular/botao-modular'
+import classNames from 'classnames'
 
 interface CardProps {
   titulo: string
   onInteract?: () => void
   iconeURL?: string
-  iconeBotaoInteracao: string
+  iconeBotaoInteracao?: string
   children: ReactNode
+  css: string
+  inicialEstaExpandido?: boolean
 }
 
 const Card = ({
@@ -15,15 +18,19 @@ const Card = ({
   onInteract,
   iconeURL,
   iconeBotaoInteracao,
-  children
+  children,
+  css,
+  inicialEstaExpandido = false
 }: CardProps): JSX.Element => {
-  const [estaExpandido, setEstaExpandido] = useState(false)
+  const [estaExpandido, setEstaExpandido] = useState(inicialEstaExpandido)
+
+  const cardClass = classNames(styles[css], styles.card)
 
   return (
-    <div className={styles.card}>
+    <div className={cardClass}>
       <div className={styles.cardHeader}>
         <div className={styles.cardTitulo}>
-          <img src={iconeURL} alt={titulo} loading="lazy" />
+          {iconeURL && <img src={iconeURL} alt={titulo} loading="lazy" />}
           <div className={styles.cardInfo}>
             <h2 onClick={() => setEstaExpandido(!estaExpandido)}>{titulo}</h2>
           </div>

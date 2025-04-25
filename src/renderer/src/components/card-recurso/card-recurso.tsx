@@ -30,7 +30,12 @@ export const Recurso = ({ recurso, icone }: RecursoProps): JSX.Element => {
       </div>
       {modalAberto == `RECURSO_${recurso.categoria}_EDICAO_MODAL` &&
         createPortal(
-          <Modal titulo={recurso.categoria} onClose={() => dispatch(fecharModal())} height="400px">
+          <Modal
+            width="550px"
+            titulo={recurso.categoria}
+            onClose={() => dispatch(fecharModal())}
+            height="400px"
+          >
             {recurso.categoria === 'defesa' && <DefesaForm defesa={recurso} />}
             {recurso.categoria === 'deslocamento' && <DeslocamentoForm deslocamento={recurso} />}
           </Modal>,

@@ -12,14 +12,9 @@ export const carregarPersonagem = async (personagem: ICriatura): Promise<ICriatu
 
   if (racaEscolhida) {
     personagem.atributos.forEach((atributo) => {
-      const modificadorRacial = racaEscolhida.atributos.find(
-        (atributoRaca) => atributoRaca.atributo === atributo.nome
-      )
       const bonusTotal = calcularBonus(atributo.bonus, personagem.nivel)
 
-      atributo.racial = modificadorRacial?.valor ?? 0
-
-      atributo.valorAtual = atributo.racial + atributo.valor + bonusTotal
+      atributo.valorAtual = atributo.valor + bonusTotal
     })
   }
 
@@ -74,7 +69,7 @@ const extrairValorAtributo = (atributoProcurado: string, atributos: IAtributo[])
   return atributos.find((atributo) => atributo.nome === atributoProcurado)?.valorAtual ?? 0
 }
 
-const calcularBonus = (bonus: IBonus[], nivel: number): number => {
+export const calcularBonus = (bonus: IBonus[], nivel: number): number => {
   return bonus
     .filter((bonus) => bonus.estaAtivo)
     .reduce((total, bonus) => total + (bonus.ehPorNivel ? bonus.valor * nivel : bonus.valor), 0)

@@ -5,7 +5,7 @@ import Card from '../generic-card/card'
 interface CardMagiaProps {
   magia: IMagia
   onInteract?: () => void
-  iconeBotaoInteracao: string
+  iconeBotaoInteracao?: string
 }
 
 const CardMagia = ({ magia, onInteract, iconeBotaoInteracao }: CardMagiaProps): JSX.Element => {
@@ -15,6 +15,7 @@ const CardMagia = ({ magia, onInteract, iconeBotaoInteracao }: CardMagiaProps): 
       onInteract={onInteract}
       iconeURL={magia.iconeURL}
       iconeBotaoInteracao={iconeBotaoInteracao}
+      css="completo"
     >
       <div className={styles.itemTags}>
         <p>{magia.execucao}</p>

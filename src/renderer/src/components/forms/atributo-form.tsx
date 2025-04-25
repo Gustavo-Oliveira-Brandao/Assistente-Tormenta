@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import { z } from 'zod'
 import BotaoModular from '../botao-modular/botao-modular'
 import FormGroup from '../form-group/form-group'
+import styles from '@renderer/assets/styles/forms.module.scss'
 
 export const AtributoForm = ({ atributo }: { atributo: IAtributo }): JSX.Element => {
   const dispatch = useDispatch()
@@ -39,10 +40,10 @@ export const AtributoForm = ({ atributo }: { atributo: IAtributo }): JSX.Element
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={handleSubmit(onEdit)}>
-        <fieldset>
+      <form className={styles.form} onSubmit={handleSubmit(onEdit)}>
+        <fieldset className={styles.fieldset}>
           <legend>Atributo</legend>
-          <div className="d-flex">
+          <div className={styles.rowFields}>
             <FormGroup
               name="valor"
               label="valor:"
@@ -51,10 +52,10 @@ export const AtributoForm = ({ atributo }: { atributo: IAtributo }): JSX.Element
             />
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.fieldset}>
           <legend>Modificadores</legend>
           {fields.map((field, index) => (
-            <div key={field.id} className="d-flex">
+            <div key={field.id} className={styles.rowFields}>
               <FormGroup
                 name={`bonus.${index}.label`}
                 label="nome:"
@@ -91,11 +92,11 @@ export const AtributoForm = ({ atributo }: { atributo: IAtributo }): JSX.Element
         </fieldset>
 
         {Object.entries(errors).map(([field, error]) => (
-          <p role="alert" key={field}>
+          <p className="alert" role="alert" key={field}>
             {error.message}!
           </p>
         ))}
-        <input type="submit" value="Salvar" />
+        <input className={styles.submitButton} type="submit" value="Salvar" />
       </form>
     </FormProvider>
   )

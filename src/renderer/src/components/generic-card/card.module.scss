@@ -40,3 +40,16 @@
     margin-top: 10px;
   }
 }
+
+.minimalista {
+  width: 100%;
+  .cardHeader {
+    .cardTitulo {
+      .cardInfo {
+        h2 {
+          color: variables.$red;
+        }
+      }
+    }
+  }
+}

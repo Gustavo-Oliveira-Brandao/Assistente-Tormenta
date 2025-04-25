@@ -6,13 +6,17 @@ const Modal = ({
   onClose,
   children,
   height,
-  footer
+  footer,
+  width,
+  overflow = 'auto'
 }: {
   titulo: string
   onClose: () => void
   children: ReactNode
   height: string
+  width: string
   footer?: ReactNode
+  overflow?: string
 }): JSX.Element => {
   return (
     <div className={styles.cover}>
@@ -24,7 +28,7 @@ const Modal = ({
             <img src="./icons/close.svg" alt="Fechar modal" />
           </button>
         </header>
-        <div className={styles.modalConteudo} style={{ height: height }}>
+        <div className={styles.modalConteudo} style={{ height: height, width, overflow: overflow }}>
           {children}
         </div>
         {footer && <footer className={styles.modalFooter}>{footer}</footer>}

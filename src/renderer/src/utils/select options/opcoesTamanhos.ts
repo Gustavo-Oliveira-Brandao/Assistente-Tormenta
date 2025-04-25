@@ -1,1 +1,1 @@
-export const opcoesTamanhos = ['pequeno', 'medio', 'grande', 'enorme', 'colossal']
+export const opcoesTamanhos = ['Pequeno', 'Medio', 'Grande', 'Enorme', 'Colossal']

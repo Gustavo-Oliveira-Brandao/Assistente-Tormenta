@@ -6,4 +6,10 @@ export interface IRacaT20 {
     atributo: string
     valor: number
   }[]
+  tipoCriatura: string
+  tamanho: string
+  deslocamentos: {
+    tipo: string
+    valor: number
+  }[]
 }

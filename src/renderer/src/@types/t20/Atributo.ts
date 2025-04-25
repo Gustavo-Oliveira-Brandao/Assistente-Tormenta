@@ -6,7 +6,6 @@ export interface IAtributo {
   valor: number
   valorAtual: number
   descricao: string
-  racial: number
   bonus: IBonus[]
   ordem: number
 }

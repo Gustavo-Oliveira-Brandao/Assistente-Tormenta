@@ -1,8 +1,8 @@
 export const opcoesTiposCriaturas = [
-  'animal',
-  'construto',
-  'espirito',
-  'humanoide',
-  'monstro',
-  'morto-vivo'
+  'Animal',
+  'Construto',
+  'Espirito',
+  'Humanoide',
+  'Monstro',
+  'Morto-vivo'
 ]

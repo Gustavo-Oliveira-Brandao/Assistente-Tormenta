@@ -10,6 +10,7 @@ import { useDispatch } from 'react-redux'
 import { z } from 'zod'
 import BotaoModular from '../botao-modular/botao-modular'
 import FormGroup from '../form-group/form-group'
+import styles from '@renderer/assets/styles/forms.module.scss'
 
 export const PericiaForm = ({ pericia }: { pericia: IPericia }): JSX.Element => {
   const atualizarPericia = useAtualizarPericiaMutation()
@@ -43,10 +44,10 @@ export const PericiaForm = ({ pericia }: { pericia: IPericia }): JSX.Element => 
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={handleSubmit(onEditPericia)}>
-        <fieldset>
+      <form className={styles.form} onSubmit={handleSubmit(onEditPericia)}>
+        <fieldset className={styles.fieldset}>
           <legend>Pericia</legend>
-          <div className="d-flex">
+          <div className={styles.rowFields}>
             <FormGroup
               name="atributo"
               label="Atributo:"
@@ -61,10 +62,10 @@ export const PericiaForm = ({ pericia }: { pericia: IPericia }): JSX.Element => 
             />
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.fieldset}>
           <legend>Modificadores</legend>
           {fields.map((field, index) => (
-            <div key={field.id} className="d-flex">
+            <div key={field.id} className={styles.rowFields}>
               <FormGroup
                 name={`bonus.${index}.label`}
                 label="nome:"
@@ -99,7 +100,7 @@ export const PericiaForm = ({ pericia }: { pericia: IPericia }): JSX.Element => 
             icone="./icons/plus-solid.svg"
           />
         </fieldset>
-        <input type="submit" value="Salvar" />
+        <input className={styles.alert} type="submit" value="Salvar" />
       </form>
     </FormProvider>
   )

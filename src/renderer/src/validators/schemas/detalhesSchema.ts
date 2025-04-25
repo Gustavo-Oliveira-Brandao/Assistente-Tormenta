@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-export const personagemSchema = z
+export const detalhesSchema = z
   .object({
     nome: z.string().nonempty('Nome não pode ser vazio'),
     tipoCriatura: z.string().nonempty('Tipo de criatura não pode ser vazio'),
@@ -17,12 +17,6 @@ export const personagemSchema = z
     experiencia: z.coerce.number().nonnegative('Experiência não pode ser um valor negativo'),
     idade: z.coerce.number().positive('Idade deve ser um valor positivo'),
     altura: z.string().optional(),
-    peso: z.string().optional(),
-    forcaBase: z.coerce.number(),
-    destrezaBase: z.coerce.number(),
-    constituicaoBase: z.coerce.number(),
-    inteligenciaBase: z.coerce.number(),
-    sabedoriaBase: z.coerce.number(),
-    carismaBase: z.coerce.number()
+    peso: z.string().optional()
   })
   .required()

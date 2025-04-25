@@ -27,7 +27,8 @@
         "custo": 1,
         "descricao": "muda a duração para permanente, o alvo para 1 frasco com água e adiciona componente material (pó de prata no valor de T$ 5). Em vez do normal, cria um frasco de água benta."
       }
-    ]
+    ],
+    "key": 1
   },
   {
     "nome": "Acalmar Animal",
@@ -61,7 +62,8 @@
         "custo": 5,
         "descricao": "muda o alvo para 1 monstro ou espírito. Requer 3o círculo."
       }
-    ]
+    ],
+    "key": 2
   },
   {
     "nome": "Açoite Flamejante",
@@ -91,7 +93,8 @@
         "custo": 5,
         "descricao": "muda o dano para 6d6. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 3
   },
   {
     "nome": "Adaga Mental",
@@ -121,7 +124,8 @@
         "custo": 2,
         "descricao": "aumenta o dano em +1d6."
       }
-    ]
+    ],
+    "key": 4
   },
   {
     "nome": "Alarme",
@@ -151,7 +155,8 @@
         "custo": 9,
         "descricao": "muda a duração para 1 dia ou até ser descarregada e a resistência para Vontade anula. Quando um intruso entra na área, você pode descarregar a magia. Se o intruso falhar na resistência, ficará paralisado por 1d4 rodadas. Além disso, pelas próximas 24 horas você e as criaturas escolhidas ganham +10 em testes de Sobrevivência para rastrear o intruso."
       }
-    ]
+    ],
+    "key": 5
   },
   {
     "nome": "Amedrontar",
@@ -181,7 +186,8 @@
         "custo": 5,
         "descricao": "afeta todos os alvos válidos a sua escolha dentro do alcance."
       }
-    ]
+    ],
+    "key": 6
   },
   {
     "nome": "Arma Espiritual",
@@ -223,7 +229,8 @@
         "custo": 2,
         "descricao": "aumenta o dano causado pela arma em +1d6, limitado pelo círculo máximo de magia que você pode lançar."
       }
-    ]
+    ],
+    "key": 7
   },
   {
     "nome": "Arma Mágica",
@@ -253,7 +260,8 @@
         "custo": 3,
         "descricao": "muda o bônus de dano do aprimoramento elemental para +2d6."
       }
-    ]
+    ],
+    "key": 8
   },
   {
     "nome": "Armadura Arcana",
@@ -283,7 +291,8 @@
         "custo": 2,
         "descricao": "muda a duração para 1 dia."
       }
-    ]
+    ],
+    "key": 9
   },
   {
     "nome": "Armamento da Natureza",
@@ -317,7 +326,8 @@
         "custo": 5,
         "descricao": "aumenta o dano da arma em mais um passo."
       }
-    ]
+    ],
+    "key": 10
   },
   {
     "nome": "Aviso",
@@ -351,7 +361,8 @@
         "custo": 3,
         "descricao": "aumenta o número de alvos em +1."
       }
-    ]
+    ],
+    "key": 11
   },
   {
     "nome": "Bênção",
@@ -377,7 +388,8 @@
         "custo": 2,
         "descricao": "aumenta os bônus em +1, limitado pelo círculo máximo de magia que você pode lançar."
       }
-    ]
+    ],
+    "key": 12
   },
   {
     "nome": "Caminhos da Natureza",
@@ -407,7 +419,8 @@
         "custo": 2,
         "descricao": "aumenta o bônus de deslocamento em +3m."
       }
-    ]
+    ],
+    "key": 13
   },
   {
     "nome": "Comando",
@@ -433,7 +446,8 @@
         "custo": 2,
         "descricao": "aumenta a quantidade de alvos em +1"
       }
-    ]
+    ],
+    "key": 14
   },
   {
     "nome": "Compreensão",
@@ -467,7 +481,8 @@
         "custo": 5,
         "descricao": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você pode falar, entender e escrever qualquer idioma. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 15
   },
   {
     "nome": "Concentração de Combate",
@@ -501,7 +516,8 @@
         "custo": 14,
         "descricao": "muda a execução para padrão e a duração para 1 dia. Além do normal, você recebe um sexto sentido que o avisa de qualquer perigo ou ameaça. Você fica imune às condições surpreendido e desprevenido e recebe +10 em Defesa e Reflexos. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 16
   },
   {
     "nome": "Conjurar Monstro",
@@ -567,7 +583,8 @@
         "custo": 14,
         "descricao": "aumenta o tamanho do monstro para Colossal. Ele tem For 15, Des 0, 180 PV, deslocamento 15m e seu ataque causa 4d12+20 pontos de dano com 9m de alcance. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 17
   },
   {
     "nome": "Consagrar",
@@ -597,7 +614,8 @@
         "custo": 9,
         "descricao": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 18
   },
   {
     "nome": "Controlar Plantas",
@@ -631,7 +649,8 @@
         "custo": 2,
         "descricao": "muda o alcance para pessoal, a área para alvo (você) e a resistência para nenhuma. Em vez do normal, você consegue se comunicar com plantas, que começam com atitude prestativa em relação a você. Além disso, você pode fazer testes de Diplomacia com plantas. Em geral, plantas têm uma percepção limitada de seus arredores e normalmente fornecem respostas simplórias."
       }
-    ]
+    ],
+    "key": 19
   },
   {
     "nome": "Criar Elementos",
@@ -661,7 +680,8 @@
         "custo": 1,
         "descricao": "se escolheu fogo, aumenta o dano inicial de cada chama em +1d6."
       }
-    ]
+    ],
+    "key": 20
   },
   {
     "nome": "Criar Ilusão",
@@ -711,7 +731,8 @@
         "custo": 5,
         "descricao": "muda a duração para sustentada. Além do normal, você pode gastar uma ação livre para modificar livremente a ilusão (mas não pode acrescentar novos aprimoramentos após lançá-la). Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 21
   },
   {
     "nome": "Curar Ferimentos",
@@ -749,7 +770,8 @@
         "custo": 5,
         "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
       }
-    ]
+    ],
+    "key": 22
   },
   {
     "nome": "Dardo Gélido",
@@ -775,7 +797,8 @@
         "custo": 1,
         "descricao": "aumenta o número de alvos em +1 (total de alvos limitado pelo círculo máximo de magia que você pode lançar)."
       }
-    ]
+    ],
+    "key": 23
   },
   {
     "nome": "Despedaçar",
@@ -817,7 +840,8 @@
         "custo": 5,
         "descricao": "muda o alcance para pessoal e a área para esfera de 6m de raio. Todas as criaturas e objetos na área são afetados."
       }
-    ]
+    ],
+    "key": 24
   },
   {
     "nome": "Detectar Ameaças",
@@ -843,7 +867,8 @@
         "custo": 2,
         "descricao": "além do normal, você não fica surpreso e desprevenido contra perigos detectados com sucesso e recebe +5 em testes de resistência contra armadilhas. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 25
   },
   {
     "nome": "Disfarce Ilusório",
@@ -881,7 +906,8 @@
         "custo": 3,
         "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Cada criatura pode ter uma aparência diferente. Criaturas involuntárias podem anular o efeito com um teste de Vontade. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 26
   },
   {
     "nome": "Enfeitiçar",
@@ -911,7 +937,8 @@
         "custo": 5,
         "descricao": "afeta todos os alvos dentro do alcance."
       }
-    ]
+    ],
+    "key": 27
   },
   {
     "nome": "Escudo da Fé",
@@ -949,7 +976,8 @@
         "custo": 3,
         "descricao": "muda a duração para 1 dia. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 28
   },
   {
     "nome": "Escuridão",
@@ -987,7 +1015,8 @@
         "custo": 5,
         "descricao": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você é coberto por sombras, recebendo +10 em testes de Furtividade e camuflagem leve. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 29
   },
   {
     "nome": "Explosão de Chamas",
@@ -1017,7 +1046,8 @@
         "custo": 1,
         "descricao": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica em chamas (veja Condições, no Apêndice)."
       }
-    ]
+    ],
+    "key": 30
   },
   {
     "nome": "Hipnotismo",
@@ -1059,7 +1089,8 @@
         "custo": 5,
         "descricao": "também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 31
   },
   {
     "nome": "Imagem Espelhada",
@@ -1085,7 +1116,8 @@
         "custo": 2,
         "descricao": "além do normal, toda vez que uma cópia é destruída, emite um clarão de luz. A criatura que destruiu a cópia fica ofuscada por uma rodada. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 32
   },
   {
     "nome": "Infligir Ferimentos",
@@ -1119,7 +1151,8 @@
         "custo": 5,
         "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
       }
-    ]
+    ],
+    "key": 33
   },
   {
     "nome": "Jato Corrosivo",
@@ -1145,7 +1178,8 @@
         "custo": 1,
         "descricao": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica vulnerável."
       }
-    ]
+    ],
+    "key": 34
   },
   {
     "nome": "Leque Cromático",
@@ -1175,7 +1209,8 @@
         "custo": 5,
         "descricao": "também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 35
   },
   {
     "nome": "Luz",
@@ -1221,7 +1256,8 @@
         "custo": 5,
         "descricao": "(Apenas Divinos): muda o alcance para toque e o alvo para 1 criatura. Em vez do normal, o alvo é envolto por um halo de luz, recebendo +10 em testes de Diplomacia e resistência a trevas 10. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 36
   },
   {
     "nome": "Névoa",
@@ -1263,7 +1299,8 @@
         "custo": 5,
         "descricao": "além do normal, a nuvem fica espessa, quase sólida. Qualquer criatura dentro dela tem seu deslocamento reduzido para 3m (independentemente de seu deslocamento normal) e sofre –2 em testes de ataque e rolagens de dano."
       }
-    ]
+    ],
+    "key": 37
   },
   {
     "nome": "Orientação",
@@ -1293,7 +1330,8 @@
         "custo": 5,
         "descricao": "muda o alvo para criaturas escolhidas. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 38
   },
   {
     "nome": "Perdição",
@@ -1315,7 +1353,8 @@
         "custo": 2,
         "descricao": "aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar."
       }
-    ]
+    ],
+    "key": 39
   },
   {
     "nome": "Primor Atlético",
@@ -1349,7 +1388,8 @@
         "custo": 3,
         "descricao": "além do normal, ao fazer testes de perícias baseadas em Força, Destreza ou Constituição, o alvo pode rolar dois dados e escolher o melhor. Não afeta testes de ataque ou resistência. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 40
   },
   {
     "nome": "Profanar",
@@ -1379,7 +1419,8 @@
         "custo": 9,
         "descricao": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 41
   },
   {
     "nome": "Proteção Divina",
@@ -1413,7 +1454,8 @@
         "custo": 5,
         "descricao": "também torna o alvo imune a efeitos mentais e de medo. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 42
   },
   {
     "nome": "Queda Suave",
@@ -1443,7 +1485,8 @@
         "custo": 2,
         "descricao": "aumenta a categoria de tamanho do alvo em uma"
       }
-    ]
+    ],
+    "key": 43
   },
   {
     "nome": "Raio do Enfraquecimento",
@@ -1473,7 +1516,8 @@
         "custo": 5,
         "descricao": "como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 44
   },
   {
     "nome": "Resistência à Energia",
@@ -1511,7 +1555,8 @@
         "custo": 9,
         "descricao": "muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo"
       }
-    ]
+    ],
+    "key": 45
   },
   {
     "nome": "Santuário",
@@ -1537,7 +1582,8 @@
         "custo": 9,
         "descricao": "também protege o alvo contra efeitos de área. Uma criatura que tente atacar uma área que inclua o alvo deve fazer o teste de Vontade; se falhar, não consegue e perde a ação. Ela só pode tentar novamente se o alvo sair da área."
       }
-    ]
+    ],
+    "key": 46
   },
   {
     "nome": "Seta Infalível de Talude",
@@ -1571,7 +1617,8 @@
         "custo": 9,
         "descricao": "muda o número de setas/lanças para dez. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 47
   },
   {
     "nome": "Sono",
@@ -1601,7 +1648,8 @@
         "custo": 5,
         "descricao": "afeta todos os alvos válidos a sua escolha dentro do alcance."
       }
-    ]
+    ],
+    "key": 48
   },
   {
     "nome": "Suporte Ambiental",
@@ -1623,7 +1671,8 @@
         "custo": 5,
         "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
       }
-    ]
+    ],
+    "key": 49
   },
   {
     "nome": "Teia",
@@ -1653,7 +1702,8 @@
         "custo": 2,
         "descricao": "aumenta a área em +1 cubo de 1,5m."
       }
-    ]
+    ],
+    "key": 50
   },
   {
     "nome": "Toque Chocante",
@@ -1683,7 +1733,8 @@
         "custo": 2,
         "descricao": "muda o alcance para pessoal e o alvo para área: esfera com 6m de raio. Você dispara raios pelas pontas dos dedos que afetam todas as criaturas na área."
       }
-    ]
+    ],
+    "key": 51
   },
   {
     "nome": "Tranca Arcana",
@@ -1717,7 +1768,8 @@
         "custo": 5,
         "descricao": "muda o alvo para 1 objeto de qualquer tamanho, podendo afetar até mesmo os portões de um castelo. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 52
   },
   {
     "nome": "Tranquilidade",
@@ -1747,7 +1799,8 @@
         "custo": 5,
         "descricao": "muda o alcance para médio e o alvo para criaturas escolhidas. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 53
   },
   {
     "nome": "Transmutar Objetos",
@@ -1789,7 +1842,8 @@
         "custo": 9,
         "descricao": "como o aprimoramento anterior, mas passa a afetar itens mágicos."
       }
-    ]
+    ],
+    "key": 54
   },
   {
     "nome": "Visão Mística",
@@ -1819,7 +1873,8 @@
         "custo": 2,
         "descricao": "também pode enxergar objetos e criaturas invisíveis. Eles aparecem como formas translúcidas."
       }
-    ]
+    ],
+    "key": 55
   },
   {
     "nome": "Vitalidade Fantasma",
@@ -1845,7 +1900,8 @@
         "custo": 5,
         "descricao": "muda o alvo para área: esfera com 6m de raio centrada em você e a resistência para Fortitude reduz à metade. Em vez do normal, você suga energia das criaturas vivas na área, causando 1d10 pontos de dano de trevas e recebendo PV temporários iguais ao dano total causado. Os PV temporários desaparecem ao final da cena. Requer 2º círculo."
       }
-    ]
+    ],
+    "key": 56
   },
   {
     "nome": "Área Escorregadia",
@@ -1875,9 +1931,9 @@
         "custo": 5,
         "descricao": "muda a CD dos testes de Acrobacia para 20."
       }
-    ]
+    ],
+    "key": 57
   },
-
   {
     "nome": "Aliado Animal",
     "iconeURL": "./icons/sitting-dog.svg",
@@ -1906,7 +1962,8 @@
         "custo": 12,
         "descricao": "muda o alvo para 2 animais prestativos. Cada animal funciona como um parceiro de um tipo diferente, e você pode receber a ajuda de ambos (mas ainda precisa seguir o limite de parceiros de acordo com o seu nível de personagem). Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 58
   },
   {
     "nome": "Alterar Tamanho",
@@ -1940,7 +1997,8 @@
         "custo": 7,
         "descricao": "muda o alcance para toque, o alvo para 1 criatura, a duração para permanente e a resistência para Fortitude anula. Em vez do normal, se falhar na resistência o alvo e seu equipamento têm seu tamanho mudado para Minúsculo. O alvo também tem seu valor de Força reduzido a 1 e suas formas de deslocamento reduzidas a 3m. Requer 4o círculo."
       }
-    ]
+    ],
+    "key": 59
   },
   {
     "nome": "Amarras Etéreas",
@@ -1970,7 +2028,8 @@
         "custo": 3,
         "descricao": "em vez do normal, cada laço é destruído automaticamente com um único ataque bem-sucedido; porém, cada laço destruído libera um choque de energia que causa 1d8+1 pontos de dano de essência na criatura amarrada. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 60
   },
   {
     "nome": "Aparência Perfeita",
@@ -1992,7 +2051,8 @@
         "custo": 1,
         "descricao": "muda o alcance para toque e o alvo para 1 humanoide"
       }
-    ]
+    ],
+    "key": 61
   },
   {
     "nome": "Augúrio",
@@ -2026,7 +2086,8 @@
         "custo": 12,
         "descricao": "o mestre rola 1d20; a magia só falha em um resultado 1."
       }
-    ]
+    ],
+    "key": 62
   },
   {
     "nome": "Bola de Fogo",
@@ -2056,7 +2117,8 @@
         "custo": 3,
         "descricao": "muda a duração para 1 dia ou até ser descarregada. Em vez do normal, você cria uma pequena pedra flamejante, que pode detonar como uma reação, descarregando a magia. A pedra pode ser usada como uma arma de arremesso com alcance curto. Uma vez detonada, causa o dano da magia numa área de esfera de 6m com raio."
       }
-    ]
+    ],
+    "key": 63
   },
   {
     "nome": "Campo de Força",
@@ -2094,7 +2156,8 @@
         "custo": 9,
         "descricao": "como o aprimoramento acima, mas tudo dentro da esfera fica praticamente sem peso. Uma vez por rodada, você pode gastar uma ação livre para flutuar a esfera e seu conteúdo 9m em uma direção. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 64
   },
   {
     "nome": "Camuflagem Ilusória",
@@ -2120,7 +2183,8 @@
         "custo": 7,
         "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 65
   },
   {
     "nome": "Condição",
@@ -2146,7 +2210,8 @@
         "custo": 1,
         "descricao": "aumenta a duração para 1 dia."
       }
-    ]
+    ],
+    "key": 66
   },
   {
     "nome": "Conjurar Mortos-Vivos",
@@ -2192,7 +2257,8 @@
         "custo": 7,
         "descricao": "em vez de esqueletos, conjura sombras. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 67
   },
   {
     "nome": "Controlar Fogo",
@@ -2222,7 +2288,8 @@
         "custo": 3,
         "descricao": "muda o alvo para 1 criatura composta principalmente por fogo, lava ou magma (como um elemental do fogo) e a resistência para Fortitude parcial. Em vez do normal, se a criatura falhar no teste de resistência, é reduzida a 0 PV. Se passar, sofre 5d6 pontos de dano."
       }
-    ]
+    ],
+    "key": 68
   },
   {
     "nome": "Controlar Madeira",
@@ -2256,7 +2323,8 @@
         "custo": 12,
         "descricao": "muda o alvo para Colossal ou menor. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 69
   },
   {
     "nome": "Crânio Voador de Vladislav",
@@ -2282,7 +2350,8 @@
         "custo": 2,
         "descricao": "aumenta o número de alvos em +1."
       }
-    ]
+    ],
+    "key": 70
   },
   {
     "nome": "Círculo da Justiça",
@@ -2312,7 +2381,8 @@
         "custo": 7,
         "descricao": "muda a duração para permanente e adiciona componente material (balança de prata no valor de T$ 5.000)."
       }
-    ]
+    ],
+    "key": 71
   },
   {
     "nome": "Desespero Esmagador",
@@ -2342,7 +2412,8 @@
         "custo": 3,
         "descricao": "além do normal, criaturas que falhem na resistência ficam aos prantos (em termos de jogo, adquirem a condição pasmo) por 1 rodada (apenas uma vez por cena). Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 72
   },
   {
     "nome": "Dissipar Magia",
@@ -2364,7 +2435,8 @@
         "custo": 12,
         "descricao": "muda a área para esfera com 9m de raio. Em vez do normal, cria um efeito de disjunção. Todas as magias na área são automaticamente dissipadas e todos os itens mágicos na área, exceto aqueles que você estiver carregando, viram itens mundanos por uma cena (com direito a um teste de resistência para evitar esse efeito). Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 73
   },
   {
     "nome": "Enxame de Pestes",
@@ -2398,7 +2470,8 @@
         "custo": 7,
         "descricao": "muda a resistência para Reflexos reduz à metade e o enxame para criaturas elementais. Ele causa 5d12 pontos do dano (a sua escolha entre ácido, eletricidade, fogo ou frio). O resto da magia segue normal. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 74
   },
   {
     "nome": "Esculpir Sons",
@@ -2420,7 +2493,8 @@
         "custo": 2,
         "descricao": "aumenta o número de alvos em +1. Todas as criaturas e objetos devem ser afetadas da mesma forma."
       }
-    ]
+    ],
+    "key": 75
   },
   {
     "nome": "Flecha Ácida",
@@ -2450,7 +2524,8 @@
         "custo": 2,
         "descricao": "aumenta o dano inicial e o dano por rodada em +1d6."
       }
-    ]
+    ],
+    "key": 76
   },
   {
     "nome": "Físico Divino",
@@ -2484,7 +2559,8 @@
         "custo": 12,
         "descricao": "em vez do normal, o alvo recebe +4 nos três atributos físicos. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 77
   },
   {
     "nome": "Globo da Verdade de Gwen",
@@ -2518,7 +2594,8 @@
         "custo": 4,
         "descricao": "muda o alcance para longo e o efeito para 10 globos. Todos mostram a mesma cena."
       }
-    ]
+    ],
+    "key": 78
   },
   {
     "nome": "Invisibilidade",
@@ -2552,7 +2629,8 @@
         "custo": 7,
         "descricao": "muda a execução para ação padrão, o alcance para toque e o alvo para 1 criatura. A magia não é dissipada caso o alvo faça um ação hostil. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 79
   },
   {
     "nome": "Invocar Fagulha Elemental",
@@ -2578,7 +2656,8 @@
         "custo": 2,
         "descricao": "em vez do normal, o elemental recebe a habilidade de dois familiares, um comum e um elemental."
       }
-    ]
+    ],
+    "key": 80
   },
   {
     "nome": "Ligação Telepática",
@@ -2604,7 +2683,8 @@
         "custo": 3,
         "descricao": "muda o alvo para 1 criatura. Em vez do normal, você cria um elo mental que permite que você veja e ouça pelos sentidos da criatura, se gastar uma ação de movimento. Uma criatura involuntária pode fazer um teste de Vontade para suprimir a magia por uma hora. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 81
   },
   {
     "nome": "Localização",
@@ -2630,7 +2710,8 @@
         "custo": 5,
         "descricao": "aumenta a área em um fator de 10 (90m para 900m, 900m para 9km e assim por diante)."
       }
-    ]
+    ],
+    "key": 82
   },
   {
     "nome": "Mapear",
@@ -2652,7 +2733,8 @@
         "custo": 3,
         "descricao": "muda o alvo para 1 criatura e a duração para 1 hora. Em vez do normal, a criatura tocada descobre o caminho mais direto para entrar ou sair de um lugar. Assim, a magia pode ser usada para descobrir a rota até o relicário de uma catedral ou a saída mais próxima de uma masmorra (mas não para encontrar a localização de uma criatura ou objeto; a magia funciona apenas em relação a lugares). Caso a criatura demore mais de uma hora para percorrer o caminho, o conhecimento se perde."
       }
-    ]
+    ],
+    "key": 83
   },
   {
     "nome": "Marca da Obediência",
@@ -2678,7 +2760,8 @@
         "custo": 3,
         "descricao": "sempre que o alvo fizer o teste de Vontade e falhar, a marca causa 3d6 pontos de dano psíquico. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 84
   },
   {
     "nome": "Mente Divina",
@@ -2712,7 +2795,8 @@
         "custo": 12,
         "descricao": "em vez do normal, o alvo recebe +4 nos três atributos mentais. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 85
   },
   {
     "nome": "Metamorfose",
@@ -2758,7 +2842,8 @@
         "custo": 12,
         "descricao": "além do normal, no início de seus turnos o alvo pode mudar de forma novamente, como uma ação livre, fazendo novas escolhas. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 86
   },
   {
     "nome": "Miasma Mefítico",
@@ -2788,7 +2873,8 @@
         "custo": 3,
         "descricao": "muda o tipo do dano para trevas."
       }
-    ]
+    ],
+    "key": 87
   },
   {
     "nome": "Momento de Tormenta",
@@ -2818,7 +2904,8 @@
         "custo": 5,
         "descricao": "muda a área para círculo de 1km de raio."
       }
-    ]
+    ],
+    "key": 88
   },
   {
     "nome": "Montaria Arcana",
@@ -2852,7 +2939,8 @@
         "custo": 3,
         "descricao": "muda o nível do aliado para mestre. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 89
   },
   {
     "nome": "Oração",
@@ -2886,7 +2974,8 @@
         "custo": 12,
         "descricao": "muda a duração para cena. Requer 4º círculo"
       }
-    ]
+    ],
+    "key": 90
   },
   {
     "nome": "Purificação",
@@ -2920,7 +3009,8 @@
         "custo": 7,
         "descricao": "também dissipa magias e efeitos prejudiciais de encantamento, necromancia e transmutação afetando o alvo. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 91
   },
   {
     "nome": "Raio Solar",
@@ -2954,7 +3044,8 @@
         "custo": 3,
         "descricao": "criaturas que falhem na resistência ficam cegas por 1d4 rodadas."
       }
-    ]
+    ],
+    "key": 92
   },
   {
     "nome": "Refúgio",
@@ -2988,7 +3079,8 @@
         "custo": 9,
         "descricao": "em vez do normal, cria uma mansão extradimensional que comporta até 100 criaturas Médias, com quartos luxuosos, comida e bebida e dez servos fantasmagóricos (como na magia Servos Invisíveis). Descansar na mansão concede recuperação luxuosa (recupera PV e PM igual ao triplo do nível). A mansão tem uma única entrada, uma porta feita de luz. Você pode deixá-la visível ou invisível como uma ação livre e apenas criaturas escolhidas por você podem passar. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 93
   },
   {
     "nome": "Relâmpago",
@@ -3014,7 +3106,8 @@
         "custo": 3,
         "descricao": "muda o alcance para médio e a área para alvo (criaturas escolhidas). Em vez do normal, você dispara vários relâmpagos, um para cada alvo escolhido, causando 6d6 pontos de dano de eletricidade. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 94
   },
   {
     "nome": "Rogar Maldição",
@@ -3040,7 +3133,8 @@
         "custo": 7,
         "descricao": "muda a duração para permanente e resistência para Fortitude parcial. Se passar, a criatura ainda sofre os efeitos da maldição, mas por 1 rodada. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 95
   },
   {
     "nome": "Runa de Proteção",
@@ -3070,7 +3164,8 @@
         "custo": 3,
         "descricao": "como o aprimoramento anterior, mas você pode escolher magias de 2º  círculo. Requer 3º\ncírculo."
       }
-    ]
+    ],
+    "key": 96
   },
   {
     "nome": "Salto Dimensional",
@@ -3104,7 +3199,8 @@
         "custo": 3,
         "descricao": "muda o alcance para longo."
       }
-    ]
+    ],
+    "key": 97
   },
   {
     "nome": "Servos Invisíveis",
@@ -3130,7 +3226,8 @@
         "custo": 3,
         "descricao": "você pode comandar os servos para realizar uma única tarefa no seu lugar. Em termos de jogo, eles passam automaticamente em um teste de perícia com CD máxima igual ao seu nível, +2 para cada servo conjurado. O tempo necessário para realizar a tarefa é o tempo do uso da perícia em questão. Requer 3º círculo"
       }
-    ]
+    ],
+    "key": 98
   },
   {
     "nome": "Silêncio",
@@ -3156,7 +3253,8 @@
         "custo": 2,
         "descricao": "muda a duração para cena. Em vez do normal, nenhum som pode deixar a área, mas criaturas dentro da área podem falar, ouvir e lançar magias com palavras mágicas normalmente."
       }
-    ]
+    ],
+    "key": 99
   },
   {
     "nome": "Soco de Arsenal",
@@ -3190,7 +3288,8 @@
         "custo": 5,
         "descricao": "muda o tipo do dano para essência."
       }
-    ]
+    ],
+    "key": 100
   },
   {
     "nome": "Sopro das Uivantes",
@@ -3216,7 +3315,8 @@
         "custo": 3,
         "descricao": "aumenta o tamanho máximo das criaturas afetadas em uma categoria. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 101
   },
   {
     "nome": "Sussurros Insanos",
@@ -3246,7 +3346,8 @@
         "custo": 12,
         "descricao": "muda o alvo para criaturas escolhidas. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 102
   },
   {
     "nome": "Tempestade Divina",
@@ -3288,7 +3389,8 @@
         "custo": 3,
         "descricao": "muda a área para cilindro com 90m de raio e 90m de altura."
       }
-    ]
+    ],
+    "key": 103
   },
   {
     "nome": "Toque Vampírico",
@@ -3318,7 +3420,8 @@
         "custo": 2,
         "descricao": "muda o alcance para pessoal, o alvo para você e a duração para cena. Em vez do normal, a cada rodada você pode gastar uma ação padrão para tocar 1 criatura e causar 3d6 pontos de dano. Você recupera pontos de vida iguais à metade do dano causado. Requer 3º círculo."
       }
-    ]
+    ],
+    "key": 104
   },
   {
     "nome": "Velocidade",
@@ -3348,7 +3451,8 @@
         "custo": 7,
         "descricao": "muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 105
   },
   {
     "nome": "Vestimenta da Fé",
@@ -3378,7 +3482,8 @@
         "custo": 7,
         "descricao": "o objeto também oferece resistência a dano 5. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 106
   },
   {
     "nome": "Voz Divina",
@@ -3404,9 +3509,9 @@
         "custo": 1,
         "descricao": "você pode falar com plantas (normais ou monstruosas) e rochas. Plantas e rochas têm percepção limitada de seus arredores e normalmente fornecem respostas simplórias."
       }
-    ]
+    ],
+    "key": 107
   },
-
   {
     "nome": "Anular a Luz",
     "iconeURL": "./icons/sly.svg",
@@ -3435,7 +3540,8 @@
         "custo": 9,
         "descricao": "muda o círculo máximo de magias dissipadas para 5º. Requer 5º Círculo."
       }
-    ]
+    ],
+    "key": 108
   },
   {
     "nome": "Banimento",
@@ -3457,7 +3563,8 @@
         "custo": 0,
         "descricao": "muda a resistência para nenhum. Em vez do normal, devolve automaticamente uma criatura conjurada (como por uma magia de convocação) para seu plano de origem."
       }
-    ]
+    ],
+    "key": 109
   },
   {
     "nome": "Coluna de Chamas",
@@ -3483,7 +3590,8 @@
         "custo": 1,
         "descricao": "aumenta o dano de luz em +1d6."
       }
-    ]
+    ],
+    "key": 110
   },
   {
     "nome": "Comunhão com a Natureza",
@@ -3517,7 +3625,8 @@
         "custo": 8,
         "descricao": "muda o tipo dos dados de auxílio para d8."
       }
-    ]
+    ],
+    "key": 111
   },
   {
     "nome": "Contato Extraplanar",
@@ -3543,7 +3652,8 @@
         "custo": 8,
         "descricao": "Muda os dados de auxílio para d12. Sempre que rolar um resultado 12 num desses d12, a entidade “suga” 2 PM de você. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 112
   },
   {
     "nome": "Controlar Terra",
@@ -3569,7 +3679,8 @@
         "custo": 1,
         "descricao": "muda o alcance para pessoal, o alvo para você e a duração para 1 dia. Você e seu equipamento fundem-se a uma superfície ou objeto adjacente feito de pedra, terra, argila ou areia que possa acomodá-lo. Você pode voltar ao espaço adjacente como uma ação livre, dissipando a magia. Enquanto mesclado, você não pode falar ou fazer ações físicas, mas consegue perceber seus arredores normalmente. Pequenos danos não o afetam, mas se o objeto (ou o trecho onde você está imerso) for destruído, a magia é dissipada, você volta a um espaço livre adjacente e sofre 10d6 pontos de dano de impacto."
       }
-    ]
+    ],
+    "key": 113
   },
   {
     "nome": "Controlar Água",
@@ -3591,7 +3702,8 @@
         "custo": 2,
         "descricao": "aumenta o dano em +2d8."
       }
-    ]
+    ],
+    "key": 114
   },
   {
     "nome": "Convocação Instantânea",
@@ -3625,7 +3737,8 @@
         "custo": 2,
         "descricao": "muda o alvo para 1 objeto de até 10 espaços. Um objeto muito grande ou pesado para aparecer em suas mãos surge em um espaço adjacente a sua escolha."
       }
-    ]
+    ],
+    "key": 115
   },
   {
     "nome": "Despertar Consciência",
@@ -3651,7 +3764,8 @@
         "custo": 4,
         "descricao": "muda a duração para permanente e adiciona penalidade de -3 PM."
       }
-    ]
+    ],
+    "key": 116
   },
   {
     "nome": "Dificultar Detecção",
@@ -3677,7 +3791,8 @@
         "custo": 4,
         "descricao": "muda a duração para 1 semana."
       }
-    ]
+    ],
+    "key": 117
   },
   {
     "nome": "Dispersar as Trevas",
@@ -3711,7 +3826,8 @@
         "custo": 9,
         "descricao": "muda o círculo máximo de magias dissipadas para 5º. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 118
   },
   {
     "nome": "Enxame Rubro de Ichabod",
@@ -3753,7 +3869,8 @@
         "custo": 4,
         "descricao": "o enxame inclui parasitas inchados que explodem e criam novos enxames. No início de cada um de seus turnos, role 1d6. Em um resultado 5 ou 6, um novo enxame surge adjacente a um já existente à sua escolha. Você pode mover todos os enxames com uma única ação de movimento, mas eles não podem ocupar o mesmo espaço. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 119
   },
   {
     "nome": "Erupção Glacial",
@@ -3779,7 +3896,8 @@
         "custo": 4,
         "descricao": "muda a área para cilindro com 6m de raio e 6m de altura e a duração para sustentada. Em vez do normal, a magia cria uma tempestade de granizo que causa 3d6 pontos de dano de impacto e 3d6 pontos de dano de frio em todas as criaturas na área (sem teste de resistência). A tempestade fornece camuflagem leve as criaturas dentro dela e deixa o piso escorregadio. Piso escorregadio conta como terreno difícil e obriga criaturas na área a fazer testes de Acrobacia para equilíbrio (veja o Capítulo 2). Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 120
   },
   {
     "nome": "Ferver Sangue",
@@ -3805,7 +3923,8 @@
         "custo": 9,
         "descricao": "muda alvo para criaturas escolhidas. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 121
   },
   {
     "nome": "Globo de Invulnerabilidade",
@@ -3831,7 +3950,8 @@
         "custo": 9,
         "descricao": "muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 122
   },
   {
     "nome": "Heroísmo",
@@ -3853,7 +3973,8 @@
         "custo": 2,
         "descricao": "muda o bônus para +6."
       }
-    ]
+    ],
+    "key": 123
   },
   {
     "nome": "Ilusão Lacerante",
@@ -3879,7 +4000,8 @@
         "custo": 4,
         "descricao": "muda a área para um cubo de 90m. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 124
   },
   {
     "nome": "Imobilizar",
@@ -3909,7 +4031,8 @@
         "custo": 3,
         "descricao": "muda o alvo para 1 criatura. Requer 4º círculo"
       }
-    ]
+    ],
+    "key": 125
   },
   {
     "nome": "Lança Ígnea de Aleph",
@@ -3935,7 +4058,8 @@
         "custo": 4,
         "descricao": "muda a duração para cena ou até ser descarregada. Em vez do efeito normal, a magia cria quatro dardos de lava que flutuam ao lado do conjurador. Uma vez por rodada, como uma ação livre, você pode disparar um dos dardos em uma criatura, causando o efeito normal da magia. Requer 4º Círculo."
       }
-    ]
+    ],
+    "key": 126
   },
   {
     "nome": "Lendas e Histórias",
@@ -3957,7 +4081,8 @@
         "custo": 4,
         "descricao": "muda a execução para 1 dia, o alcance para ilimitado e adiciona componente material (cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000). Você ainda precisa ter alguma informação sobre o alvo, como um nome, descrição ou localização."
       }
-    ]
+    ],
+    "key": 127
   },
   {
     "nome": "Manto de Sombras",
@@ -3979,7 +4104,8 @@
         "custo": 4,
         "descricao": "muda o alcance para toque e o alvo para 1 criatura voluntária. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 128
   },
   {
     "nome": "Miragem",
@@ -4005,7 +4131,8 @@
         "custo": 9,
         "descricao": "muda a duração para permanente e adiciona componente material (pó de diamante no valor de T$ 1.000). Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 129
   },
   {
     "nome": "Missão Divina",
@@ -4031,7 +4158,8 @@
         "custo": 4,
         "descricao": "aumenta a duração para 1 ano ou até ser descarregada."
       }
-    ]
+    ],
+    "key": 130
   },
   {
     "nome": "Muralha Elemental",
@@ -4061,7 +4189,8 @@
         "custo": 4,
         "descricao": "muda a duração para sustentada e adiciona uma nova escolha, Essência. A muralha é invisível e indestrutível — imune a qualquer forma de dano e não afetada por nenhuma magia. Ela não pode ser atravessada nem mesmo por criaturas incorpóreas. No entanto, magias que teletransportam criaturas, como Salto Dimensional, podem atravessá-la. Magias e efeitos de dano, como Bola de Fogo e o sopro de um dragão, não vencem a muralha, mas magias lançadas diretamente sobre uma criatura ou área, como Sono, podem ser lançadas contra alvos que estejam no outro lado como se tivessem linha de efeito. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 131
   },
   {
     "nome": "Pele de Pedra",
@@ -4099,7 +4228,8 @@
         "custo": 9,
         "descricao": "como acima, mas com duração permanente. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 132
   },
   {
     "nome": "Poeira da Podridão",
@@ -4121,7 +4251,8 @@
         "custo": 2,
         "descricao": "aumenta o dano em 1d8+4."
       }
-    ]
+    ],
+    "key": 133
   },
   {
     "nome": "Potência Divina",
@@ -4151,7 +4282,8 @@
         "custo": 2,
         "descricao": "muda o alcance para toque e o alvo para 1 criatura. A magia falha se você e o alvo não forem devotos da mesma divindade."
       }
-    ]
+    ],
+    "key": 134
   },
   {
     "nome": "Proteção Contra Magia",
@@ -4181,7 +4313,8 @@
         "custo": 9,
         "descricao": "em vez do normal, o alvo fica imune a duas escolas de magia a sua escolha. Requer 5º Círculo."
       }
-    ]
+    ],
+    "key": 135
   },
   {
     "nome": "Selo de Mana",
@@ -4203,7 +4336,8 @@
         "custo": 4,
         "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas dentro do alcance. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 136
   },
   {
     "nome": "Servo Divino",
@@ -4229,7 +4363,8 @@
         "custo": 9,
         "descricao": "muda a duração para 1 semana ou até ser descarregada. O espírito realiza uma tarefa que exija até uma semana. O custo do pagamento aumenta para T$ 1.000. O resto segue normal."
       }
-    ]
+    ],
+    "key": 137
   },
   {
     "nome": "Servo Morto-Vivo",
@@ -4259,7 +4394,8 @@
         "custo": 7,
         "descricao": "muda o componente material para ferramentas de embalsamar (T$ 1.000). Em vez de um zumbi ou esqueleto, cria uma múmia. Ela pode funcionar como um aliado mestre, escolhido entre ajudante, destruidor, guardião ou médico. O restante da magia segue normal. Requer 4º círculo."
       }
-    ]
+    ],
+    "key": 138
   },
   {
     "nome": "Sopro da Salvação",
@@ -4289,7 +4425,8 @@
         "custo": 4,
         "descricao": "remove todas as condições listadas, em vez de apenas uma."
       }
-    ]
+    ],
+    "key": 139
   },
   {
     "nome": "Telecinésia",
@@ -4311,7 +4448,8 @@
         "custo": 3,
         "descricao": "aumenta o tamanho máximo da criatura em uma categoria (para Grande, Enorme e Colossal) ou dobra a quantidade de espaços do objeto."
       }
-    ]
+    ],
+    "key": 140
   },
   {
     "nome": "Teletransporte",
@@ -4341,7 +4479,8 @@
         "custo": 9,
         "descricao": "muda a execução para ação completa, a duração para cena e adiciona sacrifício de 1 PM. Em vez do normal, você cria um círculo de 1,5m de diâmetro no chão, que transporta qualquer criatura que pisar nele. O destino é escolhido quando a magia é lançada e pode ser qualquer lugar, em qualquer mundo, sem a necessidade de testes, desde que seja conhecido por você. O círculo é tênue e praticamente invisível. Você pode marcá-lo de alguma forma (por exemplo, lançando-o sobre uma plataforma elevada). Se não fizer isso, alguém pode pisar nele por acidente. Junte isso a um destino hostil e você terá uma armadilha bastante eficaz! Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 141
   },
   {
     "nome": "Tentáculos de Trevas",
@@ -4367,7 +4506,8 @@
         "custo": 3,
         "descricao": "aumenta o dano dos tentáculos em +2d6."
       }
-    ]
+    ],
+    "key": 142
   },
   {
     "nome": "Transformação de Guerra",
@@ -4393,7 +4533,8 @@
         "custo": 2,
         "descricao": "adiciona componente material (uma barra de adamante no valor de T$ 100). Sua forma de combate ganha um aspecto metálico e sem expressões. Além do normal, você recebe resistência a dano 10 e imunidade a atordoamento e efeitos de cansaço, encantamento, metabolismo, trevas e veneno, e não precisa respirar."
       }
-    ]
+    ],
+    "key": 143
   },
   {
     "nome": "Viagem Arbórea",
@@ -4415,7 +4556,8 @@
         "custo": 2,
         "descricao": "muda o alcance para toque, o alvo para até cinco criaturas e a duração para instantânea. Os alvos entram em uma planta (de tamanho Médio ou maior) e saem em outra planta do mesmo tamanho a até 100km de distância, especificada em direção e distância aproximadas (como “50km ao norte”)."
       }
-    ]
+    ],
+    "key": 144
   },
   {
     "nome": "Vidência",
@@ -4432,7 +4574,8 @@
     "alcance": "ilimitado (veja texto)",
     "tradicao": "Universal",
     "escola": "Adivinhação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 145
   },
   {
     "nome": "Voo",
@@ -4462,7 +4605,8 @@
         "custo": 4,
         "descricao": "muda o alcance para curto e o alvo para até 10 criaturas. Requer 4° círculo."
       }
-    ]
+    ],
+    "key": 146
   },
   {
     "nome": "Âncora Dimensional",
@@ -4500,9 +4644,9 @@
         "custo": 9,
         "descricao": "muda o alcance para médio, a área para esfera de 3m de raio e o alvo para criaturas escolhidas. Cria um fio de energia (veja acima) que prende todos os alvos ao centro da área."
       }
-    ]
+    ],
+    "key": 147
   },
-
   {
     "nome": "Alterar Memória",
     "iconeURL": "./icons/brain.svg",
@@ -4527,7 +4671,8 @@
         "custo": 5,
         "descricao": "você pode alterar ou apagar as memórias das últimas 24 horas."
       }
-    ]
+    ],
+    "key": 148
   },
   {
     "nome": "Animar Objetos",
@@ -4549,7 +4694,8 @@
         "custo": 5,
         "descricao": "muda a duração para permanente e adiciona componente material (prataria no valor de T$ 1.000). Você pode ter um máximo de objetos animados igual à metade do seu nível."
       }
-    ]
+    ],
+    "key": 149
   },
   {
     "nome": "Assassino Fantasmagórico",
@@ -4566,7 +4712,8 @@
     "alcance": "longo",
     "tradicao": "Arcana",
     "escola": "Necromancia",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 150
   },
   {
     "nome": "Campo Antimagia",
@@ -4583,7 +4730,8 @@
     "alcance": "pessoal",
     "tradicao": "Arcana",
     "escola": "Abjuração",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 151
   },
   {
     "nome": "Conceder Milagre",
@@ -4605,7 +4753,8 @@
         "custo": 4,
         "descricao": "muda o círculo da magia concedida para 3º e a penalidade de PM para –6."
       }
-    ]
+    ],
+    "key": 152
   },
   {
     "nome": "Conjurar Elemental",
@@ -4631,7 +4780,8 @@
         "custo": 5,
         "descricao": "você convoca um elemental de cada tipo. Quando lança a magia, você pode escolher se cada elemental vai auxiliar você ou um aliado no alcance. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 153
   },
   {
     "nome": "Controlar a Gravidade",
@@ -4648,7 +4798,8 @@
     "alcance": "médio",
     "tradicao": "Arcana",
     "escola": "Transmutação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 154
   },
   {
     "nome": "Controlar o Clima",
@@ -4670,7 +4821,8 @@
         "custo": 1,
         "descricao": "(Apenas Druidas): muda o raio da área para 3km e duração para 1d4 dias."
       }
-    ]
+    ],
+    "key": 155
   },
   {
     "nome": "Círculo da Restauração",
@@ -4692,7 +4844,8 @@
         "custo": 2,
         "descricao": "aumenta a regeneração de PV em 1d8+1."
       }
-    ]
+    ],
+    "key": 156
   },
   {
     "nome": "Cólera de Azgher",
@@ -4722,7 +4875,8 @@
         "custo": 5,
         "descricao": "a luz purificadora do Deus-Sol dissipa todas as magias de necromancia ativas na área. Requer 5º círculo"
       }
-    ]
+    ],
+    "key": 157
   },
   {
     "nome": "Cúpula de Repulsão",
@@ -4748,7 +4902,8 @@
         "custo": 5,
         "descricao": "além do normal, criaturas afetadas também precisam fazer o teste de resistência se fizerem um ataque ou efeito à distância você. Se falharem, o efeito é desviado pela cúpula. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 158
   },
   {
     "nome": "Desintegrar",
@@ -4770,7 +4925,8 @@
         "custo": 4,
         "descricao": "aumenta o dano total em +2d12 e o dano mínimo em +1d12."
       }
-    ]
+    ],
+    "key": 159
   },
   {
     "nome": "Duplicata Ilusória",
@@ -4792,7 +4948,8 @@
         "custo": 3,
         "descricao": "cria uma cópia adicional."
       }
-    ]
+    ],
+    "key": 160
   },
   {
     "nome": "Explosão Caleidoscópica",
@@ -4809,7 +4966,8 @@
     "alcance": "curto",
     "tradicao": "Arcana",
     "escola": "Ilusão",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 161
   },
   {
     "nome": "Forma Etérea",
@@ -4831,7 +4989,8 @@
         "custo": 5,
         "descricao": "muda o alcance para toque e o alvo para até 5 criaturas voluntárias que estejam de mãos dadas. Depois que a magia é lançada, as criaturas podem soltar as mãos. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 162
   },
   {
     "nome": "Guardião Divino",
@@ -4848,7 +5007,8 @@
     "alcance": "curto",
     "tradicao": "Divina",
     "escola": "Convocação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 163
   },
   {
     "nome": "Libertação",
@@ -4886,7 +5046,8 @@
         "custo": 5,
         "descricao": "pode dissipar Aprisionamento."
       }
-    ]
+    ],
+    "key": 164
   },
   {
     "nome": "Ligação Sombria",
@@ -4908,7 +5069,8 @@
         "custo": 5,
         "descricao": "a magia não termina se o alvo chegar a 0 PV (o que significa que dano causado por essa magia pode matá-lo)."
       }
-    ]
+    ],
+    "key": 165
   },
   {
     "nome": "Manto do Cruzado",
@@ -4925,7 +5087,8 @@
     "alcance": "pessoal",
     "tradicao": "Divina",
     "escola": "Evocação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 166
   },
   {
     "nome": "Marionete",
@@ -4942,7 +5105,8 @@
     "alcance": "médio",
     "tradicao": "Arcana",
     "escola": "Encantamento",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 167
   },
   {
     "nome": "Muralha de Ossos",
@@ -4968,7 +5132,8 @@
         "custo": 5,
         "descricao": "o muro é feito de uma massa de esqueletos animados. Sempre que uma criatura iniciar seu turno adjacente ou escalando a muralha, deve fazer um teste de Reflexos. Se falhar fica agarrada, sofrendo os feitos normais de estar agarrada pela magia."
       }
-    ]
+    ],
+    "key": 168
   },
   {
     "nome": "Mão Poderosa de Talude",
@@ -4994,7 +5159,8 @@
         "custo": 5,
         "descricao": "muda o bônus adicional em Misticismo para +20. Requer 5º círculo."
       }
-    ]
+    ],
+    "key": 169
   },
   {
     "nome": "Premonição",
@@ -5020,7 +5186,8 @@
         "custo": 10,
         "descricao": "muda a duração para 1 dia."
       }
-    ]
+    ],
+    "key": 170
   },
   {
     "nome": "Raio Polar",
@@ -5046,7 +5213,8 @@
         "custo": 5,
         "descricao": "muda o alvo para área de esfera de 6m de raio. Em vez de um raio, você dispara uma esfera de gelo que explode, causando o efeito da magia em todas as criaturas na área."
       }
-    ]
+    ],
+    "key": 171
   },
   {
     "nome": "Relâmpago Flamejante de Reynard",
@@ -5068,7 +5236,8 @@
         "custo": 2,
         "descricao": "aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12."
       }
-    ]
+    ],
+    "key": 172
   },
   {
     "nome": "Sonho",
@@ -5094,7 +5263,8 @@
         "custo": 1,
         "descricao": "aumenta o número de alvos em +1. Todos os alvos compartilham um mesmo sonho (ou pesadelo) entre si e com você."
       }
-    ]
+    ],
+    "key": 173
   },
   {
     "nome": "Talho Invisível de Edauros",
@@ -5120,7 +5290,8 @@
         "custo": 2,
         "descricao": "muda o alvo para você, a duração para sustentada e o efeito para uma vez por rodada, como uma ação de movimento, você pode disparar uma lâmina de ar contra um alvo em alcance médio, causando 6d8 pontos de dano de corte (Fortitude reduz à metade)."
       }
-    ]
+    ],
+    "key": 174
   },
   {
     "nome": "Terremoto",
@@ -5137,7 +5308,8 @@
     "alcance": "longo",
     "tradicao": "Divina",
     "escola": "Evocação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 175
   },
   {
     "nome": "Transformação em Dragão",
@@ -5175,7 +5347,8 @@
         "custo": 3,
         "descricao": "o bônus em atributos se torna +4."
       }
-    ]
+    ],
+    "key": 176
   },
   {
     "nome": "Viagem Planar",
@@ -5197,7 +5370,8 @@
         "custo": 2,
         "descricao": "muda o alvo para até cinco criaturas voluntárias que você esteja tocando."
       }
-    ]
+    ],
+    "key": 177
   },
   {
     "nome": "Visão da Verdade",
@@ -5231,9 +5405,9 @@
         "custo": 4,
         "descricao": "além do normal, o alvo enxerga através de paredes e barreiras com 30cm de espessura ou menos (as paredes e barreiras parecem translúcidas)."
       }
-    ]
+    ],
+    "key": 178
   },
-
   {
     "nome": "Alterar Destino",
     "iconeURL": "./icons/all-seeing-eye.svg",
@@ -5249,7 +5423,8 @@
     "alcance": "pessoal",
     "tradicao": "Arcana",
     "escola": "Abjuração",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 179
   },
   {
     "nome": "Aprisionamento",
@@ -5266,7 +5441,8 @@
     "alcance": "curto",
     "tradicao": "Arcana",
     "escola": "Abjuração",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 180
   },
   {
     "nome": "Aura Divina",
@@ -5288,7 +5464,8 @@
         "custo": 2,
         "descricao": "aumenta os bônus na Defesa e em testes de resistência em +1."
       }
-    ]
+    ],
+    "key": 181
   },
   {
     "nome": "Barragem elemental de Vectorius",
@@ -5314,7 +5491,8 @@
         "custo": 5,
         "descricao": "muda o tipo de dano de todas as esferas para essência (mas elas ainda causam os outros efeitos como se seu tipo de dano não mudasse)."
       }
-    ]
+    ],
+    "key": 182
   },
   {
     "nome": "Buraco Negro",
@@ -5336,7 +5514,8 @@
         "custo": 5,
         "descricao": "muda o efeito para que você não seja afetado."
       }
-    ]
+    ],
+    "key": 183
   },
   {
     "nome": "Chuva de Meteoros",
@@ -5358,7 +5537,8 @@
         "custo": 2,
         "descricao": "aumenta o número de meteoros que atingem a área, o que aumenta o dano em +2d6 de impacto e +2d6 de fogo."
       }
-    ]
+    ],
+    "key": 184
   },
   {
     "nome": "Controlar o Tempo",
@@ -5375,7 +5555,8 @@
     "alcance": "veja texto",
     "tradicao": "Arcana",
     "escola": "Transmutação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 185
   },
   {
     "nome": "Deflagração de Mana",
@@ -5401,7 +5582,8 @@
         "custo": 5,
         "descricao": "afeta apenas criaturas a sua escolha."
       }
-    ]
+    ],
+    "key": 186
   },
   {
     "nome": "Desejo",
@@ -5418,7 +5600,8 @@
     "alcance": "veja texto",
     "tradicao": "Arcana",
     "escola": "Transmutação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 187
   },
   {
     "nome": "Engenho de Mana",
@@ -5444,7 +5627,8 @@
         "custo": 4,
         "descricao": "muda a duração para 1 dia."
       }
-    ]
+    ],
+    "key": 188
   },
   {
     "nome": "Fúria do Panteão",
@@ -5461,7 +5645,8 @@
     "alcance": "longo",
     "tradicao": "Divina",
     "escola": "Evocação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 189
   },
   {
     "nome": "Intervenção Divina",
@@ -5478,7 +5663,8 @@
     "alcance": "veja texto",
     "tradicao": "Divina",
     "escola": "Convocação",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 190
   },
   {
     "nome": "Invulnerabilidade",
@@ -5500,7 +5686,8 @@
         "custo": 5,
         "descricao": "muda o alcance para curto e o alvo para 1 criatura."
       }
-    ]
+    ],
+    "key": 191
   },
   {
     "nome": "Katana Celestial",
@@ -5526,7 +5713,8 @@
         "custo": 6,
         "descricao": "muda a área para uma linha de 120m ou quatro linhas de 30m em direções opostas, formando um  “X”."
       }
-    ]
+    ],
+    "key": 192
   },
   {
     "nome": "Legião",
@@ -5548,7 +5736,8 @@
         "custo": 1,
         "descricao": "aumenta o número de alvos em +1."
       }
-    ]
+    ],
+    "key": 193
   },
   {
     "nome": "Lágrimas de Wynna",
@@ -5574,7 +5763,8 @@
         "custo": 5,
         "descricao": "muda a execução para 1 dia e adiciona custo adicional (sacrifício de 1 PM). O alvo da magia precisa ser mantido em alcance curto do conjurador durante toda a execução. Ao término, faz um teste de Vontade. Se falhar, perde a habilidade de lançar magias arcanas permanentemente. Se passar, resiste, mas ainda pode ser alvo da magia no dia seguinte. Nenhum poder mortal é capaz de reverter essa perda. Os clérigos da deusa da Magia dizem que a deusa chora cada vez que este ritual é realizado."
       }
-    ]
+    ],
+    "key": 194
   },
   {
     "nome": "Mata-Dragão",
@@ -5596,7 +5786,8 @@
         "custo": 1,
         "descricao": "aumenta o dano em 1d12."
       }
-    ]
+    ],
+    "key": 195
   },
   {
     "nome": "Palavra Primordial",
@@ -5613,7 +5804,8 @@
     "alcance": "curto",
     "tradicao": "Universal",
     "escola": "Encantamento",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 196
   },
   {
     "nome": "Possessão",
@@ -5643,7 +5835,8 @@
         "custo": 5,
         "descricao": "muda a duração para permanente, mas destrói seu corpo original no processo. Uma criatura possuída pode fazer um teste de Vontade no começo do dia para retomar seu corpo. Se passar, recobra a consciência (e a sua própria consciência fica inerte). O teste se repete no início de cada dia. Se o corpo de uma criatura possuída morrer e houver outra criatura em alcance curto, você pode tentar possuí-la como uma reação. Enquanto houver novos corpos para possuir, você é imortal!"
       }
-    ]
+    ],
+    "key": 197
   },
   {
     "nome": "Projetar Consciência",
@@ -5665,7 +5858,8 @@
         "custo": 10,
         "descricao": "além do normal, sua projeção é capaz de lançar magias que não precisem de componentes materiais e tenham duração diferente de sustentada. Sua forma fantasmagórica funciona como na magia Forma Etérea, sendo afetada por magias de abjuração e essência, mas as magias que ela lança podem afetar criaturas corpóreas."
       }
-    ]
+    ],
+    "key": 198
   },
   {
     "nome": "Reanimação Impura",
@@ -5682,7 +5876,8 @@
     "alcance": "toque",
     "tradicao": "Divina",
     "escola": "Necromancia",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 199
   },
   {
     "nome": "Roubar a Alma",
@@ -5708,7 +5903,8 @@
         "custo": 10,
         "descricao": "como uma reação ao lançar esta magia, você possui o corpo sem alma do alvo, como na magia Possessão (mesmo que não conheça a magia)."
       }
-    ]
+    ],
+    "key": 200
   },
   {
     "nome": "Réquiem",
@@ -5725,7 +5921,8 @@
     "alcance": "curto",
     "tradicao": "Arcana",
     "escola": "Ilusão",
-    "aprimoramentos": []
+    "aprimoramentos": [],
+    "key": 201
   },
   {
     "nome": "Segunda Chance",
@@ -5755,7 +5952,8 @@
         "custo": 5,
         "descricao": "muda o alvo para uma criatura que tenha morrido há até uma rodada. Esta magia pode curá-la."
       }
-    ]
+    ],
+    "key": 202
   },
   {
     "nome": "Semiplano",
@@ -5781,7 +5979,8 @@
         "custo": 5,
         "descricao": "muda a duração para permanente e adiciona componente material (maquete do semiplano feito de materiais preciosos no valor de T$ 5.000). Você pode lançar a magia diversas vezes para aumentar as dimensões do semiplano em +30m de lado a cada vez."
       }
-    ]
+    ],
+    "key": 203
   },
   {
     "nome": "Sombra Assassina",
@@ -5803,7 +6002,8 @@
         "custo": 10,
         "descricao": "muda o alvo para criaturas escolhidas na área."
       }
-    ]
+    ],
+    "key": 204
   },
   {
     "nome": "Toque da Morte",
@@ -5829,6 +6029,7 @@
         "custo": 10,
         "descricao": "muda o alcance para curto e o alvo para inimigos no alcance. Em vez de tocar no alvo, você dispara raios púrpuras da ponta de seus dedos."
       }
-    ]
+    ],
+    "key": 205
   }
 ]

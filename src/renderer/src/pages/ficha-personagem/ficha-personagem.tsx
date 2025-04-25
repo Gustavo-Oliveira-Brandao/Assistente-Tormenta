@@ -138,6 +138,7 @@ const FichaPersonagem = (): JSX.Element => {
                         titulo="Adquirir poderes"
                         onClose={() => dispatch(fecharModal())}
                         height={'400px'}
+                        width="fit-content"
                       >
                         {poderesDefault &&
                           poderesDefault.map((poder, index) => (
@@ -185,6 +186,7 @@ const FichaPersonagem = (): JSX.Element => {
                         titulo="Adquirir magias"
                         onClose={() => dispatch(fecharModal())}
                         height="400px"
+                        width="fit-content"
                       >
                         {magiasDefault &&
                           magiasDefault.map((magia, index) => (

@@ -6,4 +6,3 @@ Para executar o projeto basta instalar a dependências com "npm install" e execu
 
 Tormenta 20 pertence a Jambo Editora. Todos os direitos são reservados a editora.
 
-:feat:

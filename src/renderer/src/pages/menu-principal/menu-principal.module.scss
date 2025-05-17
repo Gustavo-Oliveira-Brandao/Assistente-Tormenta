@@ -1,0 +1,105 @@
+@use '@renderer/assets/variables.scss';
+
+.mainMenu {
+  background: url('./background.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  .backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .screen {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 90px;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 300px;
+      width: fit-content;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  }
+}
+
+.selecaoPersonagem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .personagem {
+    border-radius: 5px;
+    width: 450px;
+    height: 70px;
+    background-color: variables.$secondary-red;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+
+    .nivel {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      font-size: 18px;
+    }
+
+    img {
+      width: 95px;
+      height: 100%;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .detalhesPersonagem {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h2 {
+        font-size: 20px;
+      }
+
+      .statusPersonagem {
+        display: flex;
+        gap: 10px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

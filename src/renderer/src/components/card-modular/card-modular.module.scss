@@ -1,0 +1,53 @@
+@use '@renderer/assets/variables.scss';
+
+.card {
+  background-color: variables.$primary-color;
+  border: 1px solid variables.$secondary-color;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cardTitulo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+      }
+
+      .cardInfo {
+        h2 {
+          font-size: 17px;
+          cursor: pointer;
+        }
+        h2:hover {
+          color: variables.$highlight-color;
+        }
+      }
+    }
+  }
+
+  .cardConteudo {
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+}
+
+.minimalista {
+  .cardHeader {
+    .cardTitulo {
+      .cardInfo {
+        h2 {
+          color: variables.$red;
+        }
+      }
+    }
+  }
+}

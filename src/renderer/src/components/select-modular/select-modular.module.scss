@@ -1,0 +1,14 @@
+@use '@renderer/assets/variables.scss';
+
+.select {
+  background-color: variables.$secondary-color;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px;
+  height: 2rem;
+
+  option {
+    background-color: variables.$secondary-color;
+  }
+}

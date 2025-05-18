@@ -1,0 +1,272 @@
+[
+  {
+    "nome": "acrobacia",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "destreza",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": true,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "adestramento",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "carisma",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "atletismo",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "forca",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "atuacao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "carisma",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "cavalgar",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "destreza",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "cura",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "sabedoria",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "diplomacia",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "carisma",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "enganacao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "carisma",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "fortitude",
+    "treinamento": "destreinado",
+    "categoria": "testeResistencia",
+    "atributo": "constituicao",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "furtividade",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "destreza",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": true,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "guerra",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "inteligencia",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "iniciativa",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "destreza",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "intimidacao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "carisma",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "intuicao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "sabedoria",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "investigacao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "inteligencia",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "jogatina",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "carisma",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "ladinagem",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "destreza",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": true,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "luta",
+    "treinamento": "destreinado",
+    "categoria": "combate",
+    "atributo": "forca",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "misticimsmo",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "inteligencia",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "nobreza",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "inteligencia",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "percepcao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "sabedoria",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "pilotagem",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "destreza",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "pontaria",
+    "treinamento": "destreinado",
+    "categoria": "combate",
+    "atributo": "destreza",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "reflexos",
+    "treinamento": "destreinado",
+    "categoria": "testeResistencia",
+    "atributo": "destreza",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "religiao",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "sabedoria",
+    "requerTreinamento": true,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "sobrevivencia",
+    "treinamento": "destreinado",
+    "categoria": "geral",
+    "atributo": "sabedoria",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  },
+  {
+    "nome": "vontade",
+    "treinamento": "destreinado",
+    "categoria": "testeResistencia",
+    "atributo": "sabedoria",
+    "requerTreinamento": false,
+    "sofrePenalidadeArmadura": false,
+    "descricao": "",
+    "bonus": []
+  }
+]

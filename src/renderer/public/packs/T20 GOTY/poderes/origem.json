@@ -1,0 +1,527 @@
+[
+  {
+    "nome": "membro da igreja",
+    "descricao": "Você consegue hospedagem e informação em qualquer templo de sua divindade, para você e seus aliados.",
+    "iconeURL": "./icons/prayer.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "acólito"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 419
+  },
+  {
+    "nome": "amigo especial",
+    "descricao": "Você recebe +5 em testes de Adestramento com animais comuns. Além disso, possui um animal de estimação que o auxilia e o acompanha em suas aventuras. Em termos de jogo, é um aliado que fornece +2 em uma perícia a sua escolha (exceto Luta ou Pontaria e aprovada pelo mestre) e não conta em seu limite de aliados.",
+    "iconeURL": "./icons/sitting-dog.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "amigo dos animais"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 420
+  },
+  {
+    "nome": "lembranças graduais",
+    "descricao": "Durante suas aventuras, em determinados momentos a critério do mestre, você pode fazer um teste de Sabedoria (CD 10) para reconhecer pessoas, criaturas ou lugares que tenha encontrado antes de perder a memória.",
+    "iconeURL": "./icons/brain.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "amnésico"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 421
+  },
+  {
+    "nome": "sangue azul",
+    "descricao": "Você tem alguma influência política, suficiente para ser tratado com mais leniência pela guarda, conseguir uma audiência com o nobre local etc.",
+    "iconeURL": "./icons/blood.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "aristocrata"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 422
+  },
+  {
+    "nome": "frutos do trabalho",
+    "descricao": "Quando passa em um teste de Ofício para Sustento, você recebe o dobro do dinheiro.",
+    "iconeURL": "./icons/mining-helmet.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "artesão"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 423
+  },
+  {
+    "nome": "dom artístico",
+    "descricao": "Quando usa a perícia Atuação para fazer uma apresentação e passa no teste, você ganha o dobro de tibares.",
+    "iconeURL": "./icons/palette.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "artista"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 424
+  },
+  {
+    "nome": "esse cheiro...",
+    "descricao": "Você recebe +2 em Fortitude e passa automaticamente em testes de Ofício (alquimia) para identificar itens alquímicos.",
+    "iconeURL": "./icons/nose-side.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "assistente de laborátorio"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 425
+  },
+  {
+    "nome": "à prova de tudo",
+    "descricao": "Você não sofre penalidade em deslocamento e Sobrevivência por clima ruim e por terreno difícil natural.",
+    "iconeURL": "./icons/icicles-aura.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "batedor"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 426
+  },
+  {
+    "nome": "confissão",
+    "descricao": "Você pode usar Intimidação para obter informação sem custo (veja Investigação).",
+    "iconeURL": "./icons/angry-eyes.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "capanga"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 427
+  },
+  {
+    "nome": "alpinista social",
+    "descricao": "Você pode substituir testes de Diplomacia por testes de Enganação.",
+    "iconeURL": "./icons/public-speaker.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "charlatão"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 428
+  },
+  {
+    "nome": "truque de mágica",
+    "descricao": "Você pode lançar Explosão de Chamas, Hipnotismo e Transmutar Objetos, mas apenas com o aprimoramento Truque. Esta não é uma habilidade mágica — os efeitos provêm de truques e prestidigitação.",
+    "iconeURL": "./icons/magic-swirl.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "circense"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 429
+  },
+  {
+    "nome": "punguista",
+    "descricao": "Você pode fazer um teste de Ladinagem para Sustento, como a perícia Ofício.",
+    "iconeURL": "./icons/robber.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "criminoso"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 430
+  },
+  {
+    "nome": "médico de campo",
+    "descricao": "Quando você faz primeiros socorros em um personagem com 0 ou menos PV, ele recupera 1d6 PV.",
+    "iconeURL": "./icons/healing.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "curandeiro"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 431
+  },
+  {
+    "nome": "busca interior",
+    "descricao": "Quando você e seus companheiros estão diante de um mistério, incapazes de prosseguir, você pode gastar 1 PM para meditar sozinho durante algum tempo e receber uma dica do mestre.",
+    "iconeURL": "./icons/meditation.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "eremita"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 432
+  },
+  {
+    "nome": "desejo de liberdade",
+    "descricao": "Ninguém voltará a torná-lo um escravo! Você recebe +5 em testes contra efeitos que possam aprisioná-lo, como a manobra agarrar ou a magia Imobilizar.",
+    "iconeURL": "./icons/revolt.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "escravo"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 433
+  },
+  {
+    "nome": "palpite fundamentado",
+    "descricao": "Você pode gastar 2 PM para substituir um teste de qualquer perícia originalmente baseada em Inteligência ou Sabedoria por um teste de Conhecimento.",
+    "iconeURL": "./icons/think.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "estudioso"
+      }
+    ],
+    "tempoExecucao": "ação livre",
+    "subEfeitos": [],
+    "key": 434
+  },
+  {
+    "nome": "água no feijão",
+    "descricao": "Você gasta apenas metade da matéria-prima para testes de Ofício (cozinheiro).",
+    "iconeURL": "./icons/chef-toque.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "fazendeiro"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 435
+  },
+  {
+    "nome": "cultura exótica",
+    "descricao": "Por sua diferente visão de mundo, você encontra soluções inesperadas. Você pode gastar 1 PM para fazer um teste de perícia somente treinada, mesmo sem ser treinado na perícia.",
+    "iconeURL": "./icons/greek-temple.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "forasteiro"
+      }
+    ],
+    "tempoExecucao": "ação livre",
+    "subEfeitos": [],
+    "key": 436
+  },
+  {
+    "nome": "pão e circo",
+    "descricao": "Por seu treino em combates de exibição, você sabe “bater sem machucar”. Pode escolher causar dano não letal sem sofrer a penalidade de –5.",
+    "iconeURL": "./icons/coliseum.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "gladiador"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 437
+  },
+  {
+    "nome": "detetive",
+    "descricao": "Você pode substituir testes de Percepção e Intuição por testes de Investigação.",
+    "iconeURL": "./icons/sherlock-holmes.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "guarda"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 438
+  },
+  {
+    "nome": "coração heróico",
+    "descricao": "Você recebe +3 pontos de mana. Quando atinge um novo patamar (no 5º, 11º e 17º níveis), recebe +3 PM.",
+    "iconeURL": "./icons/heart-wings.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "herói camponês"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 439
+  },
+  {
+    "nome": "passagem de navio",
+    "descricao": "Você consegue transporte marítimo para você e seus companheiros, sem custos, desde que todos paguem com trabalho (passar em pelo menos um teste de perícia adequado durante a viagem).",
+    "iconeURL": "./icons/galley.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "marujo"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 440
+  },
+  {
+    "nome": "vendedor de carcaças",
+    "descricao": "Você pode extrair recursos de criaturas em um minuto, em vez de uma hora, e recebe +5 no teste.",
+    "iconeURL": "./icons/trade.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "mateiro"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 441
+  },
+  {
+    "nome": "rede de contatos",
+    "descricao": "Graças à influência de sua guilda, você pode usar Diplomacia para obter informação sem custo (veja Investigação).",
+    "iconeURL": "./icons/family-tree.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "membro da guila"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 442
+  },
+  {
+    "nome": "negociação",
+    "descricao": "Você pode vender itens 10% mais caro (não cumulativo com barganha).",
+    "iconeURL": "./icons/gold-bar.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "mercador"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 443
+  },
+  {
+    "nome": "escavador",
+    "descricao": "Você se torna proficiente em picareta e não sofre penalidade em deslocamento por terreno difícil em masmorras e subterrâneos.",
+    "iconeURL": "./icons/miner.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "minerador"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 444
+  },
+  {
+    "nome": "mochileiro",
+    "descricao": "Você não sofre a penalidade de armadura e a redução de deslocamento por transportar carga pesada.",
+    "iconeURL": "./icons/backpack.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "nômade"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 445
+  },
+  {
+    "nome": "quebra-galho",
+    "descricao": "Em cidades ou metrópoles, você pode comprar qualquer item não superior ou mágico por metade do custo normal. Esses itens não podem ser vendidos (são velhos, sujos, furtados...).",
+    "iconeURL": "./icons/village.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "pivete"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 446
+  },
+  {
+    "nome": "estoico",
+    "descricao": "Sua recuperação de pontos de vida e pontos de mana com descanso aumenta em uma categoria: normal em condições ruins, confortável em condições normais e assim por diante.",
+    "iconeURL": "./icons/bed.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "refugiado"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 447
+  },
+  {
+    "nome": "antigo mestre",
+    "descricao": "Você ainda mantém contato com o herói que costumava servir. A critério do mestre, em uma emergência, você pode receber alguma ajuda — ou então uma bela bronca por esperar que heróis poderosos resolvam o seu problema!",
+    "iconeURL": "./icons/wizard-face.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "seguidor"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 448
+  },
+  {
+    "nome": "vida rústica",
+    "descricao": "Você come coisas que fariam um avestruz vomitar e também consegue descansar nos lugares mais desconfortáveis (mesmo dormindo ao relento, sua recuperação de PV e PM nunca é inferior a seu próprio nível).",
+    "iconeURL": "./icons/wood-cabin.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "selvagem"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 449
+  },
+  {
+    "nome": "influência militar",
+    "descricao": "Você fez amigos nas forças armadas. Onde houver acampamentos ou bases militares, você pode conseguir hospedagem e informações para você e seus aliados.",
+    "iconeURL": "./icons/medieval-pavilion.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "soldado"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 450
+  },
+  {
+    "nome": "gororoba",
+    "descricao": "Você prepara comidas em uma categoria de tempo menor (uma hora para comidas de até T$ 10, um dia para comidas de até T$ 100 etc.). Você ainda pode sofrer uma penalidade de –5 no teste de Ofício para diminuir o tempo em mais uma categoria (uma hora baixa para dez minutos).",
+    "iconeURL": "./icons/camp-cooking-pot.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "taverneiro"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 451
+  },
+  {
+    "nome": "esforçado",
+    "descricao": "Você não teme trabalho duro, nem prazos apertados. Você recebe um bônus de +2 em todos os testes de perícias estendidos.",
+    "iconeURL": "./icons/miner.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "trabalhador"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 452
+  },
+  {
+    "nome": "herança",
+    "descricao": "Você herdou um item de preço de até T$ 1.000. Você pode escolher este poder duas vezes, para um item de até T$ 2.000.",
+    "iconeURL": "./icons/gold-stack.svg",
+    "preRequisitos": "",
+    "categoria": "origem",
+    "tags": [
+      {
+        "label": "herdeiro"
+      }
+    ],
+    "tempoExecucao": "passivo",
+    "subEfeitos": [],
+    "key": 453
+  }
+]

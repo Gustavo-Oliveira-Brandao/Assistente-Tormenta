@@ -1,0 +1,36 @@
+{
+  "key": 1,
+  "nome": "humano",
+  "descricao": "O povo mais numeroso em Arton, humanos são considerados os escolhidos dos deuses, aqueles que governam o mundo. Em sua variedade e adaptabilidade, são encontrados em quase todos os pontos do continente – dos vales férteis do Reinado às vastidões áridas do Deserto da Perdição. São exploradores e desbravadores ambiciosos, sempre buscando algo além.",
+  "atributos": [
+    {
+      "atributo": "livre",
+      "valor": 1
+    },
+    {
+      "atributo": "livre",
+      "valor": 1
+    },
+    {
+      "atributo": "livre",
+      "valor": 1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "versátil",
+      "descricao": "Você se torna treinado em duas perícias à sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral à sua escolha.",
+      "iconeURL": "./icons/contortionist.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "humano"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 1
+    }
+  ]
+}

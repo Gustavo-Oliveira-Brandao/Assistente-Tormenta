@@ -1,0 +1,81 @@
+{
+  "key": 11,
+  "nome": "kliren",
+  "descricao": "Estes visitantes de outro mundo seriam uma combinação entre humanos e gnomos — mas, afinal, o que são gnomos? São uma raça que talvez existisse em Arton, não fosse o envolvimento criminoso de seu deus Tilliann na criação da própria Tormenta. Seja como for, os kliren somam a alta inteligência gnômica e a curiosidade humana, resultando em seres de extrema engenhosidade, criatividade e talento com aparatos mecânicos. Seriam capazes de grandes feitos, talvez até dominar Arton, não fossem a impulsividade e imprudência que por vezes abreviam suas vidas...",
+  "atributos": [
+    {
+      "atributo": "inteligencia",
+      "valor": 2
+    },
+    {
+      "atributo": "carisma",
+      "valor": 1
+    },
+    {
+      "atributo": "forca",
+      "valor": -1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "hibrido",
+      "descricao": "Sua natureza multifacetada fez com que você aprendesse conhecimentos variados. Você se torna treinado em uma perícia a sua escolha (não precisa ser da sua classe).",
+      "iconeURL": "./icons/enlightenment.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "kliren"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 32
+    },
+    {
+      "nome": "engenhosidade",
+      "descricao": "Quando faz um teste de perícia, você pode gastar 2 PM para somar sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque. Caso receba esta habilidade novamente, seu custo é reduzido em –1 PM.",
+      "iconeURL": "./icons/smart.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "kliren"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 33
+    },
+    {
+      "nome": "ossos frágeis",
+      "descricao": "Você sofre 1 ponto de dano adicional por dado de dano de impacto. Por exemplo, se for atingido por uma clava (dano 1d6), sofre 1d6+1 pontos de dano. Se cair de 3m de altura (dano 2d6), sofre 2d6+2 pontos de dano.",
+      "iconeURL": "./icons/broken-bone.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "kliren"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 34
+    },
+    {
+      "nome": "vanguardista",
+      "descricao": "Você recebe proficiência em armas de fogo e +2 em Ofício (um qualquer, a sua escolha).",
+      "iconeURL": "./icons/cannon-shot.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "kliren"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 35
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "key": 4,
+  "nome": "elfo",
+  "descricao": "Elfos são seres feitos para a beleza e para a guerra, tão habilidosos com magia quanto com espadas e arcos. Elegantes, astutos, de vidas quase eternas, parecem superiores aos humanos em tudo. Poderiam ter governado toda Arton, não fosse a arrogância herdada de sua deusa. Com a queda de Glórienn, os elfos se tornaram um povo sem uma deusa. Um povo independente. Enquanto alguns veem a falta de uma divindade como uma tragédia, outros acreditam que, pela primeira vez na história, são livres.",
+  "atributos": [
+    {
+      "atributo": "inteligencia",
+      "valor": 2
+    },
+    {
+      "atributo": "destreza",
+      "valor": 1
+    },
+    {
+      "atributo": "constituicao",
+      "valor": -1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "graça de glórienn",
+      "descricao": "Seu deslocamento é 12m (em vez de 9m).",
+      "iconeURL": "./icons/sprint.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "elfo"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 9
+    },
+    {
+      "nome": "sangue mágico",
+      "descricao": "Você recebe +1 ponto de mana por nível.",
+      "iconeURL": "./icons/bleeding-heart.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "elfo"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 10
+    },
+    {
+      "nome": "sentidos élficos",
+      "descricao": "Você recebe visão na penumbra e +2 em Misticismo e Percepção.",
+      "iconeURL": "./icons/awareness.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "elfo"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 11
+    }
+  ]
+}

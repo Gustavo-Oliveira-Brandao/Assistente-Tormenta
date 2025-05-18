@@ -1,0 +1,50 @@
+{
+  "key": 17,
+  "nome": "suraggel sulfure",
+  "descricao": "Descendentes de extraplanares divinos, esta raça é formada por seres com traços angelicais ou demoníacos — ou ambos. Por serem ligados às forças opostas da luz e trevas, suraggel têm traços diferentes quando orientados para seu lado celestial, sendo então conhecidos como aggelus; ou para o lado abissal, assim sendo chamados sulfure. Sua natureza em geral combina com a ascendência, lembrando habitantes dos Mundos dos Deuses, mas eles também podem ser surpreendentes e contraditórios: não se espante muito ao conhecer um aggelus ladino ou um sulfure paladino.",
+  "atributos": [
+    {
+      "atributo": "destreza",
+      "valor": 2
+    },
+    {
+      "atributo": "inteligencia",
+      "valor": 1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "herança divina",
+      "descricao": "Você é uma criatura do tipo espírito e recebe visão no escuro.",
+      "iconeURL": "./icons/angel-outfit.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "suraggel aggelus"
+        },
+        {
+          "label": "suraggel sulfure"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 9876
+    },
+    {
+      "nome": "sombras profanas (sulfure)",
+      "descricao": "Você recebe +2 em Enganação e Furtividade. Além disso, pode lançar Escuridão (como uma magia divina; atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "iconeURL": "./icons/evil-eyes.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "suraggel sulfure"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 51
+    }
+  ]
+}

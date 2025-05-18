@@ -1,0 +1,62 @@
+{
+  "key": 12,
+  "nome": "medusa",
+  "descricao": "Ainda que estas criaturas reclusas sejam famosas por transformar suas vítimas em pedra com um simples olhar, apenas as mais antigas e poderosas o fazem. Jovens medusas por vezes rejeitam a solidão e crueldade racial, aventurando-se no Reinado, até mesmo fazendo amigos ou integrando equipes de heróis. Conseguem se fazer passar por mulheres humanas, quando escondem o cabelo feito de serpentes. O único povo que não teme medusas são os anões, que as consideram belas musas.",
+  "atributos": [
+    {
+      "atributo": "destreza",
+      "valor": 2
+    },
+    {
+      "atributo": "carisma",
+      "valor": 1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "cria de megalokk",
+      "descricao": "Você é uma criatura do tipo monstro e recebe visão no escuro.",
+      "iconeURL": "./icons/monster-grasp.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "medusa"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 36
+    },
+    {
+      "nome": "natureza venenosa",
+      "descricao": "Você recebe resistência a veneno +5 e pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno.",
+      "iconeURL": "./icons/poison-bottle.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "medusa"
+        }
+      ],
+      "tempoExecucao": "acao de movimento",
+      "subEfeitos": [],
+      "key": 37
+    },
+    {
+      "nome": "olhar atordoante",
+      "descricao": "Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se a criatura falhar, fica atordoada por uma rodada (apenas uma vez por cena).",
+      "iconeURL": "./icons/medusa-head.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "medusa"
+        }
+      ],
+      "tempoExecucao": "ação de movimento",
+      "subEfeitos": [],
+      "key": 38
+    }
+  ]
+}

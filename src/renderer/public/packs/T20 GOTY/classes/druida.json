@@ -1,0 +1,516 @@
+{
+  "key": 8,
+  "nome": "druida",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "completa",
+  "progressao": [
+    {
+      "nivel": 1,
+      "poderes": [
+        {
+          "nome": "devoto fiel",
+          "descricao": "Você se torna devoto de um deus disponível para druidas (Allihanna, Megalokk ou Oceano). Ao contrário de devotos normais, você recebe dois poderes concedidos por se tornar devoto, em vez de apenas um.",
+          "iconeURL": "./icons/prayer.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "druida"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 222
+        },
+        {
+          "nome": "empatia selvagem",
+          "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e persuasão.",
+          "iconeURL": "./icons/paw-heart.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "druida"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 223
+        },
+        {
+          "nome": "magias",
+          "descricao": "Escolha três escolas de magia. Uma vez feita, essa escolha não pode ser mudada.\nVocê pode lançar magias divinas de 1º círculo que pertençam a essas escolas.\nÀ medida que sobe de nível, pode lançar magias de círculos maiores (2º círculo no 6º nível,\n3º círculo no 10º nível e 4º círculo no 14º nível).\nVocê começa com duas magias de 1º círculo.\nA cada nível par (2º, 4º etc.), aprende uma magia de qualquer círculo e escola que possa lançar.\nSeu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM.",
+          "iconeURL": "./icons/paw-heart.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "druida"
+            },
+            {
+              "label": "habilidade de conjuração"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 8943
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "poderes": [
+        {
+          "nome": "caminho dos ermos",
+          "descricao": "No 2º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastreá-lo aumenta em +10. Esta habilidade só funciona em terrenos naturais.",
+          "iconeURL": "./icons/trail.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "druida"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 244
+        }
+      ]
+    },
+    {
+      "nivel": 20,
+      "poderes": [
+        {
+          "nome": "força da natureza",
+          "descricao": "No 20º nível, você diminui o custo de todas as suas magias em –2 PM e aumenta a CD delas em +2. Os bônus dobram (–4 PM e +4 na CD) se você estiver em terrenos naturais.",
+          "iconeURL": "./icons/tornado.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "druida"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 245
+        }
+      ]
+    }
+  ],
+  "poderesClasse": [
+    {
+      "nome": "aspecto do inverno",
+      "descricao": "Você aprende e pode lançar uma magia de convocação ou evocação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, recebe redução de frio 5 e suas magias que causam dano de frio causam +1 ponto de dano por dado.",
+      "iconeURL": "./icons/snowing.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 224
+    },
+    {
+      "nome": "aspecto do outono",
+      "descricao": "Você aprende e pode lançar uma magia de necromancia, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para impor uma penalidade de –2 nos testes de resistência de todos os inimigos em alcance curto até o início do seu próximo turno.",
+      "iconeURL": "./icons/leaf-swirl.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 225
+    },
+    {
+      "nome": "aspecto da primavera",
+      "descricao": "Você aprende e pode lançar uma magia de encantamento ou ilusão, arcana ou divina, de qualquer círculo que possa lançar. Além disso, escolha uma quantidade de magias igual ao seu Carisma (mínimo 1). O custo dessas magias é reduzido em −1 PM.",
+      "iconeURL": "./icons/butterfly-flower.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 226
+    },
+    {
+      "nome": "aspecto do verão",
+      "descricao": "Você aprende e pode lançar uma magia de transmutação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para cobrir uma de suas armas com chamas até o fim da cena. A arma causa +1d6 pontos de dano de fogo. Sempre que você acertar um ataque com ela, recebe 1 PM temporário. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível e eles desaparecem no final da cena.",
+      "iconeURL": "./icons/sun.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 227
+    },
+    {
+      "nome": "companheiro animal",
+      "descricao": "Você recebe um companheiro animal. Veja o quadro para detalhes. Você pode escolher este poder quantas vezes quiser, mas deve escolher companheiros diferentes e ainda está sujeito ao limite de parceiros que pode ter.",
+      "iconeURL": "./icons/sitting-dog.svg",
+      "preRequisitos": "Car 1, treinado em Adestramento.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [
+        {
+          "nome": "Ajudante:",
+          "descricao": "Corvo, macaco, raposa, serpente ou outro animal ágil ou esperto."
+        },
+        {
+          "nome": "Assassino:",
+          "descricao": "Lince, onça ou outro animal treinado para abater presas."
+        },
+        {
+          "nome": "Atirador:",
+          "descricao": "Águia, falcão ou outro animal capaz de mergulhar rapidamente nos alvos de seus ataques à distância."
+        },
+        {
+          "nome": "Fortão:",
+          "descricao": "Crocodilo, javali, leão, lobo ou outro animal capaz de lutar ao seu lado."
+        },
+        {
+          "nome": "Guardião:",
+          "descricao": "Alce, cão, coruja, tartaruga, urso ou outro animal pesado ou atento."
+        },
+        {
+          "nome": "Perseguidor:",
+          "descricao": "Gambá, sabujo ou outro animal farejador."
+        }
+      ],
+      "key": 228
+    },
+    {
+      "nome": "companheiro animal aprimorado",
+      "descricao": "Escolha um de seus companheiros animais. Ele recebe um segundo tipo, ganhando os bônus de seu nível. Por exemplo, se você tiver um companheiro guardião veterano, pode adicionar o tipo fortão a ele, tornando-o um guardião fortão veterano que concede +3 na Defesa e +1d12 em uma rolagem de dano corpo a corpo.",
+      "iconeURL": "./icons/sitting-dog.svg",
+      "preRequisitos": "Companheiro Animal, 6º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 229
+    },
+    {
+      "nome": "companheiro animal lendário",
+      "descricao": "Escolha um de seus companheiros animais. Esse animal passa a dobrar os bônus concedidos de seu tipo original.",
+      "iconeURL": "./icons/sitting-dog.svg",
+      "preRequisitos": "Companheiro Animal, 18º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 230
+    },
+    {
+      "nome": "companheiro animal mágico",
+      "descricao": "Escolha um de seus companheiros animais. Ele recebe um segundo tipo diferente, entre adepto, destruidor, magivocador ou médico, ganhando os bônus de seu nível.",
+      "iconeURL": "./icons/sitting-dog.svg",
+      "preRequisitos": "Companheiro Animal, 8º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 231
+    },
+    {
+      "nome": "coração da selva",
+      "descricao": "A CD para resistir a seus efeitos de veneno aumenta em +2 e estes efeitos causam +1 de perda de vida por dado.",
+      "iconeURL": "./icons/wrapped-heart.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 232
+    },
+    {
+      "nome": "espírito dos equinócios",
+      "descricao": "Você pode gastar 4 PM para ficar em equilíbrio com o mundo. Até o final da cena, quando rola um dado, pode rolar novamente qualquer resultado 1.",
+      "iconeURL": "./icons/sun.svg",
+      "preRequisitos": "Aspecto da Primavera, Aspecto do Outono, 10º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 233
+    },
+    {
+      "nome": "força dos penhascos",
+      "descricao": "Você recebe +2 em Fortitude. Quando sofre dano enquanto em contato com o solo ou uma superfície de pedra, pode gastar uma quantidade de PM limitada por sua Sabedoria. Para cada PM gasto, reduz esse dano em 10.",
+      "iconeURL": "./icons/sea-cliff.svg",
+      "preRequisitos": "4º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 234
+    },
+    {
+      "nome": "forma primal",
+      "descricao": "Quando usa Forma Selvagem, você pode se transformar em uma fera primal. Você recebe os benefícios de dois tipos de animais (bônus iguais não se acumulam; use o que você quiser de cada tipo).",
+      "iconeURL": "./icons/steel-claws.svg",
+      "preRequisitos": "18º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 235
+    },
+    {
+      "nome": "forma selvagem",
+      "descricao": "Você pode se transformar em animais. Você pode gastar uma ação completa e 3 PM para adquirir a forma de uma criatura selvagem. Em termos de jogo, quando usa esta habilidade você adquire os modificadores de uma das formas abaixo. Características não mencionadas não mudam. Na forma selvagem você não pode falar, empunhar itens ou lançar magias. Seu equipamento desaparece (mas você mantém os benefícios de quaisquer itens vestidos), ressurgindo quando você volta ao normal. Outras criaturas podem fazer um teste de Percepção oposto pelo seu teste de Enganação para perceber que você não é um animal comum (você recebe +10 neste teste). Cada transformação dura pelo tempo que você quiser, mas você reverte à forma normal se ficar inconsciente ou morrer.",
+      "iconeURL": "./icons/bear-head.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [
+        {
+          "nome": "forma selvagem ágil",
+          "descricao": "Você recebe Destreza +2 e duas armas naturais que causam 1d6 pontos de dano e possuem margem de ameaça 19. Se atacar com ambas, sofre –2 em todos os testes de ataque até o seu próximo turno."
+        },
+        {
+          "nome": "forma selvagem feroz",
+          "descricao": "Você recebe Força +3, +2 na Defesa e uma arma natural que causa 1d8 pontos de dano."
+        },
+        {
+          "nome": "forma selvagem resistente",
+          "descricao": "Você recebe +5 na Defesa, redução de dano 5 e uma arma natural que causa 1d6 pontos de dano."
+        },
+        {
+          "nome": "forma selvagem sorrateira",
+          "descricao": "Você recebe Destreza +2 e uma arma natural que causa 1d4 pontos de dano. Seu tamanho muda para Pequeno (+2 em Furtividade, –2 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem veloz",
+          "descricao": "Você recebe Destreza +2, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 15m, deslocamento de escalada 9m ou deslocamento de natação 9m."
+        }
+      ],
+      "key": 236
+    },
+    {
+      "nome": "forma selvagem aprimorada",
+      "descricao": "Quando usa Forma Selvagem, você pode gastar 6 PM ao todo para assumir uma forma aprimorada.",
+      "iconeURL": "./icons/croc-jaws.svg",
+      "preRequisitos": "Forma Selvagem, 6º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [
+        {
+          "nome": "forma selvagem ágil",
+          "descricao": "Você recebe Destreza +4, deslocamento +3m e duas armas naturais (como acima, mas com dano de 1d8). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem feroz",
+          "descricao": "Você recebe Força +5, +4 na Defesa e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem resistente",
+          "descricao": "Você recebe Força +3, +8 na Defesa, redução de dano 8 e uma arma natural que causa 1d8 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem sorrateira",
+          "descricao": "Você recebe Destreza +4. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem veloz",
+          "descricao": "Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m."
+        }
+      ],
+      "key": 237
+    },
+    {
+      "nome": "forma selvagem superior",
+      "descricao": "Quando usa Forma Selvagem, você pode gastar 10 PM ao todo para assumir uma forma superior.",
+      "iconeURL": "./icons/dinosaur-rex.svg",
+      "preRequisitos": "Forma Selvagem Aprimorada, 12º nível de druida.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [
+        {
+          "nome": "forma selvagem ágil",
+          "descricao": "Você recebe Destreza +6, deslocamento +6m e duas armas naturais (como acima, mas com dano de 1d10). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem feroz",
+          "descricao": "Você recebe Força +10, +6 na Defesa e uma arma natural que causa 4d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem resistente",
+          "descricao": "Você recebe Força +5, +10 na Defesa, redução de dano 10 e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem sorrateira",
+          "descricao": "Você recebe Destreza +6 e deslocamento de voo 18m. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
+        },
+        {
+          "nome": "forma selvagem veloz",
+          "descricao": "Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m."
+        }
+      ],
+      "key": 238
+    },
+    {
+      "nome": "liberdade da pradaria",
+      "descricao": "Você recebe +2 em Reflexos. Se estiver ao ar livre, sempre que lança uma magia, pode gastar 1 PM para aumentar o alcance dela em um passo (de toque para curto, de curto para médio ou de médio para longo).",
+      "iconeURL": "./icons/hills.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 239
+    },
+    {
+      "nome": "magia natural",
+      "descricao": "Em forma selvagem, você pode lançar magias e empunhar catalisadores e esotéricos.",
+      "iconeURL": "./icons/love-howl.svg",
+      "preRequisitos": "Forma Selvagem.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 240
+    },
+    {
+      "nome": "presas afiadas",
+      "descricao": "A margem de ameaça de suas armas naturais aumenta em +2.",
+      "iconeURL": "./icons/barbed-nails.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 241
+    },
+    {
+      "nome": "segredos da natureza",
+      "descricao": "Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.",
+      "iconeURL": "./icons/forest.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 242
+    },
+    {
+      "nome": "tranquilidade dos lagos",
+      "descricao": "Você recebe +2 em Vontade. Se estiver portando um recipiente com água (não precisa estar empunhando), uma vez por rodada, quando faz um teste de resistência, pode pagar 1 PM para refazer a rolagem.",
+      "iconeURL": "./icons/river.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 243
+    }
+  ],
+  "pericias": ["sobrevivencia", "vontade"],
+  "numeroPericiasExtras": 4,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "conhecimento",
+    "cura",
+    "fortitude",
+    "iniciativa",
+    "intuicao",
+    "luta",
+    "misticismo",
+    "oficio",
+    "percepcao",
+    "religiao"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

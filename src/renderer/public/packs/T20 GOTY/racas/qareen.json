@@ -1,0 +1,66 @@
+{
+  "key": 8,
+  "nome": "qareen",
+  "descricao": "Descendentes de poderosos gênios, os qareen são otimistas, generosos e prestativos, sempre ansiosos por ajudar. Consideram-se abençoados pela Deusa da Magia, exibindo como evidência a marca de Wynna em seus corpos. Sua magia é mais poderosa quando usada para realizar desejos de outros.",
+  "atributos": [
+    {
+      "atributo": "carisma",
+      "valor": 2
+    },
+    {
+      "atributo": "inteligencia",
+      "valor": 1
+    },
+    {
+      "atributo": "sabedoria",
+      "valor": -1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "desejos",
+      "descricao": "Se lançar uma magia que alguém tenha pedido desde seu último turno, o custo da magia diminui em –1 PM. Fazer um desejo ao qareen é uma ação livre.",
+      "iconeURL": "./icons/magic-lamp.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "qareen"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 22
+    },
+    {
+      "nome": "resistência elemental",
+      "descricao": "Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas).",
+      "iconeURL": "./icons/fire-silhouette.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "qareen"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 23
+    },
+    {
+      "nome": "tatuagem mística",
+      "descricao": "Você pode lançar uma magia de 1º círculo à sua escolha (atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "iconeURL": "./icons/abstract-104.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "qareen"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 24
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "key": 3,
+  "nome": "dahllan",
+  "descricao": "Parte humanas, parte fadas, as Dahllan são uma raça de mulheres com a seiva de árvores correndo nas veias. Falam com os animais, controlam as plantas — mas também são ferozes em batalha, retorcendo madeira para formar armaduras.",
+  "atributos": [
+    {
+      "atributo": "sabedoria",
+      "valor": 2
+    },
+    {
+      "atributo": "destreza",
+      "valor": 1
+    },
+    {
+      "atributo": "inteligencia",
+      "valor": -1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "amiga das plantas",
+      "descricao": "Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+      "iconeURL": "./icons/butterfly-flower.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "dahllan"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 6
+    },
+    {
+      "nome": "armadura de allihanna",
+      "descricao": "Você pode gastar uma ação de movimento e 1 PM para transformar sua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.",
+      "iconeURL": "./icons/spiked-armor.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "dahllan"
+        }
+      ],
+      "tempoExecucao": "acao de movimento",
+      "subEfeitos": [],
+      "key": 7
+    },
+    {
+      "nome": "empatia selvagem",
+      "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais. Caso receba esta habilidade novamente, recebe +2 em Adestramento.",
+      "iconeURL": "./icons/paw-heart.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "dahllan"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 8
+    }
+  ]
+}

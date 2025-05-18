@@ -1,0 +1,81 @@
+{
+  "key": 7,
+  "nome": "minotauro",
+  "descricao": "Povo guerreiro, orgulhoso e poderoso, criadores de uma civilização avançada, com a missão sagrada de proteger e governar os fracos — ou assim se enxergavam. Em seus tempos áureos, tomaram grande parte de Arton. Hoje, após a morte de sua divindade e a decadência de seu Império, os minotauros lutam para recuperar a glória perdida ou encontrar um novo papel no mundo.",
+  "atributos": [
+    {
+      "atributo": "forca",
+      "valor": 2
+    },
+    {
+      "atributo": "constituicao",
+      "valor": 1
+    },
+    {
+      "atributo": "sabedoria",
+      "valor": -1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "chifres",
+      "descricao": "Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.",
+      "iconeURL": "./icons/bull.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "minotauro"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 18
+    },
+    {
+      "nome": "couro rigído",
+      "descricao": "Sua pele é dura como a de um touro. Você recebe +1 na Defesa.",
+      "iconeURL": "./icons/turtle-shell.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "minotauro"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 19
+    },
+    {
+      "nome": "faro",
+      "descricao": "Você tem olfato apurado. Contra inimigos em alcance curto que você não possa ver, você não fica desprevenido, e a camuflagem total lhe causa apenas 20% de chance de falha.",
+      "iconeURL": "./icons/nose-side.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "minotauro"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 20
+    },
+    {
+      "nome": "medo de altura",
+      "descricao": "Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado.",
+      "iconeURL": "./icons/despair.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "minotauro"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 21
+    }
+  ]
+}

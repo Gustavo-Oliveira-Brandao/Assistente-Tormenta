@@ -1,0 +1,443 @@
+{
+  "key": 13,
+  "nome": "nobre",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "none",
+  "progressao": [
+    {
+      "nivel": 1,
+      "poderes": [
+        {
+          "nome": "autoconfiança",
+          "descricao": "Você pode somar seu bônus de Carisma em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
+          "iconeURL": "./icons/self-love.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "nobre"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 364
+        },
+        {
+          "nome": "espólio",
+          "descricao": "Você recebe um item a sua escolha com preço de até T$ 2.000.",
+          "iconeURL": "./icons/open-treasure-chest.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "nobre"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 365
+        },
+        {
+          "nome": "orgulho",
+          "descricao": "Quando faz um teste de perícia, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu modificador de Carisma). Para cada PM que gastar, recebe +2 no teste.",
+          "iconeURL": "./icons/trophy-cup.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "nobre"
+            }
+          ],
+          "tempoExecucao": "reação",
+          "subEfeitos": [],
+          "key": 366
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "poderes": [
+        {
+          "nome": "riqueza",
+          "descricao": "No 2º nível, você passa a receber dinheiro de sua família, patrono ou negócios. Uma vez por aventura, você pode fazer um teste de Carisma com um bônus igual ao seu nível de nobre. Você recebe um número de Tibares de ouro igual ao resultado do teste. Por exemplo, um nobre de 5º nível com Carisma 18 (+4) que role um 13 no dado recebe 22 TO. O uso desta habilidade é condicionado a onde e quando você faz o teste, assim como a relação com sua família, patrono ou negócios. Por exemplo, um nobre viajando pelos ermos, isolado da civilização, dificilmente teria como receber dinheiro",
+          "iconeURL": "./icons/gold-bar.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "nobre"
+            }
+          ],
+          "tempoExecucao": "ação livre",
+          "subEfeitos": [],
+          "key": 386
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "poderes": [
+        {
+          "nome": "gritar ordens",
+          "descricao": "A partir do 3º nível, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Carisma). Até o início de seu próximo turno, todos os seus aliados em alcance curto recebem um bônus nos testes de perícia igual à quantidade de PM que você gastou.",
+          "iconeURL": "./icons/shouting.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "nobre"
+            }
+          ],
+          "tempoExecucao": "ação livre",
+          "subEfeitos": [],
+          "key": 387
+        }
+      ]
+    },
+    {
+      "nivel": 20,
+      "poderes": [
+        {
+          "nome": "realeza",
+          "descricao": "No 20º nível, sua presença impõe mais do que respeito — impõe veneração. Uma criatura que seja alvo de sua Presença Aristocrática e falhe no teste de Vontade por 10 ou mais se arrepende tanto de ter tentado machucá-lo que passa a lutar ao seu lado (e seguir suas ordens, se puder entendê-lo) pelo resto da cena. Uma criatura que seja reduzida a 0 PV por Palavras Afiadas não sofre este dano; em vez disso, passa a lutar ao seu lado pelo resto da cena.",
+          "iconeURL": "./icons/throne-king.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "nobre"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 388
+        }
+      ]
+    }
+  ],
+  "poderesClasse": [
+    {
+      "nome": "armadura brilhante",
+      "descricao": "Você pode somar o modificador de Carisma na Defesa quando usa armadura pesada. Se fizer isso, não pode somar o modificador de Destreza, mesmo que outras habilidades ou efeitos permitam isso.",
+      "iconeURL": "./icons/cape-armor.svg",
+      "preRequisitos": "8º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 367
+    },
+    {
+      "nome": "autoridade feudal",
+      "descricao": "Você pode gastar 2 PM para conclamar o povo a realizar uma tarefa para você. Em termos de jogo, passa automaticamente em um teste de perícia com CD máxima igual ao seu nível +5. O tempo necessário para conclamar o povo é o tempo do uso da perícia em questão. Esta habilidade só pode ser usada em locais onde sua posição carregue alguma influência (a critério do mestre).",
+      "iconeURL": "./icons/uprising.svg",
+      "preRequisitos": "6º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 368
+    },
+    {
+      "nome": "educação privilegiada",
+      "descricao": "Você se torna treinado em duas perícias de nobre a sua escolha.",
+      "iconeURL": "./icons/enlightenment.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 369
+    },
+    {
+      "nome": "estrategista",
+      "descricao": "Você pode direcionar aliados em alcance curto. Gaste uma ação padrão e 1 PM por aliado que quiser direcionar (limitado pelo seu modificador de Carisma). No próximo turno do aliado, ele ganha uma ação de movimento.",
+      "iconeURL": "./icons/barracks-tent.svg",
+      "preRequisitos": "Int 13, treinado em Guerra, 6º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "ação padrão",
+      "subEfeitos": [],
+      "key": 370
+    },
+    {
+      "nome": "favor",
+      "descricao": "Você pode usar sua influência para pedir favores a pessoas poderosas. Pedir favores gasta 5 PM e exige pelo menos uma hora de conversa e bajulação — ou mais, de acordo com o mestre. Faça um teste de Diplomacia. A CD do teste depende do que você está pedindo: 10 para algo simples (como um convite para uma festa particular), 20 para algo caro ou complicado (como uma carona de barco até Galrasia) e 30 para algo perigoso ou ilegal (como acesso aos planos militares do reino).",
+      "iconeURL": "./icons/throne-king.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 371
+    },
+    {
+      "nome": "general",
+      "descricao": "Quando você usa o poder Estrategista, os aliados direcionados recebem 1d4 pontos de mana temporários. Esses PM duram até o fim do turno do aliado e não podem ser usados em efeitos que concedam PM.",
+      "iconeURL": "./icons/medieval-pavilion.svg",
+      "preRequisitos": "Estrategista, 12º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 372
+    },
+    {
+      "nome": "grito tirânico",
+      "descricao": "Quando usa a habilidade Palavras Afiadas, você pode gastar +2 PM. Se fizer isso, seus dados de dano aumentam para d8 e você atinge todos os inimigos em alcance curto.",
+      "iconeURL": "./icons/lightning-shout.svg",
+      "preRequisitos": "Palavras Afiadas, 8º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 373
+    },
+    {
+      "nome": "inspirar confiança",
+      "descricao": "Sua presença faz as pessoas darem o melhor de si. Você pode gastar 2 PM para fazer um aliado em alcance curto rolar novamente um teste recém realizado.",
+      "iconeURL": "./icons/king.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 374
+    },
+    {
+      "nome": "inspirar glória",
+      "descricao": "A presença de um nobre motiva as pessoas a realizarem façanhas impressionantes. Você pode gastar 5 PM para fazer um aliado em alcance curto ganhar uma ação padrão adicional no próximo turno dele. Você só pode usar esta habilidade uma vez por cena em cada aliado.",
+      "iconeURL": "./icons/laurels.svg",
+      "preRequisitos": "Inspirar Confiança, 8º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 375
+    },
+    {
+      "nome": "jogo da corte",
+      "descricao": "Você pode gastar 1 PM para rolar novamente um teste recém realizado de Diplomacia, Intuição ou Nobreza.",
+      "iconeURL": "./icons/throne-king.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 376
+    },
+    {
+      "nome": "liderar pelo exemplo",
+      "descricao": "Você pode pagar 2 PM para servir de inspiração. Até o início de seu próximo turno, sempre que você passar em um teste de perícia, aliados em alcance curto que fizerem um teste da mesma perícia podem usar o resultado total do seu teste em vez de rolar o dado.",
+      "iconeURL": "./icons/minions.svg",
+      "preRequisitos": "6º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 377
+    },
+    {
+      "nome": "língua de ouro",
+      "descricao": "Você pode gastar uma ação padrão e 6 PM para gerar o efeito da magia Enfeitiçar com os aprimoramentos de sugerir ação e afetar todas as criaturas dentro do alcance (CD Car). Esta não é uma habilidade mágica e provém de sua capacidade de influenciar outras pessoas.",
+      "iconeURL": "./icons/tongue.svg",
+      "preRequisitos": "Língua de Prata, 8º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "ação padrão",
+      "subEfeitos": [],
+      "key": 378
+    },
+    {
+      "nome": "língua de prata",
+      "descricao": "Quando faz um teste de perícia baseada em Carisma, você pode gastar 2 PM para receber um bônus no teste igual a metade do seu nível.",
+      "iconeURL": "./icons/tongue.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 379
+    },
+    {
+      "nome": "língua rápida",
+      "descricao": "Quando faz um teste de Diplomacia para mudar atitude como uma ação completa, você sofre uma penalidade de –5, em vez de –10.",
+      "iconeURL": "./icons/tongue.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 380
+    },
+    {
+      "nome": "palavras afiadas",
+      "descricao": "Você pode gastar uma ação padrão e 1 PM para submeter a sua vontade uma criatura inteligente (Int 3 ou mais) em alcance curto. Faça um teste de Diplomacia ou Intimidação (a sua escolha) oposto ao teste de Vontade da criatura. Se vencer, você causa 2d6 pontos de dano mental não letal à criatura. Se perder, causa metade deste dano. Para cada PM extra que você gastar quando ativar o poder, o dano aumenta em +1d6. Caso a criatura seja reduzida a 0 ou menos PV, rende-se (caso você tenha usado Diplomacia) ou fica apavorada (caso tenha usado Intimidação), em vez de cair inconsciente.",
+      "iconeURL": "./icons/lizard-tongue.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "ação padrão",
+      "subEfeitos": [],
+      "key": 381
+    },
+    {
+      "nome": "presença aristocrática",
+      "descricao": "Sempre que uma criatura inteligente (Int 3 ou mais) tentar machucá-lo (causar dano com um ataque, magia ou habilidade) você pode gastar 2 PM. Se fizer isso, a criatura deve fazer um teste de Vontade (CD Car). Se falhar, não conseguirá machucá-lo e perderá a ação. Você só pode usar esta habilidade uma vez por cena contra cada criatura.",
+      "iconeURL": "./icons/aura.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 382
+    },
+    {
+      "nome": "presença majestosa",
+      "descricao": "Você impõe respeito a todos. A habilidade Presença Aristocrática passa a funcionar contra criaturas com Int 1 ou mais (passa a afetar até mesmo animais, embora continue não funcionando contra criaturas sem valor de Inteligência). Além disso, você pode usá-la mais de uma vez contra uma mesma criatura na mesma cena.",
+      "iconeURL": "./icons/beams-aura.svg",
+      "preRequisitos": "Presença Aristocrática, 16º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 383
+    },
+    {
+      "nome": "título",
+      "descricao": "Você adquire um título de nobreza. Converse com o mestre para definir os benefícios exatos de seu título. Como regra geral, você recebe 10 TO por nível de nobre no início de cada aventura (rendimentos dos impostos) ou a ajuda de um aliado veterano (um membro de sua corte).",
+      "iconeURL": "./icons/bastet.svg",
+      "preRequisitos": "Autoridade Feudal, 10º nível de nobre.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 384
+    },
+    {
+      "nome": "voz poderosa",
+      "descricao": "Você recebe +2 em Diplomacia e Intimidação. Suas habilidades de nobre com alcance curto passam para alcance médio.",
+      "iconeURL": "./icons/public-speaker.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 385
+    }
+  ],
+  "pericias": ["vontade"],
+  "numeroPericiasExtras": 5,
+  "periciasExtras": [
+    "adestramento",
+    "atuacao",
+    "cavalgar",
+    "conhecimento",
+    "diplomacia",
+    "enganacao",
+    "fortitude",
+    "guerra",
+    "iniciativa",
+    "intimidacao",
+    "intuicao",
+    "investigacao",
+    "jogatina",
+    "luta",
+    "nobreza",
+    "oficio",
+    "percepcao",
+    "pontaria"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "armaduras pesadas"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

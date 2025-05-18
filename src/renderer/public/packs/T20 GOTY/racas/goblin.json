@@ -1,0 +1,81 @@
+{
+  "key": 5,
+  "nome": "goblin",
+  "descricao": "Estes pequenos seres feiosos conseguiram um lugar entre os povos do Reinado. Podem ser encontrados em todas as grandes cidades, muitos vivendo na imundície, outros prosperando em carreiras que quase ninguém tentaria: espiões, aeronautas, engenhoqueiros. Onde o anão teimoso e o elfo empolado falham, o goblin pode dar um jeito. Porque ele não tem vergonha. Nem orgulho. Nem bom senso.",
+  "atributos": [
+    {
+      "atributo": "destreza",
+      "valor": 2
+    },
+    {
+      "atributo": "inteligencia",
+      "valor": 1
+    },
+    {
+      "atributo": "carisma",
+      "valor": -1
+    }
+  ],
+  "poderes": [
+    {
+      "nome": "engenhoso",
+      "descricao": "Você não sofre penalidades em testes de perícia por não usar ferramentas. Se usar a ferramenta necessária, recebe +2 no teste de perícia.",
+      "iconeURL": "./icons/gears.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "goblin"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 12
+    },
+    {
+      "nome": "espelunqueiro",
+      "descricao": "Você recebe visão no escuro e deslocamento de escalada igual ao seu deslocamento terrestre.",
+      "iconeURL": "./icons/caveman.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "goblin"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 13
+    },
+    {
+      "nome": "peste esguia",
+      "descricao": "Seu tamanho é Pequeno, mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos.",
+      "iconeURL": "./icons/goblin.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "goblin"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 14
+    },
+    {
+      "nome": "rato das ruas",
+      "descricao": "Você recebe +2 em Fortitude e sua recuperação de PV e PM nunca é inferior ao seu nível.",
+      "iconeURL": "./icons/rat.svg",
+      "preRequisitos": "",
+      "categoria": "raca",
+      "tags": [
+        {
+          "label": "goblin"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 15
+    }
+  ]
+}

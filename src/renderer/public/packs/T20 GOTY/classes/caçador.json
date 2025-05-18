@@ -1,0 +1,476 @@
+{
+  "key": 5,
+  "nome": "caçador",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "none",
+  "progressao": [
+    {
+      "nivel": 1,
+      "poderes": [
+        {
+          "nome": "marca da presa",
+          "descricao": "Você pode gastar uma ação de movimento e 1 PM para analisar uma criatura em alcance curto. Até o fim da cena, você recebe +1d4 nas rolagens de dano contra essa criatura. A cada quatro níveis, você pode gastar +1 PM para aumentar o bônus de dano (veja a tabela da classe).",
+          "iconeURL": "./icons/crosshair.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "caçador"
+            }
+          ],
+          "tempoExecucao": "ação de movimento",
+          "subEfeitos": [],
+          "key": 152
+        },
+        {
+          "nome": "rastreador",
+          "descricao": "Você recebe +2 em Sobrevivência. Além disso, pode se mover com seu deslocamento normal enquanto rastreia sem sofrer penalidades no teste de Sobrevivência.",
+          "iconeURL": "./icons/footprint.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "caçador"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 153
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "poderes": [
+        {
+          "nome": "explorador",
+          "descricao": "No 3º nível, escolha um tipo de terreno entre aquático, ártico, colina, deserto, floresta, montanha, pântano, planície, subterrâneo ou urbano. A partir do 11º nível, você também pode escolher área de Tormenta. Quando estiver no tipo de terreno escolhido, você soma sua Sabedoria (mínimo +1) na Defesa e nos testes de Acrobacia, Atletismo, Furtividade, Percepção e Sobrevivência. A cada quatro níveis, escolha outro tipo de terreno para receber o bônus ou aumente o bônus em um tipo de terreno já escolhido em +2.",
+          "iconeURL": "./icons/conqueror.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "caçador"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 176
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "poderes": [
+        {
+          "nome": "caminho do explorador",
+          "descricao": "No 5º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastrear você aumenta em +10. Esta habilidade só funciona em terrenos nos quais você tenha a habilidade Explorador.",
+          "iconeURL": "./icons/conqueror.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "caçador"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 177
+        }
+      ]
+    },
+    {
+      "nivel": 20,
+      "poderes": [
+        {
+          "nome": "mestre caçador",
+          "descricao": "No 20º nível, você pode usar a habilidade Marca da Presa como uma ação livre. Além disso, quando usa a habilidade, pode pagar 5 PM para aumentar sua margem de ameaça contra a criatura em +2. Se você reduz uma criatura contra a qual usou Marca da Presa a 0 pontos de vida, recupera 5 PM.",
+          "iconeURL": "./icons/arrow-scope.svg",
+          "preRequisitos": "",
+          "categoria": "classe",
+          "tags": [
+            {
+              "label": "caçador"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 178
+        }
+      ]
+    }
+  ],
+  "poderesClasse": [
+    {
+      "nome": "ambidestria",
+      "descricao": "Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.",
+      "iconeURL": "./icons/crossed-swords.svg",
+      "preRequisitos": "Des 2.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 154
+    },
+    {
+      "nome": "armadilha: arataca",
+      "descricao": "A vítima sofre 2d6 pontos de dano de perfuração e fica agarrada. Uma criatura agarrada pode escapar com uma ação padrão e um teste de Força ou Acrobacia (CD Sab).",
+      "iconeURL": "./icons/wolf-trap.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        },
+        {
+          "label": "armadilha"
+        }
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 155
+    },
+    {
+      "nome": "armadilha: espinhos",
+      "descricao": "A vítima sofre 6d6 pontos de dano de perfuração. Um teste de Reflexos (CD Sab) reduz o dano à metade.",
+      "iconeURL": "./icons/light-thorny-triskelion.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        },
+        {
+          "label": "armadilha"
+        }
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 156
+    },
+    {
+      "nome": "armadilha: laço",
+      "descricao": "A vítima deve fazer um teste de Reflexos (CD Sab). Se passar, fica caída. Se falhar, fica agarrada. Uma criatura agarrada pode se soltar com uma ação padrão e um teste de Força ou Acrobacia (CD Sab).",
+      "iconeURL": "./icons/lasso.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        },
+        {
+          "label": "armadilha"
+        }
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 157
+    },
+    {
+      "nome": "armadilha: rede",
+      "descricao": "Todas as criaturas na área ficam enredadas e não podem sair da área. Uma vítima pode se libertar com uma ação padrão e um teste de Força ou Acrobacia (CD 25). Além disso, a área ocupada pela rede é considerada terreno difícil. Nesta armadilha você escolhe quantas criaturas precisam estar na área para ativá-la.",
+      "iconeURL": "./icons/fishing-net.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        },
+        {
+          "label": "armadilha"
+        }
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 158
+    },
+    {
+      "nome": "armadilheiro",
+      "descricao": "Você soma sua Sabedoria no dano e na CD de suas armadilhas (cumulativo).",
+      "iconeURL": "./icons/hunter-eyes.svg",
+      "preRequisitos": "um poder de armadilha, 5º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 159
+    },
+    {
+      "nome": "arqueiro",
+      "descricao": "Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria nas rolagens de dano (limitado pelo seu nível).",
+      "iconeURL": "./icons/bowman.svg",
+      "preRequisitos": "Sab 1.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 160
+    },
+    {
+      "nome": "bote",
+      "descricao": "Se estiver empunhando duas armas e fizer uma investida, você pode pagar 1 PM para fazer um ataque adicional com sua arma secundária.",
+      "iconeURL": "./icons/running-ninja.svg",
+      "preRequisitos": "Ambidestria, 6º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 161
+    },
+    {
+      "nome": "camuflagem",
+      "descricao": "Você pode gastar 2 PM para se esconder mesmo sem camuflagem ou cobertura disponível.",
+      "iconeURL": "./icons/hidden.svg",
+      "preRequisitos": "6º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 162
+    },
+    {
+      "nome": "chuva de lâminas",
+      "descricao": "Uma vez por rodada, quando usa Ambidestria, você pode pagar 2 PM para fazer um ataque adicional com sua arma primária.",
+      "iconeURL": "./icons/blade-fall.svg",
+      "preRequisitos": "Des 4, Ambidestria, 12º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 163
+    },
+    {
+      "nome": "companheiro animal",
+      "descricao": "Você recebe um companheiro animal.",
+      "iconeURL": "./icons/sitting-dog.svg",
+      "preRequisitos": "Car 1, treinado em Adestramento.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 164
+    },
+    {
+      "nome": "elo com a natureza",
+      "descricao": "Você soma sua Sabedoria em seu total de pontos de mana e aprende e pode lançar Caminhos da Natureza (atributo-chave Sabedoria).",
+      "iconeURL": "./icons/linden-leaf.svg",
+      "preRequisitos": "Sab 1, 3º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 165
+    },
+    {
+      "nome": "emboscar",
+      "descricao": "Você pode gastar 2 PM para realizar uma ação padrão adicional em seu turno. Você só pode usar este poder na primeira rodada de um combate.",
+      "iconeURL": "./icons/hidden.svg",
+      "preRequisitos": "treinado em Furtividade.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 166
+    },
+    {
+      "nome": "empatia selvagem",
+      "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e persuasão.",
+      "iconeURL": "./icons/paw-heart.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 167
+    },
+    {
+      "nome": "escaramuça",
+      "descricao": "Quando se move 6m ou mais, você recebe +2 na Defesa e Reflexos e +1d8 nas rolagens de dano de ataques corpo a corpo e à distância em alcance curto até o início de seu próximo turno. Você não pode usar esta habilidade se estiver vestindo armadura pesada.",
+      "iconeURL": "./icons/running-ninja.svg",
+      "preRequisitos": "Des 2, 6º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 168
+    },
+    {
+      "nome": "escaramuça superior",
+      "descricao": "Quando usa Escaramuça, seus bônus aumentam para +5 na Defesa e Reflexos e +1d12 em rolagens de dano.",
+      "iconeURL": "./icons/running-ninja.svg",
+      "preRequisitos": "Escaramuça, 12º nível de caçador.",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 169
+    },
+    {
+      "nome": "espreitar",
+      "descricao": "Quando usa a habilidade Marca da Presa, você recebe um bônus de +1 em testes de perícia contra a criatura marcada. Esse bônus aumenta em +1 para cada PM adicional gasto na habilidade e também dobra com a habilidade Inimigo.",
+      "iconeURL": "./icons/crosshair.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 170
+    },
+    {
+      "nome": "ervas curativas",
+      "descricao": "Você pode gastar uma ação completa e uma quantidade de PM a sua escolha (limitado por sua Sabedoria) para aplicar ervas que curam ou desintoxicam em você ou num aliado adjacente. Para cada PM que gastar, cura 2d6 PV ou remove uma condição envenenado afetando o alvo.",
+      "iconeURL": "./icons/herbs-bundle.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 171
+    },
+    {
+      "nome": "ímpeto",
+      "descricao": "Você pode gastar 1 PM para aumentar seu deslocamento em +6m por uma rodada.",
+      "iconeURL": "./icons/sprint.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 172
+    },
+    {
+      "nome": "inimigo de (criatura)",
+      "descricao": "Escolha um tipo de criatura entre animal, construto, espírito, monstro ou morto-vivo, ou duas raças humanoides (por exemplo, orcs e gnolls, ou elfos e qareen). Quando você usa a habilidade Marca da Presa contra uma criatura do tipo ou da raça escolhida, dobra os dados de bônus no dano. O nome desta habilidade varia de acordo com o tipo de criatura escolhida (Inimigo de Monstros, Inimigo de Mortos-Vivos etc.). Você pode escolher este poder outras vezes para inimigos diferentes.",
+      "iconeURL": "./icons/crosshair.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 173
+    },
+    {
+      "nome": "olho do falcão",
+      "descricao": "Você pode usar a habilidade Marca da Presa em criaturas em alcance longo.",
+      "iconeURL": "./icons/beast-eye.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 174
+    },
+    {
+      "nome": "ponto fraco",
+      "descricao": "Quando usa a habilidade Marca da Presa, seus ataques contra a criatura marcada recebem +2 na margem de ameaça. Esse bônus dobra com a habilidade Inimigo.",
+      "iconeURL": "./icons/crosshair.svg",
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 175
+    }
+  ],
+  "pericias": ["sobrevivencia"],
+  "numeroPericiasExtras": 7,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "cura",
+    "fortitude",
+    "furtividade",
+    "iniciativa",
+    "investigacao",
+    "luta",
+    "oficio",
+    "percepcao",
+    "pontaria",
+    "reflexos"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

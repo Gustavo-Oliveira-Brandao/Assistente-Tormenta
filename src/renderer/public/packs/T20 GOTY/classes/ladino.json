@@ -12,7 +12,6 @@
         {
           "nome": "ataque furtivo",
           "descricao": "Você sabe atingir os pontos vitais de um inimigo distraído. Uma vez por rodada, quando atinge um alvo desprevenido com um ataque corpo a corpo ou em alcance curto, ou um alvo que esteja flanqueando, você causa 1d6 pontos de dano adicional. A cada dois níveis, esse dano adicional aumenta em +1d6. Uma criatura imune a acertos críticos também é imune a ataques furtivos.",
-          "iconeURL": "./icons/cloak-dagger.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -27,7 +26,6 @@
         {
           "nome": "especialista",
           "descricao": "Escolha um número de perícias treinadas igual ao seu bônus de Inteligência (mínimo 1). Ao fazer um teste de uma dessas perícias, você pode gastar 1 PM para dobrar seu bônus de treinamento. Você não pode usar esta habilidade em testes de ataque.",
-          "iconeURL": "./icons/enlightenment.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -47,7 +45,6 @@
         {
           "nome": "evasão",
           "descricao": "A partir do 2º nível, quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, você não sofre nenhum dano se passar. Você ainda sofre dano normal se falhar no teste de Reflexos. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver imóvel ou usando armadura pesada.",
-          "iconeURL": "./icons/dodging.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -67,7 +64,6 @@
         {
           "nome": "esquiva sobrenatural",
           "descricao": "No 4º nível, seus instintos ficam tão apurados que você consegue reagir ao perigo antes que seus sentidos percebam. Você nunca fica surpreendido.",
-          "iconeURL": "./icons/dodging.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -87,7 +83,6 @@
         {
           "nome": "olhos nas costas",
           "descricao": "A partir do 8º nível, você consegue lutar contra diversos inimigos como se fossem apenas um. Você não pode ser flanqueado.",
-          "iconeURL": "./icons/evil-eyes.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -107,7 +102,6 @@
         {
           "nome": "evasão aprimorada",
           "descricao": "No 10º nível, quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar e sofre apenas metade do dano se falhar. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver imóvel ou usando armadura pesada.",
-          "iconeURL": "./icons/dodging.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -127,7 +121,6 @@
         {
           "nome": "a pessoa certa para o trabalho",
           "descricao": "No 20º nível, você se torna um verdadeiro mestre da ladinagem. Ao fazer um ataque furtivo ou usar uma perícia da lista de ladino, você pode gastar 5 PM para receber +10 no teste.",
-          "iconeURL": "./icons/card-joker.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -146,7 +139,6 @@
     {
       "nome": "assassinar",
       "descricao": "Você pode gastar uma ação de movimento e 3 PM para analisar uma criatura em alcance curto. Se desferir um ataque furtivo contra essa criatura até o fim do seu próximo turno, você dobra os dados de dano de seu ataque furtivo. Pré-requisito. 5º nível de ladino.",
-      "iconeURL": "./icons/dripping-knife.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -161,7 +153,6 @@
     {
       "nome": "emboscar",
       "descricao": "Você pode gastar 2 PM para realizar uma ação padrão adicional em seu turno. Você só pode usar este poder na primeira rodada de um combate.",
-      "iconeURL": "./icons/hidden.svg",
       "preRequisitos": "treinado em Furtividade.",
       "categoria": "classe",
       "tags": [
@@ -176,7 +167,6 @@
     {
       "nome": "escapista",
       "descricao": "Você recebe +5 em testes de Acrobacia para escapar e em testes para resistir a efeitos que restrinjam seu movimento, como a manobra agarrar e a magia Amarras Etéreas.",
-      "iconeURL": "./icons/sprint.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -191,7 +181,6 @@
     {
       "nome": "fuga formidável",
       "descricao": "Você pode gastar uma ação completa e 1 PM para analisar o lugar no qual está (um castelo, um porto, a praça de uma cidade...). Até o fim da cena, você recebe +3m em seu deslocamento, +5 em testes de Acrobacia e Atletismo e ignora penalidades em movimento por terreno difícil. Porém, para receber esses bônus, todas as suas ações na rodada devem estar diretamente ligadas a fugir. Por exemplo, você só pode atacar um inimigo se ele estiver bloqueando seu caminho, agarrando-o etc. Você pode fazer ações para ajudar seus aliados, mas apenas se eles estiverem tentando escapar.",
-      "iconeURL": "./icons/acrobatic.svg",
       "preRequisitos": "Int 13.",
       "categoria": "classe",
       "tags": [
@@ -206,7 +195,6 @@
     {
       "nome": "gatuno",
       "descricao": "Você recebe +2 em Atletismo. Quando escala, avança seu deslocamento normal, em vez de metade dele.",
-      "iconeURL": "./icons/cat.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -221,7 +209,6 @@
     {
       "nome": "integrante da guilda",
       "descricao": "Você é membro de uma organização criminosa, desde uma pequena guilda de ladrões a uma irmandade de Valkaria. Os efeitos deste poder variam de acordo com a organização e ficam a cargo do mestre. Como regra geral, você recebe +5 em testes de Diplomacia com pessoas ligadas ao submundo e +5 em testes de Intimidação com pessoas comuns que temeriam sua organização. Além disso, tem acesso a itens e serviços roubados ou proibidos (como armas de pólvora e venenos).",
-      "iconeURL": "./icons/robber.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -236,7 +223,6 @@
     {
       "nome": "ladrão arcano",
       "descricao": "Quando causa dano com um ataque furtivo em uma criatura capaz de lançar magias, você pode “roubar” uma magia que já a tenha visto lançar. Você precisa pagar 1 PM por círculo da magia e pode roubar magias de até 4º círculo. Até o final da cena, você pode lançar a magia roubada (atributo-chave Inteligência).",
-      "iconeURL": "./icons/robber.svg",
       "preRequisitos": "Roubo de Mana, 13º nível de ladino.",
       "categoria": "classe",
       "tags": [
@@ -251,7 +237,6 @@
     {
       "nome": "mão na boca",
       "descricao": "Você recebe +2 em testes de agarrar. Quando faz um ataque furtivo contra uma criatura desprevenida, você pode fazer um teste de agarrar como uma ação livre. Se agarrar a criatura, ela não poderá falar enquanto estiver agarrada.",
-      "iconeURL": "./icons/grab.svg",
       "preRequisitos": "treinado em Luta.",
       "categoria": "classe",
       "tags": [
@@ -266,7 +251,6 @@
     {
       "nome": "mãos rápidas",
       "descricao": "Ao fazer um teste de Ladinagem para abrir fechaduras, ocultar item, punga ou sabotar, você pode pagar 1 PM para fazê-lo como uma ação livre.",
-      "iconeURL": "./icons/clockwork.svg",
       "preRequisitos": "Des 15, treinado em Ladinagem.",
       "categoria": "classe",
       "tags": [
@@ -281,7 +265,6 @@
     {
       "nome": "mente criminosa",
       "descricao": "Você soma seu bônus de Inteligência em Ladinagem e Furtividade.",
-      "iconeURL": "./icons/brain.svg",
       "preRequisitos": "Int 13.",
       "categoria": "classe",
       "tags": [
@@ -296,7 +279,6 @@
     {
       "nome": "oportunismo",
       "descricao": "Você recebe +2 em testes de ataque contra inimigos que já sofreram dano desde seu último turno.",
-      "iconeURL": "./icons/backstab.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -311,7 +293,6 @@
     {
       "nome": "rolamento defensivo",
       "descricao": "Sempre que sofre dano, você pode gastar 2 PM para reduzir esse dano à metade. Após usar este poder, você fica caído.",
-      "iconeURL": "./icons/dodging.svg",
       "preRequisitos": "treinado em Reflexos.",
       "categoria": "classe",
       "tags": [
@@ -326,7 +307,6 @@
     {
       "nome": "roubo de mana",
       "descricao": "Quando você causa dano com um ataque furtivo em uma criatura, a criatura perde 1 ponto de mana para cada 1d6 de dano de seu ataque furtivo. Você recebe PM temporários iguais aos PM que a criatura perder. Você só pode usar este poder uma vez por cena contra cada criatura específica.",
-      "iconeURL": "./icons/magic-palm.svg",
       "preRequisitos": "Truque Mágico, 7º nível de ladino.",
       "categoria": "classe",
       "tags": [
@@ -341,7 +321,6 @@
     {
       "nome": "saqueador de tumbas",
       "descricao": "Você recebe +5 em testes de Investigação para encontrar armadilhas e em testes de Reflexos para evitá-las. Além disso, gasta uma ação padrão para desabilitar mecanismos, em vez de 1d4 rodadas (veja a perícia Ladinagem).",
-      "iconeURL": "./icons/robber.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -356,7 +335,6 @@
     {
       "nome": "sombra",
       "descricao": "Você recebe +2 em Furtividade. Além disso, você pode se mover com seu deslocamento normal enquanto usa Furtividade sem sofrer penalidades no teste de perícia.",
-      "iconeURL": "./icons/hidden.svg",
       "preRequisitos": "treinado em Furtividade.",
       "categoria": "classe",
       "tags": [
@@ -371,7 +349,6 @@
     {
       "nome": "truque mágico",
       "descricao": "Você aprende e pode lançar uma magia arcana de 1º círculo a sua escolha, pagando seu custo normal em PM. Seu atributo-chave para esta magia é Inteligência. Você pode escolher este poder quantas vezes quiser.",
-      "iconeURL": "./icons/spell-book.svg",
       "preRequisitos": "Int 13.",
       "categoria": "classe",
       "tags": [
@@ -386,7 +363,6 @@
     {
       "nome": "velocidade ladina",
       "descricao": "Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno.",
-      "iconeURL": "./icons/clockwork.svg",
       "preRequisitos": "treinado em Iniciativa.",
       "categoria": "classe",
       "tags": [
@@ -401,7 +377,6 @@
     {
       "nome": "veneno persistente",
       "descricao": "Quando aplica uma dose de veneno a uma arma, este veneno dura por três ataques (em vez de apenas um).",
-      "iconeURL": "./icons/poison-bottle.svg",
       "preRequisitos": "Veneno Potente, 8º nível de ladino.",
       "categoria": "classe",
       "tags": [
@@ -416,7 +391,6 @@
     {
       "nome": "veneno potente",
       "descricao": "A CD para resistir aos venenos que você usa aumenta em +2 e esses venenos causam +1 ponto de dano por dado de dano.",
-      "iconeURL": "./icons/poison-bottle.svg",
       "preRequisitos": "treinado em Ofício (alquimia).",
       "categoria": "classe",
       "tags": [

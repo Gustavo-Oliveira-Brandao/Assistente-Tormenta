@@ -1,5 +1,4 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { IBonus } from '../@types/T20 GOTY/IBonus'
 import { Atributo } from './Atributo'
 import { Pericia } from './Pericia'
 import { Deslocamento } from './Deslocamento'
@@ -8,15 +7,12 @@ import { Grimorio } from './Grimorio'
 import { Dano } from './Dano'
 
 @Entity()
-export class Bonus implements IBonus {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Bonus {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 100
   })
   label: string

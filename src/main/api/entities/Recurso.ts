@@ -1,26 +1,20 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { IRecurso } from '../@types/T20 GOTY/IRecurso'
 import { Bonus } from './Bonus'
-import { IBonus } from '../@types/T20 GOTY/IBonus'
 import { Personagem } from './Personagem'
 
 @Entity()
-export class Recurso implements IRecurso {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Recurso {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    length: 50,
-    nullable: false
+    length: 50
   })
   categoria: string
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   valorAtual: number
 
@@ -28,19 +22,19 @@ export class Recurso implements IRecurso {
     type: 'integer',
     nullable: true
   })
-  valorTemporario?: number
+  valorTemporario: number
 
   @Column({
     type: 'varchar',
     nullable: true
   })
-  atributo: string | null
+  atributo: string
 
   @OneToMany(() => Bonus, (bonus) => bonus.recurso, {
     cascade: true,
     nullable: true
   })
-  bonus: IBonus[]
+  bonus: Bonus[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.recursos, {
     onDelete: 'CASCADE',

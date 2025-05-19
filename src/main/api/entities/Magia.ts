@@ -1,103 +1,85 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { IMagia } from '../@types/T20 GOTY/IMagia'
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { AprimoramentoMagia } from './AprimoramentoMagia'
-import { IAprimoramentoMagia } from '../@types/T20 GOTY/IAprimoramentoMagia'
-import { Dano } from './Dano'
-import { IDano } from '../@types/T20 GOTY/IDano'
+import { Grimorio } from './Grimorio'
 
 @Entity()
-export class Magia implements IMagia {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Magia {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 50
   })
   nome: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 50
   })
   alvo: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 50
   })
   area: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 100
   })
   efeito: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 30
   })
   execucao: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 100
   })
   resistencia: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 5000
   })
   descricao: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 50
   })
   duracao: string
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   nivelCirculo: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 50
   })
   alcance: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   tradicao: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 100
   })
   publicacao: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   escola: string
@@ -106,11 +88,11 @@ export class Magia implements IMagia {
     cascade: true,
     nullable: true
   })
-  aprimoramentos?: IAprimoramentoMagia[]
+  aprimoramentos?: AprimoramentoMagia[]
 
-  @OneToMany(() => Dano, (dano) => dano.magia, {
-    cascade: true,
-    nullable: true
+  @ManyToOne(() => Grimorio, (grimorio) => grimorio.magias, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
   })
-  danos?: IDano[]
+  grimorio: Grimorio
 }

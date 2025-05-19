@@ -5,7 +5,6 @@ export type IPoder = {
   id: number
   key?: number
   nome: string
-  iconeURL: string
   tempoExecucao: string
   descricao: string
   categoria: string

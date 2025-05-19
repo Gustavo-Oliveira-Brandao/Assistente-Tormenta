@@ -1,148 +1,128 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { IPersonagem } from '../@types/T20 GOTY/IPersonagem'
 import { Classe } from './Classe'
-import { IClasse } from '../@types/T20 GOTY/IClasse'
 import { Atributo } from './Atributo'
-import { IAtributo } from '../@types/T20 GOTY/IAtributo'
 import { Pericia } from './Pericia'
-import { IPericia } from '../@types/T20 GOTY/IPericia'
 import { Deslocamento } from './Deslocamento'
-import { IDeslocamento } from '../@types/T20 GOTY/IDeslocamento'
 import { Recurso } from './Recurso'
-import { IRecurso } from '../@types/T20 GOTY/IRecurso'
 import { Poder } from './Poder'
-import { IPoder } from '../@types/T20 GOTY/IPoder'
 import { Proficiencia } from './Proficiencia'
-import { IProficiencia } from '../@types/T20 GOTY/IProficiencia'
+import { Grimorio } from './Grimorio'
 
 @Entity()
-export class Personagem implements IPersonagem {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Personagem {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 150
   })
   nome: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   tipo: string
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   idade: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 10
   })
   altura: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   peso: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   raca: string
 
   @OneToMany(() => Classe, (classes) => classes.personagem, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  classes: IClasse[]
+  classes: Classe[]
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   origem: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 30
   })
   divindade: string
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   experiencia: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   tamanho: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 10
   })
   alinhamentoEtico: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 10
   })
   alinhamentoMoral: string
 
   @OneToMany(() => Atributo, (atributos) => atributos.personagem, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  atributos: IAtributo[]
+  atributos: Atributo[]
 
   @OneToMany(() => Pericia, (pericia) => pericia.personagem, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  pericias: IPericia[]
+  pericias: Pericia[]
 
   @OneToMany(() => Deslocamento, (deslocamento) => deslocamento.personagem, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  deslocamentos: IDeslocamento[]
+  deslocamentos: Deslocamento[]
 
   @OneToMany(() => Recurso, (recurso) => recurso.personagem, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  recursos: IRecurso[]
+  recursos: Recurso[]
 
   @OneToMany(() => Poder, (poder) => poder.personagem, {
     cascade: true,
     nullable: true
   })
-  poderes?: IPoder[]
+  poderes?: Poder[]
 
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
     cascade: true,
     nullable: true
   })
-  proficiencias?: IProficiencia[]
+  proficiencias?: Proficiencia[]
+
+  @OneToMany(() => Grimorio, (grimorio) => grimorio.personagem, {
+    cascade: true,
+    nullable: true
+  })
+  grimorios: Grimorio[]
 }

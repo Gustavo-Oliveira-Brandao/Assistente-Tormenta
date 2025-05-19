@@ -16,7 +16,6 @@
     {
       "nome": "herança divina",
       "descricao": "Você é uma criatura do tipo espírito e recebe visão no escuro.",
-      "iconeURL": "./icons/angel-outfit.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -34,7 +33,6 @@
     {
       "nome": "luz sagrada (aggelus)",
       "descricao": "Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
-      "iconeURL": "./icons/explosion-rays.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [

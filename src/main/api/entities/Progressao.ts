@@ -1,27 +1,21 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { IProgressao } from '../@types/T20 GOTY/IProgressao'
 import { Classe } from './Classe'
 import { Poder } from './Poder'
-import { IPoder } from '../@types/T20 GOTY/IPoder'
 
 @Entity()
-export class Progressao implements IProgressao {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Progressao {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   nivel: number
 
   @OneToMany(() => Poder, (poderes) => poderes.progressao, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  poderes: IPoder[]
+  poderes: Poder[]
 
   @ManyToOne(() => Classe, (classe) => classe.progressao, {
     onDelete: 'CASCADE',

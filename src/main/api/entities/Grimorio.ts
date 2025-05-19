@@ -1,25 +1,21 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { IGrimorio } from '../@types/T20 GOTY/IGrimorio'
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { Bonus } from './Bonus'
-import { IBonus } from '../@types/T20 GOTY/IBonus'
+import { Personagem } from './Personagem'
+import { Magia } from './Magia'
 
 @Entity()
-export class Grimorio implements IGrimorio {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Grimorio {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   tradicao: string
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 20
   })
   atributoChave: string
@@ -28,5 +24,17 @@ export class Grimorio implements IGrimorio {
     cascade: true,
     nullable: true
   })
-  bonusCD?: IBonus[]
+  bonusCD?: Bonus[]
+
+  @OneToMany(() => Magia, (magia) => magia.grimorio, {
+    cascade: true,
+    nullable: true
+  })
+  magias: Magia[]
+
+  @ManyToOne(() => Personagem, (personagem) => personagem.grimorios, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  personagem: Personagem
 }

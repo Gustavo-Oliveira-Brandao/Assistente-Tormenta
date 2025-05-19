@@ -20,7 +20,6 @@
     {
       "nome": "desejos",
       "descricao": "Se lançar uma magia que alguém tenha pedido desde seu último turno, o custo da magia diminui em –1 PM. Fazer um desejo ao qareen é uma ação livre.",
-      "iconeURL": "./icons/magic-lamp.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -35,7 +34,6 @@
     {
       "nome": "resistência elemental",
       "descricao": "Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas).",
-      "iconeURL": "./icons/fire-silhouette.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -50,7 +48,6 @@
     {
       "nome": "tatuagem mística",
       "descricao": "Você pode lançar uma magia de 1º círculo à sua escolha (atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
-      "iconeURL": "./icons/abstract-104.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [

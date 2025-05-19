@@ -12,8 +12,7 @@
         {
           "nome": "abençoado",
           "descricao": "Você soma seu bônus de Carisma no seu total de pontos de mana no 1º nível. Além disso, torna-se devoto de uma divindade disponível para paladinos (Sol, Justiça, Vida, Honra, Paz, Conhecimento, Ressurreição, Ambição). Você deve obedecer às Obrigações & Restrições de seu deus, mas, em troca, ganha os Poderes Concedidos dele. Como alternativa, você pode ser um paladino do bem, lutando em prol da bondade e da justiça como um todo. Não recebe nenhum Poder Concedido, mas não precisa seguir nenhuma Obrigação & Restrição (além do Código do Herói, abaixo).",
-          "iconeURL": "./icons/embrassed-energy.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -27,8 +26,7 @@
         {
           "nome": "código do herói",
           "descricao": "Você deve sempre manter sua palavra e nunca pode recusar um pedido de ajuda de alguém inocente. Além disso, nunca pode mentir, trapacear ou roubar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia.",
-          "iconeURL": "./icons/scroll-quill.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -42,8 +40,7 @@
         {
           "nome": "golpe divino",
           "descricao": "Quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um golpe destruidor. Você soma seu bônus de Carisma no teste de ataque e +1d8 na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o dano em +1d8.",
-          "iconeURL": "./icons/deadly-strike.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -62,8 +59,7 @@
         {
           "nome": "cura pelas mãos",
           "descricao": "A partir do 2º nível, você pode gastar uma ação de movimento e 1 PM para curar 1d8+1 pontos de vida de um alvo em alcance corpo a corpo (incluindo você). A cada quatro níveis, você pode gastar +1 PM para aumentar os PV curados em +1d8+1. \n A partir do 6º nível, você pode gastar +1 PM quando usa Cura pelas Mãos para anular uma condição afetando o alvo, entre abalado, apavorado, atordoado, cego, doente, exausto, fatigado ou surdo. Esta habilidade também pode causar dano de luz a mortos-vivos, exigindo um ataque desarmado.",
-          "iconeURL": "./icons/healing.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -82,8 +78,7 @@
         {
           "nome": "aura sagrada",
           "descricao": "No 3º nível, você pode gastar 1 PM para gerar uma aura com alcance curto a partir de você. A aura emite uma luz dourada e agradável, que ilumina como uma tocha. Além disso, você e os aliados dentro da aura recebem um bônus igual ao seu bônus de Carisma nos testes de resistência. Manter a aura custa 1 PM por turno.",
-          "iconeURL": "./icons/beams-aura.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -102,8 +97,7 @@
         {
           "nome": "benção da justiça",
           "descricao": "No 5º nível, escolha entre égide sagrada e montaria sagrada. Uma vez feita, esta escolha não pode ser mudada.",
-          "iconeURL": "./icons/scales.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -131,8 +125,7 @@
         {
           "nome": "vingador sagrado",
           "descricao": "No 20º nível, você pode gastar uma ação completa e 10 PM para se cobrir de energia divina, assumindo a forma de um vingador sagrado até o fim da cena. Nesta forma, você recebe deslocamento de voo 18m, resistência a dano 20 e soma seu modificador de Carisma em seus testes de ataque e rolagens de dano corpo a corpo.",
-          "iconeURL": "./icons/embrassed-energy.svg",
-          "preRequisitos": "",
+              "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -150,7 +143,6 @@
     {
       "nome": "arma sagrada",
       "descricao": "Se estiver empunhando a arma preferida de seu deus, o dado de dano que você rola por Golpe Divino aumenta para d12.",
-      "iconeURL": "./icons/magic-axe.svg",
       "preRequisitos": "devoto de uma divindade (exceto Vida e Paz).",
       "categoria": "classe",
       "tags": [
@@ -165,7 +157,6 @@
     {
       "nome": "aura antimagia",
       "descricao": "Enquanto sua aura estiver ativa, você e os aliados dentro da aura podem rolar novamente qualquer teste de resistência contra magia recém realizado.",
-      "iconeURL": "./icons/bell-shield.svg",
       "preRequisitos": "14° nível de paladino.",
       "categoria": "classe",
       "tags": [
@@ -180,7 +171,6 @@
     {
       "nome": "aura ardente",
       "descricao": "Enquanto sua aura estiver ativa, no início de cada um de seus turnos, espíritos e mortos-vivos a sua escolha dentro dela sofrem dano igual a 5 + seu bônus de Carisma.",
-      "iconeURL": "./icons/fire-silhouette.svg",
       "preRequisitos": "10° nível de paladino.",
       "categoria": "classe",
       "tags": [
@@ -195,7 +185,6 @@
     {
       "nome": "aura de cura",
       "descricao": "Enquanto sua aura estiver ativa, no início de seus turnos, você e os aliados a sua escolha dentro dela curam um número de PV igual a 5 + seu bônus de Carisma.",
-      "iconeURL": "./icons/aura.svg",
       "preRequisitos": "6° nível de paladino",
       "categoria": "classe",
       "tags": [
@@ -210,7 +199,6 @@
     {
       "nome": "aura da invencibilidade",
       "descricao": "Enquanto sua aura estiver ativa, você ignora o primeiro dano que sofrer na cena. O mesmo se aplica a seus aliados dentro da aura.",
-      "iconeURL": "./icons/icicles-aura.svg",
       "preRequisitos": "18° nível de paladino.",
       "categoria": "classe",
       "tags": [
@@ -225,7 +213,6 @@
     {
       "nome": "aura poderosa",
       "descricao": "O alcance da sua aura aumenta para médio.",
-      "iconeURL": "./icons/aura.svg",
       "preRequisitos": "6° nível de paladino.",
       "categoria": "classe",
       "tags": [
@@ -240,7 +227,6 @@
     {
       "nome": "fulgor divino",
       "descricao": "Quando usa Golpe Divino, todos os inimigos em alcance curto ficam ofuscados até o início do seu próximo turno.",
-      "iconeURL": "./icons/explosion-rays.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -255,7 +241,6 @@
     {
       "nome": "julgamento divino: arrependimento",
       "descricao": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. Na próxima vez que esse inimigo acertar um ataque em você ou em um de seus aliados, deve fazer um teste de Vontade (CD Car). Se falhar, fica atordoado no próximo turno dele. Você só pode proferir este julgamento uma vez por cena contra cada criatura.",
-      "iconeURL": "./icons/despair.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -273,7 +258,6 @@
     {
       "nome": "julgamento divino: autoridade",
       "descricao": "Você pode gastar 1 PM para comandar uma criatura em alcance curto. Faça um teste de Diplomacia oposto pelo teste de Vontade da criatura. Se você passar, ela obedece a um comando simples como “pare” ou “largue a arma”. Se a criatura passar, fica imune a esse efeito por um dia.",
-      "iconeURL": "./icons/public-speaker.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -291,7 +275,6 @@
     {
       "nome": "julgamento divino: coragem",
       "descricao": "Você pode gastar 2 PM para inspirar coragem em uma criatura em alcance curto, incluindo você mesmo. A criatura fica imune a efeitos de medo e recebe +2 em testes de ataque contra alvos de ND maior que o nível dela.",
-      "iconeURL": "./icons/sword-brandish.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -309,7 +292,6 @@
     {
       "nome": "julgamento divino: iluminação",
       "descricao": "Você pode marcar um inimigo em alcance curto. Quando acerta um ataque corpo a corpo nesse inimigo, você recebe 2 PM temporários. Você só pode proferir este julgamento uma vez por cena.",
-      "iconeURL": "./icons/sun.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -327,7 +309,6 @@
     {
       "nome": "julgamento divino: justiça",
       "descricao": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. A próxima vez que esse inimigo causar dano em você ou em um de seus aliados, deve fazer um teste de Vontade (CD Car). Se falhar, sofre dano de luz igual à metade do dano que causou.",
-      "iconeURL": "./icons/scales.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -345,7 +326,6 @@
     {
       "nome": "julgamento divino: libertação",
       "descricao": "Você pode gastar 5 PM para cancelar uma condição negativa qualquer (como abalado, paralisado etc.) que esteja afetando uma criatura em alcance curto.",
-      "iconeURL": "./icons/freedom-dove.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -363,7 +343,6 @@
     {
       "nome": "julgamento divino: salvação",
       "descricao": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. Até o fim da cena, quando você acerta um ataque corpo a corpo nesse inimigo, recupera 5 pontos de vida.",
-      "iconeURL": "./icons/healing.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -381,7 +360,6 @@
     {
       "nome": "julgamento divino: vindicação",
       "descricao": "Você pode gastar 2 PM para marcar um inimigo que tenha causado dano a você ou a seus aliados na cena. Você recebe +1 em testes de ataque e +1d8 em rolagens de dano contra o inimigo escolhido, mas sofre –5 em testes de ataque contra quaisquer outros alvos. No 5º nível, e a cada cinco níveis seguintes, você pode pagar +1 PM para aumentar o bônus de ataque em +1 e o bônus de dano em +1d8. O efeito termina caso o alvo fique inconsciente.",
-      "iconeURL": "./icons/sword-brandish.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -399,7 +377,6 @@
     {
       "nome": "julgamento divino: zelo",
       "descricao": "Você pode gastar 1 PM para marcar um alvo em alcance longo. Pelo restante da cena, sempre que se mover na direção desse alvo, você se move com o dobro de seu deslocamento.",
-      "iconeURL": "./icons/sprint.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -417,7 +394,6 @@
     {
       "nome": "orar",
       "descricao": "Você aprende e pode lançar uma magia divina de 1º círculo a sua escolha. Seu atributo-chave para esta magia é Sabedoria. Você pode escolher este poder quantas vezes quiser.",
-      "iconeURL": "./icons/prayer.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -432,7 +408,6 @@
     {
       "nome": "virtude paladinesca: caridade",
       "descricao": "O custo de suas habilidades de paladino que tenham um aliado como alvo é reduzido em 1 PM.",
-      "iconeURL": "./icons/swap-bag.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -450,7 +425,6 @@
     {
       "nome": "virtude paladinesca: castidade",
       "descricao": "Você se torna imune a efeitos de encantamento e recebe +5 em testes de Intuição para perceber blefes.",
-      "iconeURL": "./icons/icicles-aura.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -468,7 +442,6 @@
     {
       "nome": "virtude paladinesca: compaixão",
       "descricao": "Você pode usar Cura pelas Mãos em alcance curto e, para cada PM que gastar, cura 2d6+1 (em vez de 1d8+1).",
-      "iconeURL": "./icons/hearts.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -486,7 +459,6 @@
     {
       "nome": "virtude paladinesca: humildade",
       "descricao": "Na primeira rodada de um combate, você pode gastar uma ação completa para rezar e pedir orientação. Você recebe uma quantidade de PM temporários igual ao seu bônus de Carisma.",
-      "iconeURL": "./icons/kneeling.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -504,7 +476,6 @@
     {
       "nome": "virtude paladinesca: temperança",
       "descricao": "Quando ingere um alimento, item alquímico ou poção, você consome apenas metade do item. Na prática, cada item desses rende duas “doses” para você.",
-      "iconeURL": "./icons/pear.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [

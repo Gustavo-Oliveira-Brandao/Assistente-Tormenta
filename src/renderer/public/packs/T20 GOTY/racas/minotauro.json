@@ -20,7 +20,6 @@
     {
       "nome": "chifres",
       "descricao": "Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.",
-      "iconeURL": "./icons/bull.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -35,7 +34,6 @@
     {
       "nome": "couro rigído",
       "descricao": "Sua pele é dura como a de um touro. Você recebe +1 na Defesa.",
-      "iconeURL": "./icons/turtle-shell.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -50,7 +48,6 @@
     {
       "nome": "faro",
       "descricao": "Você tem olfato apurado. Contra inimigos em alcance curto que você não possa ver, você não fica desprevenido, e a camuflagem total lhe causa apenas 20% de chance de falha.",
-      "iconeURL": "./icons/nose-side.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -65,7 +62,6 @@
     {
       "nome": "medo de altura",
       "descricao": "Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado.",
-      "iconeURL": "./icons/despair.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [

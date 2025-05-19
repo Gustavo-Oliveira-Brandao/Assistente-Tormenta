@@ -1,17 +1,13 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { ITag } from '../@types/T20 GOTY/ITag'
 import { Poder } from './Poder'
 
 @Entity()
-export class Tag implements ITag {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Tag {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 100
   })
   label: string

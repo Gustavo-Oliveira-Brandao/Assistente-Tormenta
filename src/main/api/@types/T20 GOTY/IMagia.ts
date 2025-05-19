@@ -1,5 +1,4 @@
 import { IAprimoramentoMagia } from './IAprimoramentoMagia'
-import { IDano } from './IDano'
 
 export type IMagia = {
   id: number
@@ -16,6 +15,5 @@ export type IMagia = {
   tradicao: string
   publicacao: string
   escola: string
-  danos?: IDano[]
   aprimoramentos?: IAprimoramentoMagia[]
 }

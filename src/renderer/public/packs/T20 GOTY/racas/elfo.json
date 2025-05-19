@@ -20,7 +20,6 @@
     {
       "nome": "graça de glórienn",
       "descricao": "Seu deslocamento é 12m (em vez de 9m).",
-      "iconeURL": "./icons/sprint.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -35,7 +34,6 @@
     {
       "nome": "sangue mágico",
       "descricao": "Você recebe +1 ponto de mana por nível.",
-      "iconeURL": "./icons/bleeding-heart.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [
@@ -50,7 +48,6 @@
     {
       "nome": "sentidos élficos",
       "descricao": "Você recebe visão na penumbra e +2 em Misticismo e Percepção.",
-      "iconeURL": "./icons/awareness.svg",
       "preRequisitos": "",
       "categoria": "raca",
       "tags": [

@@ -12,7 +12,6 @@
         {
           "nome": "devoto fiel",
           "descricao": "Você se torna devoto de um deus disponível para druidas (Allihanna, Megalokk ou Oceano). Ao contrário de devotos normais, você recebe dois poderes concedidos por se tornar devoto, em vez de apenas um.",
-          "iconeURL": "./icons/prayer.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -27,7 +26,6 @@
         {
           "nome": "empatia selvagem",
           "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e persuasão.",
-          "iconeURL": "./icons/paw-heart.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -42,7 +40,6 @@
         {
           "nome": "magias",
           "descricao": "Escolha três escolas de magia. Uma vez feita, essa escolha não pode ser mudada.\nVocê pode lançar magias divinas de 1º círculo que pertençam a essas escolas.\nÀ medida que sobe de nível, pode lançar magias de círculos maiores (2º círculo no 6º nível,\n3º círculo no 10º nível e 4º círculo no 14º nível).\nVocê começa com duas magias de 1º círculo.\nA cada nível par (2º, 4º etc.), aprende uma magia de qualquer círculo e escola que possa lançar.\nSeu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM.",
-          "iconeURL": "./icons/paw-heart.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -65,7 +62,6 @@
         {
           "nome": "caminho dos ermos",
           "descricao": "No 2º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastreá-lo aumenta em +10. Esta habilidade só funciona em terrenos naturais.",
-          "iconeURL": "./icons/trail.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -85,7 +81,6 @@
         {
           "nome": "força da natureza",
           "descricao": "No 20º nível, você diminui o custo de todas as suas magias em –2 PM e aumenta a CD delas em +2. Os bônus dobram (–4 PM e +4 na CD) se você estiver em terrenos naturais.",
-          "iconeURL": "./icons/tornado.svg",
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -104,7 +99,6 @@
     {
       "nome": "aspecto do inverno",
       "descricao": "Você aprende e pode lançar uma magia de convocação ou evocação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, recebe redução de frio 5 e suas magias que causam dano de frio causam +1 ponto de dano por dado.",
-      "iconeURL": "./icons/snowing.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -119,7 +113,6 @@
     {
       "nome": "aspecto do outono",
       "descricao": "Você aprende e pode lançar uma magia de necromancia, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para impor uma penalidade de –2 nos testes de resistência de todos os inimigos em alcance curto até o início do seu próximo turno.",
-      "iconeURL": "./icons/leaf-swirl.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -134,7 +127,6 @@
     {
       "nome": "aspecto da primavera",
       "descricao": "Você aprende e pode lançar uma magia de encantamento ou ilusão, arcana ou divina, de qualquer círculo que possa lançar. Além disso, escolha uma quantidade de magias igual ao seu Carisma (mínimo 1). O custo dessas magias é reduzido em −1 PM.",
-      "iconeURL": "./icons/butterfly-flower.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -149,7 +141,6 @@
     {
       "nome": "aspecto do verão",
       "descricao": "Você aprende e pode lançar uma magia de transmutação, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para cobrir uma de suas armas com chamas até o fim da cena. A arma causa +1d6 pontos de dano de fogo. Sempre que você acertar um ataque com ela, recebe 1 PM temporário. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível e eles desaparecem no final da cena.",
-      "iconeURL": "./icons/sun.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -164,7 +155,6 @@
     {
       "nome": "companheiro animal",
       "descricao": "Você recebe um companheiro animal. Veja o quadro para detalhes. Você pode escolher este poder quantas vezes quiser, mas deve escolher companheiros diferentes e ainda está sujeito ao limite de parceiros que pode ter.",
-      "iconeURL": "./icons/sitting-dog.svg",
       "preRequisitos": "Car 1, treinado em Adestramento.",
       "categoria": "classe",
       "tags": [
@@ -204,7 +194,6 @@
     {
       "nome": "companheiro animal aprimorado",
       "descricao": "Escolha um de seus companheiros animais. Ele recebe um segundo tipo, ganhando os bônus de seu nível. Por exemplo, se você tiver um companheiro guardião veterano, pode adicionar o tipo fortão a ele, tornando-o um guardião fortão veterano que concede +3 na Defesa e +1d12 em uma rolagem de dano corpo a corpo.",
-      "iconeURL": "./icons/sitting-dog.svg",
       "preRequisitos": "Companheiro Animal, 6º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -219,7 +208,6 @@
     {
       "nome": "companheiro animal lendário",
       "descricao": "Escolha um de seus companheiros animais. Esse animal passa a dobrar os bônus concedidos de seu tipo original.",
-      "iconeURL": "./icons/sitting-dog.svg",
       "preRequisitos": "Companheiro Animal, 18º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -234,7 +222,6 @@
     {
       "nome": "companheiro animal mágico",
       "descricao": "Escolha um de seus companheiros animais. Ele recebe um segundo tipo diferente, entre adepto, destruidor, magivocador ou médico, ganhando os bônus de seu nível.",
-      "iconeURL": "./icons/sitting-dog.svg",
       "preRequisitos": "Companheiro Animal, 8º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -249,7 +236,6 @@
     {
       "nome": "coração da selva",
       "descricao": "A CD para resistir a seus efeitos de veneno aumenta em +2 e estes efeitos causam +1 de perda de vida por dado.",
-      "iconeURL": "./icons/wrapped-heart.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -264,7 +250,6 @@
     {
       "nome": "espírito dos equinócios",
       "descricao": "Você pode gastar 4 PM para ficar em equilíbrio com o mundo. Até o final da cena, quando rola um dado, pode rolar novamente qualquer resultado 1.",
-      "iconeURL": "./icons/sun.svg",
       "preRequisitos": "Aspecto da Primavera, Aspecto do Outono, 10º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -279,7 +264,6 @@
     {
       "nome": "força dos penhascos",
       "descricao": "Você recebe +2 em Fortitude. Quando sofre dano enquanto em contato com o solo ou uma superfície de pedra, pode gastar uma quantidade de PM limitada por sua Sabedoria. Para cada PM gasto, reduz esse dano em 10.",
-      "iconeURL": "./icons/sea-cliff.svg",
       "preRequisitos": "4º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -294,7 +278,6 @@
     {
       "nome": "forma primal",
       "descricao": "Quando usa Forma Selvagem, você pode se transformar em uma fera primal. Você recebe os benefícios de dois tipos de animais (bônus iguais não se acumulam; use o que você quiser de cada tipo).",
-      "iconeURL": "./icons/steel-claws.svg",
       "preRequisitos": "18º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -309,7 +292,6 @@
     {
       "nome": "forma selvagem",
       "descricao": "Você pode se transformar em animais. Você pode gastar uma ação completa e 3 PM para adquirir a forma de uma criatura selvagem. Em termos de jogo, quando usa esta habilidade você adquire os modificadores de uma das formas abaixo. Características não mencionadas não mudam. Na forma selvagem você não pode falar, empunhar itens ou lançar magias. Seu equipamento desaparece (mas você mantém os benefícios de quaisquer itens vestidos), ressurgindo quando você volta ao normal. Outras criaturas podem fazer um teste de Percepção oposto pelo seu teste de Enganação para perceber que você não é um animal comum (você recebe +10 neste teste). Cada transformação dura pelo tempo que você quiser, mas você reverte à forma normal se ficar inconsciente ou morrer.",
-      "iconeURL": "./icons/bear-head.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -345,7 +327,6 @@
     {
       "nome": "forma selvagem aprimorada",
       "descricao": "Quando usa Forma Selvagem, você pode gastar 6 PM ao todo para assumir uma forma aprimorada.",
-      "iconeURL": "./icons/croc-jaws.svg",
       "preRequisitos": "Forma Selvagem, 6º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -381,7 +362,6 @@
     {
       "nome": "forma selvagem superior",
       "descricao": "Quando usa Forma Selvagem, você pode gastar 10 PM ao todo para assumir uma forma superior.",
-      "iconeURL": "./icons/dinosaur-rex.svg",
       "preRequisitos": "Forma Selvagem Aprimorada, 12º nível de druida.",
       "categoria": "classe",
       "tags": [
@@ -417,7 +397,6 @@
     {
       "nome": "liberdade da pradaria",
       "descricao": "Você recebe +2 em Reflexos. Se estiver ao ar livre, sempre que lança uma magia, pode gastar 1 PM para aumentar o alcance dela em um passo (de toque para curto, de curto para médio ou de médio para longo).",
-      "iconeURL": "./icons/hills.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -432,7 +411,6 @@
     {
       "nome": "magia natural",
       "descricao": "Em forma selvagem, você pode lançar magias e empunhar catalisadores e esotéricos.",
-      "iconeURL": "./icons/love-howl.svg",
       "preRequisitos": "Forma Selvagem.",
       "categoria": "classe",
       "tags": [
@@ -447,7 +425,6 @@
     {
       "nome": "presas afiadas",
       "descricao": "A margem de ameaça de suas armas naturais aumenta em +2.",
-      "iconeURL": "./icons/barbed-nails.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -462,7 +439,6 @@
     {
       "nome": "segredos da natureza",
       "descricao": "Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.",
-      "iconeURL": "./icons/forest.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [
@@ -477,7 +453,6 @@
     {
       "nome": "tranquilidade dos lagos",
       "descricao": "Você recebe +2 em Vontade. Se estiver portando um recipiente com água (não precisa estar empunhando), uma vez por rodada, quando faz um teste de resistência, pode pagar 1 PM para refazer a rolagem.",
-      "iconeURL": "./icons/river.svg",
       "preRequisitos": "",
       "categoria": "classe",
       "tags": [

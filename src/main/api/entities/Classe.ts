@@ -1,67 +1,55 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { IClasse } from '../@types/T20 GOTY/IClasse'
 import { Progressao } from './Progressao'
 import { IProgressao } from '../@types/T20 GOTY/IProgressao'
 import { Personagem } from './Personagem'
 import { Poder } from './Poder'
-import { IPoder } from '../@types/T20 GOTY/IPoder'
 
 @Entity()
-export class Classe implements IClasse {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class Classe {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 30
   })
   nome: string
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   nivel: number
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   vidaInicial: number
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   vidaPorNivel: number
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   manaPorNivel: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 15
   })
   progressaoConjuracao: string
 
   @OneToMany(() => Progressao, (progressao) => progressao.classe, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
   progressao: IProgressao[]
 
   @OneToMany(() => Poder, (poderes) => poderes.classe, {
-    cascade: true,
-    nullable: false
+    cascade: true
   })
-  poderesClasse: IPoder[]
+  poderesClasse: Poder[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.classes, {
     onDelete: 'CASCADE',

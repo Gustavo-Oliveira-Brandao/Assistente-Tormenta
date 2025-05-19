@@ -1,23 +1,18 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { IAprimoramentoMagia } from '../@types/T20 GOTY/IAprimoramentoMagia'
 import { Magia } from './Magia'
 
 @Entity()
-export class AprimoramentoMagia implements IAprimoramentoMagia {
-  @PrimaryGeneratedColumn({
-    type: 'integer'
-  })
+export class AprimoramentoMagia {
+  @PrimaryGeneratedColumn()
   id: number
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   custo: number
 
   @Column({
     type: 'varchar',
-    nullable: false,
     length: 1000
   })
   descricao: string

@@ -1,16 +1,13 @@
 import { JSX } from 'react'
 import styles from './menu-principal.module.scss'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
-import { formatarJson } from '@renderer/utils/formatarJson'
 
 export const MenuPrincipal = (): JSX.Element => {
   return (
     <main className={styles.mainMenu}>
       <div className={styles.backdrop}></div>
       <div className={styles.screen}>
-        <h1 onClick={() => formatarJson()} className="tormenta20Font">
-          Assistente Tormenta20
-        </h1>
+        <h1 className="tormenta20Font">Assistente Tormenta20</h1>
         <div className={styles.botoes}>
           <BotaoModular
             font="tormenta20Font"

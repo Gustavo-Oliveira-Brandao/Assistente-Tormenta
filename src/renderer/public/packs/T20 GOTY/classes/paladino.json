@@ -12,7 +12,7 @@
         {
           "nome": "abençoado",
           "descricao": "Você soma seu bônus de Carisma no seu total de pontos de mana no 1º nível. Além disso, torna-se devoto de uma divindade disponível para paladinos (Sol, Justiça, Vida, Honra, Paz, Conhecimento, Ressurreição, Ambição). Você deve obedecer às Obrigações & Restrições de seu deus, mas, em troca, ganha os Poderes Concedidos dele. Como alternativa, você pode ser um paladino do bem, lutando em prol da bondade e da justiça como um todo. Não recebe nenhum Poder Concedido, mas não precisa seguir nenhuma Obrigação & Restrição (além do Código do Herói, abaixo).",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -26,7 +26,7 @@
         {
           "nome": "código do herói",
           "descricao": "Você deve sempre manter sua palavra e nunca pode recusar um pedido de ajuda de alguém inocente. Além disso, nunca pode mentir, trapacear ou roubar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia.",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -40,7 +40,7 @@
         {
           "nome": "golpe divino",
           "descricao": "Quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um golpe destruidor. Você soma seu bônus de Carisma no teste de ataque e +1d8 na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o dano em +1d8.",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -59,7 +59,7 @@
         {
           "nome": "cura pelas mãos",
           "descricao": "A partir do 2º nível, você pode gastar uma ação de movimento e 1 PM para curar 1d8+1 pontos de vida de um alvo em alcance corpo a corpo (incluindo você). A cada quatro níveis, você pode gastar +1 PM para aumentar os PV curados em +1d8+1. \n A partir do 6º nível, você pode gastar +1 PM quando usa Cura pelas Mãos para anular uma condição afetando o alvo, entre abalado, apavorado, atordoado, cego, doente, exausto, fatigado ou surdo. Esta habilidade também pode causar dano de luz a mortos-vivos, exigindo um ataque desarmado.",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -78,7 +78,7 @@
         {
           "nome": "aura sagrada",
           "descricao": "No 3º nível, você pode gastar 1 PM para gerar uma aura com alcance curto a partir de você. A aura emite uma luz dourada e agradável, que ilumina como uma tocha. Além disso, você e os aliados dentro da aura recebem um bônus igual ao seu bônus de Carisma nos testes de resistência. Manter a aura custa 1 PM por turno.",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -97,7 +97,7 @@
         {
           "nome": "benção da justiça",
           "descricao": "No 5º nível, escolha entre égide sagrada e montaria sagrada. Uma vez feita, esta escolha não pode ser mudada.",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {
@@ -125,7 +125,7 @@
         {
           "nome": "vingador sagrado",
           "descricao": "No 20º nível, você pode gastar uma ação completa e 10 PM para se cobrir de energia divina, assumindo a forma de um vingador sagrado até o fim da cena. Nesta forma, você recebe deslocamento de voo 18m, resistência a dano 20 e soma seu modificador de Carisma em seus testes de ataque e rolagens de dano corpo a corpo.",
-              "preRequisitos": "",
+          "preRequisitos": "",
           "categoria": "classe",
           "tags": [
             {

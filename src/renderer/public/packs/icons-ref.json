@@ -1,0 +1,282 @@
+[
+  {
+    "author": "Delapouite",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/delapouite/skull-staff.html",
+        "iconName": "Skull staff icon",
+        "newName": "necromancia"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/magick-trick.html",
+        "iconName": "Magic trick icon",
+        "newName": "ilusao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/lightning-flame.html",
+        "iconName": "Lightning flame icon",
+        "newName": "evocacao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/devil-mask.html",
+        "iconName": "Devil mask icon",
+        "newName": "suraggel sulfure"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/djinn.html",
+        "iconName": "Djinn icon",
+        "newName": "qareen"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/fairy.html",
+        "iconName": "Fairy icon",
+        "newName": "silfide"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/mermaid.html",
+        "iconName": "Mermaid icon",
+        "newName": "sereia"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/hobbit-dwelling.html",
+        "iconName": "Hobbit dwelling icon",
+        "newName": "hynne"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/troglodyte.html",
+        "iconName": "Troglodyte icon",
+        "newName": "lefou"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/steampunk-goggles.html",
+        "iconName": "Steampunk goggles icon",
+        "newName": "kliren"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/person.html",
+        "iconName": "Person icon",
+        "newName": "humano"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/wizard-face.html",
+        "iconName": "Wizard face icon",
+        "newName": "arcanista"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/spell-book.html",
+        "iconName": "Spell book icon",
+        "newName": "grimorio"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/dice-twenty-faces-twenty.html",
+        "iconName": "Dice 20 faces 20 icon",
+        "newName": "d20"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/barbarian.html",
+        "iconName": "Barbarian icon",
+        "newName": "barbaro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/bandana.html",
+        "iconName": "Bandana icon",
+        "newName": "bucaneiro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/hunter-eyes.html",
+        "iconName": "Hunter eyes icon",
+        "newName": "caçador"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/boxing-ring.html",
+        "iconName": "Boxing ring icon",
+        "newName": "lutador"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/bastet.html",
+        "iconName": "Bastet icon",
+        "newName": "nobre"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/black-knight-helm.html",
+        "iconName": "Black Knight Helm icon",
+        "newName": "paladino"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/all-seeing-eye.html",
+        "iconName": "All seeing eye icon",
+        "newName": "adivinhacao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/woman-elf-face.html",
+        "iconName": "Female elf face icon",
+        "newName": "elfo"
+      }
+    ]
+  },
+  {
+    "author": "Faithtoken",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/faithtoken/card-random.html",
+        "iconName": "Card random icon",
+        "newName": "destino"
+      }
+    ]
+  },
+  {
+    "author": "Caro Asercion",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/caro-asercion/goblin.html",
+        "iconName": "Goblin icon",
+        "newName": "goblin"
+      }
+    ]
+  },
+  {
+    "author": "Cathelineau",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/cathelineau/swordman.html",
+        "iconName": "Swordman icon",
+        "newName": "guerreiro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/cathelineau/medusa-head.html",
+        "iconName": "Medusa head icon",
+        "newName": "medusa"
+      }
+    ]
+  },
+  {
+    "author": "Kier Heyl",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/kier-heyl/dwarf-helmet.html",
+        "iconName": "Dwarf helmet icon",
+        "newName": "anao"
+      }
+    ]
+  },
+  {
+    "author": "DarkZaitzev",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/darkzaitzev/plants-and-animals.html",
+        "iconName": "Plants and animals icon",
+        "newName": "druida"
+      },
+      {
+        "url": "https://game-icons.net/1x1/darkzaitzev/hooded-assassin.html",
+        "iconName": "Hooded assassin icon",
+        "newName": "ladino"
+      }
+    ]
+  },
+  {
+    "author": "Lorc",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/lorc/magic-gate.html",
+        "iconName": "Magic gate icon",
+        "newName": "convocacao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/charm.html",
+        "iconName": "Charm icon",
+        "newName": "encantamento"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/crystalize.html",
+        "iconName": "Crystalize icon",
+        "newName": "transmutacao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/minotaur.html",
+        "iconName": "Minotaur icon",
+        "newName": "minotauro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/magic-shield.html",
+        "iconName": "Magic shield icon",
+        "newName": "abjuracao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/croc-jaws.html",
+        "iconName": "Croc jaws icon",
+        "newName": "trog"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/angel-outfit.html",
+        "iconName": "Angel outfit icon",
+        "newName": "suraggel aggelus"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/prayer.html",
+        "iconName": "Prayer icon",
+        "newName": "clerigo"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/tinker.html",
+        "iconName": "Tinker icon",
+        "newName": "inventor"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/sword-spin.html",
+        "iconName": "Sword spin icon",
+        "newName": "combate"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/gift-of-knowledge.html",
+        "iconName": "Gift of knowledge icon",
+        "newName": "magia"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/bookmarklet.html",
+        "iconName": "Bookmarklet icon",
+        "newName": "origem"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/lightning-tear.html",
+        "iconName": "Lightning tear icon",
+        "newName": "tormenta"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/fairy.html",
+        "iconName": "Fairy icon",
+        "newName": "Dahllan"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/robot-golem.html",
+        "iconName": "Robot golem icon",
+        "newName": "golem"
+      }
+    ]
+  },
+  {
+    "author": "Skoll",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/skoll/mounted-knight.html",
+        "iconName": "Mounted knight icon",
+        "newName": "cavaleiro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/skoll/raise-skeleton.html",
+        "iconName": "Raise skeleton icon",
+        "newName": "osteon"
+      }
+    ]
+  },
+  {
+    "author": "Zajkonur",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/zajkonur/violin.html",
+        "iconName": "Violin icon",
+        "newName": "bardo"
+      }
+    ]
+  }
+]

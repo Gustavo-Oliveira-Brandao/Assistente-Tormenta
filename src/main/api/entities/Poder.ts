@@ -1,7 +1,6 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { SubEfeito } from './SubEfeito'
 import { Tag } from './Tag'
-import { ITag } from '../@types/T20 GOTY/ITag'
 import { Progressao } from './Progressao'
 import { Classe } from './Classe'
 import { Personagem } from './Personagem'
@@ -50,7 +49,7 @@ export class Poder {
   @OneToMany(() => Tag, (tags) => tags.poder, {
     cascade: true
   })
-  tags: ITag[]
+  tags: Tag[]
 
   @ManyToOne(() => Progressao, (progressao) => progressao.poderes, {
     onDelete: 'CASCADE',

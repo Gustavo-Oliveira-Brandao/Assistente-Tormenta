@@ -1,6 +1,5 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { Progressao } from './Progressao'
-import { IProgressao } from '../@types/T20 GOTY/IProgressao'
 import { Personagem } from './Personagem'
 import { Poder } from './Poder'
 
@@ -44,7 +43,7 @@ export class Classe {
   @OneToMany(() => Progressao, (progressao) => progressao.classe, {
     cascade: true
   })
-  progressao: IProgressao[]
+  progressao: Progressao[]
 
   @OneToMany(() => Poder, (poderes) => poderes.classe, {
     cascade: true

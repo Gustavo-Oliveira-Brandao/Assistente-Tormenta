@@ -3,6 +3,31 @@
     "author": "Delapouite",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/delapouite/peace-dove.html",
+        "iconName": "Peace dove icon",
+        "newName": "marah"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/spiked-dragon-head.html",
+        "iconName": "Spiked dragon head icon",
+        "newName": "kallyadranoch"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/jester-hat.html",
+        "iconName": "Jester hat icon",
+        "newName": "hynnin"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/thor-hammer.html",
+        "iconName": "Thor hammer icon",
+        "newName": "arsenal"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/warlock-eye.html",
+        "iconName": "Warlock eye icon",
+        "newName": "aharadak"
+      },
+      {
         "url": "https://game-icons.net/1x1/delapouite/skull-staff.html",
         "iconName": "Skull staff icon",
         "newName": "necromancia"
@@ -88,6 +113,41 @@
         "newName": "caçador"
       },
       {
+        "url": "https://game-icons.net/1x1/delapouite/snake-spiral.html",
+        "iconName": "Snake spiral icon",
+        "newName": "sszzaas"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/goblin-head.html",
+        "iconName": "Goblin head icon",
+        "newName": "thwor"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/candles.html",
+        "iconName": "Candles icon",
+        "newName": "tenebra"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/classical-knowledge.html",
+        "iconName": "Classical knowledge icon",
+        "newName": "tanna-toh"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/oyster-pearl.html",
+        "iconName": "Oyster pearl icon",
+        "newName": "oceano"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/spell-book.html",
+        "iconName": "Spell book icon",
+        "newName": "wynna"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/dice-twenty-faces-twenty.html",
+        "iconName": "Dice 20 faces 20 icon",
+        "newName": "nimb"
+      },
+      {
         "url": "https://game-icons.net/1x1/delapouite/boxing-ring.html",
         "iconName": "Boxing ring icon",
         "newName": "lutador"
@@ -146,6 +206,11 @@
         "url": "https://game-icons.net/1x1/cathelineau/medusa-head.html",
         "iconName": "Medusa head icon",
         "newName": "medusa"
+      },
+      {
+        "url": "https://game-icons.net/1x1/cathelineau/holy-oak.html",
+        "iconName": "Holy oak icon",
+        "newName": "allihanna"
       }
     ]
   },
@@ -178,9 +243,39 @@
     "author": "Lorc",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/lorc/sun.html",
+        "iconName": "Sun icon",
+        "newName": "azgher"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/scales.html",
+        "iconName": "Scales icon",
+        "newName": "khalmyr"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/fruiting.html",
+        "iconName": "Fruiting icon",
+        "newName": "lena"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/dragon-spiral.html",
+        "iconName": "Dragon spiral icon",
+        "newName": "lin-wu"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/treasure-map.html",
+        "iconName": "Treasure map icon",
+        "newName": "valkaria"
+      },
+      {
         "url": "https://game-icons.net/1x1/lorc/magic-gate.html",
         "iconName": "Magic gate icon",
         "newName": "convocacao"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/condor-emblem.html",
+        "iconName": "Condor emblem icon",
+        "newName": "thyatis"
       },
       {
         "url": "https://game-icons.net/1x1/lorc/charm.html",
@@ -221,6 +316,11 @@
         "url": "https://game-icons.net/1x1/lorc/tinker.html",
         "iconName": "Tinker icon",
         "newName": "inventor"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/monster-grasp.html",
+        "iconName": "Monster grasp icon",
+        "newName": "megalokk"
       },
       {
         "url": "https://game-icons.net/1x1/lorc/sword-spin.html",

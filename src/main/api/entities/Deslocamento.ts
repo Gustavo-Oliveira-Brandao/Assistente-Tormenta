@@ -20,7 +20,8 @@ export class Deslocamento {
 
   @OneToMany(() => Bonus, (bonus) => bonus.deslocamento, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   bonus: Bonus[]
 

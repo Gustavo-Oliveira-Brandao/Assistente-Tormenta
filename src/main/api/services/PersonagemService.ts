@@ -6,7 +6,11 @@ export const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
 
 export const getTodosPersonagem = async (): Promise<Personagem[]> => {
   try {
-    const personagens = await PersonagemRepository.find()
+    const personagens = await PersonagemRepository.find({
+      relations: {
+        classes: true
+      }
+    })
     return personagens
   } catch {
     throw new Error('Erro ao exibir personagens!')
@@ -15,7 +19,17 @@ export const getTodosPersonagem = async (): Promise<Personagem[]> => {
 
 export const getPersonagem = async (id: number): Promise<Personagem> => {
   try {
-    const personagem = await PersonagemRepository.findOneBy({ id: id })
+    const personagem = await PersonagemRepository.findOne({
+      where: { id: id },
+      relations: {
+        classes: true,
+        atributos: true,
+        pericias: true,
+        deslocamentos: true,
+        recursos: true,
+        proficiencias: true
+      }
+    })
     if (personagem == null) {
       throw new Error('Personagem não encontrado!')
     }

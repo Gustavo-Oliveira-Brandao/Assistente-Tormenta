@@ -35,7 +35,8 @@ export class Dano {
 
   @OneToMany(() => Bonus, (bonus) => bonus.dano, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   bonus?: Bonus[]
 }

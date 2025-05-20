@@ -17,7 +17,10 @@ export const getGrimoriosPorPersonagem = async (_idPersonagem: number): Promise<
   }
 }
 
-export const postGrimorio = async (_grimorio: Grimorio, _idPersonagem: number): Promise<void> => {
+export const postGrimorio = async (
+  _grimorio: Partial<Grimorio>,
+  _idPersonagem: number
+): Promise<void> => {
   try {
     const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
     const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
@@ -59,7 +62,7 @@ export const deleteGrimorio = async (_id: number): Promise<void> => {
   }
 }
 
-export const postMagia = async (_magia: Magia, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (_magia: Partial<Magia>, _idGrimorio: number): Promise<void> => {
   try {
     const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
     const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })

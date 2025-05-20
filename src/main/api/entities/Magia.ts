@@ -86,7 +86,8 @@ export class Magia {
 
   @OneToMany(() => AprimoramentoMagia, (aprimoramentoMagia) => aprimoramentoMagia.magia, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   aprimoramentos?: AprimoramentoMagia[]
 

@@ -42,12 +42,14 @@ export class Poder {
 
   @OneToMany(() => SubEfeito, (subEfeito) => subEfeito.poder, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   subEfeitos: SubEfeito[]
 
   @OneToMany(() => Tag, (tags) => tags.poder, {
-    cascade: true
+    cascade: true,
+    eager: true
   })
   tags: Tag[]
 

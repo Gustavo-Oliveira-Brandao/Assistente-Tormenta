@@ -28,7 +28,8 @@ export class Grimorio {
 
   @OneToMany(() => Magia, (magia) => magia.grimorio, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   magias: Magia[]
 

@@ -32,7 +32,8 @@ export class Recurso {
 
   @OneToMany(() => Bonus, (bonus) => bonus.recurso, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   bonus: Bonus[]
 

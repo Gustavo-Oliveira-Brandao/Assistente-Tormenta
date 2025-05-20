@@ -28,7 +28,8 @@ export class Atributo {
 
   @OneToMany(() => Bonus, (bonus) => bonus.atributo, {
     cascade: true,
-    nullable: true
+    nullable: true,
+    eager: true
   })
   bonus: Bonus[]
 

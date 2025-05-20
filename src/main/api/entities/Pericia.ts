@@ -42,8 +42,9 @@ export class Pericia {
   sofrePenalidadeArmadura: boolean
 
   @OneToMany(() => Bonus, (bonus) => bonus.pericia, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
+    cascade: true,
+    nullable: true,
+    eager: true
   })
   bonus: Bonus[]
 

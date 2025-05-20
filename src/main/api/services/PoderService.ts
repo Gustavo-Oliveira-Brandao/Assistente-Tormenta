@@ -13,7 +13,16 @@ export const getPoderesPorPersonagem = async (_idPersonagem: number): Promise<Po
   }
 }
 
-export const postPoder = async (_poder: Poder, _idPersonagem: number): Promise<void> => {
+export const getPoderesPorClasse = async (_idClasse: number): Promise<Poder[]> => {
+  try {
+    const poderes = await PoderRepository.find({ where: { classe: { id: _idClasse } } })
+    return poderes
+  } catch {
+    throw new Error('Erro ao buscar poderes.')
+  }
+}
+
+export const postPoder = async (_poder: Partial<Poder>, _idPersonagem: number): Promise<void> => {
   try {
     const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
     const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })

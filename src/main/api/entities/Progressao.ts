@@ -13,7 +13,8 @@ export class Progressao {
   nivel: number
 
   @OneToMany(() => Poder, (poderes) => poderes.progressao, {
-    cascade: true
+    cascade: true,
+    eager: true
   })
   poderes: Poder[]
 

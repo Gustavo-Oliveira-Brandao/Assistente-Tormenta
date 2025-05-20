@@ -41,7 +41,8 @@ export class Classe {
   progressaoConjuracao: string
 
   @OneToMany(() => Progressao, (progressao) => progressao.classe, {
-    cascade: true
+    cascade: true,
+    eager: true
   })
   progressao: Progressao[]
 

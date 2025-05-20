@@ -1,10 +1,14 @@
+import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Classe } from '../entities/Classe'
 import { Personagem } from '../entities/Personagem'
 
 export const ClasseRepository = SQLiteDataSource.getRepository(Classe)
 
-export const postClasse = async (_classe: Classe, _idPersonagem: number): Promise<void> => {
+export const postClasse = async (
+  _classe: DeepPartial<Classe>,
+  _idPersonagem: number
+): Promise<void> => {
   try {
     const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
     const personagem = await PersonagemRepository.findOneBy({

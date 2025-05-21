@@ -1,8 +1,15 @@
+import path from 'path'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entities/Personagem'
 import { Poder } from '../entities/Poder'
+import { extrairJson } from './JsonService'
 
 export const PoderRepository = SQLiteDataSource.getRepository(Poder)
+
+export const getPoderesDefault = async (): Promise<Partial<Poder[]>> => {
+  const pasta = path.join('packs', 'T20 GOTY', 'poderes')
+  return await extrairJson(pasta)
+}
 
 export const getPoderesPorPersonagem = async (_idPersonagem: number): Promise<Poder[]> => {
   try {

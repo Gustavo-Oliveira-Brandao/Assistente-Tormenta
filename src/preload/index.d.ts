@@ -1,4 +1,7 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
+import { IClasse } from '@renderer/@types/T20 GOTY/IClasse'
+import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
+import { IRaca } from '@renderer/@types/T20 GOTY/IRaca'
 
 declare global {
   interface Window {
@@ -15,9 +18,13 @@ declare global {
         putAtributo: (atributo: Atributo) => Promise<void>
       }
       classe: {
+        getClassesDefault: () => Promise<Partial<IClasse[]>>
         postClasse: (classe: Partial<Classe>, idPersonagem: number) => Promise<void>
         putClasse: (classe: Classe) => Promise<void>
         deleteClasse: (id: number) => Promise<void>
+      }
+      raca: {
+        getRacasDefault: () => Promise<Partial<IRaca[]>>
       }
       deslocamento: {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
@@ -31,6 +38,7 @@ declare global {
         deleteMagia: (id: number) => Promise<void>
       }
       poder: {
+        getPoderesDefault: () => Promise<Partial<IPoder[]>>
         getPoderesPorPersonagem: (_idPersonagem: number) => Promise<Poder[]>
         getPoderesPorClasse: (_idClasse: number) => Promise<Poder[]>
         postPoder: (poder: Partial<Poder>, idPersonagem: number) => Promise<void>

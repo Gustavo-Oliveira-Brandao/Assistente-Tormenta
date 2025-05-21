@@ -1,11 +1,17 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import {
   deletePoder,
+  getPoderesDefault,
   getPoderesPorClasse,
   getPoderesPorPersonagem,
   postPoder
 } from '../services/PoderService'
 import { Poder } from '../entities/Poder'
+
+ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
+  console.log(`FrameID:${event.frameId}`)
+  return await getPoderesDefault()
+})
 
 ipcMain.handle(
   'get-poderes-personagem',

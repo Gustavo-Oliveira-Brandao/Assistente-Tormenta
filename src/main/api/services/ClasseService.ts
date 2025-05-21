@@ -2,8 +2,15 @@ import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Classe } from '../entities/Classe'
 import { Personagem } from '../entities/Personagem'
+import path from 'path'
+import { extrairJson } from './JsonService'
 
 export const ClasseRepository = SQLiteDataSource.getRepository(Classe)
+
+export const getClassesDefault = async (): Promise<Partial<Classe[]>> => {
+  const pasta = path.join('packs', 'T20 GOTY', 'classes')
+  return await extrairJson(pasta)
+}
 
 export const postClasse = async (
   _classe: DeepPartial<Classe>,

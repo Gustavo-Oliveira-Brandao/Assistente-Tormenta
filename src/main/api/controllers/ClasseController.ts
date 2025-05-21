@@ -1,7 +1,12 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import { Classe } from '../entities/Classe'
-import { deleteClasse, postClasse, putClasse } from '../services/ClasseService'
+import { deleteClasse, getClassesDefault, postClasse, putClasse } from '../services/ClasseService'
 import { DeepPartial } from 'typeorm'
+
+ipcMain.handle('get-classes-default', async (event: IpcMainInvokeEvent) => {
+  console.log(`FrameID:${event.frameId}`)
+  return await getClassesDefault()
+})
 
 ipcMain.handle(
   'post-classe',

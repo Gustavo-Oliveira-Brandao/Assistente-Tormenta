@@ -10,6 +10,7 @@ import { Pericia } from '../main/api/entities/Pericia'
 import { Poder } from '../main/api/entities/Poder'
 import { Proficiencia } from '../main/api/entities/Proficiencia'
 import { Recurso } from '../main/api/entities/Recurso'
+import { IRaca } from '../main/@types/IRaca'
 
 // Custom APIs for renderer
 const api = {
@@ -29,12 +30,15 @@ const api = {
   },
 
   classe: {
+    getClassesDefault: (): Promise<Partial<Classe[]>> => ipcRenderer.invoke('get-classes-default'),
     postClasse: (_classe: Partial<Classe>, _idPersonagem: number): Promise<void> =>
       ipcRenderer.invoke('post-classe', _classe, _idPersonagem),
     putClasse: (_classe: Classe): Promise<void> => ipcRenderer.invoke('put-classe', _classe),
     deleteClasse: (_id: number): Promise<void> => ipcRenderer.invoke('delete-classe', _id)
   },
-
+  racas: {
+    getRacasDefault: (): Promise<Partial<IRaca[]>> => ipcRenderer.invoke('get-racas-default')
+  },
   deslocamento: {
     putDeslocamento: (_deslocamento: Deslocamento): Promise<void> =>
       ipcRenderer.invoke('put-deslocamento', _deslocamento)
@@ -54,6 +58,7 @@ const api = {
   },
 
   poder: {
+    getPoderesDefault: (): Promise<Partial<Poder[]>> => ipcRenderer.invoke('get-poderes-default'),
     getPoderesPorPersonagem: (_idPersonagem: number): Promise<Poder[]> =>
       ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
     getPoderesPorClasse: (_idClasse: number): Promise<Poder[]> =>

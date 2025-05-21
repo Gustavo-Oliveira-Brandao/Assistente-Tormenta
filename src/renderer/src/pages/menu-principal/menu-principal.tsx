@@ -1,8 +1,13 @@
 import { JSX } from 'react'
 import styles from './menu-principal.module.scss'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@renderer/store/store'
 
 export const MenuPrincipal = (): JSX.Element => {
+  const dispatch = useDispatch()
+  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
+
   return (
     <main className={styles.mainMenu}>
       <div className={styles.backdrop}></div>

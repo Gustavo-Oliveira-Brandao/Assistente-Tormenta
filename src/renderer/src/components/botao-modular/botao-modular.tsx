@@ -6,7 +6,7 @@ type BotaoModularProps = {
   icone?: string
   css: string
   cor?: string
-  font: string
+  font?: string
   texto?: string | number
   onClickEvent: () => void
 }

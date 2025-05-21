@@ -9,6 +9,7 @@ import {
 } from '../services/MagiaService'
 import { Grimorio } from '../entities/Grimorio'
 import { Magia } from '../entities/Magia'
+import { DeepPartial } from 'typeorm'
 
 ipcMain.handle('get-grimorios-personagem', async (event: IpcMainInvokeEvent, _idPersonagem) => {
   console.log(`FrameID:${event.frameId}`)
@@ -17,7 +18,7 @@ ipcMain.handle('get-grimorios-personagem', async (event: IpcMainInvokeEvent, _id
 
 ipcMain.handle(
   'post-grimorio',
-  async (event: IpcMainInvokeEvent, _grimorio: Partial<Grimorio>, _idPersonagem: number) => {
+  async (event: IpcMainInvokeEvent, _grimorio: DeepPartial<Grimorio>, _idPersonagem: number) => {
     console.log(`FrameID:${event.frameId}`)
     await postGrimorio(_grimorio, _idPersonagem)
   }
@@ -35,7 +36,7 @@ ipcMain.handle('delete-grimorio', async (event: IpcMainInvokeEvent, _id: number)
 
 ipcMain.handle(
   'post-magia',
-  async (event: IpcMainInvokeEvent, _magia: Partial<Magia>, _idGrimorio: number) => {
+  async (event: IpcMainInvokeEvent, _magia: DeepPartial<Magia>, _idGrimorio: number) => {
     console.log(`FrameID:${event.frameId}`)
     await postMagia(_magia, _idGrimorio)
   }

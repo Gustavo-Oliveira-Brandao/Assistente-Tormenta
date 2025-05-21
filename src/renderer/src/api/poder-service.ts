@@ -1,6 +1,7 @@
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
+import { DeepPartial } from 'typeorm'
 
-export const exibirPoderesDefault = async (): Promise<Partial<IPoder[]>> => {
+export const exibirPoderesDefault = async (): Promise<DeepPartial<IPoder[]>> => {
   return await window.api.poder.getPoderesDefault()
 }
 
@@ -8,11 +9,14 @@ export const exibirPoderesPersonagem = async (idPersonagem: number): Promise<IPo
   return await window.api.poder.getPoderesPorPersonagem(idPersonagem)
 }
 
-export const exibirPoderesClasse = async (idClasse: number): Promise<Partial<IPoder[]>> => {
+export const exibirPoderesClasse = async (idClasse: number): Promise<DeepPartial<IPoder[]>> => {
   return await window.api.poder.getPoderesPorClasse(idClasse)
 }
 
-export const criarPoder = async (poder: Partial<IPoder>, idPersonagem: number): Promise<void> => {
+export const criarPoder = async (
+  poder: DeepPartial<IPoder>,
+  idPersonagem: number
+): Promise<void> => {
   await window.api.poder.postPoder(poder, idPersonagem)
 }
 

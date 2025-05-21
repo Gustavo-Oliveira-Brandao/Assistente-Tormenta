@@ -7,6 +7,7 @@ import {
   putPersonagem
 } from '../services/PersonagemService'
 import { Personagem } from '../entities/Personagem'
+import { DeepPartial } from 'typeorm'
 
 ipcMain.handle('get-personagens', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
@@ -20,7 +21,7 @@ ipcMain.handle('get-personagem', async (event: IpcMainInvokeEvent, _id: number) 
 
 ipcMain.handle(
   'post-personagem',
-  async (event: IpcMainInvokeEvent, _personagem: Partial<Personagem>) => {
+  async (event: IpcMainInvokeEvent, _personagem: DeepPartial<Personagem>) => {
     console.log(`FrameID:${event.frameId}`)
     await postPersonagem(_personagem)
   }

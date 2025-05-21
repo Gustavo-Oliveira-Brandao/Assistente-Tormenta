@@ -7,7 +7,7 @@ import { extrairJson } from './JsonService'
 
 export const ClasseRepository = SQLiteDataSource.getRepository(Classe)
 
-export const getClassesDefault = async (): Promise<Partial<Classe[]>> => {
+export const getClassesDefault = async (): Promise<DeepPartial<Classe[]>> => {
   const pasta = path.join('packs', 'T20 GOTY', 'classes')
   return await extrairJson(pasta)
 }

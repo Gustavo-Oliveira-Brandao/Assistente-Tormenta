@@ -1,4 +1,5 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
+import { DeepPartial } from 'typeorm'
 
 export const exibirTodosPersonagens = async (): Promise<IPersonagem[]> => {
   return await window.api.personagem.getTodosPersonagem()
@@ -8,7 +9,7 @@ export const exibirPersonagemPorId = async (id: number): Promise<IPersonagem> =>
   return await window.api.personagem.getPersonagem(id)
 }
 
-export const criarPersonagem = async (personagem: Partial<IPersonagem>): Promise<void> => {
+export const criarPersonagem = async (personagem: DeepPartial<IPersonagem>): Promise<void> => {
   await window.api.personagem.postPersonagem(personagem)
 }
 

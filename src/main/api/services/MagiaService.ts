@@ -1,3 +1,4 @@
+import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Grimorio } from '../entities/Grimorio'
 import { Magia } from '../entities/Magia'
@@ -18,7 +19,7 @@ export const getGrimoriosPorPersonagem = async (_idPersonagem: number): Promise<
 }
 
 export const postGrimorio = async (
-  _grimorio: Partial<Grimorio>,
+  _grimorio: DeepPartial<Grimorio>,
   _idPersonagem: number
 ): Promise<void> => {
   try {
@@ -62,7 +63,7 @@ export const deleteGrimorio = async (_id: number): Promise<void> => {
   }
 }
 
-export const postMagia = async (_magia: Partial<Magia>, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> => {
   try {
     const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
     const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })

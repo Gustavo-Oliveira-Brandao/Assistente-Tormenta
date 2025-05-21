@@ -1,3 +1,4 @@
+import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entities/Personagem'
 import { Proficiencia } from '../entities/Proficiencia'
@@ -18,7 +19,7 @@ export const getProficienciasPorPersonagem = async (
 }
 
 export const postProficiencia = async (
-  _proficiencia: Partial<Proficiencia>,
+  _proficiencia: DeepPartial<Proficiencia>,
   _idPersonagem: number
 ): Promise<void> => {
   try {

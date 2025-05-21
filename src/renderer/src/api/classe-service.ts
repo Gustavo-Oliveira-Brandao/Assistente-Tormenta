@@ -1,7 +1,8 @@
 import { IClasse } from '@renderer/@types/T20 GOTY/IClasse'
+import { DeepPartial } from 'typeorm'
 
 export const criarClasse = async (
-  classe: Partial<IClasse>,
+  classe: DeepPartial<IClasse>,
   idPersonagem: number
 ): Promise<void> => {
   await window.api.classe.postClasse(classe, idPersonagem)
@@ -15,7 +16,7 @@ export const deletarClasse = async (id: number): Promise<void> => {
   await window.api.classe.deleteClasse(id)
 }
 
-export const exibirClasses = async (): Promise<Partial<IClasse[]>> => {
+export const exibirClassesDefault = async (): Promise<DeepPartial<IClasse[]>> => {
   const classes = await window.api.classe.getClassesDefault()
   return classes
 }

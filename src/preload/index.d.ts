@@ -2,6 +2,7 @@ import { ElectronAPI } from '@electron-toolkit/preload'
 import { IClasse } from '@renderer/@types/T20 GOTY/IClasse'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import { IRaca } from '@renderer/@types/T20 GOTY/IRaca'
+import { DeepPartial } from 'typeorm'
 
 declare global {
   interface Window {
@@ -10,7 +11,7 @@ declare global {
       personagem: {
         getTodosPersonagem: () => Promise<Personagem[]>
         getPersonagem: (id: number) => Promise<Personagem>
-        postPersonagem: (personagem: Partial<Personagem>) => Promise<void>
+        postPersonagem: (personagem: DeepPartial<Personagem>) => Promise<void>
         putPersonagem: (personagem: Personagem) => Promise<void>
         deletePersonagem: (id: number) => Promise<void>
       }
@@ -18,36 +19,36 @@ declare global {
         putAtributo: (atributo: Atributo) => Promise<void>
       }
       classe: {
-        getClassesDefault: () => Promise<Partial<IClasse[]>>
-        postClasse: (classe: Partial<Classe>, idPersonagem: number) => Promise<void>
+        getClassesDefault: () => Promise<DeepPartial<IClasse[]>>
+        postClasse: (classe: DeepPartial<Classe>, idPersonagem: number) => Promise<void>
         putClasse: (classe: Classe) => Promise<void>
         deleteClasse: (id: number) => Promise<void>
       }
       raca: {
-        getRacasDefault: () => Promise<Partial<IRaca[]>>
+        getRacasDefault: () => Promise<DeepPartial<IRaca[]>>
       }
       deslocamento: {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
       magia: {
         getGrimoriosPorPersonagem: (_idPersonagem: number) => Promise<Grimorio[]>
-        postGrimorio: (grimorio: Partial<Grimorio>, idPersonagem: number) => Promise<void>
+        postGrimorio: (grimorio: DeepPartial<Grimorio>, idPersonagem: number) => Promise<void>
         putGrimorio: (grimorio: Grimorio) => Promise<void>
         deleteGrimorio: (id: number) => Promise<void>
-        postMagia: (magia: Partial<Magia>, idGrimorio: number) => Promise<void>
+        postMagia: (magia: DeepPartial<Magia>, idGrimorio: number) => Promise<void>
         deleteMagia: (id: number) => Promise<void>
       }
       poder: {
-        getPoderesDefault: () => Promise<Partial<IPoder[]>>
+        getPoderesDefault: () => Promise<DeepPartial<IPoder[]>>
         getPoderesPorPersonagem: (_idPersonagem: number) => Promise<Poder[]>
         getPoderesPorClasse: (_idClasse: number) => Promise<Poder[]>
-        postPoder: (poder: Partial<Poder>, idPersonagem: number) => Promise<void>
+        postPoder: (poder: DeepPartial<Poder>, idPersonagem: number) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }
       proficiencia: {
         getProficienciasPorPersonagem: (_idPersonagem: number) => Promise<Proficiencia[]>
         postProficiencia: (
-          proficiencia: Partial<Proficiencia>,
+          proficiencia: DeepPartial<Proficiencia>,
           idPersonagem: number
         ) => Promise<void>
         putProficiencia: (proficiencia: Proficiencia) => Promise<void>

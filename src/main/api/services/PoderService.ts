@@ -3,10 +3,11 @@ import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entities/Personagem'
 import { Poder } from '../entities/Poder'
 import { extrairJson } from './JsonService'
+import { DeepPartial } from 'typeorm'
 
 export const PoderRepository = SQLiteDataSource.getRepository(Poder)
 
-export const getPoderesDefault = async (): Promise<Partial<Poder[]>> => {
+export const getPoderesDefault = async (): Promise<DeepPartial<Poder[]>> => {
   const pasta = path.join('packs', 'T20 GOTY', 'poderes')
   return await extrairJson(pasta)
 }
@@ -29,7 +30,10 @@ export const getPoderesPorClasse = async (_idClasse: number): Promise<Poder[]> =
   }
 }
 
-export const postPoder = async (_poder: Partial<Poder>, _idPersonagem: number): Promise<void> => {
+export const postPoder = async (
+  _poder: DeepPartial<Poder>,
+  _idPersonagem: number
+): Promise<void> => {
   try {
     const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
     const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })

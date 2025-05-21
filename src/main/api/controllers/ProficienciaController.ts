@@ -6,6 +6,7 @@ import {
   putProficiencia
 } from '../services/ProficienciaService'
 import { Proficiencia } from '../entities/Proficiencia'
+import { DeepPartial } from 'typeorm'
 
 ipcMain.handle(
   'get-proficiencias-personagem',
@@ -19,7 +20,7 @@ ipcMain.handle(
   'post-proficiencia',
   async (
     event: IpcMainInvokeEvent,
-    _proficiencia: Partial<Proficiencia>,
+    _proficiencia: DeepPartial<Proficiencia>,
     _idPersonagem: number
   ) => {
     console.log(`FrameID:${event.frameId}`)

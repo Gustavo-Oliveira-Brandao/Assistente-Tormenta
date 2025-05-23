@@ -366,6 +366,11 @@
         "url": "https://game-icons.net/1x1/skoll/raise-skeleton.html",
         "iconName": "Raise skeleton icon",
         "newName": "osteon"
+      },
+      {
+        "url": "https://game-icons.net/1x1/skoll/footsteps.html",
+        "iconName": "Footsteps icon",
+        "newName": "deslocamento"
       }
     ]
   },

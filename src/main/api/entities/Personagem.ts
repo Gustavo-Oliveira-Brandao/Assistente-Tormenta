@@ -26,21 +26,24 @@ export class Personagem {
   tipo: string
 
   @Column({
-    type: 'integer'
+    type: 'integer',
+    nullable: true
   })
-  idade: number
+  idade?: number
 
   @Column({
     type: 'varchar',
-    length: 10
+    length: 10,
+    nullable: true
   })
-  altura: string
+  altura?: string
 
   @Column({
     type: 'varchar',
-    length: 20
+    length: 20,
+    nullable: true
   })
-  peso: string
+  peso?: string
 
   @Column({
     type: 'varchar',
@@ -51,7 +54,7 @@ export class Personagem {
   @OneToMany(() => Classe, (classes) => classes.personagem, {
     cascade: true
   })
-  classes: Classe[]
+  classes?: Classe[]
 
   @Column({
     type: 'varchar',
@@ -124,5 +127,5 @@ export class Personagem {
     cascade: true,
     nullable: true
   })
-  grimorios: Grimorio[]
+  grimorios?: Grimorio[]
 }

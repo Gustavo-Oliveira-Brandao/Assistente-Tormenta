@@ -1,0 +1,39 @@
+@use '@renderer/assets/variables.scss';
+
+.pericia {
+  background: variables.$secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+  border-radius: 5px;
+
+  button:hover {
+    .nome {
+      color: variables.$highlight-color;
+    }
+  }
+
+  .titulo {
+    background-color: transparent;
+    p {
+      text-align: left;
+    }
+
+    .nome {
+      font-size: 13.5px;
+    }
+  }
+
+  .rolagem {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+
+    .treinamento {
+      color: variables.$special-text-color;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

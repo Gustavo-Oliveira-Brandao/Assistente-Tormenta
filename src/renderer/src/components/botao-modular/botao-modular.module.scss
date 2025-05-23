@@ -18,12 +18,20 @@ button {
   }
 }
 
+.transparente {
+  background-color: transparent;
+}
+
 .corVermelho,
 .corPrimaria:hover,
 .botaoQuadrado30px:hover,
 .corSecundaria:hover {
   background-color: variables.$red;
   transition: 0.2s background-color ease;
+}
+
+.ativo {
+  background-color: variables.$red !important;
 }
 
 .corVerde {

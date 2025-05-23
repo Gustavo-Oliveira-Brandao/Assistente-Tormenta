@@ -18,8 +18,7 @@ export class Bonus {
   label: string
 
   @Column({
-    type: 'integer',
-    nullable: false
+    type: 'integer'
   })
   valor: number
 

@@ -1,4 +1,5 @@
 import { IAtributo } from './IAtributo'
+import { IBonus } from './IBonus'
 import { IClasse } from './IClasse'
 import { IDeslocamento } from './IDeslocamento'
 import { IGrimorio } from './IGrimorio'
@@ -11,9 +12,9 @@ export type IPersonagem = {
   id: number
   nome: string
   tipo: string
-  idade: number
-  altura: string
-  peso: string
+  idade?: number
+  altura?: string
+  peso?: string
   raca: string
   classes: IClasse[]
   origem: string
@@ -28,6 +29,7 @@ export type IPersonagem = {
   poderes?: IPoder[]
   deslocamentos: IDeslocamento[]
   recursos: IRecurso[]
+  bonusCD?: IBonus[]
   proficiencias?: IProficiencia[]
   grimorios?: IGrimorio[]
 }

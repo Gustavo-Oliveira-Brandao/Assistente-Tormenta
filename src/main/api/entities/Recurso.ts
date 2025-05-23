@@ -22,20 +22,20 @@ export class Recurso {
     type: 'integer',
     nullable: true
   })
-  valorTemporario: number
+  valorTemporario?: number
 
   @Column({
     type: 'varchar',
     nullable: true
   })
-  atributo: string
+  atributo?: string
 
   @OneToMany(() => Bonus, (bonus) => bonus.recurso, {
     cascade: true,
     nullable: true,
     eager: true
   })
-  bonus: Bonus[]
+  bonus?: Bonus[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.recursos, {
     onDelete: 'CASCADE',

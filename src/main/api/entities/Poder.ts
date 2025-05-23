@@ -45,7 +45,7 @@ export class Poder {
     nullable: true,
     eager: true
   })
-  subEfeitos: SubEfeito[]
+  subEfeitos?: SubEfeito[]
 
   @OneToMany(() => Tag, (tags) => tags.poder, {
     cascade: true,

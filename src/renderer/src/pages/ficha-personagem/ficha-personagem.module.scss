@@ -1,0 +1,190 @@
+@use '@renderer/assets/variables.scss';
+
+.ficha {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+
+  .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    overflow-y: auto;
+    background-color: variables.$background-color;
+
+    .navButtons {
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      width: 100%;
+      z-index: 5;
+      position: sticky;
+      background-color: variables.$primary-color;
+      top: 0;
+    }
+  }
+}
+
+.fotoPersonagem {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .opacidade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .detalhes {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
+
+    .detalhe {
+      display: flex;
+      align-items: center;
+      width: 200px;
+      padding: 2px;
+
+      img {
+        width: 20px !important;
+        height: 20px !important;
+      }
+
+      p {
+        margin-left: 5px;
+        font-size: 13.3px;
+        color: variables.$special-text-color;
+      }
+    }
+  }
+}
+
+.fotoPersonagem:hover {
+  .opacidade {
+    background-color: #2e2e2e77;
+  }
+}
+
+.personagemInfo {
+  display: flex;
+  height: 40px;
+  width: 100%;
+
+  .nome {
+    background-color: variables.$red;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 190px;
+    max-height: 40px;
+
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .nivel {
+    width: 40px;
+    background-color: variables.$secondary-red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
+
+.barrasRecurso {
+  width: 100%;
+}
+
+.infoSecundaria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  .titulo {
+    width: 90%;
+    border-bottom: 4px solid variables.$red;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+.pericias {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recurso {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 90%;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.atributo {
+  width: 95px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: variables.$secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+
+  .titulo {
+    height: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+    button {
+      background-color: transparent;
+      color: variables.$special-text-color;
+      font-size: 13px;
+      font-weight: 400;
+      padding: 0;
+    }
+
+    button:hover {
+      color: variables.$highlight-color;
+    }
+  }
+}

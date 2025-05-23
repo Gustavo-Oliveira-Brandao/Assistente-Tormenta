@@ -4,6 +4,7 @@ import {
   criarPersonagem,
   deletarPersonagem
 } from '@renderer/api/personagem-service'
+import { criarPersonagemDemo } from '@renderer/api/teste-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
 import { DeepPartial } from 'typeorm'
 
@@ -16,6 +17,14 @@ export const useCriarPersonagem = (): UseMutationResult<
   const queryClient = useQueryClient()
   return useMutation({
     mutationFn: (personagem: DeepPartial<IPersonagem>) => criarPersonagem(personagem),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagens'] })
+  })
+}
+
+export const useCriarPersonagemDemo = (): UseMutationResult<void, Error, void, unknown> => {
+  const queryClient = useQueryClient()
+  return useMutation({
+    mutationFn: () => criarPersonagemDemo(),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagens'] })
   })
 }

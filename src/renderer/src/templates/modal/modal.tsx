@@ -18,11 +18,12 @@ export const Modal = (props: ModalProps): JSX.Element => {
       <div className={styles.backdrop} onClick={props.onClose}></div>
       <div className={styles.modal}>
         <header className={styles.modalHeader}>
-          <h2>{props.titulo}</h2>
+          <h2 className="tormenta20Font">{props.titulo}</h2>
           <BotaoModular
             css="botaoClose"
             onClickEvent={() => props.onClose}
             icone="./icons/close.svg"
+            cor="transparente"
           />
         </header>
         <div

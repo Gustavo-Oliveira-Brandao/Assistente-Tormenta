@@ -15,6 +15,12 @@ export class Classe {
   nome: string
 
   @Column({
+    type: 'boolean',
+    default: false
+  })
+  ehPrincipal: boolean
+
+  @Column({
     type: 'integer'
   })
   nivel: number

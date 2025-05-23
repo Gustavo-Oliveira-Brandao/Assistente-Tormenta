@@ -46,7 +46,7 @@ export class Pericia {
     nullable: true,
     eager: true
   })
-  bonus: Bonus[]
+  bonus?: Bonus[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.pericias, {
     onDelete: 'CASCADE',

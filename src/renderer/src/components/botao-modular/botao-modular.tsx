@@ -8,6 +8,7 @@ type BotaoModularProps = {
   cor?: string
   font?: string
   texto?: string | number
+  estaAtivo?: boolean
   onClickEvent: () => void
 }
 
@@ -17,10 +18,12 @@ export const BotaoModular = ({
   texto,
   onClickEvent,
   font,
-  cor
+  cor,
+  estaAtivo
 }: BotaoModularProps): JSX.Element => {
   const btnClass = classNames(styles[css], font, {
-    [styles[cor ?? '']]: cor != null
+    [styles[cor ?? '']]: cor != null,
+    [styles.ativo]: estaAtivo
   })
 
   return (

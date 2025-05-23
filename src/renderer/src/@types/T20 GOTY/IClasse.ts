@@ -6,10 +6,11 @@ export type IClasse = {
   id: number
   key?: number
   nome: string
-  nivel: number
+  nivel?: number
   vidaInicial: number
   vidaPorNivel: number
   manaPorNivel: number
+  ehPrincipal: true
   progressaoConjuracao: string
   progressao: IProgressao[]
   poderesClasse: IPoder[]

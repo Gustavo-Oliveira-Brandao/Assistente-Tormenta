@@ -31,7 +31,7 @@ export class Atributo {
     nullable: true,
     eager: true
   })
-  bonus: Bonus[]
+  bonus?: Bonus[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {
     onDelete: 'CASCADE',

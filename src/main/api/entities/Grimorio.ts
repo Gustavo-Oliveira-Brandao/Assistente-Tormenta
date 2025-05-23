@@ -31,7 +31,7 @@ export class Grimorio {
     nullable: true,
     eager: true
   })
-  magias: Magia[]
+  magias?: Magia[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.grimorios, {
     onDelete: 'CASCADE',

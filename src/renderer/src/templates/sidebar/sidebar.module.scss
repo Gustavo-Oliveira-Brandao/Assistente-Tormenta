@@ -1,0 +1,7 @@
+@use '@renderer/assets/variables.scss';
+
+.sidebar {
+  width: 230px;
+  height: fit-content;
+  background-color: variables.$primary-color;
+}

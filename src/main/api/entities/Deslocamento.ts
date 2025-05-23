@@ -23,7 +23,7 @@ export class Deslocamento {
     nullable: true,
     eager: true
   })
-  bonus: Bonus[]
+  bonus?: Bonus[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.deslocamentos, {
     onDelete: 'CASCADE',

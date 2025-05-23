@@ -6,19 +6,16 @@ import styles from './barra-recurso.module.scss'
 
 type barraRecursoProps = {
   recurso: IRecurso
+  height: string
 }
-export const BarraRecurso = ({ recurso }: barraRecursoProps): JSX.Element => {
+export const BarraRecurso = ({ recurso, height }: barraRecursoProps): JSX.Element => {
   const [larguraBarra, setLarguraBarra] = useState(0)
   const dispach = useDispatch()
 
   useEffect(() => {
-    console.log(recurso)
     if (recurso.valorMaximo) {
       if (recurso.valorAtual >= 0) {
         setLarguraBarra((recurso.valorAtual / recurso.valorMaximo) * 100)
-      }
-      if (recurso.valorAtual < 0) {
-        setLarguraBarra(0)
       }
     }
   }, [recurso.valorAtual, recurso.valorMaximo])
@@ -28,6 +25,7 @@ export const BarraRecurso = ({ recurso }: barraRecursoProps): JSX.Element => {
       <div
         onClick={() => dispach(abrirModal(`RECURSO_${recurso.categoria}_EDICAO_MODAL`))}
         className={styles.barraRecurso}
+        style={{ height: height }}
       >
         <div
           className={`${styles[recurso.categoria]} ${styles.barra}`}

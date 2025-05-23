@@ -20,8 +20,8 @@ import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePod
 import { useExibirMagiasDefault } from '@renderer/hooks/selectors/useMagiaQuery'
 import { CardMagia } from '@renderer/components/card-magia/card-magia'
 import { useCriarMagia, useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
-import { AtributoForm } from '@renderer/components/forms/atributo-form'
-import { PericiaForm } from '@renderer/components/forms/pericia-form'
+import { DeepPartial } from 'typeorm'
+import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
 
 export const FichaPersonagem = (): JSX.Element => {
   const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
@@ -72,13 +72,12 @@ export const FichaPersonagem = (): JSX.Element => {
                   </div>
                 </div>
               </div>
-
               <div className={styles.personagemInfo}>
                 <div className={styles.nome}>
                   <p className="tormenta20Font">{personagem.nome}</p>
                 </div>
                 <div className={styles.nivel}>
-                  <p className="tormenta20Font">1</p>
+                  <p className="tormenta20Font">{personagem.nivel}</p>
                 </div>
               </div>
               <div className={styles.barrasRecurso}>
@@ -95,30 +94,28 @@ export const FichaPersonagem = (): JSX.Element => {
                   })
                   .map((recurso) => (
                     <div key={recurso.id} className={styles.barra}>
-                      <BarraRecurso recurso={recurso} />
+                      <BarraRecurso recurso={recurso} height="30px" />
                     </div>
                   ))}
 
                 {personagem.recursos
                   .filter((recurso) => recurso.categoria == 'defesa')
                   .map((recurso) => (
-                    <>
-                      <div key={recurso.id} className={styles.infoSecundaria}>
-                        <div className={styles.titulo}>
-                          <h2 className="tormenta20Font">{recurso.categoria}</h2>
-                        </div>
-                        <div className={styles.recurso}>
-                          <img src="./icons/paladino.svg" alt="Defesa" />
-                          <BotaoModular
-                            onClickEvent={() =>
-                              dispatch(abrirModal(`RECURSO_${recurso.categoria}_EDICAO_MODAL`))
-                            }
-                            texto={recurso.valorMaximo}
-                            font="tormenta20Font"
-                            css="botaoQuadrado30px"
-                            cor="corSecundaria"
-                          />
-                        </div>
+                    <div key={recurso.id} className={styles.infoSecundaria}>
+                      <div className={styles.titulo}>
+                        <h2 className="tormenta20Font">{recurso.categoria}</h2>
+                      </div>
+                      <div className={styles.recurso}>
+                        <img src="./icons/paladino.svg" alt="Defesa" />
+                        <BotaoModular
+                          onClickEvent={() =>
+                            dispatch(abrirModal(`RECURSO_${recurso.categoria}_EDICAO_MODAL`))
+                          }
+                          texto={recurso.valorMaximo}
+                          font="tormenta20Font"
+                          css="botaoQuadrado30px"
+                          cor="corSecundaria"
+                        />
                       </div>
                       {modalAberto == `RECURSO_${recurso.categoria}_EDICAO_MODAL` &&
                         createPortal(
@@ -132,28 +129,26 @@ export const FichaPersonagem = (): JSX.Element => {
                           </Modal>,
                           document.body
                         )}
-                    </>
+                    </div>
                   ))}
                 {personagem.deslocamentos
                   .filter((deslocamento) => deslocamento.nome == 'caminhada')
                   .map((deslocamento) => (
-                    <>
-                      <div key={deslocamento.id} className={styles.infoSecundaria}>
-                        <div className={styles.titulo}>
-                          <h2 className="tormenta20Font">{deslocamento.nome}</h2>
-                        </div>
-                        <div className={styles.recurso}>
-                          <img src="./icons/deslocamento.svg" alt="Defesa" />
-                          <BotaoModular
-                            onClickEvent={() =>
-                              dispatch(abrirModal(`DESLOCAMENTO_${deslocamento.nome}_EDICAO_MODAL`))
-                            }
-                            texto={deslocamento.valorBase}
-                            font="tormenta20Font"
-                            css="botaoQuadrado30px"
-                            cor="corSecundaria"
-                          />
-                        </div>
+                    <div key={deslocamento.id} className={styles.infoSecundaria}>
+                      <div className={styles.titulo}>
+                        <h2 className="tormenta20Font">{deslocamento.nome}</h2>
+                      </div>
+                      <div className={styles.recurso}>
+                        <img src="./icons/deslocamento.svg" alt="Defesa" />
+                        <BotaoModular
+                          onClickEvent={() =>
+                            dispatch(abrirModal(`DESLOCAMENTO_${deslocamento.nome}_EDICAO_MODAL`))
+                          }
+                          texto={deslocamento.valorBase}
+                          font="tormenta20Font"
+                          css="botaoQuadrado30px"
+                          cor="corSecundaria"
+                        />
                       </div>
                       {modalAberto == `DESLOCAMENTO_${deslocamento.nome}_EDICAO_MODAL` &&
                         createPortal(
@@ -167,7 +162,7 @@ export const FichaPersonagem = (): JSX.Element => {
                           </Modal>,
                           document.body
                         )}
-                    </>
+                    </div>
                   ))}
                 <div className={styles.infoSecundaria}>
                   <div className={styles.titulo}>
@@ -177,27 +172,14 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.nome === 'iniciativa')
                       .map((pericia) => (
-                        <>
-                          <Pericia
-                            key={pericia.id}
-                            pericia={pericia}
-                            width="90%"
-                            height="40px"
-                            exibeTreinamento={false}
-                          />
-                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
-                            createPortal(
-                              <Modal
-                                titulo={pericia.nome}
-                                onClose={() => dispatch(fecharModal())}
-                                width="550px"
-                                height="400px"
-                              >
-                                <></>
-                              </Modal>,
-                              document.body
-                            )}
-                        </>
+                        <Pericia
+                          key={pericia.id}
+                          pericia={pericia}
+                          width="90%"
+                          height="40px"
+                          exibeTreinamento={false}
+                          editavel={true}
+                        />
                       ))}
                   </div>
                 </div>
@@ -242,27 +224,26 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.atributos
                       .sort((a, b) => a.ordem - b.ordem)
                       .map((atributo) => (
-                        <>
-                          <div className={styles.atributo} key={atributo.id}>
-                            <div className={styles.titulo}>
-                              <button
-                                className="tormenta20Font"
-                                onClick={() =>
-                                  dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))
-                                }
-                              >
-                                {atributo.nome}
-                              </button>
-                            </div>
+                        <div className={styles.atributo} key={atributo.id}>
+                          <div className={styles.titulo}>
                             <BotaoModular
-                              css="rollBtn"
-                              cor="transparente"
-                              icone="./icons/d20 cinza.svg"
-                              onClickEvent={() => console.log('teste')}
                               font="tormenta20Font"
-                              texto={atributo.valorBase}
+                              onClickEvent={() =>
+                                dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))
+                              }
+                              texto={atributo.nome}
+                              css="simples"
+                              cor="transparente"
                             />
                           </div>
+                          <BotaoModular
+                            css="rollBtn"
+                            cor="transparente"
+                            icone="./icons/d20 cinza.svg"
+                            onClickEvent={() => console.log('teste')}
+                            font="tormenta20Font"
+                            texto={atributo.valorBase}
+                          />
                           {modalAberto === `ATRIBUTO_${atributo.nome}_EDICAO_MODAL` &&
                             createPortal(
                               <Modal
@@ -271,11 +252,11 @@ export const FichaPersonagem = (): JSX.Element => {
                                 height="fit-content"
                                 width="400px"
                               >
-                                <AtributoForm atributo={atributo} />
+                                <></>
                               </Modal>,
                               document.body
-                            )}{' '}
-                        </>
+                            )}
+                        </div>
                       ))}
                   </SecaoFicha>
                   <SecaoFicha
@@ -285,27 +266,14 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'combate')
                       .map((pericia) => (
-                        <>
-                          <Pericia
-                            key={pericia.id}
-                            pericia={pericia}
-                            height="40px"
-                            width="100%"
-                            exibeTreinamento={true}
-                          />
-                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
-                            createPortal(
-                              <Modal
-                                titulo={pericia.nome}
-                                onClose={() => dispatch(fecharModal())}
-                                height="fit-content"
-                                width="400px"
-                              >
-                                <PericiaForm pericia={pericia} />
-                              </Modal>,
-                              document.body
-                            )}
-                        </>
+                        <Pericia
+                          key={pericia.id}
+                          pericia={pericia}
+                          height="40px"
+                          width="100%"
+                          exibeTreinamento={true}
+                          editavel={true}
+                        />
                       ))}
                   </SecaoFicha>
                   <SecaoFicha
@@ -315,28 +283,14 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'testeResistencia')
                       .map((pericia) => (
-                        <>
-                          <Pericia
-                            key={pericia.id}
-                            pericia={pericia}
-                            exibeTreinamento={true}
-                            height="40px"
-                            width="100%"
-                          />
-
-                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
-                            createPortal(
-                              <Modal
-                                titulo={pericia.nome}
-                                onClose={() => dispatch(fecharModal())}
-                                height="fit-content"
-                                width="400px"
-                              >
-                                <PericiaForm pericia={pericia} />
-                              </Modal>,
-                              document.body
-                            )}
-                        </>
+                        <Pericia
+                          key={pericia.id}
+                          pericia={pericia}
+                          exibeTreinamento={true}
+                          editavel={true}
+                          height="40px"
+                          width="100%"
+                        />
                       ))}
                   </SecaoFicha>
                   <SecaoFicha
@@ -346,28 +300,14 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'geral')
                       .map((pericia) => (
-                        <>
-                          <Pericia
-                            key={pericia.id}
-                            pericia={pericia}
-                            height="40px"
-                            width="100%"
-                            exibeTreinamento={true}
-                          />
-
-                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
-                            createPortal(
-                              <Modal
-                                titulo={pericia.nome}
-                                onClose={() => dispatch(fecharModal())}
-                                height="fit-content"
-                                width="400px"
-                              >
-                                <PericiaForm pericia={pericia} />
-                              </Modal>,
-                              document.body
-                            )}
-                        </>
+                        <Pericia
+                          key={pericia.id}
+                          pericia={pericia}
+                          height="40px"
+                          width="100%"
+                          exibeTreinamento={true}
+                          editavel={true}
+                        />
                       ))}
                   </SecaoFicha>
                 </>
@@ -441,7 +381,7 @@ export const FichaPersonagem = (): JSX.Element => {
                     css="poderes"
                   >
                     {magiasDefault &&
-                      magiasDefault.map((magia, index) => (
+                      magiasDefault.map((magia: IMagia, index) => (
                         <CardMagia
                           key={index}
                           magia={magia}

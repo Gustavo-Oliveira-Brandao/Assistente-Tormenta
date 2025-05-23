@@ -84,6 +84,16 @@ button {
   }
 }
 
+.simples {
+  background-color: transparent;
+  color: variables.$special-text-color;
+  font-size: 13px;
+}
+
+.simples:hover {
+  color: variables.$highlight-color;
+}
+
 .minimalista {
   display: flex;
   cursor: pointer;

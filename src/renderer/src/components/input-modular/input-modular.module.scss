@@ -3,11 +3,18 @@
 .input {
   border-radius: 5px;
   font-size: 13px;
+  border: none;
+}
+
+.label {
+  color: variables.$special-text-color;
+  font-size: 13px;
 }
 
 .input[type='number'] {
   background-color: variables.$secondary-color;
   width: 3rem;
+  text-align: center;
   height: 2rem;
 }
 
@@ -15,4 +22,11 @@
   background-color: variables.$secondary-color;
   width: 150px;
   height: 2rem;
+  padding-left: 10px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

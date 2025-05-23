@@ -47,6 +47,7 @@ const api = {
   },
 
   magia: {
+    getMagiasDefault: (): Promise<DeepPartial<Magia[]>> => ipcRenderer.invoke('get-magias-default'),
     getGrimoriosPorPersonagem: (_idPersonagem: number): Promise<Grimorio[]> =>
       ipcRenderer.invoke('get-grimorios-personagem', _idPersonagem),
     postGrimorio: (_grimorio: DeepPartial<Grimorio>, _idPersonagem: number): Promise<void> =>

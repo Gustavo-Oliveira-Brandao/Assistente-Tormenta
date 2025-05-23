@@ -15,6 +15,13 @@ import { Modal } from '@renderer/templates/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { Pericia } from '@renderer/components/pericia/pericia'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
+import { CardPoder } from '@renderer/components/card-poder/card-poder'
+import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
+import { useExibirMagiasDefault } from '@renderer/hooks/selectors/useMagiaQuery'
+import { CardMagia } from '@renderer/components/card-magia/card-magia'
+import { useCriarMagia, useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
+import { AtributoForm } from '@renderer/components/forms/atributo-form'
+import { PericiaForm } from '@renderer/components/forms/pericia-form'
 
 export const FichaPersonagem = (): JSX.Element => {
   const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
@@ -22,7 +29,11 @@ export const FichaPersonagem = (): JSX.Element => {
   const { data: personagem } = useExibirPersonagemPorId(idPersonagem)
   const { data: poderes } = useExibirPoderesPersonagem(idPersonagem)
   const { data: poderesDefault } = useExibirPoderesDefault()
-
+  const { data: magiasDefault } = useExibirMagiasDefault()
+  const adicionarMagia = useCriarMagia()
+  const removerMagia = useDeletarMagia()
+  const adicionarPoder = useCriarPoder()
+  const removerPoder = useDeletarPoder()
   const [aba, setAba] = useState('ATRIBUTOS')
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
@@ -231,26 +242,40 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.atributos
                       .sort((a, b) => a.ordem - b.ordem)
                       .map((atributo) => (
-                        <div className={styles.atributo} key={atributo.id}>
-                          <div className={styles.titulo}>
-                            <button
-                              className="tormenta20Font"
-                              onClick={() =>
-                                dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))
-                              }
-                            >
-                              {atributo.nome}
-                            </button>
+                        <>
+                          <div className={styles.atributo} key={atributo.id}>
+                            <div className={styles.titulo}>
+                              <button
+                                className="tormenta20Font"
+                                onClick={() =>
+                                  dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))
+                                }
+                              >
+                                {atributo.nome}
+                              </button>
+                            </div>
+                            <BotaoModular
+                              css="rollBtn"
+                              cor="transparente"
+                              icone="./icons/d20 cinza.svg"
+                              onClickEvent={() => console.log('teste')}
+                              font="tormenta20Font"
+                              texto={atributo.valorBase}
+                            />
                           </div>
-                          <BotaoModular
-                            css="rollBtn"
-                            cor="transparente"
-                            icone="./icons/d20 cinza.svg"
-                            onClickEvent={() => console.log('teste')}
-                            font="tormenta20Font"
-                            texto={atributo.valorBase}
-                          />
-                        </div>
+                          {modalAberto === `ATRIBUTO_${atributo.nome}_EDICAO_MODAL` &&
+                            createPortal(
+                              <Modal
+                                titulo={atributo.nome}
+                                onClose={() => dispatch(fecharModal())}
+                                height="fit-content"
+                                width="400px"
+                              >
+                                <AtributoForm atributo={atributo} />
+                              </Modal>,
+                              document.body
+                            )}{' '}
+                        </>
                       ))}
                   </SecaoFicha>
                   <SecaoFicha
@@ -260,13 +285,27 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'combate')
                       .map((pericia) => (
-                        <Pericia
-                          key={pericia.id}
-                          pericia={pericia}
-                          height="40px"
-                          width="100%"
-                          exibeTreinamento={true}
-                        />
+                        <>
+                          <Pericia
+                            key={pericia.id}
+                            pericia={pericia}
+                            height="40px"
+                            width="100%"
+                            exibeTreinamento={true}
+                          />
+                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
+                            createPortal(
+                              <Modal
+                                titulo={pericia.nome}
+                                onClose={() => dispatch(fecharModal())}
+                                height="fit-content"
+                                width="400px"
+                              >
+                                <PericiaForm pericia={pericia} />
+                              </Modal>,
+                              document.body
+                            )}
+                        </>
                       ))}
                   </SecaoFicha>
                   <SecaoFicha
@@ -276,13 +315,28 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'testeResistencia')
                       .map((pericia) => (
-                        <Pericia
-                          key={pericia.id}
-                          pericia={pericia}
-                          exibeTreinamento={true}
-                          height="40px"
-                          width="100%"
-                        />
+                        <>
+                          <Pericia
+                            key={pericia.id}
+                            pericia={pericia}
+                            exibeTreinamento={true}
+                            height="40px"
+                            width="100%"
+                          />
+
+                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
+                            createPortal(
+                              <Modal
+                                titulo={pericia.nome}
+                                onClose={() => dispatch(fecharModal())}
+                                height="fit-content"
+                                width="400px"
+                              >
+                                <PericiaForm pericia={pericia} />
+                              </Modal>,
+                              document.body
+                            )}
+                        </>
                       ))}
                   </SecaoFicha>
                   <SecaoFicha
@@ -292,15 +346,130 @@ export const FichaPersonagem = (): JSX.Element => {
                     {personagem.pericias
                       .filter((pericia) => pericia.categoria === 'geral')
                       .map((pericia) => (
-                        <Pericia
-                          key={pericia.id}
-                          pericia={pericia}
-                          height="40px"
-                          width="100%"
-                          exibeTreinamento={true}
+                        <>
+                          <Pericia
+                            key={pericia.id}
+                            pericia={pericia}
+                            height="40px"
+                            width="100%"
+                            exibeTreinamento={true}
+                          />
+
+                          {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
+                            createPortal(
+                              <Modal
+                                titulo={pericia.nome}
+                                onClose={() => dispatch(fecharModal())}
+                                height="fit-content"
+                                width="400px"
+                              >
+                                <PericiaForm pericia={pericia} />
+                              </Modal>,
+                              document.body
+                            )}
+                        </>
+                      ))}
+                  </SecaoFicha>
+                </>
+              )}
+              {aba === 'PODERES' && (
+                <>
+                  <SecaoFicha
+                    header={
+                      <>
+                        <h2 className="tormenta20Font">Poderes</h2>
+                        <BotaoModular
+                          css="minimalista"
+                          texto="Buscar poderes"
+                          onClickEvent={() => dispatch(abrirModal(`PODERES_LOJA_MODAL`))}
+                          icone="./icons/busca.svg"
+                          cor="transparente"
+                          font="tormenta20Font"
+                        />
+                      </>
+                    }
+                    css="poderes"
+                  >
+                    {poderes &&
+                      poderes.map((poder, index) => (
+                        <CardPoder
+                          key={index}
+                          iconeBotaoInteracao="./icons/delete.svg"
+                          onInteract={() => removerPoder.mutate(poder.id)}
+                          poder={poder}
                         />
                       ))}
                   </SecaoFicha>
+                  {modalAberto === 'PODERES_LOJA_MODAL' &&
+                    createPortal(
+                      <Modal
+                        titulo="Adquirir poderes"
+                        onClose={() => dispatch(fecharModal())}
+                        height="400px"
+                        width="550px"
+                      >
+                        {poderesDefault &&
+                          poderesDefault.map((poder, index) => (
+                            <CardPoder
+                              key={index}
+                              iconeBotaoInteracao="./icons/adicao.svg"
+                              onInteract={() => adicionarPoder.mutate({ poder, idPersonagem })}
+                              poder={poder}
+                            />
+                          ))}
+                      </Modal>,
+                      document.body
+                    )}
+                </>
+              )}
+              {aba === 'MAGIAS' && (
+                <>
+                  <SecaoFicha
+                    header={
+                      <>
+                        <h2 className="tormenta20Font">Magias</h2>
+                        <BotaoModular
+                          css="minimalista"
+                          texto="Buscar magias"
+                          cor="transparente"
+                          font="tormenta20Font"
+                          onClickEvent={() => dispatch(abrirModal(`MAGIAS_LOJA_MODAL`))}
+                          icone="./icons/busca.svg"
+                        />
+                      </>
+                    }
+                    css="poderes"
+                  >
+                    {magiasDefault &&
+                      magiasDefault.map((magia, index) => (
+                        <CardMagia
+                          key={index}
+                          magia={magia}
+                          iconeBotaoInteracao="./icons/delete.svg"
+                          onInteract={() => removerMagia.mutate(magia.key)}
+                        />
+                      ))}
+                  </SecaoFicha>
+                  {modalAberto === 'MAGIAS_LOJA_MODAL' &&
+                    createPortal(
+                      <Modal
+                        titulo="Adicionar magias"
+                        onClose={() => dispatch(fecharModal())}
+                        height="400px"
+                        width="550px"
+                      >
+                        {magiasDefault &&
+                          magiasDefault.map((magia, index) => (
+                            <CardMagia
+                              key={index}
+                              magia={magia}
+                              iconeBotaoInteracao="./icons/adicao.svg"
+                              onInteract={() => removerMagia.mutate(magia.key)}
+                            />
+                          ))}
+                      </Modal>,
+                      document.body
+                    )}
                 </>
               )}
             </div>

@@ -21,7 +21,7 @@ export const Modal = (props: ModalProps): JSX.Element => {
           <h2 className="tormenta20Font">{props.titulo}</h2>
           <BotaoModular
             css="botaoClose"
-            onClickEvent={() => props.onClose}
+            onClickEvent={() => props.onClose()}
             icone="./icons/close.svg"
             cor="transparente"
           />

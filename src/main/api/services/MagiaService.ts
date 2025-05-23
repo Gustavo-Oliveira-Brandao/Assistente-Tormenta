@@ -3,6 +3,8 @@ import { SQLiteDataSource } from '../data-source'
 import { Grimorio } from '../entities/Grimorio'
 import { Magia } from '../entities/Magia'
 import { Personagem } from '../entities/Personagem'
+import path from 'path'
+import { extrairJson } from './JsonService'
 
 const MagiaRepository = SQLiteDataSource.getRepository(Magia)
 const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
@@ -89,4 +91,11 @@ export const deleteMagia = async (_id: number): Promise<void> => {
   } catch {
     throw new Error('Erro ao deletar magia.')
   }
+}
+
+export const getMagiasDefault = async (): Promise<DeepPartial<Magia[]>> => {
+  const pasta = path.join('packs', 'T20 GOTY', 'magias')
+  const result = (await extrairJson(pasta)) as DeepPartial<Magia[]>
+  const magias = result.flat()
+  return magias
 }

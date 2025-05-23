@@ -904,14 +904,14 @@
   "recursos": [
     {
       "categoria": "vida",
-      "valorAtual": 7,
+      "valorAtual": 8,
       "valorTemporario": 0,
       "atributo": "constituicao",
       "bonus": []
     },
     {
       "categoria": "mana",
-      "valorAtual": 7,
+      "valorAtual": 6,
       "valorTemporario": 0,
       "atributo": "inteligencia",
       "bonus": []

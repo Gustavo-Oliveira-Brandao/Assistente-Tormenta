@@ -10,6 +10,7 @@ export const putPericia = async (_pericia: Pericia): Promise<void> => {
       throw new Error('Pericia não encontrada!')
     }
     PericiaRepository.merge(periciaEncontrada, _pericia)
+    periciaEncontrada.bonus = _pericia.bonus
     await PericiaRepository.save(periciaEncontrada)
   } catch {
     throw new Error('Ocorreu um erro ao atualizar pericia!')

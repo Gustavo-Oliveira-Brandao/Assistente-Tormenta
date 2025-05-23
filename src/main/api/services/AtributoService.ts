@@ -10,6 +10,7 @@ export const putAtributo = async (_atributo: Atributo): Promise<void> => {
       throw new Error('Atributo não encontrado!')
     }
     atributoRepository.merge(atributoEncontrado, _atributo)
+    atributoEncontrado.bonus = _atributo.bonus
     await atributoRepository.save(atributoEncontrado)
   } catch {
     throw new Error('Ocorreu um erro ao atualizar o atributo.')

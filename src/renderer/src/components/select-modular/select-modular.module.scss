@@ -12,3 +12,14 @@
     background-color: variables.$secondary-color;
   }
 }
+
+.label {
+  color: variables.$special-text-color;
+  font-size: 13px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

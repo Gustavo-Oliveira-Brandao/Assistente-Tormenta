@@ -8,8 +8,10 @@ import { DeepPartial } from 'typeorm'
 export const PoderRepository = SQLiteDataSource.getRepository(Poder)
 
 export const getPoderesDefault = async (): Promise<DeepPartial<Poder[]>> => {
-  const pasta = path.join('packs', 'T20 GOTY', 'poderes')
-  return await extrairJson(pasta)
+  const pasta = path.join('packs', 'T20 GOTY', 'demo-poder')
+  const result = (await extrairJson(pasta)) as DeepPartial<Poder[]>
+  const poderes = result.flat()
+  return poderes
 }
 
 export const getPoderesPorPersonagem = async (_idPersonagem: number): Promise<Poder[]> => {

@@ -6,6 +6,10 @@ export const exibirGrimoriosPersonagem = async (idPersonagem: number): Promise<I
   return await window.api.magia.getGrimoriosPorPersonagem(idPersonagem)
 }
 
+export const exibirMagiasDefault = async (): Promise<DeepPartial<IMagia[]>> => {
+  return await window.api.magia.getMagiasDefault()
+}
+
 export const criarGrimorio = async (
   grimorio: DeepPartial<IGrimorio>,
   idPersonagem: number

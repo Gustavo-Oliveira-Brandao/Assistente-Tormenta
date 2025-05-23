@@ -3,6 +3,7 @@ import {
   deleteGrimorio,
   deleteMagia,
   getGrimoriosPorPersonagem,
+  getMagiasDefault,
   postGrimorio,
   postMagia,
   putGrimorio
@@ -10,6 +11,12 @@ import {
 import { Grimorio } from '../entities/Grimorio'
 import { Magia } from '../entities/Magia'
 import { DeepPartial } from 'typeorm'
+
+ipcMain.handle('get-magias-default', async (event: IpcMainInvokeEvent) => {
+  console.log(`FrameID:${event.frameId}`)
+  const magias = await getMagiasDefault()
+  return magias
+})
 
 ipcMain.handle('get-grimorios-personagem', async (event: IpcMainInvokeEvent, _idPersonagem) => {
   console.log(`FrameID:${event.frameId}`)

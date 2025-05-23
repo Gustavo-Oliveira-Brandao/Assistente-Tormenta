@@ -26,6 +26,7 @@
     border-radius: 5px;
     transform: translate(-50%, -50%);
     background-color: variables.$background-color;
+    overflow: hidden;
 
     .modalHeader {
       display: flex;
@@ -51,6 +52,7 @@
       padding: 15px;
       grid-template-columns: 1fr;
       gap: 15px;
+      overflow-y: auto;
     }
 
     .modalFooter {

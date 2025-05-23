@@ -11,7 +11,8 @@ import { DeepPartial } from 'typeorm'
 
 ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
-  return await getPoderesDefault()
+  const poderes = await getPoderesDefault()
+  return poderes
 })
 
 ipcMain.handle(

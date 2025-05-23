@@ -1,0 +1,67 @@
+@use '../variables.scss';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.select {
+  background-color: variables.$secondary-color;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.option {
+  background-color: variables.$secondary-color;
+}
+
+.submitButton {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$green;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
+
+.alert {
+  font-family: 'poppins';
+  font-size: 12px;
+  color: #ffba00;
+  margin-top: 5px;
+  text-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: inherit;
+  padding-bottom: 30px;
+
+  .fieldset {
+    padding: 10px;
+    border: 1px solid variables.$secondary-color;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .rowFields {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}

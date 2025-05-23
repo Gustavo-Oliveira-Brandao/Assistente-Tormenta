@@ -5,18 +5,33 @@ import styles from './select-modular.module.scss'
 type SelectModularProps = {
   name: string
   options: string[]
+  label: string
 }
 
-export const SelectModular = ({ name, options }: SelectModularProps): JSX.Element => {
-  const { register } = useFormContext()
+export const SelectModular = ({ name, options, label }: SelectModularProps): JSX.Element => {
+  const {
+    register,
+    formState: { errors }
+  } = useFormContext()
 
   return (
-    <select className={styles.select} id={name} {...register(name)}>
-      {options.map((opt) => (
-        <option key={opt} value={opt}>
-          {opt}
-        </option>
-      ))}
-    </select>
+    <div className={styles.formGroup}>
+      <label className={styles.label + ' tormenta20Font'} htmlFor={name}>
+        {label}
+      </label>
+      <select className={styles.select + ' tormenta20Font'} id={name} {...register(name)}>
+        {options.map((opt) => (
+          <option key={opt} value={opt}>
+            {opt}
+          </option>
+        ))}
+      </select>
+
+      {errors[name] && (
+        <p className="alert" role="alert">
+          {String(errors[name].message)}
+        </p>
+      )}
+    </div>
   )
 }

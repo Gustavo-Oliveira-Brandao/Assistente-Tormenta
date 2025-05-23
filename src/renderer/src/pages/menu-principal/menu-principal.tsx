@@ -93,10 +93,6 @@ export const MenuPrincipal = (): JSX.Element => {
                     <img src="./character.png" alt={personagem.nome} />
                     <div className={styles.detalhesPersonagem}>
                       <h2 className="tormenta20Font">{personagem.nome}</h2>
-                      <div className={styles.statusPersonagem}>
-                        <p className="tormenta20Font">Raça: {personagem.raca}</p>
-                        <p className="tormenta20Font">Classe: {personagem.classes[0].nome}</p>
-                      </div>
                     </div>
                     <p className={styles.nivel}>{personagem.nivel}</p>
                   </div>

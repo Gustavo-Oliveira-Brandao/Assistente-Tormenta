@@ -15,14 +15,17 @@ export const carregarPersonagem = (personagem: IPersonagem): IPersonagem => {
   }
   personagem.nivel = nivelFinal
   for (const recurso of personagem.recursos) {
+    const atributo = personagem.atributos.find((atributo) => atributo.nome == recurso.atributo)
     if (recurso.categoria == 'vida') {
-      recurso.valorMaximo = vidaInicial + vidaTotalPorNivel
+      const valorAtributoVida = (atributo?.valorBase ?? 0) * personagem.nivel
+      recurso.valorMaximo = vidaInicial + vidaTotalPorNivel + valorAtributoVida
     }
     if (recurso.categoria == 'mana') {
       recurso.valorMaximo = manaTotalPorNivel
     }
     if (recurso.categoria == 'defesa') {
-      recurso.valorMaximo = recurso.valorAtual
+      const valorAtributoDefesa = atributo?.valorBase ?? 0
+      recurso.valorMaximo = recurso.valorAtual + valorAtributoDefesa
     }
   }
 

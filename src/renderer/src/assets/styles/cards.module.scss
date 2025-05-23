@@ -1,0 +1,53 @@
+@use '../variables.scss';
+
+.itemTags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+
+  p {
+    height: 20px;
+    width: fit-content;
+    display: flex;
+    background-color: variables.$blue;
+    border-radius: 5px;
+    padding: 11px 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+
+.descricao {
+  font-size: 14px;
+}
+
+.subEfeitos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .subEfeito {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.preRequisitos {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.destaque {
+  font-size: 14px;
+  color: variables.$red;
+}
+
+.aprimoramentos {
+  p {
+    font-size: 14px;
+  }
+}

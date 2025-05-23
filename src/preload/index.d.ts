@@ -1,5 +1,6 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
 import { IClasse } from '@renderer/@types/T20 GOTY/IClasse'
+import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import { IRaca } from '@renderer/@types/T20 GOTY/IRaca'
 import { DeepPartial } from 'typeorm'
@@ -31,6 +32,7 @@ declare global {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
       magia: {
+        getMagiasDefault: () => Promise<DeepPartial<IMagia[]>>
         getGrimoriosPorPersonagem: (_idPersonagem: number) => Promise<Grimorio[]>
         postGrimorio: (grimorio: DeepPartial<Grimorio>, idPersonagem: number) => Promise<void>
         putGrimorio: (grimorio: Grimorio) => Promise<void>

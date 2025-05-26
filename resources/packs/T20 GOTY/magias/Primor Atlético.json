@@ -1,0 +1,34 @@
+{
+  "nome": "Primor Atlético",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você modifica os limites físicos do alvo, que recebe deslocamento +9m e +10 em testes de Atletismo.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Arcana",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, o alvo recebe um bônus adicional de +20 em testes de Atletismo para saltar (para um bônus total de +30)."
+    },
+    {
+      "custo": 1,
+      "descricao": "além do normal, o alvo pode escalar paredes e tetos sem precisar fazer testes de Atletismo. Para isso, precisa estar com as mãos livres, mas pode usar uma única mão se ficar parado no lugar. O alvo não fica desprevenido enquanto escala."
+    },
+    {
+      "custo": 1,
+      "descricao": "muda a execução para ação de movimento, o alcance para pessoal, o alvo para você e a duração para instantânea. Você salta muito alto e pousa em alcance corpo a corpo de uma criatura em alcance curto. Se fizer um ataque corpo a corpo contra essa criatura neste turno, recebe os benefícios e penalidades de uma investida e sua arma causa um dado extra de dano do mesmo tipo durante este ataque."
+    },
+    {
+      "custo": 3,
+      "descricao": "além do normal, ao fazer testes de perícias baseadas em Força, Destreza ou Constituição, o alvo pode rolar dois dados e escolher o melhor. Não afeta testes de ataque ou resistência. Requer 2º círculo."
+    }
+  ],
+  "key": 40
+}

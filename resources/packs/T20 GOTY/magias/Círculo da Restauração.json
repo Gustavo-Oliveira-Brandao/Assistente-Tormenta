@@ -1,0 +1,22 @@
+{
+  "nome": "Círculo da Restauração",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera de 3m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você evoca um círculo de luz que emana uma energia poderosa. Qualquer criatura viva que termine o turno dentro do círculo recupera 3d8+3 PV e 1 PM. Mortos-vivos e criaturas que sofrem dano por luz perdem PV e PM na mesma quantidade. Uma criatura pode recuperar no máximo 5 PM por dia com esta magia.",
+  "duracao": "5 rodadas",
+  "nivelCirculo": 4,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta a regeneração de PV em 1d8+1."
+    }
+  ],
+  "key": 156
+}

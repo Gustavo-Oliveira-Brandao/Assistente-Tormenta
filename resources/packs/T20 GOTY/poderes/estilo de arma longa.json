@@ -1,0 +1,14 @@
+{
+  "nome": "estilo de arma longa",
+  "descricao": "Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas.",
+  "preRequisitos": "For +1, treinado em Luta.",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "combate"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 473
+}

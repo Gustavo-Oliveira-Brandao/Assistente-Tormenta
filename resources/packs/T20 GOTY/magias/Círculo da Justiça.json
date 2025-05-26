@@ -1,0 +1,30 @@
+{
+  "nome": "Círculo da Justiça",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 9m de raio;",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "Vontade parcial",
+  "descricao": "Também conhecida como Lágrimas do Deus da Trapaça, esta magia é usada em tribunais e para proteger áreas sensíveis. Criaturas na área sofrem –10 em testes de Acrobacia, Enganação, Furtividade e Ladinagem e não podem mentir deliberadamente — mas podem tentar evitar perguntas que normalmente responderiam com uma mentira (sendo evasivas ou cometendo omissões, por exemplo). Uma criatura que passe na resistência tem as penalidades reduzidas para –5 e pode mentir.",
+  "duracao": "1 dia",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda a execução para ação padrão, o alcance para pessoal, o alvo para você, a duração para cena e a resistência para nenhuma. Em vez do normal, qualquer criatura ou objeto invisível em alcance curto se torna visível. Isso não dissipa o efeito mágico; se sair do seu alcance, a criatura ou objeto voltam a ficar invisíveis."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda a penalidade nas perícias para –10 (se passar na resistência) e –20 (se falhar). Requer 4º círculo."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda a duração para permanente e adiciona componente material (balança de prata no valor de T$ 5.000)."
+    }
+  ],
+  "key": 71
+}

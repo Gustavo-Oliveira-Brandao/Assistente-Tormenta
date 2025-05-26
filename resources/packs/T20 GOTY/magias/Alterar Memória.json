@@ -1,0 +1,26 @@
+{
+  "nome": "Alterar Memória",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Você invade a mente do alvo e altera ou apaga suas memórias da última hora.",
+  "duracao": "instantânea",
+  "nivelCirculo": 4,
+  "alcance": "toque",
+  "tradicao": "Arcana",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para pessoal e o alvo para área cone de 4,5m."
+    },
+    {
+      "custo": 5,
+      "descricao": "você pode alterar ou apagar as memórias das últimas 24 horas."
+    }
+  ],
+  "key": 148
+}

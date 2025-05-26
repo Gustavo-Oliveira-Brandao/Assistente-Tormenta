@@ -1,0 +1,14 @@
+{
+  "nome": "ataque poderoso",
+  "descricao": "Declare que está usando este poder antes de fazer um ataque corpo a corpo. Você sofre –2 no teste de ataque, mas recebe +5 na rolagem de dano.",
+  "preRequisitos": "For 13.",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "combate"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": 460
+}

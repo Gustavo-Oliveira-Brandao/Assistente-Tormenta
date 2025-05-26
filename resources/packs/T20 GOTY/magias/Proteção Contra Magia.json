@@ -1,0 +1,30 @@
+{
+  "nome": "Proteção Contra Magia",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você protege o alvo contra efeitos mágicos nocivos. O alvo recebe +5 em testes de resistência contra magias.",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "muda o bônus para +10. Requer 4º círculo."
+    },
+    {
+      "custo": 4,
+      "descricao": "em vez do normal, o alvo fica imune a uma escola de magia a sua escolha. Requer 4º Círculo."
+    },
+    {
+      "custo": 9,
+      "descricao": "em vez do normal, o alvo fica imune a duas escolas de magia a sua escolha. Requer 5º Círculo."
+    }
+  ],
+  "key": 135
+}

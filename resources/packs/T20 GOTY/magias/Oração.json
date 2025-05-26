@@ -1,0 +1,34 @@
+{
+  "nome": "Oração",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "todas as criaturas (veja texto)",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você e todos os seus aliados no alcance recebem +2 em testes de perícia e rolagens de dano, e todos os seus inimigos no alcance sofrem –2 em testes de perícia e rolagens de dano. Esse efeito é cumulativo com outras magias.\nComponente Material: T$ 25 por PM gastos em incensos ou outras oferendas.",
+  "duracao": "sustentada",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta os bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar)."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda o alcance para médio. Requer 3º círculo."
+    },
+    {
+      "custo": 12,
+      "descricao": "muda a duração para cena. Requer 4º círculo"
+    }
+  ],
+  "key": 90
+}

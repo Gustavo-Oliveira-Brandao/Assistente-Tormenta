@@ -1,0 +1,30 @@
+{
+  "nome": "Velocidade",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.",
+  "duracao": "sustentada",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda a duração para cena. A ação adicional que você pode fazer é apenas de movimento. Uma criatura só pode receber uma ação adicional por turno como efeito de Velocidade."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo."
+    }
+  ],
+  "key": 105
+}

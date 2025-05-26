@@ -1,0 +1,26 @@
+{
+  "nome": "Toque da Morte",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Veja texto",
+  "descricao": "Sua mão exala energias letais. A criatura sofre 10d8+10 pontos de dano de trevas. Se estiver com menos da metade de seus PV, em vez disso deve fazer um teste de Fortitude. Se passar, sofre o dano normal. Se falhar, seus PV são reduzidos a –10.",
+  "duracao": "instantânea",
+  "nivelCirculo": 5,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para curto. Em vez de tocar no alvo, você dispara um raio púrpura da ponta de seu dedo indicador."
+    },
+    {
+      "custo": 10,
+      "descricao": "muda o alcance para curto e o alvo para inimigos no alcance. Em vez de tocar no alvo, você dispara raios púrpuras da ponta de seus dedos."
+    }
+  ],
+  "key": 205
+}

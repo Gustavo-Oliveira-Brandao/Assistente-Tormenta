@@ -1,0 +1,14 @@
+{
+  "nome": "aparência inofensiva",
+  "descricao": "A primeira criatura inteligente (Int 3 ou mais) que atacar você em uma cena deve fazer um teste de Vontade (CD Car). Se falhar, perderá sua ação. Este poder só funciona uma vez por cena; independentemente de a criatura falhar ou não no teste, poderá atacá-lo nas rodadas seguintes.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "destino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 494
+}

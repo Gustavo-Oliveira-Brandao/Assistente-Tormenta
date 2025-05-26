@@ -1,0 +1,17 @@
+{
+  "nome": "arsenal das profundezas - oceano",
+  "descricao": "Você recebe +2 nas rolagens de dano com azagaias, lanças e tridentes e seu multiplicador de crítico com essas armas aumenta em +1.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "oceano"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 526
+}

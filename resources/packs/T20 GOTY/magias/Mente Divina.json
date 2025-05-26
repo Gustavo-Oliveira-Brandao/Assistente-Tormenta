@@ -1,0 +1,34 @@
+{
+  "nome": "Mente Divina",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você fortalece a mente do alvo. Ele recebe +2 em Inteligência, Sabedoria ou Carisma, a sua escolha. Esse aumento não oferece PV, PM ou perícias adicionais.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 3,
+      "descricao": "em vez do normal, o alvo recebe +2 nos três atributos mentais. Requer 3º círculo."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
+    },
+    {
+      "custo": 7,
+      "descricao": "em vez do normal, o alvo recebe +4 no atributo escolhido. Requer 4º círculo."
+    },
+    {
+      "custo": 12,
+      "descricao": "em vez do normal, o alvo recebe +4 nos três atributos mentais. Requer 5º círculo."
+    }
+  ],
+  "key": 85
+}

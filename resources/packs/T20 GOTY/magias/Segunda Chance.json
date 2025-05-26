@@ -1,0 +1,30 @@
+{
+  "nome": "Segunda Chance",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Um brilho alaranjado, na forma de asas de fênix, emana do alvo. Ele recupera 200 pontos de vida e se cura de qualquer das seguintes condições: abalado, apavorado, alquebrado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo.",
+  "duracao": "instantânea",
+  "nivelCirculo": 5,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta a cura em +20 PV."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para curto e o alvo para até 5 criaturas."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alvo para uma criatura que tenha morrido há até uma rodada. Esta magia pode curá-la."
+    }
+  ],
+  "key": 202
+}

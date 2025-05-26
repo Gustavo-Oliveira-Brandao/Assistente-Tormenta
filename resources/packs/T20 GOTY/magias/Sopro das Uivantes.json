@@ -1,0 +1,26 @@
+{
+  "nome": "Sopro das Uivantes",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cone de 9m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Você sopra ar gélido que causa 4d6 pontos de dano de frio (Fortitude reduz à metade). Criaturas de tamanho Médio ou menor que falhem na resistência ficam caídas e são empurradas 6m na direção oposta. Se houver uma parede ou outro objeto sólido (mas não uma criatura) no caminho, a criatura para de se mover, mas sofre +2d6 pontos de dano de impacto.",
+  "duracao": "instantânea",
+  "nivelCirculo": 2,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano de frio em +2d6."
+    },
+    {
+      "custo": 3,
+      "descricao": "aumenta o tamanho máximo das criaturas afetadas em uma categoria. Requer 3º círculo."
+    }
+  ],
+  "key": 101
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Raio do Enfraquecimento",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Você dispara um raio púrpura que drena as forças do alvo. Se falhar na resistência, o alvo fica Fatigado Se passar, fica Vulnerável.\nNote que, como efeitos de magia não acumulam, lançar esta magia duas vezes contra o mesmo alvo não irá deixá-lo exausto.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda o alcance para toque e a resistência para Fortitude anula. Em vez do normal, sua mão emana um brilho púrpura e, ao tocar o alvo ele fica fatigado."
+    },
+    {
+      "custo": 2,
+      "descricao": "em vez do normal, se falhar na resistência o alvo fica exausto. Se passar, fica fatigado. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo."
+    }
+  ],
+  "key": 44
+}

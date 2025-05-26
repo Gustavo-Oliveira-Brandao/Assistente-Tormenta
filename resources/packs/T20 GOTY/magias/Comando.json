@@ -1,0 +1,26 @@
+{
+  "nome": "Comando",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 humanóide",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Você dá uma ordem irresistível, que o alvo deve ser capaz de ouvir (mas não precisa entender). Se falhar na resistência, ele deve obedecer ao comando em seu próprio turno da melhor maneira possível. Escolha um dos efeitos.\nFuja: o alvo gasta seu turno se afastando de você (usando todas as suas ações).\nLargue: o alvo solta quaisquer itens que esteja segurando e não pode pegá-los novamente até o início de seu próximo turno. Como esta é uma ação livre, ele ainda pode executar outras ações (exceto pegar aquilo que largou).\nPare: o alvo fica pasmo (uma vez por cena).\nSenta: com uma ação livre, o alvo senta no chão (se estava pendurado ou voando, desce até o chão). Ele pode fazer outras ações, mas não se levantar até o início de seu próximo turno.\nVenha: o alvo gasta seu turno se aproximando de você (usando todas as suas ações).",
+  "duracao": "1 rodada",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alvo para 1 criatura."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta a quantidade de alvos em +1"
+    }
+  ],
+  "key": 14
+}

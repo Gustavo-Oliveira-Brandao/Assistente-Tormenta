@@ -1,0 +1,30 @@
+{
+  "nome": "Açoite Flamejante",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "açoite de chamas criado em sua mão (veja texto)",
+  "execucao": "padrão",
+  "resistencia": "Reflexos parcial",
+  "descricao": "Um açoite de fogo surge em uma de suas mãos com a qual possa empunhar uma arma (essa mão fica ocupada pela duração da magia). Você pode usar uma ação padrão para causar 2d6 pontos de dano de fogo com o açoite em uma criatura em alcance curto e deixá-la em chamas e enredada enquanto estiver em chamas dessa forma. Passar na resistência reduz o dano à metade e evita as chamas.",
+  "duracao": "sustentada",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda a execução para movimento."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o dano para 4d6. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o dano para 6d6. Requer 3º círculo."
+    }
+  ],
+  "key": 3
+}

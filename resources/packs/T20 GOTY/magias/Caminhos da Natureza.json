@@ -1,0 +1,30 @@
+{
+  "nome": "Caminhos da Natureza",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "criaturas escolhidas",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você invoca espíritos da natureza, pedindo que eles abram seu caminho. As criaturas afetadas recebem deslocamento +3m e ignoram penalidades por terreno difícil em terrenos naturais.",
+  "duracao": "1 dia",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você sabe onde fica o norte e recebe +5 em testes de Sobrevivência para se orientar."
+    },
+    {
+      "custo": 1,
+      "descricao": "além do normal, a CD para rastrear os alvos em terreno natural aumenta em +10."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o bônus de deslocamento em +3m."
+    }
+  ],
+  "key": 13
+}

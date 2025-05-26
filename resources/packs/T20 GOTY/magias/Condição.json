@@ -1,0 +1,26 @@
+{
+  "nome": "Condição",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "até 5 criaturas",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Pela duração da magia, você sabe a posição e status (PV atuais, se estão sob efeito de magia...) dos alvos. Depois de lançada, a distância entre você e os alvos não importa — a magia só deixa de detectar um alvo se ele morrer ou for para outro plano.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o número de alvos em +1."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta a duração para 1 dia."
+    }
+  ],
+  "key": 66
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Orientação",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Em seu próximo teste de perícia, o alvo pode rolar dois dados e ficar com o melhor resultado",
+  "duracao": "1 rodada",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda a duração para cena. Em vez do normal, escolha um atributo. Sempre que o alvo fizer um teste de perícia baseado no atributo escolhido, pode rolar dois dados e ficar com o melhor resultado. Não se aplica a testes de ataque ou resistência.\nRequer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda a duração para cena. Escolha entre atributos físicos (Força, Destreza e Constituição) ou mentais (Inteligência, Sabedoria e Carisma). Sempre que o alvo fizer um teste de perícia, pode rolar dois dados e ficar com o melhor resultado. Não se aplica a testes de ataque ou resistência. Requer 3º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alvo para criaturas escolhidas. Requer 3º círculo."
+    }
+  ],
+  "key": 38
+}

@@ -1,0 +1,26 @@
+{
+  "nome": "Invocar Fagulha Elemental",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "familiar elemental",
+  "execucao": "completa",
+  "resistencia": "",
+  "descricao": "Você transforma uma porção de um elemento inerte em uma criatura elemental Pequena do tipo do elemento alvo. Por exemplo, lançar esta magia em um copo de água cria um elemental da água. Você pode criar elementais do ar, da água, do fogo e da terra com esta magia. O elemental obedece a todos os seus comandos e funciona como um familiar comum (veja Familiares, em Tormenta20, p. 38) ou elemental (veja Elementais). O elemental auxilia apenas você e não conta em seu limite de parceiros.",
+  "duracao": "sustentada",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, o elemental fornece redução 10 contra o dano correspondente a seu tipo."
+    },
+    {
+      "custo": 2,
+      "descricao": "em vez do normal, o elemental recebe a habilidade de dois familiares, um comum e um elemental."
+    }
+  ],
+  "key": 80
+}

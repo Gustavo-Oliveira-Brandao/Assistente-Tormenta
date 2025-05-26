@@ -1,0 +1,17 @@
+{
+  "nome": "compreender os ermos - allihanna",
+  "descricao": "Você recebe +2 em Sobrevivência e pode usar Sabedoria para Adestramento (em vez de Carisma).",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "allihanna"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 535
+}

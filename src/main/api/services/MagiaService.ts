@@ -96,6 +96,6 @@ export const deleteMagia = async (_id: number): Promise<void> => {
 export const getMagiasDefault = async (): Promise<DeepPartial<Magia[]>> => {
   const pasta = path.join('packs', 'T20 GOTY', 'magias')
   const result = (await extrairJson(pasta)) as DeepPartial<Magia[]>
-  const magias = result.flat()
+  const magias = result
   return magias
 }

@@ -1,0 +1,22 @@
+{
+  "nome": "Ligação Sombria",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude anula",
+  "descricao": "Cria uma conexão entre seu corpo e o da criatura alvo, deixando uma marca idêntica na pele de ambos. Enquanto a magia durar, sempre que você sofrer qualquer dano ou condição, o alvo desta magia deve fazer um teste de Fortitude; se falhar, sofre o mesmo dano que você ou adquire a mesma condição. A magia termina se o alvo chegar a 0 pontos de vida.",
+  "duracao": "1 dia",
+  "nivelCirculo": 4,
+  "alcance": "longo",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 5,
+      "descricao": "a magia não termina se o alvo chegar a 0 PV (o que significa que dano causado por essa magia pode matá-lo)."
+    }
+  ],
+  "key": 165
+}

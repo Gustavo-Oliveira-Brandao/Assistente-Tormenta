@@ -16,6 +16,17 @@
       "valor": -2
     }
   ],
+
+  "deslocamentos": {
+    "caminhada": 9,
+    "voo": 0,
+    "escalada": 0,
+    "escavacao": 0,
+    "natacao": 0,
+    "plana": true
+  },
+  "tamanho": "minusculo",
+  "tipo": "espirito",
   "poderes": [
     {
       "nome": "asas de borboleta",

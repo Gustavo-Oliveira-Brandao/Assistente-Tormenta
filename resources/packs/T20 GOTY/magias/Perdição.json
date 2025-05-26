@@ -1,0 +1,22 @@
+{
+  "nome": "Perdição",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Criaturas Escolhidas",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "nenhuma",
+  "descricao": "Amaldiçoa os alvos, que recebem –1 em testes de ataque e rolagens de dano. Perdição anula Bênção.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar."
+    }
+  ],
+  "key": 39
+}

@@ -1,0 +1,26 @@
+{
+  "nome": "Camuflagem Ilusória",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "O alvo fica com sua imagem nublada, como se vista através de um líquido, recebendo os efeitos de camuflagem leve.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "toque",
+  "tradicao": "Arcana",
+  "escola": "Ilusão",
+  "aprimoramentos": [
+    {
+      "custo": 3,
+      "descricao": "muda a duração para sustentada. A imagem do alvo fica mais distorcida, aumentando a chance de falha da camuflagem leve para 50%."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Requer 4º círculo."
+    }
+  ],
+  "key": 65
+}

@@ -1,0 +1,34 @@
+{
+  "nome": "Compreensão",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura ou texto",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula (veja descrição)",
+  "descricao": "Essa magia lhe confere compreensão sobrenatural. Você pode tocar um texto e entender as palavras mesmo que não conheça o idioma. Se tocar numa criatura inteligente, pode se comunicar com ela mesmo que não tenham um idioma em comum. Se tocar uma criatura não inteligente, como um animal, pode perceber seus sentimentos.\nVocê também pode gastar uma ação de movimento para ouvir os pensamentos de uma criatura tocada (você “ouve” o que o alvo está pensando), mas um alvo involuntário tem direito a um teste de Vontade para proteger seus pensamentos e evitar este efeito.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alcance para curto."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Você pode entender todas as criaturas afetadas, mas só pode ouvir os pensamentos de uma por vez."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alvo para 1 criatura. Em vez do normal, pode vasculhar os pensamentos do alvo para extrair informações. O alvo tem direito a um teste de Vontade para anular este efeito. O mestre decide se a criatura sabe ou não a informação que você procura. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você pode falar, entender e escrever qualquer idioma. Requer 3º círculo."
+    }
+  ],
+  "key": 15
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "familiar ofídico - sszzaas",
+  "descricao": "Você recebe um familiar cobra (veja a página 38, familiares arcanos) que não conta em seu limite de parceiros.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "sszzaas"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 553
+}

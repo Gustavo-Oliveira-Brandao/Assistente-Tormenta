@@ -1,0 +1,17 @@
+{
+  "nome": "dedo verde - allihanna",
+  "descricao": "Você aprende e pode lançar Controlar Plantas. Caso aprenda de novo essa mágia, seu custo diminui em -1 PM.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "allihanna"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 541
+}

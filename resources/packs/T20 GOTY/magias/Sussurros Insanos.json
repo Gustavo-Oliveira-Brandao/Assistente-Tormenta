@@ -1,0 +1,30 @@
+{
+  "nome": "Sussurros Insanos",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 humanoide",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Você murmura palavras desconexas que afetam a mente do alvo. O alvo fica Confuso.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o número de alvos em +1."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda o alvo para 1 criatura."
+    },
+    {
+      "custo": 12,
+      "descricao": "muda o alvo para criaturas escolhidas. Requer 5º círculo."
+    }
+  ],
+  "key": 102
+}

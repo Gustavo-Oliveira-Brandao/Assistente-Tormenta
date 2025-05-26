@@ -1,0 +1,26 @@
+{
+  "nome": "Talho Invisível de Edauros",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cone de 9m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Esta magia cruel foi desenvolvida pelo mago de combate Edauros, quando ainda era um bípede. Você faz um gesto rápido e dispara uma lâmina de ar em alta velocidade. Criaturas na área sofrem 10d8 pontos de dano de corte e ficam sangrando. Alvos que passem no teste de resistência sofrem metade do dano e não ficam sangrando.",
+  "duracao": "instantânea",
+  "nivelCirculo": 4,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em +2d8."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alvo para você, a duração para sustentada e o efeito para uma vez por rodada, como uma ação de movimento, você pode disparar uma lâmina de ar contra um alvo em alcance médio, causando 6d8 pontos de dano de corte (Fortitude reduz à metade)."
+    }
+  ],
+  "key": 174
+}

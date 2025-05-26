@@ -1,0 +1,30 @@
+{
+  "nome": "Voo",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você recebe deslocamento de voo 12m. Voar por meio desta magia é simples como andar — você pode atacar e lançar magias normalmente enquanto voa. Quando a magia termina, você desce lentamente até o chão, como se estivesse sob efeito de Queda Suave.",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alcance para toque e o alvo para 1 criatura."
+    },
+    {
+      "custo": 4,
+      "descricao": "muda a duração para 1 dia. Requer 4º círculo."
+    },
+    {
+      "custo": 4,
+      "descricao": "muda o alcance para curto e o alvo para até 10 criaturas. Requer 4° círculo."
+    }
+  ],
+  "key": 146
+}

@@ -1,0 +1,42 @@
+{
+  "nome": "Enxame Rubro de Ichabod",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "1 enxame Grande (quadrado de 3m);",
+  "execucao": "padrão",
+  "resistencia": "Reflexos reduz à metade",
+  "descricao": "Você conjura um enxame de pequenas criaturas da Tormenta. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de cada um de seus turnos, o enxame causa 4d12 pontos de dano de ácido a qualquer criatura em seu espaço (Reflexos reduz à metade). Você pode gastar uma ação de movimento para mover o enxame com deslocamento de 12m.",
+  "duracao": "sustentada",
+  "nivelCirculo": 3,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, uma criatura que falhe no teste de Reflexos fica agarrada (o enxame escala e cobre o corpo dela). A criatura pode gastar uma ação padrão e fazer um teste de Acrobacia ou Atletismo para escapar. Se você mover o enxame, a criatura fica livre."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em +1d12."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o dano para trevas."
+    },
+    {
+      "custo": 3,
+      "descricao": "o enxame vira Enorme (quadrado de 6m de lado)."
+    },
+    {
+      "custo": 3,
+      "descricao": "o enxame ganha deslocamento de voo 18m e passa a ocupar um cubo ao invés de um quadrado."
+    },
+    {
+      "custo": 4,
+      "descricao": "o enxame inclui parasitas inchados que explodem e criam novos enxames. No início de cada um de seus turnos, role 1d6. Em um resultado 5 ou 6, um novo enxame surge adjacente a um já existente à sua escolha. Você pode mover todos os enxames com uma única ação de movimento, mas eles não podem ocupar o mesmo espaço. Requer 4º círculo."
+    }
+  ],
+  "key": 119
+}

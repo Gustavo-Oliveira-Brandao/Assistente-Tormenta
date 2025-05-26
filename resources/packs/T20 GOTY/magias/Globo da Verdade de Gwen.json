@@ -1,0 +1,34 @@
+{
+  "nome": "Globo da Verdade de Gwen",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "1 globo",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Cria um globo flutuante e intangível, com 50cm de diâmetro. O globo mostra uma cena vista até uma semana atrás por você ou por uma criatura que você toque ao lançar a magia (mediante uma pergunta; a criatura pode fazer um teste de Vontade para anular o efeito), permitindo que outras pessoas a vejam.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "o globo mostra uma cena vista até um mês atrás."
+    },
+    {
+      "custo": 2,
+      "descricao": "o globo mostra uma cena vista até um ano atrás."
+    },
+    {
+      "custo": 2,
+      "descricao": "ao lançar a magia, você pode tocar um cadáver. O globo mostra a última cena vista por essa criatura."
+    },
+    {
+      "custo": 4,
+      "descricao": "muda o alcance para longo e o efeito para 10 globos. Todos mostram a mesma cena."
+    }
+  ],
+  "key": 78
+}

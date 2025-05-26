@@ -1,0 +1,26 @@
+{
+  "nome": "Silêncio",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 6m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Um silêncio sepulcral recai sobre a área e nenhum som é produzido nela. Enquanto estiverem na área, todas as criaturas ficam Surdo. Além disso, como lançar magias exige palavras mágicas, normalmente nenhuma magia pode ser lançada dentro da área.",
+  "duracao": "sustentada",
+  "nivelCirculo": 2,
+  "alcance": "médio",
+  "tradicao": "Divina",
+  "escola": "Ilusão",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda a área para alvo de 1 objeto. Em vez do normal, o alvo emana uma área de silêncio com 3m de raio. Se lançar a magia num objeto de uma criatura involuntária, ela tem direito a um teste de Vontade para anulá-la."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a duração para cena. Em vez do normal, nenhum som pode deixar a área, mas criaturas dentro da área podem falar, ouvir e lançar magias com palavras mágicas normalmente."
+    }
+  ],
+  "key": 99
+}

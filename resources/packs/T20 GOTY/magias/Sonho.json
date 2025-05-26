@@ -1,0 +1,26 @@
+{
+  "nome": "Sonho",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura viva",
+  "area": "",
+  "efeito": "",
+  "execucao": "10 minutos",
+  "resistencia": "",
+  "descricao": "Você entra nos sonhos de uma criatura. Uma vez lá, pode conversar com ela até que ela acorde. Se o alvo não estiver dormindo quando você lançar a magia, você pode permanecer em transe até que ele adormeça. Durante o transe, você fica Indefeso e sem consciência dos arredores. Você pode sair do transe quando quiser, mas a magia termina.",
+  "duracao": "Veja Texto",
+  "nivelCirculo": 4,
+  "alcance": "ilimitado (veja texto)",
+  "tradicao": "Arcana",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "transforma o sonho do alvo em um pesadelo. A vítima deve fazer um teste de Vontade. Se falhar, não recupera PV ou PM pela noite, sofre 1d10 pontos de dano de trevas e acorda fatigada. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela. Use os mesmos modificadores da magia Vidência."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta o número de alvos em +1. Todos os alvos compartilham um mesmo sonho (ou pesadelo) entre si e com você."
+    }
+  ],
+  "key": 173
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Imobilizar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 humanóide ou animal",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "O alvo fica Paralisado; se passar na resistência, em vez disso fica Lento. A cada rodada, pode gastar uma ação completa para fazer um novo teste de Vontade. Se passar, se liberta do efeito.",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "curto",
+  "tradicao": "Universal",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alvo para 1 espírito."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o número de alvos em +1."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda o alvo para 1 criatura. Requer 4º círculo"
+    }
+  ],
+  "key": 125
+}

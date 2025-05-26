@@ -1,0 +1,38 @@
+{
+  "nome": "Resistência à Energia",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Ao lançar esta magia, escolha entre ácido, eletricidade, fogo, frio, luz ou trevas. O alvo recebe redução de dano 10 contra o tipo de dano escolhido.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta a redução de dano em +5."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a duração para 1 dia. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o efeito para redução de dano contra todos os tipos listados na magia. Requer 3º círculo."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo"
+    }
+  ],
+  "key": 45
+}

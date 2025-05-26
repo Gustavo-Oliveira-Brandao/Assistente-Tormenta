@@ -1,0 +1,34 @@
+{
+  "nome": "Proteção Divina",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia cria uma barreira mística invisível que fornece ao alvo +2 em testes de resistência.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o bônus concedido em +1."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a execução para reação, o alcance para curto e a duração para 1 rodada. Em vez do normal, o alvo recebe +5 no próximo teste de resistência que fizer (cumulativo com o efeito básico desta magia)."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alvo para área de esfera com 3m de raio. Todos os aliados dentro da esfera recebem o bônus da magia. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "também torna o alvo imune a efeitos mentais e de medo. Requer 3º círculo."
+    }
+  ],
+  "key": 42
+}

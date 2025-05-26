@@ -1,0 +1,14 @@
+{
+  "nome": "celebrar ritual",
+  "descricao": "Você pode lançar magias na forma de rituais. Isso dobra seu limite de PM, mas muda a execução para 1 hora (ou o dobro, o que for maior). Você gasta T$ 10 em incensos, oferendas etc. por PM do custo total. Após esse gasto, paga apenas metade do custo em PM da magia (após aplicar quaisquer outros efeitos de redução). Assim, um arcanista de 8º nível pode lançar uma magia de 16 PM gastando T$ 160 e 8 PM.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "magia"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 510
+}

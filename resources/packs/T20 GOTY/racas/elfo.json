@@ -16,6 +16,16 @@
       "valor": -1
     }
   ],
+  "tipo": "humanoide",
+  "tamanho": "medio",
+  "deslocamentos": {
+    "caminhada": 12,
+    "voo": 0,
+    "escalada": 0,
+    "escavacao": 0,
+    "natacao": 0,
+    "plana": false
+  },
   "poderes": [
     {
       "nome": "graça de glórienn",

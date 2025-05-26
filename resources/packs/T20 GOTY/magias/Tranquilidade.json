@@ -1,0 +1,30 @@
+{
+  "nome": "Tranquilidade",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 animal ou humanóide",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "Você emana ondas de serenidade. Se falhar na resistência, o alvo tem sua atitude mudada para indiferente (veja a página 259) e não pode atacar ou realizar qualquer ação agressiva. Se passar, sofre –2 em testes de ataque. Qualquer ação hostil contra o alvo ou seus aliados dissipa a magia e faz ele retornar à atitude que tinha antes (ou pior, de acordo com o mestre).",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alvo para 1 criatura."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta o número de alvos em +1."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para médio e o alvo para criaturas escolhidas. Requer 3º círculo."
+    }
+  ],
+  "key": 53
+}

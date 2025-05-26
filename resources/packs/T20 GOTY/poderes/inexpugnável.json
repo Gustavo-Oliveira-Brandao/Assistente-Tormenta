@@ -1,0 +1,14 @@
+{
+  "nome": "inexpugnável",
+  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência.",
+  "preRequisitos": "Encouraçado, 6º nível de personagem.",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "combate"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 484
+}

@@ -1,0 +1,14 @@
+{
+  "nome": "membro da igreja",
+  "descricao": "Você consegue hospedagem e informação em qualquer templo de sua divindade, para você e seus aliados.",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "acólito"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 419
+}

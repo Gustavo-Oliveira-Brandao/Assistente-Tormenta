@@ -1,0 +1,22 @@
+{
+  "nome": "Mata-Dragão",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cone de 30m",
+  "efeito": "",
+  "execucao": "2 Rodadas",
+  "resistencia": "Reflexos reduz à metade",
+  "descricao": "Esta é uma das mais poderosas magias de destruição existentes. Após entoar longos cânticos, o conjurador dispara uma carga de energia que varre uma enorme área à sua frente, causando 20d12 pontos de dano de essência em todas as criaturas, construções e objetos livres atingidos.  Sempre que rola um resultado 12 em um dado de dano, a magia causa +1d12 pontos de dano. Apesar de seu poder destrutivo, esta magia é lenta, tornando seu uso difícil em combate.",
+  "duracao": "instantânea",
+  "nivelCirculo": 5,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano em 1d12."
+    }
+  ],
+  "key": 195
+}

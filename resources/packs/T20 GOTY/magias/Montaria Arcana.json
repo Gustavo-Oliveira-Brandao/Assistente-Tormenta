@@ -1,0 +1,34 @@
+{
+  "nome": "Montaria Arcana",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "criatura conjurada",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia convoca um parceiro cavalo (ou pônei) de guerra veterano. Sua aparência é de um animal negro com crina e cauda cinzentas e cascos feitos de fumaça, mas você pode mudá-la se quiser. Além dos benefícios normais, a Montaria Arcana pode atravessar terreno difícil sem redução em seu deslocamento. Você pode usar Misticismo no lugar de Cavalgar para efeitos desta montaria (incluindo ser considerado treinado).",
+  "duracao": "1 dia",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, criaturas do tipo animal em alcance curto da montaria devem fazer um teste de Vontade. Se passarem, ficam abaladas pela cena; se falharem, ficam apavoradas por 1d4 rodadas, depois abaladas pela cena."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda a duração para permanente e adiciona penalidade de -3 PM."
+    },
+    {
+      "custo": 3,
+      "descricao": "aumenta o tamanho da montaria em uma categoria. Isso também aumenta o número de criaturas que ela pode carregar — duas para uma criatura Enorme, seis para Colossal. Uma única criatura controla a montaria; as outras apenas são deslocadas."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda o nível do aliado para mestre. Requer 3º círculo."
+    }
+  ],
+  "key": 89
+}

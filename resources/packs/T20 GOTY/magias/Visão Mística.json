@@ -1,0 +1,30 @@
+{
+  "nome": "Visão Mística",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Seus olhos brilham com uma luz azul e passam a enxergar auras mágicas. Este efeito é similar ao uso de Misticismo para detectar magia, mas você detecta todas as auras mágicas em alcance médio e recebe todas as informações sobre elas sem gastar ações. Além disso, você pode gastar uma ação de movimento para descobrir se uma criatura que possa perceber em alcance médio é capaz de lançar magias e qual a aura gerada pelas magias de círculo mais alto que ela pode lançar.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Universal",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "recebe visão no escuro."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a duração para 1 dia."
+    },
+    {
+      "custo": 2,
+      "descricao": "também pode enxergar objetos e criaturas invisíveis. Eles aparecem como formas translúcidas."
+    }
+  ],
+  "key": 55
+}

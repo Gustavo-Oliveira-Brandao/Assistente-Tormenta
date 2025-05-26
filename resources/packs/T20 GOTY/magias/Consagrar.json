@@ -1,0 +1,30 @@
+{
+  "nome": "Consagrar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 9m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você enche a área com energia positiva. Pontos de vida curados por efeitos de luz são maximizados dentro da área. Isso também afeta dano causado em mortos-vivos por esses efeitos.\nPor exemplo, Curar Ferimentos cura automaticamente 18 PV. Esta magia não pode ser lançada em uma área contendo um símbolo visível dedicado a uma divindade que não a sua. Consagrar anula Profanar.",
+  "duracao": "1 dia",
+  "nivelCirculo": 1,
+  "alcance": "longo",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, mortos-vivos na área sofrem –2 em testes e Defesa."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta as penalidades para mortos-vivos em –1."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."
+    }
+  ],
+  "key": 18
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "mente vazia - lin-wu",
+  "descricao": "Você recebe +2 em Iniciativa, Percepção e Vontade.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "lin-wu"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 566
+}

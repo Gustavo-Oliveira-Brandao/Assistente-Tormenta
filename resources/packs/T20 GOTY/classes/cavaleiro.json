@@ -41,6 +41,7 @@
     },
     {
       "nivel": 2,
+      "recebePoderClasse": true,
       "poderes": [
         {
           "nome": "duelo",
@@ -59,7 +60,16 @@
       ]
     },
     {
+      "nivel": 3,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 4,
+      "recebePoderClasse": true
+    },
+    {
       "nivel": 5,
+      "recebePoderClasse": true,
       "poderes": [
         {
           "nome": "caminho do cavaleiro",
@@ -87,7 +97,28 @@
       ]
     },
     {
+      "nivel": 6,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 7,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 8,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 9,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 10,
+      "recebePoderClasse": true
+    },
+    {
       "nivel": 11,
+      "recebePoderClasse": true,
       "poderes": [
         {
           "nome": "resoluto",
@@ -106,7 +137,40 @@
       ]
     },
     {
+      "nivel": 12,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 13,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 14,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 15,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 16,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 17,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 18,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 19,
+      "recebePoderClasse": true
+    },
+    {
       "nivel": 20,
+      "recebePoderClasse": true,
       "poderes": [
         {
           "nome": "bravura final",

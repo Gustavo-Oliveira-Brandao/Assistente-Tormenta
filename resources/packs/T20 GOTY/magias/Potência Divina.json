@@ -1,0 +1,30 @@
+{
+  "nome": "Potência Divina",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você canaliza o poder de sua divindade. Você aumenta uma categoria de tamanho (seu equipamento muda de acordo) e recebe Força +4 e RD 10. Você não pode lançar magias enquanto estiver sob efeito de Potência Divina.",
+  "duracao": "sustentada",
+  "nivelCirculo": 3,
+  "alcance": "pessoal",
+  "tradicao": "Divina",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o bônus de Força em +1."
+    },
+    {
+      "custo": 5,
+      "descricao": "aumenta a resistência a dano em +5."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para toque e o alvo para 1 criatura. A magia falha se você e o alvo não forem devotos da mesma divindade."
+    }
+  ],
+  "key": 134
+}

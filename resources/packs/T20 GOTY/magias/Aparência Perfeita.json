@@ -1,0 +1,22 @@
+{
+  "nome": "Aparência Perfeita",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia lhe concede um rosto idealizado, porte físico garboso, voz melodiosa e olhar sedutor. Enquanto a magia estiver ativa, seu Carisma torna-se 5 (ou recebe um bônus de +2, caso seja 5 ou maior) e você recebe +5 nos testes de Diplomacia e Enganação. Quando a magia acaba, quaisquer observadores percebem a mudança e tendem a suspeitar de você. Da mesma maneira, pessoas que o viram sob o efeito da magia sentirão que “algo está errado” ao vê-lo em condições normais. Quando a cena acabar, você pode gastar os PM da magia novamente como uma ação livre para mantê-la ativa. Este efeito não fornece PV ou PM adicionais.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Ilusão",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alcance para toque e o alvo para 1 humanoide"
+    }
+  ],
+  "key": 61
+}

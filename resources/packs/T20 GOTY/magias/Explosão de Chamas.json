@@ -1,0 +1,30 @@
+{
+  "nome": "Explosão de Chamas",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "Cone de 6m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Reflexos reduz à metade",
+  "descricao": "Um leque de chamas irrompe de suas mãos, causando 2d6 pontos de dano de fogo às criaturas na área.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda o alcance para curto, a área para alvo de 1 objeto e a resistência para Reflexos anula. Você gera uma pequena explosão que não causa dano mas pode acender uma vela, tocha ou fogueira. Também pode fazer um objeto inflamável com RD 0 (como uma corda ou pergaminho) ficar em chamas. Uma criatura em posse de um objeto pode evitar esse efeito se passar no teste de resistência."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano em +1d6."
+    },
+    {
+      "custo": 1,
+      "descricao": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica em chamas (veja Condições, no Apêndice)."
+    }
+  ],
+  "key": 30
+}

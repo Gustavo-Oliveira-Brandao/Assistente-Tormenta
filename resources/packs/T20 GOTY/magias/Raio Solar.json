@@ -1,0 +1,34 @@
+{
+  "nome": "Raio Solar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "linha",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Reflexos (veja texto)",
+  "descricao": "Você canaliza uma poderosa rajada de energia positiva que ilumina o campo de batalha. Criaturas na área sofrem 4d8 pontos de dano de luz (ou 4d12, se forem mortos-vivos) e ficam Ofuscado por uma rodada. Se passarem na resistência, sofrem metade do dano e não ficam ofuscadas.\nCego",
+  "duracao": "instantânea",
+  "nivelCirculo": 2,
+  "alcance": "médio",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda a duração para cena e a resistência para nenhuma. Em vez do normal, cria um facho de luz que ilumina a área da magia. Uma vez por rodada, você pode mudar a direção do facho como uma ação livre."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano ou cura em +1d8 (ou +1d12 em mortos-vivos)."
+    },
+    {
+      "custo": 3,
+      "descricao": "em vez do normal, criaturas vivas a sua escolha na área curam 4d8 pontos de vida; o restante sofre o dano normalmente."
+    },
+    {
+      "custo": 3,
+      "descricao": "criaturas que falhem na resistência ficam cegas por 1d4 rodadas."
+    }
+  ],
+  "key": 92
+}

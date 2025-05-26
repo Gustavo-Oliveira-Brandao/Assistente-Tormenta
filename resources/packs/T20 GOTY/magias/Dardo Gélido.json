@@ -1,0 +1,26 @@
+{
+  "nome": "Dardo Gélido",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Você dispara um dardo de gelo contra o alvo, que sofre 2d6 pontos de dano de frio e fica lento por 1 rodada. Passar no teste de resistência reduz o dano à metade e evita a condição.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano em +1d6."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta o número de alvos em +1 (total de alvos limitado pelo círculo máximo de magia que você pode lançar)."
+    }
+  ],
+  "key": 23
+}

@@ -1,0 +1,34 @@
+{
+  "nome": "Soco de Arsenal",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Ninguém sabe se Mestre Arsenal foi realmente o criador desta magia — mas ele foi o primeiro a utilizá-la. Você fecha o punho e gesticula como se estivesse golpeando o alvo, causando dano de impacto igual a 4d6 + sua Força. A vítima é empurrada 3m na direção oposta à sua. Passar no teste de resistência reduz o dano à metade e evita o empurrão.",
+  "duracao": "instantânea",
+  "nivelCirculo": 2,
+  "alcance": "médio",
+  "tradicao": "Divina",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alcance para pessoal, o alvo para você, a duração para cena e a resistência para nenhuma. Em vez do normal, seus ataques corpo a corpo passam a acertar inimigos distantes. Seu alcance natural aumenta em 3m; uma criatura Média pode atacar adversários a até 4,5m, por exemplo."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em +1d6."
+    },
+    {
+      "custo": 4,
+      "descricao": "aumenta o empurrão em +3m."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o tipo do dano para essência."
+    }
+  ],
+  "key": 100
+}

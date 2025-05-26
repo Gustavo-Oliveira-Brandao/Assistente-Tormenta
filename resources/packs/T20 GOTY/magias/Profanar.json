@@ -1,0 +1,30 @@
+{
+  "nome": "Profanar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 9m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você enche a área com energia negativa. Dano causado por efeitos de trevas é maximizado dentro da área. Isso também afeta PV curados em mortos-vivos por esses efeitos. Esta magia não pode ser lançada em uma área contendo um símbolo visível dedicado a uma divindade que não a sua. Profanar anula Consagrar.",
+  "duracao": "1 dia",
+  "nivelCirculo": 1,
+  "alcance": "longo",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, mortos-vivos na área recebem +2 na Defesa e +2 em todos os testes."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta os bônus para mortos-vivos em +1."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."
+    }
+  ],
+  "key": 41
+}

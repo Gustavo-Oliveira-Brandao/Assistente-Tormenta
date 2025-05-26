@@ -1,0 +1,22 @@
+{
+  "nome": "Conceder Milagre",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você transfere um pouco de seu poder divino a outra criatura. Escolha uma magia de até 2º círculo que você conheça; o alvo pode lançar essa magia uma vez, sem pagar o custo base dela em PM (aprimoramentos podem ser usados, mas o alvo deve gastar seus próprios PM). Você sofre uma penalidade de –3 PM até que o alvo lance a magia.",
+  "duracao": "permanente ou até ser descarregada",
+  "nivelCirculo": 4,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "muda o círculo da magia concedida para 3º e a penalidade de PM para –6."
+    }
+  ],
+  "key": 152
+}

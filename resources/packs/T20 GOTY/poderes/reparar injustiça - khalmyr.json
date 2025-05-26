@@ -1,0 +1,17 @@
+{
+  "nome": "reparar injustiça - khalmyr",
+  "descricao": "Uma vez por rodada, quando um oponente em alcance curto acerta um ataque em você ou em um de seus aliados, você pode gastar 2 PM para fazer esse oponente repetir o ataque, escolhendo o pior entre os dois resultados.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "khalmyr"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": 576
+}

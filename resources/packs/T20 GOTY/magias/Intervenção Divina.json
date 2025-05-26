@@ -1,0 +1,17 @@
+{
+  "nome": "Intervenção Divina",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "veja texto",
+  "area": "",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "veja texto",
+  "descricao": "Você pede a sua divindade para interceder diretamente. Você pode:\n• Curar todos os PV e condições de até 10 criaturas em alcance longo (este efeito cura mortos-vivos, em vez de causar dano).\n• Dissipar os efeitos de qualquer magia de 4º círculo ou menor. \nVocê pode implorar por algo ainda mais poderoso. Nesse caso, a magia requer o sacrifício de 2 PM e pode fazer coisas como:\n• Criar um item mundano de até T$ 30.000.\n• Duplicar os efeitos de qualquer magia de até 4º círculo. Caso a magia precise de um componente material para ser lançada, ainda é necessário providenciar o componente.\n• Proteger uma cidade de um desastre, como uma erupção vulcânica, enchente ou terremoto.\n• Ressuscitar uma criatura em alcance longo que tenha morrido há até uma rodada. A criatura acorda com 1 PV.\n• Qualquer outra coisa que o mestre autorize, conforme os desejos e objetivos da divindade do conjurador.",
+  "duracao": "",
+  "nivelCirculo": 5,
+  "alcance": "veja texto",
+  "tradicao": "Divina",
+  "escola": "Convocação",
+  "aprimoramentos": [],
+  "key": 190
+}

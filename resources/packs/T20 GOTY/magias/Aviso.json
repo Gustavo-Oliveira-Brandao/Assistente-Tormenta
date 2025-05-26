@@ -1,0 +1,34 @@
+{
+  "nome": "Aviso",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "movimento",
+  "resistencia": "",
+  "descricao": "Envia um aviso telepático para uma criatura, mesmo que não possa vê-la nem tenha linha de efeito.\nEscolha um:\nAlerta: o alvo recebe +5 em seu próximo teste de Iniciativa e de Percepção até o fim da próxima cena.\nMensagem: o alvo recebe uma mensagem sua de até 25 palavras. Vocês devem ter um idioma em comum para o alvo poder entendê-lo.\nLocalização: o alvo sabe onde você está naquele momento. Se você mudar de posição, ele não saberá.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "longo",
+  "tradicao": "Universal",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o alcance em um fator de 10 (90m para 900m, 900m para 9km e assim por diante)."
+    },
+    {
+      "custo": 1,
+      "descricao": "se escolher mensagem, o alvo pode enviar uma resposta de até 25 palavras para você até o fim de seu próximo turno."
+    },
+    {
+      "custo": 2,
+      "descricao": "se escolher localização, muda a duração para cena. O alvo sabe onde você está mesmo que você mude de posição."
+    },
+    {
+      "custo": 3,
+      "descricao": "aumenta o número de alvos em +1."
+    }
+  ],
+  "key": 11
+}

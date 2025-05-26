@@ -1,0 +1,30 @@
+{
+  "nome": "Momento de Tormenta",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cubo de 30m",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "veja texto",
+  "descricao": "Uma nuvem rubra surge acima do conjurador. Uma vez por turno, você pode gastar uma ação de movimento para fazer a nuvem manifestar um dos fenômenos a seguir.\n \nChuva ácida. Gotas corrosivas causam 6d4 pontos de dano de ácido em todas as criaturas na área.\n \nNeblina venenosa. Uma neblina faz com que todas as criaturas na área percam 2d12 PV por veneno (Fortitude evita).\n \nRaios escarlates. Até 6 inimigos aleatórios na área sofrem 6d8 pontos de dano de eletricidade (Reflexos reduz à metade).\n \nPesadelos reais. Cada criatura na área sofre 4d6 pontos de dano psíquico e perde 1d4 PM (Vontade reduz o dano à metade e evita a perda de PM).\n \nEsta magia só pode ser aprendida e lançada por conjuradores que tenham observado uma área de Tormenta pelo menos uma vez. Sua divulgação é proibida e seu uso é permitido apenas em áreas controladas na Academia Arcana e outros lugares restritos, para estudar o fenômeno da Tormenta. Usar esta magia em qualquer outro ponto do Reinado é um crime enquadrado na décima-primeira infração do Vigintílogo.",
+  "duracao": "sustentada",
+  "nivelCirculo": 2,
+  "alcance": "pessoal",
+  "tradicao": "Universal",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 3,
+      "descricao": "aumenta o dano em +1 dado do mesmo tipo."
+    },
+    {
+      "custo": 5,
+      "descricao": "além do normal, criaturas na área ficam alquebradas enquanto permanecerem na área."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda a área para círculo de 1km de raio."
+    }
+  ],
+  "key": 88
+}

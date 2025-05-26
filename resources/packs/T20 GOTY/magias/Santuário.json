@@ -1,0 +1,26 @@
+{
+  "nome": "Santuário",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Qualquer criatura que tente fazer uma ação hostil contra o alvo deve fazer um teste de Vontade. Se falhar, não consegue, perde a ação e não pode tentar novamente enquanto a magia durar. Santuário não protege o alvo de efeitos de área. Além disso, o próprio alvo também não pode fazer ações hostis (incluindo forçar outras criaturas a atacá-lo), ou a magia é dissipada — mas pode usar habilidades e magias de cura e suporte, como Curar Ferimentos e Bênção.\n ",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, escolha um tipo de criatura entre animal, construto ou morto-vivo. Você não pode ser percebido por criaturas não inteligentes (Int –4 ou menor) do tipo escolhido."
+    },
+    {
+      "custo": 9,
+      "descricao": "também protege o alvo contra efeitos de área. Uma criatura que tente atacar uma área que inclua o alvo deve fazer o teste de Vontade; se falhar, não consegue e perde a ação. Ela só pode tentar novamente se o alvo sair da área."
+    }
+  ],
+  "key": 46
+}

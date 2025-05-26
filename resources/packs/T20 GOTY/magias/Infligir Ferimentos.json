@@ -1,0 +1,34 @@
+{
+  "nome": "Infligir Ferimentos",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude reduz à metade",
+  "descricao": "Você canaliza energia negativa contra um alvo, causando 2d8+2 pontos de dano de trevas (ou curando 2d8+2 PV, se for um morto-vivo). Infligir Ferimentos anula Curar Ferimentos.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, se falhar na resistência, o alvo fica fraco pela cena (passar no teste de resistência evita)."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em 1d8+1."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a resistência para nenhum. Como parte da execução da magia, você pode fazer um ataque corpo a corpo contra o alvo. Se acertar, causa o dano do ataque e o efeito da magia."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
+    }
+  ],
+  "key": 33
+}

@@ -1,0 +1,14 @@
+{
+  "nome": "vitalidade",
+  "descricao": "Você recebe +1 PV por nível de personagem e +2 em Fortitude.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "combate"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 492
+}

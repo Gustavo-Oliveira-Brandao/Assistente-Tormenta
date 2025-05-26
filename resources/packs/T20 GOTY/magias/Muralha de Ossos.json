@@ -1,0 +1,26 @@
+{
+  "nome": "Muralha de Ossos",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "muro de ossos",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Uma parede de ossos se eleva da terra. A parede tem 15m de comprimento, 9m de altura e 1,5m de espessura. Ela pode ter qualquer forma — não precisa ser uma linha reta —, mas sua base precisa estar sempre tocando o solo. Quando a parede surge, criaturas na área ocupada ou adjacentes sofrem 4d8 pontos de dano de corte e precisam fazer um teste de Reflexos para não ficarem presas no emaranhado de ossos. Uma criatura presa dessa maneira fica Agarrado, e pode usar uma ação padrão para fazer um teste de Atletismo (CD da magia) para se soltar. Se passar no teste, sai da muralha para um dos lados adjacentes. Se falhar, sofre 4d8 pontos de dano de corte.\nÉ possível destruir o muro para atravessá-lo ou libertar uma criatura agarrada. Cada trecho de 3m do muro tem Defesa 8, 40 PV e redução de corte, frio e perfuração 10. Também é possível escalar a parede. Isso exige um teste de Atletismo (CD da magia) e causa 4d8 pontos de dano de corte para cada 3m escalados.",
+  "duracao": "cena",
+  "nivelCirculo": 4,
+  "alcance": "médio",
+  "tradicao": "Universal",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 3,
+      "descricao": "aumenta o comprimento em +15m e altura em +3m."
+    },
+    {
+      "custo": 5,
+      "descricao": "o muro é feito de uma massa de esqueletos animados. Sempre que uma criatura iniciar seu turno adjacente ou escalando a muralha, deve fazer um teste de Reflexos. Se falhar fica agarrada, sofrendo os feitos normais de estar agarrada pela magia."
+    }
+  ],
+  "key": 168
+}

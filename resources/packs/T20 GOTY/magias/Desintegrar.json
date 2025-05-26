@@ -1,0 +1,22 @@
+{
+  "nome": "Desintegrar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura ou objeto",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Você dispara um raio fino e esverdeado que causa 10d12 pontos de dano de essência. Se o alvo passar no teste de resistência, em vez disso sofre 2d12 pontos de dano.\nIndependentemente do resultado do teste de Fortitude, se os PV do alvo forem reduzidos a 0 ou menos, ele será completamente desintegrado, restando apenas pó.",
+  "duracao": "instantânea",
+  "nivelCirculo": 4,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "aumenta o dano total em +2d12 e o dano mínimo em +1d12."
+    }
+  ],
+  "key": 159
+}

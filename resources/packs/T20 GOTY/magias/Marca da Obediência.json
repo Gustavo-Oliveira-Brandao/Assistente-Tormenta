@@ -1,0 +1,26 @@
+{
+  "nome": "Marca da Obediência",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Você toca uma criatura, gravando uma marca mística no corpo dela enquanto profere uma ordem, como “não ataque a mim ou meus aliados”, “siga-me” ou “não saia desta sala”. A criatura deve seguir essa ordem, gastando todas as ações de seu turno para isso. A ordem não pode ser genérica demais (como “ajude-me”, por exemplo), nem forçar o alvo a atos suicidas. A cada rodada, o alvo pode fazer um teste de Vontade. Se passar, a magia é dissipada.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 3,
+      "descricao": "muda a duração para 1 dia. Se não estiver em combate, a criatura só pode fazer o teste de Vontade a cada hora. Requer 3º círculo."
+    },
+    {
+      "custo": 3,
+      "descricao": "sempre que o alvo fizer o teste de Vontade e falhar, a marca causa 3d6 pontos de dano psíquico. Requer 3º círculo."
+    }
+  ],
+  "key": 84
+}

@@ -12,7 +12,6 @@
         {
           "nome": "caminho do arcanista",
           "descricao": "A magia é um poder incrível, capaz de alterar a realidade. Esse poder tem fontes distintas, e cada uma opera conforme suas próprias regras. Escolha uma das opções a seguir. Uma vez feita, essa escolha não pode ser mudada.",
-
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -40,7 +39,6 @@
         {
           "nome": "magias",
           "descricao": "Você pode lançar magias arcanas de 1º círculo. A cada quatro níveis, pode lançar magias de um círculo maior (2º círculo no 5º nível, 3º círculo no 9º nível e assim por diante). Você começa com três magias de 1º círculo. A cada nível, aprende uma magia de qualquer círculo que possa lançar. Seu atributo-chave para lançar magias é definido pelo seu Caminho (veja acima) e você soma seu atributo-chave no seu total de PM. Veja o Capítulo 4 para as regras de magia.",
-
           "preRequisitos": "",
           "categoria": "classe",
           "tags": [
@@ -58,11 +56,83 @@
       ]
     },
     {
+      "nivel": 2,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 3,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 4,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 5,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 6,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 7,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 8,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 9,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 10,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 11,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 12,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 13,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 14,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 15,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 16,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 17,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 18,
+      "recebePoderClasse": true
+    },
+    {
+      "nivel": 19,
+      "recebePoderClasse": true
+    },
+    {
       "nivel": 20,
+      "recebePoderClasse": true,
       "poderes": [
         {
           "nome": "alta arcana",
-
           "descricao": "No 20º nível, seu domínio das artes arcanas é total. O custo em PM de suas magias arcanas é reduzido à metade (após aplicar aprimoramentos e quaisquer outros efeitos que reduzam o custo).",
           "preRequisitos": "",
           "categoria": "classe",

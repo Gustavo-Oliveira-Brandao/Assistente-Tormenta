@@ -1,0 +1,30 @@
+{
+  "nome": "Arma Mágica",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 arma empunhada",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "A arma fornece um bônus de +1 nos testes de ataque e rolagens de dano e é considerada mágica (não cumulativo com bônus de encantos). Caso você esteja empunhando a arma, pode usar seu atributo-chave de magias em vez do atributo original nos testes de ataque (não cumulativo com efeitos que somam este atributo).",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o bônus em +1 (bônus máximo limitado pelo círculo máximo de magia que você pode lançar)."
+    },
+    {
+      "custo": 2,
+      "descricao": "a arma passa a causar +1d6 de dano de ácido, eletricidade, fogo ou frio, escolhido no momento em que a magia é lançada. Este aprimoramento só pode ser usado uma vez."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda o bônus de dano do aprimoramento elemental para +2d6."
+    }
+  ],
+  "key": 8
+}

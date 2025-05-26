@@ -1,0 +1,14 @@
+{
+  "nome": "pele corrompida",
+  "descricao": "Sua carne foi mesclada à matéria vermelha. Você recebe resistência a ácido, eletricidade, fogo, frio, trevas e trovão 2. Esta RD aumenta em +2 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "tormenta"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 612
+}

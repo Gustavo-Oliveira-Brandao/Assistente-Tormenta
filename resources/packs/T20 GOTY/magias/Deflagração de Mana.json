@@ -1,0 +1,26 @@
+{
+  "nome": "Deflagração de Mana",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera de 15m de raio",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Após concentrar seu mana, você emana energia, como uma estrela em plena terra. Todas as criaturas na área sofrem 150 pontos de dano de essência e todos os itens mágicos (exceto artefatos) tornam-se mundanos. Você não é afetado pela magia. Alvos que passem no teste de Fortitude sofrem metade do dano e seus itens mágicos voltam a funcionar após um dia.",
+  "duracao": "instantânea",
+  "nivelCirculo": 5,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano em 10."
+    },
+    {
+      "custo": 5,
+      "descricao": "afeta apenas criaturas a sua escolha."
+    }
+  ],
+  "key": 186
+}

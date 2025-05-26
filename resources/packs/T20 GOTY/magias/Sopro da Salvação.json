@@ -1,0 +1,30 @@
+{
+  "nome": "Sopro da Salvação",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cone de 9m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você enche seus pulmões de luz e energia positiva e sopra um cone de poeira reluzente. O sopro afeta apenas seus aliados na área, curando 2d8+4 pontos de vida e removendo uma das seguintes condições de todos os alvos: abalado, atordoado, apavorado, alquebrado, cego, confuso, debilitado, enfeitiçado, enjoado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, paralisado, pasmo e surdo.",
+  "duracao": "instantânea",
+  "nivelCirculo": 3,
+  "alcance": "pessoal",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta a quantidade de cura em 1d8+2."
+    },
+    {
+      "custo": 4,
+      "descricao": "além do normal, se um aliado estiver com PV negativos, seus PV são levados a 0 e então a cura é aplicada."
+    },
+    {
+      "custo": 4,
+      "descricao": "remove todas as condições listadas, em vez de apenas uma."
+    }
+  ],
+  "key": 139
+}

@@ -1,0 +1,22 @@
+{
+  "nome": "Invulnerabilidade",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia cria uma barreira mágica impenetrável que protege você contra efeitos nocivos mentais ou físicos, a sua escolha.Proteção mental: você fica imune às condições abalado, alquebrado, apavorado, atordoado, confuso, esmorecido, fascinado, frustrado e pasmo, além de efeitos de encantamento e ilusão.Proteção física: você fica imune às condições atordoado, cego, debilitado, enjoado, envenenado, exausto, fatigado, fraco, lento, ofuscado e paralisado, além de acertos críticos, ataques furtivos e doenças.",
+  "duracao": "cena",
+  "nivelCirculo": 5,
+  "alcance": "pessoal",
+  "tradicao": "Universal",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para curto e o alvo para 1 criatura."
+    }
+  ],
+  "key": 191
+}

@@ -1,0 +1,22 @@
+{
+  "nome": "Viagem Planar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "pessoal",
+  "area": "",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "",
+  "descricao": "Você viaja instantaneamente para outro plano da Criação. Lá, você chega de 10 a 1.000km do destino pretendido (role 1d100 e multiplique por 10km).Componente material: um bastão de metal precioso em forma de forquilha (no valor de T$ 1.000). O tipo de metal determina para qual plano de existência você será enviado. Os metais que levam a dimensões específicas podem ser difíceis de encontrar, de acordo com o mestre.",
+  "duracao": "instantânea",
+  "nivelCirculo": 4,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda o alvo para até cinco criaturas voluntárias que você esteja tocando."
+    }
+  ],
+  "key": 177
+}

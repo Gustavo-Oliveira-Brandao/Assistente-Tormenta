@@ -10,6 +10,7 @@ import { createPortal } from 'react-dom'
 import { Modal } from '@renderer/templates/modal/modal'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 import { useCriarPersonagemDemo } from '@renderer/hooks/mutations/usePersonagemMutations'
+import { exibirPoderesDefault } from '@renderer/api/poder-service'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -55,7 +56,7 @@ export const MenuPrincipal = (): JSX.Element => {
             font="tormenta20Font"
             css="botaoRetangular200x40"
             cor="corVermelho"
-            onClickEvent={() => console.log('teste')}
+            onClickEvent={() => exibirPoderesDefault()}
             texto="Sair"
           />
         </div>

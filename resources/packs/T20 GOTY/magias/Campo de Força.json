@@ -1,0 +1,38 @@
+{
+  "nome": "Campo de Força",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda a execução para reação e a duração para instantânea. Em vez do normal, você recebe redução 30 contra o próximo dano que sofrer."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda os PV temporários ou a RD para 50. Requer 3º círculo."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda o alcance para curto, o alvo para outra criatura ou objeto Enorme ou menor e a duração para sustentada. Em vez do normal, cria uma esfera imóvel e tremeluzente ao redor do alvo. Nenhuma criatura, objeto ou efeito de dano pode passar pela esfera, embora criaturas possam respirar normalmente. Criaturas na área podem fazer um teste de Reflexos para evitar serem aprisionadas e sempre que você se concentrar. Requer 4º círculo."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda os PV temporários ou a RD para 70. Requer 4º círculo."
+    },
+    {
+      "custo": 9,
+      "descricao": "como o aprimoramento acima, mas tudo dentro da esfera fica praticamente sem peso. Uma vez por rodada, você pode gastar uma ação livre para flutuar a esfera e seu conteúdo 9m em uma direção. Requer 4º círculo."
+    }
+  ],
+  "key": 64
+}

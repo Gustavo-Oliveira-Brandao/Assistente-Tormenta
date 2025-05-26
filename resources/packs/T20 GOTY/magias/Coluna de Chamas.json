@@ -1,0 +1,26 @@
+{
+  "nome": "Coluna de Chamas",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cilindro com 3m de raio e 30m de altura",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Reflexos reduz à metade",
+  "descricao": "Um pilar de fogo sagrado desce dos céus, causando 6d6 pontos de dano de fogo mais 6d6 pontos de dano de luz nas criaturas e objetos livres na área.",
+  "duracao": "instantânea",
+  "nivelCirculo": 3,
+  "alcance": "longo",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano de fogo em +1d6."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano de luz em +1d6."
+    }
+  ],
+  "key": 110
+}

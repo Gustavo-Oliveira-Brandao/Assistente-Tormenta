@@ -1,0 +1,26 @@
+{
+  "nome": "Engenho de Mana",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "disco de energia com 1,5m de diâmetro",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você cria um disco de energia que lembra uma roda de engenho e flutua no ponto em que foi conjurado. O disco é imune a dano, não pode ser movido e faz uma contramágica automática contra qualquer magia lançada em alcance médio dele (exceto as suas), usando seu teste de Misticismo. Caso vença o teste, o engenho não só anula a magia como absorve os PM usados para lançá-la, acumulando PM temporários. No seu turno, se estiver ao alcance do disco, você pode gastar PM nele para lançar magias.",
+  "duracao": "sustentada",
+  "nivelCirculo": 5,
+  "alcance": "médio",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "em vez de flutuar no ponto em que foi conjurado, o disco flutua atrás de você, mantendo-se sempre adjacente."
+    },
+    {
+      "custo": 4,
+      "descricao": "muda a duração para 1 dia."
+    }
+  ],
+  "key": 188
+}

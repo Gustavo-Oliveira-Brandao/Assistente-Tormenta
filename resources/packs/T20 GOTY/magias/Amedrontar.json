@@ -1,0 +1,30 @@
+{
+  "nome": "Amedrontar",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 animal ou humanoide",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica Apavorado por 1 rodada, depois Abalado. Se passar, fica abalado por 1d4 rodadas.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "alvos que falhem na resistência ficam apavorados por 1d4+1 rodadas, em vez de apenas 1."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alvo para 1 criatura."
+    },
+    {
+      "custo": 5,
+      "descricao": "afeta todos os alvos válidos a sua escolha dentro do alcance."
+    }
+  ],
+  "key": 6
+}

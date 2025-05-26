@@ -1,0 +1,22 @@
+{
+  "nome": "Lendas e Histórias",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 craitura, objeto ou local",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você descobre informações sobre uma criatura, objeto ou local que esteja tocando. O que exatamente você descobre depende do mestre: talvez você não descubra tudo que há para saber, mas ganhe pistas para continuar a investigação. A cada rodada que mantiver a magia, você descobre:\n\nTodas as informações sobre o alvo, como se tivesse passado em todos os testes de Conhecimento para tal.\nTodas as habilidades do alvo. Se for uma criatura, você sabe suas estatísticas de jogo como raça, classe, nível, atributos, magias, resistências e fraquezas. Se for um item mágico, aprende seu efeito e funcionamento.\nSe o alvo está sob influência de alguma magia e todas as informações sobre as magias ativas, se houver alguma.\n\n ",
+  "duracao": "sustentada",
+  "nivelCirculo": 3,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "muda a execução para 1 dia, o alcance para ilimitado e adiciona componente material (cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000). Você ainda precisa ter alguma informação sobre o alvo, como um nome, descrição ou localização."
+    }
+  ],
+  "key": 127
+}

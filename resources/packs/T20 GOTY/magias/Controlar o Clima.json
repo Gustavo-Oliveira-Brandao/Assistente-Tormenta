@@ -1,0 +1,22 @@
+{
+  "nome": "Controlar o Clima",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 2km de raio",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "",
+  "descricao": "Você muda o clima da área onde se encontra, podendo criar qualquer condição climática: chuva, neve, ventos, névoas... Veja o Capítulo 6: O Mestre para os efeitos em jogo do clima.\n ",
+  "duracao": "4d12 horas",
+  "nivelCirculo": 4,
+  "alcance": "2km",
+  "tradicao": "Divina",
+  "escola": "Transmutação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "(Apenas Druidas): muda o raio da área para 3km e duração para 1d4 dias."
+    }
+  ],
+  "key": 155
+}

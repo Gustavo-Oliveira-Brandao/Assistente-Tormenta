@@ -1,0 +1,26 @@
+{
+  "nome": "Bênção",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Aliados",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Abençoa seus aliados, que recebem +1 em testes de ataque e rolagens de dano. Bênção anula Perdição.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alvo para 1 cadáver e a duração para 1 semana. O cadáver não se decompõe nem pode ser transformado em morto-vivo."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta os bônus em +1, limitado pelo círculo máximo de magia que você pode lançar."
+    }
+  ],
+  "key": 12
+}

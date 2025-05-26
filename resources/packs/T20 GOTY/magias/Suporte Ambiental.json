@@ -1,0 +1,22 @@
+{
+  "nome": "Suporte Ambiental",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia garante a sobrevivência em ambientes hostis. O alvo fica imune aos efeitos de calor e frio extremos, pode respirar na água se respirar ar (ou vice-versa) e não sufoca em fumaça densa.",
+  "duracao": "1 dia",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
+    }
+  ],
+  "key": 49
+}

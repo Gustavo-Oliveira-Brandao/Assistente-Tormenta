@@ -1,0 +1,17 @@
+{
+  "nome": "golpista divino - hyninn",
+  "descricao": "Você recebe +2 em Enganação, Jogatina e Ladinagem.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "hyninn"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 559
+}

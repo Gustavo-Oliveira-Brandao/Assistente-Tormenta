@@ -4,18 +4,29 @@
   "descricao": "O povo mais numeroso em Arton, humanos são considerados os escolhidos dos deuses, aqueles que governam o mundo. Em sua variedade e adaptabilidade, são encontrados em quase todos os pontos do continente – dos vales férteis do Reinado às vastidões áridas do Deserto da Perdição. São exploradores e desbravadores ambiciosos, sempre buscando algo além.",
   "atributos": [
     {
-      "atributo": "livre",
+      "atributo": "forca",
       "valor": 1
     },
     {
-      "atributo": "livre",
+      "atributo": "destreza",
       "valor": 1
     },
     {
-      "atributo": "livre",
+      "atributo": "constituicao",
       "valor": 1
     }
   ],
+
+  "tipo": "humanoide",
+  "deslocamentos": {
+    "caminhada": 9,
+    "voo": 0,
+    "escalada": 0,
+    "escavacao": 0,
+    "natacao": 0,
+    "plana": false
+  },
+  "tamanho": "medio",
   "poderes": [
     {
       "nome": "versátil",

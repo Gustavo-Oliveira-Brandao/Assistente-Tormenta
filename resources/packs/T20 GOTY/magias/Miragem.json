@@ -1,0 +1,26 @@
+{
+  "nome": "Miragem",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cubo de até 90m de lado",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade desacredita",
+  "descricao": "Você faz um terreno parecer outro, incluindo sons e cheiros. Uma planície pode parecer um pântano, uma floresta pode parecer uma montanha etc. Esta magia pode ser usada para criar armadilhas: areia movediça pode parecer terra firme ou um precipício pode parecer um lago. Você pode alterar, incluir e esconder estruturas dentro da área, mas não criaturas (embora elas possam se esconder nas estruturas ilusórias).",
+  "duracao": "1 dia",
+  "nivelCirculo": 3,
+  "alcance": "longo",
+  "tradicao": "Arcana",
+  "escola": "Ilusão",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "além do normal, pode alterar a aparência de criaturas escolhidas na área, como se usando Disfarce Ilusório."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda a duração para permanente e adiciona componente material (pó de diamante no valor de T$ 1.000). Requer 5º círculo."
+    }
+  ],
+  "key": 129
+}

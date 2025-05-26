@@ -1,0 +1,26 @@
+{
+  "nome": "Globo de Invulnerabilidade",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você é envolto por uma esfera mágica brilhante com 3m de raio, que detém qualquer magia de 2º círculo ou menor. Nenhuma magia pode ser lançada contra um alvo dentro do globo e magias de área não têm efeito dentro dele. No entanto, magias ainda podem ser lançadas de dentro para fora.\nUma magia que dissipa outras magias só dissipa o globo se for usada diretamente sobre você, não o afetando se usada em área. Efeitos mágicos não são dissipados quando entram na esfera, apenas suprimidos (voltam a funcionar fora do globo, caso sua duração não tenha acabado). O globo é imóvel e não tem efeito sobre criaturas ou objetos. Após lançá-lo, você pode entrar ou sair livremente.",
+  "duracao": "sustentada",
+  "nivelCirculo": 3,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "muda o efeito para afetar magias de até 3º círculo. Requer 4º círculo."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo."
+    }
+  ],
+  "key": 122
+}

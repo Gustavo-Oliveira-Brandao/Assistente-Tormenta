@@ -1,0 +1,26 @@
+{
+  "nome": "Ferver Sangue",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude parcial",
+  "descricao": "O sangue do alvo aquece rapidamente até entrar em ebulição. Quando a magia é lançada, e no início de cada um de seus turnos, o alvo sofre 4d8 pontos de dano de fogo e fica Enjoado por uma rodada (Fortitude reduz o dano à metade e evita a condição). Se o alvo passar em dois testes de Fortitude seguidos, dissipa a magia. Se o alvo for reduzido a 0 PV pelo dano desta magia, seu corpo explode, matando-o e causando 6d6 pontos de dano de fogo em todas as criaturas a até 3m (Reflexos reduz à metade). Essa magia não afeta criaturas sem sangue, como construtos ou mortos-vivos.",
+  "duracao": "sustentada",
+  "nivelCirculo": 3,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em +1d8."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda alvo para criaturas escolhidas. Requer 5º círculo."
+    }
+  ],
+  "key": 121
+}

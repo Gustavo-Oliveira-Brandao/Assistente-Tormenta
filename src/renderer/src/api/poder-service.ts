@@ -3,7 +3,6 @@ import { DeepPartial } from 'typeorm'
 
 export const exibirPoderesDefault = async (): Promise<DeepPartial<IPoder[]>> => {
   const poderes = await window.api.poder.getPoderesDefault()
-
   console.log(poderes)
   return poderes
 }

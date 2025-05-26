@@ -1,0 +1,17 @@
+{
+  "nome": "mente analítica - tanna-toh",
+  "descricao": "Você recebe +2 em Intuição, Investigação e Vontade.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "tanna-toh"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 565
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Armadura Arcana",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Você",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia cria uma película protetora invisível, mas tangível, fornecendo +5 na Defesa. Esse bônus é cumulativo com outras magias, mas não com bônus fornecido por armaduras.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda a execução para reação.\nEm vez do normal, você cria um escudo\nmágico que fornece +5 na Defesa contra o próximo ataque que sofrer (cumulativo com o bônus fornecido pelo efeito básico desta magia e armaduras)."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o bônus na Defesa em +1."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a duração para 1 dia."
+    }
+  ],
+  "key": 9
+}

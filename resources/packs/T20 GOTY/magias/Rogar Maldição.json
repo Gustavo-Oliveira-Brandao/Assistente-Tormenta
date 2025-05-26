@@ -1,0 +1,26 @@
+{
+  "nome": "Rogar Maldição",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude anula",
+  "descricao": "Você entoa cânticos maléficos que amaldiçoam uma vítima, criando efeitos variados. Ao lançar a magia, escolha entre os seguintes.\nDebilidade: o alvo fica Esmorecido e não pode se comunicar ou lançar magias. Ainda reconhece seus aliados e pode segui-los e ajudá-los, mas sempre de maneira simplória.\nDoença: muda a duração para instantânea. O alvo contrai uma doença a sua escolha, que o afeta imediatamente (sem período de incubação).\nFraqueza: o alvo fica Debilitadoe Lento.\nIsolamento: o alvo perde o uso de um de seus cinco sentidos a sua escolha. Se perder a visão, fica Cego. Se perder a audição, fica Caído e não pode se levantar.\nVocê também pode inventar sua própria maldição, usando esses exemplos como sugestões, mas o mestre tem a palavra final sobre o efeito.",
+  "duracao": "sustentada",
+  "nivelCirculo": 2,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 3,
+      "descricao": "aumenta o número de efeitos que você pode escolher em +1. Requer 3º círculo."
+    },
+    {
+      "custo": 7,
+      "descricao": "muda a duração para permanente e resistência para Fortitude parcial. Se passar, a criatura ainda sofre os efeitos da maldição, mas por 1 rodada. Requer 4º círculo."
+    }
+  ],
+  "key": 95
+}

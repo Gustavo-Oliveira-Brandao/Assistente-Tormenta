@@ -1,0 +1,26 @@
+{
+  "nome": "Conjurar Elemental",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "parceiro elemental",
+  "execucao": "completa",
+  "resistencia": "",
+  "descricao": "Esta magia transforma uma porção de um elemento inerte em uma criatura elemental Grande do tipo do elemento alvo. Por exemplo, lançar esta magia numa fogueira ou tocha cria um elemental do fogo. Você pode criar elementais do ar, água, fogo e terra com essa magia. O elemental obedece a todos os seus comandos e pode funcionar como um parceiro mestre do tipo destruidor (cuja habilidade custa apenas 2 PM para ser usada) e mais um tipo entre os indicados na lista abaixo. O elemental auxilia apenas você e não conta em seu limite de parceiros.\nAr: assassino, perseguidor ou vigilante. Dano de eletricidade.\nÁgua: ajudante, guardião ou médico. Dano de frio.\nFogo: atirador, combatente ou fortão. Dano de fogo.\nTerra: combatente, guardião ou montaria. Dano de impacto.",
+  "duracao": "sustentada",
+  "nivelCirculo": 4,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 5,
+      "descricao": "o elemental muda para Enorme e recebe dois tipos de aliado indicados no seu elemento."
+    },
+    {
+      "custo": 5,
+      "descricao": "você convoca um elemental de cada tipo. Quando lança a magia, você pode escolher se cada elemental vai auxiliar você ou um aliado no alcance. Requer 5º círculo."
+    }
+  ],
+  "key": 153
+}

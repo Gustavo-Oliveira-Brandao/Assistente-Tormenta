@@ -1,0 +1,34 @@
+{
+  "nome": "Visão da Verdade",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "você",
+  "area": "",
+  "efeito": "",
+  "execucao": "movimento",
+  "resistencia": "",
+  "descricao": "Você enxerga a forma real das coisas. Você pode ver através de camuflagem e escuridão (normais e mágicas), assim como efeitos de ilusão e transmutação (enxergando a verdade como formas translúcidas ou sobrepostas).",
+  "duracao": "cena",
+  "nivelCirculo": 4,
+  "alcance": "pessoal",
+  "tradicao": "Universal",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alcance para toque e o alvo para 1 criatura."
+    },
+    {
+      "custo": 1,
+      "descricao": "além do normal, o alvo fica com sentidos apurados; ele recebe +10 em todos os testes de Percepção."
+    },
+    {
+      "custo": 2,
+      "descricao": "além do normal, o alvo escuta falsidades; ele recebe +10 em todos os testes de Intuição."
+    },
+    {
+      "custo": 4,
+      "descricao": "além do normal, o alvo enxerga através de paredes e barreiras com 30cm de espessura ou menos (as paredes e barreiras parecem translúcidas)."
+    }
+  ],
+  "key": 178
+}

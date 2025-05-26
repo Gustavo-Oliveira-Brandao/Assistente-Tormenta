@@ -1,0 +1,26 @@
+{
+  "nome": "Lágrimas de Wynna",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "Se falhar no teste de resistência, o alvo perde a habilidade de lançar magias arcanas até o fim da cena. Se passar, perde a habilidade por uma rodada.",
+  "duracao": "instantânea",
+  "nivelCirculo": 5,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda a área para esfera de 6m de raio e o alvo para criaturas escolhidas."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda a execução para 1 dia e adiciona custo adicional (sacrifício de 1 PM). O alvo da magia precisa ser mantido em alcance curto do conjurador durante toda a execução. Ao término, faz um teste de Vontade. Se falhar, perde a habilidade de lançar magias arcanas permanentemente. Se passar, resiste, mas ainda pode ser alvo da magia no dia seguinte. Nenhum poder mortal é capaz de reverter essa perda. Os clérigos da deusa da Magia dizem que a deusa chora cada vez que este ritual é realizado."
+    }
+  ],
+  "key": 194
+}

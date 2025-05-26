@@ -1,0 +1,17 @@
+{
+  "nome": "Alterar Destino",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "Você",
+  "area": "",
+  "efeito": "",
+  "execucao": "reação",
+  "resistencia": "",
+  "descricao": "Sua mente visualiza todas as possibilidades de um evento, permitindo a você escolher o melhor curso de ação. Você pode rolar novamente um teste de resistência com um bônus de +10 ou um inimigo deve rolar novamente um ataque contra você com uma penalidade de –10",
+  "duracao": "instantânea",
+  "nivelCirculo": 5,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Abjuração",
+  "aprimoramentos": [],
+  "key": 179
+}

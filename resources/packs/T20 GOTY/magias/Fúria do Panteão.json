@@ -1,0 +1,17 @@
+{
+  "nome": "Fúria do Panteão",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cubo de 90m",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "veja texto",
+  "descricao": "Você cria uma nuvem de tempestade violenta. Os ventos tornam ataques à distância impossíveis e fazem a área contar como condição terrível para lançar magia. Além disso, inimigos na área têm a visibilidade reduzida (como a magia Névoa). Uma vez por turno, você pode gastar uma ação de movimento para gerar um dos efeitos a seguir.\nNevasca. Inimigos na área sofrem 10d6 pontos de dano de frio (Fortitude reduz à metade). A área fica coberta de neve, virando terreno difícil até o fim da cena ou até você usar siroco.\nRaios. Até 6 inimigos a sua escolha na área sofrem 10d8 pontos de dano de  eletricidade (Reflexos reduz à metade).\nSiroco. Transforma a chuva em uma tempestade de areia escaldante. Inimigos na área sofrem 10d6 pontos de dano (metade corte, metade fogo) e ficam Sangrando (Fortitude reduz o dano à metade e evita a condição).\nTrovões. Inimigos sofrem 10d6 pontos de dano de impacto e ficam Desprevenido por uma rodada (Fortitude reduz o dano à metade e evita a condição).",
+  "duracao": "sustentada",
+  "nivelCirculo": 5,
+  "alcance": "longo",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [],
+  "key": 189
+}

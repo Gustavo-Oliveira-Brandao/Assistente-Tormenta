@@ -1,0 +1,34 @@
+{
+  "nome": "Acalmar Animal",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 animal",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "O animal fica prestativo em relação a você. Ele não fica sob seu controle, mas percebe suas palavras e ações da maneira mais favorável possível. Você recebe +10 nos testes de Adestramento e Diplomacia que fizer contra o animal.\nUm alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e ele retorna à atitude que tinha antes (ou piorada, de acordo com o mestre). Se tratar bem o alvo, a atitude pode permanecer mesmo após o término da magia.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "muda o alcance para médio."
+    },
+    {
+      "custo": 1,
+      "descricao": "muda o alvo para 1 monstro ou espírito com Inteligência 1 ou 2."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta o número de alvos em +1."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alvo para 1 monstro ou espírito. Requer 3o círculo."
+    }
+  ],
+  "key": 2
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Desespero Esmagador",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "Cone de 6m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "Humanoides na área são acometidos de grande tristeza, adquirindo as condições Fraco e Frustrado. Se passarem na resistência, adquirem essas condições por uma rodada.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "em vez do normal, as condições adquiridas são debilitado e esmorecido."
+    },
+    {
+      "custo": 3,
+      "descricao": "em vez do normal, afeta qualquer tipo de criatura."
+    },
+    {
+      "custo": 3,
+      "descricao": "além do normal, criaturas que falhem na resistência ficam aos prantos (em termos de jogo, adquirem a condição pasmo) por 1 rodada (apenas uma vez por cena). Requer 3º círculo."
+    }
+  ],
+  "key": 72
+}

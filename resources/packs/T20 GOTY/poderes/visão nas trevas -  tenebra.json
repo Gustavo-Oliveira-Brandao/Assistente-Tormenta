@@ -1,0 +1,17 @@
+{
+  "nome": "visão nas trevas -  tenebra",
+  "descricao": "Você enxerga perfeitamente no escuro, incluindo em magias de escuridão.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "tenebra"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 588
+}

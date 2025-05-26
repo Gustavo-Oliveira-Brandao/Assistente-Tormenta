@@ -1,0 +1,22 @@
+{
+  "nome": "Viagem Arbórea",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "você",
+  "area": "",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "",
+  "descricao": "Como parte da execução, você entra em uma árvore adjacente que seja maior do que você. Você pode permanecer dentro da árvore, percebendo os arredores de forma normal (mas sem poder fazer ações). Você pode gastar uma ação de movimento para sair da mesma árvore, ou de qualquer outra dentro de 1km. Se estiver dentro de uma árvore que seja destruída, a magia termina e você sofre 10d6 pontos de dano de impacto. Enquanto a magia durar você pode gastar uma ação de movimento e 1 PM para entrar em outras árvores.",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "pessoal",
+  "tradicao": "Divina",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para toque, o alvo para até cinco criaturas e a duração para instantânea. Os alvos entram em uma planta (de tamanho Médio ou maior) e saem em outra planta do mesmo tamanho a até 100km de distância, especificada em direção e distância aproximadas (como “50km ao norte”)."
+    }
+  ],
+  "key": 144
+}

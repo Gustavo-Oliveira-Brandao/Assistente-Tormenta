@@ -1,0 +1,30 @@
+{
+  "nome": "Teia",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cubo com 6m de lado",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Reflexos anula",
+  "descricao": "Teia cria várias camadas de fibras entrelaçadas e pegajosas na área. Qualquer criatura na área que falhar na resistência fica Enredado. Uma vítima pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo. A área ocupada por Teia é terreno difícil.\nA Teia é inflamável. Qualquer ataque que cause dano de fogo destrói as teias por onde passar, libertando as criaturas enredadas mas deixando-as em chamas.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "além do normal, criaturas que falhem na resistência também ficam imóveis."
+    },
+    {
+      "custo": 2,
+      "descricao": "além do normal, no início de seus turnos a magia afeta novamente qualquer criatura na área, exigindo um novo teste de Reflexos. Requer 2º círculo."
+    },
+    {
+      "custo": 2,
+      "descricao": "aumenta a área em +1 cubo de 1,5m."
+    }
+  ],
+  "key": 50
+}

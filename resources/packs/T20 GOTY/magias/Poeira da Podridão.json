@@ -1,0 +1,22 @@
+{
+  "nome": "Poeira da Podridão",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "nuvem com 6m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Fortitude (veja texto)",
+  "descricao": "Você manifesta uma nuvem de poeira carregada de energia negativa, que apodrece lentamente as criaturas na área. Ao lançar a magia, e no início de seus turnos, criaturas na área sofrem 2d8+8 pontos de dano de trevas (Fortitude reduz à metade). Alvos que falharem no teste não podem recuperar PV por uma rodada.",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "médio",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em 1d8+4."
+    }
+  ],
+  "key": 133
+}

@@ -1,0 +1,26 @@
+{
+  "nome": "Despertar Consciência",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 animal ou planta",
+  "area": "",
+  "efeito": "",
+  "execucao": "completa",
+  "resistencia": "",
+  "descricao": "Você desperta a consciência de um animal ou planta. O alvo se torna um parceiro veterano de um tipo a sua escolha entre ajudante, combatente, fortão, guardião, médico, perseguidor ou vigilante. Se usar esta magia em um parceiro que já possua, o nível de poder de um de seus tipos aumenta em um passo (iniciante para veterano, veterano para mestre). Se já for um parceiro mestre, recebe o bônus de outro tipo de parceiro iniciante (entre as escolhas acima). O alvo se torna uma criatura racional, com Inteligência –1, e pode falar",
+  "duracao": "1 dia",
+  "nivelCirculo": 3,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "muda o alvo para 1 escultura mundana inanimada. Além do normal, o alvo tem as mesmas características de um construto."
+    },
+    {
+      "custo": 4,
+      "descricao": "muda a duração para permanente e adiciona penalidade de -3 PM."
+    }
+  ],
+  "key": 116
+}

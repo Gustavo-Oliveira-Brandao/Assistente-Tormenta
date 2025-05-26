@@ -1,0 +1,38 @@
+{
+  "nome": "Curar Ferimentos",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você canaliza energia positiva que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade)."
+    },
+    {
+      "custo": 1,
+      "descricao": "aumenta a cura em +1d8+1."
+    },
+    {
+      "custo": 2,
+      "descricao": "também remove uma condição de cansaço do alvo."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alcance para curto."
+    },
+    {
+      "custo": 5,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
+    }
+  ],
+  "key": 22
+}

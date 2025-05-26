@@ -1,0 +1,22 @@
+{
+  "nome": "Legião",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "até 10 criaturas na área",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "Você domina a mente dos alvos. Os alvos obedecem cegamente a seus comandos, exceto ordens claramente suicidas. Um alvo tem direito a um teste no final de cada um de seus turnos para se livrar do efeito. Alvos que passarem no teste ficam Abalado por 1 rodada enquanto recuperam a consciência.",
+  "duracao": "sustentada",
+  "nivelCirculo": 5,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o número de alvos em +1."
+    }
+  ],
+  "key": 193
+}

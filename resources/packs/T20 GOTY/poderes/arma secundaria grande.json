@@ -1,0 +1,14 @@
+{
+  "nome": "arma secundaria grande",
+  "descricao": "Você pode usar duas armas de uma mão com o poder Estilo de Duas Armas.",
+  "preRequisitos": "Estilo de Duas Armas.",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "combate"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 455
+}

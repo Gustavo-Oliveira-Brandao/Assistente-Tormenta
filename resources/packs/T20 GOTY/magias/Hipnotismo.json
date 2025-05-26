@@ -1,0 +1,42 @@
+{
+  "nome": "Hipnotismo",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 animal ou humanoide",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Suas palavras e movimentos ritmados deixam o alvo fascinado. Esta magia só afeta criaturas que possam perceber você. Se usar esta magia em combate, o alvo recebe +5 em seu teste de resistência. Se a criatura passar, fica imune a este efeito por um dia.",
+  "duracao": "1d4 Rodadas",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Arcana",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 0,
+      "descricao": "muda a duração para 1 rodada. Em vez de fascinado, o alvo fica pasmo. (apenas uma vez por cena)"
+    },
+    {
+      "custo": 1,
+      "descricao": "como o normal, mas alvos que passarem na resistência não sabem que foram vítimas de uma magia."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda o alvo para animais ou humanoides escolhidos."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a duração para sustentada."
+    },
+    {
+      "custo": 2,
+      "descricao": "também afeta espíritos e monstros na área. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."
+    }
+  ],
+  "key": 31
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Anular a Luz",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera de 6m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Esta magia cria uma onda de escuridão que causa diversos efeitos. Todas as magias de 3º círculo ou menor ativas na área são dissipadas se você passar num teste de Religião contra a CD de cada magia. Seus aliados na área são protegidos por uma aura sombria e recebem +4 na Defesa até o fim da cena. Inimigos na área ficam Enjoadopor 1d4 rodadas (apenas uma vez por cena). Anular a Luz anula Dispersar as Trevas (este efeito tem duração instantânea).",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "pessoal",
+  "tradicao": "Divina",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o bônus na Defesa em +1."
+    },
+    {
+      "custo": 4,
+      "descricao": "muda o círculo máximo de magias dissipadas para 4º. Requer 4º Círculo."
+    },
+    {
+      "custo": 9,
+      "descricao": "muda o círculo máximo de magias dissipadas para 5º. Requer 5º Círculo."
+    }
+  ],
+  "key": 108
+}

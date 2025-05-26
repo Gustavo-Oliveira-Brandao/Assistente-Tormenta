@@ -1,0 +1,17 @@
+{
+  "nome": "escamas dracônicas - kallyadranoch",
+  "descricao": "Você recebe +2 na Defesa e em Fortitude.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "kallyadranoch"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 548
+}

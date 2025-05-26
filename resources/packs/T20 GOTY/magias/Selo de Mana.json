@@ -1,0 +1,22 @@
+{
+  "nome": "Selo de Mana",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade Parcial",
+  "descricao": "Seu toque manifesta um selo mágico na pele do alvo, que atrapalha o fluxo de mana. Pela duração da magia, sempre que o alvo realizar qualquer ação que gaste PM, deve fazer um teste de Vontade; se passar, faz a ação normalmente. Se falhar, a ação não tem efeito (mas os PM são gastos mesmo assim).",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "toque",
+  "tradicao": "Universal",
+  "escola": "Encantamento",
+  "aprimoramentos": [
+    {
+      "custo": 4,
+      "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas dentro do alcance. Requer 4º círculo."
+    }
+  ],
+  "key": 136
+}

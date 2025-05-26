@@ -1,0 +1,20 @@
+{
+  "nome": "almejar o impossivel - thwor, valkaria",
+  "descricao": "Quando faz um teste de perícia, um resultado de 19 ou mais no dado sempre é um sucesso, não importando o valor a ser alcançado.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "concedido"
+    },
+    {
+      "label": "thwor"
+    },
+    {
+      "label": "valkaria"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 522
+}

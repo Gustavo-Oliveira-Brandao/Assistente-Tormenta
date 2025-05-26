@@ -1,0 +1,26 @@
+{
+  "nome": "Detectar Ameaças",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "Esfera de 18m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você recebe uma intuição aguçada sobre perigos ao seu redor. Quando uma criatura hostil ou armadilha entra na área do efeito, você faz um teste de Percepção (CD determinada pelo mestre de acordo com a situação). Se passar, sabe a origem (criatura ou armadilha), direção e distância do perigo. Se falhar, sabe apenas que o perigo existe.",
+  "duracao": "Cena, até ser descarregada",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Divina",
+  "escola": "Adivinhação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "você descobre também a raça ou espécie e o poder da criatura detectada (determinado pela aura dela). Criaturas de 1º a 6º nível geram aura tênue, criaturas de 7º a 12º nível geram aura moderada e criaturas de 13º ao 20º nível geram aura poderosa.\nCriaturas acima do 20º nível geram aura avassaladora."
+    },
+    {
+      "custo": 2,
+      "descricao": "além do normal, você não fica surpreso e desprevenido contra perigos detectados com sucesso e recebe +5 em testes de resistência contra armadilhas. Requer 2º círculo."
+    }
+  ],
+  "key": 25
+}

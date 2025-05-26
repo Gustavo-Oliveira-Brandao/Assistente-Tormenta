@@ -1,0 +1,42 @@
+{
+  "nome": "Névoa",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "nuvem com 6m de raio e 6m de altura",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Uma névoa espessa eleva-se de um ponto a sua escolha, obscurecendo toda a visão — criaturas a até 1,5m têm camuflagem e criaturas a partir de 3m têm camuflagem total. Um vento forte dispersa a névoa em 4 rodadas e um vendaval a dispersa em 1 rodada. Esta magia não funciona sob a água.",
+  "duracao": "cena",
+  "nivelCirculo": 1,
+  "alcance": "curto",
+  "tradicao": "Universal",
+  "escola": "Convocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "a magia também funciona sob a água, criando uma nuvem de tinta."
+    },
+    {
+      "custo": 2,
+      "descricao": "você pode escolher criaturas no alcance ao lançar a magia; elas enxergam através do efeito. Requer 2º círculo."
+    },
+    {
+      "custo": 2,
+      "descricao": "a nuvem tem um cheiro horrível. No início de seus turnos, qualquer criatura dentro dela, ou qualquer criatura com faro em alcance curto da nuvem, deve fazer um teste de Fortitude. Se falhar, fica enjoada por uma rodada."
+    },
+    {
+      "custo": 2,
+      "descricao": "a nuvem tem um tom esverdeado e se torna cáustica. No início de seus turnos, criaturas dentro dela sofrem 2d4 pontos de dano de ácido."
+    },
+    {
+      "custo": 3,
+      "descricao": "aumenta o dano de ácido em +2d4."
+    },
+    {
+      "custo": 5,
+      "descricao": "além do normal, a nuvem fica espessa, quase sólida. Qualquer criatura dentro dela tem seu deslocamento reduzido para 3m (independentemente de seu deslocamento normal) e sofre –2 em testes de ataque e rolagens de dano."
+    }
+  ],
+  "key": 37
+}

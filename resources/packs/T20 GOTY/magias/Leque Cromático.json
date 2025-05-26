@@ -1,0 +1,30 @@
+{
+  "nome": "Leque Cromático",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "cone de 4,5m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade parcial",
+  "descricao": "Um cone de luzes brilhantes surge das suas mãos, deixando os animais e humanoides na área atordoados por 1 rodada (apenas uma vez por cena, Vontade anula) e ofuscados pela cena.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Ilusão",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "além do normal, as criaturas afetadas ficam vulneráveis pela cena."
+    },
+    {
+      "custo": 2,
+      "descricao": "também afeta espíritos e monstros na área. Requer 2º círculo."
+    },
+    {
+      "custo": 5,
+      "descricao": "também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."
+    }
+  ],
+  "key": 35
+}

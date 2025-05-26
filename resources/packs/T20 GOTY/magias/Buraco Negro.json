@@ -1,0 +1,22 @@
+{
+  "nome": "Buraco Negro",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "",
+  "efeito": "Buraco Negro",
+  "execucao": "completa",
+  "resistencia": "Fortitude parcial",
+  "descricao": "Esta magia cria um vácuo capaz de sugar tudo nas proximidades. Escolha um espaço desocupado para o buraco negro. No início de cada um de seus três turnos seguintes, todas as criaturas a até alcance longo do buraco negro, incluindo você, devem fazer um teste de Fortitude. Em caso de falha, ficam caídas e são puxadas 30m na direção do buraco. Objetos soltos também são puxados. Criaturas podem gastar uma ação de movimento para se segurar em algum objeto fixo, recebendo +2 em seus testes de resistência.\nCriaturas e objetos que iniciem seu turno no espaço do buraco negro devem gastar uma ação de movimento e fazer um teste de Fortitude. Se passarem, podem escapar se arrastando (deslocamento de 1,5m) para longe dele. Se falharem, perdem a ação (mas podem gastar outra para tentar novamente). Se terminarem seu turno no espaço do buraco negro, são sugadas, desaparecendo para sempre.\nNão se conhece o destino das coisas sugadas pelo buraco negro. Alguns estudiosos sugerem que são enviadas para outros mundos — provavelmente o reino da deusa das Trevas.",
+  "duracao": "3 rodadas",
+  "nivelCirculo": 5,
+  "alcance": "longo",
+  "tradicao": "Universal",
+  "escola": "Abjuração",
+  "aprimoramentos": [
+    {
+      "custo": 5,
+      "descricao": "muda o efeito para que você não seja afetado."
+    }
+  ],
+  "key": 183
+}

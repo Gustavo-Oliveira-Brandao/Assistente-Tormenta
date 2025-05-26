@@ -1,0 +1,30 @@
+{
+  "nome": "Bola de Fogo",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 6m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Reflexos reduz à metade",
+  "descricao": "Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.",
+  "duracao": "instantânea",
+  "nivelCirculo": 2,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o dano em +2d6."
+    },
+    {
+      "custo": 2,
+      "descricao": "muda a área para efeito de esfera flamejante com tamanho Médio e a duração para cena. Em vez do normal, cria uma esfera flamejante com 1,5m de diâmetro que causa 3d6 pontos de dano a qualquer criatura no mesmo espaço. Você pode gastar uma ação de movimento para fazer a esfera voar 9m em qualquer direção. Ela é imune a dano, mas pode ser apagada com água. Uma criatura só pode sofrer dano da esfera uma vez por rodada."
+    },
+    {
+      "custo": 3,
+      "descricao": "muda a duração para 1 dia ou até ser descarregada. Em vez do normal, você cria uma pequena pedra flamejante, que pode detonar como uma reação, descarregando a magia. A pedra pode ser usada como uma arma de arremesso com alcance curto. Uma vez detonada, causa o dano da magia numa área de esfera de 6m com raio."
+    }
+  ],
+  "key": 63
+}

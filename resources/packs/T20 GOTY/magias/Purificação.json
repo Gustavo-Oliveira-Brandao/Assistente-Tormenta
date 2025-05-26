@@ -1,0 +1,34 @@
+{
+  "nome": "Purificação",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Você purifica a criatura tocada, removendo uma condição dela entre abalado, Apavorado, Alquebrado, Atordoado, Cego, Confuso, Debilitado}, Surdo.",
+  "duracao": "instantânea",
+  "nivelCirculo": 2,
+  "alcance": "toque",
+  "tradicao": "Divina",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "também cura todos os PV perdidos por veneno."
+    },
+    {
+      "custo": 2,
+      "descricao": "em vez de uma, remove todas as condições listadas."
+    },
+    {
+      "custo": 3,
+      "descricao": "também permite que o alvo solte qualquer item amaldiçoado que esteja segurando (mas não remove a maldição do item em si)."
+    },
+    {
+      "custo": 7,
+      "descricao": "também dissipa magias e efeitos prejudiciais de encantamento, necromancia e transmutação afetando o alvo. Requer 3º círculo."
+    }
+  ],
+  "key": 91
+}

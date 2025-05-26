@@ -4,18 +4,29 @@
   "descricao": "Sendo chamadas sereias quando femininas e tritões quando masculinos, os membros desta raça de torso humanoide e corpo de peixe podem adotar forma bípede para caminhar em terras emersas — algo que têm feito com cada vez mais frequência. Enquanto algumas sereias temem ou desprezam os humanos, outras enxergam Arton como um mundo misterioso, exótico, cheio de oportunidades e aventuras.",
   "atributos": [
     {
-      "atributo": "livre",
+      "atributo": "forca",
       "valor": 1
     },
     {
-      "atributo": "livre",
+      "atributo": "destreza",
       "valor": 1
     },
     {
-      "atributo": "livre",
+      "atributo": "constituicao",
       "valor": 1
     }
   ],
+
+  "tipo": "humanoide",
+  "deslocamentos": {
+    "caminhada": 9,
+    "voo": 0,
+    "escalada": 0,
+    "escavacao": 0,
+    "natacao": 12,
+    "plana": false
+  },
+  "tamanho": "medio",
   "poderes": [
     {
       "nome": "canção dos mares",

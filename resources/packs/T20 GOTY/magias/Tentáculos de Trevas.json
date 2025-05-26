@@ -1,0 +1,26 @@
+{
+  "nome": "Tentáculos de Trevas",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "esfera com 6m de raio",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "",
+  "descricao": "Um círculo de energias sombrias se abre no chão, de onde surgem tentáculos feitos de treva viscosa. Ao lançar a magia e no início de cada um de seus turnos, você faz um teste da manobra agarrar (usando seu bônus de Misticismo) contra cada criatura na área. Se você passar, a criatura é agarrada; se a vítima já está agarrada, é esmagada, sofrendo 4d6 pontos de dano de trevas. A área conta como terreno difícil. Os tentáculos são imunes a dano.\nAgarrado",
+  "duracao": "cena",
+  "nivelCirculo": 3,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Necromancia",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o raio da área em +3m."
+    },
+    {
+      "custo": 3,
+      "descricao": "aumenta o dano dos tentáculos em +2d6."
+    }
+  ],
+  "key": 142
+}

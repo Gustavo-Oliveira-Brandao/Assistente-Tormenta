@@ -1,0 +1,14 @@
+{
+  "nome": "escrever pergaminho",
+  "descricao": "Você pode usar a perícia Ofício (escriba) para fabricar pergaminhos com magias que conheça. Veja Ofício em Perícias para a regra de fabricar itens e a página Recompensas para a regra de pergaminhos. De acordo com o mestre, você pode usar outros objetos similares, como runas, tabuletas de argila etc.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "magia"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 511
+}

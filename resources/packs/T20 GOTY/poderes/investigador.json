@@ -1,0 +1,14 @@
+{
+  "nome": "investigador",
+  "descricao": "Você recebe +2 em Investigação e soma seu bônus de Inteligência em Intuição.",
+  "preRequisitos": "",
+  "categoria": "geral",
+  "tags": [
+    {
+      "label": "destino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 499
+}

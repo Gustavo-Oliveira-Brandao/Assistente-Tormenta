@@ -1,0 +1,14 @@
+{
+  "nome": "água no feijão",
+  "descricao": "Você gasta apenas metade da matéria-prima para testes de Ofício (cozinheiro).",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "fazendeiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": 435
+}

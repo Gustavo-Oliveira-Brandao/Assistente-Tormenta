@@ -1,0 +1,22 @@
+{
+  "nome": "Esculpir Sons",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "1 criatura ou objeto",
+  "area": "",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Vontade anula",
+  "descricao": "Esta magia altera os sons emitidos pelo alvo. Ela não é capaz de criar sons, mas pode omiti-los (como fazer uma carroça ficar silenciosa) ou transformá-los (como fazer uma pessoa ficar com voz de passarinho). Você não pode criar sons que não conhece (não pode fazer uma criatura falar num idioma que não conheça). Uma vez que escolha a alteração, ela não pode ser mudada. Um conjurador que tenha a voz modificada drasticamente não poderá lançar magias.",
+  "duracao": "cena",
+  "nivelCirculo": 2,
+  "alcance": "médio",
+  "tradicao": "Arcana",
+  "escola": "Ilusão",
+  "aprimoramentos": [
+    {
+      "custo": 2,
+      "descricao": "aumenta o número de alvos em +1. Todas as criaturas e objetos devem ser afetadas da mesma forma."
+    }
+  ],
+  "key": 75
+}

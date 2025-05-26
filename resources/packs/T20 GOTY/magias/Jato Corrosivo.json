@@ -1,0 +1,26 @@
+{
+  "nome": "Jato Corrosivo",
+  "publicacao": "Edição jogo do ano",
+  "alvo": "",
+  "area": "linha de 9m",
+  "efeito": "",
+  "execucao": "padrão",
+  "resistencia": "Reflexos reduz à metade",
+  "descricao": "Você dispara um jato, que causa 2d6 pontos de dano de ácido às criaturas na área. Contra construtos e objetos soltos, a magia causa +1 ponto de dano por dado.",
+  "duracao": "instantânea",
+  "nivelCirculo": 1,
+  "alcance": "pessoal",
+  "tradicao": "Arcana",
+  "escola": "Evocação",
+  "aprimoramentos": [
+    {
+      "custo": 1,
+      "descricao": "aumenta o dano em +1d6."
+    },
+    {
+      "custo": 1,
+      "descricao": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica vulnerável."
+    }
+  ],
+  "key": 34
+}

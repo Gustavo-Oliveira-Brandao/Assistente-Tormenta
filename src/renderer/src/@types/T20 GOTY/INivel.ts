@@ -1,7 +1,8 @@
 import { IPoder } from './IPoder'
 
-export type IProgressao = {
+export type INivel = {
   id: number
-  nivel: number
+  classe: string
+  valor: number
   poderes: IPoder[]
 }

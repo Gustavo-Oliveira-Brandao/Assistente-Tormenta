@@ -1,6 +1,7 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Magia } from './Magia'
 
+//OK
 @Entity()
 export class AprimoramentoMagia {
   @PrimaryGeneratedColumn()

@@ -5,7 +5,7 @@ export type IRecurso = {
   categoria: string
   valorMaximo?: number
   valorAtual: number
-  valorTemporario?: number
-  atributo: string | null
+  valorTemporario: number
+  atributo: string
   bonus: IBonus[]
 }

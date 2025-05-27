@@ -1,6 +1,7 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Poder } from './Poder'
 
+//OK
 @Entity()
 export class SubEfeito {
   @PrimaryGeneratedColumn()

@@ -3,6 +3,7 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'ty
 import { Bonus } from './Bonus'
 import { Personagem } from './Personagem'
 
+//OK
 @Entity()
 export class Atributo {
   @PrimaryGeneratedColumn()

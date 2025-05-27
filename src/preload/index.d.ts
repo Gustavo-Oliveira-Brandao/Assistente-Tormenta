@@ -21,9 +21,6 @@ declare global {
       }
       classe: {
         getClassesDefault: () => Promise<DeepPartial<IClasse[]>>
-        postClasse: (classe: DeepPartial<Classe>, idPersonagem: number) => Promise<void>
-        putClasse: (classe: Classe) => Promise<void>
-        deleteClasse: (id: number) => Promise<void>
       }
       raca: {
         getRacasDefault: () => Promise<DeepPartial<IRaca[]>>
@@ -42,9 +39,9 @@ declare global {
       }
       poder: {
         getPoderesDefault: () => Promise<DeepPartial<IPoder[]>>
-        getPoderesPorPersonagem: (_idPersonagem: number) => Promise<Poder[]>
+        getPoderesPorPersonagem: (_idNivel: number) => Promise<Poder[]>
         getPoderesPorClasse: (_idClasse: number) => Promise<Poder[]>
-        postPoder: (poder: DeepPartial<Poder>, idPersonagem: number) => Promise<void>
+        postPoder: (poder: DeepPartial<Poder>, idNivel: number) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }
       proficiencia: {

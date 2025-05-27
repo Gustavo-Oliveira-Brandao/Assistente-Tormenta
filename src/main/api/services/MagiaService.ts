@@ -33,6 +33,7 @@ export const postGrimorio = async (
 
     const novoGrimorio = GrimorioRepository.create({
       ..._grimorio,
+      magias: _grimorio.magias,
       personagem: personagem
     })
 
@@ -50,7 +51,7 @@ export const putGrimorio = async (_grimorio: Grimorio): Promise<void> => {
     }
 
     GrimorioRepository.merge(grimorioEncontrado, _grimorio)
-
+    grimorioEncontrado.bonusCD = _grimorio.bonusCD
     await GrimorioRepository.save(grimorioEncontrado)
   } catch {
     throw new Error('Erro ao atualizar grimorio!')
@@ -76,6 +77,7 @@ export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number)
 
     const novaMagia = MagiaRepository.create({
       ..._magia,
+      aprimoramentos: _magia.aprimoramentos,
       grimorio: grimorio
     })
 

@@ -2,6 +2,7 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'ty
 import { Bonus } from './Bonus'
 import { Personagem } from './Personagem'
 
+//OK
 @Entity()
 export class Recurso {
   @PrimaryGeneratedColumn()
@@ -19,16 +20,14 @@ export class Recurso {
   valorAtual: number
 
   @Column({
-    type: 'integer',
-    nullable: true
+    type: 'integer'
   })
-  valorTemporario?: number
+  valorTemporario: number
 
   @Column({
-    type: 'varchar',
-    nullable: true
+    type: 'varchar'
   })
-  atributo?: string
+  atributo: string
 
   @OneToMany(() => Bonus, (bonus) => bonus.recurso, {
     cascade: true,

@@ -1,3 +1,4 @@
+import { DeepPartial } from 'typeorm'
 import { Poder } from '../api/entities/Poder'
 
 export type IRaca = {
@@ -8,5 +9,18 @@ export type IRaca = {
     atributo: string
     valor: number
   }[]
-  poderes: Partial<Poder[]>
+  herancas: {
+    nome: string
+    poderes: DeepPartial<Poder[]>
+  }[]
+  deslocamentos: {
+    caminhada: number
+    voo: number
+    escalada: number
+    natacao: number
+    plana: boolean
+  }
+  tamanho: string
+  tipo: string
+  poderes: DeepPartial<Poder[]>
 }

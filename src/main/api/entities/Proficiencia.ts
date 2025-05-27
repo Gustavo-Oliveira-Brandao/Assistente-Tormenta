@@ -1,6 +1,7 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 
+//OK
 @Entity()
 export class Proficiencia {
   @PrimaryGeneratedColumn()

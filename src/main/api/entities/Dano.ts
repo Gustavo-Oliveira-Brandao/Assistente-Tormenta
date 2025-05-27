@@ -1,6 +1,7 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { Bonus } from './Bonus'
 
+//OK
 @Entity()
 export class Dano {
   @PrimaryGeneratedColumn()

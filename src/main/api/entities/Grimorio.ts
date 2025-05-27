@@ -3,10 +3,16 @@ import { Bonus } from './Bonus'
 import { Personagem } from './Personagem'
 import { Magia } from './Magia'
 
+//OK
 @Entity()
 export class Grimorio {
   @PrimaryGeneratedColumn()
   id: number
+
+  @Column({
+    type: 'varchar'
+  })
+  nome: string
 
   @Column({
     type: 'varchar',

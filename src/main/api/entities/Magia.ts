@@ -2,6 +2,7 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'ty
 import { AprimoramentoMagia } from './AprimoramentoMagia'
 import { Grimorio } from './Grimorio'
 
+//OK
 @Entity()
 export class Magia {
   @PrimaryGeneratedColumn()

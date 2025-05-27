@@ -11,7 +11,7 @@ export const putDeslocamento = async (_deslocamento: Deslocamento): Promise<void
     }
 
     DeslocamentoRepository.merge(deslocamentoEncontrado, _deslocamento)
-
+    deslocamentoEncontrado.bonus = _deslocamento.bonus
     await DeslocamentoRepository.save(deslocamentoEncontrado)
   } catch {
     throw new Error('Ocorreu um erro ao atualizar o deslocamento.')

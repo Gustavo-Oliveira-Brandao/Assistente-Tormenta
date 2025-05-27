@@ -1,9 +1,9 @@
 import path from 'path'
 import { SQLiteDataSource } from '../data-source'
-import { Personagem } from '../entities/Personagem'
 import { Poder } from '../entities/Poder'
 import { extrairJson } from './JsonService'
 import { DeepPartial } from 'typeorm'
+import { Nivel } from '../entities/Nivel'
 
 export const PoderRepository = SQLiteDataSource.getRepository(Poder)
 
@@ -14,37 +14,25 @@ export const getPoderesDefault = async (): Promise<DeepPartial<Poder[]>> => {
   return poderes
 }
 
-export const getPoderesPorPersonagem = async (_idPersonagem: number): Promise<Poder[]> => {
+export const getPoderesPorNivelPersonagem = async (_idNivel: number): Promise<Poder[]> => {
   try {
-    const poderes = await PoderRepository.find({ where: { personagem: { id: _idPersonagem } } })
+    const poderes = await PoderRepository.find({ where: { nivel: { id: _idNivel } } })
     return poderes
   } catch {
     throw new Error('Erro ao buscar poderes.')
   }
 }
 
-export const getPoderesPorClasse = async (_idClasse: number): Promise<Poder[]> => {
+export const postPoder = async (_poder: DeepPartial<Poder>, _idNivel: number): Promise<void> => {
   try {
-    const poderes = await PoderRepository.find({ where: { classe: { id: _idClasse } } })
-    return poderes
-  } catch {
-    throw new Error('Erro ao buscar poderes.')
-  }
-}
-
-export const postPoder = async (
-  _poder: DeepPartial<Poder>,
-  _idPersonagem: number
-): Promise<void> => {
-  try {
-    const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
-    const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
-    if (!personagem) {
-      throw new Error('Personagem não encontrado!')
+    const NiveisRepository = SQLiteDataSource.getRepository(Nivel)
+    const nivelEncontrado = await NiveisRepository.findOneBy({ id: _idNivel })
+    if (!nivelEncontrado) {
+      throw new Error('Nivel não encontrado!')
     }
-    const novoPoder = await PoderRepository.create({
+    const novoPoder = PoderRepository.create({
       ..._poder,
-      personagem: personagem
+      nivel: nivelEncontrado
     })
 
     await PoderRepository.save(novoPoder)

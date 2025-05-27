@@ -1,6 +1,6 @@
 {
   "key": 16,
-  "nome": "suraggel aggelus",
+  "nome": "suraggel",
   "descricao": "Descendentes de extraplanares divinos, esta raça é formada por seres com traços angelicais ou demoníacos — ou ambos. Por serem ligados às forças opostas da luz e trevas, suraggel têm traços diferentes quando orientados para seu lado celestial, sendo então conhecidos como aggelus; ou para o lado abissal, assim sendo chamados sulfure. Sua natureza em geral combina com a ascendência, lembrando habitantes dos Mundos dos Deuses, mas eles também podem ser surpreendentes e contraditórios: não se espante muito ao conhecer um aggelus ladino ou um sulfure paladino.",
   "atributos": [
     {
@@ -12,7 +12,52 @@
       "valor": 1
     }
   ],
-
+  "herancas": [
+    {
+      "nome": "aggelus",
+      "poderes": [
+        {
+          "nome": "luz sagrada",
+          "descricao": "Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+          "preRequisitos": "",
+          "categoria": "raca",
+          "tags": [
+            {
+              "label": "suraggel"
+            },
+            {
+              "label": "aggelus"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 50
+        }
+      ]
+    },
+    {
+      "nome": "sulfure",
+      "poderes": [
+        {
+          "nome": "sombras profanas",
+          "descricao": "Você recebe +2 em Enganação e Furtividade. Além disso, pode lançar Escuridão (como uma magia divina; atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+          "preRequisitos": "",
+          "categoria": "raca",
+          "tags": [
+            {
+              "label": "suraggel"
+            },
+            {
+              "label": "sulfure"
+            }
+          ],
+          "tempoExecucao": "passivo",
+          "subEfeitos": [],
+          "key": 51
+        }
+      ]
+    }
+  ],
   "deslocamentos": {
     "caminhada": 9,
     "voo": 0,
@@ -40,20 +85,6 @@
       "tempoExecucao": "passivo",
       "subEfeitos": [],
       "key": 49
-    },
-    {
-      "nome": "luz sagrada (aggelus)",
-      "descricao": "Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
-      "preRequisitos": "",
-      "categoria": "raca",
-      "tags": [
-        {
-          "label": "suraggel aggelus"
-        }
-      ],
-      "tempoExecucao": "passivo",
-      "subEfeitos": [],
-      "key": 50
     }
   ]
 }

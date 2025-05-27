@@ -2,7 +2,6 @@ import { DataSource } from 'typeorm'
 import { AprimoramentoMagia } from './entities/AprimoramentoMagia'
 import { Atributo } from './entities/Atributo'
 import { Bonus } from './entities/Bonus'
-import { Classe } from './entities/Classe'
 import { Dano } from './entities/Dano'
 import { Deslocamento } from './entities/Deslocamento'
 import { Grimorio } from './entities/Grimorio'
@@ -14,7 +13,7 @@ import { Proficiencia } from './entities/Proficiencia'
 import { Recurso } from './entities/Recurso'
 import { SubEfeito } from './entities/SubEfeito'
 import { Tag } from './entities/Tag'
-import { Progressao } from './entities/Progressao'
+import { Nivel } from './entities/Nivel'
 
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
@@ -26,14 +25,13 @@ export const SQLiteDataSource = new DataSource({
     AprimoramentoMagia,
     Atributo,
     Bonus,
-    Classe,
     Dano,
     Deslocamento,
     Grimorio,
     Magia,
     Pericia,
     Personagem,
-    Progressao,
+    Nivel,
     Poder,
     Proficiencia,
     Recurso,

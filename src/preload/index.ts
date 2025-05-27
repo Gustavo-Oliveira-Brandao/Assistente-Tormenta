@@ -2,7 +2,6 @@ import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 import { Personagem } from '../main/api/entities/Personagem'
 import { Atributo } from '../main/api/entities/Atributo'
-import { Classe } from '../main/api/entities/Classe'
 import { Deslocamento } from '../main/api/entities/Deslocamento'
 import { Grimorio } from '../main/api/entities/Grimorio'
 import { Magia } from '../main/api/entities/Magia'
@@ -12,6 +11,7 @@ import { Proficiencia } from '../main/api/entities/Proficiencia'
 import { Recurso } from '../main/api/entities/Recurso'
 import { IRaca } from '../main/@types/IRaca'
 import { DeepPartial } from 'typeorm'
+import { IClasse } from '../main/@types/IClasse'
 
 // Custom APIs for renderer
 const api = {
@@ -31,12 +31,7 @@ const api = {
   },
 
   classe: {
-    getClassesDefault: (): Promise<DeepPartial<Classe[]>> =>
-      ipcRenderer.invoke('get-classes-default'),
-    postClasse: (_classe: DeepPartial<Classe>, _idPersonagem: number): Promise<void> =>
-      ipcRenderer.invoke('post-classe', _classe, _idPersonagem),
-    putClasse: (_classe: Classe): Promise<void> => ipcRenderer.invoke('put-classe', _classe),
-    deleteClasse: (_id: number): Promise<void> => ipcRenderer.invoke('delete-classe', _id)
+    getClassesDefault: (): Promise<IClasse[]> => ipcRenderer.invoke('get-classes-default')
   },
   racas: {
     getRacasDefault: (): Promise<DeepPartial<IRaca[]>> => ipcRenderer.invoke('get-racas-default')
@@ -63,12 +58,12 @@ const api = {
   poder: {
     getPoderesDefault: (): Promise<DeepPartial<Poder[]>> =>
       ipcRenderer.invoke('get-poderes-default'),
-    getPoderesPorPersonagem: (_idPersonagem: number): Promise<Poder[]> =>
-      ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
+    getPoderesPorPersonagem: (_idNivel: number): Promise<Poder[]> =>
+      ipcRenderer.invoke('get-poderes-nivel-personagem', _idNivel),
     getPoderesPorClasse: (_idClasse: number): Promise<Poder[]> =>
       ipcRenderer.invoke('get-poderes-classe', _idClasse),
-    postPoder: (_poder: DeepPartial<Poder>, _idPersonagem: number): Promise<void> =>
-      ipcRenderer.invoke('post-poder', _poder, _idPersonagem),
+    postPoder: (_poder: DeepPartial<Poder>, _idNivel: number): Promise<void> =>
+      ipcRenderer.invoke('post-poder', _poder, _idNivel),
     deletePoder: (_id: number): Promise<void> => ipcRenderer.invoke('delete-poder', _id)
   },
 

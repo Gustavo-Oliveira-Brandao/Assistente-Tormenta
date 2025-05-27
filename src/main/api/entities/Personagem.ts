@@ -1,12 +1,11 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Classe } from './Classe'
 import { Atributo } from './Atributo'
 import { Pericia } from './Pericia'
 import { Deslocamento } from './Deslocamento'
 import { Recurso } from './Recurso'
-import { Poder } from './Poder'
 import { Proficiencia } from './Proficiencia'
 import { Grimorio } from './Grimorio'
+import { Nivel } from './Nivel'
 
 @Entity()
 export class Personagem {
@@ -51,14 +50,14 @@ export class Personagem {
   })
   raca: string
 
-  @OneToMany(() => Classe, (classes) => classes.personagem, {
-    cascade: true
+  @Column({
+    type: 'varchar'
   })
-  classes?: Classe[]
+  classe: string
 
   @Column({
     type: 'varchar',
-    length: 20
+    length: 30
   })
   origem: string
 
@@ -67,6 +66,11 @@ export class Personagem {
     length: 30
   })
   divindade: string
+
+  @Column({
+    type: 'integer'
+  })
+  nivelAtual: number
 
   @Column({
     type: 'integer'
@@ -111,11 +115,11 @@ export class Personagem {
   })
   recursos: Recurso[]
 
-  @OneToMany(() => Poder, (poder) => poder.personagem, {
+  @OneToMany(() => Nivel, (niveis) => niveis.personagem, {
     cascade: true,
     nullable: true
   })
-  poderes?: Poder[]
+  niveis?: Nivel[]
 
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
     cascade: true,

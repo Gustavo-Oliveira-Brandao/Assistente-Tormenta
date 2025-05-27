@@ -2,8 +2,7 @@ import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import {
   deletePoder,
   getPoderesDefault,
-  getPoderesPorClasse,
-  getPoderesPorPersonagem,
+  getPoderesPorNivelPersonagem,
   postPoder
 } from '../services/PoderService'
 import { Poder } from '../entities/Poder'
@@ -16,23 +15,18 @@ ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
 })
 
 ipcMain.handle(
-  'get-poderes-personagem',
-  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
+  'get-poderes-nivel-personagem',
+  async (event: IpcMainInvokeEvent, _idNivel: number) => {
     console.log(`FrameID:${event.frameId}`)
-    return await getPoderesPorPersonagem(_idPersonagem)
+    return await getPoderesPorNivelPersonagem(_idNivel)
   }
 )
 
-ipcMain.handle('get-poderes-classe', async (event: IpcMainInvokeEvent, _idClasse: number) => {
-  console.log(`FrameID:${event.frameId}`)
-  return await getPoderesPorClasse(_idClasse)
-})
-
 ipcMain.handle(
   'post-poder',
-  async (event: IpcMainInvokeEvent, _poder: DeepPartial<Poder>, _idPersonagem: number) => {
+  async (event: IpcMainInvokeEvent, _poder: DeepPartial<Poder>, _idNivel: number) => {
     console.log(`FrameID:${event.frameId}`)
-    await postPoder(_poder, _idPersonagem)
+    await postPoder(_poder, _idNivel)
   }
 )
 

@@ -6,6 +6,7 @@ import { Recurso } from './Recurso'
 import { Grimorio } from './Grimorio'
 import { Dano } from './Dano'
 
+//OK
 @Entity()
 export class Bonus {
   @PrimaryGeneratedColumn()

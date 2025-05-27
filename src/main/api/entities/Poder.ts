@@ -1,10 +1,9 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { SubEfeito } from './SubEfeito'
 import { Tag } from './Tag'
-import { Progressao } from './Progressao'
-import { Classe } from './Classe'
-import { Personagem } from './Personagem'
+import { Nivel } from './Nivel'
 
+//OK
 @Entity()
 export class Poder {
   @PrimaryGeneratedColumn()
@@ -53,21 +52,9 @@ export class Poder {
   })
   tags: Tag[]
 
-  @ManyToOne(() => Progressao, (progressao) => progressao.poderes, {
+  @ManyToOne(() => Nivel, (nivel) => nivel.poderes, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  progressao: Progressao
-
-  @ManyToOne(() => Classe, (classe) => classe.poderesClasse, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  classe: Classe
-
-  @ManyToOne(() => Personagem, (personagem) => personagem.poderes, {
-    onDelete: 'CASCADE',
-    orphanedRowAction: 'delete'
-  })
-  personagem: Personagem
+  nivel: Nivel
 }

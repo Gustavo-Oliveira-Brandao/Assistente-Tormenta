@@ -20,7 +20,7 @@ declare global {
         putAtributo: (atributo: Atributo) => Promise<void>
       }
       classe: {
-        getClassesDefault: () => Promise<DeepPartial<IClasse[]>>
+        getClassesDefault: () => Promise<IClasse[]>
       }
       raca: {
         getRacasDefault: () => Promise<DeepPartial<IRaca[]>>
@@ -40,7 +40,6 @@ declare global {
       poder: {
         getPoderesDefault: () => Promise<DeepPartial<IPoder[]>>
         getPoderesPorPersonagem: (_idNivel: number) => Promise<Poder[]>
-        getPoderesPorClasse: (_idClasse: number) => Promise<Poder[]>
         postPoder: (poder: DeepPartial<Poder>, idNivel: number) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }

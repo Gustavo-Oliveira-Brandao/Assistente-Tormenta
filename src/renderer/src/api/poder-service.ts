@@ -7,12 +7,8 @@ export const exibirPoderesDefault = async (): Promise<DeepPartial<IPoder[]>> => 
   return poderes
 }
 
-export const exibirPoderesPersonagem = async (idPersonagem: number): Promise<IPoder[]> => {
-  return await window.api.poder.getPoderesPorPersonagem(idPersonagem)
-}
-
-export const exibirPoderesClasse = async (idClasse: number): Promise<DeepPartial<IPoder[]>> => {
-  return await window.api.poder.getPoderesPorClasse(idClasse)
+export const exibirPoderesPorNivelPersonagem = async (idNivel: number): Promise<IPoder[]> => {
+  return await window.api.poder.getPoderesPorPersonagem(idNivel)
 }
 
 export const criarPoder = async (

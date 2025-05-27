@@ -5,13 +5,13 @@ import { DeepPartial } from 'typeorm'
 
 type criarPoderVariaveis = {
   poder: DeepPartial<IPoder>
-  idPersonagem: number
+  idNivel: number
 }
 
 export const useCriarPoder = (): UseMutationResult<void, Error, criarPoderVariaveis, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (x) => criarPoder(x.poder, x.idPersonagem),
+    mutationFn: (x) => criarPoder(x.poder, x.idNivel),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['poderes'] })
   })
 }

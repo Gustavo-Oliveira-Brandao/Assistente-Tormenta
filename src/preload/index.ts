@@ -60,8 +60,6 @@ const api = {
       ipcRenderer.invoke('get-poderes-default'),
     getPoderesPorPersonagem: (_idNivel: number): Promise<Poder[]> =>
       ipcRenderer.invoke('get-poderes-nivel-personagem', _idNivel),
-    getPoderesPorClasse: (_idClasse: number): Promise<Poder[]> =>
-      ipcRenderer.invoke('get-poderes-classe', _idClasse),
     postPoder: (_poder: DeepPartial<Poder>, _idNivel: number): Promise<void> =>
       ipcRenderer.invoke('post-poder', _poder, _idNivel),
     deletePoder: (_id: number): Promise<void> => ipcRenderer.invoke('delete-poder', _id)

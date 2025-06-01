@@ -20,7 +20,6 @@ export class Nivel {
 
   @OneToMany(() => Poder, (poderes) => poderes.nivel, {
     cascade: true,
-    eager: true,
     nullable: true
   })
   poderes?: Poder[]

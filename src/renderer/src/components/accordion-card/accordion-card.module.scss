@@ -7,12 +7,12 @@
   width: 100%;
   border-radius: 5px;
 
-  .cardHeader {
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    .cardTitulo {
+    .titulo {
       display: flex;
       align-items: center;
 
@@ -22,32 +22,20 @@
         margin-right: 12px;
       }
 
-      .cardInfo {
-        h2 {
+      .nome {
+        h3 {
           font-size: 17px;
           cursor: pointer;
         }
-        h2:hover {
+        h3:hover {
           color: variables.$highlight-color;
         }
       }
     }
   }
 
-  .cardConteudo {
+  .conteudo {
     border-radius: 5px;
     margin-top: 10px;
-  }
-}
-
-.minimalista {
-  .cardHeader {
-    .cardTitulo {
-      .cardInfo {
-        h2 {
-          color: variables.$red;
-        }
-      }
-    }
   }
 }

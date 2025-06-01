@@ -3,6 +3,11 @@
     "author": "Delapouite",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/delapouite/upgrade.html",
+        "iconName": "upgrade",
+        "newName": "upgrade"
+      },
+      {
         "url": "https://game-icons.net/1x1/delapouite/peace-dove.html",
         "iconName": "Peace dove icon",
         "newName": "marah"
@@ -242,6 +247,11 @@
   {
     "author": "Lorc",
     "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/lorc/crossed-swords.html",
+        "iconName": "crossed swords",
+        "newName": "status"
+      }
       {
         "url": "https://game-icons.net/1x1/lorc/sun.html",
         "iconName": "Sun icon",

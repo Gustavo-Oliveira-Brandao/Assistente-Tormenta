@@ -14,15 +14,6 @@ export const getPoderesDefault = async (): Promise<DeepPartial<Poder[]>> => {
   return poderes
 }
 
-export const getPoderesPorNivelPersonagem = async (_idNivel: number): Promise<Poder[]> => {
-  try {
-    const poderes = await PoderRepository.find({ where: { nivel: { id: _idNivel } } })
-    return poderes
-  } catch {
-    throw new Error('Erro ao buscar poderes.')
-  }
-}
-
 export const postPoder = async (_poder: DeepPartial<Poder>, _idNivel: number): Promise<void> => {
   try {
     const NiveisRepository = SQLiteDataSource.getRepository(Nivel)

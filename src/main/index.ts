@@ -7,9 +7,9 @@ import './api/app'
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 990,
+    width: 1060,
     height: 670,
-    minWidth: 990,
+    minWidth: 1060,
     minHeight: 670,
     show: false,
     autoHideMenuBar: true,

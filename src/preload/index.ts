@@ -12,6 +12,7 @@ import { Recurso } from '../main/api/entities/Recurso'
 import { IRaca } from '../main/@types/IRaca'
 import { DeepPartial } from 'typeorm'
 import { IClasse } from '../main/@types/IClasse'
+import { Nivel } from '../main/api/entities/Nivel'
 
 // Custom APIs for renderer
 const api = {
@@ -20,8 +21,10 @@ const api = {
     getPersonagem: (_id: number): Promise<Personagem> => ipcRenderer.invoke('get-personagem', _id),
     postPersonagem: (_personagem: DeepPartial<Personagem>): Promise<void> =>
       ipcRenderer.invoke('post-personagem', _personagem),
-    putPersonagem: (_personagme: Personagem): Promise<void> =>
-      ipcRenderer.invoke('put-personagem', _personagme),
+    putPersonagem: (_personagem: Personagem): Promise<void> =>
+      ipcRenderer.invoke('put-personagem', _personagem),
+    getProgressaoPersonagem: (_idPersonagem: number): Promise<Nivel[]> =>
+      ipcRenderer.invoke('get-progressao-personagem', _idPersonagem),
     deletePersonagem: (_id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', _id)
   },
 

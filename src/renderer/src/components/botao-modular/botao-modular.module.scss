@@ -12,10 +12,6 @@ button {
 .corSecundaria {
   background-color: variables.$secondary-color;
   transition: 0.2s background-color ease;
-
-  p {
-    color: variables.$special-text-color;
-  }
 }
 
 .transparente {
@@ -143,7 +139,7 @@ button {
 
 .botaoExpansivel {
   min-width: 50px;
-  width: fit-content;
+  width: 100%;
   height: 50px;
   display: flex;
   align-items: center;

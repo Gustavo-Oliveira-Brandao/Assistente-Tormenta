@@ -1,6 +1,7 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
 import { IClasse } from '@renderer/@types/T20 GOTY/IClasse'
 import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
+import { INivel } from '@renderer/@types/T20 GOTY/INivel'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import { IRaca } from '@renderer/@types/T20 GOTY/IRaca'
 import { DeepPartial } from 'typeorm'
@@ -15,6 +16,7 @@ declare global {
         postPersonagem: (personagem: DeepPartial<Personagem>) => Promise<void>
         putPersonagem: (personagem: Personagem) => Promise<void>
         deletePersonagem: (id: number) => Promise<void>
+        getProgressaoPersonagem: (idPersonagem: number) => Promise<INivel[]>
       }
       atributo: {
         putAtributo: (atributo: Atributo) => Promise<void>

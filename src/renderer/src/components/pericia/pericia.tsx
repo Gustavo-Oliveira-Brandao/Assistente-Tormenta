@@ -7,34 +7,27 @@ import { BotaoModular } from '../botao-modular/botao-modular'
 import { RootState } from '@renderer/store/store'
 import { createPortal } from 'react-dom'
 import { Modal } from '@renderer/templates/modal/modal'
+import { SimpleCard } from '../simple-card/simple-card'
 
 type periciaProps = {
   pericia: IPericia
   exibeTreinamento: boolean
-  height: string
-  width: string
   editavel: boolean
 }
 
-export const Pericia = ({
-  pericia,
-  exibeTreinamento,
-  height,
-  width,
-  editavel
-}: periciaProps): JSX.Element => {
+export const Pericia = ({ pericia, exibeTreinamento, editavel }: periciaProps): JSX.Element => {
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
   return (
     <>
-      <div className={styles.pericia} style={{ width: width, height: height }}>
+      <SimpleCard width="100%" height="40px">
         <BotaoModular
           css="simples"
           cor="transparente"
           font="tormenta20Font"
           texto={pericia.nome}
-          onClickEvent={() => dispatch(abrirModal(`PERICIA_${pericia.nome}_EDICAO_MODAL`))}
+          onClickEvent={() => dispatch(abrirModal(`PERICIA_${pericia.nome}_MODAL`))}
         />
         <div className={styles.rolagem}>
           {exibeTreinamento && (
@@ -49,8 +42,8 @@ export const Pericia = ({
             cor="transparente"
           />
         </div>
-      </div>
-      {modalAberto === `PERICIA_${pericia.nome}_EDICAO_MODAL` &&
+      </SimpleCard>
+      {modalAberto === `PERICIA_${pericia.nome}_MODAL` &&
         editavel &&
         createPortal(
           <Modal

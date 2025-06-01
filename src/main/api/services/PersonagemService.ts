@@ -1,16 +1,13 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entities/Personagem'
+import { Nivel } from '../entities/Nivel'
 
 export const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
 
 export const getTodosPersonagem = async (): Promise<Personagem[]> => {
   try {
-    const personagens = await PersonagemRepository.find({
-      relations: {
-        classes: true
-      }
-    })
+    const personagens = await PersonagemRepository.find()
     return personagens
   } catch {
     throw new Error('Erro ao exibir personagens!')
@@ -22,7 +19,6 @@ export const getPersonagem = async (id: number): Promise<Personagem> => {
     const personagem = await PersonagemRepository.findOne({
       where: { id: id },
       relations: {
-        classes: true,
         atributos: true,
         pericias: true,
         deslocamentos: true,
@@ -36,6 +32,21 @@ export const getPersonagem = async (id: number): Promise<Personagem> => {
     return personagem
   } catch {
     throw new Error('Erro ao exibir personagem.')
+  }
+}
+
+export const getProgressaoPersonagem = async (idPersonagem: number): Promise<Nivel[]> => {
+  try {
+    const niveis = await SQLiteDataSource.getRepository(Nivel).find({
+      where: { personagem: { id: idPersonagem } },
+      relations: {
+        poderes: true
+      }
+    })
+
+    return niveis
+  } catch {
+    throw new Error('Erro ao exibir poderes!')
   }
 }
 

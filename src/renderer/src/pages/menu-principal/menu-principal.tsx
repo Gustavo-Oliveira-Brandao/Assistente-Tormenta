@@ -95,7 +95,7 @@ export const MenuPrincipal = (): JSX.Element => {
                     <div className={styles.detalhesPersonagem}>
                       <h2 className="tormenta20Font">{personagem.nome}</h2>
                     </div>
-                    <p className={styles.nivel}>{personagem.nivel}</p>
+                    <p className={styles.nivel}>{personagem.nivelAtual}</p>
                   </div>
                 ))}
             </div>

@@ -1,0 +1,10 @@
+@use '@renderer/assets/variables.scss';
+
+.card {
+  background-color: variables.$secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+  border-radius: 5px;
+}

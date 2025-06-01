@@ -2,6 +2,7 @@ import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import {
   deletePersonagem,
   getPersonagem,
+  getProgressaoPersonagem,
   getTodosPersonagem,
   postPersonagem,
   putPersonagem
@@ -18,6 +19,14 @@ ipcMain.handle('get-personagem', async (event: IpcMainInvokeEvent, _id: number) 
   console.log(`FrameID:${event.frameId}`)
   return await getPersonagem(_id)
 })
+
+ipcMain.handle(
+  'get-progressao-personagem',
+  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
+    console.log(`FrameID:${event.frameId}`)
+    return await getProgressaoPersonagem(_idPersonagem)
+  }
+)
 
 ipcMain.handle(
   'post-personagem',

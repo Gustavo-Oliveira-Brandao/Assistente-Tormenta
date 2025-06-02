@@ -2,11 +2,8 @@
   "nome": "voz da civilização - tanna-toh",
   "descricao": "Você está sempre sob efeito de Compreensão.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "tanna-toh"
     }

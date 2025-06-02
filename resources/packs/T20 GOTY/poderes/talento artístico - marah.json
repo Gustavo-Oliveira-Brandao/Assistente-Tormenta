@@ -2,11 +2,8 @@
   "nome": "talento artístico - marah",
   "descricao": "Você recebe +2 em Acrobacia, Atuação e Diplomacia.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "marah"
     }

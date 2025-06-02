@@ -2,12 +2,8 @@
   "nome": "legião aberrante",
   "descricao": "Seu corpo se transforma em uma massa de insetos rubros. Você pode atravessar qualquer espaço por onde seja possível passar uma moeda (mas considera esses espaços como terreno difícil) e recebe +1 em testes contra manobras de combate e de resistência contra efeitos que tenham você como alvo (mas não efeitos de área). Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
   "preRequisitos": "Anatomia Insana, três outros poderes da Tormenta.",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "tormenta"
-    }
-  ],
+  "categoria": "tormenta",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 606

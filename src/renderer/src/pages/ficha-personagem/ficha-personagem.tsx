@@ -12,13 +12,11 @@ import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { useExibirMagiasDefault } from '@renderer/hooks/selectors/useMagiaQuery'
 import { CardMagia } from '@renderer/components/card-magia/card-magia'
 import { useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
-import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
 import { SidebarFicha } from '@renderer/templates/sidebar/sidebar-ficha'
 
 export const FichaPersonagem = (): JSX.Element => {
   const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
 
-  const { data: classes } = useExibirClassesDefault()
   const { data: personagem } = useExibirPersonagemPorId(idPersonagem)
   const { data: magiasDefault } = useExibirMagiasDefault()
   const removerMagia = useDeletarMagia()

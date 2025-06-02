@@ -2,11 +2,8 @@
   "nome": "benção do mana - wynna",
   "descricao": "Você recebe +1 PM a cada nível ímpar.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "wynna"
     }

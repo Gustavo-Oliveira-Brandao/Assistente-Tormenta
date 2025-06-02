@@ -2,11 +2,8 @@
   "nome": "dom da imortalidade - thyatis",
   "descricao": "Você é imortal. Sempre que morre, não importando o motivo, volta à vida após 3d6 dias. Você não perde níveis de experiência. Apenas paladinos podem escolher este poder. Um personagem pode ter Dom da Imortalidade ou Dom da Ressurreição, mas não ambos.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "thyatis"
     }

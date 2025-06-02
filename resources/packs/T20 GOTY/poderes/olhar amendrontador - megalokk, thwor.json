@@ -2,11 +2,8 @@
   "nome": "olhar amendrontador - megalokk, thwor",
   "descricao": "Você aprende e pode lançar Amedrontar. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "megalokk"
     },

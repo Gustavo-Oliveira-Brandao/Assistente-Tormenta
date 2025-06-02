@@ -28,18 +28,3 @@ export const extrairJson = async <T>(pasta: string): Promise<T[]> => {
     throw new Error('Erro ao retornar arquivos json.')
   }
 }
-
-/* export const escreverJson = async <T>(dados: T[], pasta): Promise<void> => {
-  try {
-    for (const dado of dados) {
-      const nomeArquivo = `${dado.nome}.json`
-      const caminhoBase = path.join(pasta, nomeArquivo)
-
-      const conteudo = JSON.stringify(dado, null, 2)
-      await fs.writeFile(caminhoBase, conteudo, { encoding: 'utf-8' })
-    }
-  } catch {
-    console.log('Erro ao escrever arquivos.')
-  }
-}
- */

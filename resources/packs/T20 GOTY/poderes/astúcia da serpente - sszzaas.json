@@ -2,11 +2,8 @@
   "nome": "astúcia da serpente - sszzaas",
   "descricao": "Você recebe +2 em Enganação, Furtividade e Intuição.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "sszzaas"
     }

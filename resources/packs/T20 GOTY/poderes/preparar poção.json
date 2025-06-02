@@ -2,12 +2,8 @@
   "nome": "preparar poção",
   "descricao": "Você pode usar a perícia Ofício (alquimia) para fabricar poções com magias que conheça de 1º e 2º círculos. Veja Ofício em Perícias para a regra de fabricar itens e a página Recompensas para a regra de poções.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "magia"
-    }
-  ],
+  "categoria": "magia",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 517

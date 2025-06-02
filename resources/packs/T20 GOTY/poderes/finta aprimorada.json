@@ -2,12 +2,8 @@
   "nome": "finta aprimorada",
   "descricao": "Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento.",
   "preRequisitos": "treinado em Enganação e Luta.",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 481

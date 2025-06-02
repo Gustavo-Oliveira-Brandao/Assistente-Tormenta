@@ -2,12 +2,8 @@
   "nome": "disparo rapido",
   "descricao": "Se estiver usando uma arma de ataque à distância e gastar uma ação completa para atacar, você pode fazer um ataque adicional com ela (se puder recarregá- -la como ação livre). Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "reação",
   "subEfeitos": [],
   "key": 468

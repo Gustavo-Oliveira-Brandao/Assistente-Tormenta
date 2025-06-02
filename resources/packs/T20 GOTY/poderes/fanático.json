@@ -2,12 +2,8 @@
   "nome": "fanático",
   "descricao": "Seu deslocamento não é reduzido por usar armaduras pesadas.",
   "preRequisitos": "12º nível de personagem, Encouraçado.",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 480

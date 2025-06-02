@@ -2,11 +2,8 @@
   "nome": "aura restauradora - lena",
   "descricao": "Você e seus aliados em alcance curto recuperam duas vezes mais pontos de vida por descanso.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "lena"
     }

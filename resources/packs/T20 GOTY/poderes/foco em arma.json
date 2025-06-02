@@ -2,12 +2,8 @@
   "nome": "foco em arma",
   "descricao": "Escolha uma arma. Você recebe +2 em testes de ataque com essa arma. Você pode escolher este poder outras vezes para armas diferentes.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 482

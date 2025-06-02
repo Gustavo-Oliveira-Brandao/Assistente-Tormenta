@@ -2,11 +2,8 @@
   "nome": "cura gentil - lena",
   "descricao": "Você soma seu Carisma aos PV restaurados por suas habilidades mágicas de cura.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "lena"
     }

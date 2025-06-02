@@ -2,12 +2,8 @@
   "nome": "treinamento em perícia",
   "descricao": "Você se torna treinado em uma perícia a sua escolha. Você pode escolher este poder outras vezes para perícias diferentes.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "destino"
-    }
-  ],
+  "categoria": "destino",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 507

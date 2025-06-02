@@ -2,11 +2,8 @@
   "nome": "coragem total - arsenal, khalmyr, lin-wu, valkaria",
   "descricao": "Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "arsenal"
     },

@@ -1,4 +1,4 @@
-import { JSX, useState } from 'react'
+import { JSX, useMemo, useState } from 'react'
 import styles from './sidebar-ficha.module.scss'
 import { BarraProgressao } from '@renderer/components/barra-recurso/barra-progressao'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
@@ -14,6 +14,9 @@ import { RootState } from '@renderer/store/store'
 import { useDispatch, useSelector } from 'react-redux'
 import { useCriarPoder } from '@renderer/hooks/mutations/usePoderMutation'
 import { useExibirPoderesDefault } from '@renderer/hooks/selectors/usePoderQuery'
+import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
+import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
+import { DeepPartial } from 'typeorm'
 
 type SidebarFichaProps = {
   personagem: IPersonagem
@@ -21,13 +24,79 @@ type SidebarFichaProps = {
 
 export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => {
   const [abaSidebar, setAbaSidebar] = useState('STATUS')
+  const [abaPoderesPesquisa, setAbaPoderesPesquisa] = useState('CLASSE')
   const navigate = useNavigate()
 
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
-  const { data: niveis } = useExibirProgressaoPersonagem(personagem.id)
 
+  const { data: niveis } = useExibirProgressaoPersonagem(personagem.id)
+  const { data: classes } = useExibirClassesDefault()
   const { data: poderesDefault } = useExibirPoderesDefault()
+
+  const poderesClassePesquisa = useMemo(() => {
+    if (!classes || !personagem) {
+      return []
+    }
+
+    return classes.flatMap((classe) => {
+      const poderes: DeepPartial<IPoder>[] = []
+      if (classe.nome == personagem.classe) {
+        poderes.push(...classe.poderesClasse)
+      }
+      return poderes
+    })
+  }, [classes, personagem])
+
+  const poderesProgressao = useMemo(() => {
+    if (!niveis || !classes) {
+      return []
+    }
+
+    return classes.flatMap((classe) => {
+      let contadorNivelClasse = 0
+
+      const poderesAdquiridosClasse: DeepPartial<IPoder>[] = []
+
+      for (const nivel of niveis) {
+        if (nivel.classe === classe.nome) {
+          if (nivel.valor <= personagem.nivelAtual) {
+            contadorNivelClasse++
+            for (const progressao of classe.progressao) {
+              if (progressao.nivel <= contadorNivelClasse) {
+                poderesAdquiridosClasse.push(...progressao.poderes)
+              }
+            }
+          }
+        }
+      }
+
+      return poderesAdquiridosClasse
+    })
+  }, [classes, niveis, personagem])
+
+  const poderesPesquisados = useMemo(() => {
+    if (!poderesDefault) {
+      return []
+    }
+    let poderesFiltrados: DeepPartial<IPoder>[] = []
+
+    if (abaPoderesPesquisa === 'CLASSE') {
+      poderesFiltrados = poderesClassePesquisa
+    } else if (abaPoderesPesquisa === 'COMBATE') {
+      poderesFiltrados = poderesDefault.filter((poder) => poder.categoria == 'combate')
+    } else if (abaPoderesPesquisa === 'DESTINO') {
+      poderesFiltrados = poderesDefault.filter((poder) => poder.categoria == 'destino')
+    } else if (abaPoderesPesquisa === 'MAGIA') {
+      poderesFiltrados = poderesDefault.filter((poder) => poder.categoria == 'magia')
+    } else if (abaPoderesPesquisa === 'CONCEDIDOS') {
+      poderesFiltrados = poderesDefault.filter((poder) => poder.categoria == 'concedido')
+    } else if (abaPoderesPesquisa === 'TORMENTA') {
+      poderesFiltrados = poderesDefault.filter((poder) => poder.categoria == 'tormenta')
+    }
+    return poderesFiltrados
+  }, [poderesDefault, abaPoderesPesquisa, poderesClassePesquisa])
+
   const adicionarPoder = useCriarPoder()
 
   return (
@@ -95,16 +164,76 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
                         height="400px"
                         width="550px"
                       >
-                        <h3 className="tormenta20Font">Poderes gerais</h3>
-                        {poderesDefault &&
-                          poderesDefault.map((poder) => (
-                            <CardPoder
-                              key={poder.key}
-                              poder={poder}
-                              iconeBotaoInteracao="./icons/adicao.svg"
-                              onInteract={() => adicionarPoder.mutate({ poder, nivel })}
+                        <div className={styles.lojaHeader}>
+                          <h3 className="tormenta20Font">Filtros</h3>
+                          <div className={styles.filtros}>
+                            <BotaoModular
+                              css="botaoFiltro"
+                              estaAtivo={abaPoderesPesquisa === 'CLASSE' ? true : false}
+                              cor="corPrimaria"
+                              texto="Classe"
+                              font="tormenta20Font"
+                              onClickEvent={() => setAbaPoderesPesquisa('CLASSE')}
                             />
-                          ))}
+
+                            <BotaoModular
+                              css="botaoFiltro"
+                              estaAtivo={abaPoderesPesquisa === 'COMBATE' ? true : false}
+                              cor="corPrimaria"
+                              texto="Combate"
+                              font="tormenta20Font"
+                              onClickEvent={() => setAbaPoderesPesquisa('COMBATE')}
+                            />
+
+                            <BotaoModular
+                              css="botaoFiltro"
+                              estaAtivo={abaPoderesPesquisa === 'DESTINO' ? true : false}
+                              cor="corPrimaria"
+                              texto="Destino"
+                              font="tormenta20Font"
+                              onClickEvent={() => setAbaPoderesPesquisa('DESTINO')}
+                            />
+
+                            <BotaoModular
+                              css="botaoFiltro"
+                              estaAtivo={abaPoderesPesquisa === 'CONCEDIDOS' ? true : false}
+                              cor="corPrimaria"
+                              texto="Concedidos"
+                              font="tormenta20Font"
+                              onClickEvent={() => setAbaPoderesPesquisa('CONCEDIDOS')}
+                            />
+
+                            <BotaoModular
+                              css="botaoFiltro"
+                              estaAtivo={abaPoderesPesquisa === 'MAGIA' ? true : false}
+                              cor="corPrimaria"
+                              texto="Magia"
+                              font="tormenta20Font"
+                              onClickEvent={() => setAbaPoderesPesquisa('MAGIA')}
+                            />
+
+                            <BotaoModular
+                              css="botaoFiltro"
+                              estaAtivo={abaPoderesPesquisa === 'TORMENTA' ? true : false}
+                              cor="corPrimaria"
+                              texto="Tormenta"
+                              font="tormenta20Font"
+                              onClickEvent={() => setAbaPoderesPesquisa('TORMENTA')}
+                            />
+                          </div>
+                        </div>
+                        <>
+                          <h3 className="tormenta20Font">Poderes</h3>
+                          {poderesPesquisados &&
+                            poderesPesquisados.map((poder) => (
+                              <CardPoder
+                                key={poder.key}
+                                poder={poder}
+                                iconeBotaoInteracao="./icons/adicao.svg"
+                                onInteract={() => adicionarPoder.mutate({ poder, nivel })}
+                              />
+                            ))}
+                        </>
                       </Modal>,
                       document.body
                     )}

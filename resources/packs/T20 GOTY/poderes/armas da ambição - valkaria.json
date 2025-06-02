@@ -2,11 +2,8 @@
   "nome": "armas da ambição - valkaria",
   "descricao": "Você recebe +1 em testes de ataque e na margem de ameaça com armas nas quais é proficiente.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "valkaria"
     }

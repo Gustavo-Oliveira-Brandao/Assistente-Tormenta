@@ -2,12 +2,8 @@
   "nome": "arremesso multiplo",
   "descricao": "Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso.",
   "preRequisitos": "Des +1, Estilo de Arremesso.",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "reação",
   "subEfeitos": [],
   "key": 457

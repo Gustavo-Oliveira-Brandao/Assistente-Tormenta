@@ -2,11 +2,8 @@
   "nome": "conhecimento enciclopédico - tanna-toh",
   "descricao": "Você se torna treinado em duas perícias baseadas em Inteligência a sua escolha.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "tanna-toh"
     }

@@ -2,12 +2,8 @@
   "nome": "acrobático",
   "descricao": "Você pode usar seu modificador de Destreza em vez de Força em testes de Atletismo. Além disso, terreno difícil não reduz seu deslocamento nem o impede de realizar investidas.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "destino"
-    }
-  ],
+  "categoria": "destino",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 493

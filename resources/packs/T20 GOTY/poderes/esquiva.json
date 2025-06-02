@@ -2,12 +2,8 @@
   "nome": "esquiva",
   "descricao": "Você recebe +2 em Defesa e Reflexos.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 471

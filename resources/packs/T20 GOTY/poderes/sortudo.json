@@ -2,12 +2,8 @@
   "nome": "sortudo",
   "descricao": "Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste).",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "destino"
-    }
-  ],
+  "categoria": "destino",
+  "tags": [],
   "tempoExecucao": "reação",
   "subEfeitos": [],
   "key": 504

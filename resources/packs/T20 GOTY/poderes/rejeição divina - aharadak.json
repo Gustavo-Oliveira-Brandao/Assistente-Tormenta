@@ -2,11 +2,8 @@
   "nome": "rejeição divina - aharadak",
   "descricao": "Você recebe +5 em testes de resistência contra magias divinas.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "aharadak"
     }

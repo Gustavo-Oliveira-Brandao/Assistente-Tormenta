@@ -2,12 +2,8 @@
   "nome": "dentes afiados",
   "descricao": "Você recebe um ataque natural de mordida (dano 1d4, crítico x2, corte). Quando usa a ação ataque, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "tormenta"
-    }
-  ],
+  "categoria": "tormenta",
+  "tags": [],
   "tempoExecucao": "reação",
   "subEfeitos": [],
   "key": 601

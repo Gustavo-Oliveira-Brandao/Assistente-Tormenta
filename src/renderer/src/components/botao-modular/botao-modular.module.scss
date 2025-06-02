@@ -170,3 +170,13 @@ button {
   width: 24px;
   height: 24px;
 }
+
+.botaoFiltro {
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  p {
+    font-size: 14px;
+  }
+}

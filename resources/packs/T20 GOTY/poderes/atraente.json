@@ -2,12 +2,8 @@
   "nome": "atraente",
   "descricao": "Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você.",
   "preRequisitos": "Car 13.",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "destino"
-    }
-  ],
+  "categoria": "destino",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 496

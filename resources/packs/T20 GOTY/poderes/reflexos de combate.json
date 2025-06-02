@@ -2,12 +2,8 @@
   "nome": "reflexos de combate",
   "descricao": "Você ganha uma ação de movimento extra no seu primeiro turno de cada combate.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "combate"
-    }
-  ],
+  "categoria": "combate",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 489

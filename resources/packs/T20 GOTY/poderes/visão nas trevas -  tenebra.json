@@ -2,11 +2,8 @@
   "nome": "visão nas trevas -  tenebra",
   "descricao": "Você enxerga perfeitamente no escuro, incluindo em magias de escuridão.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "tenebra"
     }

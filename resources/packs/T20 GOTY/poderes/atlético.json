@@ -2,12 +2,8 @@
   "nome": "atlético",
   "descricao": "Você recebe +2 em Atletismo e seu deslocamento aumenta em +3m.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "destino"
-    }
-  ],
+  "categoria": "destino",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 495

@@ -2,12 +2,8 @@
   "nome": "vontade de ferro",
   "descricao": "Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade.",
   "preRequisitos": "",
-  "categoria": "geral",
-  "tags": [
-    {
-      "label": "destino"
-    }
-  ],
+  "categoria": "destino",
+  "tags": [],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": 509

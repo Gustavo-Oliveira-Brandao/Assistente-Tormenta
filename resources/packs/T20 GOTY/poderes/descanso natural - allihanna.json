@@ -2,11 +2,8 @@
   "nome": "descanso natural - allihanna",
   "descricao": "Para você, dormir ao relento conta como uma estalagem confortável.",
   "preRequisitos": "",
-  "categoria": "geral",
+  "categoria": "concedido",
   "tags": [
-    {
-      "label": "concedido"
-    },
     {
       "label": "allihanna"
     }

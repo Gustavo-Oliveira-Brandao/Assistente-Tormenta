@@ -15,7 +15,6 @@ export const exibirPersonagemPorId = async (id: number): Promise<IPersonagem> =>
 
 export const exibirProgressaoPersonagem = async (_idPersonagem: number): Promise<INivel[]> => {
   const niveis = await window.api.personagem.getProgressaoPersonagem(_idPersonagem)
-  console.log(niveis)
   return niveis
 }
 

@@ -67,8 +67,14 @@
 .filtros {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   width: 100%;
+
+  .filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 .secaoPoderes {

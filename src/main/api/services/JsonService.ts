@@ -15,7 +15,6 @@ export const extrairJson = async <T>(pasta: string): Promise<T[]> => {
     for (const arquivo of arquivosJson) {
       const caminhoArquivo = path.join(caminhoBase, arquivo)
       const conteudo = await fs.readFile(caminhoArquivo, { encoding: 'utf-8' })
-
       try {
         dadosJson.push(JSON.parse(conteudo))
       } catch {

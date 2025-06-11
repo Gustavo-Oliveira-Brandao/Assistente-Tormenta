@@ -37,7 +37,7 @@ const api = {
     getClassesDefault: (): Promise<IClasse[]> => ipcRenderer.invoke('get-classes-default')
   },
   racas: {
-    getRacasDefault: (): Promise<DeepPartial<IRaca[]>> => ipcRenderer.invoke('get-racas-default')
+    getRacasDefault: (): Promise<IRaca[]> => ipcRenderer.invoke('get-racas-default')
   },
   deslocamento: {
     putDeslocamento: (_deslocamento: Deslocamento): Promise<void> =>

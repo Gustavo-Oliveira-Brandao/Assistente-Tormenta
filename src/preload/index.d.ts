@@ -24,8 +24,8 @@ declare global {
       classe: {
         getClassesDefault: () => Promise<IClasse[]>
       }
-      raca: {
-        getRacasDefault: () => Promise<DeepPartial<IRaca[]>>
+      racas: {
+        getRacasDefault: () => Promise<IRaca[]>
       }
       deslocamento: {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>

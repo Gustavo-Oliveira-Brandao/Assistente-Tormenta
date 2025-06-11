@@ -11,6 +11,7 @@ export const getPoderesDefault = async (): Promise<DeepPartial<Poder[]>> => {
   const pasta = path.join('packs', 'T20 GOTY', 'poderes')
   const result = (await extrairJson(pasta)) as DeepPartial<Poder[]>
   const poderes = result
+
   return poderes
 }
 

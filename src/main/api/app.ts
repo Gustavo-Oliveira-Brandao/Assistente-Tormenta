@@ -6,9 +6,10 @@ import './controllers/MagiaController'
 import './controllers/PericiaController'
 import './controllers/PoderController'
 import './controllers/ProficienciaController'
-import './controllers/RacaController'
 import './controllers/RecursoController'
 import './controllers/PersonagemController'
+import './controllers/RacaController'
+
 const AppDataSource = SQLiteDataSource
 
 AppDataSource.initialize()

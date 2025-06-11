@@ -26,7 +26,9 @@
   display: flex;
   gap: 10px;
   width: 100%;
+  justify-content: center;
   padding: 0 5px;
+  flex-wrap: wrap;
 }
 .fotoPersonagem {
   width: 100%;

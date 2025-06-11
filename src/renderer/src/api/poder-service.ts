@@ -1,4 +1,3 @@
-import { INivel } from '@renderer/@types/T20 GOTY/INivel'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import { DeepPartial } from 'typeorm'
 
@@ -7,9 +6,9 @@ export const exibirPoderesDefault = async (): Promise<DeepPartial<IPoder[]>> => 
   return poderes
 }
 
-export const criarPoder = async (poder: DeepPartial<IPoder>, nivel: INivel): Promise<void> => {
+export const criarPoder = async (poder: DeepPartial<IPoder>, nivel: number): Promise<void> => {
   console.log(nivel)
-  await window.api.poder.postPoder(poder, nivel.valor)
+  await window.api.poder.postPoder(poder, nivel)
 }
 
 export const deletarPoder = async (id: number): Promise<void> => {

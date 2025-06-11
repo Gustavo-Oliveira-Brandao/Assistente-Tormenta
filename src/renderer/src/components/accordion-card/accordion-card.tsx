@@ -7,6 +7,7 @@ type AccordionCardProps = {
   icone?: string
   children: ReactNode
   inicialmenteExpandido: boolean
+  numero?: number
 }
 export const AccordionCard = (props: AccordionCardProps): JSX.Element => {
   const [estaExpandido, setEstaExpandido] = useState(props.inicialmenteExpandido)
@@ -15,6 +16,7 @@ export const AccordionCard = (props: AccordionCardProps): JSX.Element => {
     <div className={styles.card}>
       <div className={styles.header}>
         <div className={styles.titulo}>
+          {props.numero && <p className={`${styles.valor} tormenta20Font`}>{props.numero}</p>}
           {props.icone && <img loading="lazy" src={props.icone} alt={props.titulo} />}
           <div className={styles.nome}>
             <h3 className="tormenta20Font" onClick={() => setEstaExpandido(!estaExpandido)}>

@@ -45,14 +45,26 @@
       }
     }
 
-    .modalConteudo {
-      display: grid;
-      width: 100%;
-      max-height: 450px;
-      padding: 0 15px 15px 15px;
-      grid-template-columns: 1fr;
-      gap: 15px;
-      overflow-y: auto;
+    .main {
+      display: flex;
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        width: 200px;
+      }
+
+      .modalConteudo {
+        display: grid;
+        width: 100%;
+        max-height: 450px;
+        padding: 15px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        overflow-y: auto;
+      }
     }
 
     .modalFooter {

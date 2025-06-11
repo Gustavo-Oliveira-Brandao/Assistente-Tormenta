@@ -9,18 +9,21 @@ type cardPoderProps = {
   poder: IPoder | DeepPartial<IPoder>
   onInteract?: () => void
   iconeBotaoInteracao?: string
+  nivel?: number
 }
 
 export const CardPoder = ({
   poder,
   onInteract,
-  iconeBotaoInteracao
+  iconeBotaoInteracao,
+  nivel
 }: cardPoderProps): JSX.Element => {
   return (
     <AccordionCard
       titulo={poder.nome ?? 'Poder sem nome'}
       inicialmenteExpandido={false}
       icone={`./icons/arcanista.svg`}
+      numero={nivel}
       header={
         onInteract && (
           <BotaoModular
@@ -50,7 +53,7 @@ export const CardPoder = ({
               {poder.subEfeitos.map((subEfeito, index) => (
                 <div key={index} className={styles.subEfeito}>
                   <p>
-                    <span className={styles.destaque + ' tormenta20Font'}>{subEfeito.nome} </span>
+                    <span className={styles.destaque + ' tormenta20Font'}>{subEfeito.nome}: </span>
                     <span className="sourceSansPro">{subEfeito.descricao}</span>
                   </p>
                 </div>

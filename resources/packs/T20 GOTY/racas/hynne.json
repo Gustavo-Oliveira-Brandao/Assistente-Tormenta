@@ -29,6 +29,7 @@
   "poderes": [
     {
       "nome": "arremessador",
+      "nivel": 1,
       "descricao": "Quando faz um ataque à distância com uma funda ou uma arma de arremesso, seu dano aumenta em um passo.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -43,6 +44,7 @@
     },
     {
       "nome": "pequeno e rechoncudo",
+      "nivel": 1,
       "descricao": "Seu tamanho é Pequeno e seu deslocamento é 6m. Você recebe +2 em Enganação e pode usar Destreza como atributo-chave de Atletismo (em vez de Força).",
       "preRequisitos": "",
       "categoria": "raca",
@@ -57,6 +59,7 @@
     },
     {
       "nome": "sorte salvadora",
+      "nivel": 1,
       "descricao": "Quando faz um teste de resistência, você pode gastar 1 PM para rolar este teste novamente.",
       "preRequisitos": "",
       "categoria": "raca",

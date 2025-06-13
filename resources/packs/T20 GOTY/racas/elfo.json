@@ -29,6 +29,7 @@
   "poderes": [
     {
       "nome": "graça de glórienn",
+      "nivel": 1,
       "descricao": "Seu deslocamento é 12m (em vez de 9m).",
       "preRequisitos": "",
       "categoria": "raca",
@@ -43,6 +44,7 @@
     },
     {
       "nome": "sangue mágico",
+      "nivel": 1,
       "descricao": "Você recebe +1 ponto de mana por nível.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -57,6 +59,7 @@
     },
     {
       "nome": "sentidos élficos",
+      "nivel": 1,
       "descricao": "Você recebe visão na penumbra e +2 em Misticismo e Percepção.",
       "preRequisitos": "",
       "categoria": "raca",

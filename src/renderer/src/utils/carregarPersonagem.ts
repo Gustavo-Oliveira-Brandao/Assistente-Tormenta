@@ -3,6 +3,12 @@ import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { exibirClassesDefault } from '@renderer/api/classe-service'
 
 export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPersonagem> => {
+  let nivelAtual = 0
+  for (const classe of personagem.classes) {
+    nivelAtual += classe.nivel
+  }
+
+  personagem.nivelAtual = nivelAtual
   //Calculo de atributo
   for (const atributo of personagem.atributos) {
     const bonusTotal = calcularBonus(atributo.bonus, personagem.nivelAtual)
@@ -15,18 +21,16 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   let manaTotalPorNivel = 0
   const classes = await exibirClassesDefault()
   for (const classe of classes) {
-    if (classe.nome === personagem.classe) {
+    if (classe.nome === personagem.classeInicial) {
       vidaInicial = classe.vidaInicial
     }
   }
 
-  if (personagem.niveis) {
-    for (const nivel of personagem.niveis) {
-      for (const classe of classes) {
-        if (classe.nome === nivel.classe) {
-          vidaTotalPorNivel += classe.vidaPorNivel
-          manaTotalPorNivel += classe.manaPorNivel
-        }
+  for (const classePersonagem of personagem.classes) {
+    for (const classeDB of classes) {
+      if (classeDB.nome === classePersonagem.nome) {
+        vidaTotalPorNivel += classeDB.vidaPorNivel
+        manaTotalPorNivel += classeDB.manaPorNivel
       }
     }
   }

@@ -1,26 +1,25 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Magia } from './Magia'
+import { Personagem } from './Personagem'
 
 //OK
 @Entity()
-export class AprimoramentoMagia {
+export class PoderRef {
   @PrimaryGeneratedColumn()
   id: number
 
   @Column({
     type: 'integer'
   })
-  custo: number
+  key: number
 
   @Column({
-    type: 'varchar',
-    length: 1000
+    type: 'integer'
   })
-  descricao: string
+  nivel: number
 
-  @ManyToOne(() => Magia, (magia) => magia.aprimoramentos, {
+  @ManyToOne(() => Personagem, (personagem) => personagem.poderes, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  magia: Magia
+  personagem: Personagem
 }

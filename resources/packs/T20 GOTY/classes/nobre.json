@@ -5,177 +5,96 @@
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
   "progressaoConjuracao": "none",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "autoconfiança",
+      "descricao": "Você pode somar seu bônus de Carisma em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "autoconfiança",
-          "descricao": "Você pode somar seu bônus de Carisma em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "nobre"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 364
-        },
-        {
-          "nome": "espólio",
-          "descricao": "Você recebe um item a sua escolha com preço de até T$ 2.000.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "nobre"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 365
-        },
-        {
-          "nome": "orgulho",
-          "descricao": "Quando faz um teste de perícia, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu modificador de Carisma). Para cada PM que gastar, recebe +2 no teste.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "nobre"
-            }
-          ],
-          "tempoExecucao": "reação",
-          "subEfeitos": [],
-          "key": 366
+          "label": "nobre"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 364
     },
     {
+      "nome": "espólio",
+      "descricao": "Você recebe um item a sua escolha com preço de até T$ 2.000.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 365
+    },
+    {
+      "nome": "orgulho",
+      "descricao": "Quando faz um teste de perícia, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu modificador de Carisma). Para cada PM que gastar, recebe +2 no teste.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "nobre"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 366
+    },
+    {
+      "nome": "riqueza",
+      "descricao": "No 2º nível, você passa a receber dinheiro de sua família, patrono ou negócios. Uma vez por aventura, você pode fazer um teste de Carisma com um bônus igual ao seu nível de nobre. Você recebe um número de Tibares de ouro igual ao resultado do teste. Por exemplo, um nobre de 5º nível com Carisma 18 (+4) que role um 13 no dado recebe 22 TO. O uso desta habilidade é condicionado a onde e quando você faz o teste, assim como a relação com sua família, patrono ou negócios. Por exemplo, um nobre viajando pelos ermos, isolado da civilização, dificilmente teria como receber dinheiro",
+      "preRequisitos": "",
       "nivel": 2,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "riqueza",
-          "descricao": "No 2º nível, você passa a receber dinheiro de sua família, patrono ou negócios. Uma vez por aventura, você pode fazer um teste de Carisma com um bônus igual ao seu nível de nobre. Você recebe um número de Tibares de ouro igual ao resultado do teste. Por exemplo, um nobre de 5º nível com Carisma 18 (+4) que role um 13 no dado recebe 22 TO. O uso desta habilidade é condicionado a onde e quando você faz o teste, assim como a relação com sua família, patrono ou negócios. Por exemplo, um nobre viajando pelos ermos, isolado da civilização, dificilmente teria como receber dinheiro",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "nobre"
-            }
-          ],
-          "tempoExecucao": "ação livre",
-          "subEfeitos": [],
-          "key": 386
+          "label": "nobre"
         }
-      ]
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 386
     },
     {
+      "nome": "gritar ordens",
+      "descricao": "A partir do 3º nível, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Carisma). Até o início de seu próximo turno, todos os seus aliados em alcance curto recebem um bônus nos testes de perícia igual à quantidade de PM que você gastou.",
+      "preRequisitos": "",
       "nivel": 3,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "gritar ordens",
-          "descricao": "A partir do 3º nível, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Carisma). Até o início de seu próximo turno, todos os seus aliados em alcance curto recebem um bônus nos testes de perícia igual à quantidade de PM que você gastou.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "nobre"
-            }
-          ],
-          "tempoExecucao": "ação livre",
-          "subEfeitos": [],
-          "key": 387
+          "label": "nobre"
         }
-      ]
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 387
     },
     {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 5,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 7,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 9,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 11,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "realeza",
+      "descricao": "No 20º nível, sua presença impõe mais do que respeito — impõe veneração. Uma criatura que seja alvo de sua Presença Aristocrática e falhe no teste de Vontade por 10 ou mais se arrepende tanto de ter tentado machucá-lo que passa a lutar ao seu lado (e seguir suas ordens, se puder entendê-lo) pelo resto da cena. Uma criatura que seja reduzida a 0 PV por Palavras Afiadas não sofre este dano; em vez disso, passa a lutar ao seu lado pelo resto da cena.",
+      "preRequisitos": "",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "realeza",
-          "descricao": "No 20º nível, sua presença impõe mais do que respeito — impõe veneração. Uma criatura que seja alvo de sua Presença Aristocrática e falhe no teste de Vontade por 10 ou mais se arrepende tanto de ter tentado machucá-lo que passa a lutar ao seu lado (e seguir suas ordens, se puder entendê-lo) pelo resto da cena. Uma criatura que seja reduzida a 0 PV por Palavras Afiadas não sofre este dano; em vez disso, passa a lutar ao seu lado pelo resto da cena.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "nobre"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 388
+          "label": "nobre"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 388
     }
   ],
   "poderesClasse": [

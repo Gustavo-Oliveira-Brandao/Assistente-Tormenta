@@ -5,153 +5,66 @@
   "vidaPorNivel": 6,
   "manaPorNivel": 3,
   "progressaoConjuracao": "none",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "fúria",
+      "descricao": "Você pode gastar 2 PM para invocar uma fúria selvagem. Você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode fazer nenhuma ação que exija calma e concentração (como usar a perícia Furtividade ou lançar magias). A cada cinco níveis, pode gastar +1 PM para aumentar os bônus em +1. A Fúria termina se, ao fim da rodada, você não tiver atacado nem sido alvo de um efeito (ataque, habilidade, magia...) hostil.",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "fúria",
-          "descricao": "Você pode gastar 2 PM para invocar uma fúria selvagem. Você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode fazer nenhuma ação que exija calma e concentração (como usar a perícia Furtividade ou lançar magias). A cada cinco níveis, pode gastar +1 PM para aumentar os bônus em +1. A Fúria termina se, ao fim da rodada, você não tiver atacado nem sido alvo de um efeito (ataque, habilidade, magia...) hostil.",
-
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "barbaro"
-            }
-          ],
-          "tempoExecucao": "ação livre",
-          "subEfeitos": [],
-          "key": 82
+          "label": "barbaro"
         }
-      ]
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 82
     },
     {
-      "nivel": 2,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "instinto selvagem",
+      "descricao": "No 3º nível, você recebe +1 em rolagens de dano, Percepção e Reflexos. A cada seis níveis, esse bônus aumenta em +1.",
       "nivel": 3,
-      "recebePoderClasse": true,
-      "poderes": [
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "instinto selvagem",
-          "descricao": "No 3º nível, você recebe +1 em rolagens de dano, Percepção e Reflexos. A cada seis níveis, esse bônus aumenta em +1.",
-
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "barbaro"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 102
+          "label": "barbaro"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 102
     },
     {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "redução de dano",
+      "descricao": "A partir do 5º nível, graças a seu vigor e força de vontade, você ignora parte de seus ferimentos. Você recebe redução de dano 2 (todo dano que sofre é reduzido em 2). A cada três níveis, sua RD aumenta em 2, até um máximo de RD 10 no 17º nível.",
       "nivel": 5,
-      "recebePoderClasse": true,
-      "poderes": [
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "redução de dano",
-          "descricao": "A partir do 5º nível, graças a seu vigor e força de vontade, você ignora parte de seus ferimentos. Você recebe redução de dano 2 (todo dano que sofre é reduzido em 2). A cada três níveis, sua RD aumenta em 2, até um máximo de RD 10 no 17º nível.",
-
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "barbaro"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 103
+          "label": "barbaro"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 103
     },
     {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 7,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 9,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 11,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "fúria titânica",
+      "descricao": "No 20º nível, o bônus que você recebe nos testes de ataque e rolagens de dano quando usa Fúria é dobrado. Por exemplo, se gastar 5 PM, em vez de um bônus de +5, recebe um bônus de +10.",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "preRequisitos": "",
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "fúria titânica",
-          "descricao": "No 20º nível, o bônus que você recebe nos testes de ataque e rolagens de dano quando usa Fúria é dobrado. Por exemplo, se gastar 5 PM, em vez de um bônus de +5, recebe um bônus de +10.",
-
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "barbaro"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 104
+          "label": "barbaro"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 104
     }
   ],
   "poderesClasse": [

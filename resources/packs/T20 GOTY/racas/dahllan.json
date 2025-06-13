@@ -29,6 +29,7 @@
   "poderes": [
     {
       "nome": "amiga das plantas",
+      "nivel": 1,
       "descricao": "Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -43,6 +44,7 @@
     },
     {
       "nome": "armadura de allihanna",
+      "nivel": 1,
       "descricao": "Você pode gastar uma ação de movimento e 1 PM para transformar sua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -57,6 +59,7 @@
     },
     {
       "nome": "empatia selvagem",
+      "nivel": 1,
       "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais. Caso receba esta habilidade novamente, recebe +2 em Adestramento.",
       "preRequisitos": "",
       "categoria": "raca",

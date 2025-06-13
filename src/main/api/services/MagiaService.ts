@@ -1,12 +1,13 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Grimorio } from '../entities/Grimorio'
-import { Magia } from '../entities/Magia'
+import { MagiaRef } from '../entities/MagiaRef'
 import { Personagem } from '../entities/Personagem'
 import path from 'path'
 import { extrairJson } from './JsonService'
+import { IMagiaDB } from '../../@types/IMagiaDB'
 
-const MagiaRepository = SQLiteDataSource.getRepository(Magia)
+const MagiaRepository = SQLiteDataSource.getRepository(MagiaRef)
 const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
 
 export const getGrimoriosPorPersonagem = async (_idPersonagem: number): Promise<Grimorio[]> => {
@@ -66,7 +67,7 @@ export const deleteGrimorio = async (_id: number): Promise<void> => {
   }
 }
 
-export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (_magia: Partial<MagiaRef>, _idGrimorio: number): Promise<void> => {
   try {
     const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
     const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })
@@ -77,7 +78,6 @@ export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number)
 
     const novaMagia = MagiaRepository.create({
       ..._magia,
-      aprimoramentos: _magia.aprimoramentos,
       grimorio: grimorio
     })
 
@@ -95,9 +95,9 @@ export const deleteMagia = async (_id: number): Promise<void> => {
   }
 }
 
-export const getMagiasDefault = async (): Promise<DeepPartial<Magia[]>> => {
+export const getMagiasDefault = async (): Promise<IMagiaDB[]> => {
   const pasta = path.join('packs', 'T20 GOTY', 'magias')
-  const result = (await extrairJson(pasta)) as DeepPartial<Magia[]>
+  const result = (await extrairJson(pasta)) as IMagiaDB[]
   const magias = result
   return magias
 }

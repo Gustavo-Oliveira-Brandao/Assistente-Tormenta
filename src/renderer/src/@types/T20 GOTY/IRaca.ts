@@ -1,5 +1,4 @@
-import { DeepPartial } from 'typeorm'
-import { IPoder } from './IPoder'
+import { IPoderDB } from './IPoder'
 
 export type IRaca = {
   key: number
@@ -11,7 +10,7 @@ export type IRaca = {
   }[]
   herancas: {
     nome: string
-    poderes: DeepPartial<IPoder[]>
+    poderes: IPoderDB[]
   }[]
   deslocamentos: {
     caminhada: number
@@ -22,5 +21,5 @@ export type IRaca = {
   }
   tamanho: string
   tipo: string
-  poderes: DeepPartial<IPoder[]>
+  poderes: IPoderDB[]
 }

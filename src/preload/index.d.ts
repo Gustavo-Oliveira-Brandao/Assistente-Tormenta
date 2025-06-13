@@ -1,9 +1,4 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
-import { IClasse } from '@renderer/@types/T20 GOTY/IClasse'
-import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
-import { INivel } from '@renderer/@types/T20 GOTY/INivel'
-import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
-import { IRaca } from '@renderer/@types/T20 GOTY/IRaca'
 import { DeepPartial } from 'typeorm'
 
 declare global {
@@ -16,7 +11,6 @@ declare global {
         postPersonagem: (personagem: DeepPartial<Personagem>) => Promise<void>
         putPersonagem: (personagem: Personagem) => Promise<void>
         deletePersonagem: (id: number) => Promise<void>
-        getProgressaoPersonagem: (idPersonagem: number) => Promise<INivel[]>
       }
       atributo: {
         putAtributo: (atributo: Atributo) => Promise<void>
@@ -31,18 +25,18 @@ declare global {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
       magia: {
-        getMagiasDefault: () => Promise<DeepPartial<IMagia[]>>
+        getMagiasDefault: () => Promise<IMagiaDB[]>
         getGrimoriosPorPersonagem: (_idPersonagem: number) => Promise<Grimorio[]>
         postGrimorio: (grimorio: DeepPartial<Grimorio>, idPersonagem: number) => Promise<void>
         putGrimorio: (grimorio: Grimorio) => Promise<void>
         deleteGrimorio: (id: number) => Promise<void>
-        postMagia: (magia: DeepPartial<Magia>, idGrimorio: number) => Promise<void>
+        postMagia: (magia: Partial<MagiaRef>, idGrimorio: number) => Promise<void>
         deleteMagia: (id: number) => Promise<void>
       }
       poder: {
-        getPoderesDefault: () => Promise<DeepPartial<IPoder[]>>
-        getPoderesPorPersonagem: (_idNivel: number) => Promise<Poder[]>
-        postPoder: (poder: DeepPartial<Poder>, idNivel: number) => Promise<void>
+        getPoderesDefault: () => Promise<IPoderDB[]>
+        getPoderesPersonagem: (_idPersonagem: number) => Promise<IPoderRef[]>
+        postPoder: (poder: Partial<PoderRef>, _idPersonagem: number) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }
       proficiencia: {

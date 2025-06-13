@@ -11,8 +11,6 @@ import { createPortal } from 'react-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from './ficha-personagem.module.scss'
 
-type FichaMagiasProps = {}
-
 export const FichaMagias = (): JSX.Element => {
   const { data: magiasDefault } = useExibirMagiasDefault()
   const removerMagia = useDeletarMagia()

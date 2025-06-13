@@ -5,211 +5,126 @@
   "vidaPorNivel": 3,
   "manaPorNivel": 4,
   "progressaoConjuracao": "none",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "engenhosidade",
+      "descricao": "Quando faz um teste de perícia, você pode gastar 2 PM para somar a sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque.",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "engenhosidade",
-          "descricao": "Quando faz um teste de perícia, você pode gastar 2 PM para somar a sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "reação",
-          "subEfeitos": [],
-          "key": 273
-        },
-        {
-          "nome": "protótipo",
-          "descricao": "Você começa o jogo com um item superior, ou com 10 itens alquímicos, com preço total de até T$ 500.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 274
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 273
     },
     {
+      "nome": "protótipo",
+      "descricao": "Você começa o jogo com um item superior, ou com 10 itens alquímicos, com preço total de até T$ 500.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "inventor"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 274
+    },
+    {
+      "nome": "fabricar item superior",
+      "descricao": "No 2º nível, você recebe um item superior com preço de até T$ 2.000 e passa a poder fabricar itens superiores com uma melhoria. \n Nos níveis 5, 8 e 11, você pode substituir esse item por um item superior com duas, três e quatro melhorias, respectivamente, e passa a poder fabricar itens superiores com essa quantidade de melhorias. Considera-se que você estava trabalhando nos itens e você não gasta dinheiro ou tempo neles (mas gasta em itens que fabricar futuramente).",
+      "preRequisitos": "",
       "nivel": 2,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "fabricar item superior",
-          "descricao": "No 2º nível, você recebe um item superior com preço de até T$ 2.000 e passa a poder fabricar itens superiores com uma melhoria. \n Nos níveis 5, 8 e 11, você pode substituir esse item por um item superior com duas, três e quatro melhorias, respectivamente, e passa a poder fabricar itens superiores com essa quantidade de melhorias. Considera-se que você estava trabalhando nos itens e você não gasta dinheiro ou tempo neles (mas gasta em itens que fabricar futuramente).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 275
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 275
     },
     {
+      "nome": "comerciante",
+      "descricao": "No 3º nível, você pode vender itens 10% mais caro (não cumulativo com barganha).",
+      "preRequisitos": "",
       "nivel": 3,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "comerciante",
-          "descricao": "No 3º nível, você pode vender itens 10% mais caro (não cumulativo com barganha).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 305
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 305
     },
     {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 5,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "encontrar fraqueza",
+      "descricao": "A partir do 7º nível, você pode gastar uma ação de movimento e 2 PM para analisar um objeto em alcance curto. Se fizer isso, ignora a resistência a dano dele. Você também pode usar esta habilidade para encontrar uma fraqueza em um inimigo. Se ele estiver de armadura ou for um construto, você recebe +2 em seus testes de ataque contra ele. Os benefícios desta habilidade duram até o fim da cena.",
+      "preRequisitos": "",
       "nivel": 7,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "encontrar fraqueza",
-          "descricao": "A partir do 7º nível, você pode gastar uma ação de movimento e 2 PM para analisar um objeto em alcance curto. Se fizer isso, ignora a resistência a dano dele. Você também pode usar esta habilidade para encontrar uma fraqueza em um inimigo. Se ele estiver de armadura ou for um construto, você recebe +2 em seus testes de ataque contra ele. Os benefícios desta habilidade duram até o fim da cena.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "ação de movimento",
-          "subEfeitos": [],
-          "key": 306
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "ação de movimento",
+      "subEfeitos": [],
+      "key": 306
     },
     {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "fabricar item mágico",
+      "descricao": "No 9º nível, você recebe um item mágico menor e passa a poder fabricar itens mágicos menores. Nos níveis 13 e 17, você pode substituir esse item por um item mágico médio e maior, respectivamente, e passa a poder fabricar itens mágicos dessas categorias. Considera-se que você estava trabalhando nos itens que recebe e você não gasta dinheiro, tempo ou pontos de mana neles (mas gasta em itens que fabricar futuramente).",
+      "preRequisitos": "",
       "nivel": 9,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "fabricar item mágico",
-          "descricao": "No 9º nível, você recebe um item mágico menor e passa a poder fabricar itens mágicos menores. Nos níveis 13 e 17, você pode substituir esse item por um item mágico médio e maior, respectivamente, e passa a poder fabricar itens mágicos dessas categorias. Considera-se que você estava trabalhando nos itens que recebe e você não gasta dinheiro, tempo ou pontos de mana neles (mas gasta em itens que fabricar futuramente).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 307
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 307
     },
     {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "olho do dragão",
+      "descricao": "A partir do 11º nível, você pode gastar uma ação completa para analisar um item. Você automaticamente descobre se o item é mágico, suas propriedades e como utilizá-las.",
+      "preRequisitos": "",
       "nivel": 11,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "olho do dragão",
-          "descricao": "A partir do 11º nível, você pode gastar uma ação completa para analisar um item. Você automaticamente descobre se o item é mágico, suas propriedades e como utilizá-las.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "ação completa",
-          "subEfeitos": [],
-          "key": 308
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 308
     },
     {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "obra-prima",
+      "descricao": "No 20º nível, você fabrica sua obra-prima, aquela pela qual seu nome será lembrado em eras futuras. Isso pode ser qualquer item que você possa criar com uma de suas perícias de Ofício. Você é livre para criar o item em termos de regras, mas ele deve ser aprovado pelo mestre. Como linha geral, ele pode ter os benefícios de um item superior com seis modificações e os benefícios de um item mágico maior. Considera-se que você estava trabalhando no item, e você não gasta dinheiro, tempo ou PM nele.",
+      "preRequisitos": "",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "obra-prima",
-          "descricao": "No 20º nível, você fabrica sua obra-prima, aquela pela qual seu nome será lembrado em eras futuras. Isso pode ser qualquer item que você possa criar com uma de suas perícias de Ofício. Você é livre para criar o item em termos de regras, mas ele deve ser aprovado pelo mestre. Como linha geral, ele pode ter os benefícios de um item superior com seis modificações e os benefícios de um item mágico maior. Considera-se que você estava trabalhando no item, e você não gasta dinheiro, tempo ou PM nele.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "inventor"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 309
+          "label": "inventor"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 309
     }
   ],
   "poderesClasse": [

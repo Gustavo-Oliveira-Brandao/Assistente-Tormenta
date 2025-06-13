@@ -17,8 +17,3 @@ export type IMagiaDB = {
   escola: string
   aprimoramentos: IAprimoramentoMagia[]
 }
-
-export type IMagiaRef = {
-  id: number
-  key: number
-}

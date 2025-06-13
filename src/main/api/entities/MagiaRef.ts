@@ -1,21 +1,20 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Poder } from './Poder'
+import { Grimorio } from './Grimorio'
 
 //OK
 @Entity()
-export class Tag {
+export class MagiaRef {
   @PrimaryGeneratedColumn()
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 100
+    type: 'integer'
   })
-  label: string
+  key: number
 
-  @ManyToOne(() => Poder, (poder) => poder.tags, {
+  @ManyToOne(() => Grimorio, (grimorio) => grimorio.magias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  poder: Poder
+  grimorio: Grimorio
 }

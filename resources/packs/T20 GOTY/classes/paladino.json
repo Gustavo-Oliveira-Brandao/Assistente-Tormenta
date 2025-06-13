@@ -5,202 +5,120 @@
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
   "progressaoConjuracao": "none",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "abençoado",
+      "descricao": "Você soma seu bônus de Carisma no seu total de pontos de mana no 1º nível. Além disso, torna-se devoto de uma divindade disponível para paladinos (Sol, Justiça, Vida, Honra, Paz, Conhecimento, Ressurreição, Ambição). Você deve obedecer às Obrigações & Restrições de seu deus, mas, em troca, ganha os Poderes Concedidos dele. Como alternativa, você pode ser um paladino do bem, lutando em prol da bondade e da justiça como um todo. Não recebe nenhum Poder Concedido, mas não precisa seguir nenhuma Obrigação & Restrição (além do Código do Herói, abaixo).",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "abençoado",
-          "descricao": "Você soma seu bônus de Carisma no seu total de pontos de mana no 1º nível. Além disso, torna-se devoto de uma divindade disponível para paladinos (Sol, Justiça, Vida, Honra, Paz, Conhecimento, Ressurreição, Ambição). Você deve obedecer às Obrigações & Restrições de seu deus, mas, em troca, ganha os Poderes Concedidos dele. Como alternativa, você pode ser um paladino do bem, lutando em prol da bondade e da justiça como um todo. Não recebe nenhum Poder Concedido, mas não precisa seguir nenhuma Obrigação & Restrição (além do Código do Herói, abaixo).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 389
-        },
-        {
-          "nome": "código do herói",
-          "descricao": "Você deve sempre manter sua palavra e nunca pode recusar um pedido de ajuda de alguém inocente. Além disso, nunca pode mentir, trapacear ou roubar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 390
-        },
-        {
-          "nome": "golpe divino",
-          "descricao": "Quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um golpe destruidor. Você soma seu bônus de Carisma no teste de ataque e +1d8 na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o dano em +1d8.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "reação",
-          "subEfeitos": [],
-          "key": 391
+          "label": "paladino"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 389
     },
     {
+      "nome": "código do herói",
+      "descricao": "Você deve sempre manter sua palavra e nunca pode recusar um pedido de ajuda de alguém inocente. Além disso, nunca pode mentir, trapacear ou roubar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "paladino"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 390
+    },
+    {
+      "nome": "golpe divino",
+      "descricao": "Quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um golpe destruidor. Você soma seu bônus de Carisma no teste de ataque e +1d8 na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o dano em +1d8.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "paladino"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 391
+    },
+    {
+      "nome": "cura pelas mãos",
+      "descricao": "A partir do 2º nível, você pode gastar uma ação de movimento e 1 PM para curar 1d8+1 pontos de vida de um alvo em alcance corpo a corpo (incluindo você). A cada quatro níveis, você pode gastar +1 PM para aumentar os PV curados em +1d8+1. \n A partir do 6º nível, você pode gastar +1 PM quando usa Cura pelas Mãos para anular uma condição afetando o alvo, entre abalado, apavorado, atordoado, cego, doente, exausto, fatigado ou surdo. Esta habilidade também pode causar dano de luz a mortos-vivos, exigindo um ataque desarmado.",
+      "preRequisitos": "",
       "nivel": 2,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "cura pelas mãos",
-          "descricao": "A partir do 2º nível, você pode gastar uma ação de movimento e 1 PM para curar 1d8+1 pontos de vida de um alvo em alcance corpo a corpo (incluindo você). A cada quatro níveis, você pode gastar +1 PM para aumentar os PV curados em +1d8+1. \n A partir do 6º nível, você pode gastar +1 PM quando usa Cura pelas Mãos para anular uma condição afetando o alvo, entre abalado, apavorado, atordoado, cego, doente, exausto, fatigado ou surdo. Esta habilidade também pode causar dano de luz a mortos-vivos, exigindo um ataque desarmado.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "ação de movimento",
-          "subEfeitos": [],
-          "key": 392
+          "label": "paladino"
         }
-      ]
+      ],
+      "tempoExecucao": "ação de movimento",
+      "subEfeitos": [],
+      "key": 392
     },
     {
+      "nome": "aura sagrada",
+      "descricao": "No 3º nível, você pode gastar 1 PM para gerar uma aura com alcance curto a partir de você. A aura emite uma luz dourada e agradável, que ilumina como uma tocha. Além disso, você e os aliados dentro da aura recebem um bônus igual ao seu bônus de Carisma nos testes de resistência. Manter a aura custa 1 PM por turno.",
+      "preRequisitos": "",
       "nivel": 3,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "aura sagrada",
-          "descricao": "No 3º nível, você pode gastar 1 PM para gerar uma aura com alcance curto a partir de você. A aura emite uma luz dourada e agradável, que ilumina como uma tocha. Além disso, você e os aliados dentro da aura recebem um bônus igual ao seu bônus de Carisma nos testes de resistência. Manter a aura custa 1 PM por turno.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "ação livre",
-          "subEfeitos": [],
-          "key": 415
+          "label": "paladino"
         }
-      ]
+      ],
+      "tempoExecucao": "ação livre",
+      "subEfeitos": [],
+      "key": 415
     },
     {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "benção da justiça",
+      "descricao": "No 5º nível, escolha entre égide sagrada e montaria sagrada. Uma vez feita, esta escolha não pode ser mudada.",
+      "preRequisitos": "",
       "nivel": 5,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "benção da justiça",
-          "descricao": "No 5º nível, escolha entre égide sagrada e montaria sagrada. Uma vez feita, esta escolha não pode ser mudada.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [
-            {
-              "nome": "égide sagrada",
-              "descricao": "Você pode gastar uma ação de movimento e 2 PM para recobrir de energia seu escudo ou símbolo sagrado. Até o fim da cena, você e todos os aliados adjacentes recebem um bônus na Defesa igual ao seu Carisma. A partir do 11º nível, você pode gastar 5 PM para rolar novamente um teste de resistência contra uma magia recém lançada contra você. Se você passar no teste de resistência e a magia tiver você como único alvo, ela é revertida de volta ao conjurador (que se torna o novo alvo da magia; todas as demais características da magia, incluindo CD do teste de resistência, se mantêm)."
-            },
-            {
-              "nome": "montaria sagrada",
-              "descricao": "Você pode gastar uma ação de movimento e 2 PM para invocar uma montaria sagrada. Veja o livro jogo do ano para mais detalhes."
-            }
-          ],
-          "key": 416
+          "label": "paladino"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [
+        {
+          "nome": "égide sagrada",
+          "descricao": "Você pode gastar uma ação de movimento e 2 PM para recobrir de energia seu escudo ou símbolo sagrado. Até o fim da cena, você e todos os aliados adjacentes recebem um bônus na Defesa igual ao seu Carisma. A partir do 11º nível, você pode gastar 5 PM para rolar novamente um teste de resistência contra uma magia recém lançada contra você. Se você passar no teste de resistência e a magia tiver você como único alvo, ela é revertida de volta ao conjurador (que se torna o novo alvo da magia; todas as demais características da magia, incluindo CD do teste de resistência, se mantêm)."
+        },
+        {
+          "nome": "montaria sagrada",
+          "descricao": "Você pode gastar uma ação de movimento e 2 PM para invocar uma montaria sagrada. Veja o livro jogo do ano para mais detalhes."
+        }
+      ],
+      "key": 416
     },
     {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 7,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 9,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 11,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "vingador sagrado",
+      "descricao": "No 20º nível, você pode gastar uma ação completa e 10 PM para se cobrir de energia divina, assumindo a forma de um vingador sagrado até o fim da cena. Nesta forma, você recebe deslocamento de voo 18m, resistência a dano 20 e soma seu modificador de Carisma em seus testes de ataque e rolagens de dano corpo a corpo.",
+      "preRequisitos": "",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "vingador sagrado",
-          "descricao": "No 20º nível, você pode gastar uma ação completa e 10 PM para se cobrir de energia divina, assumindo a forma de um vingador sagrado até o fim da cena. Nesta forma, você recebe deslocamento de voo 18m, resistência a dano 20 e soma seu modificador de Carisma em seus testes de ataque e rolagens de dano corpo a corpo.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "paladino"
-            }
-          ],
-          "tempoExecucao": "ação completa",
-          "subEfeitos": [],
-          "key": 418
+          "label": "paladino"
         }
-      ]
+      ],
+      "tempoExecucao": "ação completa",
+      "subEfeitos": [],
+      "key": 418
     }
   ],
   "poderesClasse": [

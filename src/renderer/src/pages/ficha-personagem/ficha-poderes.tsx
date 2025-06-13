@@ -1,25 +1,25 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
-import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
-import { IProgressao } from '@renderer/@types/T20 GOTY/IProgressao'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
 import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
-import { useExibirProgressaoPersonagem } from '@renderer/hooks/selectors/usePersonagemQuery'
-import { useExibirPoderesDefault } from '@renderer/hooks/selectors/usePoderQuery'
+import {
+  useExibirPoderesDefault,
+  useExibirPoderesPersonagem
+} from '@renderer/hooks/selectors/usePoderQuery'
 import { abrirModal } from '@renderer/store/slices/modalSlice'
 import { RootState } from '@renderer/store/store'
 import { Modal } from '@renderer/templates/modal/modal'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
-import { JSX, useState, useMemo, SetStateAction } from 'react'
+import { JSX, useState, useMemo, ChangeEvent } from 'react'
 import { createPortal } from 'react-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { DeepPartial } from 'typeorm'
 import styles from './ficha-personagem.module.scss'
 import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
 import { opcoesRacas } from '@renderer/utils/select options/opcoesRacas'
 import { opcoesCategoriasPoderesGerais } from '@renderer/utils/select options/opcoesCategoriasPoderes'
 import { opcoesClasses } from '@renderer/utils/select options/opcoesClasses'
+import { IPoderDB } from '@renderer/@types/T20 GOTY/IPoder'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
@@ -27,123 +27,175 @@ type FichaPoderesProps = {
 
 export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => {
   const { data: poderesDefault } = useExibirPoderesDefault()
-  const { data: niveis } = useExibirProgressaoPersonagem(personagem.id)
+  const { data: poderesRefPersonagem } = useExibirPoderesPersonagem(personagem.id)
   const { data: classes } = useExibirClassesDefault()
   const { data: racas } = useExibirRacasDefault()
 
   const [categoriaPoderes, setCategoriaPoderes] = useState('CLASSE')
-  const [racaPoderes, setRacaPoderes] = useState(personagem.raca)
-  const [classePoderes, setClassePoderes] = useState(personagem.classe)
-  const [nivelPoder, setNivelPoder] = useState(1)
+  const [filtroRacaPoderes, setFiltroRacaPoderes] = useState(personagem.raca)
+  const [filtroClassePoderes, setFiltroClassePoderes] = useState(personagem.classeInicial)
+  const [nivelPoder, setNivelPoder] = useState<number>(personagem.nivelAtual ?? 1)
+
+  const niveisNumeros = Array.from({ length: personagem.nivelAtual ?? 1 }, (_, i) => i + 1)
 
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
-  const poderesRacaPesquisa = useMemo(() => {
-    console.log('falhou')
+  const poderesRacaDBPesquisados = useMemo(() => {
     if (!racas) {
       return []
     }
 
     return racas.flatMap((raca) => {
-      const poderes: DeepPartial<IPoder>[] = []
+      const poderes: IPoderDB[] = []
 
-      if (racaPoderes == raca.nome) {
+      if (filtroRacaPoderes == raca.nome) {
         poderes.push(...raca.poderes)
       }
 
-      console.log(raca.nome)
-      console.log(racaPoderes)
-
       return poderes
     })
-  }, [racas, racaPoderes])
+  }, [racas, filtroRacaPoderes])
 
-  const poderesClassePesquisa = useMemo(() => {
+  const poderesClasseDBPesquisados = useMemo(() => {
     if (!classes) {
       return []
     }
 
     return classes.flatMap((classe) => {
-      const poderes: DeepPartial<IPoder>[] = []
+      const poderes: IPoderDB[] = []
 
-      if (classePoderes == classe.nome) {
+      if (filtroClassePoderes == classe.nome) {
         poderes.push(...classe.poderesClasse)
       }
 
       return poderes
     })
-  }, [classes, classePoderes])
+  }, [classes, filtroClassePoderes])
 
-  const progressaoPersonagem = useMemo(() => {
-    if (!niveis || !classes || !personagem) {
+  const poderesRaca = useMemo(() => {
+    if (!racas || !personagem) {
+      return []
+    }
+
+    return racas.flatMap((raca) => {
+      const poderes: IPoderDB[] = []
+      if (raca.nome == personagem.raca) {
+        poderes.push(...raca.poderes)
+      }
+
+      return poderes
+    })
+  }, [racas, personagem])
+
+  const poderesClassePersonagem = useMemo(() => {
+    if (!classes || !poderesRefPersonagem || !personagem) {
       return []
     }
 
     return classes.flatMap((classe) => {
-      let contadorNivelClasse = 0
+      const poderes: IPoderDB[] = []
 
-      const progressaoPersonagem: IProgressao[] = []
-
-      for (const nivel of niveis) {
-        const nivelProgressao: IProgressao = {
-          nivel: nivel.valor,
-          poderes: []
-        }
-        if (nivel.classe === classe.nome) {
-          if (nivel.valor <= personagem.nivelAtual) {
-            contadorNivelClasse++
-            for (const progressao of classe.progressao) {
-              if (progressao.nivel <= contadorNivelClasse) {
-                nivelProgressao.poderes.push(...progressao.poderes)
+      for (const classePersonagem of personagem.classes) {
+        if (classe.nome == classePersonagem.nome) {
+          for (const poderRef of poderesRefPersonagem) {
+            for (const poderClasse of classe.poderesClasse) {
+              if (poderClasse.key == poderRef.key) {
+                poderes.push(poderClasse)
               }
             }
-            progressaoPersonagem.push(nivelProgressao)
+          }
+        }
+      }
+      return poderes
+    })
+  }, [classes, poderesRefPersonagem, personagem])
+
+  const poderesGeraisPersonagem = useMemo(() => {
+    if (!poderesDefault || !poderesRefPersonagem) {
+      return []
+    }
+
+    return poderesDefault.flatMap((poder) => {
+      const poderesPersonagem: IPoderDB[] = []
+      for (const poderRef of poderesRefPersonagem) {
+        if (poderRef.key == poder.key) {
+          console.log(poder)
+          console.log(poderRef)
+          poderesPersonagem.push(poder)
+        }
+      }
+      return poderesPersonagem
+    })
+  }, [poderesDefault, poderesRefPersonagem])
+
+  const poderesClasseProgressao = useMemo(() => {
+    if (!classes || !personagem) {
+      return []
+    }
+
+    return classes.flatMap((classe) => {
+      const poderes: IPoderDB[] = []
+
+      for (const classePersonagem of personagem.classes) {
+        if (classePersonagem.nome === classe.nome) {
+          if (personagem.nivelAtual) {
+            for (const poder of classe.poderes) {
+              if (poder.nivel) {
+                if (poder.nivel <= classePersonagem.nivel) {
+                  poderes.push(poder)
+                }
+              }
+            }
           }
         }
       }
 
-      return progressaoPersonagem
+      return poderes
     })
-  }, [classes, niveis, personagem])
+  }, [classes, personagem])
 
   const poderesPesquisados = useMemo(() => {
     if (!poderesDefault) {
       return []
     }
-    let poderesFiltrados: DeepPartial<IPoder>[] = []
 
-    const categorias = opcoesCategoriasPoderesGerais
+    if (categoriaPoderes === 'RACA') {
+      return poderesRacaDBPesquisados
+    } else if (categoriaPoderes === 'CLASSE') {
+      return poderesClasseDBPesquisados
+    } else {
+      return poderesDefault.filter(
+        (poder) =>
+          poder.categoria && poder.categoria.toLowerCase() == categoriaPoderes.toLowerCase()
+      )
+    }
+  }, [poderesDefault, categoriaPoderes, poderesClasseDBPesquisados, poderesRacaDBPesquisados])
 
-    for (const categoria of categorias) {
-      if (categoriaPoderes === categoria) {
-        poderesFiltrados = poderesDefault.filter(
-          (poder) => poder.categoria == categoria.toLowerCase()
-        )
-      }
-      if (categoriaPoderes === 'RACA') {
-        poderesFiltrados = poderesRacaPesquisa
-      }
-      if (categoriaPoderes === 'CLASSE') {
-        poderesFiltrados = poderesClassePesquisa
+  const selecionarRaca = (event: ChangeEvent<HTMLSelectElement>): void => {
+    setFiltroRacaPoderes(event.target.value)
+  }
+
+  const selecionarClasse = (event: ChangeEvent<HTMLSelectElement>): void => {
+    setFiltroClassePoderes(event.target.value)
+  }
+
+  const selecionarCategoriaPoderes = (event: ChangeEvent<HTMLSelectElement>): void => {
+    setCategoriaPoderes(event.target.value)
+  }
+
+  const selecionarNivelPoder = (event: ChangeEvent<HTMLSelectElement>): void => {
+    setNivelPoder(Number(event.target.value))
+  }
+
+  const removerPoderPorKey = (key: number): void => {
+    if (poderesRefPersonagem) {
+      for (const poderRef of poderesRefPersonagem) {
+        if (poderRef.key == key) {
+          removerPoder.mutate(poderRef.id)
+        }
       }
     }
-
-    return poderesFiltrados
-  }, [poderesDefault, categoriaPoderes, poderesClassePesquisa, poderesRacaPesquisa])
-
-  const selecionarRaca = (event: { target: { value: SetStateAction<string> } }): void => {
-    setRacaPoderes(event.target.value)
-  }
-
-  const selecionarClasse = (event: { target: { value: SetStateAction<string> } }): void => {
-    setClassePoderes(event.target.value)
-  }
-
-  const selecionarCategoriaPoderes = (event: {
-    target: { value: SetStateAction<string> }
-  }): void => {
-    setCategoriaPoderes(event.target.value)
   }
 
   const adicionarPoder = useCriarPoder()
@@ -156,14 +208,18 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           header={<h2 className="tormenta20Font">Poderes por progressão</h2>}
           css="poderes"
         >
-          {progressaoPersonagem
-            .sort((a, b) => a.nivel + b.nivel)
-            .map((progressao) => (
-              <>
-                {progressao.poderes.map((poder) => (
-                  <CardPoder nivel={progressao.nivel} poder={poder} key={poder.key} />
-                ))}
-              </>
+          {poderesRaca.map((poder) => (
+            <CardPoder key={poder.key} poder={poder} exibeCategoria={true} nivel={poder.nivel} />
+          ))}
+          {poderesClasseProgressao
+            .sort((a, b) => {
+              if (a.nivel == null || b.nivel == null) {
+                return 0
+              }
+              return a.nivel + b.nivel
+            })
+            .map((poder) => (
+              <CardPoder nivel={poder.nivel} poder={poder} key={poder.key} exibeCategoria={true} />
             ))}
         </SecaoFicha>
         <SecaoFicha
@@ -176,6 +232,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
+                  setFiltroClassePoderes(personagem.classeInicial)
                   setCategoriaPoderes('CLASSE')
                   dispatch(abrirModal(`PODERES_LOJA_MODAL`))
                 }}
@@ -185,23 +242,23 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          {niveis &&
-            niveis
-              .sort((a, b) => a.valor + b.valor)
-              .map((nivel) => (
-                <>
-                  {nivel.poderes
-                    .filter((poder) => poder.categoria === 'classe')
-                    .map((poder) => (
-                      <CardPoder
-                        nivel={nivel.valor}
-                        key={poder.id}
-                        poder={poder}
-                        onInteract={() => removerPoder.mutate(poder.id)}
-                        iconeBotaoInteracao="./icons/delete.svg"
-                      />
-                    ))}
-                </>
+          {poderesClassePersonagem &&
+            poderesClassePersonagem
+              .sort((a, b) => {
+                if (!a.nivel || !b.nivel) {
+                  return 0
+                }
+                return a.nivel + b.nivel
+              })
+              .filter((poder) => poder.categoria === 'classe')
+              .map((poder) => (
+                <CardPoder
+                  nivel={poder.nivel}
+                  key={poder.key}
+                  poder={poder}
+                  onInteract={() => removerPoderPorKey(poder.key)}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                />
               ))}
         </SecaoFicha>
 
@@ -225,23 +282,23 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          {niveis &&
-            niveis
-              .sort((a, b) => a.valor + b.valor)
-              .map((nivel) => (
-                <>
-                  {nivel.poderes
-                    .filter((poder) => poder.categoria === 'origem')
-                    .map((poder) => (
-                      <CardPoder
-                        nivel={nivel.valor}
-                        key={poder.id}
-                        poder={poder}
-                        onInteract={() => removerPoder.mutate(poder.id)}
-                        iconeBotaoInteracao="./icons/delete.svg"
-                      />
-                    ))}
-                </>
+          {poderesGeraisPersonagem &&
+            poderesGeraisPersonagem
+              .sort((a, b) => {
+                if (!a.nivel || !b.nivel) {
+                  return 0
+                }
+                return a.nivel + b.nivel
+              })
+              .filter((poder) => poder.categoria === 'origem')
+              .map((poder) => (
+                <CardPoder
+                  nivel={poder.nivel}
+                  key={poder.key}
+                  poder={poder}
+                  onInteract={() => removerPoderPorKey(poder.key)}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                />
               ))}
         </SecaoFicha>
       </div>
@@ -265,23 +322,24 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          {niveis &&
-            niveis
-              .sort((a, b) => a.valor + b.valor)
-              .map((nivel) => (
-                <>
-                  {nivel.poderes
-                    .filter((poder) => poder.categoria != 'classe')
-                    .map((poder) => (
-                      <CardPoder
-                        nivel={nivel.valor}
-                        key={poder.id}
-                        poder={poder}
-                        onInteract={() => removerPoder.mutate(poder.id)}
-                        iconeBotaoInteracao="./icons/delete.svg"
-                      />
-                    ))}
-                </>
+          {poderesGeraisPersonagem &&
+            poderesGeraisPersonagem
+              .sort((a, b) => {
+                if (!a.nivel || !b.nivel) {
+                  return 0
+                }
+                return a.nivel + b.nivel
+              })
+              .filter((poder) => poder.categoria != 'classe' && poder.categoria != 'origem')
+              .map((poder) => (
+                <CardPoder
+                  nivel={poder.nivel}
+                  key={poder.key}
+                  exibeCategoria={true}
+                  poder={poder}
+                  onInteract={() => removerPoderPorKey(poder.key)}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                />
               ))}
         </SecaoFicha>
       </div>
@@ -322,6 +380,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                       </label>
                       <select
                         id="raca"
+                        value={filtroRacaPoderes}
                         className="select tormenta20Font"
                         onChange={(e) => selecionarRaca(e)}
                       >
@@ -363,7 +422,13 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                   key={poder.key}
                   poder={poder}
                   iconeBotaoInteracao="./icons/adicao.svg"
-                  onInteract={() => adicionarPoder.mutate({ poder, nivelPoder })}
+                  onInteract={() =>
+                    adicionarPoder.mutate({
+                      poder,
+                      nivelPersonagem: personagem.nivelAtual ?? 1,
+                      idPersonagem: personagem.id
+                    })
+                  }
                 />
               ))}
           </Modal>,

@@ -30,6 +30,7 @@
   "poderes": [
     {
       "nome": "versátil",
+      "nivel": 1,
       "descricao": "Você se torna treinado em duas perícias à sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral à sua escolha.",
       "preRequisitos": "",
       "categoria": "raca",

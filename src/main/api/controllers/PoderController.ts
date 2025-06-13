@@ -1,7 +1,11 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
-import { deletePoder, getPoderesDefault, postPoder } from '../services/PoderService'
-import { Poder } from '../entities/Poder'
-import { DeepPartial } from 'typeorm'
+import {
+  deletePoder,
+  getPoderesDefault,
+  getPoderesPersonagem,
+  postPoder
+} from '../services/PoderService'
+import { PoderRef } from '../entities/PoderRef'
 
 ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
@@ -10,12 +14,18 @@ ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
 })
 
 ipcMain.handle(
-  'post-poder',
-  async (event: IpcMainInvokeEvent, _poder: DeepPartial<Poder>, _idNivel: number) => {
+  'get-poderes-personagem',
+  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
     console.log(`FrameID:${event.frameId}`)
-    await postPoder(_poder, _idNivel)
+    const poderes = await getPoderesPersonagem(_idPersonagem)
+    return poderes
   }
 )
+
+ipcMain.handle('post-poder', async (event: IpcMainInvokeEvent, _poder: Partial<PoderRef>, _idPersonagem: number) => {
+  console.log(`FrameID:${event.frameId}`)
+  await postPoder(_poder, _idPersonagem)
+})
 
 ipcMain.handle('delete-poder', async (event: IpcMainInvokeEvent, _id: number) => {
   console.log(`FrameID:${event.frameId}`)

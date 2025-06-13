@@ -5,163 +5,81 @@
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
   "progressaoConjuracao": "none",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "marca da presa",
+      "descricao": "Você pode gastar uma ação de movimento e 1 PM para analisar uma criatura em alcance curto. Até o fim da cena, você recebe +1d4 nas rolagens de dano contra essa criatura. A cada quatro níveis, você pode gastar +1 PM para aumentar o bônus de dano (veja a tabela da classe).",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "marca da presa",
-          "descricao": "Você pode gastar uma ação de movimento e 1 PM para analisar uma criatura em alcance curto. Até o fim da cena, você recebe +1d4 nas rolagens de dano contra essa criatura. A cada quatro níveis, você pode gastar +1 PM para aumentar o bônus de dano (veja a tabela da classe).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "caçador"
-            }
-          ],
-          "tempoExecucao": "ação de movimento",
-          "subEfeitos": [],
-          "key": 152
-        },
-        {
-          "nome": "rastreador",
-          "descricao": "Você recebe +2 em Sobrevivência. Além disso, pode se mover com seu deslocamento normal enquanto rastreia sem sofrer penalidades no teste de Sobrevivência.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "caçador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 153
+          "label": "caçador"
         }
-      ]
+      ],
+      "tempoExecucao": "ação de movimento",
+      "subEfeitos": [],
+      "key": 152
     },
     {
-      "nivel": 2,
-      "recebePoderClasse": true
+      "nome": "rastreador",
+      "descricao": "Você recebe +2 em Sobrevivência. Além disso, pode se mover com seu deslocamento normal enquanto rastreia sem sofrer penalidades no teste de Sobrevivência.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "caçador"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 153
     },
     {
+      "nome": "explorador",
+      "descricao": "No 3º nível, escolha um tipo de terreno entre aquático, ártico, colina, deserto, floresta, montanha, pântano, planície, subterrâneo ou urbano. A partir do 11º nível, você também pode escolher área de Tormenta. Quando estiver no tipo de terreno escolhido, você soma sua Sabedoria (mínimo +1) na Defesa e nos testes de Acrobacia, Atletismo, Furtividade, Percepção e Sobrevivência. A cada quatro níveis, escolha outro tipo de terreno para receber o bônus ou aumente o bônus em um tipo de terreno já escolhido em +2.",
+      "preRequisitos": "",
       "nivel": 3,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "explorador",
-          "descricao": "No 3º nível, escolha um tipo de terreno entre aquático, ártico, colina, deserto, floresta, montanha, pântano, planície, subterrâneo ou urbano. A partir do 11º nível, você também pode escolher área de Tormenta. Quando estiver no tipo de terreno escolhido, você soma sua Sabedoria (mínimo +1) na Defesa e nos testes de Acrobacia, Atletismo, Furtividade, Percepção e Sobrevivência. A cada quatro níveis, escolha outro tipo de terreno para receber o bônus ou aumente o bônus em um tipo de terreno já escolhido em +2.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "caçador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 176
+          "label": "caçador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 176
     },
     {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "caminho do explorador",
+      "descricao": "No 5º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastrear você aumenta em +10. Esta habilidade só funciona em terrenos nos quais você tenha a habilidade Explorador.",
+      "preRequisitos": "",
       "nivel": 5,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "caminho do explorador",
-          "descricao": "No 5º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastrear você aumenta em +10. Esta habilidade só funciona em terrenos nos quais você tenha a habilidade Explorador.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "caçador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 177
+          "label": "caçador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 177
     },
     {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 7,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 9,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 11,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "mestre caçador",
+      "descricao": "No 20º nível, você pode usar a habilidade Marca da Presa como uma ação livre. Além disso, quando usa a habilidade, pode pagar 5 PM para aumentar sua margem de ameaça contra a criatura em +2. Se você reduz uma criatura contra a qual usou Marca da Presa a 0 pontos de vida, recupera 5 PM.",
+      "preRequisitos": "",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "mestre caçador",
-          "descricao": "No 20º nível, você pode usar a habilidade Marca da Presa como uma ação livre. Além disso, quando usa a habilidade, pode pagar 5 PM para aumentar sua margem de ameaça contra a criatura em +2. Se você reduz uma criatura contra a qual usou Marca da Presa a 0 pontos de vida, recupera 5 PM.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "caçador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 178
+          "label": "caçador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 178
     }
   ],
   "poderesClasse": [

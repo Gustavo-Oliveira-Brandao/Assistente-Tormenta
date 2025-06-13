@@ -29,6 +29,7 @@
   "poderes": [
     {
       "nome": "chifres",
+      "nivel": 1,
       "descricao": "Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -43,6 +44,7 @@
     },
     {
       "nome": "couro rigído",
+      "nivel": 1,
       "descricao": "Sua pele é dura como a de um touro. Você recebe +1 na Defesa.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -57,6 +59,7 @@
     },
     {
       "nome": "faro",
+      "nivel": 1,
       "descricao": "Você tem olfato apurado. Contra inimigos em alcance curto que você não possa ver, você não fica desprevenido, e a camuflagem total lhe causa apenas 20% de chance de falha.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -71,6 +74,7 @@
     },
     {
       "nome": "medo de altura",
+      "nivel": 1,
       "descricao": "Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado.",
       "preRequisitos": "",
       "categoria": "raca",

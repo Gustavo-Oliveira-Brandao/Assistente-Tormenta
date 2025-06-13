@@ -1,5 +1,5 @@
 import { IBonus } from './IBonus'
-import { IMagia } from './IMagia'
+import { IMagiaRef } from './IMagia'
 
 export type IGrimorio = {
   id: number
@@ -8,5 +8,5 @@ export type IGrimorio = {
   atributoChave: string
   cd?: number
   bonusCD: IBonus[]
-  magias: IMagia[]
+  magias: IMagiaRef[]
 }

@@ -12,9 +12,3 @@ export type IPoderDB = {
   subEfeitos: ISubEfeito[]
   tags: ITag[]
 }
-
-export type IPoderRef = {
-  id: number
-  key: number
-  nivel: number
-}

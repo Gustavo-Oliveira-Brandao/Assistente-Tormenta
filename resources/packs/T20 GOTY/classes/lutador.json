@@ -5,179 +5,96 @@
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
   "progressaoConjuracao": "none",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "briga",
+      "descricao": "Seus ataques desarmados causam 1d6 pontos de dano, e podem causar dano letal ou não letal (a sua escolha). A cada quatro níveis, seu dano desarmado aumenta, conforme a tabela presente no livro Tormenta20 - Edição Jogo do Ano. \n O dano visto na tabela é para criaturas Pequenas e Médias. Criaturas Minúsculas diminuem esse dano em um passo, criaturas Grandes e Enormes aumentam em um passo e criaturas Colossais aumentam em dois passos.",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "briga",
-          "descricao": "Seus ataques desarmados causam 1d6 pontos de dano, e podem causar dano letal ou não letal (a sua escolha). A cada quatro níveis, seu dano desarmado aumenta, conforme a tabela presente no livro Tormenta20 - Edição Jogo do Ano. \n O dano visto na tabela é para criaturas Pequenas e Médias. Criaturas Minúsculas diminuem esse dano em um passo, criaturas Grandes e Enormes aumentam em um passo e criaturas Colossais aumentam em dois passos.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "lutador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 336
-        },
-        {
-          "nome": "golpe relâmpago",
-          "descricao": "Quando usa a ação ataque para fazer um ataque desarmado, você pode gastar 1 PM para realizar um ataque desarmado adicional.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "lutador"
-            }
-          ],
-          "tempoExecucao": "reação",
-          "subEfeitos": [],
-          "key": 337
+          "label": "lutador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 336
     },
     {
-      "nivel": 2,
-      "recebePoderClasse": true
+      "nome": "golpe relâmpago",
+      "descricao": "Quando usa a ação ataque para fazer um ataque desarmado, você pode gastar 1 PM para realizar um ataque desarmado adicional.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "lutador"
+        }
+      ],
+      "tempoExecucao": "reação",
+      "subEfeitos": [],
+      "key": 337
     },
     {
+      "nome": "casca grossa",
+      "descricao": "No 3º nível, você soma seu bônus de Constituição na Defesa, limitado pelo seu nível e apenas se não estiver usando armadura pesada. Além disso, no 7º nível, e a cada quatro níveis, você recebe +1 na Defesa.",
+      "preRequisitos": "",
       "nivel": 3,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "casca grossa",
-          "descricao": "No 3º nível, você soma seu bônus de Constituição na Defesa, limitado pelo seu nível e apenas se não estiver usando armadura pesada. Além disso, no 7º nível, e a cada quatro níveis, você recebe +1 na Defesa.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "lutador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 360
+          "label": "lutador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 360
     },
     {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "golpe cruel",
+      "descricao": "No 5º nível, você acerta onde dói. Sua margem de ameaça com ataques desarmados aumenta em +1.",
+      "preRequisitos": "",
       "nivel": 5,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "golpe cruel",
-          "descricao": "No 5º nível, você acerta onde dói. Sua margem de ameaça com ataques desarmados aumenta em +1.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "lutador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 361
+          "label": "lutador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 361
     },
     {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 7,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "golpe violento",
+      "descricao": "No 9º nível, você bate com muita força. Seu multiplicador de crítico com ataques desarmados aumenta em +1.",
+      "preRequisitos": "",
       "nivel": 9,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "golpe violento",
-          "descricao": "No 9º nível, você bate com muita força. Seu multiplicador de crítico com ataques desarmados aumenta em +1.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "lutador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 362
+          "label": "lutador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 362
     },
     {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 11,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "dono da rua",
+      "descricao": "No 20º nível, seu dano desarmado aumenta para 2d10 (para criaturas Médias). Além disso, quando usa a ação ataque para fazer um ataque desarmado, você faz dois ataques, em vez de um (podendo usar Golpe Relâmpago para fazer um terceiro).",
+      "preRequisitos": "",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "dono da rua",
-          "descricao": "No 20º nível, seu dano desarmado aumenta para 2d10 (para criaturas Médias). Além disso, quando usa a ação ataque para fazer um ataque desarmado, você faz dois ataques, em vez de um (podendo usar Golpe Relâmpago para fazer um terceiro).",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "lutador"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 363
+          "label": "lutador"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 363
     }
   ],
   "poderesClasse": [

@@ -18,6 +18,7 @@
       "poderes": [
         {
           "nome": "luz sagrada",
+          "nivel": 1,
           "descricao": "Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
           "preRequisitos": "",
           "categoria": "raca",
@@ -40,6 +41,7 @@
       "poderes": [
         {
           "nome": "sombras profanas",
+          "nivel": 1,
           "descricao": "Você recebe +2 em Enganação e Furtividade. Além disso, pode lançar Escuridão (como uma magia divina; atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
           "preRequisitos": "",
           "categoria": "raca",
@@ -71,6 +73,7 @@
   "poderes": [
     {
       "nome": "herança divina",
+      "nivel": 1,
       "descricao": "Você é uma criatura do tipo espírito e recebe visão no escuro.",
       "preRequisitos": "",
       "categoria": "raca",

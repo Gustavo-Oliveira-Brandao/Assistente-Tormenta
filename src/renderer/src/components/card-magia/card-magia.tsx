@@ -1,11 +1,11 @@
-import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { AccordionCard } from '../accordion-card/accordion-card'
+import { IMagiaDB } from '@renderer/@types/T20 GOTY/IMagia'
 
 type cardMagiaProps = {
-  magia: IMagia
+  magia: IMagiaDB
   onInteract?: () => void
   iconeBotaoInteracao?: string
 }

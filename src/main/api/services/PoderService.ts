@@ -1,32 +1,37 @@
 import path from 'path'
 import { SQLiteDataSource } from '../data-source'
-import { Poder } from '../entities/Poder'
 import { extrairJson } from './JsonService'
-import { DeepPartial } from 'typeorm'
-import { Nivel } from '../entities/Nivel'
+import { IPoderDB } from '../../@types/IPoderDB'
+import { PoderRef } from '../entities/PoderRef'
+import { Personagem } from '../entities/Personagem'
 
-export const PoderRepository = SQLiteDataSource.getRepository(Poder)
+export const PoderRepository = SQLiteDataSource.getRepository(PoderRef)
 
-export const getPoderesDefault = async (): Promise<DeepPartial<Poder[]>> => {
+export const getPoderesDefault = async (): Promise<IPoderDB[]> => {
   const pasta = path.join('packs', 'T20 GOTY', 'poderes')
-  const result = (await extrairJson(pasta)) as DeepPartial<Poder[]>
+  const result = (await extrairJson(pasta)) as IPoderDB[]
   const poderes = result
 
   return poderes
 }
 
-export const postPoder = async (_poder: DeepPartial<Poder>, _idNivel: number): Promise<void> => {
+export const getPoderesPersonagem = async (_idPersonagem: number): Promise<PoderRef[]> => {
   try {
-    const NiveisRepository = SQLiteDataSource.getRepository(Nivel)
-    const nivelEncontrado = await NiveisRepository.findOneBy({ id: _idNivel })
-    if (!nivelEncontrado) {
-      throw new Error('Nivel não encontrado!')
-    }
-    const novoPoder = PoderRepository.create({
-      ..._poder,
-      nivel: nivelEncontrado
-    })
+    const poderes = await PoderRepository.find({ where: { personagem: { id: _idPersonagem } } })
+    return poderes
+  } catch {
+    throw new Error('Erro ao recuperar poderes')
+  }
+}
 
+export const postPoder = async (_poder: Partial<PoderRef>, _idPersonagem: number): Promise<void> => {
+  try {
+    const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
+    const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
+    if (!personagem) {
+      throw new Error('Personagem não encontrado')
+    }
+    const novoPoder = PoderRepository.create({ ..._poder, personagem: personagem })
     await PoderRepository.save(novoPoder)
   } catch {
     throw new Error('Erro ao adicionar poder!')

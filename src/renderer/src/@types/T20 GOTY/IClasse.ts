@@ -1,6 +1,4 @@
-import { DeepPartial } from 'typeorm'
-import { IPoder } from './IPoder'
-import { IProgressao } from './IProgressao'
+import { IPoderDB } from './IPoder'
 
 export type IClasse = {
   key: number
@@ -9,8 +7,8 @@ export type IClasse = {
   vidaPorNivel: number
   manaPorNivel: number
   progressaoConjuracao: string
-  progressao: IProgressao[]
-  poderesClasse: DeepPartial<IPoder[]>
+  poderes: IPoderDB[]
+  poderesClasse: IPoderDB[]
   pericias: string[]
   numeroPericiasExtras: number
   periciasExtras: string[]
@@ -18,4 +16,10 @@ export type IClasse = {
     categoria: string
     nome: string
   }[]
+}
+
+export type IClassePersonagem = {
+  id: number
+  nome: string
+  nivel: number
 }

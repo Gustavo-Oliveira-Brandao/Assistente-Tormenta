@@ -25,6 +25,7 @@
   "poderes": [
     {
       "nome": "cria de megalokk",
+      "nivel": 1,
       "descricao": "Você é uma criatura do tipo monstro e recebe visão no escuro.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -39,6 +40,7 @@
     },
     {
       "nome": "natureza venenosa",
+      "nivel": 1,
       "descricao": "Você recebe resistência a veneno +5 e pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno.",
       "preRequisitos": "",
       "categoria": "raca",
@@ -53,6 +55,7 @@
     },
     {
       "nome": "olhar atordoante",
+      "nivel": 1,
       "descricao": "Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se a criatura falhar, fica atordoada por uma rodada (apenas uma vez por cena).",
       "preRequisitos": "",
       "categoria": "raca",

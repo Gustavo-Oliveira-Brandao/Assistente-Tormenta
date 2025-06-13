@@ -5,7 +5,8 @@ import { Deslocamento } from './Deslocamento'
 import { Recurso } from './Recurso'
 import { Proficiencia } from './Proficiencia'
 import { Grimorio } from './Grimorio'
-import { Nivel } from './Nivel'
+import { ClassePersonagem } from './ClassePersonagem'
+import { PoderRef } from './PoderRef'
 
 @Entity()
 export class Personagem {
@@ -53,7 +54,7 @@ export class Personagem {
   @Column({
     type: 'varchar'
   })
-  classe: string
+  classeInicial: string
 
   @Column({
     type: 'varchar',
@@ -66,11 +67,6 @@ export class Personagem {
     length: 30
   })
   divindade: string
-
-  @Column({
-    type: 'integer'
-  })
-  nivelAtual: number
 
   @Column({
     type: 'integer'
@@ -95,6 +91,11 @@ export class Personagem {
   })
   alinhamentoMoral: string
 
+  @OneToMany(() => ClassePersonagem, (classes) => classes.personagem, {
+    cascade: true
+  })
+  classes: ClassePersonagem[]
+
   @OneToMany(() => Atributo, (atributos) => atributos.personagem, {
     cascade: true
   })
@@ -115,11 +116,10 @@ export class Personagem {
   })
   recursos: Recurso[]
 
-  @OneToMany(() => Nivel, (niveis) => niveis.personagem, {
-    cascade: true,
-    nullable: true
+  @OneToMany(() => PoderRef, (poderes) => poderes.personagem, {
+    cascade: true
   })
-  niveis?: Nivel[]
+  poderes: PoderRef[]
 
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
     cascade: true,

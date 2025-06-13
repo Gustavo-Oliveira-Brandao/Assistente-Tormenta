@@ -1,27 +1,24 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Poder } from './Poder'
+import { Personagem } from './Personagem'
 
-//OK
 @Entity()
-export class SubEfeito {
+export class ClassePersonagem {
   @PrimaryGeneratedColumn()
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 100
+    type: 'varchar'
   })
   nome: string
 
   @Column({
-    type: 'varchar',
-    length: 1000
+    type: 'integer'
   })
-  descricao: string
+  nivel: number
 
-  @ManyToOne(() => Poder, (poder) => poder.subEfeitos, {
+  @ManyToOne(() => Personagem, (personagem) => personagem.classes, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  poder: Poder
+  personagem: Personagem
 }

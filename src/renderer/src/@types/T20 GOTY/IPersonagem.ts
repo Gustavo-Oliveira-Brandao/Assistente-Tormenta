@@ -1,9 +1,10 @@
 import { IAtributo } from './IAtributo'
+import { IClassePersonagem } from './IClasse'
 import { IDeslocamento } from './IDeslocamento'
 import { IGrimorio } from './IGrimorio'
 import { IPericia } from './IPericia'
+import { IPoderRef } from './IPoder'
 import { IProficiencia } from './IProficiencia'
-import { INivel } from './INivel'
 import { IRecurso } from './IRecurso'
 
 export type IPersonagem = {
@@ -14,10 +15,10 @@ export type IPersonagem = {
   altura?: string
   peso?: string
   raca: string
-  classe: string
+  classeInicial: string
   origem: string
   divindade: string
-  nivelAtual: number
+  nivelAtual?: number
   experiencia: number
   tamanho: string
   alinhamentoEtico: string
@@ -27,6 +28,7 @@ export type IPersonagem = {
   deslocamentos: IDeslocamento[]
   recursos: IRecurso[]
   proficiencias?: IProficiencia[]
-  niveis?: INivel[]
+  classes: IClassePersonagem[]
   grimorios?: IGrimorio[]
+  poderes?: IPoderRef[]
 }

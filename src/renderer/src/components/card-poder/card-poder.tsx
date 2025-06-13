@@ -1,13 +1,13 @@
-import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { AccordionCard } from '../accordion-card/accordion-card'
-import { DeepPartial } from 'typeorm'
+import { IPoderDB } from '@renderer/@types/T20 GOTY/IPoder'
 
 type cardPoderProps = {
-  poder: IPoder | DeepPartial<IPoder>
+  poder: IPoderDB
   onInteract?: () => void
+  exibeCategoria?: boolean
   iconeBotaoInteracao?: string
   nivel?: number
 }
@@ -16,23 +16,29 @@ export const CardPoder = ({
   poder,
   onInteract,
   iconeBotaoInteracao,
-  nivel
+  nivel,
+  exibeCategoria = false
 }: cardPoderProps): JSX.Element => {
   return (
     <AccordionCard
-      titulo={poder.nome ?? 'Poder sem nome'}
+      titulo={poder.nome}
       inicialmenteExpandido={false}
       icone={`./icons/arcanista.svg`}
       numero={nivel}
       header={
-        onInteract && (
-          <BotaoModular
-            css="botaoQuadrado30px"
-            icone={iconeBotaoInteracao}
-            onClickEvent={onInteract}
-            cor="corSecundaria"
-          />
-        )
+        <div className={styles.interacoes}>
+          {exibeCategoria && (
+            <p className={`${styles.categoria} tormenta20Font`}>{poder.categoria}</p>
+          )}
+          {onInteract && (
+            <BotaoModular
+              css="botaoQuadrado30px"
+              icone={iconeBotaoInteracao}
+              onClickEvent={onInteract}
+              cor="corSecundaria"
+            />
+          )}
+        </div>
       }
     >
       {poder && (

@@ -5,164 +5,84 @@
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
   "progressaoConjuracao": "completa",
-  "progressao": [
+  "poderes": [
     {
+      "nome": "devoto fiel",
+      "descricao": "Você se torna devoto de um deus disponível para druidas (Allihanna, Megalokk ou Oceano). Ao contrário de devotos normais, você recebe dois poderes concedidos por se tornar devoto, em vez de apenas um.",
+      "preRequisitos": "",
       "nivel": 1,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "devoto fiel",
-          "descricao": "Você se torna devoto de um deus disponível para druidas (Allihanna, Megalokk ou Oceano). Ao contrário de devotos normais, você recebe dois poderes concedidos por se tornar devoto, em vez de apenas um.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "druida"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 222
-        },
-        {
-          "nome": "empatia selvagem",
-          "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e persuasão.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "druida"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 223
-        },
-        {
-          "nome": "magias",
-          "descricao": "Escolha três escolas de magia. Uma vez feita, essa escolha não pode ser mudada.\nVocê pode lançar magias divinas de 1º círculo que pertençam a essas escolas.\nÀ medida que sobe de nível, pode lançar magias de círculos maiores (2º círculo no 6º nível,\n3º círculo no 10º nível e 4º círculo no 14º nível).\nVocê começa com duas magias de 1º círculo.\nA cada nível par (2º, 4º etc.), aprende uma magia de qualquer círculo e escola que possa lançar.\nSeu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "druida"
-            },
-            {
-              "label": "habilidade de conjuração"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 8943
+          "label": "druida"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 222
     },
     {
+      "nome": "empatia selvagem",
+      "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e persuasão.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 223
+    },
+    {
+      "nome": "magias",
+      "descricao": "Escolha três escolas de magia. Uma vez feita, essa escolha não pode ser mudada.\nVocê pode lançar magias divinas de 1º círculo que pertençam a essas escolas.\nÀ medida que sobe de nível, pode lançar magias de círculos maiores (2º círculo no 6º nível,\n3º círculo no 10º nível e 4º círculo no 14º nível).\nVocê começa com duas magias de 1º círculo.\nA cada nível par (2º, 4º etc.), aprende uma magia de qualquer círculo e escola que possa lançar.\nSeu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM.",
+      "preRequisitos": "",
+      "nivel": 1,
+      "categoria": "classe",
+      "tags": [
+        {
+          "label": "druida"
+        },
+        {
+          "label": "habilidade de conjuração"
+        }
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 8943
+    },
+    {
+      "nome": "caminho dos ermos",
+      "descricao": "No 2º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastreá-lo aumenta em +10. Esta habilidade só funciona em terrenos naturais.",
+      "preRequisitos": "",
       "nivel": 2,
-      "recebePoderClasse": true,
-      "poderes": [
+      "categoria": "classe",
+      "tags": [
         {
-          "nome": "caminho dos ermos",
-          "descricao": "No 2º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastreá-lo aumenta em +10. Esta habilidade só funciona em terrenos naturais.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "druida"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 244
+          "label": "druida"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 244
     },
     {
-      "nivel": 3,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 4,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 5,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 6,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 7,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 8,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 9,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 10,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 11,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 12,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 13,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 14,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 15,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 16,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 17,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 18,
-      "recebePoderClasse": true
-    },
-    {
-      "nivel": 19,
-      "recebePoderClasse": true
-    },
-    {
+      "nome": "força da natureza",
+      "descricao": "No 20º nível, você diminui o custo de todas as suas magias em –2 PM e aumenta a CD delas em +2. Os bônus dobram (–4 PM e +4 na CD) se você estiver em terrenos naturais.",
+      "preRequisitos": "",
+      "categoria": "classe",
       "nivel": 20,
-      "recebePoderClasse": true,
-      "poderes": [
+      "tags": [
         {
-          "nome": "força da natureza",
-          "descricao": "No 20º nível, você diminui o custo de todas as suas magias em –2 PM e aumenta a CD delas em +2. Os bônus dobram (–4 PM e +4 na CD) se você estiver em terrenos naturais.",
-          "preRequisitos": "",
-          "categoria": "classe",
-          "tags": [
-            {
-              "label": "druida"
-            }
-          ],
-          "tempoExecucao": "passivo",
-          "subEfeitos": [],
-          "key": 245
+          "label": "druida"
         }
-      ]
+      ],
+      "tempoExecucao": "passivo",
+      "subEfeitos": [],
+      "key": 245
     }
   ],
   "poderesClasse": [

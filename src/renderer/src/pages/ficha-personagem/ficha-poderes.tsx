@@ -1,25 +1,24 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
-import { CardPoder } from '@renderer/components/card-poder/card-poder'
-import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
-import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
+import { JSX, useMemo, useState } from 'react'
+import styles from './ficha-personagem.module.scss'
+import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import {
   useExibirPoderesDefault,
   useExibirPoderesPersonagem
 } from '@renderer/hooks/selectors/usePoderQuery'
-import { abrirModal } from '@renderer/store/slices/modalSlice'
+import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
+import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
+import { CardPoder } from '@renderer/components/card-poder/card-poder'
+import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@renderer/store/store'
 import { Modal } from '@renderer/templates/modal/modal'
-import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
-import { JSX, useState, useMemo, ChangeEvent } from 'react'
-import { createPortal } from 'react-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import styles from './ficha-personagem.module.scss'
-import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
-import { opcoesRacas } from '@renderer/utils/select options/opcoesRacas'
 import { opcoesCategoriasPoderesGerais } from '@renderer/utils/select options/opcoesCategoriasPoderes'
-import { opcoesClasses } from '@renderer/utils/select options/opcoesClasses'
-import { IPoderDB } from '@renderer/@types/T20 GOTY/IPoder'
+import { createPortal } from 'react-dom'
+import { DeepPartial } from 'typeorm'
+import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
+import { abrirModal } from '@renderer/store/slices/modalSlice'
+import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
+import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
@@ -27,201 +26,164 @@ type FichaPoderesProps = {
 
 export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => {
   const { data: poderesDefault } = useExibirPoderesDefault()
-  const { data: poderesRefPersonagem } = useExibirPoderesPersonagem(personagem.id)
-  const { data: classes } = useExibirClassesDefault()
-  const { data: racas } = useExibirRacasDefault()
+  const { data: poderesPersonagem } = useExibirPoderesPersonagem(personagem.id)
+  const { data: classesDefault } = useExibirClassesDefault()
+  const { data: racasDefault } = useExibirRacasDefault()
 
   const [categoriaPoderes, setCategoriaPoderes] = useState('CLASSE')
-  const [filtroRacaPoderes, setFiltroRacaPoderes] = useState(personagem.raca)
-  const [filtroClassePoderes, setFiltroClassePoderes] = useState(personagem.classeInicial)
-  const [nivelPoder, setNivelPoder] = useState<number>(personagem.nivelAtual ?? 1)
-
-  const niveisNumeros = Array.from({ length: personagem.nivelAtual ?? 1 }, (_, i) => i + 1)
+  const [filtroClassePesquisa, setFiltroClassePesquisa] = useState(personagem.classeInicial)
+  const [filtroRacaPesquisa, setFiltroRacaPesquisa] = useState(personagem.raca)
 
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
-  const poderesRacaDBPesquisados = useMemo(() => {
-    if (!racas) {
+  const poderesPorClassesPersonagem = useMemo(() => {
+    if (!classesDefault) {
       return []
     }
 
-    return racas.flatMap((raca) => {
-      const poderes: IPoderDB[] = []
+    return personagem.classes.flatMap((classe) => {
+      const poderes: DeepPartial<IPoderPersonagem>[] = []
 
-      if (filtroRacaPoderes == raca.nome) {
-        poderes.push(...raca.poderes)
+      for (const classeDefault of classesDefault) {
+        if (classeDefault.nome == classe.nome) {
+          for (const poderClasse of classeDefault.poderes) {
+            if (poderClasse.nivel && poderClasse.nivel <= classe.nivel) {
+              poderes.push(poderClasse)
+            }
+          }
+        }
       }
 
       return poderes
     })
-  }, [racas, filtroRacaPoderes])
+  }, [personagem, classesDefault])
 
-  const poderesClasseDBPesquisados = useMemo(() => {
-    if (!classes) {
+  const poderesPorRacaPersonagem = useMemo(() => {
+    if (!racasDefault) {
       return []
     }
 
-    return classes.flatMap((classe) => {
-      const poderes: IPoderDB[] = []
-
-      if (filtroClassePoderes == classe.nome) {
-        poderes.push(...classe.poderesClasse)
-      }
-
-      return poderes
-    })
-  }, [classes, filtroClassePoderes])
-
-  const poderesRaca = useMemo(() => {
-    if (!racas || !personagem) {
-      return []
-    }
-
-    return racas.flatMap((raca) => {
-      const poderes: IPoderDB[] = []
+    return racasDefault.flatMap((raca) => {
+      const poderes: DeepPartial<IPoderPersonagem>[] = []
       if (raca.nome == personagem.raca) {
         poderes.push(...raca.poderes)
       }
 
       return poderes
     })
-  }, [racas, personagem])
+  }, [racasDefault, personagem])
 
-  const poderesClassePersonagem = useMemo(() => {
-    if (!classes || !poderesRefPersonagem || !personagem) {
+  const poderesRacaDBFiltro = useMemo(() => {
+    if (!racasDefault) {
       return []
     }
 
-    return classes.flatMap((classe) => {
-      const poderes: IPoderDB[] = []
-
-      for (const classePersonagem of personagem.classes) {
-        if (classe.nome == classePersonagem.nome) {
-          for (const poderRef of poderesRefPersonagem) {
-            for (const poderClasse of classe.poderesClasse) {
-              if (poderClasse.key == poderRef.key) {
-                poderes.push(poderClasse)
-              }
-            }
-          }
-        }
+    return racasDefault.flatMap((raca) => {
+      const poderes: DeepPartial<IPoderPersonagem>[] = []
+      if (raca.nome == filtroRacaPesquisa) {
+        poderes.push(...raca.poderes)
       }
       return poderes
     })
-  }, [classes, poderesRefPersonagem, personagem])
+  }, [racasDefault, filtroRacaPesquisa])
 
-  const poderesGeraisPersonagem = useMemo(() => {
-    if (!poderesDefault || !poderesRefPersonagem) {
+  const poderesClasseDBFiltro = useMemo(() => {
+    if (!classesDefault) {
       return []
     }
 
-    return poderesDefault.flatMap((poder) => {
-      const poderesPersonagem: IPoderDB[] = []
-      for (const poderRef of poderesRefPersonagem) {
-        if (poderRef.key == poder.key) {
-          console.log(poder)
-          console.log(poderRef)
-          poderesPersonagem.push(poder)
-        }
+    return classesDefault.flatMap((classe) => {
+      const poderes: DeepPartial<IPoderPersonagem>[] = []
+      if (filtroClassePesquisa == classe.nome) {
+        poderes.push(...classe.poderesClasse)
       }
-      return poderesPersonagem
-    })
-  }, [poderesDefault, poderesRefPersonagem])
-
-  const poderesClasseProgressao = useMemo(() => {
-    if (!classes || !personagem) {
-      return []
-    }
-
-    return classes.flatMap((classe) => {
-      const poderes: IPoderDB[] = []
-
-      for (const classePersonagem of personagem.classes) {
-        if (classePersonagem.nome === classe.nome) {
-          if (personagem.nivelAtual) {
-            for (const poder of classe.poderes) {
-              if (poder.nivel) {
-                if (poder.nivel <= classePersonagem.nivel) {
-                  poderes.push(poder)
-                }
-              }
-            }
-          }
-        }
-      }
-
       return poderes
     })
-  }, [classes, personagem])
+  }, [classesDefault, filtroClassePesquisa])
 
-  const poderesPesquisados = useMemo(() => {
+  const poderesFiltrados = useMemo(() => {
     if (!poderesDefault) {
       return []
     }
 
-    if (categoriaPoderes === 'RACA') {
-      return poderesRacaDBPesquisados
-    } else if (categoriaPoderes === 'CLASSE') {
-      return poderesClasseDBPesquisados
-    } else {
-      return poderesDefault.filter(
-        (poder) =>
-          poder.categoria && poder.categoria.toLowerCase() == categoriaPoderes.toLowerCase()
-      )
+    if (categoriaPoderes == 'CLASSE') {
+      return poderesClasseDBFiltro
     }
-  }, [poderesDefault, categoriaPoderes, poderesClasseDBPesquisados, poderesRacaDBPesquisados])
 
-  const selecionarRaca = (event: ChangeEvent<HTMLSelectElement>): void => {
-    setFiltroRacaPoderes(event.target.value)
-  }
-
-  const selecionarClasse = (event: ChangeEvent<HTMLSelectElement>): void => {
-    setFiltroClassePoderes(event.target.value)
-  }
-
-  const selecionarCategoriaPoderes = (event: ChangeEvent<HTMLSelectElement>): void => {
-    setCategoriaPoderes(event.target.value)
-  }
-
-  const selecionarNivelPoder = (event: ChangeEvent<HTMLSelectElement>): void => {
-    setNivelPoder(Number(event.target.value))
-  }
-
-  const removerPoderPorKey = (key: number): void => {
-    if (poderesRefPersonagem) {
-      for (const poderRef of poderesRefPersonagem) {
-        if (poderRef.key == key) {
-          removerPoder.mutate(poderRef.id)
-        }
-      }
+    if (categoriaPoderes == 'RACA') {
+      return poderesRacaDBFiltro
     }
-  }
+
+    return poderesDefault.filter(
+      (poder) => poder.categoria && poder.categoria.toLowerCase() == categoriaPoderes.toLowerCase()
+    )
+  }, [categoriaPoderes, poderesDefault, poderesClasseDBFiltro, poderesRacaDBFiltro])
 
   const adicionarPoder = useCriarPoder()
   const removerPoder = useDeletarPoder()
 
   return (
-    <div className={styles.secaoPoderes}>
+    <section className={styles.secaoPoderes}>
       <div className={styles.poderes}>
         <SecaoFicha
-          header={<h2 className="tormenta20Font">Poderes por progressão</h2>}
+          header={<h2 className="tormenta20Font">Poderes de classe por progressão</h2>}
           css="poderes"
         >
-          {poderesRaca.map((poder) => (
-            <CardPoder key={poder.key} poder={poder} exibeCategoria={true} nivel={poder.nivel} />
+          {poderesPorClassesPersonagem.map((poder) => (
+            <CardPoder key={poder.key} poder={poder} nivel={poder.nivel} />
           ))}
-          {poderesClasseProgressao
-            .sort((a, b) => {
-              if (a.nivel == null || b.nivel == null) {
-                return 0
-              }
-              return a.nivel + b.nivel
-            })
-            .map((poder) => (
-              <CardPoder nivel={poder.nivel} poder={poder} key={poder.key} exibeCategoria={true} />
-            ))}
         </SecaoFicha>
+        <SecaoFicha
+          header={
+            <>
+              <h2 className="tormenta20Font">Poderes de raça</h2>
+              <BotaoModular
+                css="minimalista"
+                texto="Buscar"
+                cor="transparente"
+                font="tormenta20Font"
+                onClickEvent={() => {
+                  setCategoriaPoderes('RACA')
+                  dispatch(abrirModal(`PODERES_LOJA`))
+                }}
+                icone="./icons/busca.svg"
+              />
+            </>
+          }
+          css="poderes"
+        >
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'raca')
+              .map((poder) => <CardPoder key={poder.id} poder={poder} />)}
+        </SecaoFicha>
+        <SecaoFicha
+          header={
+            <>
+              <h2 className="tormenta20Font">Poderes de origem</h2>
+              <BotaoModular
+                css="minimalista"
+                texto="Buscar"
+                cor="transparente"
+                font="tormenta20Font"
+                onClickEvent={() => {
+                  setCategoriaPoderes('ORIGEM')
+                  dispatch(abrirModal(`PODERES_LOJA`))
+                }}
+                icone="./icons/busca.svg"
+              />
+            </>
+          }
+          css="poderes"
+        >
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'origem')
+              .map((poder) => <CardPoder key={poder.id} poder={poder} nivel={poder.nivel} />)}
+        </SecaoFicha>
+      </div>
+      <div className={styles.poderes}>
         <SecaoFicha
           header={
             <>
@@ -232,9 +194,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
-                  setFiltroClassePoderes(personagem.classeInicial)
                   setCategoriaPoderes('CLASSE')
-                  dispatch(abrirModal(`PODERES_LOJA_MODAL`))
+                  dispatch(abrirModal(`PODERES_LOJA`))
                 }}
                 icone="./icons/busca.svg"
               />
@@ -242,67 +203,11 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          {poderesClassePersonagem &&
-            poderesClassePersonagem
-              .sort((a, b) => {
-                if (!a.nivel || !b.nivel) {
-                  return 0
-                }
-                return a.nivel + b.nivel
-              })
-              .filter((poder) => poder.categoria === 'classe')
-              .map((poder) => (
-                <CardPoder
-                  nivel={poder.nivel}
-                  key={poder.key}
-                  poder={poder}
-                  onInteract={() => removerPoderPorKey(poder.key)}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                />
-              ))}
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'classe')
+              .map((poder) => <CardPoder key={poder.id} poder={poder} nivel={poder.nivel} />)}
         </SecaoFicha>
-
-        <SecaoFicha
-          header={
-            <>
-              <h2 className="tormenta20Font">Poderes de origem</h2>
-
-              <BotaoModular
-                css="minimalista"
-                texto="Buscar"
-                cor="transparente"
-                font="tormenta20Font"
-                onClickEvent={() => {
-                  setCategoriaPoderes('ORIGEM')
-                  dispatch(abrirModal(`PODERES_LOJA_MODAL`))
-                }}
-                icone="./icons/busca.svg"
-              />
-            </>
-          }
-          css="poderes"
-        >
-          {poderesGeraisPersonagem &&
-            poderesGeraisPersonagem
-              .sort((a, b) => {
-                if (!a.nivel || !b.nivel) {
-                  return 0
-                }
-                return a.nivel + b.nivel
-              })
-              .filter((poder) => poder.categoria === 'origem')
-              .map((poder) => (
-                <CardPoder
-                  nivel={poder.nivel}
-                  key={poder.key}
-                  poder={poder}
-                  onInteract={() => removerPoderPorKey(poder.key)}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                />
-              ))}
-        </SecaoFicha>
-      </div>
-      <div className={styles.poderes}>
         <SecaoFicha
           header={
             <>
@@ -314,7 +219,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 font="tormenta20Font"
                 onClickEvent={() => {
                   setCategoriaPoderes('COMBATE')
-                  dispatch(abrirModal(`PODERES_LOJA_MODAL`))
+                  dispatch(abrirModal(`PODERES_LOJA`))
                 }}
                 icone="./icons/busca.svg"
               />
@@ -322,118 +227,112 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          {poderesGeraisPersonagem &&
-            poderesGeraisPersonagem
-              .sort((a, b) => {
-                if (!a.nivel || !b.nivel) {
-                  return 0
-                }
-                return a.nivel + b.nivel
-              })
-              .filter((poder) => poder.categoria != 'classe' && poder.categoria != 'origem')
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter(
+                (poder) =>
+                  poder.categoria != 'classe' &&
+                  poder.categoria != 'origem' &&
+                  poder.categoria != 'raca'
+              )
               .map((poder) => (
-                <CardPoder
-                  nivel={poder.nivel}
-                  key={poder.key}
-                  exibeCategoria={true}
-                  poder={poder}
-                  onInteract={() => removerPoderPorKey(poder.key)}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                />
+                <CardPoder key={poder.id} poder={poder} nivel={poder.nivel} exibeCategoria={true} />
               ))}
         </SecaoFicha>
       </div>
-      {modalAberto === `PODERES_LOJA_MODAL` &&
+      {modalAberto == 'PODERES_LOJA' &&
         createPortal(
           <Modal
-            titulo="Adicionar"
-            height="400px"
+            height="90vh"
             width="550px"
+            titulo="Compêndio de poderes"
+            overflow="auto"
             sidebar={
-              <>
-                <div className={styles.filtros}>
-                  <p className="tormenta20Font">Filtros</p>
+              <div className={styles.filtros}>
+                <p className="tormenta20Font">Filtros</p>
+                <div className={styles.filtro}>
+                  <label htmlFor="categoriaPoder" className="tormenta20Font label">
+                    Categoria
+                  </label>
+                  <select
+                    id="categoriaPoder"
+                    value={categoriaPoderes}
+                    className="tormenta20Font select"
+                    onChange={(e) => setCategoriaPoderes(e.target.value)}
+                  >
+                    <option value={'CLASSE'}>Classe</option>
+                    <option value={'RACA'}>Raça</option>
+                    {opcoesCategoriasPoderesGerais.map((opcao) => (
+                      <option key={opcao} value={opcao}>
+                        {opcao}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {categoriaPoderes == 'CLASSE' && (
                   <div className={styles.filtro}>
-                    <label htmlFor="categoriaPoder" className="tormenta20Font label">
-                      Categoria
+                    <label htmlFor="filtroClasse" className="tormenta20Font label">
+                      Classe
                     </label>
                     <select
-                      id="categoriaPoder"
-                      value={categoriaPoderes}
-                      className="select tormenta20Font"
-                      onChange={(e) => selecionarCategoriaPoderes(e)}
+                      id="filtroClasse"
+                      value={filtroClassePesquisa}
+                      className="tormenta20Font select"
+                      onChange={(e) => setFiltroClassePesquisa(e.target.value)}
                     >
-                      <option value={'CLASSE'}>Classe</option>
-                      {opcoesCategoriasPoderesGerais.map((opcao) => (
-                        <option key={opcao} value={opcao}>
-                          {opcao}
-                        </option>
-                      ))}
-                      <option value={'RACA'}>Raça</option>
+                      {classesDefault &&
+                        classesDefault.map((classe) => (
+                          <option key={classe.nome} value={classe.nome}>
+                            {classe.nome}
+                          </option>
+                        ))}
                     </select>
                   </div>
-
-                  {categoriaPoderes === 'RACA' && (
-                    <div className={styles.filtro}>
-                      <label htmlFor="raca" className="tormenta20Font label">
-                        Raça
-                      </label>
-                      <select
-                        id="raca"
-                        value={filtroRacaPoderes}
-                        className="select tormenta20Font"
-                        onChange={(e) => selecionarRaca(e)}
-                      >
-                        {opcoesRacas.map((opcao) => (
-                          <option key={opcao} value={opcao}>
-                            {opcao}
+                )}
+                {categoriaPoderes == 'RACA' && (
+                  <div className={styles.filtro}>
+                    <label htmlFor="filtroRaca" className="tormenta20Font label">
+                      Raça
+                    </label>
+                    <select
+                      id="filtroRaca"
+                      value={filtroRacaPesquisa}
+                      className="tormenta20Font select"
+                      onChange={(e) => setFiltroRacaPesquisa(e.target.value)}
+                    >
+                      {racasDefault &&
+                        racasDefault.map((raca) => (
+                          <option key={raca.nome} value={raca.nome}>
+                            {raca.nome}
                           </option>
                         ))}
-                      </select>
-                    </div>
-                  )}
-
-                  {categoriaPoderes === 'CLASSE' && (
-                    <div className={styles.filtro}>
-                      <label htmlFor="classe" className="tormenta20Font label">
-                        Classe
-                      </label>
-                      <select
-                        id="classe"
-                        className="select tormenta20Font"
-                        onChange={(e) => selecionarClasse(e)}
-                      >
-                        {opcoesClasses.map((opcao) => (
-                          <option key={opcao} value={opcao}>
-                            {opcao}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  )}
-                </div>
-              </>
+                    </select>
+                  </div>
+                )}
+              </div>
             }
           >
             <h3 className="tormenta20Font">Poderes</h3>
-            {poderesPesquisados &&
-              poderesPesquisados.map((poder) => (
-                <CardPoder
-                  key={poder.key}
-                  poder={poder}
-                  iconeBotaoInteracao="./icons/adicao.svg"
-                  onInteract={() =>
-                    adicionarPoder.mutate({
-                      poder,
-                      nivelPersonagem: personagem.nivelAtual ?? 1,
-                      idPersonagem: personagem.id
-                    })
-                  }
-                />
-              ))}
+            {poderesFiltrados.map((poder) => (
+              <CardPoder
+                key={poder.key}
+                poder={poder}
+                iconeBotaoInteracao="./icons/adicao.svg"
+                onInteract={() =>
+                  adicionarPoder.mutate({
+                    poder: {
+                      key: poder.key ?? 1,
+                      categoria: poder.categoria ?? 'destino',
+                      nivel: personagem.nivelAtual ?? 1
+                    },
+                    idPersonagem: personagem.id
+                  })
+                }
+              />
+            ))}
           </Modal>,
           document.body
         )}
-    </div>
+    </section>
   )
 }

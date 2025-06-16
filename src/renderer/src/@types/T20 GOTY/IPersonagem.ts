@@ -3,7 +3,7 @@ import { IClassePersonagem } from './IClasse'
 import { IDeslocamento } from './IDeslocamento'
 import { IGrimorio } from './IGrimorio'
 import { IPericia } from './IPericia'
-import { IPoderRef } from './IPoder'
+import { IPoderPersonagem } from './IPoder'
 import { IProficiencia } from './IProficiencia'
 import { IRecurso } from './IRecurso'
 
@@ -30,5 +30,5 @@ export type IPersonagem = {
   proficiencias?: IProficiencia[]
   classes: IClassePersonagem[]
   grimorios?: IGrimorio[]
-  poderes?: IPoderRef[]
+  poderes?: IPoderPersonagem[]
 }

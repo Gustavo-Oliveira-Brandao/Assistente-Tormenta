@@ -1,13 +1,13 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Grimorio } from '../entities/Grimorio'
-import { MagiaRef } from '../entities/MagiaRef'
 import { Personagem } from '../entities/Personagem'
 import path from 'path'
 import { extrairJson } from './JsonService'
-import { IMagiaDB } from '../../@types/IMagiaDB'
+import { Magia } from '../entities/Magia'
+import { IMagiaDTO } from '../../@types/IMagiaDTO'
 
-const MagiaRepository = SQLiteDataSource.getRepository(MagiaRef)
+const MagiaRepository = SQLiteDataSource.getRepository(Magia)
 const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
 
 export const getGrimoriosPorPersonagem = async (_idPersonagem: number): Promise<Grimorio[]> => {
@@ -67,7 +67,7 @@ export const deleteGrimorio = async (_id: number): Promise<void> => {
   }
 }
 
-export const postMagia = async (_magia: Partial<MagiaRef>, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (_magiaDTO: IMagiaDTO, _idGrimorio: number): Promise<void> => {
   try {
     const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
     const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })
@@ -76,12 +76,19 @@ export const postMagia = async (_magia: Partial<MagiaRef>, _idGrimorio: number):
       throw new Error('Grimorio não encontrado!')
     }
 
-    const novaMagia = MagiaRepository.create({
-      ..._magia,
-      grimorio: grimorio
-    })
+    const magias = await getMagiasDefault()
 
-    await MagiaRepository.save(novaMagia)
+    for (const magia of magias) {
+      if (magia.key == _magiaDTO.key) {
+        const novaMagia = MagiaRepository.create({
+          ...magia,
+          aprimoramentos: magia.aprimoramentos,
+          grimorio: grimorio
+        })
+
+        await MagiaRepository.save(novaMagia)
+      }
+    }
   } catch {
     throw new Error('Erro ao adicionar magia!')
   }
@@ -95,9 +102,9 @@ export const deleteMagia = async (_id: number): Promise<void> => {
   }
 }
 
-export const getMagiasDefault = async (): Promise<IMagiaDB[]> => {
+export const getMagiasDefault = async (): Promise<DeepPartial<Magia>[]> => {
   const pasta = path.join('packs', 'T20 GOTY', 'magias')
-  const result = (await extrairJson(pasta)) as IMagiaDB[]
+  const result = (await extrairJson(pasta)) as DeepPartial<Magia>[]
   const magias = result
   return magias
 }

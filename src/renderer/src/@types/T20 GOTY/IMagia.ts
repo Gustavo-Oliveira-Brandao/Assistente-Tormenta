@@ -1,6 +1,9 @@
-import { IAprimoramentoMagia } from './IAprimoramentoMagia'
+export type IMagiaDTO = {
+  key: number
+}
 
-export type IMagiaDB = {
+export type IMagiaPersonagem = {
+  id: number
   key: number
   nome: string
   alvo: string
@@ -18,7 +21,8 @@ export type IMagiaDB = {
   aprimoramentos: IAprimoramentoMagia[]
 }
 
-export type IMagiaRef = {
+export type IAprimoramentoMagia = {
   id: number
-  key: number
+  custo: number
+  descricao: string
 }

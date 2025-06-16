@@ -10,14 +10,14 @@ import { Recurso } from '../main/api/entities/Recurso'
 import { IRaca } from '../main/@types/IRaca'
 import { DeepPartial } from 'typeorm'
 import { IClasse } from '../main/@types/IClasse'
-import { IMagiaDB } from '../main/@types/IMagiaDB'
-import { IPoderDB } from '../main/@types/IPoderDB'
-import { MagiaRef } from '../main/api/entities/MagiaRef'
-import { PoderRef } from '../main/api/entities/PoderRef'
+import { Poder } from '../main/api/entities/Poder'
+import { IMagiaDTO } from '../main/@types/IMagiaDTO'
+import { IPoderDTO } from '../main/@types/IPoderDTO'
+import { Magia } from '../main/api/entities/Magia'
 
 // Custom APIs for renderer
 const api = {
-  personagem: {
+  personagens: {
     getTodosPersonagem: (): Promise<Personagem[]> => ipcRenderer.invoke('get-personagens'),
     getPersonagem: (_id: number): Promise<Personagem> => ipcRenderer.invoke('get-personagem', _id),
     postPersonagem: (_personagem: DeepPartial<Personagem>): Promise<void> =>
@@ -27,24 +27,24 @@ const api = {
     deletePersonagem: (_id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', _id)
   },
 
-  atributo: {
+  atributos: {
     putAtributo: (_atributo: Atributo): Promise<void> =>
       ipcRenderer.invoke('put-atributo', _atributo)
   },
 
-  classe: {
+  classes: {
     getClassesDefault: (): Promise<IClasse[]> => ipcRenderer.invoke('get-classes-default')
   },
   racas: {
     getRacasDefault: (): Promise<IRaca[]> => ipcRenderer.invoke('get-racas-default')
   },
-  deslocamento: {
+  deslocamentos: {
     putDeslocamento: (_deslocamento: Deslocamento): Promise<void> =>
       ipcRenderer.invoke('put-deslocamento', _deslocamento)
   },
 
-  magia: {
-    getMagiasDefault: (): Promise<IMagiaDB[]> => ipcRenderer.invoke('get-magias-default'),
+  magias: {
+    getMagiasDefault: (): Promise<DeepPartial<Magia>[]> => ipcRenderer.invoke('get-magias-default'),
     getGrimoriosPorPersonagem: (_idPersonagem: number): Promise<Grimorio[]> =>
       ipcRenderer.invoke('get-grimorios-personagem', _idPersonagem),
     postGrimorio: (_grimorio: DeepPartial<Grimorio>, _idPersonagem: number): Promise<void> =>
@@ -52,21 +52,22 @@ const api = {
     putGrimorio: (_grimorio: Grimorio): Promise<void> =>
       ipcRenderer.invoke('put-grimorio', _grimorio),
     deleteGrimorio: (_id: number): Promise<void> => ipcRenderer.invoke('delete-grimorio', _id),
-    postMagia: (_magia: Partial<MagiaRef>, _idGrimorio: number): Promise<void> =>
+    postMagia: (_magia: IMagiaDTO, _idGrimorio: number): Promise<void> =>
       ipcRenderer.invoke('post-magia', _magia, _idGrimorio),
     deleteMagia: (_id: number): Promise<void> => ipcRenderer.invoke('delete-magia', _id)
   },
 
-  poder: {
-    getPoderesDefault: (): Promise<IPoderDB[]> => ipcRenderer.invoke('get-poderes-default'),
-    getPoderesPersonagem: (_idPersonagem: number): Promise<PoderRef[]> =>
+  poderes: {
+    getPoderesDefault: (): Promise<DeepPartial<Poder>[]> =>
+      ipcRenderer.invoke('get-poderes-default'),
+    getPoderesPersonagem: (_idPersonagem: number): Promise<Poder[]> =>
       ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
-    postPoder: (_poder: Partial<PoderRef>, _idPersonagem: number): Promise<void> =>
+    postPoder: (_poder: IPoderDTO, _idPersonagem: number): Promise<void> =>
       ipcRenderer.invoke('post-poder', _poder, _idPersonagem),
     deletePoder: (_id: number): Promise<void> => ipcRenderer.invoke('delete-poder', _id)
   },
 
-  proficiencia: {
+  proficiencias: {
     getProficienciasPorPersonagem: (_idPersonagem: number): Promise<Proficiencia[]> =>
       ipcRenderer.invoke('get-proficiencias-personagem', _idPersonagem),
     postProficiencia: (
@@ -79,11 +80,11 @@ const api = {
       ipcRenderer.invoke('delete-proficiencia', _id)
   },
 
-  pericia: {
+  pericias: {
     putPericia: (_pericia: Pericia): Promise<void> => ipcRenderer.invoke('put-pericia', _pericia)
   },
 
-  recurso: {
+  recursos: {
     putRecurso: (_recurso: Recurso): Promise<void> => ipcRenderer.invoke('put-recurso', _recurso)
   }
 }

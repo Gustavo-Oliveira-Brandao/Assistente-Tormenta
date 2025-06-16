@@ -5,41 +5,41 @@ declare global {
   interface Window {
     electron: ElectronAPI
     api: {
-      personagem: {
+      personagens: {
         getTodosPersonagem: () => Promise<Personagem[]>
         getPersonagem: (id: number) => Promise<Personagem>
         postPersonagem: (personagem: DeepPartial<Personagem>) => Promise<void>
         putPersonagem: (personagem: Personagem) => Promise<void>
         deletePersonagem: (id: number) => Promise<void>
       }
-      atributo: {
+      atributos: {
         putAtributo: (atributo: Atributo) => Promise<void>
       }
-      classe: {
+      classes: {
         getClassesDefault: () => Promise<IClasse[]>
       }
       racas: {
         getRacasDefault: () => Promise<IRaca[]>
       }
-      deslocamento: {
+      deslocamentos: {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
-      magia: {
-        getMagiasDefault: () => Promise<IMagiaDB[]>
+      magias: {
+        getMagiasDefault: () => Promise<IMagiaDTO[]>
         getGrimoriosPorPersonagem: (_idPersonagem: number) => Promise<Grimorio[]>
         postGrimorio: (grimorio: DeepPartial<Grimorio>, idPersonagem: number) => Promise<void>
         putGrimorio: (grimorio: Grimorio) => Promise<void>
         deleteGrimorio: (id: number) => Promise<void>
-        postMagia: (magia: Partial<MagiaRef>, idGrimorio: number) => Promise<void>
+        postMagia: (magia: IMagiaDTO, idGrimorio: number) => Promise<void>
         deleteMagia: (id: number) => Promise<void>
       }
-      poder: {
-        getPoderesDefault: () => Promise<IPoderDB[]>
-        getPoderesPersonagem: (_idPersonagem: number) => Promise<IPoderRef[]>
-        postPoder: (poder: Partial<PoderRef>, _idPersonagem: number) => Promise<void>
+      poderes: {
+        getPoderesDefault: () => Promise<DeepPartial<Poder>[]>
+        getPoderesPersonagem: (_idPersonagem: number) => Promise<Poder[]>
+        postPoder: (poder: IPoderDTO, _idPersonagem: number) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }
-      proficiencia: {
+      proficiencias: {
         getProficienciasPorPersonagem: (_idPersonagem: number) => Promise<Proficiencia[]>
         postProficiencia: (
           proficiencia: DeepPartial<Proficiencia>,
@@ -48,10 +48,10 @@ declare global {
         putProficiencia: (proficiencia: Proficiencia) => Promise<void>
         deleteProficiencia: (id: number) => Promise<void>
       }
-      pericia: {
+      pericias: {
         putPericia: (pericia: Pericia) => Promise<void>
       }
-      recurso: {
+      recursos: {
         putRecurso: (recurso: Recurso) => Promise<void>
       }
     }

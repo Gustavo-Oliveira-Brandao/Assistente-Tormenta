@@ -1,20 +1,29 @@
-import { ISubEfeito } from './ISubEfeito'
-import { ITag } from './ITag'
+export type IPoderDTO = {
+  key: number
+  nivel: number
+  categoria: string
+}
 
-export type IPoderDB = {
+export type IPoderPersonagem = {
+  id: number
   key: number
   nome: string
   tempoExecucao: string
   descricao: string
   categoria: string
-  nivel?: number
+  nivel: number
   preRequisitos: string
   subEfeitos: ISubEfeito[]
   tags: ITag[]
 }
 
-export type IPoderRef = {
+export type ITag = {
   id: number
-  key: number
-  nivel: number
+  label: string
+}
+
+export type ISubEfeito = {
+  id: number
+  nome: string
+  descricao: string
 }

@@ -6,7 +6,7 @@ import { Recurso } from './Recurso'
 import { Proficiencia } from './Proficiencia'
 import { Grimorio } from './Grimorio'
 import { ClassePersonagem } from './ClassePersonagem'
-import { PoderRef } from './PoderRef'
+import { Poder } from './Poder'
 
 @Entity()
 export class Personagem {
@@ -91,6 +91,11 @@ export class Personagem {
   })
   alinhamentoMoral: string
 
+  @OneToMany(() => Poder, (poder) => poder.personagem, {
+    cascade: true
+  })
+  poderes: Poder[]
+
   @OneToMany(() => ClassePersonagem, (classes) => classes.personagem, {
     cascade: true
   })
@@ -115,11 +120,6 @@ export class Personagem {
     cascade: true
   })
   recursos: Recurso[]
-
-  @OneToMany(() => PoderRef, (poderes) => poderes.personagem, {
-    cascade: true
-  })
-  poderes: PoderRef[]
 
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
     cascade: true,

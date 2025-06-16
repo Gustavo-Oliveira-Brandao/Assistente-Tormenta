@@ -8,25 +8,30 @@ import { Pericia } from './entities/Pericia'
 import { Personagem } from './entities/Personagem'
 import { Proficiencia } from './entities/Proficiencia'
 import { Recurso } from './entities/Recurso'
-import { MagiaRef } from './entities/MagiaRef'
-import { PoderRef } from './entities/PoderRef'
 import { ClassePersonagem } from './entities/ClassePersonagem'
+import { Poder, SubEfeito, Tag } from './entities/Poder'
+import { AprimoramentoMagia, Magia } from './entities/Magia'
 
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
   database: './src/main/UserData/db.sqlite',
   synchronize: true,
+  logging: true,
+  logger: 'advanced-console',
   entities: [
     Atributo,
     Bonus,
     Dano,
     ClassePersonagem,
+    Poder,
+    Tag,
+    SubEfeito,
     Deslocamento,
     Grimorio,
-    MagiaRef,
+    Magia,
     Pericia,
+    AprimoramentoMagia,
     Personagem,
-    PoderRef,
     Proficiencia,
     Recurso
   ]

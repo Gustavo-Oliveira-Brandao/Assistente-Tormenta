@@ -2,7 +2,7 @@ import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
 import { JSX } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from './pericia.module.scss'
-import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
+import { abrirModal } from '@renderer/store/slices/modalSlice'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { RootState } from '@renderer/store/store'
 import { createPortal } from 'react-dom'
@@ -46,12 +46,7 @@ export const Pericia = ({ pericia, exibeTreinamento, editavel }: periciaProps): 
       {modalAberto === `PERICIA_${pericia.nome}_MODAL` &&
         editavel &&
         createPortal(
-          <Modal
-            titulo={pericia.nome}
-            onClose={() => dispatch(fecharModal())}
-            height="400px"
-            width="450px"
-          >
+          <Modal titulo={pericia.nome} height="400px" width="450px">
             <></>
           </Modal>,
           document.body

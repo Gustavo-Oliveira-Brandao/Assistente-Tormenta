@@ -4,7 +4,7 @@ import { useQuery, UseQueryResult } from '@tanstack/react-query'
 
 export const useExibirClassesDefault = (): UseQueryResult<IClasse[]> => {
   return useQuery({
-    queryKey: ['classes'],
+    queryKey: ['classesDefault'],
     queryFn: () => exibirClassesDefault()
   })
 }

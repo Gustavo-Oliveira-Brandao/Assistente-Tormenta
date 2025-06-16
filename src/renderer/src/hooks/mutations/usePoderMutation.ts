@@ -1,18 +1,16 @@
-import { IPoderDB } from '@renderer/@types/T20 GOTY/IPoder'
+import { IPoderDTO } from '@renderer/@types/T20 GOTY/IPoder'
 import { criarPoder, deletarPoder } from '@renderer/api/poder-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
 
 type criarPoderVariaveis = {
-  poder: IPoderDB
-  nivelPersonagem: number
+  poder: IPoderDTO
   idPersonagem: number
 }
 
 export const useCriarPoder = (): UseMutationResult<void, Error, criarPoderVariaveis, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: ({ poder, nivelPersonagem, idPersonagem }) =>
-      criarPoder(poder, nivelPersonagem, idPersonagem),
+    mutationFn: ({ poder, idPersonagem }) => criarPoder(poder, idPersonagem),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['poderesPersonagem'] })
   })
 }

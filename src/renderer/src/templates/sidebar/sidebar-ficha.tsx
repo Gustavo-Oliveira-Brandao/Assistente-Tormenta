@@ -3,7 +3,7 @@ import styles from './sidebar-ficha.module.scss'
 import { BarraProgressao } from '@renderer/components/barra-recurso/barra-progressao'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { Pericia } from '@renderer/components/pericia/pericia'
-import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
+import { abrirModal } from '@renderer/store/slices/modalSlice'
 import { createPortal } from 'react-dom'
 import { Modal } from '../modal/modal'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
@@ -56,8 +56,8 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
                 <p className="tormenta20Font">{personagem.raca}</p>
               </div>
               <div className={styles.detalhe}>
-                <img src={`./icons/${personagem.classe}.svg`} alt="Classe" />
-                <p className="tormenta20Font">{personagem.classe}</p>
+                <img src={`./icons/${personagem.classeInicial}.svg`} alt="Classe" />
+                <p className="tormenta20Font">{personagem.classeInicial}</p>
               </div>
               <div className={styles.detalhe}>
                 <img src={`./icons/tanna-toh.svg`} alt={personagem.origem} />
@@ -122,12 +122,7 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
                   </div>
                   {modalAberto == `${recurso.categoria}_EDICAO_MODAL` &&
                     createPortal(
-                      <Modal
-                        width="550px"
-                        titulo={recurso.categoria}
-                        onClose={() => dispatch(fecharModal())}
-                        height="400px"
-                      >
+                      <Modal width="550px" titulo={recurso.categoria} height="400px">
                         <></>
                       </Modal>,
                       document.body
@@ -155,12 +150,7 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
                   </div>
                   {modalAberto == `DESLOCAMENTO_${deslocamento.nome}_EDICAO_MODAL` &&
                     createPortal(
-                      <Modal
-                        width="550px"
-                        titulo={deslocamento.nome}
-                        onClose={() => dispatch(fecharModal())}
-                        height="400px"
-                      >
+                      <Modal width="550px" titulo={deslocamento.nome} height="400px">
                         <></>
                       </Modal>,
                       document.body

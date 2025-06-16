@@ -2,10 +2,11 @@ import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { AccordionCard } from '../accordion-card/accordion-card'
-import { IPoderDB } from '@renderer/@types/T20 GOTY/IPoder'
+import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
+import { DeepPartial } from 'typeorm'
 
 type cardPoderProps = {
-  poder: IPoderDB
+  poder: IPoderPersonagem | DeepPartial<IPoderPersonagem>
   onInteract?: () => void
   exibeCategoria?: boolean
   iconeBotaoInteracao?: string
@@ -21,7 +22,7 @@ export const CardPoder = ({
 }: cardPoderProps): JSX.Element => {
   return (
     <AccordionCard
-      titulo={poder.nome}
+      titulo={poder.nome ?? 'Poder sem nome'}
       inicialmenteExpandido={false}
       icone={`./icons/arcanista.svg`}
       numero={nivel}

@@ -1,27 +1,23 @@
-import { IPoderDB, IPoderRef } from '@renderer/@types/T20 GOTY/IPoder'
+import { IPoderDTO, IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
+import { DeepPartial } from 'typeorm'
 
-export const exibirPoderesDefault = async (): Promise<IPoderDB[]> => {
-  const poderes = await window.api.poder.getPoderesDefault()
+export const exibirPoderesDefault = async (): Promise<DeepPartial<IPoderPersonagem>[]> => {
+  const poderes = await window.api.poderes.getPoderesDefault()
   return poderes
 }
 
-export const exibirPoderesPersonagem = async (_idPersonagem: number): Promise<IPoderRef[]> => {
-  const poderes = await window.api.poder.getPoderesPersonagem(_idPersonagem)
+export const exibirPoderesPersonagem = async (
+  _idPersonagem: number
+): Promise<IPoderPersonagem[]> => {
+  const poderes = await window.api.poderes.getPoderesPersonagem(_idPersonagem)
   return poderes
 }
 
-export const criarPoder = async (
-  poder: IPoderDB,
-  nivelPersonagem: number,
-  idPersonagem: number
-): Promise<void> => {
-  const poderRef: Partial<IPoderRef> = {
-    key: poder.key,
-    nivel: nivelPersonagem
-  }
-  await window.api.poder.postPoder(poderRef, idPersonagem)
+export const criarPoder = async (poder: IPoderDTO, idPersonagem: number): Promise<void> => {
+  console.log(poder)
+  await window.api.poderes.postPoder(poder, idPersonagem)
 }
 
 export const deletarPoder = async (id: number): Promise<void> => {
-  await window.api.poder.deletePoder(id)
+  await window.api.poderes.deletePoder(id)
 }

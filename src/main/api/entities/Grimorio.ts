@@ -1,7 +1,7 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 import { Bonus } from './Bonus'
 import { Personagem } from './Personagem'
-import { MagiaRef } from './MagiaRef'
+import { Magia } from './Magia'
 
 //OK
 @Entity()
@@ -32,12 +32,12 @@ export class Grimorio {
   })
   bonusCD?: Bonus[]
 
-  @OneToMany(() => MagiaRef, (magia) => magia.grimorio, {
+  @OneToMany(() => Magia, (magia) => magia.grimorio, {
     cascade: true,
     nullable: true,
     eager: true
   })
-  magias?: MagiaRef[]
+  magias?: Magia[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.grimorios, {
     onDelete: 'CASCADE',

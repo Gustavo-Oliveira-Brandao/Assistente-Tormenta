@@ -5,7 +5,7 @@ import {
   getPoderesPersonagem,
   postPoder
 } from '../services/PoderService'
-import { PoderRef } from '../entities/PoderRef'
+import { IPoderDTO } from '../../@types/IPoderDTO'
 
 ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
@@ -22,10 +22,13 @@ ipcMain.handle(
   }
 )
 
-ipcMain.handle('post-poder', async (event: IpcMainInvokeEvent, _poder: Partial<PoderRef>, _idPersonagem: number) => {
-  console.log(`FrameID:${event.frameId}`)
-  await postPoder(_poder, _idPersonagem)
-})
+ipcMain.handle(
+  'post-poder',
+  async (event: IpcMainInvokeEvent, _poder: IPoderDTO, _idPersonagem: number) => {
+    console.log(`FrameID:${event.frameId}`)
+    await postPoder(_poder, _idPersonagem)
+  }
+)
 
 ipcMain.handle('delete-poder', async (event: IpcMainInvokeEvent, _id: number) => {
   console.log(`FrameID:${event.frameId}`)

@@ -1,0 +1,38 @@
+{
+  "key": 14,
+  "nome": "paladino",
+  "vidaInicial": 20,
+  "vidaPorNivel": 5,
+  "manaPorNivel": 3,
+  "progressaoConjuracao": "none",
+  "pericias": ["luta", "vontade"],
+  "numeroPericiasExtras": 2,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "cura",
+    "diplomacia",
+    "fortitude",
+    "guerra",
+    "iniciativa",
+    "intuicao",
+    "nobreza",
+    "percepcao",
+    "religiao"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "armaduras pesadas"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "key": 13,
+  "nome": "nobre",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "none",
+  "pericias": ["vontade"],
+  "numeroPericiasExtras": 5,
+  "periciasExtras": [
+    "adestramento",
+    "atuacao",
+    "cavalgar",
+    "conhecimento",
+    "diplomacia",
+    "enganacao",
+    "fortitude",
+    "guerra",
+    "iniciativa",
+    "intimidacao",
+    "intuicao",
+    "investigacao",
+    "jogatina",
+    "luta",
+    "nobreza",
+    "oficio",
+    "percepcao",
+    "pontaria"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "armaduras pesadas"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

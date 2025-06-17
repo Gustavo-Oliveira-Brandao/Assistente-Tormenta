@@ -5,14 +5,17 @@ import { IPoderDTO } from '../../@types/IPoderDTO'
 import { Personagem } from '../entities/Personagem'
 import { Poder } from '../entities/Poder'
 import { DeepPartial } from 'typeorm'
-import { getClassesDefault } from './ClasseService'
-import { getRacasDefault } from './RacaService'
+import { app } from 'electron'
 
 export const PoderRepository = SQLiteDataSource.getRepository(Poder)
 
-export const getPoderesDefault = async (): Promise<DeepPartial<Poder>[]> => {
-  const pasta = path.join('packs', 'T20 GOTY', 'poderes')
-  const result = (await extrairJson(pasta)) as DeepPartial<Poder>[]
+export const getCompendioPoderes = async (): Promise<DeepPartial<Poder>[]> => {
+  const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'poderes')
+  const caminhoBase = app.isPackaged
+    ? path.join(process.resourcesPath, pasta)
+    : path.join(app.getAppPath(), 'resources', pasta)
+
+  const result = await extrairJson<DeepPartial<Poder>>(caminhoBase)
   const poderes = result
   return poderes
 }
@@ -34,63 +37,18 @@ export const postPoder = async (_poderDTO: IPoderDTO, _idPersonagem: number): Pr
       throw new Error('Personagem não encontrado')
     }
 
-    const poderes = await getPoderesDefault()
+    const compendioPoderes = await getCompendioPoderes()
 
-    const { categoria } = _poderDTO
-    if (categoria == 'raca') {
-      const racas = await getRacasDefault()
-      for (const raca of racas) {
-        for (const poder of raca.poderes) {
-          if (poder.key == _poderDTO.key) {
-            const novoPoder = PoderRepository.create({
-              ...poder,
-              nivel: _poderDTO.nivel,
-              tags: poder.tags,
-              subEfeitos: poder.subEfeitos,
-              personagem: personagem
-            })
-            await PoderRepository.save(novoPoder)
-          }
-        }
-      }
-    }
-    if (categoria == 'classe') {
-      const classes = await getClassesDefault()
-      for (const classe of classes) {
-        for (const poder of classe.poderesClasse) {
-          if (poder.key == _poderDTO.key) {
-            const novoPoder = PoderRepository.create({
-              ...poder,
-              nivel: _poderDTO.nivel,
-              tags: poder.tags,
-              subEfeitos: poder.subEfeitos,
-              personagem: personagem
-            })
-            await PoderRepository.save(novoPoder)
-          }
-        }
-      }
-    }
-    if (
-      categoria == 'combate' ||
-      categoria == 'destino' ||
-      categoria == 'concedido' ||
-      categoria == 'tormenta' ||
-      categoria == 'origem' ||
-      categoria == 'magia'
-    ) {
-      for (const poder of poderes) {
-        if (poder.key == _poderDTO.key) {
-          const novoPoder = PoderRepository.create({
-            ...poder,
-            nivel: _poderDTO.nivel,
-            tags: poder.tags,
-            subEfeitos: poder.subEfeitos,
-            personagem: personagem
-          })
-          await PoderRepository.save(novoPoder)
-        }
-      }
+    const poderEncontrado = compendioPoderes.find((poder) => poder.key == _poderDTO.key)
+    if (poderEncontrado) {
+      const novoPoder = PoderRepository.create({
+        ...poderEncontrado,
+        nivel: _poderDTO.nivel,
+        tags: poderEncontrado.tags,
+        subEfeitos: poderEncontrado.subEfeitos,
+        personagem: personagem
+      })
+      await PoderRepository.save(novoPoder)
     }
   } catch {
     throw new Error('Erro ao adicionar poder!')

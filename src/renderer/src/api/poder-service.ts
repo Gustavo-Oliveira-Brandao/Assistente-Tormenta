@@ -14,7 +14,6 @@ export const exibirPoderesPersonagem = async (
 }
 
 export const criarPoder = async (poder: IPoderDTO, idPersonagem: number): Promise<void> => {
-  console.log(poder)
   await window.api.poderes.postPoder(poder, idPersonagem)
 }
 

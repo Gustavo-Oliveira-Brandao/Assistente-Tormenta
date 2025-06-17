@@ -9,6 +9,7 @@ type cardPoderProps = {
   poder: IPoderPersonagem | DeepPartial<IPoderPersonagem>
   onInteract?: () => void
   exibeCategoria?: boolean
+  exibeFonte?: boolean
   iconeBotaoInteracao?: string
   nivel?: number
 }
@@ -18,7 +19,8 @@ export const CardPoder = ({
   onInteract,
   iconeBotaoInteracao,
   nivel,
-  exibeCategoria = false
+  exibeCategoria = false,
+  exibeFonte = false
 }: cardPoderProps): JSX.Element => {
   return (
     <AccordionCard
@@ -31,6 +33,7 @@ export const CardPoder = ({
           {exibeCategoria && (
             <p className={`${styles.categoria} tormenta20Font`}>{poder.categoria}</p>
           )}
+          {exibeFonte && <p className={`${styles.categoria} tormenta20Font`}>{poder.fonte}</p>}
           {onInteract && (
             <BotaoModular
               css="botaoQuadrado30px"

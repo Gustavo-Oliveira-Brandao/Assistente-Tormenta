@@ -1,0 +1,24 @@
+{
+  "key": 12,
+  "nome": "lutador",
+  "vidaInicial": 20,
+  "vidaPorNivel": 5,
+  "manaPorNivel": 3,
+  "progressaoConjuracao": "none",
+  "pericias": ["fortitude", "luta"],
+  "numeroPericiasExtras": 4,
+  "periciasExtras": [
+    "acrobacia",
+    "adestramento",
+    "atletismo",
+    "enganacao",
+    "furtividade",
+    "iniciativa",
+    "intimidacao",
+    "oficio",
+    "percepcao",
+    "pontaria",
+    "reflexos"
+  ],
+  "proficiencias": []
+}

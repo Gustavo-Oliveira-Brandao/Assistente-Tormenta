@@ -1,16 +1,18 @@
 export type IPoderDTO = {
-  key: number
+  key: string
   nivel: number
   categoria: string
 }
 
 export type IPoderPersonagem = {
   id: number
-  key: number
+  key: string
   nome: string
   tempoExecucao: string
   descricao: string
   categoria: string
+  fonte: string
+  publicacao: string
   nivel: number
   preRequisitos: string
   subEfeitos: ISubEfeito[]

@@ -1,0 +1,36 @@
+{
+  "key": 6,
+  "nome": "cavaleiro",
+  "vidaInicial": 20,
+  "vidaPorNivel": 5,
+  "manaPorNivel": 3,
+  "progressaoConjuracao": "none",
+  "pericias": ["fortitude", "luta"],
+  "numeroPericiasExtras": 2,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "diplomacia",
+    "guerra",
+    "iniciativa",
+    "intimidacao",
+    "nobreza",
+    "percepcao",
+    "vontade"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "armaduras pesadas"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

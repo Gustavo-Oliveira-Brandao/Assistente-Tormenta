@@ -1,0 +1,31 @@
+{
+  "key": 11,
+  "nome": "ladino",
+  "vidaInicial": 12,
+  "vidaPorNivel": 3,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "none",
+  "pericias": ["ladinagem", "reflexos"],
+  "numeroPericiasExtras": 8,
+  "periciasExtras": [
+    "acrobacia",
+    "atletismo",
+    "atuacao",
+    "cavalgar",
+    "conhecimento",
+    "diplomacia",
+    "enganacao",
+    "furtividade",
+    "iniciativa",
+    "intimidacao",
+    "intuicao",
+    "investigacao",
+    "jogatina",
+    "luta",
+    "oficio",
+    "percepcao",
+    "pilotagem",
+    "pontaria"
+  ],
+  "proficiencias": []
+}

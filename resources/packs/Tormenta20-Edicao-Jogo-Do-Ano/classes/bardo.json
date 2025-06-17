@@ -1,0 +1,35 @@
+{
+  "key": 3,
+  "nome": "bardo",
+  "vidaInicial": 12,
+  "vidaPorNivel": 3,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "quaseCompleta",
+  "pericias": ["atuacao", "reflexos"],
+  "numeroPericiasExtras": 6,
+  "periciasExtras": [
+    "acrobacia",
+    "cavalgar",
+    "conhecimento",
+    "diplomacia",
+    "enganacao",
+    "furtividade",
+    "iniciativa",
+    "intuicao",
+    "investigacao",
+    "jogatina",
+    "ladinagem",
+    "luta",
+    "misticismo",
+    "nobreza",
+    "percepcao",
+    "pontaria",
+    "vontade"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    }
+  ]
+}

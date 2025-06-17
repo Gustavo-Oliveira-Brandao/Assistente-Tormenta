@@ -1,0 +1,24 @@
+{
+  "key": 1,
+  "nome": "arcanista",
+  "vidaInicial": 8,
+  "vidaPorNivel": 2,
+  "manaPorNivel": 6,
+  "progressaoConjuracao": "completa",
+  "pericias": ["misticismo", "vontade"],
+  "numeroPericiasExtras": 2,
+  "periciasExtras": [
+    "conhecimento",
+    "diplomacia",
+    "enganacao",
+    "guerra",
+    "iniciativa",
+    "intimidacao",
+    "intuicao",
+    "investigacao",
+    "nobreza",
+    "oficio",
+    "percepcao"
+  ],
+  "proficiencias": []
+}

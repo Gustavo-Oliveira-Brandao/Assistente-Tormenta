@@ -6,7 +6,7 @@
   "peso": "50kg",
   "raca": "humano",
   "classeInicial": "arcanista",
-  "nivelAtual": 1,
+  "nivelAtual": 8,
   "origem": "Taverneiro",
   "divindade": "Arsenal",
   "experiencia": 0,
@@ -17,6 +17,16 @@
     {
       "nome": "arcanista",
       "nivel": 1
+    },
+
+    {
+      "nome": "barbaro",
+      "nivel": 4
+    },
+
+    {
+      "nome": "druida",
+      "nivel": 3
     }
   ],
   "atributos": [

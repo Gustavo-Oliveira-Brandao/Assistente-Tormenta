@@ -1,0 +1,33 @@
+{
+  "key": 7,
+  "nome": "clerigo",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 5,
+  "progressaoConjuracao": "completa",
+  "pericias": ["religiao", "vontade"],
+  "numeroPericiasExtras": 2,
+  "periciasExtras": [
+    "conhecimento",
+    "cura",
+    "diplomacia",
+    "fortitude",
+    "iniciativa",
+    "intuicao",
+    "luta",
+    "misticismo",
+    "nobreza",
+    "oficio",
+    "percepcao"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armaduras pesadas"
+    },
+    {
+      "cateegoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

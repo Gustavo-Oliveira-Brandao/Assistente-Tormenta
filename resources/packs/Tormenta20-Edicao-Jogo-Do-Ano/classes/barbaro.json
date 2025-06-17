@@ -1,0 +1,32 @@
+{
+  "key": 2,
+  "nome": "barbaro",
+  "vidaInicial": 24,
+  "vidaPorNivel": 6,
+  "manaPorNivel": 3,
+  "progressaoConjuracao": "none",
+  "pericias": ["fortitude", "luta"],
+  "numeroPericiasExtras": 4,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "iniciativa",
+    "intimidacao",
+    "oficio",
+    "percepcao",
+    "pontaria",
+    "sobrevivencia",
+    "vontade"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

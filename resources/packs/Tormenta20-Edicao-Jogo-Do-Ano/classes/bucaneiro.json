@@ -1,0 +1,32 @@
+{
+  "key": 4,
+  "nome": "bucaneiro",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 3,
+  "progressaoConjuracao": "none",
+  "pericias": ["reflexos"],
+  "numeroPericiasExtras": 5,
+  "periciasExtras": [
+    "acrobacia",
+    "atletismo",
+    "atuacao",
+    "enganacao",
+    "fortitude",
+    "furtividade",
+    "iniciativa",
+    "intimidacao",
+    "jogatina",
+    "luta",
+    "oficio",
+    "percepcao",
+    "pilotagem",
+    "pontaria"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    }
+  ]
+}

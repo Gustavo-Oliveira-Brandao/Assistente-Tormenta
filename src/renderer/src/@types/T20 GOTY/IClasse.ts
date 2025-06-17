@@ -1,5 +1,3 @@
-import { IPoderDB } from './IPoder'
-
 export type IClasse = {
   key: number
   nome: string
@@ -7,8 +5,6 @@ export type IClasse = {
   vidaPorNivel: number
   manaPorNivel: number
   progressaoConjuracao: string
-  poderes: IPoderDB[]
-  poderesClasse: IPoderDB[]
   pericias: string[]
   numeroPericiasExtras: number
   periciasExtras: string[]

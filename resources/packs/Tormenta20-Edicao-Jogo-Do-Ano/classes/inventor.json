@@ -1,0 +1,25 @@
+{
+  "key": 10,
+  "nome": "inventor",
+  "vidaInicial": 12,
+  "vidaPorNivel": 3,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "none",
+  "pericias": ["oficio", "vontade"],
+  "numeroPericiasExtras": 4,
+  "periciasExtras": [
+    "conhecimento",
+    "cura",
+    "diplomacia",
+    "fortitude",
+    "iniciativa",
+    "investigacao",
+    "luta",
+    "misticismo",
+    "oficio",
+    "pilotagem",
+    "percepcao",
+    "pontaria"
+  ],
+  "proficiencias": []
+}

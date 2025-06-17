@@ -1,0 +1,35 @@
+{
+  "key": 5,
+  "nome": "caçador",
+  "vidaInicial": 16,
+  "vidaPorNivel": 4,
+  "manaPorNivel": 4,
+  "progressaoConjuracao": "none",
+  "pericias": ["sobrevivencia"],
+  "numeroPericiasExtras": 7,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "cura",
+    "fortitude",
+    "furtividade",
+    "iniciativa",
+    "investigacao",
+    "luta",
+    "oficio",
+    "percepcao",
+    "pontaria",
+    "reflexos"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

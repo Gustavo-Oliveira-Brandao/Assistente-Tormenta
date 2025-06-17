@@ -1,7 +1,7 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import {
   deletePoder,
-  getPoderesDefault,
+  getCompendioPoderes,
   getPoderesPersonagem,
   postPoder
 } from '../services/PoderService'
@@ -9,7 +9,7 @@ import { IPoderDTO } from '../../@types/IPoderDTO'
 
 ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
-  const poderes = await getPoderesDefault()
+  const poderes = await getCompendioPoderes()
   return poderes
 })
 

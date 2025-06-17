@@ -1,5 +1,3 @@
-import { IPoderDB } from './IPoder'
-
 export type IRaca = {
   key: number
   nome: string
@@ -10,7 +8,6 @@ export type IRaca = {
   }[]
   herancas: {
     nome: string
-    poderes: IPoderDB[]
   }[]
   deslocamentos: {
     caminhada: number
@@ -21,5 +18,4 @@ export type IRaca = {
   }
   tamanho: string
   tipo: string
-  poderes: IPoderDB[]
 }

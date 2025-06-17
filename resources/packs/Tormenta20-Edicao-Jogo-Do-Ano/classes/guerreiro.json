@@ -1,0 +1,37 @@
+{
+  "key": 9,
+  "nome": "guerreiro",
+  "vidaInicial": 20,
+  "vidaPorNivel": 5,
+  "manaPorNivel": 3,
+  "progressaoConjuracao": "none",
+  "pericias": ["fortitude"],
+  "numeroPericiasExtras": 3,
+  "periciasExtras": [
+    "adestramento",
+    "atletismo",
+    "cavalgar",
+    "guerra",
+    "iniciativa",
+    "intimidacao",
+    "luta",
+    "oficio",
+    "percepcao",
+    "pontaria",
+    "reflexos"
+  ],
+  "proficiencias": [
+    {
+      "categoria": "equipamento",
+      "nome": "armas marciais"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "armaduras pesadas"
+    },
+    {
+      "categoria": "equipamento",
+      "nome": "escudos"
+    }
+  ]
+}

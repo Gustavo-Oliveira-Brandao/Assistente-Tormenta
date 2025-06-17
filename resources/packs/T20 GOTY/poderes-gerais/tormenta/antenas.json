@@ -1,0 +1,12 @@
+{
+  "nome": "antenas",
+  "descricao": "Você recebe +1 em testes de Iniciativa, Percepção e Vontade. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "5bb4a709-4204-405b-b2eb-f1d58ea18dbd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

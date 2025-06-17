@@ -1,0 +1,16 @@
+{
+  "nome": "chuva de lâminas",
+  "descricao": "Uma vez por rodada, quando usa Ambidestria, você pode pagar 2 PM para fazer um ataque adicional com sua arma primária.",
+  "preRequisitos": "Des 4, Ambidestria, 12º nível de caçador.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "8d7d9375-e23f-454d-bbb3-2b694a06a163",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

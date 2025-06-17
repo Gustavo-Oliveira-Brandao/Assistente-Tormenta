@@ -1,0 +1,16 @@
+{
+  "nome": "cano raiado",
+  "descricao": "Quando usa uma arma de disparo feita por você mesmo, ela recebe +1 na margem de ameaça.",
+  "preRequisitos": "Balística, 5º nível de inventor.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2bb5dbbc-9a83-4098-a316-d33b44978f9b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

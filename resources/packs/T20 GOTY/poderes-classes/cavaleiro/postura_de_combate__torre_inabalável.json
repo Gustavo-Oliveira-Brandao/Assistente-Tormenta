@@ -1,0 +1,19 @@
+{
+  "nome": "postura de combate: torre inabalável",
+  "descricao": "Você assume uma postura defensiva que o torna imune a qualquer tentativa de tirá-lo do lugar, de forma mundana ou mágica. Enquanto mantiver a postura, você não pode se deslocar, mas soma sua Constituição na Defesa e pode substituir testes de Reflexos e Vontade por testes de Fortitude.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    },
+    {
+      "label": "postura de combate"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "1b451b63-26cc-408e-8134-e5007bcc1498",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

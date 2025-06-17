@@ -1,0 +1,19 @@
+{
+  "nome": "virtude paladinesca: compaixão",
+  "descricao": "Você pode usar Cura pelas Mãos em alcance curto e, para cada PM que gastar, cura 2d6+1 (em vez de 1d8+1).",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    },
+    {
+      "label": "virtude paladinesca"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "34c92a45-1a56-4d3c-89b2-3c01b588d13a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

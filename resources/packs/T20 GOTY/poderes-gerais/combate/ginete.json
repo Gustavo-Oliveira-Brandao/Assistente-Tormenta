@@ -1,0 +1,12 @@
+{
+  "nome": "ginete",
+  "descricao": "Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre penalidades para atacar à distância ou lançar magias quando montado.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "124de8f3-a81b-43f4-bc86-7ee0ba1848e7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

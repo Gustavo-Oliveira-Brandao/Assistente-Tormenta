@@ -1,0 +1,16 @@
+{
+  "nome": "manipular em massa",
+  "descricao": "Quando usa Manipular, você pode gastar +2 PM. Se fizer isso, afeta todas as criaturas a sua escolha em alcance curto.",
+  "preRequisitos": "Fascinar em Massa, Manipular, 10º nível de bardo.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bardo"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "566b7d02-ebed-4035-8a75-cb403398a2ec",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bardo"
+}

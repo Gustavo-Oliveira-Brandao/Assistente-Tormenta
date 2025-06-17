@@ -1,0 +1,16 @@
+{
+  "nome": "golpista divino - hyninn",
+  "descricao": "Você recebe +2 em Enganação, Jogatina e Ladinagem.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "hyninn"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "e4324f8b-59b2-46c8-bbb4-eac4c84ed28d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

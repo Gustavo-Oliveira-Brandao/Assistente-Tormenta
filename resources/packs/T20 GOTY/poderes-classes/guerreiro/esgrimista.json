@@ -1,0 +1,16 @@
+{
+  "nome": "esgrimista",
+  "descricao": "Quando usa uma arma corpo a corpo leve ou ágil, você soma sua Inteligência em rolagens de dano (limitado pelo seu nível).",
+  "preRequisitos": "Int 1.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "guerreiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "822ca089-a91a-4732-932c-4736330dadce",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "guerreiro"
+}

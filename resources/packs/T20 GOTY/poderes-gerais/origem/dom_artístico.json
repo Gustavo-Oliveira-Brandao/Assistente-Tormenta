@@ -1,0 +1,16 @@
+{
+  "nome": "dom artístico",
+  "descricao": "Quando usa a perícia Atuação para fazer uma apresentação e passa no teste, você ganha o dobro de tibares.",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "artista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "dcaa2976-9408-4dd9-8fdf-a60d4ee09b18",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

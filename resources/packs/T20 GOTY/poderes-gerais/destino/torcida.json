@@ -1,0 +1,12 @@
+{
+  "nome": "torcida",
+  "descricao": "Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você.",
+  "preRequisitos": "Car 13.",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4cca8d75-1320-4ca4-95e4-064569d83340",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

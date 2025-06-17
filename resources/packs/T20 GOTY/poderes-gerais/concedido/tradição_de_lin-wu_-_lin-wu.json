@@ -1,0 +1,16 @@
+{
+  "nome": "tradição de lin-wu - lin-wu",
+  "descricao": "Você considera a katana uma arma simples e, se for proficiente em armas marciais, recebe +1 na margem de ameaça com ela.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "lin-wu"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "078a2a6d-7074-4fd5-8912-effe67e13a51",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "presença aterradora",
+  "descricao": "Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "f3fcd8ae-8dff-45f8-9fa5-a5df77bb7f64",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

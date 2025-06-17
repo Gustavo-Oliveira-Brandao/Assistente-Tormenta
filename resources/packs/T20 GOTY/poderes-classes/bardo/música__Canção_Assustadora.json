@@ -1,0 +1,19 @@
+{
+  "nome": "música: Canção Assustadora",
+  "descricao": "Faça um teste de Atuação oposto pelo teste de Vontade de cada criatura a sua escolha dentro do alcance (você faz um único teste). Alvos que falhem ficam abalados até o fim da cena. Alvos que passem ficam imunes a este efeito por um dia.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bardo"
+    },
+    {
+      "label": "música de bardo"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "bf5a2ce2-9e63-47cb-9868-ba0b3af19068",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bardo"
+}

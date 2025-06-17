@@ -1,0 +1,12 @@
+{
+  "nome": "combate defensivo",
+  "descricao": "Quando usa a ação atacar, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "5ab8ba21-b669-4599-8832-6d76041659f9",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,19 @@
+{
+  "nome": "música: Balada Fascinante",
+  "descricao": "Faça um teste de Atuação oposto pelo teste de Vontade de uma criatura no alcance. Se você passar, ela fica fascinada enquanto você se concentrar (uma ação padrão por rodada). Um alvo hostil ou envolvido em combate recebe +5 no teste de resistência e tem direito a um novo teste sempre que você se concentrar. Se a criatura passar, fica imune a este efeito por um dia.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bardo"
+    },
+    {
+      "label": "música de bardo"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "76cf1eda-0c8d-4da2-8cee-d486773b2fef",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bardo"
+}

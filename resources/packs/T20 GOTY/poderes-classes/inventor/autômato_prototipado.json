@@ -1,0 +1,16 @@
+{
+  "nome": "autômato prototipado",
+  "descricao": "Você pode gastar uma ação padrão e 2 PM para ativar uma melhoria experimental em seu autômato. Role 1d6. Em um resultado 2 a 6, você aumenta o nível de parceiro do autômato em um passo (até mestre), ou concede a ele a habilidade iniciante de outro de seus tipos, até o fim da cena. Em um resultado 1, o autômato enguiça como uma engenhoca.",
+  "preRequisitos": "Autômato.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "925d5a02-6888-4cee-aa67-e1f35a1f8f42",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

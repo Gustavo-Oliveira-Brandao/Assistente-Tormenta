@@ -1,0 +1,16 @@
+{
+  "nome": "golpe de raspão",
+  "descricao": "Uma vez por rodada, quando erra um ataque, você pode gastar 2 PM. Se fizer isso, causa metade do dano que causaria (ignorando efeitos que se aplicariam caso o ataque acertasse).",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "guerreiro"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "101301db-6c16-4cde-aac1-0e5b8a057115",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "guerreiro"
+}

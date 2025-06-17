@@ -1,0 +1,16 @@
+{
+  "nome": "espírito inquebrável",
+  "descricao": "Enquanto está em fúria, você não fica inconsciente por estar com 0 PV ou menos (você ainda morre se chegar em um valor negativo igual à metade de seus pontos de vida máximos).",
+  "preRequisitos": "Alma de Bronze.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "dcdf5a6e-b898-494c-9fc0-249a5c1e3f40",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

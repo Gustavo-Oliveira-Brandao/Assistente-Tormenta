@@ -1,0 +1,16 @@
+{
+  "nome": "trincado",
+  "descricao": "Esculpido à exaustão, seu corpo se tornou uma máquina. Você soma seu modificador de Constituição nas suas rolagens de dano desarmado.",
+  "preRequisitos": "Con 17, Sarado, 10º nível de lutador.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "lutador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "51812851-cb4f-466e-b5cd-c43f4eccd58d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lutador"
+}

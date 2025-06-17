@@ -1,0 +1,17 @@
+{
+  "nome": "fonte elemental",
+  "nivel": 1,
+  "descricao": "Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico desse tipo, em vez disso cura PV em quantidade igual à metade do dano. Por exemplo, se um golem com espírito elemental do fogo é atingido por uma Bola de Fogo que causa 30 pontos de dano, em vez de sofrer esse dano, ele recupera 15 PV.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "golem"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "bc85f045-bd25-42a1-9ef9-bebf370b2967",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "golem"
+}

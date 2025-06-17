@@ -1,0 +1,17 @@
+{
+  "nome": "peste esguia",
+  "nivel": 1,
+  "descricao": "Seu tamanho é Pequeno, mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "goblin"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2fafbc0c-e5a0-4ab4-935c-d6988a4cdd77",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "goblin"
+}

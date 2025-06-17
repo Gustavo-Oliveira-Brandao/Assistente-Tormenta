@@ -1,0 +1,37 @@
+{
+  "nome": "forma selvagem aprimorada",
+  "descricao": "Quando usa Forma Selvagem, você pode gastar 6 PM ao todo para assumir uma forma aprimorada.",
+  "preRequisitos": "Forma Selvagem, 6º nível de druida.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [
+    {
+      "nome": "forma selvagem ágil",
+      "descricao": "Você recebe Destreza +4, deslocamento +3m e duas armas naturais (como acima, mas com dano de 1d8). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    },
+    {
+      "nome": "forma selvagem feroz",
+      "descricao": "Você recebe Força +5, +4 na Defesa e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    },
+    {
+      "nome": "forma selvagem resistente",
+      "descricao": "Você recebe Força +3, +8 na Defesa, redução de dano 8 e uma arma natural que causa 1d8 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    },
+    {
+      "nome": "forma selvagem sorrateira",
+      "descricao": "Você recebe Destreza +4. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
+    },
+    {
+      "nome": "forma selvagem veloz",
+      "descricao": "Você recebe Destreza +4, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m."
+    }
+  ],
+  "key": "a80d3267-dd52-42e9-bb97-03b4e82e6c3b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "comerciante",
+  "descricao": "No 3º nível, você pode vender itens 10% mais caro (não cumulativo com barganha).",
+  "preRequisitos": "",
+  "nivel": 3,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "0de2ddd3-7960-4883-8e5c-4324cfcdcccd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

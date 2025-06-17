@@ -1,0 +1,17 @@
+{
+  "nome": "propósito de criação",
+  "nivel": 1,
+  "descricao": "Você foi construído “pronto” para um propósito específico e não teve uma infância. Você não tem direito a escolher uma origem, mas recebe um poder geral a sua escolha.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "golem"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "382120f0-c047-42f1-8090-c740418282a1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "golem"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "escapista",
+  "descricao": "Você recebe +5 em testes de Acrobacia para escapar e em testes para resistir a efeitos que restrinjam seu movimento, como a manobra agarrar e a magia Amarras Etéreas.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "c0bc42a1-fe30-461d-8d35-0bbfa4cec4fd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

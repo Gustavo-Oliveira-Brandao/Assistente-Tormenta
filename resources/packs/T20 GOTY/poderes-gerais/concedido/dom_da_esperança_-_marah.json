@@ -1,0 +1,16 @@
+{
+  "nome": "dom da esperança - marah",
+  "descricao": "Você soma sua sabedoria em seus PV em vez de constituição, e se torna imune às condições alquebrado, esmorecido e frustrado.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "marah"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2d27515a-c66f-49e8-a64d-ca9e33888307",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

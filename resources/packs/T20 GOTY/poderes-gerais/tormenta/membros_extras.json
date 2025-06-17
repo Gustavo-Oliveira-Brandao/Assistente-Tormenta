@@ -1,0 +1,12 @@
+{
+  "nome": "membros extras",
+  "descricao": "Você possui um par de patas insetoides que saem de suas costas, ombros ou flancos. Quando usa a ação atacar, pode gastar 2 PM para fazer um ataque corpo a corpo extra com cada um (dano 1d4, crítico x2, corte). Se possuir Ambidestria ou Estilo de Duas Armas, pode empunhar armas leves em suas patas insetoides (mas ainda precisa pagar 2 PM para atacar com elas e sofre a penalidade de –2 em todos os ataques).",
+  "preRequisitos": "quatro outros poderes da Tormenta.",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "22f377b5-bf4f-423b-8f9a-3a8447e9a6f7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "carapaça ",
+  "descricao": "Sua pele é recoberta por placas quitinosas. Você recebe +1 na Defesa. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "36369537-f6e7-46d7-80e0-cbcdb97a93e5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

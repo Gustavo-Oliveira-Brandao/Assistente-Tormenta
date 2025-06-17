@@ -1,0 +1,16 @@
+{
+  "nome": "sorte dos loucos - nimb",
+  "descricao": "Você pode pagar 1 PM para rolar novamente um teste recém realizado. Se ainda assim falhar no teste, você perde 1d6 PM.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "nimb"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "b1d18e22-56d3-4d18-87eb-ae0296c9c184",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

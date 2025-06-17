@@ -1,0 +1,12 @@
+{
+  "nome": "estilo desarmado",
+  "descricao": "Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades).",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "76dc4511-0c24-47a3-b2a4-e0ca829c17b1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

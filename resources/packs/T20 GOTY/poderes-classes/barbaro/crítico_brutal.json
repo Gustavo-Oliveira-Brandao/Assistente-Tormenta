@@ -1,0 +1,16 @@
+{
+  "nome": "crítico brutal",
+  "descricao": "Seu multiplicador de crítico com armas corpo a corpo e de arremesso aumenta em +1. Por exemplo, seu multiplicador com um machado de batalha (normalmente x3) será x4.",
+  "preRequisitos": "6º nível de bárbaro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d545525d-9575-4397-8615-bbce560f7891",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

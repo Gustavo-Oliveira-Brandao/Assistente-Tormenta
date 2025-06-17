@@ -1,0 +1,12 @@
+{
+  "nome": "pele corrompida",
+  "descricao": "Sua carne foi mesclada à matéria vermelha. Você recebe resistência a ácido, eletricidade, fogo, frio, trevas e trovão 2. Esta RD aumenta em +2 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "bfc495f3-9722-4ce8-be6e-abae0a431448",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

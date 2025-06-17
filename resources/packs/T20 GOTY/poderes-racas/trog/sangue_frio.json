@@ -1,0 +1,17 @@
+{
+  "nome": "sangue frio",
+  "nivel": 1,
+  "descricao": "Você sofre 1 ponto de dano adicional por dado de dano de frio.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "trog"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4b1c4c62-15df-427a-a79a-dc1061d0a75e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "trog"
+}

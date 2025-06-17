@@ -1,0 +1,16 @@
+{
+  "nome": "conhecimento enciclopédico - tanna-toh",
+  "descricao": "Você se torna treinado em duas perícias baseadas em Inteligência a sua escolha.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "tanna-toh"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "da003832-ac27-43f1-a791-801ae0c4ea6d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

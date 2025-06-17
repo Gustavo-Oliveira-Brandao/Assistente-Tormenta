@@ -1,0 +1,17 @@
+{
+  "nome": "mordida",
+  "nivel": 1,
+  "descricao": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "trog"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "c799539d-e98d-4334-9fcb-447c346ad6f2",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "trog"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "água no feijão",
+  "descricao": "Você gasta apenas metade da matéria-prima para testes de Ofício (cozinheiro).",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "fazendeiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "b157023f-af35-4d12-8842-436efbba7a19",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

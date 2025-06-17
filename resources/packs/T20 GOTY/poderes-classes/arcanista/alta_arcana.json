@@ -1,0 +1,17 @@
+{
+  "nome": "alta arcana",
+  "descricao": "No 20º nível, seu domínio das artes arcanas é total. O custo em PM de suas magias arcanas é reduzido à metade (após aplicar aprimoramentos e quaisquer outros efeitos que reduzam o custo).",
+  "preRequisitos": "",
+  "nivel": 20,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "arcanista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "8ec20a6a-e1a5-42c6-8df5-af19fa92d8e5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

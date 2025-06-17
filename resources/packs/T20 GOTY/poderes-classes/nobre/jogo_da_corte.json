@@ -1,0 +1,16 @@
+{
+  "nome": "jogo da corte",
+  "descricao": "Você pode gastar 1 PM para rolar novamente um teste recém realizado de Diplomacia, Intuição ou Nobreza.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "580f8a7b-0a96-495a-a993-e1603069d592",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

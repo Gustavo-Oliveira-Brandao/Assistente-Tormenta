@@ -1,0 +1,16 @@
+{
+  "nome": "manutenção eficiente",
+  "descricao": " A quantidade de engenhocas que você pode manter aumenta em +3.",
+  "preRequisitos": "Engenhoqueiro, 5º nível de inventor.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "13b6e054-ba95-4cb6-9049-c5f5f05154c0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

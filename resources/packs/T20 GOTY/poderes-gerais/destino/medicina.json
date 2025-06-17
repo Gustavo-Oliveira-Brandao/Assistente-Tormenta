@@ -1,0 +1,12 @@
+{
+  "nome": "medicina",
+  "descricao": "Você pode gastar uma ação completa para fazer um teste de Cura (CD 15) em uma criatura. Se você passar, ela recupera 1d6 PV, mais 1d6 para cada 5 pontos pelos quais o resultado do teste exceder a CD (2d6 com um resultado 20, 3d6 com um resultado 25 e assim por diante). Você só pode usar este poder uma vez por dia numa mesma criatura.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "ação completa",
+  "subEfeitos": [],
+  "key": "5737548c-621d-47e5-ace0-89d6798b3faf",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

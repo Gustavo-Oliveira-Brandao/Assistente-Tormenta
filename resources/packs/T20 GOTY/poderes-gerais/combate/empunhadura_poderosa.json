@@ -1,0 +1,12 @@
+{
+  "nome": "empunhadura poderosa",
+  "descricao": "Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, uma criatura que use uma arma feita para uma categoria de tamanho maior sofre uma penalidade de –5 nos testes de ataque).",
+  "preRequisitos": "For 17.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "f9492938-3bdd-420b-9947-5f02e6df8265",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

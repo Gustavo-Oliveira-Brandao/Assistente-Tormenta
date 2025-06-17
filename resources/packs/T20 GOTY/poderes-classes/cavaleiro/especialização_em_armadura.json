@@ -1,0 +1,16 @@
+{
+  "nome": "especialização em armadura",
+  "descricao": "Se estiver usando armadura pesada, você recebe redução de dano 5 (cumulativa com a RD fornecida por Bastião).",
+  "preRequisitos": "12º nível de cavaleiro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "e3855c1e-9b8a-4cdb-8c12-dfa139ba6b4d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

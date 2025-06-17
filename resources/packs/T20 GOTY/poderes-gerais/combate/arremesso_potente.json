@@ -1,0 +1,12 @@
+{
+  "nome": "arremesso potente",
+  "descricao": "Quando usa uma arma de arremesso, você pode usar seu modificador de Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso.",
+  "preRequisitos": "For 13, Estilo de Arremesso.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "bce1913b-34d8-40af-9776-d3c70f6698f3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

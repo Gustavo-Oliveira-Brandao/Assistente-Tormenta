@@ -1,0 +1,25 @@
+{
+  "nome": "coragem total - arsenal, khalmyr, lin-wu, valkaria",
+  "descricao": "Você é imune a efeitos de medo, mágicos ou não. Este poder não elimina fobias raciais (como o medo de altura dos minotauros).",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "arsenal"
+    },
+    {
+      "label": "khalmyr"
+    },
+    {
+      "label": "lin-wu"
+    },
+    {
+      "label": "valkaria"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "7615249e-174f-4561-837d-a2595b858847",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

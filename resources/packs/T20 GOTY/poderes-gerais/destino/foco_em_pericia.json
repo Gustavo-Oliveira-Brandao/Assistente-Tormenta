@@ -1,0 +1,12 @@
+{
+  "nome": "foco em pericia",
+  "descricao": "Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria (mas veja Foco em Arma).",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "384503f1-c252-4fcb-a19e-75e4c5fb2388",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "versátil",
+  "nivel": 1,
+  "descricao": "Você se torna treinado em duas perícias à sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral à sua escolha.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "humano"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "1d211146-7109-4502-9da2-8bb6295f449b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "humano"
+}

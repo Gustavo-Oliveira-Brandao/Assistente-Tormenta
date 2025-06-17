@@ -1,0 +1,17 @@
+{
+  "nome": "autoconfiança",
+  "descricao": "Você pode somar seu bônus de Carisma em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d350181e-d00a-49a3-aa94-6deb3a648b4d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

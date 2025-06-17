@@ -1,0 +1,16 @@
+{
+  "nome": "liberdade divina - valkaria",
+  "descricao": "Você pode gastar 2 PM para receber imunidade a efeitos de movimento por uma rodada.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "valkaria"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "52c20b49-711a-4f9a-b35c-4ade9ee38b5a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

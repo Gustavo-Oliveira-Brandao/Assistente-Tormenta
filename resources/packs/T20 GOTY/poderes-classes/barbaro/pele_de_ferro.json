@@ -1,0 +1,16 @@
+{
+  "nome": "pele de ferro",
+  "descricao": "Você recebe +4 na Defesa, mas apenas se não estiver usando armadura pesada.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "72884bf2-818b-40b3-8885-059a04880275",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

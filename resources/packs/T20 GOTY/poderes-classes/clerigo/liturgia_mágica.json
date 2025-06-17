@@ -1,0 +1,16 @@
+{
+  "nome": "liturgia mágica",
+  "descricao": "Você pode gastar uma ação de movimento para executar uma breve liturgia de sua fé. Se fizer isso, a CD para resistir à sua próxima habilidade de clérigo (desde que usada até o final de seu próximo turno) aumenta em +2.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "d40cdfdb-3526-42fa-ad4a-11637ef9730f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

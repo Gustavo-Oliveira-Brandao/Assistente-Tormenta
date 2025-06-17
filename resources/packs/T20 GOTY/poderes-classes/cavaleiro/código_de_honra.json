@@ -1,0 +1,17 @@
+{
+  "nome": "código de honra",
+  "descricao": "Cavaleiros distinguem-se de meros combatentes por seguir um código de conduta. Fazem isto para mostrar que estão acima dos mercenários e bandoleiros que infestam os campos de batalha. Você não pode atacar um oponente pelas costas (em termos de jogo, não pode se beneficiar do bônus de flanquear), caído, desprevenido ou incapaz de lutar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia. Rebaixar-se ao nível dos covardes e desesperados abala a autoconfiança que eleva o cavaleiro.",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "20b30298-d254-4933-a29f-1bb77d7efcfb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

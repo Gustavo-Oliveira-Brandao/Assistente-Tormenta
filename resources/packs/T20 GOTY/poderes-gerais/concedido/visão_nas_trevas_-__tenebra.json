@@ -1,0 +1,16 @@
+{
+  "nome": "visão nas trevas -  tenebra",
+  "descricao": "Você enxerga perfeitamente no escuro, incluindo em magias de escuridão.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "tenebra"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4b2de541-4f2d-40c1-a4a7-21f3c9199f42",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

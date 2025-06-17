@@ -1,0 +1,12 @@
+{
+  "nome": "sangue ácido",
+  "descricao": "Quando você sofre dano por um ataque corpo a corpo, o atacante sofre 1 ponto de dano de ácido. Este dano aumenta em +1 para cada outro poder da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "67e1ab97-8d6d-4d02-a87b-29f8b14090c8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

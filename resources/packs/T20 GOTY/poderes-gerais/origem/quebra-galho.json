@@ -1,0 +1,16 @@
+{
+  "nome": "quebra-galho",
+  "descricao": "Em cidades ou metrópoles, você pode comprar qualquer item não superior ou mágico por metade do custo normal. Esses itens não podem ser vendidos (são velhos, sujos, furtados...).",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "pivete"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6a49bd0b-22b1-49d9-8161-f45471d0fe32",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

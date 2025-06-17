@@ -1,0 +1,12 @@
+{
+  "nome": "trespassar",
+  "descricao": "Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance. O ataque adicional usa os mesmos valores de ataque e dano, mas os dados devem ser rolados novamente.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "c61837c8-c0aa-4633-a1cb-ad94caf1728c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "investida destruidora",
+  "descricao": "Quando faz a ação investida, você pode gastar 2 PM. Se fizer isso, causa +2d8 pontos de dano. Você deve usar esta habilidade antes de rolar o ataque.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "a5e84941-ec5d-4ea7-a66c-ebb4bbed9516",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

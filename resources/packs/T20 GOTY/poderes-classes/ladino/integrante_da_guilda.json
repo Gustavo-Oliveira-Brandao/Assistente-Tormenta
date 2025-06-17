@@ -1,0 +1,16 @@
+{
+  "nome": "integrante da guilda",
+  "descricao": "Você é membro de uma organização criminosa, desde uma pequena guilda de ladrões a uma irmandade de Valkaria. Os efeitos deste poder variam de acordo com a organização e ficam a cargo do mestre. Como regra geral, você recebe +5 em testes de Diplomacia com pessoas ligadas ao submundo e +5 em testes de Intimidação com pessoas comuns que temeriam sua organização. Além disso, tem acesso a itens e serviços roubados ou proibidos (como armas de pólvora e venenos).",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "67beef9e-a855-404e-b67f-02aad071eece",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "língua de ouro",
+  "descricao": "Você pode gastar uma ação padrão e 6 PM para gerar o efeito da magia Enfeitiçar com os aprimoramentos de sugerir ação e afetar todas as criaturas dentro do alcance (CD Car). Esta não é uma habilidade mágica e provém de sua capacidade de influenciar outras pessoas.",
+  "preRequisitos": "Língua de Prata, 8º nível de nobre.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "fa08bc8a-82d1-4b15-b070-18596a5ae8e3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

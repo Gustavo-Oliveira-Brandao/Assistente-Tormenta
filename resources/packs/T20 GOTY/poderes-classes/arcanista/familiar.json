@@ -1,0 +1,57 @@
+{
+  "nome": "familiar",
+  "descricao": "Você possui um animal de estimação mágico.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [
+    {
+      "nome": "borboleta:",
+      "descricao": "A CD dos testes de Vontade para resistir a suas magias aumenta em +1."
+    },
+    {
+      "nome": "cobra:",
+      "descricao": "A CD dos testes de Fortitude para resistir a suas magias aumenta em +1."
+    },
+    {
+      "nome": "coruja:",
+      "descricao": "Quando lança uma magia com alcance de toque, você pode pagar 1 PM para aumentar seu alcance para curto."
+    },
+    {
+      "nome": "corvo:",
+      "descricao": "Quando faz um teste de Misticismo ou Vontade, você pode pagar 1 PM para rolar dois dados e usar o melhor resultado."
+    },
+    {
+      "nome": "falcão:",
+      "descricao": "Você não pode ser surpreendido e nunca fica desprevenido."
+    },
+    {
+      "nome": "gato:",
+      "descricao": "Você recebe visão no escuro e +2 em Furtividade."
+    },
+    {
+      "nome": "lagarto:",
+      "descricao": "A CD dos testes de Reflexos para resistir a suas magias aumenta em +1."
+    },
+    {
+      "nome": "morcego:",
+      "descricao": "Você adquire percepção às cegas em alcance curto."
+    },
+    {
+      "nome": "rato:",
+      "descricao": "Você pode usar seu atributo-chave em Fortitude, no lugar de Constituição."
+    },
+    {
+      "nome": "sapo:",
+      "descricao": "Você soma seu atributo-chave ao seu total de pontos de vida (cumulativo)."
+    }
+  ],
+  "key": "67914029-f05f-4fb8-84ea-b603a936ea7e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

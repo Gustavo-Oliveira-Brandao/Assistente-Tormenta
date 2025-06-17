@@ -1,0 +1,12 @@
+{
+  "nome": "surto heróico",
+  "descricao": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "eb0fecff-5aff-4313-b86f-fb7b21da02f0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

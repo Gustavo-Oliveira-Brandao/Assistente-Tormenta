@@ -1,0 +1,12 @@
+{
+  "nome": "ataque poderoso",
+  "descricao": "Declare que está usando este poder antes de fazer um ataque corpo a corpo. Você sofre –2 no teste de ataque, mas recebe +5 na rolagem de dano.",
+  "preRequisitos": "For 13.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "2b119ec9-51b3-438e-8d12-cc3b0f15b8b6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

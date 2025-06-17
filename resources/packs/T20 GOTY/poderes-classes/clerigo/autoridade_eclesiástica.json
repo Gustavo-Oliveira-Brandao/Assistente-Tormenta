@@ -1,0 +1,16 @@
+{
+  "nome": "autoridade eclesiástica",
+  "descricao": "Você possui uma posição formal em uma igreja reconhecida pelos outros membros de sua fé. Os efeitos deste poder variam de acordo com a igreja e o deus — clérigos de Khalmyr, por exemplo, possuem autoridade como juízes no Reinado — e ficam a cargo do mestre. Como regra geral, você recebe +5 em testes de Diplomacia ou Intimidação ao lidar com devotos de sua divindade e paga metade do preço de itens alquímicos, poções e serviços em templos de sua divindade.",
+  "preRequisitos": "5º nível de clérigo, devoto de um deus maior.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "5a59d5d9-143e-400a-bec1-fde2a859b2e6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

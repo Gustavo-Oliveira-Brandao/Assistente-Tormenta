@@ -1,0 +1,16 @@
+{
+  "nome": "cura gentil - lena",
+  "descricao": "Você soma seu Carisma aos PV restaurados por suas habilidades mágicas de cura.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "lena"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2d14351f-4b73-42f1-9d92-f42744304b27",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "engenhoqueiro",
+  "descricao": "Você pode fabricar engenhocas.",
+  "preRequisitos": "Int 3, treinado em Ofício (engenhoqueiro).",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "657b0356-6987-4629-b153-5db2e2c7bb7f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

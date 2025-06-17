@@ -1,0 +1,16 @@
+{
+  "nome": "inspiração marcial",
+  "descricao": "Quando você usa Inspiração, você e seus aliados aplicam o bônus recebido em rolagens de dano (além de testes de perícia).",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bardo"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "a850f334-d4bf-449a-94cc-d43fb08cfa92",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bardo"
+}

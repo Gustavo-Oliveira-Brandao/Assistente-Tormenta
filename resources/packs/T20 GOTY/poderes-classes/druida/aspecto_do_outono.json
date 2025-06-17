@@ -1,0 +1,16 @@
+{
+  "nome": "aspecto do outono",
+  "descricao": "Você aprende e pode lançar uma magia de necromancia, arcana ou divina, de qualquer círculo que possa lançar. Além disso, pode gastar 1 PM para impor uma penalidade de –2 nos testes de resistência de todos os inimigos em alcance curto até o início do seu próximo turno.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "162b3dfe-5764-4273-aad9-8cf319f8c67d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

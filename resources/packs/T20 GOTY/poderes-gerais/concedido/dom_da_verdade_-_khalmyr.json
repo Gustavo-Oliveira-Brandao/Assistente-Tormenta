@@ -1,0 +1,16 @@
+{
+  "nome": "dom da verdade - khalmyr",
+  "descricao": "Você pode pagar 2 PM para receber +5 em testes de Intuição, e em testes de Percepção contra Enganação e Furtividade, até o fim da cena.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "khalmyr"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "06dcfed1-9e7c-49c3-876b-005f65b97cd5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

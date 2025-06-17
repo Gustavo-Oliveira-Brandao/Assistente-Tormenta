@@ -1,0 +1,16 @@
+{
+  "nome": "ímpeto",
+  "descricao": "Você pode gastar 1 PM para aumentar seu deslocamento em +6m por uma rodada.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "c5ac78cb-a1a7-42e0-8c0e-c0fe75a5c899",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

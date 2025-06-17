@@ -1,0 +1,16 @@
+{
+  "nome": "granadeiro",
+  "descricao": "Você pode arremessar itens alquímicos e poções em alcance médio. Você pode usar seu modificador de Inteligência em vez de Destreza para calcular a CD do teste de resistência desses itens.",
+  "preRequisitos": "Alquimista de Batalha.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6706b557-a7b0-4079-9ce5-d7abfce936b7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

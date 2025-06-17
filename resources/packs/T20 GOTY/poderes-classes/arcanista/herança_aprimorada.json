@@ -1,0 +1,16 @@
+{
+  "nome": "herança aprimorada",
+  "descricao": "Você recebe a herança aprimorada de sua linhagem sobrenatural.",
+  "preRequisitos": "Feiticeiro, 6º nível de arcanista.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "73d48c3f-4c35-48f4-ab7c-db040a8f2da1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

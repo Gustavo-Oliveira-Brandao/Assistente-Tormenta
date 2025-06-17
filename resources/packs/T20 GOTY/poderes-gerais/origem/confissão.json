@@ -1,0 +1,16 @@
+{
+  "nome": "confissão",
+  "descricao": "Você pode usar Intimidação para obter informação sem custo (veja Investigação).",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "capanga"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6fb0afc5-035a-40f2-a5ad-82f3b16dbaac",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "reflexos de combate",
+  "descricao": "Você ganha uma ação de movimento extra no seu primeiro turno de cada combate.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "8fbb0bb0-fba7-4f73-a79e-77a33b2c4bb0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

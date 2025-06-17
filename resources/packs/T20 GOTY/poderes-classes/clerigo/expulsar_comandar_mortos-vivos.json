@@ -1,0 +1,16 @@
+{
+  "nome": "expulsar/comandar mortos-vivos",
+  "descricao": "Você pode gastar uma ação padrão e 3 PM para expulsar (se sua divindade canaliza energia positiva) ou comandar (se canaliza energia negativa) todos os mortos-vivos em alcance curto. Mortos-vivos expulsos ficam apavorados por 1d6 rodadas. Mortos-vivos comandados não inteligentes (Int –4 ou menor) ficam sob suas ordens por um dia (até um limite de ND somados igual a seu nível +3; dar uma ordem a todos eles é uma ação de movimento) e mortos-vivos comandados inteligentes ficam fascinados por uma rodada. Mortos-vivos têm direito a um teste de Vontade (CD Sab) para evitar qualquer destes efeitos.",
+  "preRequisitos": "Canalizar Energia Positiva ou Negativa.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "d4cf3cb1-1b4b-4df6-8248-9b08cfc2bb65",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

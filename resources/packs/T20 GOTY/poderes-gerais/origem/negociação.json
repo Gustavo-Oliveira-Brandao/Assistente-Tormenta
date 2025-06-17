@@ -1,0 +1,16 @@
+{
+  "nome": "negociação",
+  "descricao": "Você pode vender itens 10% mais caro (não cumulativo com barganha).",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "mercador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "1338bc7a-6454-4f5c-8dd5-dc13cc4600dd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

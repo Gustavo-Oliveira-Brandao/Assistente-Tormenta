@@ -1,0 +1,17 @@
+{
+  "nome": "espólio",
+  "descricao": "Você recebe um item a sua escolha com preço de até T$ 2.000.",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "e9e9b469-5dfe-4c2a-a2f4-77fbdfe97352",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

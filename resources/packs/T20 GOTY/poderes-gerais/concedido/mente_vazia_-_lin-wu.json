@@ -1,0 +1,16 @@
+{
+  "nome": "mente vazia - lin-wu",
+  "descricao": "Você recebe +2 em Iniciativa, Percepção e Vontade.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "lin-wu"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "3db48e85-ba89-4be9-9fb2-373c04274b84",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

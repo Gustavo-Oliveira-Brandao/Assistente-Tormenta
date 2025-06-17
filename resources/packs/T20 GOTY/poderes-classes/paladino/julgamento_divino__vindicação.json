@@ -1,0 +1,19 @@
+{
+  "nome": "julgamento divino: vindicação",
+  "descricao": "Você pode gastar 2 PM para marcar um inimigo que tenha causado dano a você ou a seus aliados na cena. Você recebe +1 em testes de ataque e +1d8 em rolagens de dano contra o inimigo escolhido, mas sofre –5 em testes de ataque contra quaisquer outros alvos. No 5º nível, e a cada cinco níveis seguintes, você pode pagar +1 PM para aumentar o bônus de ataque em +1 e o bônus de dano em +1d8. O efeito termina caso o alvo fique inconsciente.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    },
+    {
+      "label": "julgamento divino"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "f778151a-6119-405b-b5d0-36047c96a6af",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

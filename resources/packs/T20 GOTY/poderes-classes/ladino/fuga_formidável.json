@@ -1,0 +1,16 @@
+{
+  "nome": "fuga formidável",
+  "descricao": "Você pode gastar uma ação completa e 1 PM para analisar o lugar no qual está (um castelo, um porto, a praça de uma cidade...). Até o fim da cena, você recebe +3m em seu deslocamento, +5 em testes de Acrobacia e Atletismo e ignora penalidades em movimento por terreno difícil. Porém, para receber esses bônus, todas as suas ações na rodada devem estar diretamente ligadas a fugir. Por exemplo, você só pode atacar um inimigo se ele estiver bloqueando seu caminho, agarrando-o etc. Você pode fazer ações para ajudar seus aliados, mas apenas se eles estiverem tentando escapar.",
+  "preRequisitos": "Int 13.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "ação completa",
+  "subEfeitos": [],
+  "key": "3e99754a-3e5e-48e5-82c6-789cbffb86f0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

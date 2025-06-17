@@ -1,0 +1,16 @@
+{
+  "nome": "espada solar - azgher",
+  "descricao": "Você pode gastar 1 PM para fazer uma arma corpo a corpo de corte que esteja empunhando causar +1d6 de dano por fogo até o fim da cena.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "azgher"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "82f98829-8515-4152-9766-31719832cb5b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

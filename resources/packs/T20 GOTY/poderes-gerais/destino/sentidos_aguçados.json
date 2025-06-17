@@ -1,0 +1,12 @@
+{
+  "nome": "sentidos aguçados",
+  "descricao": "Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa ver e, sempre que erra um ataque devido a camuflagem ou camuflagem total, pode rolar mais uma vez o dado da chance de falha.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "55c1b217-81a6-4cfe-89ca-2a1d53f94f27",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

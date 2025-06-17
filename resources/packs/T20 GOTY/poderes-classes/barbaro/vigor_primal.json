@@ -1,0 +1,16 @@
+{
+  "nome": "vigor primal",
+  "descricao": "Você pode gastar uma ação de movimento e uma quantidade de PM limitada por sua Constituição. Para cada PM que gastar, você recupera 1d12 pontos de vida.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "9cb2f5d6-4e19-4688-9acb-ca96a91362e2",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

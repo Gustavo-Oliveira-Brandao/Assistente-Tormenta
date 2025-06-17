@@ -1,0 +1,17 @@
+{
+  "nome": "chifres",
+  "nivel": 1,
+  "descricao": "Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "minotauro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "f33b3263-558e-495b-986e-b9679adc98ce",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "minotauro"
+}

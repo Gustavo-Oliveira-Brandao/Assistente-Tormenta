@@ -1,0 +1,16 @@
+{
+  "nome": "mestre celebrante",
+  "descricao": "O número de pessoas que você afeta com uma missa aumenta em dez vezes e os benefícios que elas recebem dobram.",
+  "preRequisitos": "qualquer poder de Missa, 12º nível de clérigo.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "9c94dadd-94cd-4652-aa96-f69d22d15d45",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "magia acelerada - aprimoramento",
+  "descricao": "Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada. Custo: +4 PM.",
+  "preRequisitos": "",
+  "categoria": "magia",
+  "tags": [],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "7af3d391-e17a-46d3-a349-5dea2bce751a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

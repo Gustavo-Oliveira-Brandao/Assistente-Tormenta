@@ -1,0 +1,19 @@
+{
+  "nome": "êxtase da loucura - aharadak, nimb",
+  "descricao": "Toda vez que uma ou mais criaturas falham em um teste de Vontade contra uma de suas habilidades mágicas, você recebe 1 PM temporário cumulativo. Você pode ganhar um máximo de PM temporários por cena desta forma igual a sua Sabedoria.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "aharadak"
+    },
+    {
+      "label": "nimb"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4ed09ca8-f390-48d5-9ffb-13ee1f53e927",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

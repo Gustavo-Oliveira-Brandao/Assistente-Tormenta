@@ -1,0 +1,17 @@
+{
+  "nome": "preço da não vida",
+  "nivel": 1,
+  "descricao": "Você precisa passar oito horas sob a luz de estrelas ou no subterrâneo. Se fizer isso, recupera PV e PM por descanso em condições normais (osteon não são afetados por condições boas ou ruins de descanso). Caso contrário, sofre os efeitos de fome.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "osteon"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "1103ded8-8622-4842-ade6-0d90196df34a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "osteon"
+}

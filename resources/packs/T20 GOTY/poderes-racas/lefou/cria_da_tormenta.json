@@ -1,0 +1,17 @@
+{
+  "nome": "cria da tormenta",
+  "nivel": 1,
+  "descricao": "Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "lefou"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4b7dddf0-1b2e-476a-a93e-cf0eb897c5d2",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lefou"
+}

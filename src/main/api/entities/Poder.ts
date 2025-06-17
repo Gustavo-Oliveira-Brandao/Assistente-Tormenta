@@ -8,9 +8,9 @@ export class Poder {
   id: number
 
   @Column({
-    type: 'integer'
+    type: 'varchar'
   })
-  key: number
+  key: string
 
   @Column({
     type: 'varchar'
@@ -42,6 +42,16 @@ export class Poder {
     type: 'varchar'
   })
   preRequisitos: string
+
+  @Column({
+    type: 'varchar'
+  })
+  publicacao: string
+
+  @Column({
+    type: 'varchar'
+  })
+  fonte: string
 
   @OneToMany(() => SubEfeito, (subEfeito) => subEfeito.poder, {
     cascade: true,

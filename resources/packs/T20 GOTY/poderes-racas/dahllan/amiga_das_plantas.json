@@ -1,0 +1,17 @@
+{
+  "nome": "amiga das plantas",
+  "nivel": 1,
+  "descricao": "Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "dahllan"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "f3365854-417d-4afb-a082-8271708b7475",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "dahllan"
+}

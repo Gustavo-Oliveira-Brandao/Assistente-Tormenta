@@ -1,0 +1,12 @@
+{
+  "nome": "bloqueio com escudo",
+  "descricao": "Quando é atingido por um ataque, habilidade ou magia, você pode gastar 1 PM para receber resistência a dano contra este ataque igual ao bônus na Defesa que seu escudo fornece. Você só pode usar este poder se estiver usando um escudo.",
+  "preRequisitos": "Estilo de Arma e Escudo.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "d1f11596-c006-412b-aa0c-6ed1a43ba689",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

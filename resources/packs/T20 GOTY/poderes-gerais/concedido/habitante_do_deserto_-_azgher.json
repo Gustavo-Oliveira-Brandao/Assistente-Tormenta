@@ -1,0 +1,16 @@
+{
+  "nome": "habitante do deserto - azgher",
+  "descricao": "Você recebe resistência a fogo 10 e pode pagar 1 PM para criar água pura e potável suficiente para um odre (ou outro recipiente pequeno).",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "azgher"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "7e27aefb-f7d6-4208-ba03-a8a409ffb871",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

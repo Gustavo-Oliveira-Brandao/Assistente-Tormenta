@@ -1,0 +1,12 @@
+{
+  "nome": "finta aprimorada",
+  "descricao": "Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento.",
+  "preRequisitos": "treinado em Enganação e Luta.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "b0209273-9c2c-4d16-8b86-09994d1722a6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

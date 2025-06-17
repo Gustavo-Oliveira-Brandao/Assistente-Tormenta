@@ -1,0 +1,16 @@
+{
+  "nome": "liderar pelo exemplo",
+  "descricao": "Você pode pagar 2 PM para servir de inspiração. Até o início de seu próximo turno, sempre que você passar em um teste de perícia, aliados em alcance curto que fizerem um teste da mesma perícia podem usar o resultado total do seu teste em vez de rolar o dado.",
+  "preRequisitos": "6º nível de nobre.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "18b9b44b-9674-4109-be96-699863911d75",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

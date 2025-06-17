@@ -1,0 +1,16 @@
+{
+  "nome": "armadura de honra",
+  "descricao": "No início de cada cena, você recebe uma quantidade de pontos de vida temporários igual a seu nível + seu Carisma. Os PV temporários duram até o final da cena.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "8d5b7466-3a0d-420f-a1c4-c9ad617bcf40",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

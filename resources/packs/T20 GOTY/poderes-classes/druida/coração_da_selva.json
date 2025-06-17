@@ -1,0 +1,16 @@
+{
+  "nome": "coração da selva",
+  "descricao": "A CD para resistir a seus efeitos de veneno aumenta em +2 e estes efeitos causam +1 de perda de vida por dado.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "7f396ce2-1b94-43d8-ba20-b83daab5516d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

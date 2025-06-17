@@ -1,0 +1,19 @@
+{
+  "nome": "julgamento divino: autoridade",
+  "descricao": "Você pode gastar 1 PM para comandar uma criatura em alcance curto. Faça um teste de Diplomacia oposto pelo teste de Vontade da criatura. Se você passar, ela obedece a um comando simples como “pare” ou “largue a arma”. Se a criatura passar, fica imune a esse efeito por um dia.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    },
+    {
+      "label": "julgamento divino"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "f01362a5-20c6-41e5-90dc-df6a9dd10b51",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

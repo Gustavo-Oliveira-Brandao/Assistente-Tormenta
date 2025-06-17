@@ -1,0 +1,17 @@
+{
+  "nome": "cria de megalokk",
+  "nivel": 1,
+  "descricao": "Você é uma criatura do tipo monstro e recebe visão no escuro.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "medusa"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "92e06222-d4b1-444c-85db-ac83dd1a81de",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "medusa"
+}

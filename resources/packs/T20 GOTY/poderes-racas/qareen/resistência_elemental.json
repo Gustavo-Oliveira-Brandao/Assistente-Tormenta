@@ -1,0 +1,17 @@
+{
+  "nome": "resistência elemental",
+  "nivel": 1,
+  "descricao": "Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas).",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "qareen"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "87c13dd9-ed88-4996-971b-5dcacedcd83b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "qareen"
+}

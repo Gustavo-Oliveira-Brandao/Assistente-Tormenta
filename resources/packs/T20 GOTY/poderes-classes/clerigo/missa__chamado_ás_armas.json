@@ -1,0 +1,19 @@
+{
+  "nome": "missa: chamado ás armas",
+  "descricao": "Os participantes recebem +1 em testes de ataque e rolagens de dano.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    },
+    {
+      "label": "missa"
+    }
+  ],
+  "tempoExecucao": "1 hora",
+  "subEfeitos": [],
+  "key": "6e6072a4-b845-4acf-90e7-7935213eeec4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

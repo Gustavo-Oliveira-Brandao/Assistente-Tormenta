@@ -1,0 +1,16 @@
+{
+  "nome": "especialização em armadura",
+  "descricao": "Você recebe redução de dano 5 se estiver usando uma armadura pesada.",
+  "preRequisitos": "12º nível de guerreiro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "guerreiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "36f8512c-94ea-44e6-a4d8-1cb71a909b3a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "guerreiro"
+}

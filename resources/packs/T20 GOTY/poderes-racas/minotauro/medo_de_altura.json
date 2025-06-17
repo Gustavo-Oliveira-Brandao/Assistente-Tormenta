@@ -1,0 +1,17 @@
+{
+  "nome": "medo de altura",
+  "nivel": 1,
+  "descricao": "Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "minotauro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "167e9ef8-ce0d-4ba8-83e8-c5d4788c67a3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "minotauro"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "esquiva sobrenatural",
+  "descricao": "No 4º nível, seus instintos ficam tão apurados que você consegue reagir ao perigo antes que seus sentidos percebam. Você nunca fica surpreendido.",
+  "preRequisitos": "",
+  "nivel": 4,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "24422b4b-4baa-4175-bff2-e3eee07d2038",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

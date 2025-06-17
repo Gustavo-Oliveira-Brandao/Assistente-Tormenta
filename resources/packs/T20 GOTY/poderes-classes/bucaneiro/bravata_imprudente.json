@@ -1,0 +1,19 @@
+{
+  "nome": "bravata imprudente",
+  "descricao": "Na primeira rodada de um combate, você pode jurar derrotar seus inimigos com uma restrição a sua escolha, como lutar com uma mão nas costas, de guarda aberta (em termos de jogo, desprevenido), de olhos vendados (cego) etc. Uma restrição só é válida se prejudicá-lo (por exemplo, lutar com uma mão nas costas só vale como restrição se você luta com duas armas). O mestre tem a palavra final sobre a validade de uma restrição. Você sofre a penalidade durante todo o combate, mas, se vencer, recebe +2 nos testes de ataque e na margem de ameaça até o fim da aventura.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bucaneiro"
+    },
+    {
+      "label": "bravata"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "c2b963d6-7548-43e3-81d0-18f65deb28f5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bucaneiro"
+}

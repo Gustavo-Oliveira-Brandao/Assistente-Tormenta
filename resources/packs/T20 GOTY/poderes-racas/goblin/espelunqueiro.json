@@ -1,0 +1,17 @@
+{
+  "nome": "espelunqueiro",
+  "nivel": 1,
+  "descricao": "Você recebe visão no escuro e deslocamento de escalada igual ao seu deslocamento terrestre.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "goblin"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d796e74e-3c45-4dc0-b3eb-2afbe4425e0a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "goblin"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "sangue de ferro - arsenal",
+  "descricao": "Você pode pagar 3 PM para receber +2 em rolagens de dano e resistência a dano 5 até o fim da cena.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "arsenal"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "f20cbed3-da53-45ed-b79a-8871ff7142a3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

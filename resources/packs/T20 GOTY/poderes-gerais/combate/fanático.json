@@ -1,0 +1,12 @@
+{
+  "nome": "fanático",
+  "descricao": "Seu deslocamento não é reduzido por usar armaduras pesadas.",
+  "preRequisitos": "12º nível de personagem, Encouraçado.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4fd940e2-df3d-41c9-938c-ce70d7a8407f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

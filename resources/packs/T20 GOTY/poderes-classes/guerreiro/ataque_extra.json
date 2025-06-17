@@ -1,0 +1,17 @@
+{
+  "nome": "ataque extra",
+  "descricao": "A partir do 6º nível, quando usa a ação agredir, você pode gastar 2 PM para realizar um ataque adicional uma vez por rodada.",
+  "preRequisitos": "",
+  "nivel": 6,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "guerreiro"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "0b12aacd-ab86-4b54-819a-fa3947d47aba",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "guerreiro"
+}

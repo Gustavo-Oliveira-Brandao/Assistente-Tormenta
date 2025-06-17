@@ -1,0 +1,17 @@
+{
+  "nome": "mau cheiro",
+  "nivel": 1,
+  "descricao": "Você pode gastar uma ação padrão e 2 PM para expelir um gás fétido. Todas as criaturas (exceto trogs) em alcance curto devem passar em um teste de Fortitude contra veneno (CD Con) ou ficarão enjoadas durante 1d6 rodadas. Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "trog"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "878cb38e-fef2-4f8b-adab-6eaa4e26656c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "trog"
+}

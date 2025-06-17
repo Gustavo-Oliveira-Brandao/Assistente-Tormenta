@@ -1,0 +1,17 @@
+{
+  "nome": "pequeno e rechoncudo",
+  "nivel": 1,
+  "descricao": "Seu tamanho é Pequeno e seu deslocamento é 6m. Você recebe +2 em Enganação e pode usar Destreza como atributo-chave de Atletismo (em vez de Força).",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "hynne"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "82c931e2-268d-4b94-b1b2-8183594b02ee",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "hynne"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "sangue ofídico - sszzaas",
+  "descricao": "Você recebe resistência a veneno +5 e a CD para resistir aos seus venenos aumenta em +2.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "sszzaas"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "a44874e9-ecc1-4522-9367-c914a5b9e0d4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

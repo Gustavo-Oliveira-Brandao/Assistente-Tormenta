@@ -1,0 +1,17 @@
+{
+  "nome": "aura sagrada",
+  "descricao": "No 3º nível, você pode gastar 1 PM para gerar uma aura com alcance curto a partir de você. A aura emite uma luz dourada e agradável, que ilumina como uma tocha. Além disso, você e os aliados dentro da aura recebem um bônus igual ao seu bônus de Carisma nos testes de resistência. Manter a aura custa 1 PM por turno.",
+  "preRequisitos": "",
+  "nivel": 3,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "paladino"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "10eb9ff6-cec6-42c5-89a7-96747da01534",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

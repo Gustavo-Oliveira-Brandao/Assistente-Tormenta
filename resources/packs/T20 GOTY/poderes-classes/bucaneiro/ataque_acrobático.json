@@ -1,0 +1,16 @@
+{
+  "nome": "ataque acrobático",
+  "descricao": "Quando se aproxima de um inimigo com um salto ou pirueta (em termos de jogo, usando Atletismo ou Acrobacia para se mover) e o ataca no mesmo turno, você recebe +2 nesse teste de ataque e na rolagem de dano.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bucaneiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "a2ef5fa1-0abe-4774-b1e4-79b857b8d3fe",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bucaneiro"
+}

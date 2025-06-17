@@ -1,0 +1,16 @@
+{
+  "nome": "confiança dos ringues",
+  "descricao": "Quando um oponente erra um ataque corpo a corpo contra você, você recebe 1 PM temporário. PM temporários desaparecem no final da cena.",
+  "preRequisitos": "10º nível de lutador",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "lutador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "bd0b9273-a956-4ae8-8472-800b78d06449",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lutador"
+}

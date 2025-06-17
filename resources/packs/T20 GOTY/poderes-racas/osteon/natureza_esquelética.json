@@ -1,0 +1,17 @@
+{
+  "nome": "natureza esquelética",
+  "nivel": 1,
+  "descricao": "Você é uma criatura do tipo morto-vivo. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos, de trevas e de veneno. Além disso, não precisa respirar, alimentar-se ou dormir. Por fim, efeitos mágicos de cura de luz causam dano a você e você não se beneficia de itens da categoria alimentação, mas dano de trevas recupera seus PV.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "osteon"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "bf3ea9d1-1df7-414f-8822-3e669e6987b3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "osteon"
+}

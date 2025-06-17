@@ -1,0 +1,12 @@
+{
+  "nome": "inventario organizado",
+  "descricao": "Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço.",
+  "preRequisitos": "Int +1.",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2888308b-c07f-43ee-a0ba-ce99594ff97b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

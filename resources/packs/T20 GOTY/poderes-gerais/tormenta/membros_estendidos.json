@@ -1,0 +1,12 @@
+{
+  "nome": "membros estendidos",
+  "descricao": "Seus braços e armas naturais são grotescamente mais longos que o normal, o que aumenta seu alcance natural para ataques corpo a corpo em +1,5m. Para cada quatro outros poderes da Tormenta que você possui, esse alcance aumenta em +1,5m.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "8a912a66-4824-4af1-b552-4ca249e25bdc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

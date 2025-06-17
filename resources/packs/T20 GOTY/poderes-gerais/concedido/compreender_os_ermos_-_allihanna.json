@@ -1,0 +1,16 @@
+{
+  "nome": "compreender os ermos - allihanna",
+  "descricao": "Você recebe +2 em Sobrevivência e pode usar Sabedoria para Adestramento (em vez de Carisma).",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "allihanna"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "561f9408-560f-421c-a0b3-b6ffba527e17",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

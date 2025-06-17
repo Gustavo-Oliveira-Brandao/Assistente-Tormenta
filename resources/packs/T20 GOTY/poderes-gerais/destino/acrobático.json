@@ -1,0 +1,12 @@
+{
+  "nome": "acrobático",
+  "descricao": "Você pode usar seu modificador de Destreza em vez de Força em testes de Atletismo. Além disso, terreno difícil não reduz seu deslocamento nem o impede de realizar investidas.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "bf21f0f1-ab61-4221-a402-79ab9534b4e8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "truque mágico",
+  "descricao": "Você aprende e pode lançar uma magia arcana de 1º círculo a sua escolha, pagando seu custo normal em PM. Seu atributo-chave para esta magia é Inteligência. Você pode escolher este poder quantas vezes quiser.",
+  "preRequisitos": "Int 13.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "09b361e2-7898-4c2c-bddb-692d0ae9d7f6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "espírito da natureza",
+  "nivel": 1,
+  "descricao": "Você é uma criatura do tipo espírito, recebe visão na penumbra e pode falar com animais livremente.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "silfide"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "7a75c8fd-e73e-421a-ae29-f8503e0b0edb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "silfide"
+}

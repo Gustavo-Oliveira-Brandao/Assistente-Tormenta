@@ -1,0 +1,16 @@
+{
+  "nome": "aura ardente",
+  "descricao": "Enquanto sua aura estiver ativa, no início de cada um de seus turnos, espíritos e mortos-vivos a sua escolha dentro dela sofrem dano igual a 5 + seu bônus de Carisma.",
+  "preRequisitos": "10° nível de paladino.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "9a33d7a9-d8dd-4e80-a763-ab402ea939d9",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

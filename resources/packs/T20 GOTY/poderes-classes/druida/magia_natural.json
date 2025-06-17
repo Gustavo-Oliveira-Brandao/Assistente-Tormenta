@@ -1,0 +1,16 @@
+{
+  "nome": "magia natural",
+  "descricao": "Em forma selvagem, você pode lançar magias e empunhar catalisadores e esotéricos.",
+  "preRequisitos": "Forma Selvagem.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "720118f6-1c11-4e35-ad06-7dd73ae7c2df",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

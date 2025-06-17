@@ -1,0 +1,16 @@
+{
+  "nome": "frutos do trabalho",
+  "descricao": "Quando passa em um teste de Ofício para Sustento, você recebe o dobro do dinheiro.",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "artesão"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6a5906db-cbe1-4f70-ab99-c3a5993f30cb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

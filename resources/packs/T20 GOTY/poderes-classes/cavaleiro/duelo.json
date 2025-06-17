@@ -1,0 +1,17 @@
+{
+  "nome": "duelo",
+  "descricao": "A partir do 2º nível, você pode gastar 2 PM para escolher um oponente em alcance curto e receber +2 em testes de ataque e rolagens de dano contra ele até o fim da cena. Se atacar outro oponente, o bônus termina. A cada cinco níveis, você pode gastar +1 PM para aumentar o bônus em +1.",
+  "preRequisitos": "",
+  "nivel": 2,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "8de6f18c-9702-43a5-b6ed-34c40e370c54",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

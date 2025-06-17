@@ -1,0 +1,16 @@
+{
+  "nome": "fortalecimento arcano",
+  "descricao": "A CD para resistir a suas magias aumenta em +1. Se você puder lançar magias de 4º círculo, em vez disso ela aumenta em +2.",
+  "preRequisitos": "5º nível de arcanista.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "290b4ead-b941-4234-be2a-ddcfd327187d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

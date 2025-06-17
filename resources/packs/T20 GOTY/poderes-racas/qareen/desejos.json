@@ -1,0 +1,17 @@
+{
+  "nome": "desejos",
+  "nivel": 1,
+  "descricao": "Se lançar uma magia que alguém tenha pedido desde seu último turno, o custo da magia diminui em –1 PM. Fazer um desejo ao qareen é uma ação livre.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "qareen"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6f763523-476d-4f38-b8c0-706f38b2e074",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "qareen"
+}

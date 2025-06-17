@@ -1,0 +1,12 @@
+{
+  "nome": "atraente",
+  "descricao": "Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você.",
+  "preRequisitos": "Car 13.",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "1e8bbb70-d939-4bad-ac4e-05eee4e7d6cf",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

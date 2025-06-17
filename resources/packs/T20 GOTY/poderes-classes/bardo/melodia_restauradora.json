@@ -1,0 +1,16 @@
+{
+  "nome": "melodia restauradora",
+  "descricao": "Quando você usa Música: Melodia Curativa, pode gastar +2 PM. Se fizer isso, escolha uma das condições a seguir: abalado, alquebrado, apavorado, atordoado, cego, confuso, enfeitiçado, esmorecido, exausto, fatigado, frustrado, pasmo ou surdo. Você remove a condição escolhida das criaturas afetadas pela música.",
+  "preRequisitos": "Música: Melodia Curativa.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bardo"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "161374cb-a4a1-463f-bbb0-6e3831622247",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bardo"
+}

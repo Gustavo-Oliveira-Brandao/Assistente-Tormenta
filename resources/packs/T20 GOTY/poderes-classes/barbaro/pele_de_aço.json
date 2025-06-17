@@ -1,0 +1,16 @@
+{
+  "nome": "pele de aço",
+  "descricao": "O bônus de Pele de Ferro aumenta para +8.",
+  "preRequisitos": "Pele de Ferro, 8º nível de bárbaro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d6777a7c-9280-4abd-a433-380cfb3f64e2",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "hibrido",
+  "nivel": 1,
+  "descricao": "Sua natureza multifacetada fez com que você aprendesse conhecimentos variados. Você se torna treinado em uma perícia a sua escolha (não precisa ser da sua classe).",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "kliren"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "51c2b191-da74-45f4-9444-0de7cdcd08e4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "kliren"
+}

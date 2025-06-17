@@ -1,0 +1,16 @@
+{
+  "nome": "zumbificar - tenebra",
+  "descricao": "Você pode gastar uma ação completa e 3 PM para reanimar o cadáver de uma criatura Pequena ou Média adjacente por um dia. O cadáver funciona como um parceiro iniciante de um tipo a sua escolha entre combatente, fortão ou guardião. Além disso, quando sofre dano, você pode sacrificar esse parceiro; se fizer isso, você sofre apenas metade do dano, mas o cadáver é destruído.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "tenebra"
+    }
+  ],
+  "tempoExecucao": "ação completa",
+  "subEfeitos": [],
+  "key": "b1da00f1-31b8-4a37-a14c-76dbdcf5f6e6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

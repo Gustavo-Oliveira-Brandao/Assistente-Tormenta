@@ -1,0 +1,17 @@
+{
+  "nome": "golpe relâmpago",
+  "descricao": "Quando usa a ação ataque para fazer um ataque desarmado, você pode gastar 1 PM para realizar um ataque desarmado adicional.",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "lutador"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "4ab73e3c-c400-49e5-bba3-11d83915620c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lutador"
+}

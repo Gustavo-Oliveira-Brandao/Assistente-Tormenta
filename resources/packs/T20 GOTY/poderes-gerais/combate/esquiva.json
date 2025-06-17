@@ -1,0 +1,12 @@
+{
+  "nome": "esquiva",
+  "descricao": "Você recebe +2 em Defesa e Reflexos.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "c061a1c2-ea76-406b-8d37-ae529d67174e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

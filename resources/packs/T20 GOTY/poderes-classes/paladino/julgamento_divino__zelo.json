@@ -1,0 +1,19 @@
+{
+  "nome": "julgamento divino: zelo",
+  "descricao": "Você pode gastar 1 PM para marcar um alvo em alcance longo. Pelo restante da cena, sempre que se mover na direção desse alvo, você se move com o dobro de seu deslocamento.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    },
+    {
+      "label": "julgamento divino"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "ea4c3a43-f180-4703-b7bf-3dd1d11a6444",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

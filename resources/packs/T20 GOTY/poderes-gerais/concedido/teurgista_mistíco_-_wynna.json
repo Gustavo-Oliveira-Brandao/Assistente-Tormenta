@@ -1,0 +1,16 @@
+{
+  "nome": "teurgista mistíco - wynna",
+  "descricao": "Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino).",
+  "preRequisitos": "habilidade de classe Magias.",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "wynna"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "da8f1dad-b0e3-4401-8f7b-3859e3bbc16a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

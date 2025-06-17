@@ -1,0 +1,16 @@
+{
+  "nome": "estandarte",
+  "descricao": "Sua flâmula torna-se um símbolo de inspiração. No início de cada cena, você e todos os aliados que possam ver seu estandarte recebem um número de PM temporários igual ao seu Carisma (mínimo 1). Esses pontos temporários desaparecem no final da cena.",
+  "preRequisitos": "Título, 14º nível de cavaleiro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4045ac54-0740-45c8-82d8-4ab911994722",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

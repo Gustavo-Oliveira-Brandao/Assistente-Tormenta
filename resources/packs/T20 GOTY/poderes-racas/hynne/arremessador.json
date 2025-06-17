@@ -1,0 +1,17 @@
+{
+  "nome": "arremessador",
+  "nivel": 1,
+  "descricao": "Quando faz um ataque à distância com uma funda ou uma arma de arremesso, seu dano aumenta em um passo.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "hynne"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "31dd1a6c-e531-4bb9-94aa-716f448e195e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "hynne"
+}

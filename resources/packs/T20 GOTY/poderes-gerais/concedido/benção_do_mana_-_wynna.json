@@ -1,0 +1,16 @@
+{
+  "nome": "benção do mana - wynna",
+  "descricao": "Você recebe +1 PM a cada nível ímpar.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "wynna"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "dde9c683-d411-479b-b5de-3818313a2067",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

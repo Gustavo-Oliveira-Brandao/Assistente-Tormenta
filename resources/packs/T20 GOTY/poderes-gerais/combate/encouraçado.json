@@ -1,0 +1,12 @@
+{
+  "nome": "encouraçado",
+  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito.",
+  "preRequisitos": "proficiência com armaduras pesadas.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "68137652-f973-453e-b82a-33137e8ad0f1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

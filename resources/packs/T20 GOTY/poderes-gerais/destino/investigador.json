@@ -1,0 +1,12 @@
+{
+  "nome": "investigador",
+  "descricao": "Você recebe +2 em Investigação e soma seu bônus de Inteligência em Intuição.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "c10fc4d2-cd99-44f9-a86b-4ec50b9eec67",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

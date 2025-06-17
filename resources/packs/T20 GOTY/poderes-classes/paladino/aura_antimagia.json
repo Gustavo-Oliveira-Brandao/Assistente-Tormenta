@@ -1,0 +1,16 @@
+{
+  "nome": "aura antimagia",
+  "descricao": "Enquanto sua aura estiver ativa, você e os aliados dentro da aura podem rolar novamente qualquer teste de resistência contra magia recém realizado.",
+  "preRequisitos": "14° nível de paladino.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "95bb4aee-1ae3-447f-b507-0ab7f5a45fb6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

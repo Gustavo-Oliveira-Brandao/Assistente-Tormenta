@@ -1,0 +1,16 @@
+{
+  "nome": "emboscar",
+  "descricao": "Você pode gastar 2 PM para realizar uma ação padrão adicional em seu turno. Você só pode usar este poder na primeira rodada de um combate.",
+  "preRequisitos": "treinado em Furtividade.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "b2d1d63e-db0d-4f87-a523-873e67e2855f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

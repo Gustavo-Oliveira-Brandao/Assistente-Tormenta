@@ -1,0 +1,16 @@
+{
+  "nome": "tornado de dor",
+  "descricao": "Você pode gastar uma ação padrão e 2 PM para desferir uma série de golpes giratórios. Faça um ataque corpo a corpo e compare-o com a Defesa de cada inimigo em seu alcance natural. Então faça uma rolagem de dano com um bônus cumulativo de +2 para cada acerto e aplique-a em cada inimigo atingido.",
+  "preRequisitos": "6º nível de guerreiro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "guerreiro"
+    }
+  ],
+  "tempoExecucao": "ação padrão",
+  "subEfeitos": [],
+  "key": "f71b5efa-b851-432c-9efc-d0bdd06b2c2c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "guerreiro"
+}

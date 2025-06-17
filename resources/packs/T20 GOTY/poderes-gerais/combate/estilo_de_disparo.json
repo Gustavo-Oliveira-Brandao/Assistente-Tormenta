@@ -1,0 +1,12 @@
+{
+  "nome": "estilo de disparo",
+  "descricao": "Se estiver usando uma arma de disparo, você soma o bônus de Destreza nas rolagens de dano.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "e00796af-8b62-40ec-9350-d4e20d9f847c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

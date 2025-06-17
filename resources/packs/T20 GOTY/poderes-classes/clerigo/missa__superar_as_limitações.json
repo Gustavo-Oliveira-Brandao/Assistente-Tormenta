@@ -1,0 +1,19 @@
+{
+  "nome": "missa: superar as limitações",
+  "descricao": "Cada participante recebe +1d6 num único teste a sua escolha e pode usá-lo mesmo após rolar o dado.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    },
+    {
+      "label": "missa"
+    }
+  ],
+  "tempoExecucao": "1 hora",
+  "subEfeitos": [],
+  "key": "7e448a20-38cc-4c20-860f-dadd971b634a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

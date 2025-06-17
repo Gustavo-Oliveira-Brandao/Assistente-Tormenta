@@ -1,0 +1,16 @@
+{
+  "nome": "síntese rápida",
+  "descricao": "Você fabrica itens alquímicos e poções em uma categoria de tempo menor. Três meses viram um mês, um mês vira uma semana, uma semana vira um dia e um dia vira uma hora (o tempo mínimo).",
+  "preRequisitos": "Alquimista Iniciado.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "9f948670-53ac-4e2f-bb56-de1012853aca",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

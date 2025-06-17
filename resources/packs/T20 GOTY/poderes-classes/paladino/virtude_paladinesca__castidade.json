@@ -1,0 +1,19 @@
+{
+  "nome": "virtude paladinesca: castidade",
+  "descricao": "Você se torna imune a efeitos de encantamento e recebe +5 em testes de Intuição para perceber blefes.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "paladino"
+    },
+    {
+      "label": "virtude paladinesca"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "f919905e-6120-4c96-8f53-3f841059ddf3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

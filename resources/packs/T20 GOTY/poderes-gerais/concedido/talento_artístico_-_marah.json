@@ -1,0 +1,16 @@
+{
+  "nome": "talento artístico - marah",
+  "descricao": "Você recebe +2 em Acrobacia, Atuação e Diplomacia.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "marah"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "a7543fc4-262b-449f-afc9-718158c7e165",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

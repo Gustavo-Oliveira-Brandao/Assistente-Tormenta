@@ -1,0 +1,16 @@
+{
+  "nome": "arqueiro",
+  "descricao": "Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria nas rolagens de dano (limitado pelo seu nível).",
+  "preRequisitos": "Sab 1.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "7df1b0d6-73e9-41aa-bb62-cf585cbbd59e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

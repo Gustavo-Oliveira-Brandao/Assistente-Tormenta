@@ -1,0 +1,16 @@
+{
+  "nome": "familiar ofídico - sszzaas",
+  "descricao": "Você recebe um familiar cobra (veja a página 38, familiares arcanos) que não conta em seu limite de parceiros.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "sszzaas"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "c91637c8-a677-42a0-8b8b-96cff21768c1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

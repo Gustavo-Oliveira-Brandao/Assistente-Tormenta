@@ -1,0 +1,17 @@
+{
+  "nome": "abençoado",
+  "descricao": "Você soma seu bônus de Carisma no seu total de pontos de mana no 1º nível. Além disso, torna-se devoto de uma divindade disponível para paladinos (Sol, Justiça, Vida, Honra, Paz, Conhecimento, Ressurreição, Ambição). Você deve obedecer às Obrigações & Restrições de seu deus, mas, em troca, ganha os Poderes Concedidos dele. Como alternativa, você pode ser um paladino do bem, lutando em prol da bondade e da justiça como um todo. Não recebe nenhum Poder Concedido, mas não precisa seguir nenhuma Obrigação & Restrição (além do Código do Herói, abaixo).",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "paladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "0d269fc6-5d00-4384-83f4-01f7679f004b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

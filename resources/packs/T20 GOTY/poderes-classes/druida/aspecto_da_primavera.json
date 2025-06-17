@@ -1,0 +1,16 @@
+{
+  "nome": "aspecto da primavera",
+  "descricao": "Você aprende e pode lançar uma magia de encantamento ou ilusão, arcana ou divina, de qualquer círculo que possa lançar. Além disso, escolha uma quantidade de magias igual ao seu Carisma (mínimo 1). O custo dessas magias é reduzido em −1 PM.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "e737d7a1-a852-4635-9e37-f6473ec56715",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

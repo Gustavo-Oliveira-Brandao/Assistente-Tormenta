@@ -1,0 +1,16 @@
+{
+  "nome": "inspirar glória",
+  "descricao": "A presença de um nobre motiva as pessoas a realizarem façanhas impressionantes. Você pode gastar 5 PM para fazer um aliado em alcance curto ganhar uma ação padrão adicional no próximo turno dele. Você só pode usar esta habilidade uma vez por cena em cada aliado.",
+  "preRequisitos": "Inspirar Confiança, 8º nível de nobre.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "4b8ddd21-eb26-4b4f-b95c-018a00a8ea12",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

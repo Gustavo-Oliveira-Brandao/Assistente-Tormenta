@@ -1,0 +1,17 @@
+{
+  "nome": "tradição de heredrimm",
+  "nivel": 1,
+  "descricao": "Você é perito nas armas tradicionais anãs, seja por ter treinado com elas, seja por usá-las como ferramentas de ofício. Para você, todos os machados, martelos, marretas e picaretas são armas simples. Você recebe +2 em ataques com essas armas.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "anao"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "671f6c2e-229b-460c-b26d-59b9006bd9fd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "anao"
+}

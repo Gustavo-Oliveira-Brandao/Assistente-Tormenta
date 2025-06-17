@@ -1,0 +1,16 @@
+{
+  "nome": "lendas e histórias",
+  "descricao": "Você é um arquivo vivo de relatos, canções e folclore. Além de outros benefícios a critério do mestre, pode gastar 1 PM para rolar novamente um teste recém realizado de Conhecimento, Misticismo, Nobreza ou Religião para informação, identificar criaturas ou identificar itens mágicos.",
+  "preRequisitos": "Int 1.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bardo"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "741b9489-0e92-41b3-983d-6a08205a0c36",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bardo"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "estilo de arma longa",
+  "descricao": "Você recebe +2 em testes de ataque com armas alongadas e pode atacar alvos adjacentes com essas armas.",
+  "preRequisitos": "For +1, treinado em Luta.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "59baedbb-c1a6-4eee-9af3-a53a64879236",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

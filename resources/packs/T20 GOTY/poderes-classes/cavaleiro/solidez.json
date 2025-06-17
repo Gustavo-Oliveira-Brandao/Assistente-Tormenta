@@ -1,0 +1,16 @@
+{
+  "nome": "solidez",
+  "descricao": "Se estiver usando um escudo, você soma o bônus na Defesa recebido pelo escudo em testes de resistência.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "9aab3ae4-8c66-471d-ac08-8a4b1a126138",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

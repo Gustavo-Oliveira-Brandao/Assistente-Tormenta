@@ -1,0 +1,16 @@
+{
+  "nome": "grito tirânico",
+  "descricao": "Quando usa a habilidade Palavras Afiadas, você pode gastar +2 PM. Se fizer isso, seus dados de dano aumentam para d8 e você atinge todos os inimigos em alcance curto.",
+  "preRequisitos": "Palavras Afiadas, 8º nível de nobre.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "8a956838-d752-479c-9379-aee04e9c5175",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

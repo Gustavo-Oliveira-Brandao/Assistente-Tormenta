@@ -1,0 +1,12 @@
+{
+  "nome": "atlético",
+  "descricao": "Você recebe +2 em Atletismo e seu deslocamento aumenta em +3m.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "fd969bd2-f230-4b59-935c-fe656c67927a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "couro rigído",
+  "nivel": 1,
+  "descricao": "Sua pele é dura como a de um touro. Você recebe +1 na Defesa.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "minotauro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "7b4b6a5f-5344-4007-8f5b-6af53e532e0f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "minotauro"
+}

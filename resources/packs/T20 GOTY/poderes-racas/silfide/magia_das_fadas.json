@@ -1,0 +1,17 @@
+{
+  "nome": "magia das fadas",
+  "nivel": 1,
+  "descricao": "Você pode lançar duas das magias a seguir (atributo-chave Carisma): Criar Ilusão, Enfeitiçar, Luz (como uma magia arcana) e Sono. Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "silfide"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6d6dadfb-5f89-4bb0-8eb7-8a6358e3efb5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "silfide"
+}

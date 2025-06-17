@@ -1,0 +1,16 @@
+{
+  "nome": "olho do falcão",
+  "descricao": "Você pode usar a habilidade Marca da Presa em criaturas em alcance longo.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "27039f58-4771-4637-a7d4-dd3be77a418d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "camuflagem",
+  "descricao": "Você pode gastar 2 PM para se esconder mesmo sem camuflagem ou cobertura disponível.",
+  "preRequisitos": "6º nível de caçador.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "3ad23dfd-aa3f-4f0c-863f-71f558eb6ae8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

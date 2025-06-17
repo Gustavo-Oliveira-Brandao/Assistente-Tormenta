@@ -1,0 +1,17 @@
+{
+  "nome": "golpe violento",
+  "descricao": "No 9º nível, você bate com muita força. Seu multiplicador de crítico com ataques desarmados aumenta em +1.",
+  "preRequisitos": "",
+  "nivel": 9,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "lutador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "adc7b51a-ddfd-4ca9-8fca-e18d5be84d87",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lutador"
+}

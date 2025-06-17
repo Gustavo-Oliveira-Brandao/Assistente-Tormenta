@@ -1,0 +1,12 @@
+{
+  "nome": "vontade de ferro",
+  "descricao": "Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "c98f3f9c-335b-4b92-a5f5-d1c73e859068",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,4 +1,4 @@
-import { JSX } from 'react'
+import { JSX, useMemo } from 'react'
 import styles from './menu-principal.module.scss'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { useDispatch, useSelector } from 'react-redux'
@@ -11,6 +11,8 @@ import { Modal } from '@renderer/templates/modal/modal'
 import { abrirModal, fecharModal } from '@renderer/store/slices/modalSlice'
 import { useCriarPersonagemDemo } from '@renderer/hooks/mutations/usePersonagemMutations'
 import { exibirPoderesDefault } from '@renderer/api/poder-service'
+import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
+import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -20,6 +22,8 @@ export const MenuPrincipal = (): JSX.Element => {
   const navigate = useNavigate()
   const criarPersonagemMutation = useCriarPersonagemDemo()
 
+  const { data: poderes } = useExibirRacasDefault()
+
   const selecionarPersonagemPorId = (id: number): void => {
     dispatch(selecionarPersonagem(id))
     navigate('/personagem')
@@ -28,6 +32,10 @@ export const MenuPrincipal = (): JSX.Element => {
   const criarPersonagem = (): void => {
     criarPersonagemMutation.mutate()
   }
+
+  const teste = useMemo(() => {
+    console.log(poderes)
+  }, [poderes])
 
   return (
     <main className={styles.mainMenu}>

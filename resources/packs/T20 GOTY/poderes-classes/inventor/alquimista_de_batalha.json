@@ -1,0 +1,16 @@
+{
+  "nome": "alquimista de batalha",
+  "descricao": "Quando usa um preparado alquímico ou poção que cause dano, você soma sua Inteligência na rolagem de dano.",
+  "preRequisitos": "Alquimista Iniciado.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "6aff7669-940b-4f49-b044-f511ef9cf0bc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

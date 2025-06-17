@@ -1,0 +1,12 @@
+{
+  "nome": "inexpugnável",
+  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência.",
+  "preRequisitos": "Encouraçado, 6º nível de personagem.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "cc04427d-b9de-4729-9b6f-2c1af0639a4a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

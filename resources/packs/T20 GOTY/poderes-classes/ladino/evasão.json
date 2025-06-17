@@ -1,0 +1,17 @@
+{
+  "nome": "evasão",
+  "descricao": "A partir do 2º nível, quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, você não sofre nenhum dano se passar. Você ainda sofre dano normal se falhar no teste de Reflexos. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver imóvel ou usando armadura pesada.",
+  "preRequisitos": "",
+  "nivel": 2,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "ladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "8a9bf41c-e445-435d-970f-e190b2bc5517",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "ladino"
+}

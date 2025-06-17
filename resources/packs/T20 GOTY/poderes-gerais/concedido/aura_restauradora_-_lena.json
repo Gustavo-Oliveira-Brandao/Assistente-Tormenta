@@ -1,0 +1,16 @@
+{
+  "nome": "aura restauradora - lena",
+  "descricao": "Você e seus aliados em alcance curto recuperam duas vezes mais pontos de vida por descanso.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "lena"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "50c20651-3383-4d02-a0b6-82c69552f21e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

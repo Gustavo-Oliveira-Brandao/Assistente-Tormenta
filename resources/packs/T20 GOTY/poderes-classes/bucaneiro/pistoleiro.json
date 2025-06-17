@@ -1,0 +1,16 @@
+{
+  "nome": "pistoleiro",
+  "descricao": "Você recebe proficiência com armas de fogo e +2 nas rolagens de dano com essas armas.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bucaneiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "193fed11-76c8-4ebf-99f4-3bb971064afe",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bucaneiro"
+}

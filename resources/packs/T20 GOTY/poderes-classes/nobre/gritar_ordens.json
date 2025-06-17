@@ -1,0 +1,17 @@
+{
+  "nome": "gritar ordens",
+  "descricao": "A partir do 3º nível, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Carisma). Até o início de seu próximo turno, todos os seus aliados em alcance curto recebem um bônus nos testes de perícia igual à quantidade de PM que você gastou.",
+  "preRequisitos": "",
+  "nivel": 3,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "nobre"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "7f86fb7b-3619-4346-a5fa-2486fbf40547",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "nobre"
+}

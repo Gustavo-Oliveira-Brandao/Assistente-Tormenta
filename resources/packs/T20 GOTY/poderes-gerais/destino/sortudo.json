@@ -1,0 +1,12 @@
+{
+  "nome": "sortudo",
+  "descricao": "Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste).",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "eed377b9-897d-4d1d-ab6b-142ed72a81f4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

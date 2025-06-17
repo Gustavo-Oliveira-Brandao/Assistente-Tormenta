@@ -1,0 +1,16 @@
+{
+  "nome": "centelha mágica - wynna",
+  "descricao": "Escolha uma magia arcana ou divina de 1º círculo. Você aprende e pode lançar essa magia.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "wynna"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "ccaecb00-85f1-4b5f-ac98-08f9c50a3c02",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

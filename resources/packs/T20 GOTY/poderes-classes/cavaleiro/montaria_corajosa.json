@@ -1,0 +1,16 @@
+{
+  "nome": "montaria corajosa",
+  "descricao": "Sua montaria concede +1d6 em rolagens de dano corpo a corpo (cumulativo com qualquer bônus que ela já forneça como parceiro).",
+  "preRequisitos": "Montaria.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "ecf9e318-c86c-4234-9c7e-8031fb6500dd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

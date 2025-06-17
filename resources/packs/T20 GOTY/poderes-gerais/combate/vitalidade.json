@@ -1,0 +1,12 @@
+{
+  "nome": "vitalidade",
+  "descricao": "Você recebe +1 PV por nível de personagem e +2 em Fortitude.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "cce4ecf0-297b-4048-8ea9-d331a76fed50",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

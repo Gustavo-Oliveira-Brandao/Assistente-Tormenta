@@ -1,0 +1,12 @@
+{
+  "nome": "visco rubro",
+  "descricao": "Você pode gastar 1 PM para cobrir sua mão com um líquido escuro, grosso e corrosivo. Até o final da cena, você recebe +1 nas rolagens de dano corpo a corpo. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "879b142e-0e72-46ae-aab6-d02a7a339f94",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "rejeição divina - aharadak",
+  "descricao": "Você recebe +5 em testes de resistência contra magias divinas.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "aharadak"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "72f6ef57-e505-4bf9-a2e9-b84b232706d6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

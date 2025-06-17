@@ -1,0 +1,17 @@
+{
+  "nome": "natureza venenosa",
+  "nivel": 1,
+  "descricao": "Você recebe resistência a veneno +5 e pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "medusa"
+    }
+  ],
+  "tempoExecucao": "acao de movimento",
+  "subEfeitos": [],
+  "key": "643c7c96-cb0e-421c-bc53-e2b485ca4966",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "medusa"
+}

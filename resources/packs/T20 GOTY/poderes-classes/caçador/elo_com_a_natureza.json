@@ -1,0 +1,16 @@
+{
+  "nome": "elo com a natureza",
+  "descricao": "Você soma sua Sabedoria em seu total de pontos de mana e aprende e pode lançar Caminhos da Natureza (atributo-chave Sabedoria).",
+  "preRequisitos": "Sab 1, 3º nível de caçador.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "b84c254a-3665-45f9-8215-fe9f17376e7e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

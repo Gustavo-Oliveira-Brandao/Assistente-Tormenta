@@ -1,0 +1,16 @@
+{
+  "nome": "mestre em escola",
+  "descricao": "Escolha uma escola de magia. O custo para lançar magias dessa escola diminui em –1 PM.",
+  "preRequisitos": "Especialista em Escola com a escola escolhida, 8º nível de arcanista.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2413690d-67a4-4041-8040-59d7f4614d32",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

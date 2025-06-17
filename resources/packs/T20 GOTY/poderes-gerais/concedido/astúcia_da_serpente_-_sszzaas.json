@@ -1,0 +1,16 @@
+{
+  "nome": "astúcia da serpente - sszzaas",
+  "descricao": "Você recebe +2 em Enganação, Furtividade e Intuição.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "sszzaas"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "7c5a587f-76a9-43cf-a630-fad45f58218a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

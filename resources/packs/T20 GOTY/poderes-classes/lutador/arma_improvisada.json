@@ -1,0 +1,16 @@
+{
+  "nome": "arma improvisada",
+  "descricao": "Ao usar armas improvisadas, você usa as estatísticas de seu ataque desarmado — bônus de ataque, margem de ameaça etc. — mas seu dano aumenta em um passo. Você pode gastar uma ação de movimento para procurar uma pedra, cadeira, garrafa ou qualquer coisa que possa usar como arma. Faça um teste de Percepção (CD 20). Se você passar, encontra uma arma improvisada. Armas improvisadas são frágeis; se você errar um ataque e o resultado do d20 for um número ímpar, a arma quebra.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "lutador"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "18051924-2ee6-4636-9ddf-fad97d9ee0c6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lutador"
+}

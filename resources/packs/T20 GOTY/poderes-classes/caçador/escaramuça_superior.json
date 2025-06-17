@@ -1,0 +1,16 @@
+{
+  "nome": "escaramuça superior",
+  "descricao": "Quando usa Escaramuça, seus bônus aumentam para +5 na Defesa e Reflexos e +1d12 em rolagens de dano.",
+  "preRequisitos": "Escaramuça, 12º nível de caçador.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "629a56f1-e9b8-4381-a294-de58252713f2",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

@@ -1,0 +1,19 @@
+{
+  "nome": "armadilha: espinhos",
+  "descricao": "A vítima sofre 6d6 pontos de dano de perfuração. Um teste de Reflexos (CD Sab) reduz o dano à metade.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    },
+    {
+      "label": "armadilha"
+    }
+  ],
+  "tempoExecucao": "ação completa",
+  "subEfeitos": [],
+  "key": "81290851-c18f-4802-ad98-d30910b811e1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

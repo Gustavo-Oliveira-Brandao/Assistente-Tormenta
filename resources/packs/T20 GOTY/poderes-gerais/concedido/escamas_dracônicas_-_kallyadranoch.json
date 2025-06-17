@@ -1,0 +1,16 @@
+{
+  "nome": "escamas dracônicas - kallyadranoch",
+  "descricao": "Você recebe +2 na Defesa e em Fortitude.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "kallyadranoch"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "227f44d6-7b00-4eac-b969-56dd886f0ab4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

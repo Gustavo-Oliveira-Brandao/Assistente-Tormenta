@@ -1,0 +1,16 @@
+{
+  "nome": "pernas do mar",
+  "descricao": "Você recebe +2 em Acrobacia e Atletismo. Além disso, quando está se equilibrando ou escalando, você não fica desprevenido e seu deslocamento não é reduzido à metade.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bucaneiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "ef82fc72-6848-470f-a331-ce486b6de050",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bucaneiro"
+}

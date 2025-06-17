@@ -1,0 +1,19 @@
+{
+  "nome": "missa: benção da vida",
+  "descricao": "Os participantes recebem pontos de vida temporários em um valor igual ao seu nível + sua Sabedoria.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "clérigo"
+    },
+    {
+      "label": "missa"
+    }
+  ],
+  "tempoExecucao": "1 hora",
+  "subEfeitos": [],
+  "key": "2a43377a-306e-4740-bdd0-f71a19337481",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

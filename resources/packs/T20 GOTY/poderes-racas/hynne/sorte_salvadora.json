@@ -1,0 +1,17 @@
+{
+  "nome": "sorte salvadora",
+  "nivel": 1,
+  "descricao": "Quando faz um teste de resistência, você pode gastar 1 PM para rolar este teste novamente.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "hynne"
+    }
+  ],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "90938581-34ba-4c77-a024-fb61a49d7172",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "hynne"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "protótipo",
+  "descricao": "Você começa o jogo com um item superior, ou com 10 itens alquímicos, com preço total de até T$ 500.",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "fca027d3-b7af-4845-a2d1-a86a99b4ac10",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

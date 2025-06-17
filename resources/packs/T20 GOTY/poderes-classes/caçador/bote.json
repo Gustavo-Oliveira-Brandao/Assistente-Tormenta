@@ -1,0 +1,16 @@
+{
+  "nome": "bote",
+  "descricao": "Se estiver empunhando duas armas e fizer uma investida, você pode pagar 1 PM para fazer um ataque adicional com sua arma secundária.",
+  "preRequisitos": "Ambidestria, 6º nível de caçador.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "caçador"
+    }
+  ],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "7fcd1663-f11c-4e1e-b7e9-9e063b671898",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "caçador"
+}

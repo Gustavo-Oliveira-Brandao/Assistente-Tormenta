@@ -1,0 +1,12 @@
+{
+  "nome": "corpo aberrante",
+  "descricao": "Crostas vermelhas em várias partes de seu corpo tornam seus ataques mais perigosos. Seu dano desarmado aumenta em um passo, mais um passo para cada quatro outros poderes da Tormenta que você possui.",
+  "preRequisitos": "outro poder da Tormenta.",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d8b41303-139e-45dc-b65e-9516ec4b3914",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

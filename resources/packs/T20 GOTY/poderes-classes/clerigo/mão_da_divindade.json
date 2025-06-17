@@ -1,0 +1,17 @@
+{
+  "nome": "mão da divindade",
+  "descricao": "No 20º nível, você pode gastar uma ação completa e 15 PM para canalizar energia divina. Ao fazer isso, você lança três magias divinas quaisquer (de qualquer círculo, incluindo magias que você não conhece), como uma ação livre e sem gastar PM (mas ainda precisa pagar outros custos). Você pode aplicar aprimoramentos, mas precisa pagar por eles. Após usar esta habilidade, você fica atordoado por 1d4 rodadas (mesmo se for imune a esta condição). Corpos mortais não foram feitos para lidar com tanto poder.",
+  "preRequisitos": "",
+  "nivel": 20,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "clérigo"
+    }
+  ],
+  "tempoExecucao": "ação completa",
+  "subEfeitos": [],
+  "key": "41ef1af5-a57e-4902-9c60-6bbba0ebb8a1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "clerigo"
+}

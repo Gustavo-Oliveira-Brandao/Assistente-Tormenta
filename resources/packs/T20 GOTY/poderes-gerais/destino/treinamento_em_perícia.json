@@ -1,0 +1,12 @@
+{
+  "nome": "treinamento em perícia",
+  "descricao": "Você se torna treinado em uma perícia a sua escolha. Você pode escolher este poder outras vezes para perícias diferentes.",
+  "preRequisitos": "",
+  "categoria": "destino",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "fcdd6e62-f57b-4f25-9b41-be938e7c5c6e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

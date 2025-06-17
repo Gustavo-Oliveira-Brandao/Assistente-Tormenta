@@ -1,0 +1,19 @@
+{
+  "nome": "postura de combate: castigo de ferro",
+  "descricao": "Sempre que um aliado adjacente sofrer um ataque corpo a corpo, você pode gastar 1 PM para fazer um ataque na criatura que o atacou.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    },
+    {
+      "label": "postura de combate"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "07db9187-7dd5-44c1-bdb8-2c1b265d877f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

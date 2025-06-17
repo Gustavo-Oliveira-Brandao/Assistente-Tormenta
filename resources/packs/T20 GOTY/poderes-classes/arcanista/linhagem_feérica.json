@@ -1,0 +1,32 @@
+{
+  "nome": "linhagem feérica",
+  "descricao": "Seu sangue foi tocado pelas fadas.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    },
+    {
+      "label": "linhagens sobrenaturais"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [
+    {
+      "nome": "Básica:",
+      "descricao": "Você se torna treinado em Enganação e aprende uma magia de 1º círculo de encantamento ou ilusão, arcana ou divina, a sua escolha."
+    },
+    {
+      "nome": "Aprimorada:",
+      "descricao": "A CD para resistir a suas magias de encantamento e ilusão aumenta em +2 e suas magias dessas escolas custam –1 PM."
+    },
+    {
+      "nome": "Superior:",
+      "descricao": "Você recebe +2 em Carisma. Se uma criatura passar no teste de resistência contra uma magia de encantamento ou ilusão lançada por você, você fica alquebrado até o final da cena."
+    }
+  ],
+  "key": "c9daa9c6-2267-4d46-afd7-bea191b35d11",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

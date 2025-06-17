@@ -1,0 +1,16 @@
+{
+  "nome": "vendedor de carcaças",
+  "descricao": "Você pode extrair recursos de criaturas em um minuto, em vez de uma hora, e recebe +5 no teste.",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "mateiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "fdbbc7a9-ce32-4885-973c-8a545a943ff4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

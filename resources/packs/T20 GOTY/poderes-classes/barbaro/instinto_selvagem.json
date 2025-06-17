@@ -1,0 +1,17 @@
+{
+  "nome": "instinto selvagem",
+  "descricao": "No 3º nível, você recebe +1 em rolagens de dano, Percepção e Reflexos. A cada seis níveis, esse bônus aumenta em +1.",
+  "nivel": 3,
+  "preRequisitos": "",
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "2d214674-4f40-4d17-ba1d-c37eaf5fd2fb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

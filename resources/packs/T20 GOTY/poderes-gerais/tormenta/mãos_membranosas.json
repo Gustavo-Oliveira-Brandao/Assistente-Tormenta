@@ -1,0 +1,12 @@
+{
+  "nome": "mãos membranosas",
+  "descricao": "Você recebe +1 em testes de Atletismo, Fortitude e agarrar. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d4e2b2bf-efc0-42c7-a73e-461bfb68bd29",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

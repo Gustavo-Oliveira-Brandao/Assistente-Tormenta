@@ -1,0 +1,16 @@
+{
+  "nome": "mestre alquimista",
+  "descricao": "Você pode fabricar poções com fórmulas que conheça de qualquer círculo.",
+  "preRequisitos": "Int 17, Sab 17, Alquimista Iniciado, 10º nível de inventor.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4aff4fc9-b5d5-4d17-bd37-2c758f349fbb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

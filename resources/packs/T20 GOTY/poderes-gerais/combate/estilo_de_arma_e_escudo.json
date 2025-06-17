@@ -1,0 +1,12 @@
+{
+  "nome": "estilo de arma e escudo",
+  "descricao": "Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2.",
+  "preRequisitos": "",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "00c2bdef-74b9-4256-8f34-004c56e028d5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "força da natureza",
+  "descricao": "No 20º nível, você diminui o custo de todas as suas magias em –2 PM e aumenta a CD delas em +2. Os bônus dobram (–4 PM e +4 na CD) se você estiver em terrenos naturais.",
+  "preRequisitos": "",
+  "categoria": "progressaoClasse",
+  "nivel": 20,
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "66218c2d-2648-4eb7-91e2-96df096a5a5a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

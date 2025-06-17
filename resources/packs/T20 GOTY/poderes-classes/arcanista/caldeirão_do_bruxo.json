@@ -1,0 +1,16 @@
+{
+  "nome": "caldeirão do bruxo",
+  "descricao": "Você pode criar poções, como se tivesse o poder geral Preparar Poção. Se tiver ambos, pode criar poções de até 5º círculo.",
+  "preRequisitos": "Bruxo, treinado em Ofício (alquimista).",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "db48ceff-5b17-4ce8-8aae-2c0b42cfd584",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "abusar dos fracos",
+  "descricao": "Quando ataca uma criatura sob efeito de uma condição de medo, seu dano aumenta em um passo.",
+  "preRequisitos": "Flagelo dos Mares.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "bucaneiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "4af62b16-7c52-439a-920f-82090c71dc78",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "bucaneiro"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "golpe cruel",
+  "descricao": "No 5º nível, você acerta onde dói. Sua margem de ameaça com ataques desarmados aumenta em +1.",
+  "preRequisitos": "",
+  "nivel": 5,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "lutador"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "d5d391a3-194f-4d55-92eb-c383970b6367",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "lutador"
+}

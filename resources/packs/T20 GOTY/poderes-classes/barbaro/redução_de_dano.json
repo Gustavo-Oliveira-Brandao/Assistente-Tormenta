@@ -1,0 +1,17 @@
+{
+  "nome": "redução de dano",
+  "descricao": "A partir do 5º nível, graças a seu vigor e força de vontade, você ignora parte de seus ferimentos. Você recebe redução de dano 2 (todo dano que sofre é reduzido em 2). A cada três níveis, sua RD aumenta em 2, até um máximo de RD 10 no 17º nível.",
+  "nivel": 5,
+  "preRequisitos": "",
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "914e02e2-9242-4f4c-b917-fac7df320a00",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

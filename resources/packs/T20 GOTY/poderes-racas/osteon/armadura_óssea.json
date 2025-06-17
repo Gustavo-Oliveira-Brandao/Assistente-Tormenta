@@ -1,0 +1,17 @@
+{
+  "nome": "armadura óssea",
+  "nivel": 1,
+  "descricao": "Você recebe redução de corte, frio e perfuração 5.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "osteon"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "1fbf9bf5-c363-45e0-9272-6ced0fb28b7e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "osteon"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "devoto fiel",
+  "descricao": "Você se torna devoto de um deus disponível para druidas (Allihanna, Megalokk ou Oceano). Ao contrário de devotos normais, você recebe dois poderes concedidos por se tornar devoto, em vez de apenas um.",
+  "preRequisitos": "",
+  "nivel": 1,
+  "categoria": "progressaoClasse",
+  "tags": [
+    {
+      "label": "druida"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "126b1308-e40a-40c9-8c13-090ceb506130",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "druida"
+}

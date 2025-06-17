@@ -1,0 +1,16 @@
+{
+  "nome": "mochileiro",
+  "descricao": "Você não sofre a penalidade de armadura e a redução de deslocamento por transportar carga pesada.",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "nômade"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "b2d6af0a-3dba-4170-abe4-f9362f57b365",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

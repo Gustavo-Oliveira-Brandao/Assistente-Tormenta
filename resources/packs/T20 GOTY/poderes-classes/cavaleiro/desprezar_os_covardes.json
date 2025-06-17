@@ -1,0 +1,16 @@
+{
+  "nome": "desprezar os covardes",
+  "descricao": "Você recebe redução de dano 5 se estiver caído, desprevenido ou flanqueado.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "df8027a8-b317-4e55-9721-a80aaf84da00",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

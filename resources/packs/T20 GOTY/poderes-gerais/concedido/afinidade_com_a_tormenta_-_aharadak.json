@@ -1,0 +1,16 @@
+{
+  "nome": "afinidade com a tormenta - aharadak",
+  "descricao": "Você recebe +10 em testes de resistência contra efeitos da Tormenta e de suas criaturas. Além disso, seu primeiro poder da Tormenta não conta para perda de Carisma.",
+  "preRequisitos": "",
+  "categoria": "concedido",
+  "tags": [
+    {
+      "label": "aharadak"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "571a675d-89a7-4f94-bb90-0592f17979f3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

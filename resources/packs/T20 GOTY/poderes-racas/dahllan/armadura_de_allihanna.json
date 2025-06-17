@@ -1,0 +1,17 @@
+{
+  "nome": "armadura de allihanna",
+  "nivel": 1,
+  "descricao": "Você pode gastar uma ação de movimento e 1 PM para transformar sua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena.",
+  "preRequisitos": "",
+  "categoria": "raca",
+  "tags": [
+    {
+      "label": "dahllan"
+    }
+  ],
+  "tempoExecucao": "acao de movimento",
+  "subEfeitos": [],
+  "key": "54746fc7-4246-484f-849e-9843841a909f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "dahllan"
+}

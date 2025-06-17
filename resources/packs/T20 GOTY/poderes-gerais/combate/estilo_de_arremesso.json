@@ -1,0 +1,12 @@
+{
+  "nome": "estilo de arremesso",
+  "descricao": "Você pode sacar armas de arremesso como uma ação livre e recebe +2 nas rolagens de dano com elas. Se também possuir o poder Saque Rápido, também recebe +2 nos testes de ataque com essas armas.",
+  "preRequisitos": "treinado em Pontaria",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "282a0f4d-fd99-43a7-87e9-0b0be05d75dc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

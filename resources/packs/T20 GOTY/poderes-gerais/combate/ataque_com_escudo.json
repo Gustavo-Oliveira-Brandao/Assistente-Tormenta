@@ -1,0 +1,12 @@
+{
+  "nome": "ataque com escudo",
+  "descricao": "Uma vez por rodada, se estiver empunhando um escudo e fizer a ação agredir, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com o escudo. Este ataque não faz você perder o bônus do escudo na Defesa.",
+  "preRequisitos": "Estilo de Arma e Escudo.",
+  "categoria": "combate",
+  "tags": [],
+  "tempoExecucao": "reação",
+  "subEfeitos": [],
+  "key": "38849244-0e06-45b3-8e33-5a07f32742bf",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

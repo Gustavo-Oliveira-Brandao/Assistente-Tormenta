@@ -1,0 +1,12 @@
+{
+  "nome": "escrever pergaminho",
+  "descricao": "Você pode usar a perícia Ofício (escriba) para fabricar pergaminhos com magias que conheça. Veja Ofício em Perícias para a regra de fabricar itens e a página Recompensas para a regra de pergaminhos. De acordo com o mestre, você pode usar outros objetos similares, como runas, tabuletas de argila etc.",
+  "preRequisitos": "",
+  "categoria": "magia",
+  "tags": [],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "cc71ab96-d08e-4567-b0a5-c5d8b8e9c5d0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

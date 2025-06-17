@@ -1,0 +1,12 @@
+{
+  "nome": "empunhadura rubra",
+  "descricao": "Você pode gastar 1 PM para cobrir suas mãos com uma carapaça rubra. Até o final da cena, você recebe +1 em testes de Luta. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
+  "preRequisitos": "",
+  "categoria": "tormenta",
+  "tags": [],
+  "tempoExecucao": "ação livre",
+  "subEfeitos": [],
+  "key": "e0cccba8-8863-4eb1-bc73-6b924f984edb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

@@ -1,0 +1,16 @@
+{
+  "nome": "rede de contatos",
+  "descricao": "Graças à influência de sua guilda, você pode usar Diplomacia para obter informação sem custo (veja Investigação).",
+  "preRequisitos": "",
+  "categoria": "origem",
+  "tags": [
+    {
+      "label": "membro da guila"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "9d8cfe4f-a354-457d-bbc7-92bb68e1a115",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "geral"
+}

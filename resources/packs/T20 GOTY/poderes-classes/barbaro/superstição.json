@@ -1,0 +1,16 @@
+{
+  "nome": "superstição",
+  "descricao": "Você odeia magia, o que faz com que seja mais resistente a ela. Você recebe resistência a magia +5.",
+  "preRequisitos": "",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "barbaro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "subEfeitos": [],
+  "key": "029de060-1b8b-46ad-9385-9d00c13dda86",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "barbaro"
+}

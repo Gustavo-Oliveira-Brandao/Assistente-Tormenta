@@ -1,5 +1,5 @@
 export type IPoderDTO = {
-  key: number
+  key: string
   nivel: number
   categoria: string
 }

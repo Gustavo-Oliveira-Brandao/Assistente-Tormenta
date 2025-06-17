@@ -4,5 +4,6 @@ import { IClasse } from '../../@types/IClasse'
 
 export const getClassesDefault = async (): Promise<IClasse[]> => {
   const pasta = path.join('packs', 'T20 GOTY', 'classes')
-  return await extrairJson(pasta)
+  const classes = (await extrairJson(pasta)) as IClasse[]
+  return classes
 }

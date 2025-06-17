@@ -1,0 +1,16 @@
+{
+  "nome": "pedra de amolar",
+  "descricao": "Você pode gastar uma ação de movimento e uma quantidade de PM a sua escolha (limitado pelo seu bônus de Inteligência) para aprimorar uma arma corpo a corpo que esteja usando. Para cada PM que gastar, você recebe +1 em rolagens de dano com a arma até o final da cena.",
+  "preRequisitos": "Armeiro.",
+  "categoria": "classe",
+  "tags": [
+    {
+      "label": "inventor"
+    }
+  ],
+  "tempoExecucao": "ação de movimento",
+  "subEfeitos": [],
+  "key": "6ad715e0-d116-4dfc-a98f-1f654152bbc7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "inventor"
+}

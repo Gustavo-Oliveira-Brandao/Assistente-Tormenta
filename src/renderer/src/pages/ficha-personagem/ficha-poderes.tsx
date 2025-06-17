@@ -63,7 +63,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
     }
 
     if (categoriaPoderes == 'CLASSE') {
-      return compendioPoderes.filter((poder) => poder.fonte && poder.fonte == filtroClassePesquisa)
+      return compendioPoderes.filter((poder) => poder.categoria && poder.categoria == 'classe' && poder.fonte && poder.fonte == filtroClassePesquisa)
     }
 
     return compendioPoderes.filter(

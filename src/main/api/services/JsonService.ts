@@ -2,26 +2,44 @@ import path from 'path'
 import * as fs from 'fs/promises'
 
 export const extrairJson = async <T>(caminhoBase: string): Promise<T[]> => {
-  let dadosJson: T[] = []
-
   try {
     const arquivosEPastas = await fs.readdir(caminhoBase)
+
+    const promises: Promise<T[] | T | null>[] = []
 
     for (const arquivo of arquivosEPastas) {
       const caminhoArquivo = path.join(caminhoBase, arquivo)
       const stats = await fs.stat(caminhoArquivo)
 
       if (stats.isDirectory()) {
-        dadosJson = dadosJson.concat(await extrairJson<T>(caminhoArquivo))
+        promises.push(extrairJson<T>(caminhoArquivo))
       } else if (stats.isFile() && arquivo.endsWith('.json')) {
-        try {
-          const conteudo = await fs.readFile(caminhoArquivo, { encoding: 'utf-8' })
-          dadosJson.push(JSON.parse(conteudo))
-        } catch {
-          throw new Error(`Erro ao ler arquivo ${arquivo}.`)
-        }
+        promises.push(
+          (async () => {
+            try {
+              const conteudo = await fs.readFile(caminhoArquivo, { encoding: 'utf-8' })
+              return JSON.parse(conteudo) as T
+            } catch (err) {
+              console.log(err)
+              return null
+            }
+          })()
+        )
       }
     }
+
+    const resultados = await Promise.all(promises)
+
+    const dadosJson: T[] = resultados.flatMap((resultado) => {
+      if (resultado == null) {
+        return []
+      } else if (Array.isArray(resultado)) {
+        return resultado
+      } else {
+        return [resultado]
+      }
+    })
+
     return dadosJson
   } catch (err) {
     console.log(err)

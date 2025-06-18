@@ -3,6 +3,7 @@ import styles from './accordion-card.module.scss'
 
 type AccordionCardProps = {
   titulo: string
+  subtitulo?: string
   header: ReactNode
   icone?: string
   children: ReactNode
@@ -18,10 +19,9 @@ export const AccordionCard = (props: AccordionCardProps): JSX.Element => {
         <div className={styles.titulo}>
           {props.numero && <p className={`${styles.valor} tormenta20Font`}>{props.numero}</p>}
           {props.icone && <img loading="lazy" src={props.icone} alt={props.titulo} />}
-          <div className={styles.nome}>
-            <h3 className="tormenta20Font" onClick={() => setEstaExpandido(!estaExpandido)}>
-              {props.titulo}
-            </h3>
+          <div className={styles.nome} onClick={() => setEstaExpandido(!estaExpandido)}>
+            <h3 className="tormenta20Font">{props.titulo}</h3>
+            {props.subtitulo && <h4 className="tormenta20Font">{props.subtitulo}</h4>}
           </div>
         </div>
         {props.header}

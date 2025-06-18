@@ -1,5 +1,6 @@
 {
   "nome": "ataque piedoso - lena, thyatis",
+  "icone": "lena",
   "descricao": "Você pode usar armas de corpo a corpo para causar dano não letal sem sofrer a penalidade de –5 no teste de ataque.",
   "preRequisitos": "",
   "categoria": "concedido",

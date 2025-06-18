@@ -174,6 +174,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 <CardPoder
                   key={poder.id}
                   poder={poder}
+                  nivel={poder.nivel}
                   exibeFonte={true}
                   onInteract={() => removerPoder.mutate(poder.id)}
                   iconeBotaoInteracao={'./icons/delete.svg'}
@@ -253,7 +254,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
         createPortal(
           <Modal
             height="90vh"
-            width="600px"
+            width="750px"
             titulo="Compêndio de poderes"
             overflow="auto"
             sidebar={

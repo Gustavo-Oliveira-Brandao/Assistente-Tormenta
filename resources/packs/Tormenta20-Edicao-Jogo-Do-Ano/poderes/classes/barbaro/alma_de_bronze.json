@@ -2,6 +2,7 @@
   "nome": "alma de bronze",
   "descricao": "Quando entra em fúria, você recebe uma quantidade de pontos de vida temporários igual a seu nível + sua Força.",
   "preRequisitos": "",
+  "icone": "furia",
   "categoria": "poder de classe",
   "tags": [
     {

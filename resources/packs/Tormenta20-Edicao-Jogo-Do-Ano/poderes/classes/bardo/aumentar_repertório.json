@@ -2,6 +2,7 @@
   "nome": "aumentar repertório",
   "descricao": "Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.",
   "preRequisitos": "",
+  "icone": "grimorio",
   "categoria": "poder de classe",
   "tags": [
     {

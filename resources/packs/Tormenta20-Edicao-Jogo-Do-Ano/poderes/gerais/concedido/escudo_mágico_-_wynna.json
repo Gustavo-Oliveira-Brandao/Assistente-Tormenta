@@ -1,5 +1,6 @@
 {
   "nome": "escudo mágico - wynna",
+  "icone": "wynna",
   "descricao": "Quando lança uma magia, você recebe um bônus na Defesa igual ao círculo da magia lançada até o início do seu próximo turno.",
   "preRequisitos": "",
   "categoria": "concedido",

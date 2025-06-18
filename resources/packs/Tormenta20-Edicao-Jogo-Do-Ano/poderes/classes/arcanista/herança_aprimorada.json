@@ -2,6 +2,7 @@
   "nome": "herança aprimorada",
   "descricao": "Você recebe a herança aprimorada de sua linhagem sobrenatural.",
   "preRequisitos": "Feiticeiro, 6º nível de arcanista.",
+  "icone": "sobrenatural",
   "categoria": "poder de classe",
   "tags": [
     {

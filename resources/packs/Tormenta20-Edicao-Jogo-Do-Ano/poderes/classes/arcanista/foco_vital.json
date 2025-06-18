@@ -2,6 +2,7 @@
   "nome": "foco vital",
   "descricao": "Se você estiver segurando seu foco e sofrer dano que o levaria a 0 PV ou menos, você fica com 1 PV e o foco perde PV igual ao valor excedente ou até ser destruído (se o foco for destruído, você sofre o dano excedente).",
   "preRequisitos": "Bruxo.",
+  "icone": "cajado",
   "categoria": "poder de classe",
   "tags": [
     {

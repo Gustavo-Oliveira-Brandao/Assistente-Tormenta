@@ -2,6 +2,7 @@
   "nome": "raio elemental",
   "descricao": "Quando usa Raio Arcano, você pode pagar 1 PM para que ele cause dano de ácido, eletricidade, fogo, frio ou trevas, a sua escolha. Se o alvo falhar no teste de Reflexos, sofre uma condição, de acordo com o tipo de dano (veja a descrição das condições na página 394). Ácido: vulnerável por 1 rodada. Eletricidade: ofuscado por 1 rodada. Fogo: fica em chamas. Frio: lento por 1 rodada. Trevas: não pode curar PV por 1 rodada.",
   "preRequisitos": "Raio Arcano.",
+  "icone": "rajada",
   "categoria": "poder de classe",
   "tags": [
     {

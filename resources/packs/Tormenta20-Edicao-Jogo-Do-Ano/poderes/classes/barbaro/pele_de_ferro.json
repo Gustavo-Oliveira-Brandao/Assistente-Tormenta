@@ -3,6 +3,7 @@
   "descricao": "Você recebe +4 na Defesa, mas apenas se não estiver usando armadura pesada.",
   "preRequisitos": "",
   "categoria": "poder de classe",
+  "icone": "musculos",
   "tags": [
     {
       "label": "barbaro"

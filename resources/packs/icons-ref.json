@@ -3,6 +3,46 @@
     "author": "Delapouite",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/delapouite/healing.html",
+        "iconName": "healing icon",
+        "newName": "cura"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/harbor-dock.html",
+        "iconName": "Harbor dock",
+        "newName": "porto"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/totem.html",
+        "iconName": "totem icon",
+        "newName": "totem"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/dunce-cap.html",
+        "iconName": "Dunce cap icon",
+        "newName": "burro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/charging-bull.html",
+        "iconName": "Charging bull icon",
+        "newName": "investida"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/red-carpet.html",
+        "iconName": "Red carpet icon",
+        "newName": "famoso"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/enrage.html",
+        "iconName": "Enrage icon",
+        "newName": "furia"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/magic-axe.html",
+        "iconName": "Magic axe icon",
+        "newName": "machado-magico"
+      },
+      {
         "url": "https://game-icons.net/1x1/delapouite/upgrade.html",
         "iconName": "upgrade",
         "newName": "upgrade"
@@ -158,6 +198,11 @@
         "newName": "lutador"
       },
       {
+        "url": "https://game-icons.net/1x1/delapouite/saber-and-pistol.html",
+        "icon": "Saber and pistol",
+        "newName": "espada-pistola"
+      },
+      {
         "url": "https://game-icons.net/1x1/delapouite/bastet.html",
         "iconName": "Bastet icon",
         "newName": "nobre"
@@ -176,6 +221,11 @@
         "url": "https://game-icons.net/1x1/delapouite/woman-elf-face.html",
         "iconName": "Female elf face icon",
         "newName": "elfo"
+      },
+      {
+        "url": "https://game-icons.net/1x1/delapouite/fencer.html",
+        "iconName": "fencer",
+        "newName": "esgrima"
       }
     ]
   },
@@ -233,6 +283,16 @@
     "author": "DarkZaitzev",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/darkzaitzev/acrobatic.html",
+        "iconName": "acrobatic",
+        "newName": "acrobatico"
+      },
+      {
+        "url": "https://game-icons.net/1x1/darkzaitzev/cauldron.html",
+        "iconName": "Cauldron icon",
+        "newName": "calderao"
+      },
+      {
         "url": "https://game-icons.net/1x1/darkzaitzev/plants-and-animals.html",
         "iconName": "Plants and animals icon",
         "newName": "druida"
@@ -245,11 +305,106 @@
     ]
   },
   {
+    "author": "HeavenlyDog",
+    "usedIcons": [
+      {
+        "url": "https://game-icons.net/1x1/heavenly-dog/defensive-wall.html",
+        "iconName": "defensive wall",
+        "newName": "muralha"
+      }
+    ]
+  },
+  {
     "author": "Lorc",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/lorc/icicles-aura.html",
+        "iconName": "icicles aura",
+        "newName": "aura"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/crossed-pistols.html",
+        "iconName": "crossed pistols",
+        "newName": "pistolas"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/poker-hand.html",
+        "iconName": "poker hand icon",
+        "newName": "aposta"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/sprint.html",
+        "iconName": "sprint icon",
+        "newName": "corrida"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/dodging.html",
+        "iconName": "Dodging icon",
+        "newName": "esquiva"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/thunder-blade.html",
+        "iconName": "Thunder blade icon",
+        "newName": "critico"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/axe-swing.html",
+        "iconName": "Axe swing icon",
+        "newName": "ataque"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/screaming.html",
+        "iconName": "Screaming icon",
+        "newName": "grito"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/muscle-up.html",
+        "iconName": "Muscles up icon",
+        "newName": "musculos"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/owl.html",
+        "iconName": "Owl icon",
+        "newName": "coruja"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/ink-swirl.html",
+        "iconName": "Ink swirl icon",
+        "newName": "tinta"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/hypersonic-bolt.html",
+        "iconName": "Hypersonic bolt icon",
+        "newName": "rajada"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/haunting.html",
+        "iconName": "Haunting icon"
+        ,"newName": "sobrenatural"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/wizard-staff.html",
+        "iconName": "Wizard staff icon",
+        "newName": "cajado"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/magic-swirl.html",
+        "iconName": "Magic swirl icon",
+        "newName": "mao-magica"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/cat.html",
+        "iconName": "Cat icon",
+        "newName": "gato"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/terror.html",
+        "iconName": "Terror icon",
+        "newName": "terror"
+      },
+      {
         "url": "https://game-icons.net/1x1/lorc/crossed-swords.html",
-        "iconName": "crossed swords",
+        "iconName": "crossed swords icon",
         "newName": "status"
       },
       {
@@ -301,6 +456,11 @@
         "url": "https://game-icons.net/1x1/lorc/minotaur.html",
         "iconName": "Minotaur icon",
         "newName": "minotauro"
+      },
+      {
+        "url": "https://game-icons.net/1x1/lorc/shadow-follower.html",
+        "iconName": "Shadow follower",
+        "newName": "misterio"
       },
       {
         "url": "https://game-icons.net/1x1/lorc/magic-shield.html",

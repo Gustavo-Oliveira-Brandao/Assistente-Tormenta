@@ -2,6 +2,7 @@
   "nome": "familiar",
   "descricao": "Você possui um animal de estimação mágico.",
   "preRequisitos": "",
+  "icone": "gato",
   "categoria": "poder de classe",
   "tags": [
     {

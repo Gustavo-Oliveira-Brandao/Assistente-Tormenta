@@ -1,5 +1,6 @@
 {
   "nome": "dom da profecia - thyatis",
+  "icone": "thyatis",
   "descricao": "Você pode lançar Augúrio. Caso aprenda novamente essa magia, seu custo diminui em -1 PM. Você também pode gastar 2 PM para receber +2 em um teste.",
   "preRequisitos": "",
   "categoria": "concedido",

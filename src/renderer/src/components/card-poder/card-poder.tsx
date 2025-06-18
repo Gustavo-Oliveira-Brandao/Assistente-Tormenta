@@ -25,8 +25,9 @@ export const CardPoder = ({
   return (
     <AccordionCard
       titulo={poder.nome ?? 'Poder sem nome'}
+      subtitulo={poder.tempoExecucao}
       inicialmenteExpandido={false}
-      icone={`./icons/arcanista.svg`}
+      icone={`./icons/${poder.icone ?? 'arcanista'}.svg`}
       numero={nivel}
       header={
         <div className={styles.interacoes}>

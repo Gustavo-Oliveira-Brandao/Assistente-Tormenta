@@ -3,6 +3,7 @@
   "descricao": "Quando usa uma arma corpo a corpo leve ou ágil, você soma sua Inteligência nas rolagens de dano (limitado pelo seu nível).",
   "preRequisitos": "Int 1.",
   "categoria": "poder de classe",
+  "icone": "esgrima",
   "tags": [
     {
       "label": "bucaneiro"

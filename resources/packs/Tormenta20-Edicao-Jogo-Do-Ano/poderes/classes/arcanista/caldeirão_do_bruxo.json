@@ -1,5 +1,6 @@
 {
   "nome": "caldeirão do bruxo",
+  "icone": "calderao",
   "descricao": "Você pode criar poções, como se tivesse o poder geral Preparar Poção. Se tiver ambos, pode criar poções de até 5º círculo.",
   "preRequisitos": "Bruxo, treinado em Ofício (alquimista).",
   "categoria": "poder de classe",

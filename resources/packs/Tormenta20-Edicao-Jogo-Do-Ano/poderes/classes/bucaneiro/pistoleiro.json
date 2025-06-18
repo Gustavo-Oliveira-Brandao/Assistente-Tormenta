@@ -3,6 +3,7 @@
   "descricao": "Você recebe proficiência com armas de fogo e +2 nas rolagens de dano com essas armas.",
   "preRequisitos": "",
   "categoria": "poder de classe",
+  "icone": "pistolas",
   "tags": [
     {
       "label": "bucaneiro"

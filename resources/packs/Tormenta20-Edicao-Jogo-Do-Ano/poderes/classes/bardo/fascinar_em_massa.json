@@ -3,6 +3,7 @@
   "descricao": "Quando usa Música: Balada Fascinante, você pode gastar +2 PM. Se fizer isso, afeta todas as criaturas a sua escolha no alcance da música (você faz um único teste de Atuação, oposto pelo teste de Vontade de cada criatura).",
   "preRequisitos": "Música: Balada Fascinante.",
   "categoria": "poder de classe",
+  "icone": "bardo",
   "tags": [
     {
       "label": "bardo"

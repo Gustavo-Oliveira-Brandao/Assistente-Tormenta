@@ -3,6 +3,7 @@
   "descricao": "Você soma seu Carisma em Iniciativa e, se for o primeiro na iniciativa, ganha uma ação padrão extra na primeira rodada.",
   "preRequisitos": "Car 1, 4º nível de bucaneiro.",
   "categoria": "poder de classe",
+  "icone": "bucaneiro",
   "tags": [
     {
       "label": "bucaneiro"

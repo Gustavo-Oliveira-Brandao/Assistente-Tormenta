@@ -1,5 +1,6 @@
 {
   "nome": "furia divina - thwor",
+  "icone": "thwor",
   "descricao": "Você pode gastar 2 PM para invocar uma fúria selvagem, tornando-se temível em combate. Até o fim da cena, você recebe +2 em testes de ataque e rolagens de dano corpo a corpo, mas não pode executar nenhuma ação que exija paciência ou concentração (como usar a perícia Furtividade ou lançar magias). Se usar este poder em conjunto com a habilidade Fúria, ela também dura uma cena (e não termina se você não atacar ou for alvo de uma ação hostil).",
   "preRequisitos": "",
   "categoria": "concedido",

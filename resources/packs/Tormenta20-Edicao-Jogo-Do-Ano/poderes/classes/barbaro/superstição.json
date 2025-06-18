@@ -3,6 +3,7 @@
   "descricao": "Você odeia magia, o que faz com que seja mais resistente a ela. Você recebe resistência a magia +5.",
   "preRequisitos": "",
   "categoria": "poder de classe",
+  "icone": "burro",
   "tags": [
     {
       "label": "barbaro"

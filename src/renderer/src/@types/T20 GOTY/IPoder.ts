@@ -7,6 +7,7 @@ export type IPoderDTO = {
 export type IPoderPersonagem = {
   id: number
   key: string
+  icone?: string
   nome: string
   tempoExecucao: string
   descricao: string

@@ -3,6 +3,7 @@
   "descricao": "Seus instintos são tão apurados que você consegue reagir ao perigo antes que seus sentidos o percebam. Você nunca fica surpreendido.",
   "preRequisitos": "",
   "categoria": "poder de classe",
+  "icone": "esquiva",
   "tags": [
     {
       "label": "barbaro"

@@ -2,6 +2,7 @@
   "nome": "fluxo de mana",
   "descricao": "Você pode manter dois efeitos sustentados ativos simultaneamente com apenas uma ação livre, pagando o custo de cada efeito separadamente.",
   "preRequisitos": "10º nível de arcanista.",
+  "icone": "mao-magica",
   "categoria": "poder de classe",
   "tags": [
     {

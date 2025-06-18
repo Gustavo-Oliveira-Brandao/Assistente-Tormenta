@@ -3,6 +3,7 @@
   "descricao": "Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade.",
   "preRequisitos": "Mago, treinado em Ofício (escriba).",
   "categoria": "poder de classe",
+  "icone": "tinta",
   "tags": [
     {
       "label": "arcanista"

@@ -1,5 +1,6 @@
 {
   "nome": "arcano de batalha",
+  "icone": "machado-magico",
   "descricao": "Quando lança uma magia, você soma seu atributo-chave na rolagem de dano.",
   "preRequisitos": "",
   "categoria": "poder de classe",

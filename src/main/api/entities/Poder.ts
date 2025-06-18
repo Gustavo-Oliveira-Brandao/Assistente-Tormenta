@@ -13,6 +13,12 @@ export class Poder {
   key: string
 
   @Column({
+    type: 'varchar',
+    nullable: true
+  })
+  icone?: string
+
+  @Column({
     type: 'varchar'
   })
   nome: string

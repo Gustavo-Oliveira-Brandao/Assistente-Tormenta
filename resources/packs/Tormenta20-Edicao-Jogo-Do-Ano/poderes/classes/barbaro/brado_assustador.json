@@ -3,6 +3,7 @@
   "descricao": "Você pode gastar uma ação de movimento e 1 PM para soltar um berro feroz. Todos os inimigos em alcance curto ficam vulneráveis até o fim da cena.",
   "preRequisitos": "treinado em Intimidação. Medo.",
   "categoria": "poder de classe",
+  "icone": "grito",
   "tags": [
     {
       "label": "barbaro"

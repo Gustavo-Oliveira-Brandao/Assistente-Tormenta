@@ -3,6 +3,7 @@
   "descricao": "No 5º nível, escolha entre Bastião ou Montaria.",
   "preRequisitos": "",
   "nivel": 5,
+  "icone": "cavaleiro",
   "categoria": "habilidade de classe",
   "tags": [
     {

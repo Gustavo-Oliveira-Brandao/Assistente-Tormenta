@@ -2,6 +2,7 @@
   "nome": "linhagem dracônica",
   "descricao": "Um de seus antepassados foi um majestoso dragão. Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio.",
   "preRequisitos": "",
+  "icone": "kallyadranoch",
   "categoria": "poder de classe",
   "tags": [
     {

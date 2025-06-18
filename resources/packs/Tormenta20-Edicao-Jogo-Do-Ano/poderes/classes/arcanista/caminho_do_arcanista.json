@@ -1,6 +1,7 @@
 {
   "nome": "caminho do arcanista",
   "descricao": "A magia é um poder incrível, capaz de alterar a realidade. Esse poder tem fontes distintas, e cada uma opera conforme suas próprias regras. Escolha uma das opções a seguir. Uma vez feita, essa escolha não pode ser mudada.",
+  "icone": "arcanista",
   "preRequisitos": "",
   "nivel": 1,
   "categoria": "habilidade de classe",

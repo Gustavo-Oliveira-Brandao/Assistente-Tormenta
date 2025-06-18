@@ -2,6 +2,7 @@
   "nome": "música: Canção Assustadora",
   "descricao": "Faça um teste de Atuação oposto pelo teste de Vontade de cada criatura a sua escolha dentro do alcance (você faz um único teste). Alvos que falhem ficam abalados até o fim da cena. Alvos que passem ficam imunes a este efeito por um dia.",
   "preRequisitos": "",
+  "icone": "bardo",
   "categoria": "poder de classe",
   "tags": [
     {

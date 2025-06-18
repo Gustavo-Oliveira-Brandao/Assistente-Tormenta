@@ -3,6 +3,7 @@
   "descricao": "O bônus de Pele de Ferro aumenta para +8.",
   "preRequisitos": "Pele de Ferro, 8º nível de bárbaro.",
   "categoria": "poder de classe",
+  "icone": "musculos",
   "tags": [
     {
       "label": "barbaro"

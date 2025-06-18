@@ -1,5 +1,6 @@
 {
   "nome": "kiai divino - lin-wu",
+  "icone": "lin-wu",
   "descricao": "Uma vez por rodada, quando faz um ataque corpo a corpo, você pode pagar 3 PM. Se acertar o ataque, causa dano máximo, sem necessidade de rolar dados.",
   "preRequisitos": "",
   "categoria": "concedido",

@@ -21,6 +21,8 @@
         margin-right: 15px;
         margin-left: 5px;
         font-size: 18px;
+        width: 16px;
+        text-align: center;
       }
 
       img {
@@ -30,11 +32,18 @@
       }
 
       .nome {
+        cursor: pointer;
         h3 {
           font-size: 17px;
-          cursor: pointer;
         }
-        h3:hover {
+        h4 {
+          font-size: 14px;
+          margin-top: 2px;
+          color: variables.$text-color;
+        }
+      }
+      .nome:hover {
+        h3 {
           color: variables.$highlight-color;
         }
       }

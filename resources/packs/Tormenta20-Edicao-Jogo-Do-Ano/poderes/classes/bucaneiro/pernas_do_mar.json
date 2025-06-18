@@ -3,6 +3,7 @@
   "descricao": "Você recebe +2 em Acrobacia e Atletismo. Além disso, quando está se equilibrando ou escalando, você não fica desprevenido e seu deslocamento não é reduzido à metade.",
   "preRequisitos": "",
   "categoria": "poder de classe",
+  "icone": "musculos",
   "tags": [
     {
       "label": "bucaneiro"

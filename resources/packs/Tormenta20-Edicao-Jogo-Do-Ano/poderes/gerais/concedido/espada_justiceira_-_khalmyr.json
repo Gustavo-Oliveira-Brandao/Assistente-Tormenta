@@ -1,5 +1,6 @@
 {
   "nome": "espada justiceira - khalmyr",
+  "icone": "khalmyr",
   "descricao": "Você pode gastar 1 PM para encantar sua espada (ou outra arma corpo a corpo de corte que esteja empunhando). Ela tem seu dano aumentado em um passo até o fim da cena.",
   "preRequisitos": "",
   "categoria": "concedido",

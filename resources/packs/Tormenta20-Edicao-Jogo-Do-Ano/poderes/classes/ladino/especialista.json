@@ -3,7 +3,7 @@
   "nivel": 1,
   "descricao": "Escolha um número de perícias treinadas igual ao seu bônus de Inteligência (mínimo 1). Ao fazer um teste de uma dessas perícias, você pode gastar 1 PM para dobrar seu bônus de treinamento. Você não pode usar esta habilidade em testes de ataque.",
   "preRequisitos": "",
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "ladino"

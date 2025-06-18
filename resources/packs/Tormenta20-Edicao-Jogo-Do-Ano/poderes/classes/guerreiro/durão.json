@@ -3,7 +3,7 @@
   "descricao": "A partir do 3º nível, sua rijeza muscular permite que você absorva ferimentos. Sempre que sofre dano, você pode gastar 3 PM para reduzir esse dano à metade.",
   "preRequisitos": "",
   "nivel": 3,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "guerreiro"

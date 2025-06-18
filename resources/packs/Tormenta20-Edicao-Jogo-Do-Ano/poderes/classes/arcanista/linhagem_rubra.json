@@ -2,7 +2,7 @@
   "nome": "linhagem rubra",
   "descricao": "Seu sangue foi corrompido pela Tormenta.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

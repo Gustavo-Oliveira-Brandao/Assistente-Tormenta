@@ -2,7 +2,7 @@
   "nome": "especialização em arma",
   "descricao": "Escolha uma arma. Você recebe +2 em rolagens de dano com essa arma. Você pode escolher este poder outras vezes para armas diferentes.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

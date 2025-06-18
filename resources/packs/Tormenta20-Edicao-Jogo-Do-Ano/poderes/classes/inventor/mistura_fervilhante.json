@@ -2,7 +2,7 @@
   "nome": "mistura fervilhante",
   "descricao": "Quando usa um item alquímico ou poção, você pode gastar 2 PM para dobrar a área de efeito dele.",
   "preRequisitos": "Alquimista Iniciado, 5º nível de inventor",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

@@ -2,7 +2,7 @@
   "nome": "contramágica aprimorada",
   "descricao": "Uma vez por rodada, você pode fazer uma contramágica como uma reação.",
   "preRequisitos": "Dissipar Magia.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

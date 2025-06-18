@@ -2,7 +2,7 @@
   "nome": "desprezar os covardes",
   "descricao": "Você recebe redução de dano 5 se estiver caído, desprevenido ou flanqueado.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "cavaleiro"

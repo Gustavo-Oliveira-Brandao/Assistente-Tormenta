@@ -2,7 +2,7 @@
   "nome": "ferreiro",
   "descricao": "Quando usa uma arma corpo a corpo feita por você mesmo, o dano dela aumenta em um passo.",
   "preRequisitos": "Armeiro, 5º nível de inventor.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

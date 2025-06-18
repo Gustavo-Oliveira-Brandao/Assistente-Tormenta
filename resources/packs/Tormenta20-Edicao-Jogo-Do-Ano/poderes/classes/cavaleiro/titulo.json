@@ -2,7 +2,7 @@
   "nome": "titulo",
   "descricao": "Você adquire um título de nobreza. Converse com o mestre para definir os benefícios exatos de seu título. Como regra geral, no início de cada aventura você recebe 20 TO por nível de cavaleiro (rendimentos dos impostos) ou a ajuda de um parceiro veterano (um membro de sua corte).",
   "preRequisitos": "Autoridade Feudal, 10º nível de cavaleiro, ter conquistado terras ou realizado um serviço para um nobre que possa se tornar seu suserano.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "cavaleiro"

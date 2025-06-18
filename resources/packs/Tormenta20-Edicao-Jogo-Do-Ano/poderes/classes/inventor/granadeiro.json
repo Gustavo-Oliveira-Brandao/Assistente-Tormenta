@@ -2,7 +2,7 @@
   "nome": "granadeiro",
   "descricao": "Você pode arremessar itens alquímicos e poções em alcance médio. Você pode usar seu modificador de Inteligência em vez de Destreza para calcular a CD do teste de resistência desses itens.",
   "preRequisitos": "Alquimista de Batalha.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

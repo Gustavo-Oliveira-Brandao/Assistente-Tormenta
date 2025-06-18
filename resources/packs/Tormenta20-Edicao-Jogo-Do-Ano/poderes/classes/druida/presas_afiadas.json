@@ -2,7 +2,7 @@
   "nome": "presas afiadas",
   "descricao": "A margem de ameaça de suas armas naturais aumenta em +2.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "druida"

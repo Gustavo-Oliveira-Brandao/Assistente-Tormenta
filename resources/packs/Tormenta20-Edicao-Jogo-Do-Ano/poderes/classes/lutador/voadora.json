@@ -2,7 +2,7 @@
   "nome": "voadora",
   "descricao": "Quando faz uma investida desarmada, você pode gastar 2 PM. Se fizer isso, recebe +1d6 no dano por cada 3m que se deslocar até chegar ao oponente, limitado pelo seu nível.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

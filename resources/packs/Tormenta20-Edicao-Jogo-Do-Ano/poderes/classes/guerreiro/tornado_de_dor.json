@@ -2,7 +2,7 @@
   "nome": "tornado de dor",
   "descricao": "Você pode gastar uma ação padrão e 2 PM para desferir uma série de golpes giratórios. Faça um ataque corpo a corpo e compare-o com a Defesa de cada inimigo em seu alcance natural. Então faça uma rolagem de dano com um bônus cumulativo de +2 para cada acerto e aplique-a em cada inimigo atingido.",
   "preRequisitos": "6º nível de guerreiro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

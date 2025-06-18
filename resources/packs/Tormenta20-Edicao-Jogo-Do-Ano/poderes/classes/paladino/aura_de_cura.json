@@ -2,7 +2,7 @@
   "nome": "aura de cura",
   "descricao": "Enquanto sua aura estiver ativa, no início de seus turnos, você e os aliados a sua escolha dentro dela curam um número de PV igual a 5 + seu bônus de Carisma.",
   "preRequisitos": "6° nível de paladino",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

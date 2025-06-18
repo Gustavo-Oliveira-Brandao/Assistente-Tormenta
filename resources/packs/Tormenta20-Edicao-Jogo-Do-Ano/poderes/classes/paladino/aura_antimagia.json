@@ -2,7 +2,7 @@
   "nome": "aura antimagia",
   "descricao": "Enquanto sua aura estiver ativa, você e os aliados dentro da aura podem rolar novamente qualquer teste de resistência contra magia recém realizado.",
   "preRequisitos": "14° nível de paladino.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

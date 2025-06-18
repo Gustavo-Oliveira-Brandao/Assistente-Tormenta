@@ -8,6 +8,6 @@ export const getClassesDefault = async (): Promise<IClasse[]> => {
   const caminhoBase = app.isPackaged
     ? path.join(process.resourcesPath, pasta)
     : path.join(app.getAppPath(), 'resources', pasta)
-  const classes = (await extrairJson(caminhoBase)) as IClasse[]
+  const classes = await extrairJson<IClasse>(caminhoBase)
   return classes
 }

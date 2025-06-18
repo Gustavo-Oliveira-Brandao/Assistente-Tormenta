@@ -3,7 +3,7 @@
   "descricao": "No 5º nível, escolha entre égide sagrada e montaria sagrada. Uma vez feita, esta escolha não pode ser mudada.",
   "preRequisitos": "",
   "nivel": 5,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "paladino"

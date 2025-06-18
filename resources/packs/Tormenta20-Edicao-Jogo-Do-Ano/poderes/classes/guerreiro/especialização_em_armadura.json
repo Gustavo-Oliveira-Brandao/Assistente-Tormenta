@@ -2,7 +2,7 @@
   "nome": "especialização em armadura",
   "descricao": "Você recebe redução de dano 5 se estiver usando uma armadura pesada.",
   "preRequisitos": "12º nível de guerreiro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

@@ -2,7 +2,7 @@
   "nome": "síntese rápida",
   "descricao": "Você fabrica itens alquímicos e poções em uma categoria de tempo menor. Três meses viram um mês, um mês vira uma semana, uma semana vira um dia e um dia vira uma hora (o tempo mínimo).",
   "preRequisitos": "Alquimista Iniciado.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

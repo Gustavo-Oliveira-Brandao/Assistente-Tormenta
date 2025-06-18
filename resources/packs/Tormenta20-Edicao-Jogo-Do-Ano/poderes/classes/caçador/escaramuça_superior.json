@@ -2,7 +2,7 @@
   "nome": "escaramuça superior",
   "descricao": "Quando usa Escaramuça, seus bônus aumentam para +5 na Defesa e Reflexos e +1d12 em rolagens de dano.",
   "preRequisitos": "Escaramuça, 12º nível de caçador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "caçador"

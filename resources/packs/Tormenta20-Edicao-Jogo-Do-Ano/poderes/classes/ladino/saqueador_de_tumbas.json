@@ -2,7 +2,7 @@
   "nome": "saqueador de tumbas",
   "descricao": "Você recebe +5 em testes de Investigação para encontrar armadilhas e em testes de Reflexos para evitá-las. Além disso, gasta uma ação padrão para desabilitar mecanismos, em vez de 1d4 rodadas (veja a perícia Ladinagem).",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

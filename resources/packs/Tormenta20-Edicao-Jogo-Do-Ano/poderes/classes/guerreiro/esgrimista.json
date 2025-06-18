@@ -2,7 +2,7 @@
   "nome": "esgrimista",
   "descricao": "Quando usa uma arma corpo a corpo leve ou ágil, você soma sua Inteligência em rolagens de dano (limitado pelo seu nível).",
   "preRequisitos": "Int 1.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

@@ -2,7 +2,7 @@
   "nome": "grudar o cano",
   "descricao": "Quando faz um ataque à distância com uma arma de fogo contra um oponente adjacente, você não sofre a penalidade de –5 no teste de ataque e aumenta seu dano em um passo.",
   "preRequisitos": "treinado em Luta, Pistoleiro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "bucaneiro"

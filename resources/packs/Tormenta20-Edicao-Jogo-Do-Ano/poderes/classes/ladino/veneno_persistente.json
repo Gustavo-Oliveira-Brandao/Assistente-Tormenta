@@ -2,7 +2,7 @@
   "nome": "veneno persistente",
   "descricao": "Quando aplica uma dose de veneno a uma arma, este veneno dura por três ataques (em vez de apenas um).",
   "preRequisitos": "Veneno Potente, 8º nível de ladino.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

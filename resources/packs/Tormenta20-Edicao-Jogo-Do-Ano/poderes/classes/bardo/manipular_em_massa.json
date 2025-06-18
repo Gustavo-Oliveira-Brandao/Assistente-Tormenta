@@ -2,7 +2,7 @@
   "nome": "manipular em massa",
   "descricao": "Quando usa Manipular, você pode gastar +2 PM. Se fizer isso, afeta todas as criaturas a sua escolha em alcance curto.",
   "preRequisitos": "Fascinar em Massa, Manipular, 10º nível de bardo.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "bardo"

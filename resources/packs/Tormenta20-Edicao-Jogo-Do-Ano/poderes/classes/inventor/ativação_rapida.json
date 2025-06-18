@@ -2,7 +2,7 @@
   "nome": "ativação rapida",
   "descricao": "Ao ativar uma engenhoca com ação padrão, você pode pagar 2 PM para ativá-la com uma ação de movimento, em vez disto.",
   "preRequisitos": "Engenhoqueiro, 7º nível de inventor.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

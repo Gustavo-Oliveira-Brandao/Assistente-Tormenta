@@ -2,7 +2,7 @@
   "nome": "presença majestosa",
   "descricao": "Você impõe respeito a todos. A habilidade Presença Aristocrática passa a funcionar contra criaturas com Int 1 ou mais (passa a afetar até mesmo animais, embora continue não funcionando contra criaturas sem valor de Inteligência). Além disso, você pode usá-la mais de uma vez contra uma mesma criatura na mesma cena.",
   "preRequisitos": "Presença Aristocrática, 16º nível de nobre.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "nobre"

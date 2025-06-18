@@ -2,7 +2,7 @@
   "nome": "braços calejados",
   "descricao": "Se você não estiver usando armadura, soma seu bônus de Força na Defesa, limitado pelo seu nível.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

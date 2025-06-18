@@ -2,7 +2,7 @@
   "nome": "velocidade ladina",
   "descricao": "Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno.",
   "preRequisitos": "treinado em Iniciativa.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

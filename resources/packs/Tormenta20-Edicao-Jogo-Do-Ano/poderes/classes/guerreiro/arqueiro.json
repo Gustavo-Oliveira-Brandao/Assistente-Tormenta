@@ -2,7 +2,7 @@
   "nome": "arqueiro",
   "descricao": "Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria em rolagens de dano (limitado pelo seu nível).",
   "preRequisitos": "Sab 1.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

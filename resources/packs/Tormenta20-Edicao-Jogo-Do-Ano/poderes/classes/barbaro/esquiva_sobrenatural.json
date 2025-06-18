@@ -2,7 +2,7 @@
   "nome": "esquiva sobrenatural",
   "descricao": "Seus instintos são tão apurados que você consegue reagir ao perigo antes que seus sentidos o percebam. Você nunca fica surpreendido.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"

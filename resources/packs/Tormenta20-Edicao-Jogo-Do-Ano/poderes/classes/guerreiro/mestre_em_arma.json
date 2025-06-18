@@ -2,7 +2,7 @@
   "nome": "mestre em arma",
   "descricao": "Escolha uma arma. Com esta arma, seu dano aumenta em um passo e você pode gastar 2 PM para rolar novamente um teste de ataque recém realizado.",
   "preRequisitos": "Especialização em Arma com a arma escolhida, 12º nível de guerreiro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

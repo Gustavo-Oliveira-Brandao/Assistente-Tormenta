@@ -17,8 +17,6 @@ import { createPortal } from 'react-dom'
 import { abrirModal } from '@renderer/store/slices/modalSlice'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
-import { DeepPartial } from 'typeorm'
-import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
@@ -37,22 +35,6 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
   const dispatch = useDispatch()
   const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
 
-  const poderesProgressaoEmClasses = useMemo(() => {
-    if (!compendioPoderes) {
-      return []
-    }
-
-    return personagem.classes.flatMap((classe) => {
-      const poderes: DeepPartial<IPoderPersonagem>[] = []
-      for (const poder of compendioPoderes) {
-        if (poder.fonte == classe.nome && poder.nivel && poder.nivel <= classe.nivel) {
-          poderes.push(poder)
-        }
-      }
-      return poderes
-    })
-  }, [compendioPoderes, personagem])
-
   const poderesFiltrados = useMemo(() => {
     if (!compendioPoderes) {
       return []
@@ -62,8 +44,31 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
       return compendioPoderes.filter((poder) => poder.fonte && poder.fonte == filtroRacaPesquisa)
     }
 
-    if (categoriaPoderes == 'CLASSE') {
-      return compendioPoderes.filter((poder) => poder.categoria && poder.categoria == 'classe' && poder.fonte && poder.fonte == filtroClassePesquisa)
+    if (categoriaPoderes == 'HABILIDADES_CLASSE') {
+      return compendioPoderes
+        .filter(
+          (poder) =>
+            poder.categoria &&
+            poder.categoria == 'habilidade de classe' &&
+            poder.fonte &&
+            poder.fonte == filtroClassePesquisa
+        )
+        .sort((a, b) => {
+          if (!a.nivel || !b.nivel) {
+            return 0
+          }
+          return a.nivel - b.nivel
+        })
+    }
+
+    if (categoriaPoderes == 'PODERES_CLASSE') {
+      return compendioPoderes.filter(
+        (poder) =>
+          poder.categoria &&
+          poder.categoria == 'poder de classe' &&
+          poder.fonte &&
+          poder.fonte == filtroClassePesquisa
+      )
     }
 
     return compendioPoderes.filter(
@@ -78,13 +83,37 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
     <section className={styles.secaoPoderes}>
       <div className={styles.poderes}>
         <SecaoFicha
-          header={<h2 className="tormenta20Font">Poderes de classe por progressão</h2>}
+          header={
+            <>
+              <h2 className="tormenta20Font">Habilidades de classe</h2>
+              <BotaoModular
+                css="minimalista"
+                texto="Buscar"
+                cor="transparente"
+                font="tormenta20Font"
+                onClickEvent={() => {
+                  setCategoriaPoderes('HABILIDADES_CLASSE')
+                  dispatch(abrirModal(`PODERES_LOJA`))
+                }}
+                icone="./icons/busca.svg"
+              />
+            </>
+          }
           css="poderes"
         >
-          {poderesProgressaoEmClasses &&
-            poderesProgressaoEmClasses.map((poder) => (
-              <CardPoder key={poder.id} poder={poder} nivel={poder.nivel} exibeFonte={true} />
-            ))}
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'habilidade de classe')
+              .map((poder) => (
+                <CardPoder
+                  key={poder.id}
+                  poder={poder}
+                  nivel={poder.nivel}
+                  exibeFonte={true}
+                  onInteract={() => removerPoder.mutate(poder.id)}
+                  iconeBotaoInteracao={'./icons/delete.svg'}
+                />
+              ))}
         </SecaoFicha>
         <SecaoFicha
           header={
@@ -96,7 +125,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
-                  setCategoriaPoderes('CLASSE')
+                  setCategoriaPoderes('PODERES_CLASSE')
                   dispatch(abrirModal(`PODERES_LOJA`))
                 }}
                 icone="./icons/busca.svg"
@@ -107,7 +136,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
         >
           {poderesPersonagem &&
             poderesPersonagem
-              .filter((poder) => poder.categoria == 'classe')
+              .filter((poder) => poder.categoria == 'poder de classe')
               .map((poder) => (
                 <CardPoder
                   key={poder.id}
@@ -224,7 +253,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
         createPortal(
           <Modal
             height="90vh"
-            width="550px"
+            width="600px"
             titulo="Compêndio de poderes"
             overflow="auto"
             sidebar={
@@ -240,7 +269,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     className="tormenta20Font select"
                     onChange={(e) => setCategoriaPoderes(e.target.value)}
                   >
-                    <option value={'CLASSE'}>Classe</option>
+                    <option value={'HABILIDADES_CLASSE'}>Habilidades de classe</option>
+                    <option value={'PODERES_CLASSE'}>Poderes de classe</option>
                     <option value={'RACA'}>Raça</option>
                     {opcoesCategoriasPoderesGerais.map((opcao) => (
                       <option key={opcao} value={opcao}>
@@ -249,7 +279,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     ))}
                   </select>
                 </div>
-                {categoriaPoderes == 'CLASSE' && (
+                {(categoriaPoderes == 'PODERES_CLASSE' ||
+                  categoriaPoderes == 'HABILIDADES_CLASSE') && (
                   <div className={styles.filtro}>
                     <label htmlFor="filtroClasse" className="tormenta20Font label">
                       Classe
@@ -298,6 +329,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 key={poder.key}
                 poder={poder}
                 iconeBotaoInteracao="./icons/adicao.svg"
+                nivel={categoriaPoderes == 'HABILIDADES_CLASSE' ? poder.nivel : undefined}
                 onInteract={() =>
                   adicionarPoder.mutate({
                     poder: {

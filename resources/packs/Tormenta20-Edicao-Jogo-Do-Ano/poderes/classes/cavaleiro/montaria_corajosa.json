@@ -2,7 +2,7 @@
   "nome": "montaria corajosa",
   "descricao": "Sua montaria concede +1d6 em rolagens de dano corpo a corpo (cumulativo com qualquer bônus que ela já forneça como parceiro).",
   "preRequisitos": "Montaria.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "cavaleiro"

@@ -2,7 +2,7 @@
   "nome": "tinta do mago",
   "descricao": "Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade.",
   "preRequisitos": "Mago, treinado em Ofício (escriba).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

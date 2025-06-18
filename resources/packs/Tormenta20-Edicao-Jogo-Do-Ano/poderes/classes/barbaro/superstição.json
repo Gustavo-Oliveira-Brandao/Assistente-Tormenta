@@ -2,7 +2,7 @@
   "nome": "superstição",
   "descricao": "Você odeia magia, o que faz com que seja mais resistente a ela. Você recebe resistência a magia +5.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"

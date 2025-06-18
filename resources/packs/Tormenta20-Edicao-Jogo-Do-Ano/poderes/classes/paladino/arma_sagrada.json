@@ -2,7 +2,7 @@
   "nome": "arma sagrada",
   "descricao": "Se estiver empunhando a arma preferida de seu deus, o dado de dano que você rola por Golpe Divino aumenta para d12.",
   "preRequisitos": "devoto de uma divindade (exceto Vida e Paz).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

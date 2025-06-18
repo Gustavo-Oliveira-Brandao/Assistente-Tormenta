@@ -2,7 +2,7 @@
   "nome": "alquimista iniciado",
   "descricao": "Você recebe um livro de fórmulas e pode fabricar poções com fórmulas que conheça de 1º e 2º círculos.",
   "preRequisitos": "Int 1, Sab 1, treinado em Ofício (alquimista).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

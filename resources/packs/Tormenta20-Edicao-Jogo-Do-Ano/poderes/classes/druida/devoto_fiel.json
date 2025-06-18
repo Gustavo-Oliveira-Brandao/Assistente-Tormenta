@@ -3,7 +3,7 @@
   "descricao": "Você se torna devoto de um deus disponível para druidas (Allihanna, Megalokk ou Oceano). Ao contrário de devotos normais, você recebe dois poderes concedidos por se tornar devoto, em vez de apenas um.",
   "preRequisitos": "",
   "nivel": 1,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "druida"

@@ -3,7 +3,7 @@
   "descricao": "A partir do 8º nível, você consegue lutar contra diversos inimigos como se fossem apenas um. Você não pode ser flanqueado.",
   "preRequisitos": "",
   "nivel": 8,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "ladino"

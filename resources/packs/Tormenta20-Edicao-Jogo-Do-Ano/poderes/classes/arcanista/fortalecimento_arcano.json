@@ -2,7 +2,7 @@
   "nome": "fortalecimento arcano",
   "descricao": "A CD para resistir a suas magias aumenta em +1. Se você puder lançar magias de 4º círculo, em vez disso ela aumenta em +2.",
   "preRequisitos": "5º nível de arcanista.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

@@ -2,7 +2,7 @@
   "nome": "companheiro animal",
   "descricao": "Você recebe um companheiro animal.",
   "preRequisitos": "Car 1, treinado em Adestramento.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "caçador"

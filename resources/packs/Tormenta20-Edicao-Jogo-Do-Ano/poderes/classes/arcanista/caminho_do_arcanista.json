@@ -3,7 +3,7 @@
   "descricao": "A magia é um poder incrível, capaz de alterar a realidade. Esse poder tem fontes distintas, e cada uma opera conforme suas próprias regras. Escolha uma das opções a seguir. Uma vez feita, essa escolha não pode ser mudada.",
   "preRequisitos": "",
   "nivel": 1,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "arcanista"

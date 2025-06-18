@@ -2,7 +2,7 @@
   "nome": "mestre alquimista",
   "descricao": "Você pode fabricar poções com fórmulas que conheça de qualquer círculo.",
   "preRequisitos": "Int 17, Sab 17, Alquimista Iniciado, 10º nível de inventor.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

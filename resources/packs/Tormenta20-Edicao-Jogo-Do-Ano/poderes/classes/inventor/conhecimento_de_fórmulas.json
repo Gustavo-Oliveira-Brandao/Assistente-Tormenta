@@ -2,7 +2,7 @@
   "nome": "conhecimento de fórmulas",
   "descricao": "Você aprende três fórmulas de quaisquer círculos que possa aprender. Você pode escolher este poder quantas vezes quiser.",
   "preRequisitos": "Alquimista Iniciado.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

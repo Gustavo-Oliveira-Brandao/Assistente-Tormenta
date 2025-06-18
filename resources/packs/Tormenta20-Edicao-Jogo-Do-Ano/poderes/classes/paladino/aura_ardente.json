@@ -2,7 +2,7 @@
   "nome": "aura ardente",
   "descricao": "Enquanto sua aura estiver ativa, no início de cada um de seus turnos, espíritos e mortos-vivos a sua escolha dentro dela sofrem dano igual a 5 + seu bônus de Carisma.",
   "preRequisitos": "10° nível de paladino.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

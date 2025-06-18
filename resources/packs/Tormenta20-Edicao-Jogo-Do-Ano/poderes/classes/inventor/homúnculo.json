@@ -2,7 +2,7 @@
   "nome": "homúnculo",
   "descricao": "Você possui um homúnculo, uma criatura Minúscula feita de alquimia. Vocês podem se comunicar telepaticamente em alcance médio e ele obedece a suas ordens, mas ainda está limitado ao que uma criatura de seu tamanho e forma pode fazer. Um homúnculo funciona como um aliado que fornece +2 em testes de uma perícia a sua escolha. Você pode sofrer 1d6 pontos de dano para seu homúnculo assumir uma forma capaz de protegê-lo. Se fizer isso, ele fornece +2 de Defesa até o fim da cena.",
   "preRequisitos": "Alquimista Iniciado.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

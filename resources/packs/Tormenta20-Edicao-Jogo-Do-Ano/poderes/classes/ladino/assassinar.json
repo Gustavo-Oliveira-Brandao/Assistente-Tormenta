@@ -2,7 +2,7 @@
   "nome": "assassinar",
   "descricao": "Você pode gastar uma ação de movimento e 3 PM para analisar uma criatura em alcance curto. Se desferir um ataque furtivo contra essa criatura até o fim do seu próximo turno, você dobra os dados de dano de seu ataque furtivo. Pré-requisito. 5º nível de ladino.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

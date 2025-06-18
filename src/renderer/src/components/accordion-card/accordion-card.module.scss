@@ -1,7 +1,7 @@
 @use '@renderer/assets/variables.scss';
 
 .card {
-  background-color: variables.$primary-color;
+  background-color: variables.$background-color;
   border: 1px solid variables.$secondary-color;
   padding: 10px;
   width: 100%;
@@ -18,7 +18,6 @@
       align-items: center;
 
       .valor {
-        color: variables.$special-text-color;
         margin-right: 15px;
         margin-left: 5px;
         font-size: 18px;

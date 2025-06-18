@@ -2,7 +2,7 @@
   "nome": "invenção potente",
   "descricao": "Quando usa um item fabricado por você mesmo, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ele.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

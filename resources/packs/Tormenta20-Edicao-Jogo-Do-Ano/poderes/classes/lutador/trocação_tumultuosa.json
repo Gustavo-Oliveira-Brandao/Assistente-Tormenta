@@ -2,7 +2,7 @@
   "nome": "trocação tumultuosa",
   "descricao": "Quando usa a ação atacar para fazer um ataque desarmado, você pode gastar 2 PM para atingir todas as criaturas adjacentes — incluindo aliados! Você deve usar este poder antes de rolar o ataque e compara o resultado de seu teste contra a Defesa de cada criatura.",
   "preRequisitos": "Trocação, 8º nível de lutador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

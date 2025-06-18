@@ -2,7 +2,7 @@
   "nome": "elo com a natureza",
   "descricao": "Você soma sua Sabedoria em seu total de pontos de mana e aprende e pode lançar Caminhos da Natureza (atributo-chave Sabedoria).",
   "preRequisitos": "Sab 1, 3º nível de caçador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "caçador"

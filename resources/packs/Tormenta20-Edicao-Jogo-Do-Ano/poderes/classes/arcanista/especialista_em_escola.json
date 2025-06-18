@@ -2,7 +2,7 @@
   "nome": "especialista em escola",
   "descricao": "Escolha uma escola de magia. A CD para resistir a suas magias dessa escola aumenta em +2.",
   "preRequisitos": "Bruxo ou Mago.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

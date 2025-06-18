@@ -2,7 +2,7 @@
   "nome": "escapista",
   "descricao": "Você recebe +5 em testes de Acrobacia para escapar e em testes para resistir a efeitos que restrinjam seu movimento, como a manobra agarrar e a magia Amarras Etéreas.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

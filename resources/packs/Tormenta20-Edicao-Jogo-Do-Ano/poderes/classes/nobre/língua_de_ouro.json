@@ -2,7 +2,7 @@
   "nome": "língua de ouro",
   "descricao": "Você pode gastar uma ação padrão e 6 PM para gerar o efeito da magia Enfeitiçar com os aprimoramentos de sugerir ação e afetar todas as criaturas dentro do alcance (CD Car). Esta não é uma habilidade mágica e provém de sua capacidade de influenciar outras pessoas.",
   "preRequisitos": "Língua de Prata, 8º nível de nobre.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "nobre"

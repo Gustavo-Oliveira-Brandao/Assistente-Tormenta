@@ -2,7 +2,7 @@
   "nome": "herança superior",
   "descricao": "Você recebe a herança superior de sua linhagem sobrenatural.",
   "preRequisitos": "Herança Aprimorada, 11º nível de arcanista.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

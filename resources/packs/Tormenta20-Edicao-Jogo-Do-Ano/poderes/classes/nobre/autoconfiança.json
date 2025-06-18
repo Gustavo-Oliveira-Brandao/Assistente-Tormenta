@@ -3,7 +3,7 @@
   "descricao": "Você pode somar seu bônus de Carisma em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
   "preRequisitos": "",
   "nivel": 1,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "nobre"

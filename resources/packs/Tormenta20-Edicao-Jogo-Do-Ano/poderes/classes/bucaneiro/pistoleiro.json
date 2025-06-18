@@ -2,7 +2,7 @@
   "nome": "pistoleiro",
   "descricao": "Você recebe proficiência com armas de fogo e +2 nas rolagens de dano com essas armas.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "bucaneiro"

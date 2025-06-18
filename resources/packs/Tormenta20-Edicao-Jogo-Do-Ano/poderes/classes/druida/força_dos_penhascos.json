@@ -2,7 +2,7 @@
   "nome": "força dos penhascos",
   "descricao": "Você recebe +2 em Fortitude. Quando sofre dano enquanto em contato com o solo ou uma superfície de pedra, pode gastar uma quantidade de PM limitada por sua Sabedoria. Para cada PM gasto, reduz esse dano em 10.",
   "preRequisitos": "4º nível de druida.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "druida"

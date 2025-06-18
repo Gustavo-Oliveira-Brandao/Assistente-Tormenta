@@ -2,7 +2,7 @@
   "nome": "crítico brutal",
   "descricao": "Seu multiplicador de crítico com armas corpo a corpo e de arremesso aumenta em +1. Por exemplo, seu multiplicador com um machado de batalha (normalmente x3) será x4.",
   "preRequisitos": "6º nível de bárbaro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"

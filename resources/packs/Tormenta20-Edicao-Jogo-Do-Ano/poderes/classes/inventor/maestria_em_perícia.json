@@ -2,7 +2,7 @@
   "nome": "maestria em perícia",
   "descricao": "Escolha um número de perícias treinadas igual ao seu bônus de Inteligência. Com essas perícias, você pode gastar 1 PM para escolher 10 em qualquer situação, exceto testes de ataque.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

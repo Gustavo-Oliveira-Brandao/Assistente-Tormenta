@@ -2,7 +2,7 @@
   "nome": "gatuno",
   "descricao": "Você recebe +2 em Atletismo. Quando escala, avança seu deslocamento normal, em vez de metade dele.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

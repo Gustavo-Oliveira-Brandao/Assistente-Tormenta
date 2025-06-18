@@ -2,7 +2,7 @@
   "nome": "chutes e palavrões",
   "descricao": "Uma vez por rodada, você pode pagar 1 PM para repetir um teste de Ofício (engenhoqueiro) recém realizado para ativar uma engenhoca.",
   "preRequisitos": "Engenhoqueiro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

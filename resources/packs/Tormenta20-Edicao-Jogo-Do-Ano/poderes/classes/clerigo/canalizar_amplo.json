@@ -2,7 +2,7 @@
   "nome": "canalizar amplo",
   "descricao": "Quando você usa a habilidade Canalizar Energia, pode gastar +2 PM para aumentar o alcance dela para médio.",
   "preRequisitos": "Canalizar Energia Positiva ou Negativa.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "clérigo"

@@ -2,7 +2,7 @@
   "nome": "companheiro animal",
   "descricao": "Você recebe um companheiro animal. Veja o quadro para detalhes. Você pode escolher este poder quantas vezes quiser, mas deve escolher companheiros diferentes e ainda está sujeito ao limite de parceiros que pode ter.",
   "preRequisitos": "Car 1, treinado em Adestramento.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "druida"

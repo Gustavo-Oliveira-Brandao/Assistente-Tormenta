@@ -2,7 +2,7 @@
   "nome": "pele de aço",
   "descricao": "O bônus de Pele de Ferro aumenta para +8.",
   "preRequisitos": "Pele de Ferro, 8º nível de bárbaro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"

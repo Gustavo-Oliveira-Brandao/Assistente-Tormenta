@@ -2,7 +2,7 @@
   "nome": "arcano de batalha",
   "descricao": "Quando lança uma magia, você soma seu atributo-chave na rolagem de dano.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

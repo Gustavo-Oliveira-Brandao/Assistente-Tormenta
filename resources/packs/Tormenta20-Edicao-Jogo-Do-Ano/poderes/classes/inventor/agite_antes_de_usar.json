@@ -2,7 +2,7 @@
   "nome": "agite antes de usar",
   "descricao": "Quando usa um preparado alquímico que cause dano, você pode gastar uma quantidade de PM a sua escolha (limitado por sua Inteligência). Para cada PM que gastar, o item causa um dado extra de dano do mesmo tipo.",
   "preRequisitos": "treinado em Ofício (alquimista).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

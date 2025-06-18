@@ -8,6 +8,6 @@ export const getRacasDefault = async (): Promise<IRaca[]> => {
   const caminhoBase = app.isPackaged
     ? path.join(process.resourcesPath, pasta)
     : path.join(app.getAppPath(), 'resources', pasta)
-  const racas = (await extrairJson(caminhoBase)) as IRaca[]
+  const racas = await extrairJson<IRaca>(caminhoBase)
   return racas
 }

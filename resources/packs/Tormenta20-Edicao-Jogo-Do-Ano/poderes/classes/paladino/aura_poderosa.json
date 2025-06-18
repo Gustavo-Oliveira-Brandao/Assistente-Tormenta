@@ -2,7 +2,7 @@
   "nome": "aura poderosa",
   "descricao": "O alcance da sua aura aumenta para médio.",
   "preRequisitos": "6° nível de paladino.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

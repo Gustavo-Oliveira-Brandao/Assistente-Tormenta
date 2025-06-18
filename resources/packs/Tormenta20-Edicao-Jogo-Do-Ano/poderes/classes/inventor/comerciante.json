@@ -3,7 +3,7 @@
   "descricao": "No 3º nível, você pode vender itens 10% mais caro (não cumulativo com barganha).",
   "preRequisitos": "",
   "nivel": 3,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "inventor"

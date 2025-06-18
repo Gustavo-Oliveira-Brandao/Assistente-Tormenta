@@ -2,7 +2,7 @@
   "nome": "missa: benção da vida",
   "descricao": "Os participantes recebem pontos de vida temporários em um valor igual ao seu nível + sua Sabedoria.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "clérigo"

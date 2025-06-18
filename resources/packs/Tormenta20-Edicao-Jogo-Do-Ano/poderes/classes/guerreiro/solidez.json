@@ -2,7 +2,7 @@
   "nome": "solidez",
   "descricao": "Se estiver usando um escudo, você aplica o bônus na Defesa recebido pelo escudo em testes de resistência.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "guerreiro"

@@ -3,7 +3,7 @@
   "descricao": "Quando usa a ação ataque para fazer um ataque desarmado, você pode gastar 1 PM para realizar um ataque desarmado adicional.",
   "preRequisitos": "",
   "nivel": 1,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "lutador"

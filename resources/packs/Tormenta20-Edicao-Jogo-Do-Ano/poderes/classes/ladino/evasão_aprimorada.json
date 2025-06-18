@@ -3,7 +3,7 @@
   "descricao": "No 10º nível, quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar e sofre apenas metade do dano se falhar. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver imóvel ou usando armadura pesada.",
   "preRequisitos": "",
   "nivel": 10,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "ladino"

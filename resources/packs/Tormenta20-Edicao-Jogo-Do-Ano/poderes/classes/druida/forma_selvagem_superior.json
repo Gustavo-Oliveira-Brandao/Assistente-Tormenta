@@ -2,7 +2,7 @@
   "nome": "forma selvagem superior",
   "descricao": "Quando usa Forma Selvagem, você pode gastar 10 PM ao todo para assumir uma forma superior.",
   "preRequisitos": "Forma Selvagem Aprimorada, 12º nível de druida.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "druida"

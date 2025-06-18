@@ -2,7 +2,7 @@
   "nome": "oportunismo",
   "descricao": "Você recebe +2 em testes de ataque contra inimigos que já sofreram dano desde seu último turno.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

@@ -3,7 +3,7 @@
   "descricao": "No 3º nível, você recebe +1 em rolagens de dano, Percepção e Reflexos. A cada seis níveis, esse bônus aumenta em +1.",
   "nivel": 3,
   "preRequisitos": "",
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "barbaro"

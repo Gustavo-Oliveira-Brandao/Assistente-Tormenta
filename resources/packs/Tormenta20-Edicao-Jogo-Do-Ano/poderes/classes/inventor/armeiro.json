@@ -2,7 +2,7 @@
   "nome": "armeiro",
   "descricao": "Você recebe proficiência com armas marciais corpo a corpo. Quando empunha uma arma corpo a corpo, pode usar sua Inteligência em vez de Força nos testes de ataque e rolagens de dano.",
   "preRequisitos": "treinado em Luta e Ofício (armeiro).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

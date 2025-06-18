@@ -2,7 +2,7 @@
   "nome": "alquimista de batalha",
   "descricao": "Quando usa um preparado alquímico ou poção que cause dano, você soma sua Inteligência na rolagem de dano.",
   "preRequisitos": "Alquimista Iniciado.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

@@ -2,7 +2,7 @@
   "nome": "camuflagem",
   "descricao": "Você pode gastar 2 PM para se esconder mesmo sem camuflagem ou cobertura disponível.",
   "preRequisitos": "6º nível de caçador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "caçador"

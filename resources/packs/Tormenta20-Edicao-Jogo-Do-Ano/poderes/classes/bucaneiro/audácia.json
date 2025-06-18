@@ -2,7 +2,7 @@
   "nome": "audácia",
   "descricao": "Quando faz um teste de perícia, você pode gastar 2 PM para somar seu Carisma no teste. Você não pode usar esta habilidade em testes de ataque.",
   "preRequisitos": "",
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "nivel": 1,
   "tags": [
     {

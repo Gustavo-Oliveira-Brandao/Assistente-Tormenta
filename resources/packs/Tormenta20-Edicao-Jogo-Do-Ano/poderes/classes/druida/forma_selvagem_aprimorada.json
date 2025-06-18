@@ -2,7 +2,7 @@
   "nome": "forma selvagem aprimorada",
   "descricao": "Quando usa Forma Selvagem, você pode gastar 6 PM ao todo para assumir uma forma aprimorada.",
   "preRequisitos": "Forma Selvagem, 6º nível de druida.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "druida"

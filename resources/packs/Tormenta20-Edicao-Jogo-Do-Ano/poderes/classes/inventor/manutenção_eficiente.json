@@ -2,7 +2,7 @@
   "nome": "manutenção eficiente",
   "descricao": " A quantidade de engenhocas que você pode manter aumenta em +3.",
   "preRequisitos": "Engenhoqueiro, 5º nível de inventor.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

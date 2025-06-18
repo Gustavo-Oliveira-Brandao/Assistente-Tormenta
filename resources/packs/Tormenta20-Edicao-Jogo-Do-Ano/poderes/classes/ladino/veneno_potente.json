@@ -2,7 +2,7 @@
   "nome": "veneno potente",
   "descricao": "A CD para resistir aos venenos que você usa aumenta em +2 e esses venenos causam +1 ponto de dano por dado de dano.",
   "preRequisitos": "treinado em Ofício (alquimia).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

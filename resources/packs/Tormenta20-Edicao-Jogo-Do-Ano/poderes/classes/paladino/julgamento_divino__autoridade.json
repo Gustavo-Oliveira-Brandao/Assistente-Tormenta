@@ -2,7 +2,7 @@
   "nome": "julgamento divino: autoridade",
   "descricao": "Você pode gastar 1 PM para comandar uma criatura em alcance curto. Faça um teste de Diplomacia oposto pelo teste de Vontade da criatura. Se você passar, ela obedece a um comando simples como “pare” ou “largue a arma”. Se a criatura passar, fica imune a esse efeito por um dia.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

@@ -6,6 +6,7 @@ import path from 'path'
 import { extrairJson } from './JsonService'
 import { Magia } from '../entities/Magia'
 import { IMagiaDTO } from '../../@types/IMagiaDTO'
+import { app } from 'electron'
 
 const MagiaRepository = SQLiteDataSource.getRepository(Magia)
 const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
@@ -103,8 +104,11 @@ export const deleteMagia = async (_id: number): Promise<void> => {
 }
 
 export const getMagiasDefault = async (): Promise<DeepPartial<Magia>[]> => {
-  const pasta = path.join('packs', 'T20 GOTY', 'magias')
-  const result = (await extrairJson(pasta)) as DeepPartial<Magia>[]
+  const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'magias')
+  const caminhoBase = app.isPackaged
+    ? path.join(process.resourcesPath, pasta)
+    : path.join(app.getAppPath(), 'resources', pasta)
+  const result = await extrairJson<DeepPartial<Magia>>(caminhoBase)
   const magias = result
   return magias
 }

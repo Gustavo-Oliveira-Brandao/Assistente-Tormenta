@@ -2,7 +2,7 @@
   "nome": "blindagem",
   "descricao": "Você pode usar sua Inteligência na Defesa quando usa armadura pesada. Se fizer isso, não pode somar sua Destreza, mesmo que outras habilidades ou efeitos permitam isso.",
   "preRequisitos": "Couraceiro, 8º nível de inventor.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

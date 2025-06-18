@@ -2,7 +2,7 @@
   "nome": "lingua dos becos",
   "descricao": "Você pode pagar 1 PM para usar seu bônus de Força no lugar de Carisma em um teste de perícia baseada em Carisma.",
   "preRequisitos": "For 13, treinado em Intimidação.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

@@ -2,7 +2,7 @@
   "nome": "engenhoqueiro",
   "descricao": "Você pode fabricar engenhocas.",
   "preRequisitos": "Int 3, treinado em Ofício (engenhoqueiro).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

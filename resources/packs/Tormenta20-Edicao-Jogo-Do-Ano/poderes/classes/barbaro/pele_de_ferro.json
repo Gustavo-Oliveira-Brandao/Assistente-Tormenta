@@ -2,7 +2,7 @@
   "nome": "pele de ferro",
   "descricao": "Você recebe +4 na Defesa, mas apenas se não estiver usando armadura pesada.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"

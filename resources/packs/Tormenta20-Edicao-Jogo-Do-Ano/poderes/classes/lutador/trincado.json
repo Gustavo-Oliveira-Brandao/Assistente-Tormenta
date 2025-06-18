@@ -2,7 +2,7 @@
   "nome": "trincado",
   "descricao": "Esculpido à exaustão, seu corpo se tornou uma máquina. Você soma seu modificador de Constituição nas suas rolagens de dano desarmado.",
   "preRequisitos": "Con 17, Sarado, 10º nível de lutador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

@@ -2,7 +2,7 @@
   "nome": "especialização em armadura",
   "descricao": "Se estiver usando armadura pesada, você recebe redução de dano 5 (cumulativa com a RD fornecida por Bastião).",
   "preRequisitos": "12º nível de cavaleiro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "cavaleiro"

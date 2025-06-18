@@ -2,7 +2,7 @@
   "nome": "convencido",
   "descricao": "Acostumado a contar apenas com seus próprios músculos, você adquiriu certo desdém por artes mais sofisticadas. Você recebe +5 em testes de resistência contra magias e efeitos de Encantamento.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

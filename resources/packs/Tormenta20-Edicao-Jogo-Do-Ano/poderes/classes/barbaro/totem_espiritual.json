@@ -2,7 +2,7 @@
   "nome": "totem espiritual",
   "descricao": "Você soma sua Sabedoria no seu total de pontos de mana. Escolha um animal totêmico (veja abaixo). Você aprende e pode lançar uma magia definida pelo animal escolhido (atributo-chave Sabedoria) e pode lançá-la mesmo em fúria.",
   "preRequisitos": "Sab 1, 4º nível de bárbaro.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"

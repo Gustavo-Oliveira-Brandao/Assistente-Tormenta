@@ -3,7 +3,7 @@
   "descricao": "No 20º nível, seu domínio das artes arcanas é total. O custo em PM de suas magias arcanas é reduzido à metade (após aplicar aprimoramentos e quaisquer outros efeitos que reduzam o custo).",
   "preRequisitos": "",
   "nivel": 20,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "arcanista"

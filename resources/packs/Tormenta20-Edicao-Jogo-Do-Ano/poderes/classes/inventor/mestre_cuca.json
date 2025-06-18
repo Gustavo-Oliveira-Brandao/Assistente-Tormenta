@@ -2,7 +2,7 @@
   "nome": "mestre cuca",
   "descricao": "Todas as comidas que cozinha têm seu bônus numérico aumentado em +1.",
   "preRequisitos": "Treinado em Ofício (culinária).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

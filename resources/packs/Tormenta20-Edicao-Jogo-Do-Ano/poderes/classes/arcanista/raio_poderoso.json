@@ -2,7 +2,7 @@
   "nome": "raio poderoso",
   "descricao": "Os dados de dano do seu Raio Arcano aumentam para d12 e o alcance dele aumenta para médio.",
   "preRequisitos": "Raio Arcano.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

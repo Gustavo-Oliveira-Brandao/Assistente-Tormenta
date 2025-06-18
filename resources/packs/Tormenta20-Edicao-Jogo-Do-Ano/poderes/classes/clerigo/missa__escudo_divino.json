@@ -2,7 +2,7 @@
   "nome": "missa: escudo divino",
   "descricao": "Os participantes recebem +1 na Defesa e testes de resistência.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "clérigo"

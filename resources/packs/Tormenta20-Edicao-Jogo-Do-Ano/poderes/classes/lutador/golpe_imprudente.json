@@ -2,7 +2,7 @@
   "nome": "golpe imprudente",
   "descricao": "Quando usa Golpe Relâmpago, você pode atacar de forma impulsiva. Se fizer isso, você aumenta seu dano desarmado em mais um dado do mesmo tipo (por exemplo, se o seu dano é 2d6, você causa 3d6), mas sofre –5 em sua Defesa, até o início de seu próximo turno.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

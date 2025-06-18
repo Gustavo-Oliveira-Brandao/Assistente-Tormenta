@@ -2,7 +2,7 @@
   "nome": "bote",
   "descricao": "Se estiver empunhando duas armas e fizer uma investida, você pode pagar 1 PM para fazer um ataque adicional com sua arma secundária.",
   "preRequisitos": "Ambidestria, 6º nível de caçador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "caçador"

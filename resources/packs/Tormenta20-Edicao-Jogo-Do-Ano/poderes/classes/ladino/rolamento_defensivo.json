@@ -2,7 +2,7 @@
   "nome": "rolamento defensivo",
   "descricao": "Sempre que sofre dano, você pode gastar 2 PM para reduzir esse dano à metade. Após usar este poder, você fica caído.",
   "preRequisitos": "treinado em Reflexos.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

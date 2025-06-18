@@ -2,7 +2,7 @@
   "nome": "magia natural",
   "descricao": "Em forma selvagem, você pode lançar magias e empunhar catalisadores e esotéricos.",
   "preRequisitos": "Forma Selvagem.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "druida"

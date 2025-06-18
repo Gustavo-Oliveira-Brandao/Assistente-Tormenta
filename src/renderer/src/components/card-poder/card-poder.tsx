@@ -57,14 +57,14 @@ export const CardPoder = ({
                 </p>
               ))}
           </div>
-          <p className={`${styles.descricao} sourceSansPro`}>{poder.descricao}</p>
+          <p className={`${styles.descricao} geist`}>{poder.descricao}</p>
           {poder.subEfeitos && poder.subEfeitos.length !== 0 && (
             <div className={styles.subEfeitos}>
               {poder.subEfeitos.map((subEfeito, index) => (
                 <div key={index} className={styles.subEfeito}>
                   <p>
                     <span className={styles.destaque + ' tormenta20Font'}>{subEfeito.nome}: </span>
-                    <span className="sourceSansPro">{subEfeito.descricao}</span>
+                    <span className="geist">{subEfeito.descricao}</span>
                   </p>
                 </div>
               ))}
@@ -72,8 +72,8 @@ export const CardPoder = ({
           )}
           {poder.preRequisitos !== '' && (
             <p className={styles.preRequisitos}>
-              <span className={styles.destaque}>Pré requisitos: </span>
-              <span className="sourceSansPro">{poder.preRequisitos}</span>
+              <span className={`${styles.destaque} geist`}>Pré requisitos: </span>
+              <span className="geist">{poder.preRequisitos}</span>
             </p>
           )}
         </>

@@ -3,7 +3,7 @@
   "descricao": "Escolha três escolas de magia. Uma vez feita, essa escolha não pode ser mudada.\nVocê pode lançar magias divinas de 1º círculo que pertençam a essas escolas.\nÀ medida que sobe de nível, pode lançar magias de círculos maiores (2º círculo no 6º nível,\n3º círculo no 10º nível e 4º círculo no 14º nível).\nVocê começa com duas magias de 1º círculo.\nA cada nível par (2º, 4º etc.), aprende uma magia de qualquer círculo e escola que possa lançar.\nSeu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM.",
   "preRequisitos": "",
   "nivel": 1,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "druida"

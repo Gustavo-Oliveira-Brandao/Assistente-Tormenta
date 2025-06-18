@@ -2,7 +2,7 @@
   "nome": "abusar dos fracos",
   "descricao": "Quando ataca uma criatura sob efeito de uma condição de medo, seu dano aumenta em um passo.",
   "preRequisitos": "Flagelo dos Mares.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "bucaneiro"

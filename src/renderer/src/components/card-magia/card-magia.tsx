@@ -37,13 +37,13 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
           <div className={styles.subEfeitos}>
             {props.magia.aprimoramentos.map((aprimoramento, index) => (
               <div key={index} className={styles.subEfeito}>
-                <p className="sourceSansPro">
+                <p className="geist">
                   {aprimoramento.custo === 0 ? (
                     <span className={styles.destaque}>Truque: </span>
                   ) : (
                     <span className={styles.destaque}>+{aprimoramento.custo} PM: </span>
                   )}
-                  <span className="sourceSansPro">{aprimoramento.descricao}</span>
+                  <span className="geist">{aprimoramento.descricao}</span>
                 </p>
               </div>
             ))}

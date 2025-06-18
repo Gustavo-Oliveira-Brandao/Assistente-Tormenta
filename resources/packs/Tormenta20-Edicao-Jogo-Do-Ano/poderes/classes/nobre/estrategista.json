@@ -2,7 +2,7 @@
   "nome": "estrategista",
   "descricao": "Você pode direcionar aliados em alcance curto. Gaste uma ação padrão e 1 PM por aliado que quiser direcionar (limitado pelo seu modificador de Carisma). No próximo turno do aliado, ele ganha uma ação de movimento.",
   "preRequisitos": "Int 13, treinado em Guerra, 6º nível de nobre.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "nobre"

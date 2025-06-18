@@ -2,7 +2,7 @@
   "nome": "mãos rápidas",
   "descricao": "Ao fazer um teste de Ladinagem para abrir fechaduras, ocultar item, punga ou sabotar, você pode pagar 1 PM para fazê-lo como uma ação livre.",
   "preRequisitos": "Des 15, treinado em Ladinagem.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "ladino"

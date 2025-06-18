@@ -2,7 +2,7 @@
   "nome": "punhos de adamante",
   "descricao": "Seus ataques desarmados ignoram 10 pontos de resistência a dano do alvo, se houver.",
   "preRequisitos": "8º nível de lutador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

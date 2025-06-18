@@ -2,7 +2,7 @@
   "nome": "farmacêutico",
   "descricao": "Quando usa um item alquímico que cure pontos de vida, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Inteligência). Para cada PM que gastar, o item cura um dado extra do mesmo tipo.",
   "preRequisitos": "Sab 13, treinado em Ofício (alquimia).",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "inventor"

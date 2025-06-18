@@ -3,7 +3,7 @@
   "descricao": "No 20º nível, seu dano desarmado aumenta para 2d10 (para criaturas Médias). Além disso, quando usa a ação ataque para fazer um ataque desarmado, você faz dois ataques, em vez de um (podendo usar Golpe Relâmpago para fazer um terceiro).",
   "preRequisitos": "",
   "nivel": 20,
-  "categoria": "progressaoClasse",
+  "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "lutador"

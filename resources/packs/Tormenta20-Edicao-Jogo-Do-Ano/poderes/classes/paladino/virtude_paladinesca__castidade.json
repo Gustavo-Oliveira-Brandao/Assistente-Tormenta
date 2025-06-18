@@ -2,7 +2,7 @@
   "nome": "virtude paladinesca: castidade",
   "descricao": "Você se torna imune a efeitos de encantamento e recebe +5 em testes de Intuição para perceber blefes.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "paladino"

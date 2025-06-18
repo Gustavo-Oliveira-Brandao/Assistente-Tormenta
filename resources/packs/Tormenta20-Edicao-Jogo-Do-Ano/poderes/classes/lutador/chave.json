@@ -2,7 +2,7 @@
   "nome": "chave",
   "descricao": "Se estiver agarrando uma criatura e fizer um teste de manobra contra ela para causar dano, o dano desarmado aumenta em um passo.",
   "preRequisitos": "Int 13, Lutador de Chão, 4º nível de lutador.",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "lutador"

@@ -2,7 +2,7 @@
   "nome": "missa: chamado ás armas",
   "descricao": "Os participantes recebem +1 em testes de ataque e rolagens de dano.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "clérigo"

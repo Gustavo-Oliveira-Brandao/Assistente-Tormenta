@@ -2,7 +2,7 @@
   "nome": "magia pungente",
   "descricao": "Quando lança uma magia, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ela.",
   "preRequisitos": "",
-  "categoria": "classe",
+  "categoria": "poder de classe",
   "tags": [
     {
       "label": "arcanista"

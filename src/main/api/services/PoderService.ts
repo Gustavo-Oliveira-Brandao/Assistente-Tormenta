@@ -17,6 +17,7 @@ export const getCompendioPoderes = async (): Promise<DeepPartial<Poder>[]> => {
 
   const result = await extrairJson<DeepPartial<Poder>>(caminhoBase)
   const poderes = result
+
   return poderes
 }
 

@@ -2,12 +2,20 @@
 
 Essa é uma aplicação web desktop, que tem como objetivo oferecer uma solução digital para criação e gerenciamento de personagens de Tormenta20 (e futuramente Imperio de Jade).
 
-## Recursos 🚀
+## Recursos planejados 🚀
 
-- Os usuários podem criar personagens de Tormenta20 do zero, tendo total controle de cada atributo e valor de seus personagens.
-- Os usuários podem buscar raças, classes, poderes, magias e itens de Tormenta20 - Edição Jogo do Ano, graças a base de dados que o projeto possui por debaixo dos panos.
-- Os usuários podem customizar os itens mencionados no tópico anterior, assim permitindo abrangir a Iniciativa T20.
+- Os usuários poderão criar personagens de Tormenta20 do zero, tendo total controle de cada atributo e valor de seus personagens.
+- Os usuários poderão buscar raças, classes, poderes, magias e itens de Tormenta20 - Edição Jogo do Ano, graças a base de dados que o projeto possui por debaixo dos panos.
+- Os usuários poderão customizar os itens mencionados no tópico anterior, assim permitindo abrangir a Iniciativa T20.
 - Todos os dados armazenados são armazenados localmente, permitindo o uso sem internet.
+
+## Recursos em andamento 👷
+
+- Compêndio de poderes, magias e itens ainda requer toques no visual e funcionamento.
+- Adição de itens do livro base de tormenta na base de dados.
+- Permitir criação homebrew de raças, classes, poderes, itens e magias.
+- Criação da aba efeitos.
+- Automatização de progressão de personagem.
 
 ## Tecnologias 💻
 

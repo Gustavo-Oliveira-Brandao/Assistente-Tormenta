@@ -1,6 +1,5 @@
 import { DataSource } from 'typeorm'
 import { Atributo } from './entities/Atributo'
-import { Bonus } from './entities/Bonus'
 import { Dano } from './entities/Dano'
 import { Deslocamento } from './entities/Deslocamento'
 import { Grimorio } from './entities/Grimorio'
@@ -11,6 +10,7 @@ import { Recurso } from './entities/Recurso'
 import { ClassePersonagem } from './entities/ClassePersonagem'
 import { Poder, SubEfeito, Tag } from './entities/Poder'
 import { AprimoramentoMagia, Magia } from './entities/Magia'
+import { Modificador } from './entities/Modificador'
 
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
@@ -18,11 +18,11 @@ export const SQLiteDataSource = new DataSource({
   synchronize: true,
   entities: [
     Atributo,
-    Bonus,
     Dano,
     ClassePersonagem,
     Poder,
     Tag,
+    Modificador,
     SubEfeito,
     Deslocamento,
     Grimorio,

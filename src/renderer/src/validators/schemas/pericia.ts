@@ -1,5 +1,4 @@
 import { z } from 'zod'
-import { bonusSchema } from './bonus'
 
 export const periciaSchema = z
   .object({
@@ -9,6 +8,6 @@ export const periciaSchema = z
     atributo: z.string().nonempty('Campo obrigatório!'),
     requerTreinamento: z.coerce.boolean(),
     sofrePenalidadeArmadura: z.coerce.boolean(),
-    bonus: z.array(bonusSchema)
+    bonus: z.coerce.number()
   })
   .required()

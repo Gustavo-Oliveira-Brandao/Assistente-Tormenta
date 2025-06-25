@@ -1,6 +1,4 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-
-import { Bonus } from './Bonus'
+import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 
 //OK
@@ -25,18 +23,18 @@ export class Atributo {
     type: 'integer',
     nullable: false
   })
-  ordem: number
+  bonus: number
 
-  @OneToMany(() => Bonus, (bonus) => bonus.atributo, {
-    cascade: true,
-    nullable: true,
-    eager: true
+  @Column({
+    type: 'integer',
+    nullable: false
   })
-  bonus?: Bonus[]
+  ordem: number
 
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
+  @Index()
   personagem: Personagem
 }

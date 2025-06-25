@@ -1,5 +1,4 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Bonus } from './Bonus'
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
 //OK
 @Entity()
@@ -33,11 +32,4 @@ export class Dano {
     length: 20
   })
   atributo: string
-
-  @OneToMany(() => Bonus, (bonus) => bonus.dano, {
-    cascade: true,
-    nullable: true,
-    eager: true
-  })
-  bonus?: Bonus[]
 }

@@ -49,10 +49,20 @@ export const FichaPersonagem = (): JSX.Element => {
                   cor="corSecundaria"
                   font="tormenta20Font"
                 />
+                <BotaoModular
+                  css="botaoExpansivel"
+                  icone="./icons/grimorio.svg"
+                  onClickEvent={() => setAba('EFEITOS')}
+                  estaAtivo={aba == 'EFEITOS' ? true : false}
+                  texto={aba == 'EFEITOS' ? 'EFEITOS' : undefined}
+                  cor="corSecundaria"
+                  font="tormenta20Font"
+                />
               </nav>
               {aba == 'ATRIBUTOS' && <FichaAtributos personagem={personagem} />}
               {aba === 'PODERES' && <FichaPoderes personagem={personagem} />}
               {aba === 'MAGIAS' && <FichaMagias />}
+              {aba === 'EFEITOS' && <></>}
             </div>
           </section>
         </>

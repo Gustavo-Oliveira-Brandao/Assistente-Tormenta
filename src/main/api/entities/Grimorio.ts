@@ -1,5 +1,4 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Bonus } from './Bonus'
 import { Personagem } from './Personagem'
 import { Magia } from './Magia'
 
@@ -25,12 +24,6 @@ export class Grimorio {
     length: 20
   })
   atributoChave: string
-
-  @OneToMany(() => Bonus, (bonus) => bonus.grimorio, {
-    cascade: true,
-    nullable: true
-  })
-  bonusCD?: Bonus[]
 
   @OneToMany(() => Magia, (magia) => magia.grimorio, {
     cascade: true,

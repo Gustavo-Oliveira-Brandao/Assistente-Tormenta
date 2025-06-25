@@ -1,9 +1,9 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Bonus } from './Bonus'
+import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 
 //OK
 @Entity()
+@Index(['personagem', 'id', 'categoria', 'valorAtual', 'valorTemporario', 'atributo'])
 export class Recurso {
   @PrimaryGeneratedColumn()
   id: number
@@ -28,13 +28,6 @@ export class Recurso {
     type: 'varchar'
   })
   atributo: string
-
-  @OneToMany(() => Bonus, (bonus) => bonus.recurso, {
-    cascade: true,
-    nullable: true,
-    eager: true
-  })
-  bonus?: Bonus[]
 
   @ManyToOne(() => Personagem, (personagem) => personagem.recursos, {
     onDelete: 'CASCADE',

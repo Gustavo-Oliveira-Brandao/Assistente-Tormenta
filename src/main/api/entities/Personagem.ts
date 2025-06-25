@@ -7,6 +7,7 @@ import { Proficiencia } from './Proficiencia'
 import { Grimorio } from './Grimorio'
 import { ClassePersonagem } from './ClassePersonagem'
 import { Poder } from './Poder'
+import { Modificador } from './Modificador'
 
 @Entity()
 export class Personagem {
@@ -115,6 +116,12 @@ export class Personagem {
     cascade: true
   })
   deslocamentos: Deslocamento[]
+
+  @OneToMany(() => Modificador, (modificador) => modificador.personagem, {
+    cascade: true,
+    nullable: true
+  })
+  modificadores?: Modificador[]
 
   @OneToMany(() => Recurso, (recurso) => recurso.personagem, {
     cascade: true

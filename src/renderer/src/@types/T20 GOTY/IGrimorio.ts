@@ -1,4 +1,3 @@
-import { IBonus } from './IBonus'
 import { IMagiaPersonagem } from './IMagia'
 
 export type IGrimorio = {
@@ -7,6 +6,5 @@ export type IGrimorio = {
   tradicao: string
   atributoChave: string
   cd?: number
-  bonusCD: IBonus[]
   magias: IMagiaPersonagem[]
 }

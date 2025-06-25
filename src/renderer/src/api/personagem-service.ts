@@ -8,7 +8,10 @@ export const exibirTodosPersonagens = async (): Promise<IPersonagem[]> => {
 
 export const exibirPersonagemPorId = async (id: number): Promise<IPersonagem> => {
   const personagemBruto = await window.api.personagens.getPersonagem(id)
+  console.log('personagemRecebidoDoBack:' + Date.now())
   const personagem = await carregarPersonagem(personagemBruto)
+  console.log('personagemCarregado:' + Date.now())
+
   return personagem
 }
 

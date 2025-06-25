@@ -53,7 +53,6 @@ export const putGrimorio = async (_grimorio: Grimorio): Promise<void> => {
     }
 
     GrimorioRepository.merge(grimorioEncontrado, _grimorio)
-    grimorioEncontrado.bonusCD = _grimorio.bonusCD
     await GrimorioRepository.save(grimorioEncontrado)
   } catch {
     throw new Error('Erro ao atualizar grimorio!')

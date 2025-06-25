@@ -1,8 +1,9 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 
 //OK
 @Entity()
+@Index(['personagem', 'id', 'categoria', 'nome'])
 export class Proficiencia {
   @PrimaryGeneratedColumn()
   id: number

@@ -1,5 +1,3 @@
-import { IBonus } from './IBonus'
-
 export type IRecurso = {
   id: number
   categoria: string
@@ -7,5 +5,4 @@ export type IRecurso = {
   valorAtual: number
   valorTemporario: number
   atributo: string
-  bonus: IBonus[]
 }

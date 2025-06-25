@@ -15,6 +15,7 @@ export const getTodosPersonagem = async (): Promise<Personagem[]> => {
 
 export const getPersonagem = async (id: number): Promise<Personagem> => {
   try {
+    console.log('pedidoPersonagemRecebido:' + Date.now())
     const personagem = await PersonagemRepository.findOne({
       where: { id: id },
       relations: {
@@ -23,14 +24,17 @@ export const getPersonagem = async (id: number): Promise<Personagem> => {
         pericias: true,
         deslocamentos: true,
         recursos: true,
+        modificadores: true,
         proficiencias: true
       }
     })
     if (personagem == null) {
       throw new Error('Personagem não encontrado!')
     }
+    console.log('personagemEncontrado:' + Date.now())
     return personagem
-  } catch {
+  } catch (err) {
+    console.log(err)
     throw new Error('Erro ao exibir personagem.')
   }
 }

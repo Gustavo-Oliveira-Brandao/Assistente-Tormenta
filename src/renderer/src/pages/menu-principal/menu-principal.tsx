@@ -60,7 +60,7 @@ export const MenuPrincipal = (): JSX.Element => {
             texto="Sair"
           />
         </div>
-        <p className={`${styles.copyright} sourceSansPro`}>
+        <p className={`${styles.copyright} geist`}>
           Isso se trata de um produto NÃO-OFICIAL. Tormenta 20 pertence a Jambo Editora. Todos os
           direitos são reservados a editora.
         </p>

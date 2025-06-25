@@ -3,12 +3,12 @@ import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { Pericia } from '@renderer/components/pericia/pericia'
 import { abrirModal } from '@renderer/store/slices/modalSlice'
 import { RootState } from '@renderer/store/store'
-import { Modal } from '@renderer/templates/modal/modal'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { JSX } from 'react'
 import { createPortal } from 'react-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from './ficha-personagem.module.scss'
+import { AtributosForm } from '@renderer/components/forms/atributos-form/atributos-form'
 
 type FichaAtributosProps = {
   personagem: IPersonagem
@@ -42,15 +42,10 @@ export const FichaAtributos = ({ personagem }: FichaAtributosProps): JSX.Element
                 icone="./icons/d20 cinza.svg"
                 onClickEvent={() => console.log('teste')}
                 font="tormenta20Font"
-                texto={atributo.valorBase}
+                texto={atributo.valorAtual}
               />
               {modalAberto === `ATRIBUTO_${atributo.nome}_EDICAO_MODAL` &&
-                createPortal(
-                  <Modal titulo={atributo.nome} height="fit-content" width="400px">
-                    <></>
-                  </Modal>,
-                  document.body
-                )}
+                createPortal(<AtributosForm atributo={atributo} />, document.body)}
             </div>
           ))}
       </SecaoFicha>

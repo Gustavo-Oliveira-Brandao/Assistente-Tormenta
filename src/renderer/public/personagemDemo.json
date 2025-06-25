@@ -33,37 +33,37 @@
     {
       "nome": "forca",
       "valorBase": 0,
-      "bonus": [],
+      "bonus": 0,
       "ordem": 1
     },
     {
       "nome": "destreza",
       "valorBase": 0,
-      "bonus": [],
+      "bonus": 0,
       "ordem": 2
     },
     {
       "nome": "constituicao",
       "valorBase": 0,
-      "bonus": [],
+      "bonus": 0,
       "ordem": 3
     },
     {
       "nome": "inteligencia",
       "valorBase": 0,
-      "bonus": [],
+      "bonus": 0,
       "ordem": 4
     },
     {
       "nome": "sabedoria",
       "valorBase": 0,
-      "bonus": [],
+      "bonus": 0,
       "ordem": 5
     },
     {
       "nome": "carisma",
       "valorBase": 0,
-      "bonus": [],
+      "bonus": 0,
       "ordem": 6
     }
   ],
@@ -76,7 +76,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": true,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "adestramento",
@@ -86,7 +86,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "atletismo",
@@ -96,7 +96,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "atuacao",
@@ -106,7 +106,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "cavalgar",
@@ -116,7 +116,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "cura",
@@ -126,7 +126,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "diplomacia",
@@ -136,7 +136,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "enganacao",
@@ -146,7 +146,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "fortitude",
@@ -156,7 +156,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "furtividade",
@@ -166,7 +166,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": true,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "guerra",
@@ -176,7 +176,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "iniciativa",
@@ -186,7 +186,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "intimidacao",
@@ -196,7 +196,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "intuicao",
@@ -206,7 +206,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "investigacao",
@@ -216,7 +216,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "jogatina",
@@ -226,7 +226,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "ladinagem",
@@ -236,7 +236,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": true,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "luta",
@@ -246,7 +246,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "misticimsmo",
@@ -256,7 +256,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "nobreza",
@@ -266,7 +266,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "percepcao",
@@ -276,7 +276,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "pilotagem",
@@ -286,7 +286,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "pontaria",
@@ -296,7 +296,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "reflexos",
@@ -306,7 +306,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "religiao",
@@ -316,7 +316,7 @@
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "sobrevivencia",
@@ -326,7 +326,7 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "vontade",
@@ -336,34 +336,34 @@
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
 
-      "bonus": []
+      "bonus": 0
     }
   ],
   "deslocamentos": [
     {
       "nome": "caminhada",
       "valorBase": 9,
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "vôo",
       "valorBase": 9,
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "natação",
       "valorBase": 9,
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "escalada",
       "valorBase": 9,
-      "bonus": []
+      "bonus": 0
     },
     {
       "nome": "escavação",
       "valorBase": 9,
-      "bonus": []
+      "bonus": 0
     }
   ],
   "recursos": [
@@ -372,21 +372,21 @@
       "valorAtual": 8,
       "valorTemporario": 0,
       "atributo": "constituicao",
-      "bonus": []
+      "bonus": 0
     },
     {
       "categoria": "mana",
       "valorAtual": 6,
       "valorTemporario": 0,
       "atributo": "inteligencia",
-      "bonus": []
+      "bonus": 0
     },
     {
       "categoria": "defesa",
       "valorAtual": 10,
       "valorTemporario": 0,
       "atributo": "destreza",
-      "bonus": []
+      "bonus": 0
     }
   ]
 }

@@ -1,9 +1,12 @@
-import { IBonus } from '@renderer/@types/T20 GOTY/IBonus'
+import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { exibirClassesDefault } from '@renderer/api/classe-service'
 
 export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPersonagem> => {
   let nivelAtual = 0
+
+  const modificadores = personagem.modificadores
+
   for (const classe of personagem.classes) {
     nivelAtual += classe.nivel
   }
@@ -11,8 +14,11 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   personagem.nivelAtual = nivelAtual
   //Calculo de atributo
   for (const atributo of personagem.atributos) {
-    const bonusTotal = calcularBonus(atributo.bonus, personagem.nivelAtual)
-    atributo.valorAtual = atributo.valorBase + bonusTotal
+    const valorModificadores = calcularModificadores(
+      modificadores.filter((mod) => verificarAlvo(mod.alvo, 'atributos', atributo.nome)),
+      personagem.nivelAtual
+    )
+    atributo.valorAtual = atributo.valorBase + atributo.bonus + valorModificadores
   }
 
   //Calculo de recursos
@@ -38,16 +44,15 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   for (const recurso of personagem.recursos) {
     const atributo = personagem.atributos.find((atributo) => atributo.nome == recurso.atributo)
     const valorAtributo = atributo?.valorAtual ?? 0
-    const bonusTotal = calcularBonus(recurso.bonus, personagem.nivelAtual)
     if (recurso.categoria == 'vida') {
       recurso.valorMaximo =
-        vidaInicial + bonusTotal + (vidaTotalPorNivel + valorAtributo) * personagem.nivelAtual
+        vidaInicial + (vidaTotalPorNivel + valorAtributo) * personagem.nivelAtual
     }
     if (recurso.categoria == 'mana') {
-      recurso.valorMaximo = valorAtributo + bonusTotal + manaTotalPorNivel * personagem.nivelAtual
+      recurso.valorMaximo = valorAtributo + manaTotalPorNivel * personagem.nivelAtual
     }
     if (recurso.categoria == 'defesa') {
-      recurso.valorMaximo = recurso.valorAtual + valorAtributo + bonusTotal
+      recurso.valorMaximo = recurso.valorAtual + valorAtributo
     }
   }
 
@@ -57,11 +62,10 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     if (pericia.treinamento === 'treinado') {
       valorTreinamento = personagem.nivelAtual <= 6 ? 2 : personagem.nivelAtual <= 14 ? 4 : 6
     }
-    const bonusTotal = calcularBonus(pericia.bonus, personagem.nivelAtual)
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
     if (atributo) {
       pericia.valorAtual = Math.floor(
-        (atributo.valorAtual ?? 0) + valorTreinamento + bonusTotal + personagem.nivelAtual / 2
+        (atributo.valorAtual ?? 0) + valorTreinamento + pericia.bonus + personagem.nivelAtual / 2
       )
     }
   }
@@ -69,9 +73,9 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   return personagem
 }
 
-const calcularBonus = (bonus: IBonus[], nivel: number): number => {
+const calcularModificadores = (modificadores: IModificador[], nivel: number): number => {
   let bonusTotal = 0
-  for (const mod of bonus) {
+  for (const mod of modificadores) {
     if (mod.estaAtivo) {
       if (mod.ehPorNivel) {
         bonusTotal += mod.valor * nivel
@@ -81,4 +85,14 @@ const calcularBonus = (bonus: IBonus[], nivel: number): number => {
     }
   }
   return bonusTotal
+}
+
+const verificarAlvo = (alvo: string, tipoProcurado: string, valorProcurado: string): boolean => {
+  const [tipo, valor] = alvo.split(':')
+  if (tipo == tipoProcurado) {
+    if (valor == valorProcurado) {
+      return true
+    }
+  }
+  return false
 }

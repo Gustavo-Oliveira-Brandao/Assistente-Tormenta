@@ -1,5 +1,4 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Bonus } from './Bonus'
+import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 
 //OK
@@ -42,16 +41,16 @@ export class Pericia {
   })
   sofrePenalidadeArmadura: boolean
 
-  @OneToMany(() => Bonus, (bonus) => bonus.pericia, {
-    cascade: true,
-    nullable: true,
-    eager: true
+  @Column({
+    type: 'integer',
+    nullable: false
   })
-  bonus?: Bonus[]
+  bonus: number
 
   @ManyToOne(() => Personagem, (personagem) => personagem.pericias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
+  @Index()
   personagem: Personagem
 }

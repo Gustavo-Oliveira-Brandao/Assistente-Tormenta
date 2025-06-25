@@ -4,10 +4,10 @@ import styles from './switch-modular.module.scss'
 
 type SwitchModularProps = {
   name: string
-  label: string
+  label?: string
 }
 
-export const SwitchModular = ({ name, label }: SwitchModularProps): JSX.Element => {
+export const FormSwitchModular = ({ name, label }: SwitchModularProps): JSX.Element => {
   const {
     register,
     formState: { errors }

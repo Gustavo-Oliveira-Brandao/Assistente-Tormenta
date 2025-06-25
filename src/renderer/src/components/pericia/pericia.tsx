@@ -21,7 +21,7 @@ export const Pericia = ({ pericia, exibeTreinamento, editavel }: periciaProps): 
 
   return (
     <>
-      <SimpleCard width="100%" height="40px">
+      <SimpleCard width="100%" height="40px" css="littleCard">
         <BotaoModular
           css="simples"
           cor="transparente"

@@ -388,5 +388,17 @@
       "atributo": "destreza",
       "bonus": 0
     }
+  ],
+  "modificadores": [
+    {
+      "nome": "Forma selvagem",
+      "tipo": "atributos",
+      "alvo": "forca",
+      "seletor": "bonus",
+      "modoBonus": "SOMA",
+      "valor": 2,
+      "estaAtivo": false,
+      "ehPorNivel": false
+    }
   ]
 }

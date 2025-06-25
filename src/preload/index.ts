@@ -14,6 +14,7 @@ import { Poder } from '../main/api/entities/Poder'
 import { IMagiaDTO } from '../main/@types/IMagiaDTO'
 import { IPoderDTO } from '../main/@types/IPoderDTO'
 import { Magia } from '../main/api/entities/Magia'
+import { Modificador } from '../main/api/entities/Modificador'
 
 // Custom APIs for renderer
 const api = {
@@ -43,6 +44,13 @@ const api = {
       ipcRenderer.invoke('put-deslocamento', _deslocamento)
   },
 
+  modificadores: {
+    postModificador: (_modificador: Partial<Modificador>, _idPersonagem: number): Promise<void> =>
+      ipcRenderer.invoke('post-modificador', _modificador, _idPersonagem),
+    putModificador: (_modificador: Modificador): Promise<void> =>
+      ipcRenderer.invoke('put-modificador', _modificador),
+    deleteModificador: (_id: number): Promise<void> => ipcRenderer.invoke('delete-modificador', _id)
+  },
   magias: {
     getMagiasDefault: (): Promise<DeepPartial<Magia>[]> => ipcRenderer.invoke('get-magias-default'),
     getGrimoriosPorPersonagem: (_idPersonagem: number): Promise<Grimorio[]> =>

@@ -9,6 +9,16 @@ export class Modificador {
   @Column({
     type: 'varchar'
   })
+  nome: string
+
+  @Column({
+    type: 'varchar'
+  })
+  tipo: string
+
+  @Column({
+    type: 'varchar'
+  })
   alvo: string
 
   @Column({

@@ -15,7 +15,7 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   //Calculo de atributo
   for (const atributo of personagem.atributos) {
     const valorModificadores = calcularModificadores(
-      modificadores.filter((mod) => verificarAlvo(mod.alvo, 'atributos', atributo.nome)),
+      modificadores.filter((mod) => verificarAlvo(mod.tipo, mod.alvo, 'atributos', atributo.nome)),
       personagem.nivelAtual
     )
     atributo.valorAtual = atributo.valorBase + atributo.bonus + valorModificadores
@@ -74,6 +74,7 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
 }
 
 const calcularModificadores = (modificadores: IModificador[], nivel: number): number => {
+  console.log(modificadores)
   let bonusTotal = 0
   for (const mod of modificadores) {
     if (mod.estaAtivo) {
@@ -84,13 +85,18 @@ const calcularModificadores = (modificadores: IModificador[], nivel: number): nu
       }
     }
   }
+  console.log(bonusTotal)
   return bonusTotal
 }
 
-const verificarAlvo = (alvo: string, tipoProcurado: string, valorProcurado: string): boolean => {
-  const [tipo, valor] = alvo.split(':')
+const verificarAlvo = (
+  tipo: string,
+  alvo: string,
+  tipoProcurado: string,
+  alvoProcurado: string
+): boolean => {
   if (tipo == tipoProcurado) {
-    if (valor == valorProcurado) {
+    if (alvo == alvoProcurado) {
       return true
     }
   }

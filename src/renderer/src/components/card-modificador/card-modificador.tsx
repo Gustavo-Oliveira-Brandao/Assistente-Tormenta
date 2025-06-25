@@ -2,11 +2,37 @@ import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
 import { SimpleCard } from '../simple-card/simple-card'
+import { SwitchModular } from '../switch-modular/switch-modular'
+import { BotaoModular } from '../botao-modular/botao-modular'
 
 type CardModificadorProps = {
   modificador: IModificador
 }
 
 export const CardModificador = ({ modificador }: CardModificadorProps): JSX.Element => {
-  return <SimpleCard width="100%" height="55px"></SimpleCard>
+  return (
+    <SimpleCard css="efeito" width="100%" height="55px">
+      <div className={styles.modificador}>
+        <div className={styles.nomeEfeito}>
+          <SwitchModular name="estaAtivo" label="Ativo:" />
+          <p className="tormenta20Font">{modificador.nome}</p>
+        </div>
+        <div className={styles.valor}>
+          <p className="tormenta20Font">{modificador.valor}</p>
+        </div>
+        <div className={styles.tipo}>
+          <p className="tormenta20Font">{modificador.tipo}</p>
+        </div>
+        <div className={styles.alvo}>
+          <p className="tormenta20Font">{modificador.alvo}</p>
+        </div>
+        <BotaoModular
+          css="botaoQuadrado30px"
+          icone="./icons/delete.svg"
+          cor="corSecundaria"
+          onClickEvent={() => console.log('sla')}
+        />
+      </div>
+    </SimpleCard>
+  )
 }

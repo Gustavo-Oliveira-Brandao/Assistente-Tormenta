@@ -61,3 +61,27 @@
     font-size: 14px;
   }
 }
+
+.modificador {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .nomeEfeito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .valor {
+    background-color: variables.$secondary-color;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+}

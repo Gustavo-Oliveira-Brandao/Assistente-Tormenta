@@ -9,7 +9,7 @@ type InputModularProps = {
   label: string
 }
 
-export const InputModular = ({
+export const FormInputModular = ({
   placeholder,
   type,
   name,

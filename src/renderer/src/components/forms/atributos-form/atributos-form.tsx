@@ -5,7 +5,7 @@ import { FormProvider, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { atributoSchema } from '@renderer/validators/schemas/atributo'
-import { InputModular } from '@renderer/components/input-modular/input-modular'
+import { FormInputModular } from '@renderer/components/input-modular/input-modular'
 import { Modal } from '@renderer/templates/modal/modal'
 import { useAtualizarAtributo } from '@renderer/hooks/mutations/useAtributoMutation'
 import { useDispatch } from 'react-redux'
@@ -45,8 +45,8 @@ export const AtributosForm = ({ atributo }: AtributoFormsProps): JSX.Element => 
           <fieldset className={styles.fieldset}>
             <legend className="tormenta20Font">Atributo</legend>
             <div className={styles.rowFields}>
-              <InputModular type="number" name="valorBase" label="Valor base:" />
-              <InputModular type="number" name="bonus" label="Bônus:" />
+              <FormInputModular type="number" name="valorBase" label="Valor base:" />
+              <FormInputModular type="number" name="bonus" label="Bônus:" />
             </div>
           </fieldset>
           <input className={`${styles.submitButton} tormenta20Font`} type="submit" value="Salvar" />

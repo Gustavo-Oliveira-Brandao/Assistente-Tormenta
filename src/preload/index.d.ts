@@ -24,6 +24,14 @@ declare global {
       deslocamentos: {
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
+      modificadores: {
+        postModificador: (
+          _modificador: Partial<Modificador>,
+          _idPersonagem: number
+        ) => Promise<void>
+        putModificador: (_modificador: Modificador) => Promise<void>
+        deleteModificador: (_id: number) => Promise<void>
+      }
       magias: {
         getMagiasDefault: () => Promise<IMagiaDTO[]>
         getGrimoriosPorPersonagem: (_idPersonagem: number) => Promise<Grimorio[]>

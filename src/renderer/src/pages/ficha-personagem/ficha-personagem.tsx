@@ -8,6 +8,7 @@ import { SidebarFicha } from '@renderer/templates/sidebar/sidebar-ficha'
 import { FichaAtributos } from './ficha-atributos'
 import { FichaPoderes } from './ficha-poderes'
 import { FichaMagias } from './ficha-magias'
+import { FichaEfeitos } from './ficha-efeitos'
 
 export const FichaPersonagem = (): JSX.Element => {
   const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
@@ -62,7 +63,7 @@ export const FichaPersonagem = (): JSX.Element => {
               {aba == 'ATRIBUTOS' && <FichaAtributos personagem={personagem} />}
               {aba === 'PODERES' && <FichaPoderes personagem={personagem} />}
               {aba === 'MAGIAS' && <FichaMagias />}
-              {aba === 'EFEITOS' && <></>}
+              {aba === 'EFEITOS' && <FichaEfeitos personagem={personagem} />}
             </div>
           </section>
         </>

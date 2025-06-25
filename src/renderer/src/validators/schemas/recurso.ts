@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { bonusSchema } from './bonus'
+import { bonusSchema } from './modificador'
 
 export const recursoSchema = z.object({
   categoria: z.string().nonempty('Campo obrigatório!'),

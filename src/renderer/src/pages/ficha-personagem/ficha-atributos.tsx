@@ -32,7 +32,7 @@ export const FichaAtributos = ({ personagem }: FichaAtributosProps): JSX.Element
                     dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))
                   }
                   texto={atributo.nome}
-                  css="simples"
+                  css="botaoTimido"
                   cor="transparente"
                 />
               </div>

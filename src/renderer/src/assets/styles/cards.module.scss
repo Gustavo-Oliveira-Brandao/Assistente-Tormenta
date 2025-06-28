@@ -10,7 +10,7 @@
     height: 20px;
     width: fit-content;
     display: flex;
-    background-color: variables.$blue;
+    background-color: variables.$azul-primario;
     border-radius: 5px;
     padding: 10px 8px;
     align-items: center;
@@ -43,7 +43,7 @@
 
 .destaque {
   font-size: 15px;
-  color: variables.$tertiary-red !important;
+  color: variables.$vermelho-claro !important;
 }
 
 .aprimoramentos {
@@ -76,7 +76,7 @@
   }
 
   .valor {
-    background-color: variables.$secondary-color;
+    background-color: variables.$cinza-escuro-3;
     height: 30px;
     width: 40px;
     display: flex;

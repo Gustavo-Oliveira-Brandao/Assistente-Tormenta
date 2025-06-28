@@ -1,0 +1,50 @@
+@use '@renderer/assets/variables.scss';
+
+.barraWrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  background-color: variables.$cinza-escuro-3;
+  height: 20px;
+  cursor: pointer;
+
+  .barra {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .texto {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.vidaFull {
+  background-color: variables.$verde-primario;
+}
+
+.vidaAboveHalf {
+  background-color: variables.$laranja-primario;
+}
+
+.vidaAlmostEmpty {
+  background-color: variables.$vermelho-claro;
+}
+
+.manaFull {
+  background-color: variables.$azul-primario;
+}
+
+.manaAboveHalf {
+  background-color: variables.$azul-claro-1;
+}
+
+.manaAlmostEmpty {
+  background-color: variables.$azul-claro-2;
+}

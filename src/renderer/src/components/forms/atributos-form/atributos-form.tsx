@@ -39,14 +39,14 @@ export const AtributosForm = ({ atributo }: AtributoFormsProps): JSX.Element => 
   }
 
   return (
-    <Modal titulo={atributo.nome} height="fit-content" width="550px" overflow="auto">
+    <Modal titulo={atributo.nome} height="fit-content" width="250px" overflow="auto">
       <FormProvider {...methods}>
         <form className={styles.form} onSubmit={methods.handleSubmit(onSubmit)}>
           <fieldset className={styles.fieldset}>
             <legend className="tormenta20Font">Atributo</legend>
             <div className={styles.rowFields}>
-              <FormInputModular type="number" name="valorBase" label="Valor base:" />
-              <FormInputModular type="number" name="bonus" label="Bônus:" />
+              <FormInputModular type="number" placeholder="0" name="valorBase" label="Valor:" />
+              <FormInputModular type="number" placeholder="0" name="bonus" label="Bônus:" />
             </div>
           </fieldset>
           <input className={`${styles.submitButton} tormenta20Font`} type="submit" value="Salvar" />

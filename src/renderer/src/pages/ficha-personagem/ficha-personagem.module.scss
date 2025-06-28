@@ -14,7 +14,7 @@
     align-items: center;
     padding-bottom: 15px;
     overflow-y: auto;
-    background-color: variables.$background-color;
+    background-color: variables.$cinza-escuro-1;
 
     .navButtons {
       display: flex;
@@ -24,7 +24,7 @@
       border-radius: 0 0 20px 20px;
       z-index: 5;
       position: sticky;
-      background-color: variables.$primary-color;
+      background-color: variables.$cinza-escuro-2;
       top: 0;
 
       button:first-child {
@@ -39,14 +39,14 @@
 }
 
 .secaoAtributos {
-  width: 90%;
+  width: 95%;
 }
 
 .atributo {
   width: 95px;
   height: 80px;
   border-radius: 5px;
-  background-color: variables.$secondary-color;
+  background-color: variables.$cinza-escuro-3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +78,7 @@
 }
 
 .secaoPoderes {
-  width: 90%;
+  width: 95%;
 
   .poderes {
     width: 100%;
@@ -96,7 +96,7 @@
   }
 
   select {
-    background-color: variables.$blue;
+    background-color: variables.$azul-primario;
     width: 55px;
     text-align: center;
     color: white;
@@ -106,9 +106,9 @@
 }
 
 .secaoEfeitos {
-  width: 90%;
+  width: 95%;
 }
 
 .secaoMagias {
-  width: 90%;
+  width: 95%;
 }

@@ -1,12 +1,15 @@
 @use '@renderer/assets/variables.scss';
 
+.card:last-child {
+  border-bottom: none;
+}
+
 .card {
-  background-color: variables.$background-color;
-  border: 1px solid variables.$secondary-color;
+  background-color: transparent;
   padding: 10px;
   width: 100%;
-  border-radius: 5px;
   height: fit-content;
+  border-bottom: 1px solid variables.$cinza-escuro-3;
 
   .header {
     display: flex;
@@ -39,12 +42,12 @@
         h4 {
           font-size: 14px;
           margin-top: 2px;
-          color: variables.$text-color;
+          color: variables.$cinza-claro-1;
         }
       }
       .nome:hover {
         h3 {
-          color: variables.$highlight-color;
+          color: variables.$amarelo-primario;
         }
       }
     }

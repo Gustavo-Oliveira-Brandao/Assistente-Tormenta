@@ -33,19 +33,19 @@ export const MenuPrincipal = (): JSX.Element => {
     <main className={styles.mainMenu}>
       <div className={styles.backdrop}></div>
       <div className={styles.screen}>
-        <h1 className="tormenta20Font">Assistente Tormenta20</h1>
+        <h1 className="tormenta20Font">Arquivos de Tanna-Toh</h1>
         <div className={styles.botoes}>
           <BotaoModular
             font="tormenta20Font"
-            css="botaoRetangular200x40"
-            cor="corVermelho"
+            css="botaoMenuPrincipal"
+            cor="vermelhoEscuro"
             onClickEvent={() => dispatch(abrirModal('PERSONAGEM_SELECAO_MODAL'))}
             texto="Personagens"
           />
           <BotaoModular
             font="tormenta20Font"
-            css="botaoRetangular200x40"
-            cor="corVermelho"
+            css="botaoMenuPrincipal"
+            cor="vermelhoEscuro"
             onClickEvent={() => {
               window.open('https://jamboeditora.com.br/', '_blank')
               return false
@@ -54,8 +54,8 @@ export const MenuPrincipal = (): JSX.Element => {
           />
           <BotaoModular
             font="tormenta20Font"
-            css="botaoRetangular200x40"
-            cor="corVermelho"
+            css="botaoMenuPrincipal"
+            cor="vermelhoEscuro"
             onClickEvent={() => exibirPoderesDefault()}
             texto="Sair"
           />
@@ -73,10 +73,10 @@ export const MenuPrincipal = (): JSX.Element => {
             width="350px"
             footer={
               <BotaoModular
-                css="botaoRetangular200x40"
+                css="botaoMenuPrincipal"
                 onClickEvent={() => criarPersonagem()}
                 texto={'Criar personagem'}
-                cor="corVerde"
+                cor="verdePrimario"
                 font="tormenta20Font"
               />
             }

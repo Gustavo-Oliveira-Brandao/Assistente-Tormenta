@@ -23,7 +23,7 @@ export const FichaMagias = (): JSX.Element => {
           <>
             <h2 className="tormenta20Font">Magias</h2>
             <BotaoModular
-              css="minimalista"
+              css="botaoAcompanhanteHeader"
               texto="Buscar magias"
               cor="transparente"
               font="tormenta20Font"
@@ -40,7 +40,7 @@ export const FichaMagias = (): JSX.Element => {
               key={index}
               magia={magia}
               iconeBotaoInteracao="./icons/delete.svg"
-              onInteract={() => removerMagia.mutate(magia.key)}
+              onInteract={() => removerMagia.mutate(1)}
             />
           ))}
       </SecaoFicha>
@@ -53,7 +53,7 @@ export const FichaMagias = (): JSX.Element => {
                   key={index}
                   magia={magia}
                   iconeBotaoInteracao="./icons/adicao.svg"
-                  onInteract={() => removerMagia.mutate(magia.key)}
+                  onInteract={() => removerMagia.mutate(1)}
                 />
               ))}
           </Modal>,

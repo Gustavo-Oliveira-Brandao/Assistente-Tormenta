@@ -37,10 +37,10 @@ export const CardPoder = ({
           {exibeFonte && <p className={`${styles.categoria} tormenta20Font`}>{poder.fonte}</p>}
           {onInteract && (
             <BotaoModular
-              css="botaoQuadrado30px"
+              css="botaoAcaoPequeno"
               icone={iconeBotaoInteracao}
               onClickEvent={onInteract}
-              cor="corSecundaria"
+              cor="cinzaEscuro03"
             />
           )}
         </div>

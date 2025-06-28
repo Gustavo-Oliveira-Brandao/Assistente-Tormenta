@@ -4,18 +4,18 @@ button {
   border: none;
 }
 
-.corFundo {
-  background-color: variables.$background-color;
+.cinzaEscuro01 {
+  background-color: variables.$cinza-escuro-1;
   transition: 0.2s background-color ease;
 }
 
-.corPrimaria {
-  background-color: variables.$primary-color;
+.cinzaEscuro02 {
+  background-color: variables.$cinza-escuro-2;
   transition: 0.2s background-color ease;
 }
 
-.corSecundaria {
-  background-color: variables.$secondary-color;
+.cinzaEscuro03 {
+  background-color: variables.$cinza-escuro-3;
   transition: 0.2s background-color ease;
 }
 
@@ -23,39 +23,25 @@ button {
   background-color: transparent;
 }
 
-.corVermelho,
-.corPrimaria:hover,
+.vermelhoEscuro,
+.cinzaEscuro02:hover,
 .botaoQuadrado30px:hover,
-.corSecundaria:hover {
-  background-color: variables.$red;
+.cinzaEscuro03:hover {
+  background-color: variables.$vermelho-escuro;
   transition: 0.2s background-color ease;
 }
 
-.corVermelho:hover {
-  background-color: variables.$secondary-red;
+.vermelhoEscuro:hover {
+  background-color: variables.$vermelho-escuro;
   transition: 0.2s background-color ease;
 }
 
 .ativo {
-  background-color: variables.$red !important;
+  background-color: variables.$vermelho-escuro !important;
 }
 
-.corVerde {
-  background-color: variables.$green;
-}
-
-.botaoRemove {
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 10px;
-    height: 10px;
-  }
+.verdePrimario {
+  background-color: variables.$verde-primario;
 }
 
 .rollBtn {
@@ -82,7 +68,7 @@ button {
 }
 
 .rollBtn:hover {
-  color: variables.$highlight-color;
+  color: variables.$amarelo-primario;
   transform: scale(1.3);
 
   img {
@@ -90,7 +76,7 @@ button {
   }
 
   p {
-    color: variables.$highlight-color;
+    color: variables.$amarelo-primario;
   }
 }
 
@@ -104,22 +90,23 @@ button {
   }
 }
 
-.simples {
+.botaoTimido {
   background-color: transparent;
   font-size: 13px;
 }
 
-.simples:hover {
-  color: variables.$highlight-color;
+.botaoTimido:hover {
+  color: variables.$amarelo-primario;
 }
 
-.minimalista {
+.botaoAcompanhanteHeader {
   display: flex;
   cursor: pointer;
   align-items: center;
+  justify-content: center;
   width: fit-content;
-  padding: 5px;
-  border-radius: 30px;
+  padding: 5px 10px;
+  border-radius: 15px;
 
   img {
     width: 20px !important;
@@ -132,12 +119,13 @@ button {
   }
 
   &:hover {
-    background-color: #2e2e2e77;
-    border-radius: 30px;
+    p {
+      color: variables.$amarelo-primario;
+    }
   }
 }
 
-.botaoQuadrado30px {
+.botaoAcaoPequeno {
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -171,7 +159,7 @@ button {
   }
 }
 
-.botaoRetangular200x40 {
+.botaoMenuPrincipal {
   width: 200px;
   height: 40px;
   border-radius: 5px;
@@ -181,20 +169,10 @@ button {
   }
 }
 
-.botaoClose {
+.botaoClosePopUp {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 24px;
   height: 24px;
-}
-
-.botaoFiltro {
-  height: 20px;
-  border: 1px solid white;
-  border-radius: 5px;
-
-  p {
-    font-size: 14px;
-  }
 }

@@ -23,7 +23,7 @@ export const Pericia = ({ pericia, exibeTreinamento, editavel }: periciaProps): 
     <>
       <SimpleCard width="100%" height="40px" css="littleCard">
         <BotaoModular
-          css="simples"
+          css="botaoTimido"
           cor="transparente"
           font="tormenta20Font"
           texto={pericia.nome}

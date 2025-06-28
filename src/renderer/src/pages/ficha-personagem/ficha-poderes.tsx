@@ -85,9 +85,42 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
         <SecaoFicha
           header={
             <>
+              <h2 className="tormenta20Font">Poderes de raça</h2>
+              <BotaoModular
+                css="botaoAcompanhanteHeader"
+                texto="Buscar"
+                cor="transparente"
+                font="tormenta20Font"
+                onClickEvent={() => {
+                  setCategoriaPoderes('RACA')
+                  dispatch(abrirModal(`PODERES_LOJA`))
+                }}
+                icone="./icons/busca.svg"
+              />
+            </>
+          }
+          css="poderes"
+        >
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'raca')
+              .map((poder) => (
+                <CardPoder
+                  key={poder.id}
+                  poder={poder}
+                  nivel={poder.nivel}
+                  exibeFonte={true}
+                  onInteract={() => removerPoder.mutate(poder.id)}
+                  iconeBotaoInteracao={'./icons/delete.svg'}
+                />
+              ))}
+        </SecaoFicha>
+        <SecaoFicha
+          header={
+            <>
               <h2 className="tormenta20Font">Habilidades de classe</h2>
               <BotaoModular
-                css="minimalista"
+                css="botaoAcompanhanteHeader"
                 texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
@@ -120,7 +153,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
             <>
               <h2 className="tormenta20Font">Poderes de classe</h2>
               <BotaoModular
-                css="minimalista"
+                css="botaoAcompanhanteHeader"
                 texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
@@ -151,42 +184,9 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
         <SecaoFicha
           header={
             <>
-              <h2 className="tormenta20Font">Poderes de raça</h2>
-              <BotaoModular
-                css="minimalista"
-                texto="Buscar"
-                cor="transparente"
-                font="tormenta20Font"
-                onClickEvent={() => {
-                  setCategoriaPoderes('RACA')
-                  dispatch(abrirModal(`PODERES_LOJA`))
-                }}
-                icone="./icons/busca.svg"
-              />
-            </>
-          }
-          css="poderes"
-        >
-          {poderesPersonagem &&
-            poderesPersonagem
-              .filter((poder) => poder.categoria == 'raca')
-              .map((poder) => (
-                <CardPoder
-                  key={poder.id}
-                  poder={poder}
-                  nivel={poder.nivel}
-                  exibeFonte={true}
-                  onInteract={() => removerPoder.mutate(poder.id)}
-                  iconeBotaoInteracao={'./icons/delete.svg'}
-                />
-              ))}
-        </SecaoFicha>
-        <SecaoFicha
-          header={
-            <>
               <h2 className="tormenta20Font">Poderes de origem</h2>
               <BotaoModular
-                css="minimalista"
+                css="botaoAcompanhanteHeader"
                 texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
@@ -221,7 +221,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
             <>
               <h2 className="tormenta20Font">Poderes gerais</h2>
               <BotaoModular
-                css="minimalista"
+                css="botaoAcompanhanteHeader"
                 texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
@@ -324,7 +324,6 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
               </div>
             }
           >
-            <h3 className="tormenta20Font">Poderes</h3>
             {poderesFiltrados.map((poder) => (
               <CardPoder
                 key={poder.key}

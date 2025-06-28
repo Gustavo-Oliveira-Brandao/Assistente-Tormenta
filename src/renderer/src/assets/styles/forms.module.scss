@@ -7,14 +7,14 @@ input::-webkit-inner-spin-button {
 }
 
 .select {
-  background-color: variables.$secondary-color;
+  background-color: variables.$cinza-escuro-3;
   height: 30px;
   border: none;
   border-radius: 5px;
 }
 
 .option {
-  background-color: variables.$secondary-color;
+  background-color: variables.$cinza-escuro-3;
 }
 
 .submitButton {
@@ -23,7 +23,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: variables.$green;
+  background-color: variables.$verde-primario;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +50,7 @@ input::-webkit-inner-spin-button {
 
   .fieldset {
     padding: 10px;
-    border: 1px solid variables.$secondary-color;
+    border: 1px solid variables.$cinza-escuro-3;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ input::-webkit-inner-spin-button {
       left: 0;
       right: 0;
       height: 0.5px;
-      background-color: variables.$secondary-color;
+      background-color: variables.$cinza-escuro-3;
       transform: translateY(-50%);
       z-index: 0;
     }
@@ -89,7 +89,7 @@ input::-webkit-inner-spin-button {
     }
 
     .formArrayElement {
-      background-color: variables.$primary-color;
+      background-color: variables.$cinza-escuro-2;
       padding: 10px;
       gap: 23px;
       border-radius: 5px;

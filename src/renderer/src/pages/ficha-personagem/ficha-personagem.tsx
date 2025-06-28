@@ -8,7 +8,6 @@ import { SidebarFicha } from '@renderer/templates/sidebar/sidebar-ficha'
 import { FichaAtributos } from './ficha-atributos'
 import { FichaPoderes } from './ficha-poderes'
 import { FichaMagias } from './ficha-magias'
-import { FichaEfeitos } from './ficha-efeitos'
 
 export const FichaPersonagem = (): JSX.Element => {
   const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
@@ -29,7 +28,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   onClickEvent={() => setAba('ATRIBUTOS')}
                   estaAtivo={aba == 'ATRIBUTOS' ? true : false}
                   texto={aba == 'ATRIBUTOS' ? 'ATRIBUTOS' : undefined}
-                  cor="corSecundaria"
+                  cor="cinzaEscuro03"
                   font="tormenta20Font"
                 />
                 <BotaoModular
@@ -38,7 +37,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   onClickEvent={() => setAba('PODERES')}
                   estaAtivo={aba == 'PODERES' ? true : false}
                   texto={aba == 'PODERES' ? 'PODERES' : undefined}
-                  cor="corSecundaria"
+                  cor="cinzaEscuro03"
                   font="tormenta20Font"
                 />
                 <BotaoModular
@@ -47,7 +46,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   onClickEvent={() => setAba('MAGIAS')}
                   estaAtivo={aba == 'MAGIAS' ? true : false}
                   texto={aba == 'MAGIAS' ? 'MAGIAS' : undefined}
-                  cor="corSecundaria"
+                  cor="cinzaEscuro03"
                   font="tormenta20Font"
                 />
                 <BotaoModular
@@ -56,14 +55,13 @@ export const FichaPersonagem = (): JSX.Element => {
                   onClickEvent={() => setAba('EFEITOS')}
                   estaAtivo={aba == 'EFEITOS' ? true : false}
                   texto={aba == 'EFEITOS' ? 'EFEITOS' : undefined}
-                  cor="corSecundaria"
+                  cor="cinzaEscuro03"
                   font="tormenta20Font"
                 />
               </nav>
               {aba == 'ATRIBUTOS' && <FichaAtributos personagem={personagem} />}
               {aba === 'PODERES' && <FichaPoderes personagem={personagem} />}
               {aba === 'MAGIAS' && <FichaMagias />}
-              {aba === 'EFEITOS' && <FichaEfeitos personagem={personagem} />}
             </div>
           </section>
         </>

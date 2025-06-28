@@ -1,15 +1,11 @@
 import { JSX, useState } from 'react'
 import styles from './sidebar-ficha.module.scss'
-import { BarraProgressao } from '@renderer/components/barra-recurso/barra-progressao'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
-import { Pericia } from '@renderer/components/pericia/pericia'
-import { abrirModal } from '@renderer/store/slices/modalSlice'
-import { createPortal } from 'react-dom'
-import { Modal } from '../modal/modal'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { useNavigate } from 'react-router-dom'
 import { RootState } from '@renderer/store/store'
 import { useDispatch, useSelector } from 'react-redux'
+import { FotoPersonagem } from '@renderer/components/foto-personagem/foto-personagem'
+import { BarraRecurso } from '@renderer/components/barra-recurso/barra-recurso'
 
 type SidebarFichaProps = {
   personagem: IPersonagem
@@ -24,159 +20,19 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
 
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.abasSidebar}>
-        <BotaoModular
-          css="minimalista"
-          onClickEvent={() => navigate('/')}
-          font="tormenta20Font"
-          cor="corPrimaria"
-          icone="./icons/voltar.svg"
-        />
-        <BotaoModular
-          css="botaoExpansivel"
-          onClickEvent={() => setAbaSidebar('STATUS')}
-          font="tormenta20Font"
-          estaAtivo={abaSidebar == 'STATUS' ? true : false}
-          cor="corPrimaria"
-          texto={abaSidebar === 'STATUS' ? 'Status' : undefined}
-          icone="./icons/status.svg"
-        />
+      <FotoPersonagem personagem={personagem} />
+      <div className={styles.recursos}>
+        {personagem.recursos
+          .filter((recurso) => recurso.categoria == 'vida' || recurso.categoria == 'mana')
+          .map((recurso) => (
+            <BarraRecurso
+              key={recurso.id}
+              css={recurso.categoria}
+              valorAtual={recurso.valorAtual}
+              valorMaximo={recurso.valorMaximo ?? 0}
+            />
+          ))}
       </div>
-      {abaSidebar === 'STATUS' && (
-        <>
-          <div
-            onClick={() => dispatch(abrirModal('DETALHES_EDICAO_MODAL'))}
-            className={styles.fotoPersonagem}
-          >
-            <img src="./character.png" alt={personagem.nome} />
-            <span className={styles.opacidade}></span>
-            <div className={styles.detalhes}>
-              <div className={styles.detalhe}>
-                <img src={`./icons/${personagem.raca}.svg`} alt={personagem.raca} />
-                <p className="tormenta20Font">{personagem.raca}</p>
-              </div>
-              <div className={styles.detalhe}>
-                <img src={`./icons/${personagem.classeInicial}.svg`} alt="Classe" />
-                <p className="tormenta20Font">{personagem.classeInicial}</p>
-              </div>
-              <div className={styles.detalhe}>
-                <img src={`./icons/tanna-toh.svg`} alt={personagem.origem} />
-                <p className="tormenta20Font">{personagem.origem}</p>
-              </div>
-              <div className={styles.detalhe}>
-                <img
-                  src={`./icons/${personagem.divindade.toLowerCase()}.svg`}
-                  alt={personagem.divindade}
-                />
-                <p className="tormenta20Font">{personagem.divindade}</p>
-              </div>
-            </div>
-          </div>
-          <div className={styles.personagemInfo}>
-            <div className={styles.nome}>
-              <p className="tormenta20Font">{personagem.nome}</p>
-            </div>
-            <div className={styles.nivel}>
-              <p className="tormenta20Font">{personagem.nivelAtual}</p>
-            </div>
-          </div>
-          <div className={styles.barrasRecurso}>
-            {personagem.recursos
-              .filter((recurso) => recurso.categoria == 'vida' || recurso.categoria == 'mana')
-              .sort((a, b) => {
-                if (a.categoria < b.categoria) {
-                  return 1
-                }
-                if (a.categoria > b.categoria) {
-                  return -1
-                }
-                return 0
-              })
-              .map((recurso) => (
-                <div key={recurso.id} className={styles.barra}>
-                  <BarraProgressao
-                    valorAtual={recurso.valorAtual}
-                    valorMaximo={recurso.valorMaximo ?? 0}
-                    categoria={recurso.categoria}
-                    height="30px"
-                  />
-                </div>
-              ))}
-
-            {personagem.recursos
-              .filter((recurso) => recurso.categoria == 'defesa')
-              .map((recurso) => (
-                <div key={recurso.id} className={styles.infoSecundaria}>
-                  <div className={styles.titulo}>
-                    <h2 className="tormenta20Font">{recurso.categoria}</h2>
-                  </div>
-                  <div className={styles.recurso}>
-                    <img src="./icons/paladino.svg" alt="Defesa" />
-                    <BotaoModular
-                      onClickEvent={() => dispatch(abrirModal(`${recurso.categoria}_EDICAO_MODAL`))}
-                      texto={recurso.valorMaximo}
-                      font="tormenta20Font"
-                      css="botaoQuadrado30px"
-                      cor="corSecundaria"
-                    />
-                  </div>
-                  {modalAberto == `${recurso.categoria}_EDICAO_MODAL` &&
-                    createPortal(
-                      <Modal width="550px" titulo={recurso.categoria} height="400px">
-                        <></>
-                      </Modal>,
-                      document.body
-                    )}
-                </div>
-              ))}
-            {personagem.deslocamentos
-              .filter((deslocamento) => deslocamento.nome == 'caminhada')
-              .map((deslocamento) => (
-                <div key={deslocamento.id} className={styles.infoSecundaria}>
-                  <div className={styles.titulo}>
-                    <h2 className="tormenta20Font">{deslocamento.nome}</h2>
-                  </div>
-                  <div className={styles.recurso}>
-                    <img src="./icons/deslocamento.svg" alt="Defesa" />
-                    <BotaoModular
-                      onClickEvent={() =>
-                        dispatch(abrirModal(`DESLOCAMENTO_${deslocamento.nome}_EDICAO_MODAL`))
-                      }
-                      texto={deslocamento.valorBase}
-                      font="tormenta20Font"
-                      css="botaoQuadrado30px"
-                      cor="corSecundaria"
-                    />
-                  </div>
-                  {modalAberto == `DESLOCAMENTO_${deslocamento.nome}_EDICAO_MODAL` &&
-                    createPortal(
-                      <Modal width="550px" titulo={deslocamento.nome} height="400px">
-                        <></>
-                      </Modal>,
-                      document.body
-                    )}
-                </div>
-              ))}
-            <div className={styles.infoSecundaria}>
-              <div className={styles.titulo}>
-                <h2 className="tormenta20Font">Iniciativa</h2>
-              </div>
-              <div className={styles.pericias}>
-                {personagem.pericias
-                  .filter((pericia) => pericia.nome === 'iniciativa')
-                  .map((pericia) => (
-                    <Pericia
-                      key={pericia.id}
-                      pericia={pericia}
-                      exibeTreinamento={false}
-                      editavel={true}
-                    />
-                  ))}
-              </div>
-            </div>
-          </div>
-        </>
-      )}
     </aside>
   )
 }

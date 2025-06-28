@@ -9,7 +9,7 @@ type SecaoFichaProps = {
 }
 
 export const SecaoFicha = ({ header, children, css }: SecaoFichaProps): JSX.Element => {
-  const conteudoCss = classNames(styles[css])
+  const conteudoCss = classNames(styles.conteudo, styles[css])
 
   return (
     <section className={styles.secao}>

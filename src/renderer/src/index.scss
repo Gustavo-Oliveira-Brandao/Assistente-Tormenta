@@ -130,7 +130,7 @@ input {
 }
 
 body {
-  background-color: variables.$primary-color;
+  background-color: variables.$cinza-escuro-2;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -141,7 +141,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: variables.$secondary-color;
+  background-color: variables.$cinza-escuro-3;
 }
 
 .alert {
@@ -153,7 +153,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: variables.$red;
+  background-color: variables.$vermelho-primario;
 }
 
 button {
@@ -161,7 +161,7 @@ button {
 }
 
 .select {
-  background-color: variables.$secondary-color;
+  background-color: variables.$cinza-escuro-3;
   height: 30px;
   border: none;
   border-radius: 5px;
@@ -169,7 +169,7 @@ button {
   height: 2rem;
 
   option {
-    background-color: variables.$secondary-color;
+    background-color: variables.$cinza-escuro-3;
   }
 }
 

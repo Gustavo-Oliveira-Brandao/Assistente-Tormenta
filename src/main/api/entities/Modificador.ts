@@ -1,6 +1,5 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
-
 @Entity()
 export class Modificador {
   @PrimaryGeneratedColumn()

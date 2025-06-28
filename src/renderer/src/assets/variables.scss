@@ -1,10 +1,18 @@
-$background-color: rgb(23, 23, 23);
-$primary-color: rgb(30, 30, 30);
-$secondary-color: rgb(50, 50, 50);
-$red: rgb(182, 41, 46);
-$secondary-red: rgb(133, 28, 31);
-$tertiary-red: rgb(206, 51, 56);
-$green: rgb(17, 153, 78);
-$blue: rgb(20, 75, 216);
-$text-color: #d9d9d9;
-$highlight-color: rgb(251, 218, 121);
+$cinza-escuro-1: rgb(23, 23, 23);
+$cinza-escuro-2: rgb(30, 30, 30);
+$cinza-escuro-3: rgb(50, 50, 50);
+$cinza-claro-1: #d9d9d9;
+
+$vermelho-primario: rgb(182, 41, 46);
+$vermelho-escuro: oklch(39.6% 0.141 25.723);
+$vermelho-claro: rgb(206, 51, 56);
+
+$verde-primario: oklch(62.7% 0.194 149.214);
+
+$azul-primario: oklch(54.6% 0.245 262.881);
+$azul-claro-1: oklch(62.3% 0.214 259.815);
+$azul-claro-2: oklch(70.7% 0.165 254.624);
+
+$laranja-primario: oklch(64.6% 0.222 41.116);
+
+$amarelo-primario: rgb(251, 218, 121);

@@ -1,20 +1,65 @@
 @use '@renderer/assets/variables.scss';
 
 .sidebar {
-  padding-top: 40px;
-  width: 300px;
+  width: 350px;
   height: 100vh;
-  background-color: variables.$cinza-escuro-1;
+  background-color: variables.$cinza-escuro-2;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 15px;
 
-  .recursos {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .personagemInfo {
+    width: 100%;
+
+    .personagemChamada {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      background-color: variables.$vermelho-escuro;
+      align-items: center;
+      padding: 0 5px 0 8px;
+
+      .personagemNome {
+        cursor: pointer;
+        font-size: 14px;
+        width: 80%;
+
+        &:hover {
+          p {
+            color: variables.$amarelo-primario;
+          }
+        }
+      }
+
+      .personagemNivel {
+        cursor: pointer;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        &:hover {
+          p {
+            color: variables.$amarelo-primario;
+          }
+        }
+      }
+    }
+    .recursos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

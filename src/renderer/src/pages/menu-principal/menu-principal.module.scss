@@ -1,5 +1,15 @@
 @use '@renderer/assets/variables.scss';
 
+.botaoMenuPrincipal {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: variables.$vermelho-escuro;
+  transition: 0.2s background-color ease;
+
+  font-size: 16px;
+}
+
 .mainMenu {
   background: url('./background.jpg');
   background-size: cover;

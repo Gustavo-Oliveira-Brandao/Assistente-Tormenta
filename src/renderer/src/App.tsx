@@ -7,12 +7,14 @@ function App(): React.JSX.Element {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<MenuPrincipal />} />
-          <Route path="/personagem" element={<FichaPersonagem />} />
-        </Routes>
-      </HashRouter>
+      <div className="root">
+        <HashRouter>
+          <Routes>
+            <Route path="/" element={<MenuPrincipal />} />
+            <Route path="/personagem" element={<FichaPersonagem />} />
+          </Routes>
+        </HashRouter>
+      </div>
     </QueryClientProvider>
   )
 }

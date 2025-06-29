@@ -1,52 +1,22 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { Pericia } from '@renderer/components/pericia/pericia'
-import { abrirModal } from '@renderer/store/slices/modalSlice'
-import { RootState } from '@renderer/store/store'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { JSX } from 'react'
-import { createPortal } from 'react-dom'
-import { useDispatch, useSelector } from 'react-redux'
 import styles from './ficha-personagem.module.scss'
-import { AtributosForm } from '@renderer/components/forms/atributos-form/atributos-form'
+import { Atributo } from '@renderer/components/atributo/atributo'
 
 type FichaAtributosProps = {
   personagem: IPersonagem
 }
 
 export const FichaAtributos = ({ personagem }: FichaAtributosProps): JSX.Element => {
-  const dispatch = useDispatch()
-  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
-
   return (
     <div className={styles.secaoAtributos}>
       <SecaoFicha header={<h2 className="tormenta20Font">Atributos</h2>} css="atributos">
         {personagem.atributos
           .sort((a, b) => a.ordem - b.ordem)
           .map((atributo) => (
-            <div className={styles.atributo} key={atributo.id}>
-              <div className={styles.titulo}>
-                <BotaoModular
-                  font="tormenta20Font"
-                  onClickEvent={() =>
-                    dispatch(abrirModal(`ATRIBUTO_${atributo.nome}_EDICAO_MODAL`))
-                  }
-                  texto={atributo.nome}
-                  css="botaoTimido"
-                  cor="transparente"
-                />
-              </div>
-              <BotaoModular
-                css="rollBtn"
-                cor="transparente"
-                icone="./icons/d20 cinza.svg"
-                onClickEvent={() => console.log('teste')}
-                font="tormenta20Font"
-                texto={atributo.valorAtual}
-              />
-              {modalAberto === `ATRIBUTO_${atributo.nome}_EDICAO_MODAL` &&
-                createPortal(<AtributosForm atributo={atributo} />, document.body)}
-            </div>
+            <Atributo key={atributo.id} atributo={atributo} />
           ))}
       </SecaoFicha>
       <SecaoFicha header={<h2 className="tormenta20Font">Pericias de combate</h2>} css="pericias">

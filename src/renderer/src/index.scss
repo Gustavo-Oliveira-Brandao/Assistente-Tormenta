@@ -129,6 +129,10 @@ input {
   line-height: 1.6;
 }
 
+.root {
+  isolation: isolate;
+}
+
 body {
   background-color: variables.$cinza-escuro-2;
   background-size: cover;

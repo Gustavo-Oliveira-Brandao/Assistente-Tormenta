@@ -1,20 +1,19 @@
-import { JSX } from 'react'
+import { JSX, useState } from 'react'
 import styles from './menu-principal.module.scss'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from '@renderer/store/store'
+import { useDispatch } from 'react-redux'
 import { useExibirTodosPersonagem } from '@renderer/hooks/selectors/usePersonagemQuery'
 import { useNavigate } from 'react-router-dom'
 import { selecionarPersonagem } from '@renderer/store/slices/personagemSlice'
-import { createPortal } from 'react-dom'
-import { Modal } from '@renderer/templates/modal/modal'
-import { abrirModal } from '@renderer/store/slices/modalSlice'
+import { Modal } from '@renderer/components/modal/modal'
 import { useCriarPersonagemDemo } from '@renderer/hooks/mutations/usePersonagemMutations'
 import { exibirPoderesDefault } from '@renderer/api/poder-service'
+import { Dialog } from '@base-ui-components/react'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
-  const modalAberto = useSelector((state: RootState) => state.modal.modalAberto)
+
+  const [selecaoPersonagensEstaAberta, setSelecaoPersonagensEstaAberta] = useState(false)
 
   const { data: personagens } = useExibirTodosPersonagem()
   const navigate = useNavigate()
@@ -39,7 +38,7 @@ export const MenuPrincipal = (): JSX.Element => {
             font="tormenta20Font"
             css="botaoMenuPrincipal"
             cor="vermelhoEscuro"
-            onClickEvent={() => dispatch(abrirModal('PERSONAGEM_SELECAO_MODAL'))}
+            onClickEvent={() => setSelecaoPersonagensEstaAberta(true)}
             texto="Personagens"
           />
           <BotaoModular
@@ -65,42 +64,43 @@ export const MenuPrincipal = (): JSX.Element => {
           direitos são reservados a editora.
         </p>
       </div>
-      {modalAberto === 'PERSONAGEM_SELECAO_MODAL' &&
-        createPortal(
-          <Modal
-            titulo="Selecionar personagem"
-            height="500px"
-            width="350px"
-            footer={
-              <BotaoModular
-                css="botaoMenuPrincipal"
-                onClickEvent={() => criarPersonagem()}
-                texto={'Criar personagem'}
-                cor="verdePrimario"
-                font="tormenta20Font"
-              />
-            }
-          >
-            <div className={styles.selecaoPersonagem}>
-              {personagens &&
-                personagens.map((personagem) => (
-                  <div
-                    role="button"
-                    key={personagem.id}
-                    className={styles.personagem}
-                    onClick={() => selecionarPersonagemPorId(personagem.id)}
-                  >
-                    <img src="./character.png" alt={personagem.nome} />
-                    <div className={styles.detalhesPersonagem}>
-                      <h2 className="tormenta20Font">{personagem.nome}</h2>
-                    </div>
-                    <p className={styles.nivel}>{personagem.nivelAtual}</p>
+      <Dialog.Root
+        open={selecaoPersonagensEstaAberta}
+        onOpenChange={setSelecaoPersonagensEstaAberta}
+      >
+        <Modal
+          titulo="Selecionar personagem"
+          height="500px"
+          width="350px"
+          footer={
+            <BotaoModular
+              css="botaoMenuPrincipal"
+              onClickEvent={() => criarPersonagem()}
+              texto={'Criar personagem'}
+              cor="verdePrimario"
+              font="tormenta20Font"
+            />
+          }
+        >
+          <div className={styles.selecaoPersonagem}>
+            {personagens &&
+              personagens.map((personagem) => (
+                <div
+                  role="button"
+                  key={personagem.id}
+                  className={styles.personagem}
+                  onClick={() => selecionarPersonagemPorId(personagem.id)}
+                >
+                  <img src="./character.png" alt={personagem.nome} />
+                  <div className={styles.detalhesPersonagem}>
+                    <h2 className="tormenta20Font">{personagem.nome}</h2>
                   </div>
-                ))}
-            </div>
-          </Modal>,
-          document.body
-        )}
+                  <p className={styles.nivel}>{personagem.nivelAtual}</p>
+                </div>
+              ))}
+          </div>
+        </Modal>
+      </Dialog.Root>
     </main>
   )
 }

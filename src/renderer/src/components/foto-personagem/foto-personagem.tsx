@@ -1,21 +1,14 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import styles from './foto-personagem.module.scss'
 import { JSX } from 'react'
-import { useDispatch } from 'react-redux'
-import { abrirModal } from '@renderer/store/slices/modalSlice'
 
 type FotoPersonagemProps = {
   personagem: IPersonagem
 }
 
 export const FotoPersonagem = ({ personagem }: FotoPersonagemProps): JSX.Element => {
-  const dispatch = useDispatch()
-
   return (
-    <div
-      onClick={() => dispatch(abrirModal('DETALHES_EDICAO_MODAL'))}
-      className={styles.fotoPersonagem}
-    >
+    <div onClick={() => console.log('sla')} className={styles.fotoPersonagem}>
       <img src="./character.png" alt={personagem.nome} />
       <span className={styles.opacidade}></span>
       <div className={styles.detalhes}>

@@ -90,15 +90,6 @@ button {
   }
 }
 
-.botaoTimido {
-  background-color: transparent;
-  font-size: 13px;
-}
-
-.botaoTimido:hover {
-  color: variables.$amarelo-primario;
-}
-
 .botaoAcompanhanteHeader {
   display: flex;
   cursor: pointer;
@@ -167,12 +158,4 @@ button {
   p {
     font-size: 16px;
   }
-}
-
-.botaoClosePopUp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
 }

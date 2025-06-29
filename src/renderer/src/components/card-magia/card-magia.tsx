@@ -11,7 +11,6 @@ type cardMagiaProps = {
   iconeBotaoInteracao?: string
 }
 export const CardMagia = (props: cardMagiaProps): JSX.Element => {
-  console.log(props.magia.escola)
   return (
     <AccordionCard
       titulo={props.magia.nome ?? 'Magia sem nome'}

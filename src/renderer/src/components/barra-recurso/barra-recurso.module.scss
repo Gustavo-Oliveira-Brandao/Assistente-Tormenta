@@ -3,15 +3,14 @@
 .barraWrapper {
   position: relative;
   width: 100%;
-  border-radius: 5px;
   background-color: variables.$cinza-escuro-3;
-  height: 20px;
+  height: 23px;
   cursor: pointer;
 
   .barra {
     position: absolute;
     height: 100%;
-    border-radius: 5px;
+    max-width: 100%;
   }
 
   .texto {
@@ -22,6 +21,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &:hover {
+    .texto {
+      color: variables.$amarelo-primario;
+    }
   }
 }
 

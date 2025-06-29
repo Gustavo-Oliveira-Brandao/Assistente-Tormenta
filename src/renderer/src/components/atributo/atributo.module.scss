@@ -1,0 +1,26 @@
+@use '@renderer/assets/variables.scss';
+
+.atributo {
+  width: 95px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: variables.$cinza-escuro-3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+
+  .titulo {
+    height: 20px;
+    margin-bottom: 2px;
+  }
+}
+
+.nomeAtributo {
+  background-color: transparent;
+  font-size: 13px;
+
+  &:hover {
+    color: variables.$amarelo-primario;
+  }
+}

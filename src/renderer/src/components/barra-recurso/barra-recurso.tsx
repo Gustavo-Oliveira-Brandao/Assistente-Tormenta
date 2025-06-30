@@ -4,7 +4,7 @@ import styles from './barra-recurso.module.scss'
 type BarraRecursoProps = {
   valorAtual: number
   valorMaximo: number
-  css: string
+  categoria: string
   valorTemporario?: number
 }
 
@@ -21,15 +21,15 @@ export const BarraRecurso = (props: BarraRecursoProps): JSX.Element => {
 
   const calcularCorRecurso = (): string => {
     if (larguraBarra == 100) {
-      return `${props.css}Full`
+      return `${props.categoria}Full`
     }
     if (larguraBarra > 75) {
-      return `${props.css}Full`
+      return `${props.categoria}Full`
     }
     if (larguraBarra > 25) {
-      return `${props.css}AboveHalf`
+      return `${props.categoria}AboveHalf`
     }
-    return `${props.css}AlmostEmpty`
+    return `${props.categoria}AlmostEmpty`
   }
 
   return (

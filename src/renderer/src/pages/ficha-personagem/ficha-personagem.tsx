@@ -3,11 +3,12 @@ import { RootState } from '@renderer/store/store'
 import { JSX, useState } from 'react'
 import { useSelector } from 'react-redux'
 import styles from './ficha-personagem.module.scss'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { SidebarFicha } from '@renderer/templates/sidebar/sidebar-ficha'
 import { FichaAtributos } from './ficha-atributos'
 import { FichaPoderes } from './ficha-poderes'
 import { FichaMagias } from './ficha-magias'
+import { FichaEfeitos } from './ficha-efeitos'
+import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 
 export const FichaPersonagem = (): JSX.Element => {
   const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
@@ -24,44 +25,49 @@ export const FichaPersonagem = (): JSX.Element => {
               <nav className={styles.navButtons}>
                 <BotaoModular
                   css="botaoExpansivel"
-                  icone="./icons/arsenal.svg"
                   onClickEvent={() => setAba('ATRIBUTOS')}
                   estaAtivo={aba == 'ATRIBUTOS' ? true : false}
-                  texto={aba == 'ATRIBUTOS' ? 'ATRIBUTOS' : undefined}
                   cor="cinzaEscuro03"
                   font="tormenta20Font"
-                />
+                >
+                  <img src="./icons/arsenal.svg" alt="Atributos" />
+                  {aba == 'ATRIBUTOS' && <p>Atributos</p>}
+                </BotaoModular>
                 <BotaoModular
                   css="botaoExpansivel"
-                  icone="./icons/thyatis.svg"
                   onClickEvent={() => setAba('PODERES')}
                   estaAtivo={aba == 'PODERES' ? true : false}
-                  texto={aba == 'PODERES' ? 'PODERES' : undefined}
                   cor="cinzaEscuro03"
                   font="tormenta20Font"
-                />
+                >
+                  <img src="./icons/thyatis.svg" alt="poderes" />
+                  {aba == 'PODERES' && <p>Poderes</p>}
+                </BotaoModular>
                 <BotaoModular
                   css="botaoExpansivel"
-                  icone="./icons/tanna-toh.svg"
                   onClickEvent={() => setAba('MAGIAS')}
                   estaAtivo={aba == 'MAGIAS' ? true : false}
-                  texto={aba == 'MAGIAS' ? 'MAGIAS' : undefined}
                   cor="cinzaEscuro03"
                   font="tormenta20Font"
-                />
+                >
+                  <img src="./icons/tanna-toh.svg" alt="magias" />
+                  {aba == 'MAGIAS' && <p>Magias</p>}
+                </BotaoModular>
                 <BotaoModular
                   css="botaoExpansivel"
-                  icone="./icons/grimorio.svg"
                   onClickEvent={() => setAba('EFEITOS')}
                   estaAtivo={aba == 'EFEITOS' ? true : false}
-                  texto={aba == 'EFEITOS' ? 'EFEITOS' : undefined}
                   cor="cinzaEscuro03"
                   font="tormenta20Font"
-                />
+                >
+                  <img src="./icons/grimorio.svg" alt="efeitos" />
+                  {aba == 'EFEITOS' && <p>Efeitos</p>}
+                </BotaoModular>
               </nav>
               {aba == 'ATRIBUTOS' && <FichaAtributos personagem={personagem} />}
               {aba === 'PODERES' && <FichaPoderes personagem={personagem} />}
               {aba === 'MAGIAS' && <FichaMagias />}
+              {aba === 'EFEITOS' && <FichaEfeitos personagem={personagem} />}
             </div>
           </section>
         </>

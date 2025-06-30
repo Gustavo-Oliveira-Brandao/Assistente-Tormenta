@@ -67,6 +67,15 @@ button {
   }
 }
 
+.botaoTimido {
+  background-color: transparent;
+  font-size: 13px;
+
+  &:hover {
+    color: variables.$amarelo-primario;
+  }
+}
+
 .rollBtn:hover {
   color: variables.$amarelo-primario;
   transform: scale(1.3);

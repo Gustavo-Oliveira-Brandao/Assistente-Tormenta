@@ -28,7 +28,7 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
             .map((recurso) => (
               <BarraRecurso
                 key={recurso.id}
-                css={recurso.categoria}
+                categoria={recurso.categoria}
                 valorAtual={recurso.valorAtual}
                 valorMaximo={recurso.valorMaximo ?? 0}
               />

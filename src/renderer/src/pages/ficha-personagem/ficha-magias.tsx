@@ -1,11 +1,11 @@
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { CardMagia } from '@renderer/components/card-magia/card-magia'
 import { useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
 import { useExibirMagiasDefault } from '@renderer/hooks/selectors/useMagiaQuery'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { JSX } from 'react'
 import styles from './ficha-personagem.module.scss'
-import { Accordion } from '@base-ui-components/react'
+import { DisclosureGroup } from 'react-aria-components'
+import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 
 export const FichaMagias = (): JSX.Element => {
   const { data: magiasDefault } = useExibirMagiasDefault()
@@ -17,19 +17,15 @@ export const FichaMagias = (): JSX.Element => {
         header={
           <>
             <h2 className="tormenta20Font">Magias</h2>
-            <BotaoModular
-              css="botaoAcompanhanteHeader"
-              texto="Buscar magias"
-              cor="transparente"
-              font="tormenta20Font"
-              onClickEvent={() => 'dispatch(abrirModal(`MAGIAS_LOJA_MODAL`))'}
-              icone="./icons/busca.svg"
-            />
+            <BotaoModular css="botaoAcompanhanteHeader" cor="transparente" font="tormenta20Font">
+              <img src="./icons/busca.svg" alt="Buscar magias" />
+              <p>Buscar magias</p>
+            </BotaoModular>
           </>
         }
         css="poderes"
       >
-        <Accordion.Root>
+        <DisclosureGroup allowsMultipleExpanded>
           {magiasDefault &&
             magiasDefault.map((magia, index) => (
               <CardMagia
@@ -39,7 +35,7 @@ export const FichaMagias = (): JSX.Element => {
                 onInteract={() => removerMagia.mutate(1)}
               />
             ))}
-        </Accordion.Root>
+        </DisclosureGroup>
       </SecaoFicha>
     </div>
   )

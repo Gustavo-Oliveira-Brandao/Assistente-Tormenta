@@ -9,13 +9,13 @@ import {
 import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
 import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
-import { Modal } from '@renderer/components/modal/modal'
 import { opcoesCategoriasPoderesGerais } from '@renderer/utils/select options/opcoesCategoriasPoderes'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
-import { Accordion, Dialog } from '@base-ui-components/react'
 import { DeepPartial } from 'typeorm'
 import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
+import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
+import { ModalModular } from '@renderer/components/modal/modal'
+import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
@@ -98,20 +98,21 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
               <h2 className="tormenta20Font">Poderes de raça</h2>
               <BotaoModular
                 css="botaoAcompanhanteHeader"
-                texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
                   setCategoriaPoderes('RACA')
                   setLojaEstaAberta(true)
                 }}
-                icone="./icons/busca.svg"
-              />
+              >
+                <img src="./icons/busca.svg" alt="buscar poderes" />
+                <p>Buscar</p>
+              </BotaoModular>
             </>
           }
           css="poderes"
         >
-          <Accordion.Root>
+          <DisclosureGroup>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'raca')
@@ -125,7 +126,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     iconeBotaoInteracao={'./icons/delete.svg'}
                   />
                 ))}
-          </Accordion.Root>
+          </DisclosureGroup>
         </SecaoFicha>
         <SecaoFicha
           header={
@@ -133,20 +134,21 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
               <h2 className="tormenta20Font">Habilidades de classe</h2>
               <BotaoModular
                 css="botaoAcompanhanteHeader"
-                texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
                   setCategoriaPoderes('HABILIDADES_CLASSE')
                   setLojaEstaAberta(true)
                 }}
-                icone="./icons/busca.svg"
-              />
+              >
+                <img src="./icons/busca.svg" alt="buscar poderes" />
+                <p>Buscar</p>
+              </BotaoModular>
             </>
           }
           css="poderes"
         >
-          <Accordion.Root>
+          <DisclosureGroup>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'habilidade de classe')
@@ -160,7 +162,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     iconeBotaoInteracao={'./icons/delete.svg'}
                   />
                 ))}
-          </Accordion.Root>
+          </DisclosureGroup>
         </SecaoFicha>
         <SecaoFicha
           header={
@@ -168,20 +170,21 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
               <h2 className="tormenta20Font">Poderes de classe</h2>
               <BotaoModular
                 css="botaoAcompanhanteHeader"
-                texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
                   setCategoriaPoderes('PODERES_CLASSE')
                   setLojaEstaAberta(true)
                 }}
-                icone="./icons/busca.svg"
-              />
+              >
+                <img src="./icons/busca.svg" alt="buscar poderes" />
+                <p>Buscar</p>
+              </BotaoModular>
             </>
           }
           css="poderes"
         >
-          <Accordion.Root>
+          <DisclosureGroup>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'poder de classe')
@@ -195,7 +198,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     iconeBotaoInteracao={'./icons/delete.svg'}
                   />
                 ))}
-          </Accordion.Root>
+          </DisclosureGroup>
         </SecaoFicha>
         <SecaoFicha
           header={
@@ -203,20 +206,21 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
               <h2 className="tormenta20Font">Poderes de origem</h2>
               <BotaoModular
                 css="botaoAcompanhanteHeader"
-                texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
                   setCategoriaPoderes('ORIGEM')
                   setLojaEstaAberta(true)
                 }}
-                icone="./icons/busca.svg"
-              />
+              >
+                <img src="./icons/busca.svg" alt="buscar poderes" />
+                <p>Buscar</p>
+              </BotaoModular>
             </>
           }
           css="poderes"
         >
-          <Accordion.Root>
+          <DisclosureGroup>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'origem')
@@ -230,7 +234,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     iconeBotaoInteracao={'./icons/delete.svg'}
                   />
                 ))}
-          </Accordion.Root>
+          </DisclosureGroup>
         </SecaoFicha>
       </div>
       <div className={styles.poderes}>
@@ -240,20 +244,21 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
               <h2 className="tormenta20Font">Poderes gerais</h2>
               <BotaoModular
                 css="botaoAcompanhanteHeader"
-                texto="Buscar"
                 cor="transparente"
                 font="tormenta20Font"
                 onClickEvent={() => {
                   setCategoriaPoderes('COMBATE')
                   setLojaEstaAberta(true)
                 }}
-                icone="./icons/busca.svg"
-              />
+              >
+                <img src="./icons/busca.svg" alt="buscar poderes" />
+                <p>Buscar</p>
+              </BotaoModular>
             </>
           }
           css="poderes"
         >
-          <Accordion.Root>
+          <DisclosureGroup>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.fonte == 'geral' && poder.categoria != 'origem')
@@ -267,12 +272,12 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                     iconeBotaoInteracao={'./icons/delete.svg'}
                   />
                 ))}
-          </Accordion.Root>
+          </DisclosureGroup>
         </SecaoFicha>
       </div>
 
-      <Dialog.Root open={lojaEstaAberta} onOpenChange={setLojaEstaAberta}>
-        <Modal
+      <DialogTrigger isOpen={lojaEstaAberta} onOpenChange={setLojaEstaAberta}>
+        <ModalModular
           height="90vh"
           width="750px"
           titulo="Compêndio de poderes"
@@ -344,7 +349,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
             </div>
           }
         >
-          <Accordion.Root>
+          <DisclosureGroup>
             {poderesFiltrados.map((poder) => (
               <CardPoder
                 key={poder.key}
@@ -354,9 +359,9 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 onInteract={() => adicionarPoder(poder)}
               />
             ))}
-          </Accordion.Root>
-        </Modal>
-      </Dialog.Root>
+          </DisclosureGroup>
+        </ModalModular>
+      </DialogTrigger>
     </section>
   )
 }

@@ -1,74 +1,69 @@
 import { IAtributo } from '@renderer/@types/T20 GOTY/IAtributo'
 import { JSX, useState } from 'react'
 import styles from './atributo.module.scss'
-import { Dialog, Popover } from '@base-ui-components/react'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { FormProvider, useForm } from 'react-hook-form'
-import { FormInputModular } from '../input-modular/input-modular'
-import { Modal } from '../modal/modal'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarAtributo } from '@renderer/hooks/mutations/useAtributoMutation'
 import { atributoSchema } from '@renderer/validators/schemas/atributo'
 import { z } from 'zod'
 import formStyles from '@renderer/assets/styles/forms.module.scss'
 import { PopoverModular } from '../popover/popover'
+import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
+import { NumberFieldModular } from '../number-field/number-field'
+import { Button, DialogTrigger } from 'react-aria-components'
+import { BotaoModular } from '../botao-modular/botao-modular'
 
 type AtributoProps = {
   atributo: IAtributo
+  modificadores?: IModificador[]
 }
-export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
+export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Element => {
   const atualizarAtributo = useAtualizarAtributo()
+
+  const [edicaoEstaAberta, setEdicaoEstaAberta] = useState(false)
+
   const methods = useForm<z.infer<typeof atributoSchema>>({
     resolver: zodResolver(atributoSchema),
     defaultValues: {
-      valorBase: atributo.valorBase,
-      bonus: atributo.bonus
-    }
+      valorBase: atributo.valorBase
+    },
+    mode: 'onChange'
   })
 
   const onSubmit = (data): void => {
     const novoAtributo: IAtributo = {
       ...atributo,
-      valorBase: data.valorBase,
-      bonus: data.bonus
+      valorBase: data.valorBase
     }
     atualizarAtributo.mutate(novoAtributo)
+    setEdicaoEstaAberta(false)
   }
 
   return (
     <div className={styles.atributo} key={atributo.id}>
       <div className={styles.titulo}>
-        <Popover.Root>
-          <Popover.Trigger className={`${styles.nomeAtributo} tormenta20Font`}>
-            {atributo.nome}
-          </Popover.Trigger>
-          <PopoverModular titulo={atributo.nome}>
+        <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
+          <BotaoModular css="botaoTimido" font="tormenta20Font" cor="transparente">
+            <p>{atributo.nome}</p>
+          </BotaoModular>
+          <PopoverModular width="fit-content" titulo={atributo.nome}>
             <FormProvider {...methods}>
-              <form className={formStyles.form} onChange={methods.handleSubmit(onSubmit)}>
+              <form className={formStyles.form} onSubmit={methods.handleSubmit(onSubmit)}>
                 <fieldset className={formStyles.fieldset}>
                   <div className={formStyles.rowFields}>
-                    <FormInputModular
-                      type="number"
-                      placeholder="0"
-                      name="valorBase"
-                      label="Valor:"
-                    />
-                    <FormInputModular type="number" placeholder="0" name="bonus" label="Bônus:" />
+                    <NumberFieldModular name="valorBase" placeholder="0" label="Valor:" />
                   </div>
                 </fieldset>
+                <Button type="submit">Salvar</Button>
               </form>
             </FormProvider>
           </PopoverModular>
-        </Popover.Root>
+        </DialogTrigger>
       </div>
-      <BotaoModular
-        css="rollBtn"
-        cor="transparente"
-        icone="./icons/d20 cinza.svg"
-        onClickEvent={() => console.log('teste')}
-        font="tormenta20Font"
-        texto={atributo.valorAtual}
-      />
+      <BotaoModular css="rollBtn" cor="transparente" font="tormenta20Font">
+        <img src="./icons/d20 cinza.svg" alt="rolagem" />
+        <p>{atributo.valorAtual}</p>
+      </BotaoModular>
     </div>
   )
 }

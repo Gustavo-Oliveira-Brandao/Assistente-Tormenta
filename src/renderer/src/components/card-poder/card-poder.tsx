@@ -1,9 +1,9 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { AccordionCard } from '../accordion-card/accordion-card'
 import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
 import { DeepPartial } from 'typeorm'
+import { BotaoModular } from '../botao-modular/botao-modular'
 
 type cardPoderProps = {
   poder: IPoderPersonagem | DeepPartial<IPoderPersonagem>
@@ -36,12 +36,9 @@ export const CardPoder = ({
           )}
           {exibeFonte && <p className={`${styles.categoria} tormenta20Font`}>{poder.fonte}</p>}
           {onInteract && (
-            <BotaoModular
-              css="botaoAcaoPequeno"
-              icone={iconeBotaoInteracao}
-              onClickEvent={onInteract}
-              cor="cinzaEscuro03"
-            />
+            <BotaoModular css="botaoAcaoPequeno" onClickEvent={onInteract} cor="cinzaEscuro03">
+              <img src={iconeBotaoInteracao} alt={poder.nome} />
+            </BotaoModular>
           )}
         </div>
       }

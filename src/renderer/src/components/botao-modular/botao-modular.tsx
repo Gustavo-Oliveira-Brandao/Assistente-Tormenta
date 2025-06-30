@@ -1,24 +1,25 @@
 import classNames from 'classnames'
-import { JSX } from 'react'
+import { JSX, ReactNode } from 'react'
 import styles from './botao-modular.module.scss'
+import { Button } from 'react-aria-components'
 
 type BotaoModularProps = {
-  icone?: string
   css: string
   cor?: string
   font?: string
-  texto?: string | number
+  children: ReactNode
+  slot?: string | null
   estaAtivo?: boolean
-  onClickEvent: () => void
+  onClickEvent?: () => void
 }
 
 export const BotaoModular = ({
-  icone,
   css,
-  texto,
+  children,
   onClickEvent,
   font,
   cor,
+  slot = null,
   estaAtivo
 }: BotaoModularProps): JSX.Element => {
   const btnClass = classNames(styles[css], font, {
@@ -27,9 +28,8 @@ export const BotaoModular = ({
   })
 
   return (
-    <button type="button" onClick={onClickEvent} className={btnClass}>
-      {icone && <img src={icone} alt={String(texto)} />}
-      {texto != null && <p>{texto}</p>}
-    </button>
+    <Button slot={slot} type="button" onPress={onClickEvent} className={btnClass}>
+      {children}
+    </Button>
   )
 }

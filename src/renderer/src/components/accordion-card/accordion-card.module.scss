@@ -10,6 +10,8 @@
   width: 100%;
   height: fit-content;
   border-bottom: 1px solid variables.$cinza-escuro-3;
+  display: flex;
+  flex-direction: column;
 
   .header {
     display: flex;
@@ -36,6 +38,8 @@
       }
 
       .nome {
+        background-color: transparent;
+        text-align: start;
         cursor: pointer;
         h3 {
           font-size: 17px;
@@ -58,12 +62,18 @@
     border-radius: 5px;
     margin-top: 10px;
     overflow: hidden;
-    height: var(--accordion-panel-height);
-    transition: height 150ms ease-out;
+    margin-top: 0;
+    opacity: 0;
+    height: 0;
+    transition:
+      height 150ms ease-out,
+      margin-top 150ms ease-out,
+      opacity 150ms ease-out;
+  }
 
-    &[data-starting-style],
-    &[data-ending-style] {
-      height: 0;
-    }
+  &[data-expanded] .conteudo {
+    margin-top: 10px;
+    height: var(--react-aria-disclosure-content-height);
+    opacity: 1;
   }
 }

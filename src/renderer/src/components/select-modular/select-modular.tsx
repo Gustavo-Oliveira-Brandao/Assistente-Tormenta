@@ -2,13 +2,17 @@ import { JSX } from 'react'
 import { useFormContext } from 'react-hook-form'
 import styles from './select-modular.module.scss'
 
-type SelectModularProps = {
+type FormSelectModularProps = {
   name: string
   options: string[]
-  label: string
+  label?: string
 }
 
-export const SelectModular = ({ name, options, label }: SelectModularProps): JSX.Element => {
+export const FormSelectModular = ({
+  name,
+  options,
+  label
+}: FormSelectModularProps): JSX.Element => {
   const {
     register,
     formState: { errors }
@@ -16,9 +20,11 @@ export const SelectModular = ({ name, options, label }: SelectModularProps): JSX
 
   return (
     <div className={styles.formGroup}>
-      <label className={'label tormenta20Font'} htmlFor={name}>
-        {label}
-      </label>
+      {label && (
+        <label className={'label tormenta20Font'} htmlFor={name}>
+          {label}
+        </label>
+      )}
       <select className={'select tormenta20Font'} id={name} {...register(name)}>
         {options.map((opt) => (
           <option key={opt} value={opt}>

@@ -1,9 +1,9 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { AccordionCard } from '../accordion-card/accordion-card'
 import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
 import { DeepPartial } from 'typeorm'
+import { BotaoModular } from '../botao-modular/botao-modular'
 
 type cardMagiaProps = {
   magia: IMagiaPersonagem | DeepPartial<IMagiaPersonagem>
@@ -18,12 +18,9 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
       inicialmenteExpandido={false}
       header={
         props.onInteract && (
-          <BotaoModular
-            css="botaoAcaoPequeno"
-            icone={props.iconeBotaoInteracao}
-            onClickEvent={props.onInteract}
-            cor="cinzaEscuro03"
-          />
+          <BotaoModular css="botaoAcaoPequeno" onClickEvent={props.onInteract} cor="cinzaEscuro03">
+            <img src={props.iconeBotaoInteracao} alt={props.magia.nome} />
+          </BotaoModular>
         )
       }
     >

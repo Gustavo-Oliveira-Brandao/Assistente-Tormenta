@@ -18,7 +18,7 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
       modificadores.filter((mod) => verificarAlvo(mod.tipo, mod.alvo, 'atributos', atributo.nome)),
       personagem.nivelAtual
     )
-    atributo.valorAtual = atributo.valorBase + atributo.bonus + valorModificadores
+    atributo.valorAtual = atributo.valorBase + valorModificadores
   }
 
   //Calculo de recursos
@@ -65,7 +65,7 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
     if (atributo) {
       pericia.valorAtual = Math.floor(
-        (atributo.valorAtual ?? 0) + valorTreinamento + pericia.bonus + personagem.nivelAtual / 2
+        (atributo.valorAtual ?? 0) + valorTreinamento + personagem.nivelAtual / 2
       )
     }
   }

@@ -23,12 +23,6 @@ export class Atributo {
     type: 'integer',
     nullable: false
   })
-  bonus: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
   ordem: number
 
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {

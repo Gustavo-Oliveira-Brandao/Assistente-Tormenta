@@ -16,7 +16,13 @@ export const FichaAtributos = ({ personagem }: FichaAtributosProps): JSX.Element
         {personagem.atributos
           .sort((a, b) => a.ordem - b.ordem)
           .map((atributo) => (
-            <Atributo key={atributo.id} atributo={atributo} />
+            <Atributo
+              key={atributo.id}
+              atributo={atributo}
+              modificadores={personagem.modificadores.filter(
+                (mod) => mod.tipo == 'atributos' && mod.alvo == atributo.nome
+              )}
+            />
           ))}
       </SecaoFicha>
       <SecaoFicha header={<h2 className="tormenta20Font">Pericias de combate</h2>} css="pericias">

@@ -148,14 +148,6 @@ body {
   background-color: variables.$cinza-escuro-3;
 }
 
-.alert {
-  font-family: 'poppins';
-  font-size: 12px;
-  color: #ffba00;
-  margin-top: 5px;
-  text-wrap: wrap;
-}
-
 ::-webkit-scrollbar-thumb {
   background-color: variables.$vermelho-primario;
 }
@@ -164,19 +156,19 @@ button {
   cursor: pointer;
 }
 
-.select {
-  background-color: variables.$cinza-escuro-3;
+.react-aria-Button[type='submit'] {
+  width: 120px;
   height: 30px;
-  border: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$verde-primario;
   border-radius: 5px;
-  padding: 0 5px;
-  height: 2rem;
-
-  option {
-    background-color: variables.$cinza-escuro-3;
-  }
-}
-
-.label {
-  font-size: 13px;
+  font-family: 'tormenta20Font';
+  color: white;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
 }

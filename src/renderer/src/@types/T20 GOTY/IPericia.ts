@@ -4,7 +4,6 @@ export type IPericia = {
   valorAtual?: number
   treinamento: string
   categoria: string
-  bonus: number
   atributo: string
   requerTreinamento: boolean
   sofrePenalidadeArmadura: boolean

@@ -6,6 +6,8 @@
   line-height: 1.5rem;
 }
 .popup {
+  overflow-y: auto !important;
+  max-height: 400px;
   box-sizing: border-box;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;

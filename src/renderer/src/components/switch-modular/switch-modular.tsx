@@ -15,9 +15,11 @@ export const FormSwitchModular = ({ name, label }: SwitchModularProps): JSX.Elem
 
   return (
     <div className={styles.formGroup}>
-      <label className={styles.label + ' tormenta20Font'} htmlFor={name}>
-        {label}
-      </label>
+      {label && (
+        <label className={styles.label + ' tormenta20Font'} htmlFor={name}>
+          {label}
+        </label>
+      )}
       <div>
         <input className={styles.input} id={name} type="checkbox" {...register(name)} />
         <label htmlFor={name} className={styles.toggleSwitch}></label>

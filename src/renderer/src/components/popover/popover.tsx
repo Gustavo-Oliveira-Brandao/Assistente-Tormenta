@@ -1,24 +1,25 @@
 import { JSX, ReactNode } from 'react'
 import styles from './popover.module.scss'
-import { Popover } from '@base-ui-components/react'
+import { Dialog, Heading, OverlayArrow, Popover } from 'react-aria-components'
 
 type PopoverModularProps = {
   children: ReactNode
   titulo: string
+  width: string
 }
 export const PopoverModular = (props: PopoverModularProps): JSX.Element => {
   return (
-    <Popover.Portal>
-      <Popover.Positioner sideOffset={8}>
-        <Popover.Popup className={styles.popup}>
-          <Popover.Arrow className={styles.flechinha}>
-            <FlechinhaSvg />
-          </Popover.Arrow>
-          <Popover.Title className={`${styles.title} tormenta20Font`}>{props.titulo}</Popover.Title>
-          <div className={styles.panel}>{props.children}</div>
-        </Popover.Popup>
-      </Popover.Positioner>
-    </Popover.Portal>
+    <Popover>
+      <OverlayArrow className={styles.flechinha}>
+        <FlechinhaSvg />
+      </OverlayArrow>
+      <Dialog className={styles.popup}>
+        <Heading className={`${styles.title} tormenta20Font`}>{props.titulo}</Heading>
+        <div className={styles.panel} style={{ width: props.width }}>
+          {props.children}
+        </div>
+      </Dialog>
+    </Popover>
   )
 }
 

@@ -41,12 +41,6 @@ export class Pericia {
   })
   sofrePenalidadeArmadura: boolean
 
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  bonus: number
-
   @ManyToOne(() => Personagem, (personagem) => personagem.pericias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'

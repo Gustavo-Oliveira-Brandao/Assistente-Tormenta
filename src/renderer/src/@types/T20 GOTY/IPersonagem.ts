@@ -3,7 +3,7 @@ import { IClassePersonagem } from './IClasse'
 import { IDeslocamento } from './IDeslocamento'
 import { IModificador } from './IModificador'
 import { IPericia } from './IPericia'
-import { IRecurso } from './IRecurso'
+import { IStatus } from './IStatus'
 
 export type IPersonagem = {
   id: number
@@ -24,7 +24,7 @@ export type IPersonagem = {
   alinhamentoMoral: string
   atributos: IAtributo[]
   pericias: IPericia[]
-  deslocamentos: IDeslocamento[]
-  recursos: IRecurso[]
+  deslocamento: IDeslocamento
+  status: IStatus
   modificadores: IModificador[]
 }

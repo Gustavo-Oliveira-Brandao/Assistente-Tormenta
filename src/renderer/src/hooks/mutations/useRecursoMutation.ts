@@ -1,4 +1,4 @@
-import { IRecurso } from '@renderer/@types/T20 GOTY/IRecurso'
+import { IRecurso } from '@renderer/@types/T20 GOTY/IStatus'
 import { atualizarRecurso } from '@renderer/api/recurso-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
 

@@ -1,6 +1,11 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
 import { Modificador } from '../entities/Modificador'
-import { deleteModificador, postModificador, putModificador } from '../services/ModificadorService'
+import {
+  deleteModificador,
+  getModificadoresPersonagem,
+  postModificador,
+  putModificador
+} from '../services/ModificadorService'
 
 ipcMain.handle(
   'post-modificador',
@@ -19,3 +24,11 @@ ipcMain.handle('delete-modificador', async (event: IpcMainInvokeEvent, _id: numb
   console.log(`FrameID:${event.frameId}`)
   await deleteModificador(_id)
 })
+
+ipcMain.handle(
+  'get-modificadores-personagem',
+  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
+    console.log(`FrameID:${event.frameId}`)
+    return await getModificadoresPersonagem(_idPersonagem)
+  }
+)

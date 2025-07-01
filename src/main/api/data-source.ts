@@ -6,11 +6,11 @@ import { Grimorio } from './entities/Grimorio'
 import { Pericia } from './entities/Pericia'
 import { Personagem } from './entities/Personagem'
 import { Proficiencia } from './entities/Proficiencia'
-import { Recurso } from './entities/Recurso'
 import { ClassePersonagem } from './entities/ClassePersonagem'
 import { Poder, SubEfeito, Tag } from './entities/Poder'
 import { AprimoramentoMagia, Magia } from './entities/Magia'
 import { Modificador } from './entities/Modificador'
+import { Status } from './entities/Status'
 
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
@@ -33,6 +33,6 @@ export const SQLiteDataSource = new DataSource({
     AprimoramentoMagia,
     Personagem,
     Proficiencia,
-    Recurso
+    Status
   ]
 })

@@ -6,7 +6,7 @@ import './controllers/MagiaController'
 import './controllers/PericiaController'
 import './controllers/PoderController'
 import './controllers/ProficienciaController'
-import './controllers/RecursoController'
+import './controllers/StatusController'
 import './controllers/PersonagemController'
 import './controllers/RacaController'
 

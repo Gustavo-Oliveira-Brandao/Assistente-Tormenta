@@ -25,9 +25,14 @@ ipcMain.handle(
 
 ipcMain.handle(
   'post-poder',
-  async (event: IpcMainInvokeEvent, _poder: DeepPartial<Poder>, nivelPoder: number, _idPersonagem: number) => {
+  async (
+    event: IpcMainInvokeEvent,
+    _poder: DeepPartial<Poder>,
+    nivelPoder: number,
+    _idPersonagem: number
+  ) => {
     console.log(`FrameID:${event.frameId}`)
-    await postPoder(_poder,nivelPoder, _idPersonagem)
+    await postPoder(_poder, nivelPoder, _idPersonagem)
   }
 )
 

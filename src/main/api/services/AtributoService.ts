@@ -3,6 +3,19 @@ import { Atributo } from '../entities/Atributo'
 
 const atributoRepository = SQLiteDataSource.getRepository(Atributo)
 
+export const getAtributosPersonagem = async (_idPersonagem: number): Promise<Atributo[]> => {
+  try {
+    const atributos = await atributoRepository.find({
+      where: { personagem: { id: _idPersonagem } }
+    })
+
+    return atributos
+  } catch (err) {
+    console.log(err)
+    throw new Error('Erro ao recuperar atributos.')
+  }
+}
+
 export const putAtributo = async (_atributo: Atributo): Promise<void> => {
   try {
     console.log('atributoRecebido:' + Date.now())

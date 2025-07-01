@@ -6,13 +6,13 @@ import { Deslocamento } from '../main/api/entities/Deslocamento'
 import { Grimorio } from '../main/api/entities/Grimorio'
 import { Pericia } from '../main/api/entities/Pericia'
 import { Proficiencia } from '../main/api/entities/Proficiencia'
-import { Recurso } from '../main/api/entities/Recurso'
 import { IRaca } from '../main/@types/IRaca'
 import { DeepPartial } from 'typeorm'
 import { IClasse } from '../main/@types/IClasse'
 import { Poder } from '../main/api/entities/Poder'
 import { Magia } from '../main/api/entities/Magia'
 import { Modificador } from '../main/api/entities/Modificador'
+import { Status } from '../main/api/entities/Status'
 
 // Custom APIs for renderer
 const api = {
@@ -27,6 +27,8 @@ const api = {
   },
 
   atributos: {
+    getAtributosPersonagem: (_idPersonagem: number): Promise<Atributo[]> =>
+      ipcRenderer.invoke('get-atributos-personagem', _idPersonagem),
     putAtributo: (_atributo: Atributo): Promise<void> =>
       ipcRenderer.invoke('put-atributo', _atributo)
   },
@@ -38,11 +40,15 @@ const api = {
     getRacasDefault: (): Promise<IRaca[]> => ipcRenderer.invoke('get-racas-default')
   },
   deslocamentos: {
+    getDeslocamentoPersonagem: (_idPersonagem: number): Promise<Deslocamento> =>
+      ipcRenderer.invoke('get-deslocamento-personagem', _idPersonagem),
     putDeslocamento: (_deslocamento: Deslocamento): Promise<void> =>
       ipcRenderer.invoke('put-deslocamento', _deslocamento)
   },
 
   modificadores: {
+    getModificadoresPersonagem: (_idPersonagem: number): Promise<Modificador[]> =>
+      ipcRenderer.invoke('get-modificadores-personagem-tipo', _idPersonagem),
     postModificador: (_modificador: Partial<Modificador>, _idPersonagem: number): Promise<void> =>
       ipcRenderer.invoke('post-modificador', _modificador, _idPersonagem),
     putModificador: (_modificador: Modificador): Promise<void> =>
@@ -68,8 +74,11 @@ const api = {
       ipcRenderer.invoke('get-poderes-default'),
     getPoderesPersonagem: (_idPersonagem: number): Promise<Poder[]> =>
       ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
-    postPoder: (_poder: DeepPartial<Poder>, nivelPoder:number , _idPersonagem: number): Promise<void> =>
-      ipcRenderer.invoke('post-poder', _poder, _idPersonagem),
+    postPoder: (
+      _poder: DeepPartial<Poder>,
+      nivelPoder: number,
+      _idPersonagem: number
+    ): Promise<void> => ipcRenderer.invoke('post-poder', _poder, nivelPoder, _idPersonagem),
     deletePoder: (_id: number): Promise<void> => ipcRenderer.invoke('delete-poder', _id)
   },
 
@@ -87,11 +96,15 @@ const api = {
   },
 
   pericias: {
+    getPericiasPersonagem: (_idPersonagem: number): Promise<Pericia[]> =>
+      ipcRenderer.invoke('get-pericias-personagem', _idPersonagem),
     putPericia: (_pericia: Pericia): Promise<void> => ipcRenderer.invoke('put-pericia', _pericia)
   },
 
-  recursos: {
-    putRecurso: (_recurso: Recurso): Promise<void> => ipcRenderer.invoke('put-recurso', _recurso)
+  status: {
+    getStatusPersonagem: (_idPersonagem: number): Promise<Status> =>
+      ipcRenderer.invoke('get-status-personagem', _idPersonagem),
+    putStatus: (_status: Status): Promise<void> => ipcRenderer.invoke('put-status', _status)
   }
 }
 

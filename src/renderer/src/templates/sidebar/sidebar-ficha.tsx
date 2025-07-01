@@ -23,16 +23,16 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
           </div>
         </div>
         <div className={styles.recursos}>
-          {personagem.recursos
-            .filter((recurso) => recurso.categoria == 'vida' || recurso.categoria == 'mana')
-            .map((recurso) => (
-              <BarraRecurso
-                key={recurso.id}
-                categoria={recurso.categoria}
-                valorAtual={recurso.valorAtual}
-                valorMaximo={recurso.valorMaximo ?? 0}
-              />
-            ))}
+          <BarraRecurso
+            categoria="vida"
+            valorAtual={personagem.status.vidaAtual}
+            valorMaximo={personagem.status.vidaMaxima ?? 0}
+          />
+          <BarraRecurso
+            categoria="mana"
+            valorAtual={personagem.status.manaAtual}
+            valorMaximo={personagem.status.manaMaxima ?? 0}
+          />
         </div>
       </div>
     </aside>

@@ -13,8 +13,12 @@ export const exibirPoderesPersonagem = async (
   return poderes
 }
 
-export const criarPoder = async (poder: DeepPartial<IPoderPersonagem>, nivelPoder: number, idPersonagem: number): Promise<void> => {
-  await window.api.poderes.postPoder(poder, nivelPoder ,idPersonagem)
+export const criarPoder = async (
+  poder: DeepPartial<IPoderPersonagem>,
+  nivelPoder: number,
+  idPersonagem: number
+): Promise<void> => {
+  await window.api.poderes.postPoder(poder, nivelPoder, idPersonagem)
 }
 
 export const deletarPoder = async (id: number): Promise<void> => {

@@ -41,20 +41,26 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     }
   }
 
-  for (const recurso of personagem.recursos) {
-    const atributo = personagem.atributos.find((atributo) => atributo.nome == recurso.atributo)
-    const valorAtributo = atributo?.valorAtual ?? 0
-    if (recurso.categoria == 'vida') {
-      recurso.valorMaximo =
-        vidaInicial + (vidaTotalPorNivel + valorAtributo) * personagem.nivelAtual
-    }
-    if (recurso.categoria == 'mana') {
-      recurso.valorMaximo = valorAtributo + manaTotalPorNivel * personagem.nivelAtual
-    }
-    if (recurso.categoria == 'defesa') {
-      recurso.valorMaximo = recurso.valorAtual + valorAtributo
-    }
-  }
+  const atributoVidaMaxima = personagem.atributos.find(
+    (atributo) => atributo.nome == personagem.status.atributoVidaMaxima
+  )
+  const atributoManaMaxima = personagem.atributos.find(
+    (atributo) => atributo.nome == personagem.status.atributoManaMaxima
+  )
+  const atributoDefesa = personagem.atributos.find(
+    (atributo) => atributo.nome == personagem.status.atributoDefesa
+  )
+
+  //Calculo de Status
+  personagem.status.vidaMaxima =
+    vidaInicial +
+    (vidaTotalPorNivel + (atributoVidaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual
+
+  personagem.status.manaMaxima =
+    vidaInicial +
+    (manaTotalPorNivel + (atributoManaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual
+
+  personagem.status.defesaAtual = personagem.status.defesaBase + (atributoDefesa?.valorAtual ?? 0)
 
   //Calculo de pericias
   for (const pericia of personagem.pericias) {

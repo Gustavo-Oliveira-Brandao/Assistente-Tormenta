@@ -25,7 +25,10 @@ export const deletarGrimorio = async (id: number): Promise<void> => {
   await window.api.magias.deleteGrimorio(id)
 }
 
-export const criarMagia = async (magia: DeepPartial<IMagiaPersonagem>, idGrimorio: number): Promise<void> => {
+export const criarMagia = async (
+  magia: DeepPartial<IMagiaPersonagem>,
+  idGrimorio: number
+): Promise<void> => {
   await window.api.magias.postMagia(magia, idGrimorio)
 }
 

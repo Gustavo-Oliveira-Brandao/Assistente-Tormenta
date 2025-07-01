@@ -1,8 +1,8 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Atributo } from './Atributo'
 import { Pericia } from './Pericia'
 import { Deslocamento } from './Deslocamento'
-import { Recurso } from './Recurso'
+import { Status } from './Status'
 import { Proficiencia } from './Proficiencia'
 import { Grimorio } from './Grimorio'
 import { ClassePersonagem } from './ClassePersonagem'
@@ -112,10 +112,10 @@ export class Personagem {
   })
   pericias: Pericia[]
 
-  @OneToMany(() => Deslocamento, (deslocamento) => deslocamento.personagem, {
+  @OneToOne(() => Deslocamento, (deslocamento) => deslocamento.personagem, {
     cascade: true
   })
-  deslocamentos: Deslocamento[]
+  deslocamento: Deslocamento
 
   @OneToMany(() => Modificador, (modificador) => modificador.personagem, {
     cascade: true,
@@ -123,10 +123,10 @@ export class Personagem {
   })
   modificadores?: Modificador[]
 
-  @OneToMany(() => Recurso, (recurso) => recurso.personagem, {
+  @OneToOne(() => Status, (status) => status.personagem, {
     cascade: true
   })
-  recursos: Recurso[]
+  status: Status
 
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
     cascade: true,

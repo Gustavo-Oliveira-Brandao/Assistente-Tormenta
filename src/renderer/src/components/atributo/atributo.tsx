@@ -10,7 +10,7 @@ import formStyles from '@renderer/assets/styles/forms.module.scss'
 import { PopoverModular } from '../popover/popover'
 import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { NumberFieldModular } from '../number-field/number-field'
-import { Button, DialogTrigger, Heading } from 'react-aria-components'
+import { Button, DialogTrigger } from 'react-aria-components'
 import { BotaoModular } from '../botao-modular/botao-modular'
 
 type AtributoProps = {

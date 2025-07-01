@@ -1,6 +1,5 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
-import { DeepPartial } from 'typeorm'
-
+import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 declare global {
   interface Window {
     electron: ElectronAPI
@@ -13,6 +12,7 @@ declare global {
         deletePersonagem: (id: number) => Promise<void>
       }
       atributos: {
+        getAtributosPersonagem: (_idPersonagem: number) => Promise<IAtributo[]>
         putAtributo: (atributo: Atributo) => Promise<void>
       }
       classes: {
@@ -22,9 +22,11 @@ declare global {
         getRacasDefault: () => Promise<IRaca[]>
       }
       deslocamentos: {
+        getDeslocamentoPersonagem: (_idPersonagem: number) => Promise<IDeslocamento>
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
       modificadores: {
+        getModificadoresPersonagem: (_idPersonagem: number) => Promise<IModificador[]>
         postModificador: (
           _modificador: Partial<Modificador>,
           _idPersonagem: number
@@ -44,7 +46,11 @@ declare global {
       poderes: {
         getPoderesDefault: () => Promise<DeepPartial<Poder>[]>
         getPoderesPersonagem: (_idPersonagem: number) => Promise<Poder[]>
-        postPoder: (poder: DeepPartial<Poder>, nivelPoder:number , _idPersonagem: number) => Promise<void>
+        postPoder: (
+          poder: DeepPartial<Poder>,
+          nivelPoder: number,
+          _idPersonagem: number
+        ) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }
       proficiencias: {
@@ -57,10 +63,12 @@ declare global {
         deleteProficiencia: (id: number) => Promise<void>
       }
       pericias: {
+        getPericiasPersonagem: (_idPersonagem: number) => Promise<IPericia[]>
         putPericia: (pericia: Pericia) => Promise<void>
       }
-      recursos: {
-        putRecurso: (recurso: Recurso) => Promise<void>
+      status: {
+        getStatusPersonagem: (_idPersonagem: number) => Promise<IStatus>
+        putStatus: (status: Status) => Promise<void>
       }
     }
   }

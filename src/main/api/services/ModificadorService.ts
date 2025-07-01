@@ -4,6 +4,18 @@ import { Personagem } from '../entities/Personagem'
 
 export const ModificadorRepository = SQLiteDataSource.getRepository(Modificador)
 
+export const getModificadoresPersonagem = async (_idPersonagem: number): Promise<Modificador[]> => {
+  try {
+    const modificadores = await ModificadorRepository.find({
+      where: { personagem: { id: _idPersonagem } }
+    })
+    return modificadores
+  } catch (err) {
+    console.log(err)
+    throw new Error('Erro ao recuperar modificadores!')
+  }
+}
+
 export const postModificador = async (
   _modificador: Partial<Modificador>,
   _idPersonagem: number

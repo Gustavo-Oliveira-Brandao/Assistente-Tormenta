@@ -1,38 +1,55 @@
 import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 
-//OK
 @Entity()
-export class Deslocamento {
+export class Status {
   @PrimaryGeneratedColumn()
   id: number
 
+  // Pontos de Vida (PV)
   @Column({
     type: 'integer'
   })
-  caminhadaBase: number
+  vidaAtual: number
 
   @Column({
     type: 'integer'
   })
-  vooBase: number
+  vidaTemporaria: number
+
+  @Column({
+    type: 'varchar'
+  })
+  atributoVidaMaxima: string
+
+  // Pontos de Mana (PM)
+  @Column({
+    type: 'integer'
+  })
+  manaAtual: number
 
   @Column({
     type: 'integer'
   })
-  natacaoBase: number
+  manaTemporaria: number
 
+  @Column({
+    type: 'varchar'
+  })
+  atributoManaMaxima: string
+
+  // Defesa
   @Column({
     type: 'integer'
   })
-  escaladaBase: number
+  defesaBase: number
 
   @Column({
-    type: 'integer'
+    type: 'varchar'
   })
-  escavacaoBase: number
+  atributoDefesa: string
 
-  @OneToOne(() => Personagem, (personagem) => personagem.deslocamento, {
+  @OneToOne(() => Personagem, (personagem) => personagem.status, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })

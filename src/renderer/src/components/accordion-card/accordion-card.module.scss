@@ -60,20 +60,31 @@
 
   .conteudo {
     border-radius: 5px;
-    margin-top: 10px;
     overflow: hidden;
     margin-top: 0;
     opacity: 0;
-    height: 0;
     transition:
-      height 150ms ease-out,
-      margin-top 150ms ease-out,
-      opacity 150ms ease-out;
+      margin-top 300ms ease-out,
+      opacity 300ms ease-out;
   }
 
   &[data-expanded] .conteudo {
     margin-top: 10px;
-    height: var(--react-aria-disclosure-content-height);
     opacity: 1;
+    animation: conteudoSlideIn 300ms linear;
+  }
+  &:not[data-expanded] .conteudo {
+
+    animation: conteudoSlideIn 300ms reverse ease-in;
+  }
+}
+
+@keyframes conteudoSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }

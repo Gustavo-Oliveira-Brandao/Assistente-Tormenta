@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 import { Personagem } from './Personagem'
 @Entity()
 export class Modificador {
@@ -49,5 +49,6 @@ export class Modificador {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
+    @Index()
   personagem: Personagem
 }

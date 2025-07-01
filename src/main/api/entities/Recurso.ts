@@ -3,7 +3,6 @@ import { Personagem } from './Personagem'
 
 //OK
 @Entity()
-@Index(['personagem', 'id', 'categoria', 'valorAtual', 'valorTemporario', 'atributo'])
 export class Recurso {
   @PrimaryGeneratedColumn()
   id: number
@@ -33,5 +32,6 @@ export class Recurso {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
+    @Index()
   personagem: Personagem
 }

@@ -1,0 +1,77 @@
+@use '@renderer/assets/variables.scss';
+
+.formController {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.25rem;
+
+  .label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: variables.$cinza-claro-1;
+  }
+
+  .switch {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 0.571rem;
+    font-size: 1.143rem;
+    color: white;
+    forced-color-adjust: none;
+
+    .indicador {
+      width: 2.25rem;
+      height: 1.393rem;
+
+      border: 2px solid variables.$cinza-escuro-3;
+      background: variables.$cinza-escuro-1;
+      border-radius: 1.143rem;
+      transition: all 200ms;
+
+      &:before {
+        width: 0.857rem;
+        height: 0.857rem;
+        display: block;
+        content: '';
+        margin: 0.143rem;
+        background: variables.$azul-primario;
+        border-radius: 16px;
+        transition: all 200ms;
+      }
+    }
+
+    &[data-pressed] .indicador {
+      border-color: variables.$azul-primario;
+
+      &:before {
+        background: variables.$azul-primario;
+      }
+    }
+
+    &[data-selected] {
+      .indicador {
+        border-color: variables.$azul-primario;
+        background: variables.$azul-primario;
+
+        &:before {
+          background: variables.$cinza-escuro-1;
+          transform: translateX(100%);
+        }
+      }
+
+      &[data-pressed] {
+        .indicador {
+          border-color: variables.$azul-claro-1;
+          background: variables.$azul-claro-1;
+        }
+      }
+    }
+
+    &[data-focus-visible] .indicador {
+      outline: 2px solid variables.$azul-primario;
+      outline-offset: 2px;
+    }
+  }
+}

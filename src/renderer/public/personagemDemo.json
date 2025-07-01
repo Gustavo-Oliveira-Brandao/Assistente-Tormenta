@@ -397,7 +397,7 @@
       "seletor": "bonus",
       "modoBonus": "SOMA",
       "valor": 2,
-      "estaAtivo": false,
+      "estaAtivo": true,
       "ehPorNivel": false
     }
   ]

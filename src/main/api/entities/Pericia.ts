@@ -45,6 +45,6 @@ export class Pericia {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  @Index()
+    @Index()
   personagem: Personagem
 }

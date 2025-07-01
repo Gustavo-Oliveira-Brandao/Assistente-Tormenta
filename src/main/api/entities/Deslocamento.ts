@@ -3,7 +3,6 @@ import { Personagem } from './Personagem'
 
 //OK
 @Entity()
-@Index(['personagem', 'id', 'nome', 'valorBase'])
 export class Deslocamento {
   @PrimaryGeneratedColumn()
   id: number
@@ -23,5 +22,6 @@ export class Deslocamento {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
+    @Index()
   personagem: Personagem
 }

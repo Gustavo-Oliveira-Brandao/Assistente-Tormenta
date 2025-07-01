@@ -32,6 +32,7 @@ export const ModalModular = (props: ModalProps): JSX.Element => {
               {props.children}
             </div>
           </div>
+          <div className={styles.footer}>{props.footer}</div>
         </Dialog>
       </Modal>
     </ModalOverlay>

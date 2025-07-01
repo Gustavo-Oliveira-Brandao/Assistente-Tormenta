@@ -24,8 +24,7 @@ export const getPersonagem = async (id: number): Promise<Personagem> => {
         pericias: true,
         deslocamentos: true,
         recursos: true,
-        modificadores: true,
-        proficiencias: true
+        modificadores: true
       }
     })
     if (personagem == null) {

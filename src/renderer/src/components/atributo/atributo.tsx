@@ -10,7 +10,7 @@ import formStyles from '@renderer/assets/styles/forms.module.scss'
 import { PopoverModular } from '../popover/popover'
 import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { NumberFieldModular } from '../number-field/number-field'
-import { Button, DialogTrigger } from 'react-aria-components'
+import { Button, DialogTrigger, Heading } from 'react-aria-components'
 import { BotaoModular } from '../botao-modular/botao-modular'
 
 type AtributoProps = {
@@ -22,15 +22,14 @@ export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Elemen
 
   const [edicaoEstaAberta, setEdicaoEstaAberta] = useState(false)
 
-  const methods = useForm<z.infer<typeof atributoSchema>>({
+  const methodsAtributos = useForm<z.infer<typeof atributoSchema>>({
     resolver: zodResolver(atributoSchema),
     defaultValues: {
       valorBase: atributo.valorBase
-    },
-    mode: 'onChange'
+    }
   })
 
-  const onSubmit = (data): void => {
+  const onSubmitAtributos = (data): void => {
     const novoAtributo: IAtributo = {
       ...atributo,
       valorBase: data.valorBase
@@ -47,8 +46,8 @@ export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Elemen
             <p>{atributo.nome}</p>
           </BotaoModular>
           <PopoverModular width="fit-content" titulo={atributo.nome}>
-            <FormProvider {...methods}>
-              <form className={formStyles.form} onSubmit={methods.handleSubmit(onSubmit)}>
+            <FormProvider {...methodsAtributos}>
+              <form className={formStyles.form} onSubmit={methodsAtributos.handleSubmit(onSubmitAtributos)}>
                 <fieldset className={formStyles.fieldset}>
                   <div className={formStyles.rowFields}>
                     <NumberFieldModular name="valorBase" placeholder="0" label="Valor:" />

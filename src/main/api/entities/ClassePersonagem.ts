@@ -20,6 +20,6 @@ export class ClassePersonagem {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  @Index()
+    @Index()
   personagem: Personagem
 }

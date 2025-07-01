@@ -79,11 +79,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
 
   const adicionarPoder = (poder: DeepPartial<IPoderPersonagem>): void => {
     adicionarPoderMutation.mutate({
-      poder: {
-        key: poder.key ?? '',
-        categoria: poder.categoria ?? 'destino',
-        nivel: personagem.nivelAtual ?? 1
-      },
+      poder: poder,
+      nivelPoder: personagem.nivelAtual ?? 1,
       idPersonagem: personagem.id
     })
     setLojaEstaAberta(false)
@@ -112,7 +109,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          <DisclosureGroup>
+          <DisclosureGroup allowsMultipleExpanded>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'raca')
@@ -148,7 +145,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          <DisclosureGroup>
+          <DisclosureGroup allowsMultipleExpanded>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'habilidade de classe')
@@ -184,7 +181,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          <DisclosureGroup>
+          <DisclosureGroup allowsMultipleExpanded>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'poder de classe')
@@ -220,7 +217,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          <DisclosureGroup>
+          <DisclosureGroup allowsMultipleExpanded>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.categoria == 'origem')
@@ -258,7 +255,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           }
           css="poderes"
         >
-          <DisclosureGroup>
+          <DisclosureGroup allowsMultipleExpanded>
             {poderesPersonagem &&
               poderesPersonagem
                 .filter((poder) => poder.fonte == 'geral' && poder.categoria != 'origem')
@@ -349,7 +346,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
             </div>
           }
         >
-          <DisclosureGroup>
+          <DisclosureGroup allowsMultipleExpanded>
             {poderesFiltrados.map((poder) => (
               <CardPoder
                 key={poder.key}

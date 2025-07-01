@@ -32,6 +32,6 @@ export class Recurso {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-    @Index()
+  @Index()
   personagem: Personagem
 }

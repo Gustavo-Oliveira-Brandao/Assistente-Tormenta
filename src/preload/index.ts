@@ -11,8 +11,6 @@ import { IRaca } from '../main/@types/IRaca'
 import { DeepPartial } from 'typeorm'
 import { IClasse } from '../main/@types/IClasse'
 import { Poder } from '../main/api/entities/Poder'
-import { IMagiaDTO } from '../main/@types/IMagiaDTO'
-import { IPoderDTO } from '../main/@types/IPoderDTO'
 import { Magia } from '../main/api/entities/Magia'
 import { Modificador } from '../main/api/entities/Modificador'
 
@@ -60,7 +58,7 @@ const api = {
     putGrimorio: (_grimorio: Grimorio): Promise<void> =>
       ipcRenderer.invoke('put-grimorio', _grimorio),
     deleteGrimorio: (_id: number): Promise<void> => ipcRenderer.invoke('delete-grimorio', _id),
-    postMagia: (_magia: IMagiaDTO, _idGrimorio: number): Promise<void> =>
+    postMagia: (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> =>
       ipcRenderer.invoke('post-magia', _magia, _idGrimorio),
     deleteMagia: (_id: number): Promise<void> => ipcRenderer.invoke('delete-magia', _id)
   },
@@ -70,7 +68,7 @@ const api = {
       ipcRenderer.invoke('get-poderes-default'),
     getPoderesPersonagem: (_idPersonagem: number): Promise<Poder[]> =>
       ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
-    postPoder: (_poder: IPoderDTO, _idPersonagem: number): Promise<void> =>
+    postPoder: (_poder: DeepPartial<Poder>, nivelPoder:number , _idPersonagem: number): Promise<void> =>
       ipcRenderer.invoke('post-poder', _poder, _idPersonagem),
     deletePoder: (_id: number): Promise<void> => ipcRenderer.invoke('delete-poder', _id)
   },

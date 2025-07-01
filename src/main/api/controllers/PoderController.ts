@@ -5,7 +5,8 @@ import {
   getPoderesPersonagem,
   postPoder
 } from '../services/PoderService'
-import { IPoderDTO } from '../../@types/IPoderDTO'
+import { DeepPartial } from 'typeorm'
+import { Poder } from '../entities/Poder'
 
 ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
@@ -24,9 +25,9 @@ ipcMain.handle(
 
 ipcMain.handle(
   'post-poder',
-  async (event: IpcMainInvokeEvent, _poder: IPoderDTO, _idPersonagem: number) => {
+  async (event: IpcMainInvokeEvent, _poder: DeepPartial<Poder>, nivelPoder: number, _idPersonagem: number) => {
     console.log(`FrameID:${event.frameId}`)
-    await postPoder(_poder, _idPersonagem)
+    await postPoder(_poder,nivelPoder, _idPersonagem)
   }
 )
 

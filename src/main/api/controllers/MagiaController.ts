@@ -10,7 +10,7 @@ import {
 } from '../services/MagiaService'
 import { Grimorio } from '../entities/Grimorio'
 import { DeepPartial } from 'typeorm'
-import { IMagiaDTO } from '../../@types/IMagiaDTO'
+import { Magia } from '../entities/Magia'
 
 ipcMain.handle('get-magias-default', async (event: IpcMainInvokeEvent) => {
   console.log(`FrameID:${event.frameId}`)
@@ -43,7 +43,7 @@ ipcMain.handle('delete-grimorio', async (event: IpcMainInvokeEvent, _id: number)
 
 ipcMain.handle(
   'post-magia',
-  async (event: IpcMainInvokeEvent, _magia: IMagiaDTO, _idGrimorio: number) => {
+  async (event: IpcMainInvokeEvent, _magia: DeepPartial<Magia>, _idGrimorio: number) => {
     console.log(`FrameID:${event.frameId}`)
     await postMagia(_magia, _idGrimorio)
   }

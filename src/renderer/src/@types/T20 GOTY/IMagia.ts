@@ -1,7 +1,3 @@
-export type IMagiaDTO = {
-  key: number
-}
-
 export type IMagiaPersonagem = {
   id: number
   key: number

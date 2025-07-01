@@ -49,6 +49,6 @@ export class Modificador {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-    @Index()
+  @Index()
   personagem: Personagem
 }

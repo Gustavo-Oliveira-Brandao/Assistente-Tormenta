@@ -47,7 +47,10 @@ export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Elemen
           </BotaoModular>
           <PopoverModular width="fit-content" titulo={atributo.nome}>
             <FormProvider {...methodsAtributos}>
-              <form className={formStyles.form} onSubmit={methodsAtributos.handleSubmit(onSubmitAtributos)}>
+              <form
+                className={formStyles.form}
+                onSubmit={methodsAtributos.handleSubmit(onSubmitAtributos)}
+              >
                 <fieldset className={formStyles.fieldset}>
                   <div className={formStyles.rowFields}>
                     <NumberFieldModular name="valorBase" placeholder="0" label="Valor:" />

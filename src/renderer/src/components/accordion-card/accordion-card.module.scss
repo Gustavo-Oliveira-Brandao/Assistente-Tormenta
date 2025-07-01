@@ -71,20 +71,6 @@
   &[data-expanded] .conteudo {
     margin-top: 10px;
     opacity: 1;
-    animation: conteudoSlideIn 300ms linear;
-  }
-  &:not[data-expanded] .conteudo {
-
-    animation: conteudoSlideIn 300ms reverse ease-in;
   }
 }
 
-@keyframes conteudoSlideIn {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}

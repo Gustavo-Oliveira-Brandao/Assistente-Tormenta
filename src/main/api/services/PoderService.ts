@@ -1,7 +1,6 @@
 import path from 'path'
 import { SQLiteDataSource } from '../data-source'
 import { extrairJson } from './JsonService'
-import { IPoderDTO } from '../../@types/IPoderDTO'
 import { Personagem } from '../entities/Personagem'
 import { Poder } from '../entities/Poder'
 import { DeepPartial } from 'typeorm'
@@ -30,7 +29,11 @@ export const getPoderesPersonagem = async (_idPersonagem: number): Promise<Poder
   }
 }
 
-export const postPoder = async (_poderDTO: IPoderDTO, _idPersonagem: number): Promise<void> => {
+export const postPoder = async (
+  _poder: DeepPartial<Poder>,
+  nivelPoder: number,
+  _idPersonagem: number
+): Promise<void> => {
   try {
     const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
     const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
@@ -38,19 +41,14 @@ export const postPoder = async (_poderDTO: IPoderDTO, _idPersonagem: number): Pr
       throw new Error('Personagem não encontrado')
     }
 
-    const compendioPoderes = await getCompendioPoderes()
-
-    const poderEncontrado = compendioPoderes.find((poder) => poder.key == _poderDTO.key)
-    if (poderEncontrado) {
-      const novoPoder = PoderRepository.create({
-        ...poderEncontrado,
-        nivel: _poderDTO.nivel,
-        tags: poderEncontrado.tags,
-        subEfeitos: poderEncontrado.subEfeitos,
-        personagem: personagem
-      })
-      await PoderRepository.save(novoPoder)
-    }
+    const novoPoder = PoderRepository.create({
+      ..._poder,
+      nivel: nivelPoder,
+      tags: _poder.tags,
+      subEfeitos: _poder.subEfeitos,
+      personagem: personagem
+    })
+    await PoderRepository.save(novoPoder)
   } catch {
     throw new Error('Erro ao adicionar poder!')
   }

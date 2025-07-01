@@ -23,6 +23,6 @@ export class Proficiencia {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-    @Index()
+  @Index()
   personagem: Personagem
 }

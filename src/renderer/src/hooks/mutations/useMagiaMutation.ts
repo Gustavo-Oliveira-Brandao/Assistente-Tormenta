@@ -1,5 +1,5 @@
 import { IGrimorio } from '@renderer/@types/T20 GOTY/IGrimorio'
-import { IMagiaDTO } from '@renderer/@types/T20 GOTY/IMagia'
+import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
 import {
   atualizarGrimorio,
   criarGrimorio,
@@ -46,7 +46,7 @@ export const useDeletarGrimorio = (): UseMutationResult<void, Error, number, unk
 }
 
 type criarMagiaVariaveis = {
-  magia: IMagiaDTO
+  magia: DeepPartial<IMagiaPersonagem>
   idGrimorio: number
 }
 

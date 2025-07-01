@@ -5,7 +5,6 @@ import { Personagem } from '../entities/Personagem'
 import path from 'path'
 import { extrairJson } from './JsonService'
 import { Magia } from '../entities/Magia'
-import { IMagiaDTO } from '../../@types/IMagiaDTO'
 import { app } from 'electron'
 
 const MagiaRepository = SQLiteDataSource.getRepository(Magia)
@@ -67,7 +66,7 @@ export const deleteGrimorio = async (_id: number): Promise<void> => {
   }
 }
 
-export const postMagia = async (_magiaDTO: IMagiaDTO, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> => {
   try {
     const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
     const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })
@@ -76,19 +75,13 @@ export const postMagia = async (_magiaDTO: IMagiaDTO, _idGrimorio: number): Prom
       throw new Error('Grimorio não encontrado!')
     }
 
-    const magias = await getMagiasDefault()
+    const novaMagia = MagiaRepository.create({
+      ..._magia,
+      aprimoramentos: _magia.aprimoramentos,
+      grimorio: grimorio
+    })
 
-    for (const magia of magias) {
-      if (magia.key == _magiaDTO.key) {
-        const novaMagia = MagiaRepository.create({
-          ...magia,
-          aprimoramentos: magia.aprimoramentos,
-          grimorio: grimorio
-        })
-
-        await MagiaRepository.save(novaMagia)
-      }
-    }
+    await MagiaRepository.save(novaMagia)
   } catch {
     throw new Error('Erro ao adicionar magia!')
   }

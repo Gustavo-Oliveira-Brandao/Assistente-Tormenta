@@ -38,13 +38,13 @@ declare global {
         postGrimorio: (grimorio: DeepPartial<Grimorio>, idPersonagem: number) => Promise<void>
         putGrimorio: (grimorio: Grimorio) => Promise<void>
         deleteGrimorio: (id: number) => Promise<void>
-        postMagia: (magia: IMagiaDTO, idGrimorio: number) => Promise<void>
+        postMagia: (magia: DeepPartial<Magia>, idGrimorio: number) => Promise<void>
         deleteMagia: (id: number) => Promise<void>
       }
       poderes: {
         getPoderesDefault: () => Promise<DeepPartial<Poder>[]>
         getPoderesPersonagem: (_idPersonagem: number) => Promise<Poder[]>
-        postPoder: (poder: IPoderDTO, _idPersonagem: number) => Promise<void>
+        postPoder: (poder: DeepPartial<Poder>, nivelPoder:number , _idPersonagem: number) => Promise<void>
         deletePoder: (id: number) => Promise<void>
       }
       proficiencias: {

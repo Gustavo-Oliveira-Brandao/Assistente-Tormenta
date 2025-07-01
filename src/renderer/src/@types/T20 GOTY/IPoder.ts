@@ -1,9 +1,3 @@
-export type IPoderDTO = {
-  key: string
-  nivel: number
-  categoria: string
-}
-
 export type IPoderPersonagem = {
   id: number
   key: string

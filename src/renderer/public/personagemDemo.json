@@ -361,7 +361,6 @@
       "nome": "Forma selvagem",
       "tipo": "atributos",
       "alvo": "forca",
-      "seletor": "bonus",
       "modoBonus": "SOMA",
       "valor": 2,
       "estaAtivo": true,

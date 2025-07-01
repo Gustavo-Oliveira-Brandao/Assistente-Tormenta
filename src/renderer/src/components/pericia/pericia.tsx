@@ -7,10 +7,9 @@ import { BotaoModular } from '../botao-modular/botao-modular'
 type periciaProps = {
   pericia: IPericia
   exibeTreinamento: boolean
-  editavel: boolean
 }
 
-export const Pericia = ({ pericia, exibeTreinamento, editavel }: periciaProps): JSX.Element => {
+export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Element => {
   return (
     <>
       <SimpleCard width="100%" height="40px" css="littleCard">

@@ -3,7 +3,6 @@ export type IModificador = {
   nome: string
   tipo: string
   alvo: string
-  seletor: string
   modoBonus: 'SOMA' | 'SUBSTITUICAO'
   valor: number
   estaAtivo: boolean

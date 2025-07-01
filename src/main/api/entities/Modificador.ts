@@ -23,11 +23,6 @@ export class Modificador {
   @Column({
     type: 'varchar'
   })
-  seletor: string
-
-  @Column({
-    type: 'varchar'
-  })
   modoBonus: 'SOMA' | 'SUBSTITUICAO'
 
   @Column({

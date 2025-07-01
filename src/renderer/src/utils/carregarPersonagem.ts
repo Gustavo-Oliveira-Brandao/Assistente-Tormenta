@@ -15,7 +15,7 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   //Calculo de atributo
   for (const atributo of personagem.atributos) {
     const valorModificadores = calcularModificadores(
-      modificadores.filter((mod) => verificarAlvo(mod.tipo, mod.alvo, 'atributos', atributo.nome)),
+      modificadores.filter((mod) => mod.tipo == 'atributos' && mod.alvo == atributo.nome),
       personagem.nivelAtual
     )
     atributo.valorAtual = atributo.valorBase + valorModificadores
@@ -41,9 +41,24 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     }
   }
 
+  const modificadoresVidaMaxima = calcularModificadores(
+    modificadores.filter((mod) => mod.tipo == 'status' && mod.alvo == 'vidaMaxima'),
+    personagem.nivelAtual
+  )
+  const modificadoresManaMaxima = calcularModificadores(
+    modificadores.filter((mod) => mod.tipo == 'status' && mod.alvo == 'manaMaxima'),
+    personagem.nivelAtual
+  )
+
+  const modificadoresDefesa = calcularModificadores(
+    modificadores.filter((mod) => mod.tipo == 'status' && mod.alvo == 'defesaAtual'),
+    personagem.nivelAtual
+  )
+
   const atributoVidaMaxima = personagem.atributos.find(
     (atributo) => atributo.nome == personagem.status.atributoVidaMaxima
   )
+
   const atributoManaMaxima = personagem.atributos.find(
     (atributo) => atributo.nome == personagem.status.atributoManaMaxima
   )
@@ -54,24 +69,34 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   //Calculo de Status
   personagem.status.vidaMaxima =
     vidaInicial +
-    (vidaTotalPorNivel + (atributoVidaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual
+    (vidaTotalPorNivel + (atributoVidaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual +
+    modificadoresVidaMaxima
 
   personagem.status.manaMaxima =
     vidaInicial +
-    (manaTotalPorNivel + (atributoManaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual
+    (manaTotalPorNivel + (atributoManaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual +
+    modificadoresManaMaxima
 
-  personagem.status.defesaAtual = personagem.status.defesaBase + (atributoDefesa?.valorAtual ?? 0)
+  personagem.status.defesaAtual =
+    personagem.status.defesaBase + (atributoDefesa?.valorAtual ?? 0) + modificadoresDefesa
 
   //Calculo de pericias
   for (const pericia of personagem.pericias) {
     let valorTreinamento = 0
+    const valorModificadoresPericia = calcularModificadores(
+      modificadores.filter((mod) => mod.tipo == 'pericias' && mod.alvo == pericia.nome),
+      personagem.nivelAtual
+    )
     if (pericia.treinamento === 'treinado') {
       valorTreinamento = personagem.nivelAtual <= 6 ? 2 : personagem.nivelAtual <= 14 ? 4 : 6
     }
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
     if (atributo) {
       pericia.valorAtual = Math.floor(
-        (atributo.valorAtual ?? 0) + valorTreinamento + personagem.nivelAtual / 2
+        (atributo.valorAtual ?? 0) +
+          valorTreinamento +
+          personagem.nivelAtual / 2 +
+          valorModificadoresPericia
       )
     }
   }
@@ -80,7 +105,6 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
 }
 
 const calcularModificadores = (modificadores: IModificador[], nivel: number): number => {
-  console.log(modificadores)
   let bonusTotal = 0
   for (const mod of modificadores) {
     if (mod.estaAtivo) {
@@ -91,20 +115,5 @@ const calcularModificadores = (modificadores: IModificador[], nivel: number): nu
       }
     }
   }
-  console.log(bonusTotal)
   return bonusTotal
-}
-
-const verificarAlvo = (
-  tipo: string,
-  alvo: string,
-  tipoProcurado: string,
-  alvoProcurado: string
-): boolean => {
-  if (tipo == tipoProcurado) {
-    if (alvo == alvoProcurado) {
-      return true
-    }
-  }
-  return false
 }

@@ -45,7 +45,7 @@ export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Elemen
           <BotaoModular css="botaoTimido" font="tormenta20Font" cor="transparente">
             <p>{atributo.nome}</p>
           </BotaoModular>
-          <PopoverModular width="fit-content" titulo={atributo.nome}>
+          <PopoverModular placement="bottom" width="fit-content" titulo={atributo.nome}>
             <FormProvider {...methodsAtributos}>
               <form
                 className={formStyles.form}

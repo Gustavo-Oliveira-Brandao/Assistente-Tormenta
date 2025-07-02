@@ -1,18 +1,43 @@
 @use '@renderer/assets/variables.scss';
 
-.modal {
-  position: fixed;
+.right {
+  bottom: 0;
+  top: 0;
+  right: 0;
+
+  &[data-entering] {
+    animation: modalSlideIn 300ms;
+  }
+  &[data-exiting] {
+    animation: modalSlideIn 300ms reverse ease-in;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.center {
   left: 50%;
   top: 50%;
-  border-radius: 5px;
   transform: translate(-50%, -50%);
-  transition: all 150ms;
 
   &[data-entering],
   &[data-exiting] {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.9);
   }
+}
+
+.modal {
+  position: fixed;
+  border-radius: 5px;
+  transition: all 150ms;
 
   .dialog {
     background-color: variables.$cinza-escuro-1;

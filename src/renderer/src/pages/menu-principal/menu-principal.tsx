@@ -72,6 +72,7 @@ export const MenuPrincipal = (): JSX.Element => {
         onOpenChange={setSelecaoPersonagensEstaAberta}
       >
         <ModalModular
+          placement="center"
           titulo="Selecionar personagem"
           height="500px"
           width="350px"

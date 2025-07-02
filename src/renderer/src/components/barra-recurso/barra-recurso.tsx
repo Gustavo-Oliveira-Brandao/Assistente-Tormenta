@@ -1,5 +1,6 @@
 import { JSX, useEffect, useState } from 'react'
 import styles from './barra-recurso.module.scss'
+import { Button } from 'react-aria-components'
 
 type BarraRecursoProps = {
   valorAtual: number
@@ -33,18 +34,21 @@ export const BarraRecurso = (props: BarraRecursoProps): JSX.Element => {
   }
 
   return (
-    <div className={styles.barraWrapper}>
-      {larguraBarra == 0 ? (
-        <div className={`${styles.texto} tormenta20Font`}>Morto</div>
-      ) : (
+    <Button className={styles.button}>
+      <div className={styles.barraWrapper}>
         <div className={`${styles.texto} tormenta20Font`}>
-          {props.valorAtual}/{props.valorMaximo}
+          <p>
+            {props.categoria}: {props.valorAtual}/{props.valorMaximo}
+          </p>
+          {props.valorTemporario != null && props.valorTemporario > 0 && (
+            <p>Temp: {props.valorTemporario}</p>
+          )}
         </div>
-      )}
-      <div
-        className={`${styles.barra} ${styles[calcularCorRecurso()]} tormenta20Font`}
-        style={{ width: `${larguraBarra}%` }}
-      ></div>
-    </div>
+        <div
+          className={`${styles.barra} ${styles[calcularCorRecurso()]} tormenta20Font`}
+          style={{ width: `${larguraBarra}%` }}
+        ></div>
+      </div>
+    </Button>
   )
 }

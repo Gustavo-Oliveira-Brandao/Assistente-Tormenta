@@ -347,10 +347,10 @@
     "escavacaoBase": 0
   },
   "status": {
-    "vidaAtual": 0,
+    "vidaAtual": 5,
     "vidaTemporaria": 0,
     "atributoVidaMaxima": "constituicao",
-    "manaAtual": 0,
+    "manaAtual": 4,
     "manaTemporaria": 0,
     "atributoManaMaxima": "none",
     "defesaBase": 10,

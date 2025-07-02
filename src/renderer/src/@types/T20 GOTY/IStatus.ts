@@ -10,7 +10,7 @@ export type IStatus = {
   // Pontos de Mana (PM)
   manaMaxima?: number
   manaAtual: number
-  manaTemporario: number
+  manaTemporaria: number
   atributoManaMaxima: string
 
   // Defesa

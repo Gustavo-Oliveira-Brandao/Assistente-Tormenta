@@ -275,6 +275,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
 
       <DialogTrigger isOpen={lojaEstaAberta} onOpenChange={setLojaEstaAberta}>
         <ModalModular
+          placement="center"
           height="90vh"
           width="750px"
           titulo="Compêndio de poderes"

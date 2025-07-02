@@ -1,10 +1,14 @@
 @use '@renderer/assets/variables.scss';
 
+.button {
+  padding: 0;
+}
+
 .barraWrapper {
   position: relative;
   width: 100%;
   background-color: variables.$cinza-escuro-3;
-  height: 23px;
+  height: 26px;
   cursor: pointer;
 
   .barra {
@@ -20,7 +24,9 @@
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 16px;
   }
 
   &:hover {

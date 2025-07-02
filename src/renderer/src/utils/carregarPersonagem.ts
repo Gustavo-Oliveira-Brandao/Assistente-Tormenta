@@ -21,7 +21,7 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     atributo.valorAtual = atributo.valorBase + valorModificadores
   }
 
-  //Calculo de recursos
+  //Calculo de status
   let vidaInicial = 0
   let vidaTotalPorNivel = 0
   let manaTotalPorNivel = 0

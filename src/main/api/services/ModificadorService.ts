@@ -47,6 +47,8 @@ export const putModificador = async (_modificador: Modificador): Promise<void> =
     }
 
     ModificadorRepository.merge(modificadorEncontrado, _modificador)
+
+    console.log(modificadorEncontrado)
     await ModificadorRepository.save(modificadorEncontrado)
   } catch (err) {
     console.log(err)

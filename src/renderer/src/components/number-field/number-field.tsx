@@ -5,6 +5,7 @@ import { Button, Group, Input, Label, NumberField } from 'react-aria-components'
 
 type NumberFieldProps = {
   name: string
+  css: string
   label: string
   placeholder: string
 }
@@ -12,6 +13,7 @@ type NumberFieldProps = {
 export const NumberFieldModular = ({
   name,
   label,
+  css,
   placeholder
 }: NumberFieldProps): ReactElement => {
   const { control } = useFormContext()
@@ -26,7 +28,7 @@ export const NumberFieldModular = ({
           name={name}
           onBlur={onBlur}
           onChange={onChange}
-          className={styles.formController}
+          className={`${styles.formController} ${styles[css]}`}
         >
           <Label className={`${styles.label} tormenta20Font`}>{label}</Label>
 

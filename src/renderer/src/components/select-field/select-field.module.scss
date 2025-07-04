@@ -1,1 +1,90 @@
 @use '@renderer/assets/variables.scss';
+
+.formController {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  .label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: variables.$cinza-claro-1;
+  }
+}
+
+.select {
+  height: 2rem;
+  width: 180px;
+  border-radius: 5px;
+  padding: 0.286rem 0.286rem 0.286rem 0.571rem;
+  background-color: variables.$cinza-escuro-1;
+    border: 1px solid variables.$cinza-escuro-3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     &[data-focus-visible] {
+      outline: 2px solid variables.$azul-primario;
+      outline-offset: -1px;
+    }
+
+    &[data-pressed] {
+      background-color: variables.$cinza-escuro-2;
+    }
+
+    span[aria-hidden] {
+      width: 1rem;
+      height: 1rem;
+      margin-left: 1rem;
+    padding: 1px;
+    background: variables.$azul-primario;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 0.5rem;
+    }
+
+  .selectValue {
+    font-size: 1rem;
+  }
+}
+
+.popover[data-trigger='Select'] {
+  .listBox {
+    display: block;
+    width: 180px;
+    max-height: inherit;
+    min-height: unset;
+    border: none;
+    background-color: variables.$cinza-escuro-1;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid variables.$cinza-escuro-3;
+  }
+
+  .item {
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &[data-focus-visible] {
+      outline: none;
+    }
+
+    &[data-selected] {
+      font-weight: 600;
+      background: unset;
+      color: white;
+    }
+
+    &[data-focused],
+    &[data-pressed] {
+      background: variables.$azul-primario;
+    }
+  }
+}

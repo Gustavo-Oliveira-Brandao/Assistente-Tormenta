@@ -27,7 +27,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   css="botaoExpansivel"
                   onClickEvent={() => setAba('ATRIBUTOS')}
                   estaAtivo={aba == 'ATRIBUTOS' ? true : false}
-                  cor="cinzaEscuro03"
+                  cor="cinzaEscuro02"
                   font="tormenta20Font"
                 >
                   <img src="./icons/arsenal.svg" alt="Atributos" />
@@ -37,7 +37,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   css="botaoExpansivel"
                   onClickEvent={() => setAba('PODERES')}
                   estaAtivo={aba == 'PODERES' ? true : false}
-                  cor="cinzaEscuro03"
+                  cor="cinzaEscuro02"
                   font="tormenta20Font"
                 >
                   <img src="./icons/thyatis.svg" alt="poderes" />
@@ -47,7 +47,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   css="botaoExpansivel"
                   onClickEvent={() => setAba('MAGIAS')}
                   estaAtivo={aba == 'MAGIAS' ? true : false}
-                  cor="cinzaEscuro03"
+                  cor="cinzaEscuro02"
                   font="tormenta20Font"
                 >
                   <img src="./icons/tanna-toh.svg" alt="magias" />
@@ -57,7 +57,7 @@ export const FichaPersonagem = (): JSX.Element => {
                   css="botaoExpansivel"
                   onClickEvent={() => setAba('EFEITOS')}
                   estaAtivo={aba == 'EFEITOS' ? true : false}
-                  cor="cinzaEscuro03"
+                  cor="cinzaEscuro02"
                   font="tormenta20Font"
                 >
                   <img src="./icons/grimorio.svg" alt="efeitos" />

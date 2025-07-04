@@ -1,8 +1,21 @@
 import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
-import { JSX } from 'react'
+import { JSX, useState } from 'react'
 import styles from './pericia.module.scss'
 import { SimpleCard } from '../simple-card/simple-card'
 import { BotaoModular } from '../botao-modular/botao-modular'
+import { Button, DialogTrigger } from 'react-aria-components'
+import { PopoverModular } from '../popover/popover'
+import { FormProvider, useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { periciaSchema } from '@renderer/validators/schemas/pericia'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useAtualizarPericia } from '@renderer/hooks/mutations/usePericiaMutation'
+import { FieldsetModular } from '../fieldset/fieldset'
+import { TextFieldModular } from '../text-field/text-field'
+import { SelectFieldModular } from '../select-field/select-field'
+import { opcoesTreinamento } from '@renderer/utils/select options/opcoesTreinamento'
+import { opcoesAtributos } from '@renderer/utils/select options/opcoesAtributos'
+import { SwitchFieldModular } from '../switch-field/switch-field'
 
 type periciaProps = {
   pericia: IPericia
@@ -10,12 +23,59 @@ type periciaProps = {
 }
 
 export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Element => {
+  const methods = useForm<z.infer<typeof periciaSchema>>({
+    defaultValues: {
+      ...pericia
+    },
+    resolver: zodResolver(periciaSchema)
+  })
+
+  const [edicaoEstaAberta, setEdicaoEstaAberta] = useState(false)
+
+  const atualizarPericia = useAtualizarPericia()
+
+  const onSubmit = (data): void => {
+    console.log(data)
+    const novaPericia: IPericia = {
+      ...pericia,
+      ...data
+    }
+
+    atualizarPericia.mutate(novaPericia)
+    setEdicaoEstaAberta(false)
+  }
+
   return (
     <>
       <SimpleCard width="100%" height="40px" css="littleCard">
-        <BotaoModular css="botaoTimido" cor="transparente" font="tormenta20Font">
-          <p>{pericia.nome}</p>
-        </BotaoModular>
+        <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
+          <BotaoModular css="botaoTimido" cor="transparente" font="tormenta20Font">
+            <p>{pericia.nome}</p>
+          </BotaoModular>
+          <PopoverModular placement="bottom" width="fit-content">
+            <FormProvider {...methods}>
+              <form onSubmit={methods.handleSubmit(onSubmit)}>
+                <FieldsetModular legend={pericia.nome}>
+                  <TextFieldModular placeholder="Acrobacia" label="Nome" name="nome" />
+                  <SelectFieldModular options={opcoesAtributos} label="Atributo" name="atributo" />
+                  <SwitchFieldModular
+                    name="sofrePenallidadeArmadura"
+                    label="Penalidade armadura?"
+                  />
+                </FieldsetModular>
+                <FieldsetModular legend="Treinamento">
+                  <SelectFieldModular
+                    options={opcoesTreinamento}
+                    label="É treinado?"
+                    name="treinamento"
+                  />
+                  <SwitchFieldModular name="requerTreinamento" label="Requer treinamento?" />
+                </FieldsetModular>
+                <Button type="submit">Salvar</Button>
+              </form>
+            </FormProvider>
+          </PopoverModular>
+        </DialogTrigger>
         <div className={styles.rolagem}>
           {exibeTreinamento && (
             <p className={styles.treinamento + ' tormenta20Font'}>{pericia.treinamento}</p>

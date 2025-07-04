@@ -5,7 +5,7 @@ import { Placement } from 'react-aria'
 
 type PopoverModularProps = {
   children: ReactNode
-  titulo: string
+  titulo?: string
   placement: Placement
   width: string
 }
@@ -13,7 +13,9 @@ export const PopoverModular = (props: PopoverModularProps): JSX.Element => {
   return (
     <Popover className={styles.popover} placement={props.placement}>
       <Dialog className={styles.popup}>
-        <Heading className={`${styles.title} tormenta20Font`}>{props.titulo}</Heading>
+        {props.titulo && (
+          <Heading className={`${styles.title} tormenta20Font`}>{props.titulo}</Heading>
+        )}
         <div className={styles.panel} style={{ width: props.width }}>
           {props.children}
         </div>

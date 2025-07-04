@@ -1,9 +1,9 @@
 @use '@renderer/assets/variables.scss';
 
 .right {
-  bottom: 0;
-  top: 0;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
 
   &[data-entering] {
     animation: modalSlideIn 300ms;
@@ -36,27 +36,33 @@
 
 .modal {
   position: fixed;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: all 150ms;
 
   .dialog {
     background-color: variables.$cinza-escuro-1;
     overflow: hidden;
+    border-radius: 15px;
 
     .modalHeader {
       background-color: variables.$vermelho-escuro;
       display: flex;
       justify-content: space-between;
-      height: 40px;
+      height: 30px;
       position: sticky;
       top: 0;
       width: 100%;
       align-items: center;
       padding: 0 10px;
-      border-radius: 5px 5px 0 0;
+      border-radius: 15px 15px 0 0;
 
       h2 {
         font-size: 20px;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
       }
     }
 
@@ -101,7 +107,7 @@
   top: 0;
   left: 0;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.274);
+  background-color: rgba(0, 0, 0, 0.644);
 }
 
 .footer {

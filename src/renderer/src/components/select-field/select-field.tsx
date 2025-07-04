@@ -10,10 +10,11 @@ import {
   Select,
   SelectValue
 } from 'react-aria-components'
+import { IOption } from '@renderer/@types/option'
 
 type SelectFieldModularProps = {
   label: string
-  options: string[]
+  options: IOption[]
   name: string
 }
 
@@ -30,6 +31,7 @@ export const SelectFieldModular = ({
       name={name}
       render={({ field: { name, value, onChange, onBlur, ref } }) => (
         <Select
+          id={name}
           name={name}
           ref={ref}
           selectedKey={value}
@@ -38,13 +40,20 @@ export const SelectFieldModular = ({
           className={styles.formController}
         >
           <Label className={`${styles.label} tormenta20Font`}>{label}</Label>
-          <Button>
-            <SelectValue />
+          <Button className={styles.select}>
+            <SelectValue className={`${styles.selectValue} tormenta20Font`} />
+            <span aria-hidden="true">▼</span>
           </Button>
-          <Popover>
-            <ListBox>
+          <Popover className={styles.popover}>
+            <ListBox className={styles.listBox}>
               {options.map((opt) => (
-                <ListBoxItem key={opt}>{opt}</ListBoxItem>
+                <ListBoxItem
+                  key={opt.value}
+                  id={opt.value}
+                  className={`${styles.item} tormenta20Font`}
+                >
+                  {opt.text}
+                </ListBoxItem>
               ))}
             </ListBox>
           </Popover>

@@ -6,12 +6,13 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarAtributo } from '@renderer/hooks/mutations/useAtributoMutation'
 import { atributoSchema } from '@renderer/validators/schemas/atributo'
 import { z } from 'zod'
-import formStyles from '@renderer/assets/styles/forms.module.scss'
-import { PopoverModular } from '../popover/popover'
 import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { NumberFieldModular } from '../number-field/number-field'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { BotaoModular } from '../botao-modular/botao-modular'
+import { FieldsetModular } from '../fieldset/fieldset'
+import { ModalModular } from '../modal/modal'
+import { PopoverModular } from '../popover/popover'
 
 type AtributoProps = {
   atributo: IAtributo
@@ -34,6 +35,7 @@ export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Elemen
       ...atributo,
       valorBase: data.valorBase
     }
+
     atualizarAtributo.mutate(novoAtributo)
     setEdicaoEstaAberta(false)
   }
@@ -45,17 +47,19 @@ export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Elemen
           <BotaoModular css="botaoTimido" font="tormenta20Font" cor="transparente">
             <p>{atributo.nome}</p>
           </BotaoModular>
-          <PopoverModular placement="bottom" width="fit-content" titulo={atributo.nome}>
+          <PopoverModular placement="bottom" width="fit-content">
             <FormProvider {...methodsAtributos}>
-              <form
-                className={formStyles.form}
-                onSubmit={methodsAtributos.handleSubmit(onSubmitAtributos)}
-              >
-                <fieldset className={formStyles.fieldset}>
-                  <div className={formStyles.rowFields}>
-                    <NumberFieldModular name="valorBase" placeholder="0" label="Valor:" />
+              <form onSubmit={methodsAtributos.handleSubmit(onSubmitAtributos)}>
+                <FieldsetModular legend={atributo.nome}>
+                  <div>
+                    <NumberFieldModular
+                      css="start"
+                      name="valorBase"
+                      placeholder="0"
+                      label="Valor:"
+                    />
                   </div>
-                </fieldset>
+                </FieldsetModular>
                 <Button type="submit">Salvar</Button>
               </form>
             </FormProvider>

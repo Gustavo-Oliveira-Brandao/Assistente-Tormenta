@@ -6,7 +6,6 @@ export const modificadorSchema = z
     valor: z.coerce.number(),
     tipo: z.string().nonempty('Campo obrigatório!'),
     alvo: z.string().nonempty('Campo obrigatório'),
-    seletor: z.string().nonempty('Campo obrigatório'),
     modoBonus: z.string().nonempty('Campo obrigatório'),
     estaAtivo: z.coerce.boolean(),
     ehPorNivel: z.coerce.boolean()

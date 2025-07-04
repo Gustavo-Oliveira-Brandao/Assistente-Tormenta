@@ -4,15 +4,16 @@ import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { FotoPersonagem } from '@renderer/components/foto-personagem/foto-personagem'
 import { BarraRecurso } from '@renderer/components/barra-recurso/barra-recurso'
 import { Button, DialogTrigger } from 'react-aria-components'
-import { PopoverModular } from '@renderer/components/popover/popover'
 import { FormProvider, useForm } from 'react-hook-form'
-import formStyles from '@renderer/assets/styles/forms.module.scss'
 import { z } from 'zod'
 import { statusSchema } from '@renderer/validators/schemas/status'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarStatus } from '@renderer/hooks/mutations/useStatusMutation'
 import { IStatus } from '@renderer/@types/T20 GOTY/IStatus'
 import { NumberFieldModular } from '@renderer/components/number-field/number-field'
+import { FieldsetModular } from '@renderer/components/fieldset/fieldset'
+import { ModalModular } from '@renderer/components/modal/modal'
+import { PopoverModular } from '@renderer/components/popover/popover'
 
 type SidebarFichaProps = {
   personagem: IPersonagem
@@ -52,20 +53,13 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
               valorMaximo={personagem.status.vidaMaxima ?? 0}
               valorTemporario={personagem.status.vidaTemporaria}
             />
-            <PopoverModular placement="end" width="fit-content" titulo="Vida">
+            <PopoverModular placement="right" width="fit-content">
               <FormProvider {...methodsStatus}>
-                <form
-                  className={formStyles.form}
-                  onSubmit={methodsStatus.handleSubmit(onSubmitStatus)}
-                >
-                  <fieldset className={formStyles.fieldset}>
-                    <div className={formStyles.rowFields}>
-                      <NumberFieldModular name="vidaAtual" placeholder="0" label="Atual" />
-                    </div>
-                    <div className={formStyles.rowFields}>
-                      <NumberFieldModular name="vidaTemporaria" placeholder="0" label="Temp" />
-                    </div>
-                  </fieldset>
+                <form onSubmit={methodsStatus.handleSubmit(onSubmitStatus)}>
+                  <FieldsetModular legend={'Vida'}>
+                    <NumberFieldModular css="" name="vidaAtual" placeholder="0" label="Atual" />
+                    <NumberFieldModular css="" name="vidaTemporaria" placeholder="0" label="Temp" />
+                  </FieldsetModular>
                   <Button type="submit">Salvar</Button>
                 </form>
               </FormProvider>
@@ -78,20 +72,13 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
               valorMaximo={personagem.status.manaMaxima ?? 0}
               valorTemporario={personagem.status.manaTemporaria}
             />
-            <PopoverModular placement="end" width="fit-content" titulo="Mana">
+            <PopoverModular placement="right" width="fit-content">
               <FormProvider {...methodsStatus}>
-                <form
-                  className={formStyles.form}
-                  onSubmit={methodsStatus.handleSubmit(onSubmitStatus)}
-                >
-                  <fieldset className={formStyles.fieldset}>
-                    <div className={formStyles.rowFields}>
-                      <NumberFieldModular name="manaAtual" placeholder="0" label="Atual" />
-                    </div>
-                    <div className={formStyles.rowFields}>
-                      <NumberFieldModular name="manaTemporaria" placeholder="0" label="Temp" />
-                    </div>
-                  </fieldset>
+                <form onSubmit={methodsStatus.handleSubmit(onSubmitStatus)}>
+                  <FieldsetModular legend={'Mana'}>
+                    <NumberFieldModular css="" name="manaAtual" placeholder="0" label="Atual" />
+                    <NumberFieldModular css="" name="manaTemporaria" placeholder="0" label="Temp" />
+                  </FieldsetModular>
                   <Button type="submit">Salvar</Button>
                 </form>
               </FormProvider>

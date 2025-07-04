@@ -78,26 +78,6 @@
   }
 }
 
-.nivel {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  label {
-    color: white;
-    font-size: 14px;
-  }
-
-  select {
-    background-color: variables.$azul-primario;
-    width: 55px;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    height: 25px;
-  }
-}
-
 .secaoEfeitos {
   width: 95%;
 }

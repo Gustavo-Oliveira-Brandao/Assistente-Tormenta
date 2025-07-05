@@ -1,16 +1,11 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import { Atributo } from '../entities/Atributo'
 import { getAtributosPersonagem, putAtributo } from '../services/AtributoService'
 
-ipcMain.handle('put-atributo', async (event: IpcMainInvokeEvent, _atributo: Atributo) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('put-atributo', async (_, _atributo: Atributo) => {
   await putAtributo(_atributo)
 })
 
-ipcMain.handle(
-  'get-atributos-personagem',
-  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
-    console.log(`FrameID:${event.frameId}`)
-    return await getAtributosPersonagem(_idPersonagem)
-  }
-)
+ipcMain.handle('get-atributos-personagem', async (_, _idPersonagem: number) => {
+  return await getAtributosPersonagem(_idPersonagem)
+})

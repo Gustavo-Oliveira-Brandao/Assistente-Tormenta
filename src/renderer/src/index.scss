@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: geist;
-  src: url('@renderer/assets/fonts/static/Geist-Regular.ttf');
+  src: url('@renderer/assets/fonts/Geist/Geist-VariableFont_wght.ttf');
 }
 
 *,
@@ -119,14 +119,14 @@ input {
 }
 
 .tormenta20Font {
-  color: #f0f0f0;
+  color: white;
   font-family: 'tormenta20font', sans-serif;
 }
 
 .geist {
-  color: #f0f0f0;
+  color: white;
   font-family: 'geist', sans-serif;
-  line-height: 1.6;
+  line-height: normal;
 }
 
 .root {

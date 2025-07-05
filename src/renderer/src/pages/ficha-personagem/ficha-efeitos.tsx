@@ -11,7 +11,7 @@ type FichaEfeitosProps = {
 
 export const FichaEfeitos = ({ personagem }: FichaEfeitosProps): JSX.Element => {
   return (
-    <div className={styles.secaoEfeitos}>
+    <div className={styles.secao}>
       <SecaoFicha header={<h2 className="tormenta20Font">Efeitos</h2>} css="efeitos">
         <DisclosureGroup>
           {personagem.modificadores.map((mod) => (

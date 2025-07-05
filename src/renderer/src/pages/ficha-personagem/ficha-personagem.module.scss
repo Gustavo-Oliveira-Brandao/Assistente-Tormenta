@@ -47,10 +47,6 @@
   }
 }
 
-.secaoAtributos {
-  width: 95%;
-}
-
 .lojaHeader {
   h3 {
     margin-bottom: 10px;
@@ -62,26 +58,24 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+}
 
-  .filtro {
+.secao{
+  margin-top: 15px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .partePericias {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 15px;
+
+    .especificas, .gerais {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
   }
-}
-
-.secaoPoderes {
-  width: 95%;
-
-  .poderes {
-    width: 100%;
-  }
-}
-
-.secaoEfeitos {
-  width: 95%;
-}
-
-.secaoMagias {
-  width: 95%;
 }

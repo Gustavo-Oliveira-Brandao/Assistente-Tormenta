@@ -13,6 +13,50 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
+  &[data-placement=top] {
+    --origin: translateY(8px);
+
+    &:has(.arrow) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &[data-placement=bottom] {
+    --origin: translateY(-8px);
+
+    &:has(.arrow) {
+      margin-top: 6px;
+    }
+
+    .arrow svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &[data-placement=right] {
+    --origin: translateX(-8px);
+
+    &:has(.arrow) {
+      margin-left: 6px;
+    }
+
+    .arrow svg {
+      transform: rotate(90deg);
+    }
+  }
+
+  &[data-placement=left] {
+    --origin: translateX(8px);
+
+    &:has(.arrow) {
+      margin-right: 6px;
+    }
+
+    .arrow svg {
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 .popup {
@@ -37,4 +81,12 @@
     outline: 1px solid variables.$cinza-escuro-3;
     outline-offset: -1px;
   }
+
+}
+
+.arrow svg {
+    display: block;
+    fill: variables.$cinza-escuro-2;
+    stroke: variables.$cinza-escuro-3;
+    stroke-width: 1px;
 }

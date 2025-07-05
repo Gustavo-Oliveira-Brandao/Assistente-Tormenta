@@ -9,17 +9,17 @@
   .label {
     font-size: 0.875rem;
     line-height: 1.25rem;
+    font-weight: 500;
     color: variables.$cinza-claro-1;
   }
 
   .input {
-    padding-left: 0.571rem;
+    padding: 0.286rem 0.371rem;
     margin: 0;
     border: 1px solid variables.$cinza-escuro-3;
     background-color: variables.$cinza-escuro-1;
-    width: 180px;
-    max-width: 16rem;
     height: 2rem;
+    width: 185px;
     border-radius: 0.375rem;
     font-size: 1rem;
     color: variables.$cinza-claro-1;

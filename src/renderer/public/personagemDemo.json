@@ -119,6 +119,14 @@
       "bonus": 0
     },
     {
+      "nome": "conhecimento",
+      "treinamento": "destreinado",
+      "categoria": "geral",
+      "atributo": "inteligencia",
+      "requerTreinamento": true,
+      "sofrePenalidadeArmadura": false
+    },
+    {
       "nome": "cura",
       "treinamento": "destreinado",
       "categoria": "geral",
@@ -249,7 +257,7 @@
       "bonus": 0
     },
     {
-      "nome": "misticimsmo",
+      "nome": "misticismo",
       "treinamento": "destreinado",
       "categoria": "geral",
       "atributo": "inteligencia",

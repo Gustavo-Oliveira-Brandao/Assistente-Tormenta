@@ -1,15 +1,10 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import { getStatusPersonagem, putRecurso } from '../services/StatusService'
 import { Status } from '../entities/Status'
 
-ipcMain.handle('put-status', async (event: IpcMainInvokeEvent, _status: Status) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('put-status', async (_, _status: Status) => {
   await putRecurso(_status)
 })
-ipcMain.handle(
-  'get-status-personagem',
-  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
-    console.log(`FrameID:${event.frameId}`)
-    return await getStatusPersonagem(_idPersonagem)
-  }
-)
+ipcMain.handle('get-status-personagem', async (_, _idPersonagem: number) => {
+  return await getStatusPersonagem(_idPersonagem)
+})

@@ -1,15 +1,10 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import { Pericia } from '../entities/Pericia'
 import { getPericiasPersonagem, putPericia } from '../services/PericiaService'
 
-ipcMain.handle('put-pericia', async (event: IpcMainInvokeEvent, _pericia: Pericia) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('put-pericia', async (_, _pericia: Pericia) => {
   await putPericia(_pericia)
 })
-ipcMain.handle(
-  'get-pericias-personagem',
-  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
-    console.log(`FrameID:${event.frameId}`)
-    return await getPericiasPersonagem(_idPersonagem)
-  }
-)
+ipcMain.handle('get-pericias-personagem', async (_, _idPersonagem: number) => {
+  return await getPericiasPersonagem(_idPersonagem)
+})

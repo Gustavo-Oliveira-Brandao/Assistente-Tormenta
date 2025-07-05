@@ -1,7 +1,6 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import { getClassesDefault } from '../services/ClasseService'
 
-ipcMain.handle('get-classes-default', async (event: IpcMainInvokeEvent) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('get-classes-default', async () => {
   return await getClassesDefault()
 })

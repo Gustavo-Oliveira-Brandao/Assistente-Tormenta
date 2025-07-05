@@ -1,4 +1,4 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import {
   deleteGrimorio,
   deleteMagia,
@@ -12,44 +12,34 @@ import { Grimorio } from '../entities/Grimorio'
 import { DeepPartial } from 'typeorm'
 import { Magia } from '../entities/Magia'
 
-ipcMain.handle('get-magias-default', async (event: IpcMainInvokeEvent) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('get-magias-default', async () => {
   const magias = await getMagiasDefault()
   return magias
 })
 
-ipcMain.handle('get-grimorios-personagem', async (event: IpcMainInvokeEvent, _idPersonagem) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('get-grimorios-personagem', async (_, _idPersonagem) => {
   return await getGrimoriosPorPersonagem(_idPersonagem)
 })
 
 ipcMain.handle(
   'post-grimorio',
-  async (event: IpcMainInvokeEvent, _grimorio: DeepPartial<Grimorio>, _idPersonagem: number) => {
-    console.log(`FrameID:${event.frameId}`)
+  async (_, _grimorio: DeepPartial<Grimorio>, _idPersonagem: number) => {
     await postGrimorio(_grimorio, _idPersonagem)
   }
 )
 
-ipcMain.handle('put-grimorio', async (event: IpcMainInvokeEvent, _grimorio: Grimorio) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('put-grimorio', async (_, _grimorio: Grimorio) => {
   await putGrimorio(_grimorio)
 })
 
-ipcMain.handle('delete-grimorio', async (event: IpcMainInvokeEvent, _id: number) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('delete-grimorio', async (_, _id: number) => {
   await deleteGrimorio(_id)
 })
 
-ipcMain.handle(
-  'post-magia',
-  async (event: IpcMainInvokeEvent, _magia: DeepPartial<Magia>, _idGrimorio: number) => {
-    console.log(`FrameID:${event.frameId}`)
-    await postMagia(_magia, _idGrimorio)
-  }
-)
+ipcMain.handle('post-magia', async (_, _magia: DeepPartial<Magia>, _idGrimorio: number) => {
+  await postMagia(_magia, _idGrimorio)
+})
 
-ipcMain.handle('delete-magia', async (event: IpcMainInvokeEvent, _id: number) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('delete-magia', async (_, _id: number) => {
   await deleteMagia(_id)
 })

@@ -16,6 +16,7 @@
   .label {
     font-size: 0.875rem;
     line-height: 1.25rem;
+    font-weight: 500;
     color: variables.$cinza-claro-1;
   }
 }
@@ -26,7 +27,7 @@
 
 .input {
   margin: 0;
-  padding: 0;
+  padding: 0.286rem 0.371rem;
   border-radius: 0;
   border-top: 1px solid variables.$cinza-escuro-3;
   border-bottom: 1px solid variables.$cinza-escuro-3;

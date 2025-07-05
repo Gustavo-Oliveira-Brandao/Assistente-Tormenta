@@ -1,8 +1,8 @@
-import { IOption } from '@renderer/@types/option'
+import { IOption } from '@renderer/@types/IOption'
 
 export const opcoesTipoModificadores: IOption[] = [
-  { value: 'atributos', text: 'atributos' },
-  { value: 'pericias', text: 'pericias' },
-  { value: 'recursos', text: 'recursos' },
-  { value: 'deslocamentos', text: 'deslocamentos' }
+  { value: 'atributos', text: 'Atributos' },
+  { value: 'pericias', text: 'Pericias' },
+  { value: 'recursos', text: 'Recursos' },
+  { value: 'deslocamentos', text: 'Deslocamentos' }
 ]

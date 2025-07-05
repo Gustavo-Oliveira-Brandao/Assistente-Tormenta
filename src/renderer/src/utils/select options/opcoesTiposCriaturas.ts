@@ -1,4 +1,4 @@
-import { IOption } from '@renderer/@types/option'
+import { IOption } from '@renderer/@types/IOption'
 
 export const opcoesTiposCriaturas: IOption[] = [
   { value: 'Animal', text: 'Animal' },

@@ -9,42 +9,24 @@ import {
 import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
 import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
-import { opcoesCategoriasPoderesGerais } from '@renderer/utils/select options/opcoesCategoriasPoderes'
+import { opcoesCategoriasTodosPoderes } from '@renderer/utils/select options/opcoesCategoriasPoderes'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
 import { DeepPartial } from 'typeorm'
 import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
 import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
-import { z } from 'zod'
-import { FormProvider, useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { SelectFieldModular } from '@renderer/components/select-field/select-field'
+import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
 }
-
-const filtroPoderesSchema = z.object({
-  categoriaPoderes: z.string(),
-  filtroClassePesquisa: z.string(),
-  filtroRacaPesquisa: z.string()
-})
 
 export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => {
   const { data: compendioPoderes } = useExibirPoderesDefault()
   const { data: compendioClasses } = useExibirClassesDefault()
   const { data: compendioRacas } = useExibirRacasDefault()
   const { data: poderesPersonagem } = useExibirPoderesPersonagem(personagem.id)
-
-  const methodsFiltroPoderes = useForm<z.infer<typeof filtroPoderesSchema>>({
-    resolver: zodResolver(filtroPoderesSchema),
-    defaultValues: {
-      categoriaPoderes: 'CLASSE',
-      filtroClassePesquisa: personagem.classeInicial,
-      filtroRacaPesquisa: personagem.raca
-    }
-  })
 
   const [categoriaPoderes, setCategoriaPoderes] = useState('CLASSE')
   const [filtroClassePesquisa, setFiltroClassePesquisa] = useState(personagem.classeInicial)
@@ -106,8 +88,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
   }
 
   return (
-    <section className={styles.secaoPoderes}>
-      <div className={styles.poderes}>
+    <section className={styles.secao}>
         <SecaoFicha
           header={
             <>
@@ -252,7 +233,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 ))}
           </DisclosureGroup>
         </SecaoFicha>
-      </div>
+
       <div className={styles.poderes}>
         <SecaoFicha
           header={
@@ -300,72 +281,46 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
           titulo="Compêndio de poderes"
           overflow="auto"
           sidebar={
-            <FormProvider {...methodsFiltroPoderes}>
-              <form className={styles.filtros}>
-                <p className="tormenta20Font">Filtros</p>
-                <div className={styles.filtro}>
-                  <label htmlFor="categoriaPoder" className="tormenta20Font label">
-                    Categoria
-                  </label>
-                  <select
-                    id="categoriaPoder"
-                    value={categoriaPoderes}
-                    className="tormenta20Font select"
-                    onChange={(e) => setCategoriaPoderes(e.target.value)}
-                  >
-                    <option value={'HABILIDADES_CLASSE'}>Habilidades de classe</option>
-                    <option value={'PODERES_CLASSE'}>Poderes de classe</option>
-                    <option value={'RACA'}>Raça</option>
-                    {opcoesCategoriasPoderesGerais.map((opcao) => (
-                      <option key={opcao} value={opcao}>
-                        {opcao}
-                      </option>
+            <div className={styles.filtros}>
+              <p className="tormenta20Font">Filtros</p>
+              <StandaloneSelect
+                onChange={setCategoriaPoderes}
+                name="categoriaPoder"
+                label="Categoria"
+                selecao={categoriaPoderes}
+              >
+                {opcoesCategoriasTodosPoderes.map((opt) => (
+                  <OptionModular key={opt.value} name={opt.value} value={opt.text} />
+                ))}
+              </StandaloneSelect>
+              {(categoriaPoderes == 'PODERES_CLASSE' ||
+                categoriaPoderes == 'HABILIDADES_CLASSE') && (
+                <StandaloneSelect
+                  onChange={setFiltroClassePesquisa}
+                  selecao={filtroClassePesquisa}
+                  name="filtroClasse"
+                  label="Classe"
+                >
+                  {compendioClasses &&
+                    compendioClasses.map((opt) => (
+                      <OptionModular key={opt.nome} name={opt.nome} value={opt.nome} />
                     ))}
-                  </select>
-                </div>
-                {(categoriaPoderes == 'PODERES_CLASSE' ||
-                  categoriaPoderes == 'HABILIDADES_CLASSE') && (
-                  <div className={styles.filtro}>
-                    <label htmlFor="filtroClasse" className="tormenta20Font label">
-                      Classe
-                    </label>
-                    <select
-                      id="filtroClasse"
-                      value={filtroClassePesquisa}
-                      className="tormenta20Font select"
-                      onChange={(e) => setFiltroClassePesquisa(e.target.value)}
-                    >
-                      {compendioClasses &&
-                        compendioClasses.map((classe) => (
-                          <option key={classe.nome} value={classe.nome}>
-                            {classe.nome}
-                          </option>
-                        ))}
-                    </select>
-                  </div>
-                )}
-                {categoriaPoderes == 'RACA' && (
-                  <div className={styles.filtro}>
-                    <label htmlFor="filtroRaca" className="tormenta20Font label">
-                      Raça
-                    </label>
-                    <select
-                      id="filtroRaca"
-                      value={filtroRacaPesquisa}
-                      className="tormenta20Font select"
-                      onChange={(e) => setFiltroRacaPesquisa(e.target.value)}
-                    >
-                      {compendioRacas &&
-                        compendioRacas.map((raca) => (
-                          <option key={raca.nome} value={raca.nome}>
-                            {raca.nome}
-                          </option>
-                        ))}
-                    </select>
-                  </div>
-                )}
-              </form>
-            </FormProvider>
+                </StandaloneSelect>
+              )}
+              {categoriaPoderes == 'RACA' && (
+                <StandaloneSelect
+                  onChange={setFiltroRacaPesquisa}
+                  selecao={filtroRacaPesquisa}
+                  label="Raça"
+                  name="filtroRaca"
+                >
+                  {compendioRacas &&
+                    compendioRacas.map((opt) => (
+                      <OptionModular key={opt.nome} name={opt.nome} value={opt.nome} />
+                    ))}
+                </StandaloneSelect>
+              )}
+            </div>
           }
         >
           <DisclosureGroup allowsMultipleExpanded>

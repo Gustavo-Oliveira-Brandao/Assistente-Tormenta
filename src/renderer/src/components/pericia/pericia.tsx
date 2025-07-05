@@ -1,21 +1,20 @@
 import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
 import { JSX, useState } from 'react'
 import styles from './pericia.module.scss'
-import { SimpleCard } from '../simple-card/simple-card'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { Button, DialogTrigger } from 'react-aria-components'
-import { PopoverModular } from '../popover/popover'
 import { FormProvider, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { periciaSchema } from '@renderer/validators/schemas/pericia'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarPericia } from '@renderer/hooks/mutations/usePericiaMutation'
 import { FieldsetModular } from '../fieldset/fieldset'
-import { TextFieldModular } from '../text-field/text-field'
-import { SelectFieldModular } from '../select-field/select-field'
+import { OptionModular, SelectFieldModular } from '../select-field/select-field'
 import { opcoesTreinamento } from '@renderer/utils/select options/opcoesTreinamento'
 import { opcoesAtributos } from '@renderer/utils/select options/opcoesAtributos'
 import { SwitchFieldModular } from '../switch-field/switch-field'
+import { ModalModular } from '../modal/modal'
+import { PopoverModular } from '../popover/popover'
 
 type periciaProps = {
   pericia: IPericia
@@ -47,29 +46,28 @@ export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Elemen
 
   return (
     <>
-      <SimpleCard width="100%" height="40px" css="littleCard">
+      <div className={styles.card}>
         <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
           <BotaoModular css="botaoTimido" cor="transparente" font="tormenta20Font">
             <p>{pericia.nome}</p>
           </BotaoModular>
-          <PopoverModular placement="bottom" width="fit-content">
+          <PopoverModular
+            placement="bottom"
+            width='fit-content'
+          >
             <FormProvider {...methods}>
               <form onSubmit={methods.handleSubmit(onSubmit)}>
                 <FieldsetModular legend={pericia.nome}>
-                  <TextFieldModular placeholder="Acrobacia" label="Nome" name="nome" />
-                  <SelectFieldModular options={opcoesAtributos} label="Atributo" name="atributo" />
-                  <SwitchFieldModular
-                    name="sofrePenallidadeArmadura"
-                    label="Penalidade armadura?"
-                  />
-                </FieldsetModular>
-                <FieldsetModular legend="Treinamento">
-                  <SelectFieldModular
-                    options={opcoesTreinamento}
-                    label="É treinado?"
-                    name="treinamento"
-                  />
-                  <SwitchFieldModular name="requerTreinamento" label="Requer treinamento?" />
+                  <SelectFieldModular label="Atributo" name="atributo">
+                    {opcoesAtributos.map((opt) => (
+                      <OptionModular key={opt.value} name={opt.value} value={opt.text} />
+                    ))}
+                  </SelectFieldModular>
+                  <SelectFieldModular label="Grau de treinamento" name="treinamento">
+                    {opcoesTreinamento.map((opt) => (
+                      <OptionModular key={opt.value} value={opt.text} name={opt.value} />
+                    ))}
+                  </SelectFieldModular>
                 </FieldsetModular>
                 <Button type="submit">Salvar</Button>
               </form>
@@ -85,7 +83,7 @@ export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Elemen
             <p>{pericia.valorAtual}</p>
           </BotaoModular>
         </div>
-      </SimpleCard>
+      </div>
     </>
   )
 }

@@ -40,7 +40,7 @@
   transition: all 150ms;
 
   .dialog {
-    background-color: variables.$cinza-escuro-1;
+    background-color: variables.$cinza-escuro-2;
     overflow: hidden;
     border-radius: 15px;
 
@@ -73,7 +73,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 15px;
+        padding: 10px;
         width: 250px;
       }
 

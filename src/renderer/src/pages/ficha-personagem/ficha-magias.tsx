@@ -12,7 +12,7 @@ export const FichaMagias = (): JSX.Element => {
   const removerMagia = useDeletarMagia()
 
   return (
-    <div className={styles.secaoMagias}>
+    <div className={styles.secao}>
       <SecaoFicha
         header={
           <>

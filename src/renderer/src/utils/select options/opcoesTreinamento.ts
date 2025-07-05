@@ -1,6 +1,6 @@
-import { IOption } from '@renderer/@types/option'
+import { IOption } from '@renderer/@types/IOption'
 
 export const opcoesTreinamento: IOption[] = [
-  { value: 'destreinado', text: 'destreinado' },
-  { value: 'treinado', text: 'treinado' }
+  { value: 'destreinado', text: 'Destreinado' },
+  { value: 'treinado', text: 'Treinado' }
 ]

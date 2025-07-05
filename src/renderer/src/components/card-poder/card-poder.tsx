@@ -61,7 +61,7 @@ export const CardPoder = ({
               {poder.subEfeitos.map((subEfeito, index) => (
                 <div key={index} className={styles.subEfeito}>
                   <p>
-                    <span className={styles.destaque + ' tormenta20Font'}>{subEfeito.nome}: </span>
+                    <span className={styles.destaque + ' geist'}>{subEfeito.nome} </span>
                     <span className="geist">{subEfeito.descricao}</span>
                   </p>
                 </div>

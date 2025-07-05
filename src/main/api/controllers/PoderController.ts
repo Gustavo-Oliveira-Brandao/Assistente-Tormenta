@@ -1,4 +1,4 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import {
   deletePoder,
   getCompendioPoderes,
@@ -8,35 +8,23 @@ import {
 import { DeepPartial } from 'typeorm'
 import { Poder } from '../entities/Poder'
 
-ipcMain.handle('get-poderes-default', async (event: IpcMainInvokeEvent) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('get-poderes-default', async () => {
   const poderes = await getCompendioPoderes()
   return poderes
 })
 
-ipcMain.handle(
-  'get-poderes-personagem',
-  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
-    console.log(`FrameID:${event.frameId}`)
-    const poderes = await getPoderesPersonagem(_idPersonagem)
-    return poderes
-  }
-)
+ipcMain.handle('get-poderes-personagem', async (_, _idPersonagem: number) => {
+  const poderes = await getPoderesPersonagem(_idPersonagem)
+  return poderes
+})
 
 ipcMain.handle(
   'post-poder',
-  async (
-    event: IpcMainInvokeEvent,
-    _poder: DeepPartial<Poder>,
-    nivelPoder: number,
-    _idPersonagem: number
-  ) => {
-    console.log(`FrameID:${event.frameId}`)
+  async (_, _poder: DeepPartial<Poder>, nivelPoder: number, _idPersonagem: number) => {
     await postPoder(_poder, nivelPoder, _idPersonagem)
   }
 )
 
-ipcMain.handle('delete-poder', async (event: IpcMainInvokeEvent, _id: number) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('delete-poder', async (_, _id: number) => {
   await deletePoder(_id)
 })

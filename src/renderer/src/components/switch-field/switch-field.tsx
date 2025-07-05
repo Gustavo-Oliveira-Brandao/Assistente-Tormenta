@@ -1,4 +1,4 @@
-import { JSX, useEffect, useMemo, useState } from 'react'
+import { JSX } from 'react'
 import { Label, Switch } from 'react-aria-components'
 import { Controller, useFormContext } from 'react-hook-form'
 import styles from './switch-field.module.scss'
@@ -17,7 +17,7 @@ export const SwitchFieldModular = ({ name, label }: SwitchFieldModularProps): JS
       name={name}
       render={({ field: { name, value, onChange, onBlur, ref } }) => (
         <div className={styles.formController}>
-          <Label className={`${styles.label} tormenta20Font`}>{label}</Label>
+          <Label className={`${styles.label} geist`}>{label}</Label>
           <Switch
             ref={ref}
             value={value}
@@ -49,7 +49,7 @@ export const StandaloneSwitch = ({
 }: StandaloneSwitchProps): JSX.Element => {
   return (
     <div className={styles.formController}>
-      <Label className={`${styles.label} tormenta20Font`}>{label}</Label>
+      <Label className={`${styles.label} geist`}>{label}</Label>
       <Switch
         isSelected={estadoInicial}
         name={name}

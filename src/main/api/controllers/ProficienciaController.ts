@@ -1,4 +1,4 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { ipcMain } from 'electron'
 import {
   deleteProficiencia,
   getProficienciasPorPersonagem,
@@ -8,35 +8,21 @@ import {
 import { Proficiencia } from '../entities/Proficiencia'
 import { DeepPartial } from 'typeorm'
 
-ipcMain.handle(
-  'get-proficiencias-personagem',
-  async (event: IpcMainInvokeEvent, _idPersonagem: number) => {
-    console.log(`FrameID:${event.frameId}`)
-    return await getProficienciasPorPersonagem(_idPersonagem)
-  }
-)
+ipcMain.handle('get-proficiencias-personagem', async (_, _idPersonagem: number) => {
+  return await getProficienciasPorPersonagem(_idPersonagem)
+})
 
 ipcMain.handle(
   'post-proficiencia',
-  async (
-    event: IpcMainInvokeEvent,
-    _proficiencia: DeepPartial<Proficiencia>,
-    _idPersonagem: number
-  ) => {
-    console.log(`FrameID:${event.frameId}`)
+  async (_, _proficiencia: DeepPartial<Proficiencia>, _idPersonagem: number) => {
     return await postProficiencia(_proficiencia, _idPersonagem)
   }
 )
 
-ipcMain.handle(
-  'put-proficiencia',
-  async (event: IpcMainInvokeEvent, _proficiencia: Proficiencia) => {
-    console.log(`FrameID:${event.frameId}`)
-    await putProficiencia(_proficiencia)
-  }
-)
+ipcMain.handle('put-proficiencia', async (_, _proficiencia: Proficiencia) => {
+  await putProficiencia(_proficiencia)
+})
 
-ipcMain.handle('delete-proficiencia', async (event: IpcMainInvokeEvent, _id: number) => {
-  console.log(`FrameID:${event.frameId}`)
+ipcMain.handle('delete-proficiencia', async (_, _id: number) => {
   await deleteProficiencia(_id)
 })

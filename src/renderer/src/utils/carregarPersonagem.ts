@@ -1,27 +1,59 @@
+import { IAtributo } from '@renderer/@types/T20 GOTY/IAtributo'
+import { IEfeito } from '@renderer/@types/T20 GOTY/IEfeito'
 import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
+import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
+import { IStatus } from '@renderer/@types/T20 GOTY/IStatus'
 import { exibirClassesDefault } from '@renderer/api/classe-service'
 
-export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPersonagem> => {
-  let nivelAtual = 0
+export const filtrarModificadoresPorTipoAlvo = (
+  efeitos: IEfeito[],
+  tipo: string,
+  alvo?: string
+): IModificador[] => {
+  const modificadores: IModificador[] = []
 
-  const modificadores = personagem.modificadores
-
-  for (const classe of personagem.classes) {
-    nivelAtual += classe.nivel
+  for (const efeito of efeitos) {
+    for (const mod of efeito.modificadores) {
+      if (mod.tipo == tipo && (!alvo || mod.alvo == alvo)) {
+        modificadores.push(mod)
+      }
+    }
   }
 
-  personagem.nivelAtual = nivelAtual
-  //Calculo de atributo
-  for (const atributo of personagem.atributos) {
-    const valorModificadores = calcularModificadores(
-      modificadores.filter((mod) => mod.tipo == 'atributos' && mod.alvo == atributo.nome),
-      personagem.nivelAtual
+  return modificadores
+}
+
+export const calcularAtributos = (
+  atributos: IAtributo[],
+  efeitosAtivos: IEfeito[],
+  nivelPersonagem: number
+): IAtributo[] => {
+  const atributosFinais: IAtributo[] = []
+
+  for (const atributo of atributos) {
+    const modificadores: IModificador[] = filtrarModificadoresPorTipoAlvo(
+      efeitosAtivos,
+      'atributos',
+      atributo.nome
     )
+
+    const valorModificadores = calcularModificadores(modificadores, nivelPersonagem)
     atributo.valorAtual = atributo.valorBase + valorModificadores
+
+    atributosFinais.push(atributo)
   }
 
-  //Calculo de status
+  return atributosFinais
+}
+
+export const calcularStatus = async (
+  personagem: IPersonagem,
+  efeitosAtivos: IEfeito[],
+  nivelPersonagem: number
+): Promise<IStatus> => {
+  const status = personagem.status
+
   let vidaInicial = 0
   let vidaTotalPorNivel = 0
   let manaTotalPorNivel = 0
@@ -41,18 +73,20 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     }
   }
 
+  const modificadores: IModificador[] = filtrarModificadoresPorTipoAlvo(efeitosAtivos, 'status')
+
   const modificadoresVidaMaxima = calcularModificadores(
-    modificadores.filter((mod) => mod.tipo == 'status' && mod.alvo == 'vidaMaxima'),
-    personagem.nivelAtual
+    modificadores.filter((mod) => mod.alvo == 'vidaMaxima'),
+    nivelPersonagem
   )
   const modificadoresManaMaxima = calcularModificadores(
-    modificadores.filter((mod) => mod.tipo == 'status' && mod.alvo == 'manaMaxima'),
-    personagem.nivelAtual
+    modificadores.filter((mod) => mod.alvo == 'manaMaxima'),
+    nivelPersonagem
   )
 
   const modificadoresDefesa = calcularModificadores(
-    modificadores.filter((mod) => mod.tipo == 'status' && mod.alvo == 'defesaAtual'),
-    personagem.nivelAtual
+    modificadores.filter((mod) => mod.alvo == 'defesaAtual'),
+    nivelPersonagem
   )
 
   const atributoVidaMaxima = personagem.atributos.find(
@@ -66,40 +100,73 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
     (atributo) => atributo.nome == personagem.status.atributoDefesa
   )
 
-  //Calculo de Status
-  personagem.status.vidaMaxima =
+  status.vidaMaxima =
     vidaInicial +
-    (vidaTotalPorNivel + (atributoVidaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual +
+    (vidaTotalPorNivel + (atributoVidaMaxima?.valorAtual ?? 0)) * nivelPersonagem +
     modificadoresVidaMaxima
 
-  personagem.status.manaMaxima =
+  status.manaMaxima =
     vidaInicial +
-    (manaTotalPorNivel + (atributoManaMaxima?.valorAtual ?? 0)) * personagem.nivelAtual +
+    (manaTotalPorNivel + (atributoManaMaxima?.valorAtual ?? 0)) * nivelPersonagem +
     modificadoresManaMaxima
 
-  personagem.status.defesaAtual =
+  status.defesaAtual =
     personagem.status.defesaBase + (atributoDefesa?.valorAtual ?? 0) + modificadoresDefesa
 
-  //Calculo de pericias
-  for (const pericia of personagem.pericias) {
+  return status
+}
+
+export const calcularPericias = (
+  personagem: IPersonagem,
+  efeitosAtivos: IEfeito[],
+  nivelAtual: number
+): IPericia[] => {
+  const pericias = personagem.pericias
+
+  for (const pericia of pericias) {
     let valorTreinamento = 0
-    const valorModificadoresPericia = calcularModificadores(
-      modificadores.filter((mod) => mod.tipo == 'pericias' && mod.alvo == pericia.nome),
-      personagem.nivelAtual
+
+    const modificadores: IModificador[] = filtrarModificadoresPorTipoAlvo(
+      efeitosAtivos,
+      'pericias',
+      pericia.nome
     )
+
+    const valorModificadoresPericia = calcularModificadores(modificadores, nivelAtual)
     if (pericia.treinamento === 'treinado') {
-      valorTreinamento = personagem.nivelAtual <= 6 ? 2 : personagem.nivelAtual <= 14 ? 4 : 6
+      valorTreinamento = nivelAtual <= 6 ? 2 : nivelAtual <= 14 ? 4 : 6
     }
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
     if (atributo) {
       pericia.valorAtual = Math.floor(
-        (atributo.valorAtual ?? 0) +
-          valorTreinamento +
-          personagem.nivelAtual / 2 +
-          valorModificadoresPericia
+        (atributo.valorAtual ?? 0) + valorTreinamento + nivelAtual / 2 + valorModificadoresPericia
       )
     }
   }
+
+  return pericias
+}
+
+export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPersonagem> => {
+  let nivelAtual = 0
+
+  for (const classe of personagem.classes) {
+    nivelAtual += classe.nivel
+  }
+
+  personagem.nivelAtual = nivelAtual
+
+  const efeitosAtivos = personagem.efeitos.filter((efeito) => efeito.estaAtivo)
+
+  personagem.atributos = calcularAtributos(
+    personagem.atributos,
+    efeitosAtivos,
+    personagem.nivelAtual
+  )
+
+  personagem.pericias = calcularPericias(personagem, efeitosAtivos, personagem.nivelAtual)
+
+  personagem.status = await calcularStatus(personagem, efeitosAtivos, personagem.nivelAtual)
 
   return personagem
 }

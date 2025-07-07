@@ -16,54 +16,51 @@ export const FichaAtributos = ({ personagem }: FichaAtributosProps): JSX.Element
         {personagem.atributos
           .sort((a, b) => a.ordem - b.ordem)
           .map((atributo) => (
-            <Atributo
-              key={atributo.id}
-              atributo={atributo}
-              modificadores={personagem.modificadores.filter(
-                (mod) => mod.tipo == 'atributos' && mod.alvo == atributo.nome
-              )}
-            />
+            <Atributo key={atributo.id} atributo={atributo} />
           ))}
       </SecaoFicha>
       <div className={styles.partePericias}>
-        <div className={styles.gerais}>
-          <SecaoFicha header={<h2 className="tormenta20Font">Pericias gerais</h2>} css="pericias">
-            {personagem.pericias
-              .filter((pericia) => pericia.categoria === 'geral')
-              .map((pericia) => (
-                <Pericia key={pericia.id} pericia={pericia} exibeTreinamento={true} />
-              ))}
-          </SecaoFicha>
-        </div>
-        <div className={styles.especificas}>
+        <div className={styles.combate}>
           <SecaoFicha
             header={<h2 className="tormenta20Font">Pericias de combate</h2>}
-            css="pericias"
+            css="ColumnPericias"
           >
             {personagem.pericias
               .filter((pericia) => pericia.categoria === 'combate')
               .map((pericia) => (
-                <Pericia key={pericia.id} pericia={pericia} exibeTreinamento={true} />
+                <Pericia css="combate" key={pericia.id} pericia={pericia} exibeTreinamento={true} />
               ))}
           </SecaoFicha>
           <SecaoFicha
             header={<h2 className="tormenta20Font">Testes de resistência</h2>}
-            css="pericias"
+            css="ColumnPericias"
           >
             {personagem.pericias
               .filter((pericia) => pericia.categoria === 'testeResistencia')
               .map((pericia) => (
-                <Pericia key={pericia.id} pericia={pericia} exibeTreinamento={true} />
-              ))}
-          </SecaoFicha>
-          <SecaoFicha header={<h2 className="tormenta20Font">Oficio</h2>} css="pericias">
-            {personagem.pericias
-              .filter((pericia) => pericia.categoria === 'oficio')
-              .map((pericia) => (
-                <Pericia key={pericia.id} pericia={pericia} exibeTreinamento={true} />
+                <Pericia css="combate" key={pericia.id} pericia={pericia} exibeTreinamento={true} />
               ))}
           </SecaoFicha>
         </div>
+        <div className={styles.gerais}>
+          <SecaoFicha
+            header={<h2 className="tormenta20Font">Pericias gerais</h2>}
+            css="gridPericias"
+          >
+            {personagem.pericias
+              .filter((pericia) => pericia.categoria === 'geral')
+              .map((pericia) => (
+                <Pericia css="geral" key={pericia.id} pericia={pericia} exibeTreinamento={true} />
+              ))}
+          </SecaoFicha>
+        </div>
+        <SecaoFicha header={<h2 className="tormenta20Font">Oficio</h2>} css="pericias">
+          {personagem.pericias
+            .filter((pericia) => pericia.categoria === 'oficio')
+            .map((pericia) => (
+              <Pericia css="oficio" key={pericia.id} pericia={pericia} exibeTreinamento={true} />
+            ))}
+        </SecaoFicha>
       </div>
     </div>
   )

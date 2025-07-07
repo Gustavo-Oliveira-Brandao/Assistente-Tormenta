@@ -14,7 +14,7 @@
     transform: scale(0.9);
   }
 
-  &[data-placement=top] {
+  &[data-placement='top'] {
     --origin: translateY(8px);
 
     &:has(.arrow) {
@@ -22,7 +22,7 @@
     }
   }
 
-  &[data-placement=bottom] {
+  &[data-placement='bottom'] {
     --origin: translateY(-8px);
 
     &:has(.arrow) {
@@ -34,7 +34,7 @@
     }
   }
 
-  &[data-placement=right] {
+  &[data-placement='right'] {
     --origin: translateX(-8px);
 
     &:has(.arrow) {
@@ -46,7 +46,7 @@
     }
   }
 
-  &[data-placement=left] {
+  &[data-placement='left'] {
     --origin: translateX(8px);
 
     &:has(.arrow) {
@@ -81,12 +81,11 @@
     outline: 1px solid variables.$cinza-escuro-3;
     outline-offset: -1px;
   }
-
 }
 
 .arrow svg {
-    display: block;
-    fill: variables.$cinza-escuro-2;
-    stroke: variables.$cinza-escuro-3;
-    stroke-width: 1px;
+  display: block;
+  fill: variables.$cinza-escuro-2;
+  stroke: variables.$cinza-escuro-3;
+  stroke-width: 1px;
 }

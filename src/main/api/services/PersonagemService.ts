@@ -24,7 +24,7 @@ export const getPersonagem = async (id: number): Promise<Personagem> => {
         pericias: true,
         deslocamento: true,
         status: true,
-        modificadores: true,
+        efeitos: true,
         proficiencias: true
       }
     })

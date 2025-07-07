@@ -32,9 +32,16 @@
     display: flex;
   }
 
-  .pericias {
+  .gridPericias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+  }
+
+  .columnPericias {
     display: flex;
     flex-direction: column;
+    width: 50%;
   }
 
   .efeitos {

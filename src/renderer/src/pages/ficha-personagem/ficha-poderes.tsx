@@ -89,150 +89,150 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
 
   return (
     <section className={styles.secao}>
-        <SecaoFicha
-          header={
-            <>
-              <h2 className="tormenta20Font">Poderes de raça</h2>
-              <BotaoModular
-                css="botaoAcompanhanteHeader"
-                cor="transparente"
-                font="tormenta20Font"
-                onClickEvent={() => {
-                  setCategoriaPoderes('RACA')
-                  setLojaEstaAberta(true)
-                }}
-              >
-                <img src="./icons/busca.svg" alt="buscar poderes" />
-                <p>Buscar</p>
-              </BotaoModular>
-            </>
-          }
-          css="poderes"
-        >
-          <DisclosureGroup allowsMultipleExpanded>
-            {poderesPersonagem &&
-              poderesPersonagem
-                .filter((poder) => poder.categoria == 'raca')
-                .map((poder) => (
-                  <CardPoder
-                    key={poder.id}
-                    poder={poder}
-                    nivel={poder.nivel}
-                    exibeFonte={true}
-                    onInteract={() => removerPoderMutation.mutate(poder.id)}
-                    iconeBotaoInteracao={'./icons/delete.svg'}
-                  />
-                ))}
-          </DisclosureGroup>
-        </SecaoFicha>
-        <SecaoFicha
-          header={
-            <>
-              <h2 className="tormenta20Font">Habilidades de classe</h2>
-              <BotaoModular
-                css="botaoAcompanhanteHeader"
-                cor="transparente"
-                font="tormenta20Font"
-                onClickEvent={() => {
-                  setCategoriaPoderes('HABILIDADES_CLASSE')
-                  setLojaEstaAberta(true)
-                }}
-              >
-                <img src="./icons/busca.svg" alt="buscar poderes" />
-                <p>Buscar</p>
-              </BotaoModular>
-            </>
-          }
-          css="poderes"
-        >
-          <DisclosureGroup allowsMultipleExpanded>
-            {poderesPersonagem &&
-              poderesPersonagem
-                .filter((poder) => poder.categoria == 'habilidade de classe')
-                .map((poder) => (
-                  <CardPoder
-                    key={poder.id}
-                    poder={poder}
-                    nivel={poder.nivel}
-                    exibeFonte={true}
-                    onInteract={() => removerPoderMutation.mutate(poder.id)}
-                    iconeBotaoInteracao={'./icons/delete.svg'}
-                  />
-                ))}
-          </DisclosureGroup>
-        </SecaoFicha>
-        <SecaoFicha
-          header={
-            <>
-              <h2 className="tormenta20Font">Poderes de classe</h2>
-              <BotaoModular
-                css="botaoAcompanhanteHeader"
-                cor="transparente"
-                font="tormenta20Font"
-                onClickEvent={() => {
-                  setCategoriaPoderes('PODERES_CLASSE')
-                  setLojaEstaAberta(true)
-                }}
-              >
-                <img src="./icons/busca.svg" alt="buscar poderes" />
-                <p>Buscar</p>
-              </BotaoModular>
-            </>
-          }
-          css="poderes"
-        >
-          <DisclosureGroup allowsMultipleExpanded>
-            {poderesPersonagem &&
-              poderesPersonagem
-                .filter((poder) => poder.categoria == 'poder de classe')
-                .map((poder) => (
-                  <CardPoder
-                    key={poder.id}
-                    poder={poder}
-                    nivel={poder.nivel}
-                    exibeFonte={true}
-                    onInteract={() => removerPoderMutation.mutate(poder.id)}
-                    iconeBotaoInteracao={'./icons/delete.svg'}
-                  />
-                ))}
-          </DisclosureGroup>
-        </SecaoFicha>
-        <SecaoFicha
-          header={
-            <>
-              <h2 className="tormenta20Font">Poderes de origem</h2>
-              <BotaoModular
-                css="botaoAcompanhanteHeader"
-                cor="transparente"
-                font="tormenta20Font"
-                onClickEvent={() => {
-                  setCategoriaPoderes('ORIGEM')
-                  setLojaEstaAberta(true)
-                }}
-              >
-                <img src="./icons/busca.svg" alt="buscar poderes" />
-                <p>Buscar</p>
-              </BotaoModular>
-            </>
-          }
-          css="poderes"
-        >
-          <DisclosureGroup allowsMultipleExpanded>
-            {poderesPersonagem &&
-              poderesPersonagem
-                .filter((poder) => poder.categoria == 'origem')
-                .map((poder) => (
-                  <CardPoder
-                    key={poder.id}
-                    poder={poder}
-                    nivel={poder.nivel}
-                    exibeFonte={true}
-                    onInteract={() => removerPoderMutation.mutate(poder.id)}
-                    iconeBotaoInteracao={'./icons/delete.svg'}
-                  />
-                ))}
-          </DisclosureGroup>
-        </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">Poderes de raça</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              cor="transparente"
+              font="tormenta20Font"
+              onClickEvent={() => {
+                setCategoriaPoderes('RACA')
+                setLojaEstaAberta(true)
+              }}
+            >
+              <img src="./icons/busca.svg" alt="buscar poderes" />
+              <p>Buscar</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'raca')
+              .map((poder) => (
+                <CardPoder
+                  key={poder.id}
+                  poder={poder}
+                  nivel={poder.nivel}
+                  exibeFonte={true}
+                  onInteract={() => removerPoderMutation.mutate(poder.id)}
+                  iconeBotaoInteracao={'./icons/delete.svg'}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">Habilidades de classe</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              cor="transparente"
+              font="tormenta20Font"
+              onClickEvent={() => {
+                setCategoriaPoderes('HABILIDADES_CLASSE')
+                setLojaEstaAberta(true)
+              }}
+            >
+              <img src="./icons/busca.svg" alt="buscar poderes" />
+              <p>Buscar</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'habilidade de classe')
+              .map((poder) => (
+                <CardPoder
+                  key={poder.id}
+                  poder={poder}
+                  nivel={poder.nivel}
+                  exibeFonte={true}
+                  onInteract={() => removerPoderMutation.mutate(poder.id)}
+                  iconeBotaoInteracao={'./icons/delete.svg'}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">Poderes de classe</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              cor="transparente"
+              font="tormenta20Font"
+              onClickEvent={() => {
+                setCategoriaPoderes('PODERES_CLASSE')
+                setLojaEstaAberta(true)
+              }}
+            >
+              <img src="./icons/busca.svg" alt="buscar poderes" />
+              <p>Buscar</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'poder de classe')
+              .map((poder) => (
+                <CardPoder
+                  key={poder.id}
+                  poder={poder}
+                  nivel={poder.nivel}
+                  exibeFonte={true}
+                  onInteract={() => removerPoderMutation.mutate(poder.id)}
+                  iconeBotaoInteracao={'./icons/delete.svg'}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">Poderes de origem</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              cor="transparente"
+              font="tormenta20Font"
+              onClickEvent={() => {
+                setCategoriaPoderes('ORIGEM')
+                setLojaEstaAberta(true)
+              }}
+            >
+              <img src="./icons/busca.svg" alt="buscar poderes" />
+              <p>Buscar</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {poderesPersonagem &&
+            poderesPersonagem
+              .filter((poder) => poder.categoria == 'origem')
+              .map((poder) => (
+                <CardPoder
+                  key={poder.id}
+                  poder={poder}
+                  nivel={poder.nivel}
+                  exibeFonte={true}
+                  onInteract={() => removerPoderMutation.mutate(poder.id)}
+                  iconeBotaoInteracao={'./icons/delete.svg'}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
 
       <div className={styles.poderes}>
         <SecaoFicha

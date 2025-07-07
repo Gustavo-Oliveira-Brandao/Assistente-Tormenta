@@ -11,8 +11,8 @@ import { DeepPartial } from 'typeorm'
 import { IClasse } from '../main/@types/IClasse'
 import { Poder } from '../main/api/entities/Poder'
 import { Magia } from '../main/api/entities/Magia'
-import { Modificador } from '../main/api/entities/Modificador'
 import { Status } from '../main/api/entities/Status'
+import { Efeito } from '../main/api/entities/Efeito'
 
 // Custom APIs for renderer
 const api = {
@@ -46,14 +46,13 @@ const api = {
       ipcRenderer.invoke('put-deslocamento', _deslocamento)
   },
 
-  modificadores: {
-    getModificadoresPersonagem: (_idPersonagem: number): Promise<Modificador[]> =>
-      ipcRenderer.invoke('get-modificadores-personagem-tipo', _idPersonagem),
-    postModificador: (_modificador: Partial<Modificador>, _idPersonagem: number): Promise<void> =>
-      ipcRenderer.invoke('post-modificador', _modificador, _idPersonagem),
-    putModificador: (_modificador: Modificador): Promise<void> =>
-      ipcRenderer.invoke('put-modificador', _modificador),
-    deleteModificador: (_id: number): Promise<void> => ipcRenderer.invoke('delete-modificador', _id)
+  efeitos: {
+    getEfeitosPersonagem: (_idPersonagem: number): Promise<Efeito[]> =>
+      ipcRenderer.invoke('get-efeitos-personagem', _idPersonagem),
+    postEfeito: (_efeito: DeepPartial<Efeito>, _idPersonagem: number): Promise<void> =>
+      ipcRenderer.invoke('post-efeito', _efeito, _idPersonagem),
+    putEfeito: (_efeito: Efeito): Promise<void> => ipcRenderer.invoke('put-efeito', _efeito),
+    deleteEfeito: (_id: number): Promise<void> => ipcRenderer.invoke('delete-efeito', _id)
   },
   magias: {
     getMagiasDefault: (): Promise<DeepPartial<Magia>[]> => ipcRenderer.invoke('get-magias-default'),

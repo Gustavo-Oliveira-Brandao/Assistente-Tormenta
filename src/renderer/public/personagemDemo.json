@@ -189,7 +189,7 @@
     {
       "nome": "iniciativa",
       "treinamento": "destreinado",
-      "categoria": "geral",
+      "categoria": "combate",
       "atributo": "destreza",
       "requerTreinamento": false,
       "sofrePenalidadeArmadura": false,
@@ -364,15 +364,34 @@
     "defesaBase": 10,
     "atributoDefesa": "destreza"
   },
-  "modificadores": [
+  "efeitos": [
     {
       "nome": "Forma selvagem",
-      "tipo": "atributos",
-      "alvo": "forca",
-      "modoBonus": "SOMA",
-      "valor": 2,
       "estaAtivo": true,
-      "ehPorNivel": false
+      "modificadores": [
+        {
+          "tipo": "atributos",
+          "alvo": "forca",
+          "modoBonus": "SOMA",
+          "valor": 2,
+          "estaAtivo": true,
+          "ehPorNivel": false
+        }
+      ]
+    },
+    {
+      "nome": "Sla",
+      "estaAtivo": true,
+      "modificadores": [
+        {
+          "tipo": "pericias",
+          "alvo": "acrobacia",
+          "modoBonus": "SOMA",
+          "valor": 1,
+          "estaAtivo": true,
+          "ehPorNivel": false
+        }
+      ]
     }
   ]
 }

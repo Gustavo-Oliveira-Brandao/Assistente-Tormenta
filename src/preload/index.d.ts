@@ -1,5 +1,4 @@
 import { ElectronAPI } from '@electron-toolkit/preload'
-import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 declare global {
   interface Window {
     electron: ElectronAPI
@@ -25,14 +24,11 @@ declare global {
         getDeslocamentoPersonagem: (_idPersonagem: number) => Promise<IDeslocamento>
         putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
       }
-      modificadores: {
-        getModificadoresPersonagem: (_idPersonagem: number) => Promise<IModificador[]>
-        postModificador: (
-          _modificador: Partial<Modificador>,
-          _idPersonagem: number
-        ) => Promise<void>
-        putModificador: (_modificador: Modificador) => Promise<void>
-        deleteModificador: (_id: number) => Promise<void>
+      efeitos: {
+        getEfeitosPersonagem: (_idPersonagem: number) => Promise<IEfeito[]>
+        postEfeito: (_efeito: DeepPartial<Efeito>, _idPersonagem: number) => Promise<void>
+        putEfeito: (_efeito: Efeito) => Promise<void>
+        deleteEfeito: (_id: number) => Promise<void>
       }
       magias: {
         getMagiasDefault: () => Promise<IMagiaDTO[]>

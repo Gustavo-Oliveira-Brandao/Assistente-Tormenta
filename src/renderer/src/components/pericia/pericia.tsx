@@ -12,16 +12,15 @@ import { FieldsetModular } from '../fieldset/fieldset'
 import { OptionModular, SelectFieldModular } from '../select-field/select-field'
 import { opcoesTreinamento } from '@renderer/utils/select options/opcoesTreinamento'
 import { opcoesAtributos } from '@renderer/utils/select options/opcoesAtributos'
-import { SwitchFieldModular } from '../switch-field/switch-field'
-import { ModalModular } from '../modal/modal'
 import { PopoverModular } from '../popover/popover'
 
 type periciaProps = {
   pericia: IPericia
   exibeTreinamento: boolean
+  css: string
 }
 
-export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Element => {
+export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.Element => {
   const methods = useForm<z.infer<typeof periciaSchema>>({
     defaultValues: {
       ...pericia
@@ -34,7 +33,6 @@ export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Elemen
   const atualizarPericia = useAtualizarPericia()
 
   const onSubmit = (data): void => {
-    console.log(data)
     const novaPericia: IPericia = {
       ...pericia,
       ...data
@@ -46,15 +44,12 @@ export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Elemen
 
   return (
     <>
-      <div className={styles.card}>
+      <div className={`${styles.card} ${styles[css]}`}>
         <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
           <BotaoModular css="botaoTimido" cor="transparente" font="tormenta20Font">
             <p>{pericia.nome}</p>
           </BotaoModular>
-          <PopoverModular
-            placement="bottom"
-            width='fit-content'
-          >
+          <PopoverModular placement="bottom" width="fit-content">
             <FormProvider {...methods}>
               <form onSubmit={methods.handleSubmit(onSubmit)}>
                 <FieldsetModular legend={pericia.nome}>

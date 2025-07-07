@@ -9,7 +9,7 @@ import './controllers/ProficienciaController'
 import './controllers/StatusController'
 import './controllers/PersonagemController'
 import './controllers/RacaController'
-import './controllers/ModificadorController'
+import './controllers/EfeitoController'
 
 const AppDataSource = SQLiteDataSource
 

@@ -1,7 +1,7 @@
 import { IAtributo } from './IAtributo'
 import { IClassePersonagem } from './IClasse'
 import { IDeslocamento } from './IDeslocamento'
-import { IModificador } from './IModificador'
+import { IEfeito } from './IEfeito'
 import { IPericia } from './IPericia'
 import { IStatus } from './IStatus'
 
@@ -26,5 +26,5 @@ export type IPersonagem = {
   pericias: IPericia[]
   deslocamento: IDeslocamento
   status: IStatus
-  modificadores: IModificador[]
+  efeitos: IEfeito[]
 }

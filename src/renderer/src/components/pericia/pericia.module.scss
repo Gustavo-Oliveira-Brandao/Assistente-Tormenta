@@ -6,12 +6,29 @@ button:hover {
   }
 }
 
-.card:last-child {
+.combate:last-child {
+  border: none;
+}
+
+.combate {
+  border-bottom: 1px solid variables.$cinza-escuro-3;
+}
+
+.geral {
+  border-bottom: 1px solid variables.$cinza-escuro-3;
+  border-right: 1px solid variables.$cinza-escuro-3;
+}
+
+.geral:nth-last-child(1),
+.geral:nth-last-child(2) {
   border-bottom: none;
 }
 
+.geral:nth-child(even) {
+  border-right: none;
+}
+
 .card {
-  border-bottom: 1px solid variables.$cinza-escuro-3;
   display: flex;
   justify-content: space-between;
   align-items: center;

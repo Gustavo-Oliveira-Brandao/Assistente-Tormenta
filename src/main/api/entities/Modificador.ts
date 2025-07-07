@@ -1,14 +1,9 @@
 import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
-import { Personagem } from './Personagem'
+import { Efeito } from './Efeito'
 @Entity()
 export class Modificador {
   @PrimaryGeneratedColumn()
   id: number
-
-  @Column({
-    type: 'varchar'
-  })
-  nome: string
 
   @Column({
     type: 'varchar'
@@ -40,10 +35,10 @@ export class Modificador {
   })
   ehPorNivel: boolean
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.modificadores, {
+  @ManyToOne(() => Efeito, (efeito) => efeito.modificadores, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
   @Index()
-  personagem: Personagem
+  efeito: Efeito
 }

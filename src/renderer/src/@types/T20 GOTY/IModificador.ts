@@ -1,6 +1,5 @@
 export type IModificador = {
   id: number
-  nome: string
   tipo: string
   alvo: string
   modoBonus: 'SOMA' | 'SUBSTITUICAO'

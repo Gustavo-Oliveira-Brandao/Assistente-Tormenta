@@ -6,19 +6,16 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarAtributo } from '@renderer/hooks/mutations/useAtributoMutation'
 import { atributoSchema } from '@renderer/validators/schemas/atributo'
 import { z } from 'zod'
-import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { NumberFieldModular } from '../number-field/number-field'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { FieldsetModular } from '../fieldset/fieldset'
-import { ModalModular } from '../modal/modal'
 import { PopoverModular } from '../popover/popover'
 
 type AtributoProps = {
   atributo: IAtributo
-  modificadores?: IModificador[]
 }
-export const Atributo = ({ atributo, modificadores }: AtributoProps): JSX.Element => {
+export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
   const atualizarAtributo = useAtualizarAtributo()
 
   const [edicaoEstaAberta, setEdicaoEstaAberta] = useState(false)

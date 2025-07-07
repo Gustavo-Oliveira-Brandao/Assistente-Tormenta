@@ -11,6 +11,7 @@ import { Poder, SubEfeito, Tag } from './entities/Poder'
 import { AprimoramentoMagia, Magia } from './entities/Magia'
 import { Modificador } from './entities/Modificador'
 import { Status } from './entities/Status'
+import { Efeito } from './entities/Efeito'
 
 export const SQLiteDataSource = new DataSource({
   type: 'sqlite',
@@ -24,6 +25,7 @@ export const SQLiteDataSource = new DataSource({
     Tag,
     Modificador,
     SubEfeito,
+    Efeito,
     Deslocamento,
     Grimorio,
     Magia,

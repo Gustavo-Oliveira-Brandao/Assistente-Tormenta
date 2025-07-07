@@ -9,7 +9,6 @@ import {
 import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
 import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
-import { opcoesCategoriasTodosPoderes } from '@renderer/utils/select options/opcoesCategoriasPoderes'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
 import { DeepPartial } from 'typeorm'
 import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
@@ -17,6 +16,7 @@ import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
+import { categoriasPoderesData } from '@renderer/utils/common data/categoriasPoderesData'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
@@ -289,8 +289,12 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                 label="Categoria"
                 selecao={categoriaPoderes}
               >
-                {opcoesCategoriasTodosPoderes.map((opt) => (
-                  <OptionModular key={opt.value} name={opt.value} value={opt.text} />
+                <OptionModular name="HABILIDADES_CLASSE" value="Classe: habilidades" />
+                <OptionModular name="PODERES_CLASSE" value="Classe: poderes" />
+                <OptionModular name="RACA" value="Raça: poderes" />
+
+                {categoriasPoderesData.map((opt) => (
+                  <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
                 ))}
               </StandaloneSelect>
               {(categoriaPoderes == 'PODERES_CLASSE' ||

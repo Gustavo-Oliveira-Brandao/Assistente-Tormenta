@@ -2,6 +2,7 @@
 
 .fieldset {
   padding: 5px;
+  margin-bottom: 10px;
 
   .legend {
     border-bottom: 1px solid variables.$cinza-escuro-3;
@@ -10,6 +11,9 @@
     padding-bottom: 3px;
     text-transform: uppercase;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .row {

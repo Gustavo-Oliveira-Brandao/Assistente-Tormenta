@@ -7,6 +7,7 @@ export const periciaSchema = z
     categoria: z.string().nonempty('Campo obrigatório!'),
     atributo: z.string().nonempty('Campo obrigatório!'),
     requerTreinamento: z.coerce.boolean(),
-    sofrePenalidadeArmadura: z.coerce.boolean()
+    sofrePenalidadeArmadura: z.coerce.boolean(),
+    bonus: z.coerce.number()
   })
   .required()

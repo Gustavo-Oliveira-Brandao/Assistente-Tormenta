@@ -2,7 +2,6 @@ import { z } from 'zod'
 
 export const modificadorSchema = z
   .object({
-    nome: z.string().nonempty('Campo obrigatório!'),
     valor: z.coerce.number(),
     tipo: z.string().nonempty('Campo obrigatório!'),
     alvo: z.string().nonempty('Campo obrigatório'),

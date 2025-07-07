@@ -31,7 +31,7 @@ export const TextFieldModular = ({ placeholder, name, label }: TextFieldProps): 
         >
           <Label className={`${styles.label} geist`}>{label}</Label>
           <Input placeholder={placeholder} ref={ref} className={`${styles.input} geist`} />
-          <FieldError>{error?.message}</FieldError>
+          <FieldError className="geist">{error?.message}</FieldError>
         </TextField>
       )}
     />

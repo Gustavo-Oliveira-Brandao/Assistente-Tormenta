@@ -13,6 +13,12 @@ export class Status {
   vidaAtual: number
 
   @Column({
+    type: 'integer',
+    nullable: false
+  })
+  vidaMaximaBonus: number
+
+  @Column({
     type: 'integer'
   })
   vidaTemporaria: number
@@ -29,6 +35,12 @@ export class Status {
   manaAtual: number
 
   @Column({
+    type: 'integer',
+    nullable: false
+  })
+  manaMaximaBonus: number
+
+  @Column({
     type: 'integer'
   })
   manaTemporaria: number
@@ -43,6 +55,12 @@ export class Status {
     type: 'integer'
   })
   defesaBase: number
+
+  @Column({
+    type: 'integer',
+    nullable: false
+  })
+  defesaBonus: number
 
   @Column({
     type: 'varchar'

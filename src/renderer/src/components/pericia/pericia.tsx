@@ -10,9 +10,12 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useAtualizarPericia } from '@renderer/hooks/mutations/usePericiaMutation'
 import { FieldsetModular } from '../fieldset/fieldset'
 import { OptionModular, SelectFieldModular } from '../select-field/select-field'
-import { opcoesTreinamento } from '@renderer/utils/select options/opcoesTreinamento'
-import { opcoesAtributos } from '@renderer/utils/select options/opcoesAtributos'
-import { PopoverModular } from '../popover/popover'
+import { ModalModular } from '../modal/modal'
+import { NumberFieldModular } from '../number-field/number-field'
+import { SwitchFieldModular } from '../switch-field/switch-field'
+import { TextFieldModular } from '../text-field/text-field'
+import { atributosData } from '@renderer/utils/common data/atributosData'
+import { grausTreinamentoData } from '@renderer/utils/common data/treinamentosData'
 
 type periciaProps = {
   pericia: IPericia
@@ -38,6 +41,8 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
       ...data
     }
 
+    console.log(novaPericia)
+
     atualizarPericia.mutate(novaPericia)
     setEdicaoEstaAberta(false)
   }
@@ -49,25 +54,43 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
           <BotaoModular css="botaoTimido" cor="transparente" font="tormenta20Font">
             <p>{pericia.nome}</p>
           </BotaoModular>
-          <PopoverModular placement="bottom" width="fit-content">
+          <ModalModular
+            placement="center"
+            height="fit-content"
+            titulo={`${pericia.nome}`}
+            width="fit-content"
+          >
             <FormProvider {...methods}>
-              <form onSubmit={methods.handleSubmit(onSubmit)}>
-                <FieldsetModular legend={pericia.nome}>
+              <form className={styles.form} onSubmit={methods.handleSubmit(onSubmit)}>
+                <FieldsetModular legend={`Detalhes`}>
+                  {pericia.categoria == 'oficio' && (
+                    <TextFieldModular placeholder="Culinaria" name="nome" label="Nome:" />
+                  )}
                   <SelectFieldModular label="Atributo" name="atributo">
-                    {opcoesAtributos.map((opt) => (
-                      <OptionModular key={opt.value} name={opt.value} value={opt.text} />
+                    {atributosData.map((opt) => (
+                      <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
                     ))}
-                  </SelectFieldModular>
+                  </SelectFieldModular>{' '}
+                  <SwitchFieldModular
+                    name="sofrePenalidadeArmadura"
+                    label="Penalidade de armadura?"
+                  />
+                </FieldsetModular>{' '}
+                <FieldsetModular legend="Valores">
+                  <NumberFieldModular name="bonus" label="Bônus" css="start" placeholder="0" />
+                </FieldsetModular>
+                <FieldsetModular legend="Treinamento">
                   <SelectFieldModular label="Grau de treinamento" name="treinamento">
-                    {opcoesTreinamento.map((opt) => (
-                      <OptionModular key={opt.value} value={opt.text} name={opt.value} />
+                    {grausTreinamentoData.map((opt) => (
+                      <OptionModular key={opt.value} value={opt.nome} name={opt.value} />
                     ))}
                   </SelectFieldModular>
+                  <SwitchFieldModular name="requerTreinamento" label="Requer treinamento?" />
                 </FieldsetModular>
                 <Button type="submit">Salvar</Button>
               </form>
             </FormProvider>
-          </PopoverModular>
+          </ModalModular>
         </DialogTrigger>
         <div className={styles.rolagem}>
           {exibeTreinamento && (

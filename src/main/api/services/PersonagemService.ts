@@ -43,7 +43,8 @@ export const postPersonagem = async (_personagem: DeepPartial<Personagem>): Prom
   try {
     const personagem = PersonagemRepository.create(_personagem)
     await PersonagemRepository.save(personagem)
-  } catch {
+  } catch (err) {
+    console.log(err)
     throw new Error('Erro ao criar personagem.')
   }
 }

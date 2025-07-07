@@ -10,7 +10,7 @@ import { NumberFieldModular } from '../number-field/number-field'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { FieldsetModular } from '../fieldset/fieldset'
-import { PopoverModular } from '../popover/popover'
+import { ModalModular } from '../modal/modal'
 
 type AtributoProps = {
   atributo: IAtributo
@@ -23,14 +23,16 @@ export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
   const methodsAtributos = useForm<z.infer<typeof atributoSchema>>({
     resolver: zodResolver(atributoSchema),
     defaultValues: {
-      valorBase: atributo.valorBase
+      valorBase: atributo.valorBase,
+      bonus: atributo.bonus
     }
   })
 
   const onSubmitAtributos = (data): void => {
     const novoAtributo: IAtributo = {
       ...atributo,
-      valorBase: data.valorBase
+      valorBase: data.valorBase,
+      bonus: data.bonus
     }
 
     atualizarAtributo.mutate(novoAtributo)
@@ -44,23 +46,22 @@ export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
           <BotaoModular css="botaoTimido" font="tormenta20Font" cor="transparente">
             <p>{atributo.nome}</p>
           </BotaoModular>
-          <PopoverModular placement="bottom" width="fit-content">
+          <ModalModular
+            titulo={`${atributo.nome}`}
+            placement="center"
+            height="fit-content"
+            width="fit-content"
+          >
             <FormProvider {...methodsAtributos}>
               <form onSubmit={methodsAtributos.handleSubmit(onSubmitAtributos)}>
-                <FieldsetModular legend={atributo.nome}>
-                  <div>
-                    <NumberFieldModular
-                      css="start"
-                      name="valorBase"
-                      placeholder="0"
-                      label="Valor:"
-                    />
-                  </div>
+                <FieldsetModular legend={'Valores'}>
+                  <NumberFieldModular css="start" name="valorBase" placeholder="0" label="Base:" />
+                  <NumberFieldModular css="start" name="bonus" placeholder="0" label="Bônus:" />
                 </FieldsetModular>
                 <Button type="submit">Salvar</Button>
               </form>
             </FormProvider>
-          </PopoverModular>
+          </ModalModular>
         </DialogTrigger>
       </div>
       <BotaoModular css="rollBtn" cor="transparente" font="tormenta20Font">

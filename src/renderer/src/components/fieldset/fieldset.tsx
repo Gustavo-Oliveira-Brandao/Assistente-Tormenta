@@ -3,7 +3,7 @@ import styles from './fieldset.module.scss'
 
 type FieldsetModularProps = {
   children: ReactNode
-  legend: string
+  legend: ReactNode
 }
 
 export const FieldsetModular = ({ children, legend }: FieldsetModularProps): JSX.Element => {

@@ -14,6 +14,12 @@ export class Pericia {
   nome: string
 
   @Column({
+    type: 'integer',
+    nullable: false
+  })
+  bonus: number
+
+  @Column({
     type: 'varchar',
     length: 15
   })

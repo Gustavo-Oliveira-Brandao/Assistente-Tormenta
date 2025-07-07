@@ -7,7 +7,7 @@
   gap: 0.25rem;
 
   .label {
-    font-size: 0.875rem;
+    font-size: 13px;
     line-height: 1.25rem;
     font-weight: 500;
   }
@@ -37,41 +37,33 @@
         display: block;
         content: '';
         margin: 0.143rem;
-        background: variables.$azul-primario;
+        background: white;
         border-radius: 16px;
         transition: all 200ms;
       }
     }
 
-    &[data-pressed] .indicador {
-      border-color: variables.$azul-primario;
-
-      &:before {
-        background: variables.$azul-primario;
-      }
-    }
-
     &[data-selected] {
       .indicador {
-        border-color: variables.$azul-primario;
-        background: variables.$azul-primario;
+        border-color: variables.$vermelho-primario;
+        background: variables.$vermelho-primario;
 
         &:before {
-          background: variables.$cinza-escuro-1;
+          background: white;
           transform: translateX(100%);
         }
       }
 
       &[data-pressed] {
         .indicador {
-          border-color: variables.$azul-claro-1;
-          background: variables.$azul-claro-1;
+          border-color: variables.$vermelho-claro;
+          background: variables.$vermelho-claro;
         }
       }
     }
 
     &[data-focus-visible] .indicador {
-      outline: 2px solid variables.$azul-primario;
+      outline: 2px solid variables.$vermelho-primario;
       outline-offset: 2px;
     }
   }

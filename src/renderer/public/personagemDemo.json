@@ -123,6 +123,7 @@
       "treinamento": "destreinado",
       "categoria": "geral",
       "atributo": "inteligencia",
+      "bonus": 0,
       "requerTreinamento": true,
       "sofrePenalidadeArmadura": false
     },
@@ -357,11 +358,14 @@
   "status": {
     "vidaAtual": 5,
     "vidaTemporaria": 0,
+    "vidaMaximaBonus": 0,
     "atributoVidaMaxima": "constituicao",
     "manaAtual": 4,
     "manaTemporaria": 0,
+    "manaMaximaBonus": 0,
     "atributoManaMaxima": "none",
     "defesaBase": 10,
+    "defesaBonus": 0,
     "atributoDefesa": "destreza"
   },
   "efeitos": [

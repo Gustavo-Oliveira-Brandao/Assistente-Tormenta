@@ -140,26 +140,16 @@
   }
 }
 
-.modificador {
-  padding: 10px;
+.modificadores {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
 
-  .nomeEfeito {
+  .modificador {
     display: flex;
     align-items: center;
-    gap: 10px;
-  }
-
-  .valor {
-    background-color: variables.$cinza-escuro-3;
-    height: 30px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    width: 100%;
+    justify-content: space-between;
   }
 }

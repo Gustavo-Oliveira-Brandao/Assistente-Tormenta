@@ -20,11 +20,11 @@
     height: 2rem;
     width: 185px;
     border-radius: 0.375rem;
-    font-size: 1rem;
-    color: variables.$cinza-claro-1;
+    font-size: 13px;
+    background-color: transparent;
 
     &:focus {
-      outline: 2px solid variables.$azul-primario;
+      outline: 2px solid variables.$vermelho-primario;
       outline-offset: -1px;
     }
   }

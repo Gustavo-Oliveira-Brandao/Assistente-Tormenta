@@ -14,7 +14,7 @@
   gap: 0.25rem;
 
   .label {
-    font-size: 0.875rem;
+    font-size: 13px;
     line-height: 1.25rem;
     font-weight: 500;
   }
@@ -32,19 +32,21 @@
   border-bottom: 1px solid variables.$cinza-escuro-3;
   border-left: none;
   border-right: none;
-  width: 3rem;
+  width: 5rem;
   height: 2rem;
-  font-size: 1rem;
+  font-size: 13px;
   font-weight: normal;
   background-color: transparent;
   color: variables.$cinza-claro-1;
+  background-color: transparent;
 
   text-align: center;
   font-variant-numeric: tabular-nums;
 
-  &:focus {
+  &:focus,
+  &:hover {
     z-index: 1;
-    outline: 2px solid variables.$azul-primario;
+    outline: 2px solid variables.$vermelho-primario;
     outline-offset: -1px;
   }
 }
@@ -62,10 +64,10 @@
   padding: 0;
   border: 1px solid variables.$cinza-escuro-3;
   border-radius: 0.375rem;
-  background-color: variables.$cinza-escuro-2;
   background-clip: padding-box;
   color: variables.$cinza-claro-1;
   user-select: none;
+  background-color: transparent;
 }
 
 .diminuir {

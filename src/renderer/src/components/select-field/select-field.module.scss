@@ -9,7 +9,6 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 500;
-    text-transform: uppercase;
     font-size: 13px;
   }
 }
@@ -19,19 +18,19 @@
   width: 185px;
   border-radius: 5px;
   padding: 0.286rem 0.371rem;
-  background-color: variables.$cinza-escuro-1;
   border: 1px solid variables.$cinza-escuro-3;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
 
   &[data-focus-visible] {
-    outline: 2px solid variables.$azul-primario;
+    outline: 2px solid variables.$vermelho-primario;
     outline-offset: -1px;
   }
 
   &[data-pressed] {
-    background-color: variables.$cinza-escuro-2;
+    background-color: variables.$cinza-escuro-1;
   }
 
   span[aria-hidden] {
@@ -58,7 +57,7 @@
     display: grid;
     gap: 5px;
     flex-direction: column;
-    width: 180px;
+    width: 185px;
     max-height: inherit;
     min-height: unset;
     border: none;
@@ -86,6 +85,6 @@
 
   &[data-focused],
   &[data-pressed] {
-    background: variables.$azul-primario;
+    background: variables.$vermelho-primario;
   }
 }

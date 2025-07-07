@@ -1,4 +1,5 @@
 import { IAtributo } from '@renderer/@types/T20 GOTY/IAtributo'
+import { IDeslocamento } from '@renderer/@types/T20 GOTY/IDeslocamento'
 import { IEfeito } from '@renderer/@types/T20 GOTY/IEfeito'
 import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
@@ -39,12 +40,54 @@ export const calcularAtributos = (
     )
 
     const valorModificadores = calcularModificadores(modificadores, nivelPersonagem)
-    atributo.valorAtual = atributo.valorBase + valorModificadores
+    atributo.valorAtual = atributo.valorBase + atributo.bonus + valorModificadores
 
     atributosFinais.push(atributo)
   }
 
   return atributosFinais
+}
+
+export const calcularDeslocamentos = (
+  personagem: IPersonagem,
+  efeitosAtivos: IEfeito[],
+  nivelPersonagem: number
+): IDeslocamento => {
+  const deslocamentos = personagem.deslocamento
+
+  const modificadores: IModificador[] = filtrarModificadoresPorTipoAlvo(
+    efeitosAtivos,
+    'deslocamentos'
+  )
+
+  const bonusCaminhada = calcularModificadores(
+    modificadores.filter((mod) => mod.alvo == 'caminhada'),
+    nivelPersonagem
+  )
+  const bonusVoo = calcularModificadores(
+    modificadores.filter((mod) => mod.alvo == 'voo'),
+    nivelPersonagem
+  )
+  const bonusNatacao = calcularModificadores(
+    modificadores.filter((mod) => mod.alvo == 'natacao'),
+    nivelPersonagem
+  )
+  const bonusEscalada = calcularModificadores(
+    modificadores.filter((mod) => mod.alvo == 'escalada'),
+    nivelPersonagem
+  )
+  const bonusEscavacao = calcularModificadores(
+    modificadores.filter((mod) => mod.alvo == 'escavacao'),
+    nivelPersonagem
+  )
+
+  deslocamentos.caminhadaAtual = deslocamentos.caminhadaBase + bonusCaminhada
+  deslocamentos.vooAtual = deslocamentos.vooBase + bonusVoo
+  deslocamentos.natacaoAtual = deslocamentos.natacaoBase + bonusNatacao
+  deslocamentos.escaladaAtual = deslocamentos.escaladaBase + bonusEscalada
+  deslocamentos.escavacaoAtual = deslocamentos.escavacaoBase + bonusEscavacao
+
+  return deslocamentos
 }
 
 export const calcularStatus = async (
@@ -102,16 +145,21 @@ export const calcularStatus = async (
 
   status.vidaMaxima =
     vidaInicial +
-    (vidaTotalPorNivel + (atributoVidaMaxima?.valorAtual ?? 0)) * nivelPersonagem +
+    (vidaTotalPorNivel + status.vidaMaximaBonus + (atributoVidaMaxima?.valorAtual ?? 0)) *
+      nivelPersonagem +
     modificadoresVidaMaxima
 
   status.manaMaxima =
     vidaInicial +
-    (manaTotalPorNivel + (atributoManaMaxima?.valorAtual ?? 0)) * nivelPersonagem +
+    (manaTotalPorNivel + status.manaMaximaBonus + (atributoManaMaxima?.valorAtual ?? 0)) *
+      nivelPersonagem +
     modificadoresManaMaxima
 
   status.defesaAtual =
-    personagem.status.defesaBase + (atributoDefesa?.valorAtual ?? 0) + modificadoresDefesa
+    personagem.status.defesaBase +
+    status.defesaBonus +
+    (atributoDefesa?.valorAtual ?? 0) +
+    modificadoresDefesa
 
   return status
 }
@@ -139,7 +187,11 @@ export const calcularPericias = (
     const atributo = personagem.atributos.find((atributo) => atributo.nome === pericia.atributo)
     if (atributo) {
       pericia.valorAtual = Math.floor(
-        (atributo.valorAtual ?? 0) + valorTreinamento + nivelAtual / 2 + valorModificadoresPericia
+        (atributo.valorAtual ?? 0) +
+          valorTreinamento +
+          nivelAtual / 2 +
+          valorModificadoresPericia +
+          pericia.bonus
       )
     }
   }
@@ -167,6 +219,8 @@ export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPers
   personagem.pericias = calcularPericias(personagem, efeitosAtivos, personagem.nivelAtual)
 
   personagem.status = await calcularStatus(personagem, efeitosAtivos, personagem.nivelAtual)
+
+  personagem.deslocamento = calcularDeslocamentos(personagem, efeitosAtivos, personagem.nivelAtual)
 
   return personagem
 }

@@ -1,9 +1,9 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
-import { AccordionCard } from '../accordion-card/accordion-card'
 import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
 import { DeepPartial } from 'typeorm'
 import { BotaoModular } from '../botao-modular/botao-modular'
+import { Button, Disclosure, DisclosurePanel, Heading } from 'react-aria-components'
 
 type cardMagiaProps = {
   magia: IMagiaPersonagem | DeepPartial<IMagiaPersonagem>
@@ -12,19 +12,32 @@ type cardMagiaProps = {
 }
 export const CardMagia = (props: cardMagiaProps): JSX.Element => {
   return (
-    <AccordionCard
-      titulo={props.magia.nome ?? 'Magia sem nome'}
-      icone={`./icons/${props.magia.escola?.toLowerCase()}.svg`}
-      inicialmenteExpandido={false}
-      header={
-        props.onInteract && (
-          <BotaoModular css="botaoAcaoPequeno" onClickEvent={props.onInteract} cor="cinzaEscuro03">
-            <img src={props.iconeBotaoInteracao} alt={props.magia.nome} />
-          </BotaoModular>
-        )
-      }
-    >
-      <>
+    <Disclosure className={styles.card}>
+      <div className={styles.header}>
+        <Heading className={styles.titulo}>
+          <img
+            loading="lazy"
+            src={`./icons/${props.magia.escola?.toLowerCase()}.svg`}
+            alt={props.magia.nome}
+          />
+          <Button slot="trigger" className={styles.nome}>
+            <h3 className="tormenta20Font">{props.magia.nome}</h3>
+          </Button>
+        </Heading>
+        <div className={styles.interacoes}>
+          <p className={`${styles.categoria} tormenta20Font`}>{props.magia.escola}</p>
+          {props.onInteract && (
+            <BotaoModular
+              css="botaoAcaoPequeno"
+              onClickEvent={props.onInteract}
+              cor="cinzaEscuro03"
+            >
+              <img src={props.iconeBotaoInteracao} alt={props.magia.nome} />
+            </BotaoModular>
+          )}
+        </div>
+      </div>
+      <DisclosurePanel className={styles.conteudo}>
         <div className={styles.itemTags}>
           <p className="tormenta20Font">Ação {props.magia.execucao}</p>
           <p className="tormenta20Font">{props.magia.tradicao}</p>
@@ -47,7 +60,7 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
             ))}
           </div>
         )}
-      </>
-    </AccordionCard>
+      </DisclosurePanel>
+    </Disclosure>
   )
 }

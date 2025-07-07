@@ -1,9 +1,9 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
 import { JSX } from 'react'
-import { AccordionCard } from '../accordion-card/accordion-card'
 import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
 import { DeepPartial } from 'typeorm'
 import { BotaoModular } from '../botao-modular/botao-modular'
+import { Button, Disclosure, DisclosurePanel, Heading } from 'react-aria-components'
 
 type cardPoderProps = {
   poder: IPoderPersonagem | DeepPartial<IPoderPersonagem>
@@ -18,18 +18,22 @@ export const CardPoder = ({
   poder,
   onInteract,
   iconeBotaoInteracao,
-  nivel,
   exibeCategoria = false,
-  exibeFonte = false
+  exibeFonte = false,
+  nivel
 }: cardPoderProps): JSX.Element => {
   return (
-    <AccordionCard
-      titulo={poder.nome ?? 'Poder sem nome'}
-      subtitulo={poder.tempoExecucao}
-      inicialmenteExpandido={false}
-      icone={`./icons/${poder.icone ?? 'arcanista'}.svg`}
-      numero={nivel}
-      header={
+    <Disclosure className={styles.card}>
+      <div className={styles.header}>
+        <Heading className={styles.titulo}>
+          {nivel && <p className={`${styles.valor} tormenta20Font`}>{nivel}</p>}
+          <img loading="lazy" src={`./icons/${poder.icone ?? 'arcanista'}.svg`} alt={poder.nome} />
+
+          <Button slot="trigger" className={styles.nome}>
+            <h3 className="tormenta20Font">{poder.nome}</h3>
+            <h4 className="tormenta20Font">{poder.tempoExecucao}</h4>
+          </Button>
+        </Heading>
         <div className={styles.interacoes}>
           {exibeCategoria && (
             <p className={`${styles.categoria} tormenta20Font`}>{poder.categoria}</p>
@@ -41,10 +45,9 @@ export const CardPoder = ({
             </BotaoModular>
           )}
         </div>
-      }
-    >
+      </div>
       {poder && (
-        <>
+        <DisclosurePanel className={styles.conteudo}>
           <div className={styles.itemTags}>
             <p className="tormenta20Font">{poder.tempoExecucao}</p>
             <p className="tormenta20Font">{poder.categoria}</p>
@@ -74,8 +77,8 @@ export const CardPoder = ({
               <span className="geist">{poder.preRequisitos}</span>
             </p>
           )}
-        </>
+        </DisclosurePanel>
       )}
-    </AccordionCard>
+    </Disclosure>
   )
 }

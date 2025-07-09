@@ -1,43 +1,29 @@
 import { ipcMain } from 'electron'
-import {
-  deleteGrimorio,
-  deleteMagia,
-  getGrimoriosPorPersonagem,
-  getMagiasDefault,
-  postGrimorio,
-  postMagia,
-  putGrimorio
-} from '../services/MagiaService'
-import { Grimorio } from '../entities/Grimorio'
 import { DeepPartial } from 'typeorm'
 import { Magia } from '../entities/Magia'
+import {
+  deleteMagia,
+  getMagiasDefault,
+  getMagiasPersonagem,
+  postMagia,
+  putMagia
+} from '../services/MagiaService'
 
 ipcMain.handle('get-magias-default', async () => {
   const magias = await getMagiasDefault()
   return magias
 })
 
-ipcMain.handle('get-grimorios-personagem', async (_, _idPersonagem) => {
-  return await getGrimoriosPorPersonagem(_idPersonagem)
+ipcMain.handle('get-magias-personagem', async (_, _idPersonagem) => {
+  return await getMagiasPersonagem(_idPersonagem)
 })
 
-ipcMain.handle(
-  'post-grimorio',
-  async (_, _grimorio: DeepPartial<Grimorio>, _idPersonagem: number) => {
-    await postGrimorio(_grimorio, _idPersonagem)
-  }
-)
-
-ipcMain.handle('put-grimorio', async (_, _grimorio: Grimorio) => {
-  await putGrimorio(_grimorio)
+ipcMain.handle('post-magia', async (_, _magia: DeepPartial<Magia>, _idPersonagem: number) => {
+  await postMagia(_magia, _idPersonagem)
 })
 
-ipcMain.handle('delete-grimorio', async (_, _id: number) => {
-  await deleteGrimorio(_id)
-})
-
-ipcMain.handle('post-magia', async (_, _magia: DeepPartial<Magia>, _idGrimorio: number) => {
-  await postMagia(_magia, _idGrimorio)
+ipcMain.handle('put-magia', async (_, _magia: Magia) => {
+  await putMagia(_magia)
 })
 
 ipcMain.handle('delete-magia', async (_, _id: number) => {

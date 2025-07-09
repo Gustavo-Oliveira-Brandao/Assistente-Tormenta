@@ -1,5 +1,5 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
-import { Grimorio } from './Grimorio'
+import { Personagem } from './Personagem'
 
 @Entity()
 export class Magia {
@@ -83,11 +83,11 @@ export class Magia {
   })
   aprimoramentos: AprimoramentoMagia[]
 
-  @ManyToOne(() => Grimorio, (grimorio) => grimorio.magias, {
+  @ManyToOne(() => Personagem, (personagem) => personagem.magias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  grimorio: Grimorio
+  personagem: Personagem
 }
 
 @Entity()

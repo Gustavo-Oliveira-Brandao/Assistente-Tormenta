@@ -1,6 +1,5 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
-import { Grimorio } from '../entities/Grimorio'
 import { Personagem } from '../entities/Personagem'
 import path from 'path'
 import { extrairJson } from './JsonService'
@@ -8,21 +7,20 @@ import { Magia } from '../entities/Magia'
 import { app } from 'electron'
 
 const MagiaRepository = SQLiteDataSource.getRepository(Magia)
-const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
 
-export const getGrimoriosPorPersonagem = async (_idPersonagem: number): Promise<Grimorio[]> => {
+export const getMagiasPersonagem = async (_idPersonagem: number): Promise<Magia[]> => {
   try {
-    const grimorios = await GrimorioRepository.find({
+    const magias = await MagiaRepository.find({
       where: { personagem: { id: _idPersonagem } }
     })
-    return grimorios
+    return magias
   } catch {
-    throw new Error('Erro ao recuperar grimórios.')
+    throw new Error('Erro ao recuperar magias.')
   }
 }
 
-export const postGrimorio = async (
-  _grimorio: DeepPartial<Grimorio>,
+export const postMagia = async (
+  _magia: DeepPartial<Magia>,
   _idPersonagem: number
 ): Promise<void> => {
   try {
@@ -32,58 +30,30 @@ export const postGrimorio = async (
       throw new Error('Personagem não encontrado.')
     }
 
-    const novoGrimorio = GrimorioRepository.create({
-      ..._grimorio,
-      magias: _grimorio.magias,
-      personagem: personagem
-    })
-
-    await GrimorioRepository.save(novoGrimorio)
-  } catch {
-    throw new Error('Erro ao adicionar grimorio.')
-  }
-}
-
-export const putGrimorio = async (_grimorio: Grimorio): Promise<void> => {
-  try {
-    const grimorioEncontrado = await GrimorioRepository.findOneBy({ id: _grimorio.id })
-    if (!grimorioEncontrado) {
-      throw new Error('Grimorio não encontrado!')
-    }
-
-    GrimorioRepository.merge(grimorioEncontrado, _grimorio)
-    await GrimorioRepository.save(grimorioEncontrado)
-  } catch {
-    throw new Error('Erro ao atualizar grimorio!')
-  }
-}
-
-export const deleteGrimorio = async (_id: number): Promise<void> => {
-  try {
-    await GrimorioRepository.delete(_id)
-  } catch {
-    throw new Error('Erro ao deletar grimorio')
-  }
-}
-
-export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> => {
-  try {
-    const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
-    const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })
-
-    if (!grimorio) {
-      throw new Error('Grimorio não encontrado!')
-    }
-
     const novaMagia = MagiaRepository.create({
       ..._magia,
       aprimoramentos: _magia.aprimoramentos,
-      grimorio: grimorio
+      personagem: personagem
     })
 
     await MagiaRepository.save(novaMagia)
   } catch {
-    throw new Error('Erro ao adicionar magia!')
+    throw new Error('Erro ao adicionar magia.')
+  }
+}
+
+export const putMagia = async (_magia: Magia): Promise<void> => {
+  try {
+    const magiaEncontrada = await MagiaRepository.findOneBy({ id: _magia.id })
+    if (!magiaEncontrada) {
+      throw new Error('Grimorio não encontrado!')
+    }
+
+    MagiaRepository.merge(magiaEncontrada, _magia)
+    magiaEncontrada.aprimoramentos = _magia.aprimoramentos
+    await MagiaRepository.save(magiaEncontrada)
+  } catch {
+    throw new Error('Erro ao atualizar magias!')
   }
 }
 

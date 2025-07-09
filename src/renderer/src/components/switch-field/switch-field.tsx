@@ -17,7 +17,7 @@ export const SwitchFieldModular = ({ name, label }: SwitchFieldModularProps): JS
       name={name}
       render={({ field: { name, value, onChange, onBlur, ref } }) => (
         <div className={styles.formController}>
-          <Label className={`${styles.label} geist`}>{label}</Label>
+          <Label className={`${styles.label} inter`}>{label}</Label>
           <Switch
             ref={ref}
             value={value}
@@ -50,7 +50,7 @@ export const StandaloneSwitch = ({
 }: StandaloneSwitchProps): JSX.Element => {
   return (
     <div className={styles.formController}>
-      {label && <Label className={`${styles.label} geist`}>{label}</Label>}
+      {label && <Label className={`${styles.label} inter`}>{label}</Label>}
       <Switch
         isSelected={estadoInicial}
         name={name}

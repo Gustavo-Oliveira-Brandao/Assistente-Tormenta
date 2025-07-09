@@ -54,54 +54,136 @@
   }
 }
 
+.personagens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+
+  .personagem {
+    background-color: transparent;
+
+    .nome {
+      font-size: 16px;
+    }
+
+    .smallInfo {
+      p {
+        font-size: 13px;
+        color: variables.$cinza-claro-1;
+      }
+    }
+
+    &:hover {
+      .nome {
+        color: variables.$vermelho-claro;
+      }
+    }
+  }
+
+  .selecionado {
+    .nome {
+      color: variables.$vermelho-claro;
+    }
+  }
+}
+
+.secao {
+  margin-top: 10px;
+  .titulo {
+    font-size: 18px;
+    color: variables.$vermelho-claro;
+    border-bottom: 2px solid variables.$vermelho-claro;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+}
+
 .selecaoPersonagem {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  .personagem {
-    border-radius: 5px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 60px;
-    background-color: variables.$vermelho-escuro;
+  .info {
     display: flex;
-    cursor: pointer;
-    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid variables.$cinza-escuro-3;
+    padding-bottom: 5px;
 
-    .nivel {
-      position: absolute;
-      top: 7px;
-      right: 7px;
-      font-size: 18px;
-    }
-
-    img {
-      width: 95px;
-      height: 100%;
-      border-radius: 5px 0 0 5px;
-    }
-
-    .detalhesPersonagem {
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      h2 {
-        font-size: 20px;
-      }
-
-      .statusPersonagem {
-        display: flex;
-        gap: 10px;
-
-        p {
-          font-size: 14px;
-        }
-      }
+    h1 {
+      font-size: 20px;
     }
   }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+    p {
+      height: 20px;
+      width: fit-content;
+      display: flex;
+      background-color: variables.$azul-primario;
+      border-radius: 5px;
+      padding: 10px 8px;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .description {
+    p {
+      font-size: 14px;
+    }
+    .title {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .itens {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.siderbarItens {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+
+  .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.etapasFormulario {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .center {

@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: geist;
-  src: url('@renderer/assets/fonts/Geist/Geist-VariableFont_wght.ttf');
+  font-family: inter;
+  src: url('@renderer/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf');
 }
 
 *,
@@ -123,10 +123,10 @@ input {
   font-family: 'tormenta20font', sans-serif;
 }
 
-.geist {
+.inter {
   color: white;
-  font-family: 'geist', sans-serif;
-  line-height: normal;
+  font-family: 'inter', sans-serif;
+  line-height: 1.5;
 }
 
 .root {

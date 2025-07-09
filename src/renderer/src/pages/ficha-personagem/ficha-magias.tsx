@@ -1,23 +1,66 @@
 import { CardMagia } from '@renderer/components/card-magia/card-magia'
-import { useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
-import { useExibirMagiasDefault } from '@renderer/hooks/selectors/useMagiaQuery'
+import { useCriarMagia, useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
+import {
+  useExibirCompendioMagias,
+  useExibirMagiasPersonagem
+} from '@renderer/hooks/selectors/useMagiaQuery'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
-import { JSX } from 'react'
+import { JSX, useMemo, useState } from 'react'
 import styles from './ficha-personagem.module.scss'
-import { DisclosureGroup } from 'react-aria-components'
+import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
+import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
+import { ModalModular } from '@renderer/components/modal/modal'
+import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
+import { escolasMagiasData, tradicoesMagiasData } from '@renderer/utils/common data/magiasData'
+import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
+import { DeepPartial } from 'typeorm'
 
-export const FichaMagias = (): JSX.Element => {
-  const { data: magiasDefault } = useExibirMagiasDefault()
+type FichaMagiasProps = {
+  personagem: IPersonagem
+}
+
+export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
+  const { data: compendioMagias } = useExibirCompendioMagias()
+  const adicionarMagia = useCriarMagia()
+  const { data: magias } = useExibirMagiasPersonagem(personagem.id)
   const removerMagia = useDeletarMagia()
+  const [lojaEstaAberta, setLojaEstaAberta] = useState(false)
+
+  const [filtroEscola, setFiltroEscola] = useState('TODAS')
+  const [filtroTradicao, setFiltroTradicao] = useState('TODAS')
+  const [filtroNivel, setFiltroNivel] = useState(1)
+
+  const magiasFiltradas = useMemo(() => {
+    return compendioMagias?.filter(
+      (magia) =>
+        (magia.escola?.toLowerCase() == filtroEscola.toLowerCase() || filtroEscola == 'TODAS') &&
+        (magia.tradicao?.toLowerCase() == filtroTradicao.toLowerCase() ||
+          filtroTradicao == 'TODAS') &&
+        magia.nivelCirculo == filtroNivel
+    )
+  }, [compendioMagias, filtroEscola, filtroTradicao, filtroNivel])
+
+  const submitMagia = (magia: DeepPartial<IMagiaPersonagem>): void => {
+    adicionarMagia.mutate({ magia: magia, idPersonagem: personagem.id })
+    setLojaEstaAberta(false)
+  }
 
   return (
     <div className={styles.secao}>
       <SecaoFicha
         header={
           <>
-            <h2 className="tormenta20Font">Magias</h2>
-            <BotaoModular css="botaoAcompanhanteHeader" cor="transparente" font="tormenta20Font">
+            <h2 className="tormenta20Font">1º circulo</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              onClickEvent={() => {
+                setFiltroNivel(1)
+                setLojaEstaAberta(true)
+              }}
+              cor="transparente"
+              font="tormenta20Font"
+            >
               <img src="./icons/busca.svg" alt="Buscar magias" />
               <p>Buscar magias</p>
             </BotaoModular>
@@ -26,17 +69,202 @@ export const FichaMagias = (): JSX.Element => {
         css="poderes"
       >
         <DisclosureGroup allowsMultipleExpanded>
-          {magiasDefault &&
-            magiasDefault.map((magia, index) => (
-              <CardMagia
-                key={index}
-                magia={magia}
-                iconeBotaoInteracao="./icons/delete.svg"
-                onInteract={() => removerMagia.mutate(1)}
-              />
-            ))}
+          {magias &&
+            magias
+              .filter((magia) => magia.nivelCirculo == 1)
+              .map((magia) => (
+                <CardMagia
+                  key={magia.id}
+                  magia={magia}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                  onInteract={() => removerMagia.mutate(magia.id)}
+                />
+              ))}
         </DisclosureGroup>
       </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">2º circulo</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              onClickEvent={() => {
+                setFiltroNivel(2)
+                setLojaEstaAberta(true)
+              }}
+              cor="transparente"
+              font="tormenta20Font"
+            >
+              <img src="./icons/busca.svg" alt="Buscar magias" />
+              <p>Buscar magias</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {magias &&
+            magias
+              .filter((magia) => magia.nivelCirculo == 2)
+              .map((magia) => (
+                <CardMagia
+                  key={magia.id}
+                  magia={magia}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                  onInteract={() => removerMagia.mutate(magia.id)}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">3º circulo</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              onClickEvent={() => {
+                setFiltroNivel(3)
+                setLojaEstaAberta(true)
+              }}
+              cor="transparente"
+              font="tormenta20Font"
+            >
+              <img src="./icons/busca.svg" alt="Buscar magias" />
+              <p>Buscar magias</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {magias &&
+            magias
+              .filter((magia) => magia.nivelCirculo == 3)
+              .map((magia) => (
+                <CardMagia
+                  key={magia.id}
+                  magia={magia}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                  onInteract={() => removerMagia.mutate(magia.id)}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">4º circulo</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              onClickEvent={() => {
+                setFiltroNivel(4)
+                setLojaEstaAberta(true)
+              }}
+              cor="transparente"
+              font="tormenta20Font"
+            >
+              <img src="./icons/busca.svg" alt="Buscar magias" />
+              <p>Buscar magias</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {magias &&
+            magias
+              .filter((magia) => magia.nivelCirculo == 4)
+              .map((magia) => (
+                <CardMagia
+                  key={magia.id}
+                  magia={magia}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                  onInteract={() => removerMagia.mutate(magia.id)}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <SecaoFicha
+        header={
+          <>
+            <h2 className="tormenta20Font">5º circulo</h2>
+            <BotaoModular
+              css="botaoAcompanhanteHeader"
+              onClickEvent={() => {
+                setFiltroNivel(5)
+                setLojaEstaAberta(true)
+              }}
+              cor="transparente"
+              font="tormenta20Font"
+            >
+              <img src="./icons/busca.svg" alt="Buscar magias" />
+              <p>Buscar magias</p>
+            </BotaoModular>
+          </>
+        }
+        css="poderes"
+      >
+        <DisclosureGroup allowsMultipleExpanded>
+          {magias &&
+            magias
+              .filter((magia) => magia.nivelCirculo == 5)
+              .map((magia) => (
+                <CardMagia
+                  key={magia.id}
+                  magia={magia}
+                  iconeBotaoInteracao="./icons/delete.svg"
+                  onInteract={() => removerMagia.mutate(magia.id)}
+                />
+              ))}
+        </DisclosureGroup>
+      </SecaoFicha>
+      <DialogTrigger isOpen={lojaEstaAberta} onOpenChange={setLojaEstaAberta}>
+        <ModalModular
+          placement="center"
+          height="90vh"
+          width="750px"
+          titulo="Compêndio de magias"
+          overflow="auto"
+          sidebar={
+            <div className={styles.filtros}>
+              <p className="tormenta20Font">Filtros</p>
+              <StandaloneSelect
+                onChange={setFiltroEscola}
+                name="escolaMagias"
+                label="Escola"
+                selecao={filtroEscola}
+              >
+                <OptionModular value="Todas" name="TODAS" />
+                {escolasMagiasData.map((opt) => (
+                  <OptionModular key={opt} value={opt} name={opt} />
+                ))}
+              </StandaloneSelect>
+              <StandaloneSelect
+                onChange={setFiltroTradicao}
+                name="tradicaoMagias"
+                label="Tradição"
+                selecao={filtroTradicao}
+              >
+                <OptionModular value="Todas" name="TODAS" />
+                {tradicoesMagiasData.map((opt) => (
+                  <OptionModular key={opt.value} value={opt.nome} name={opt.value} />
+                ))}
+              </StandaloneSelect>
+            </div>
+          }
+        >
+          <DisclosureGroup allowsMultipleExpanded>
+            {magiasFiltradas?.map((magia) => (
+              <CardMagia
+                key={magia.key}
+                magia={magia}
+                onInteract={() => submitMagia(magia)}
+                iconeBotaoInteracao="./icons/adicao.svg"
+              />
+            ))}
+          </DisclosureGroup>
+        </ModalModular>
+      </DialogTrigger>
     </div>
   )
 }

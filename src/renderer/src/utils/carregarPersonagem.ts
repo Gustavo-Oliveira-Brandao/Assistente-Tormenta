@@ -202,6 +202,8 @@ export const calcularPericias = (
 export const carregarPersonagem = async (personagem: IPersonagem): Promise<IPersonagem> => {
   let nivelAtual = 0
 
+  console.log(personagem)
+
   for (const classe of personagem.classes) {
     nivelAtual += classe.nivel
   }

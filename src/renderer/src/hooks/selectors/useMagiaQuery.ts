@@ -1,19 +1,20 @@
-import { IGrimorio } from '@renderer/@types/T20 GOTY/IGrimorio'
 import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
-import { exibirGrimoriosPersonagem, exibirMagiasDefault } from '@renderer/api/magia-service'
+import { exibirMagiasDefault, exibirMagiasPersonagem } from '@renderer/api/magia-service'
 import { useQuery, UseQueryResult } from '@tanstack/react-query'
 import { DeepPartial } from 'typeorm'
 
-export const useExibirGrimoriosPersonagem = (idPersonagem: number): UseQueryResult<IGrimorio[]> => {
+export const useExibirMagiasPersonagem = (
+  idPersonagem: number
+): UseQueryResult<IMagiaPersonagem[]> => {
   return useQuery({
-    queryKey: ['grimorios'],
-    queryFn: () => exibirGrimoriosPersonagem(idPersonagem)
+    queryKey: ['magias'],
+    queryFn: () => exibirMagiasPersonagem(idPersonagem)
   })
 }
 
-export const useExibirMagiasDefault = (): UseQueryResult<DeepPartial<IMagiaPersonagem>[]> => {
+export const useExibirCompendioMagias = (): UseQueryResult<DeepPartial<IMagiaPersonagem>[]> => {
   return useQuery({
-    queryKey: ['magiasDefault'],
+    queryKey: ['compendioMagias'],
     queryFn: () => exibirMagiasDefault()
   })
 }

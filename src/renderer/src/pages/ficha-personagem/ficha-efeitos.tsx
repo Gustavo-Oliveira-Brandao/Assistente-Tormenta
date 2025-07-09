@@ -21,7 +21,7 @@ export const FichaEfeitos = ({ personagem }: FichaEfeitosProps): JSX.Element => 
             <h2 className="tormenta20Font">Efeitos</h2>
             <BotaoModular
               css="botaoAcompanhanteHeader"
-              font="geist"
+              font="inter"
               cor="transparente"
               onClickEvent={() =>
                 adicionarEfeito.mutate({

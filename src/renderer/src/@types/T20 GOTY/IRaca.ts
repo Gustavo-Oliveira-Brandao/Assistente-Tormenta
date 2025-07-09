@@ -1,6 +1,7 @@
 export type IRaca = {
   key: number
   nome: string
+  icone: string
   descricao: string
   atributos: {
     atributo: string

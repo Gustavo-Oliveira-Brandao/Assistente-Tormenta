@@ -77,7 +77,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
             >
               <FormProvider {...methods}>
                 <form onSubmit={methods.handleSubmit(onSubmit)}>
-                  <FieldsetModular legend="Detalhes">
+                  <FieldsetModular legend={<p className="inter">Detalhes</p>}>
                     <TextFieldModular name="nome" label="Nome" placeholder="Forma selvagem" />
                   </FieldsetModular>
                   <FieldsetModular
@@ -87,7 +87,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                         <BotaoModular
                           css="botaoAcompanhanteHeader"
                           cor="cinzaEscuro02"
-                          font="geist"
+                          font="inter"
                           onClickEvent={() =>
                             append({
                               valor: 0,
@@ -172,7 +172,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                           <BotaoModular
                             css="botaoAcaoPequeno"
                             onClickEvent={() => remove(index)}
-                            font="geist"
+                            font="inter"
                             cor="cinzaEscuro03"
                           >
                             <img src="./icons/delete.svg" alt="Remover modificador" />

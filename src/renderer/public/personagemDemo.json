@@ -11,6 +11,7 @@
   "divindade": "Arsenal",
   "experiencia": 0,
   "tamanho": "medio",
+  "atributoChaveMagias": "inteligencia",
   "alinhamentoEtico": "caótico",
   "alinhamentoMoral": "bom",
   "classes": [

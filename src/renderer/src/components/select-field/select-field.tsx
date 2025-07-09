@@ -37,9 +37,9 @@ export const SelectFieldModular = ({
           onBlur={onBlur}
           className={styles.formController}
         >
-          <Label className={`${styles.label} geist`}>{label}</Label>
+          <Label className={`${styles.label} inter`}>{label}</Label>
           <Button className={styles.select}>
-            <SelectValue className={`${styles.selectValue} geist`} />
+            <SelectValue className={`${styles.selectValue} inter`} />
             <span aria-hidden="true">▼</span>
           </Button>
           <Popover className={styles.popover}>
@@ -58,7 +58,7 @@ type OptionModularProps = {
 
 export const OptionModular = ({ name, value }: OptionModularProps): JSX.Element => {
   return (
-    <ListBoxItem id={name} className={`${styles.option} geist`}>
+    <ListBoxItem id={name} className={`${styles.option} inter`}>
       {value}
     </ListBoxItem>
   )
@@ -91,9 +91,9 @@ export const StandaloneSelect = ({
       }}
       className={styles.formController}
     >
-      <Label className={`${styles.label} geist`}>{label}</Label>
+      <Label className={`${styles.label} inter`}>{label}</Label>
       <Button className={styles.select}>
-        <SelectValue className={`${styles.selectValue} geist`} />
+        <SelectValue className={`${styles.selectValue} inter`} />
         <span aria-hidden="true">▼</span>
       </Button>
       <Popover className={styles.popover}>

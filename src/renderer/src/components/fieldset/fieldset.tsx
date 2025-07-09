@@ -9,7 +9,7 @@ type FieldsetModularProps = {
 export const FieldsetModular = ({ children, legend }: FieldsetModularProps): JSX.Element => {
   return (
     <fieldset className={styles.fieldset}>
-      <legend className={`${styles.legend} geist`}>{legend}</legend>
+      <legend className={`${styles.legend} inter`}>{legend}</legend>
       <div className={styles.row}>{children}</div>
     </fieldset>
   )

@@ -30,13 +30,13 @@ export const NumberFieldModular = ({
           onChange={onChange}
           className={`${styles.formController} ${styles[css]}`}
         >
-          <Label className={`${styles.label} geist`}>{label}</Label>
+          <Label className={`${styles.label} inter`}>{label}</Label>
 
           <Group className={styles.grupo}>
             <Button slot="decrement" className={styles.diminuir}>
               <MinusIcon />
             </Button>
-            <Input ref={ref} placeholder={placeholder} className={`${styles.input} geist`} />
+            <Input ref={ref} placeholder={placeholder} className={`${styles.input} inter`} />
             <Button slot="increment" className={styles.aumentar}>
               <PlusIcon />
             </Button>

@@ -32,11 +32,9 @@ declare global {
       }
       magias: {
         getMagiasDefault: () => Promise<IMagiaDTO[]>
-        getGrimoriosPorPersonagem: (_idPersonagem: number) => Promise<Grimorio[]>
-        postGrimorio: (grimorio: DeepPartial<Grimorio>, idPersonagem: number) => Promise<void>
-        putGrimorio: (grimorio: Grimorio) => Promise<void>
-        deleteGrimorio: (id: number) => Promise<void>
-        postMagia: (magia: DeepPartial<Magia>, idGrimorio: number) => Promise<void>
+        getMagiasPersonagem: (_idPersonagem: number) => Promise<Magia[]>
+        putMagia: (magia: Magia) => Promise<void>
+        postMagia: (magia: DeepPartial<Magia>, idPersonagem: number) => Promise<void>
         deleteMagia: (id: number) => Promise<void>
       }
       poderes: {

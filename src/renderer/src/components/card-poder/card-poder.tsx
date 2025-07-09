@@ -58,14 +58,14 @@ export const CardPoder = ({
                 </p>
               ))}
           </div>
-          <p className={`${styles.descricao} geist`}>{poder.descricao}</p>
+          <p className={`${styles.descricao} inter`}>{poder.descricao}</p>
           {poder.subEfeitos && poder.subEfeitos.length !== 0 && (
             <div className={styles.subEfeitos}>
               {poder.subEfeitos.map((subEfeito, index) => (
                 <div key={index} className={styles.subEfeito}>
                   <p>
-                    <span className={styles.destaque + ' geist'}>{subEfeito.nome} </span>
-                    <span className="geist">{subEfeito.descricao}</span>
+                    <span className={styles.destaque + ' inter'}>{subEfeito.nome} </span>
+                    <span className="inter">{subEfeito.descricao}</span>
                   </p>
                 </div>
               ))}
@@ -73,8 +73,8 @@ export const CardPoder = ({
           )}
           {poder.preRequisitos !== '' && (
             <p className={styles.preRequisitos}>
-              <span className={`${styles.destaque} geist`}>Pré requisitos: </span>
-              <span className="geist">{poder.preRequisitos}</span>
+              <span className={`${styles.destaque} inter`}>Pré requisitos: </span>
+              <span className="inter">{poder.preRequisitos}</span>
             </p>
           )}
         </DisclosurePanel>

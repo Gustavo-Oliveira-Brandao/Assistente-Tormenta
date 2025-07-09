@@ -22,6 +22,7 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
           />
           <Button slot="trigger" className={styles.nome}>
             <h3 className="tormenta20Font">{props.magia.nome}</h3>
+            <h4 className="tormenta20Font">{props.magia.execucao}</h4>
           </Button>
         </Heading>
         <div className={styles.interacoes}>
@@ -43,18 +44,18 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
           <p className="tormenta20Font">{props.magia.tradicao}</p>
           <p className="tormenta20Font">{props.magia.escola}</p>
         </div>
-        <p className={`${styles.descricao} geist`}>{props.magia.descricao}</p>
+        <p className={`${styles.descricao} inter`}>{props.magia.descricao}</p>
         {props.magia.aprimoramentos && props.magia.aprimoramentos.length !== 0 && (
           <div className={styles.subEfeitos}>
             {props.magia.aprimoramentos.map((aprimoramento, index) => (
               <div key={index} className={styles.subEfeito}>
-                <p className="geist">
+                <p className="inter">
                   {aprimoramento.custo === 0 ? (
                     <span className={styles.destaque}>Truque: </span>
                   ) : (
                     <span className={styles.destaque}>+{aprimoramento.custo} PM: </span>
                   )}
-                  <span className="geist">{aprimoramento.descricao}</span>
+                  <span className="inter">{aprimoramento.descricao}</span>
                 </p>
               </div>
             ))}

@@ -66,7 +66,7 @@ export const FichaPersonagem = (): JSX.Element => {
               </nav>
               {aba == 'ATRIBUTOS' && <FichaAtributos personagem={personagem} />}
               {aba === 'PODERES' && <FichaPoderes personagem={personagem} />}
-              {aba === 'MAGIAS' && <FichaMagias />}
+              {aba === 'MAGIAS' && <FichaMagias personagem={personagem} />}
               {aba === 'EFEITOS' && <FichaEfeitos personagem={personagem} />}
             </div>
           </section>

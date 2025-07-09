@@ -73,7 +73,7 @@ button {
   text-align: start;
 
   &:hover {
-    color: variables.$amarelo-primario;
+    color: variables.$vermelho-claro;
   }
 }
 
@@ -167,5 +167,46 @@ button {
 
   p {
     font-size: 16px;
+  }
+}
+
+.botaoFooterModal {
+  width: 165px;
+  height: 30px;
+  border-radius: 5px;
+
+  p {
+    font-size: 13px;
+  }
+}
+
+.botaoItem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    p {
+      color: variables.$vermelho-claro;
+    }
+  }
+}
+
+.botaoItemSelecionado {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  p {
+    color: variables.$vermelho-claro;
   }
 }

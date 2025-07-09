@@ -29,9 +29,9 @@ export const TextFieldModular = ({ placeholder, name, label }: TextFieldProps): 
           validationBehavior="aria"
           isInvalid={invalid}
         >
-          <Label className={`${styles.label} geist`}>{label}</Label>
-          <Input placeholder={placeholder} ref={ref} className={`${styles.input} geist`} />
-          <FieldError className="geist">{error?.message}</FieldError>
+          <Label className={`${styles.label} inter`}>{label}</Label>
+          <Input placeholder={placeholder} ref={ref} className={`${styles.input} inter`} />
+          <FieldError className="inter">{error?.message}</FieldError>
         </TextField>
       )}
     />

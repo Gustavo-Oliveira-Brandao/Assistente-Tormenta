@@ -3,7 +3,6 @@ import { electronAPI } from '@electron-toolkit/preload'
 import { Personagem } from '../main/api/entities/Personagem'
 import { Atributo } from '../main/api/entities/Atributo'
 import { Deslocamento } from '../main/api/entities/Deslocamento'
-import { Grimorio } from '../main/api/entities/Grimorio'
 import { Pericia } from '../main/api/entities/Pericia'
 import { Proficiencia } from '../main/api/entities/Proficiencia'
 import { IRaca } from '../main/@types/IRaca'
@@ -56,15 +55,11 @@ const api = {
   },
   magias: {
     getMagiasDefault: (): Promise<DeepPartial<Magia>[]> => ipcRenderer.invoke('get-magias-default'),
-    getGrimoriosPorPersonagem: (_idPersonagem: number): Promise<Grimorio[]> =>
-      ipcRenderer.invoke('get-grimorios-personagem', _idPersonagem),
-    postGrimorio: (_grimorio: DeepPartial<Grimorio>, _idPersonagem: number): Promise<void> =>
-      ipcRenderer.invoke('post-grimorio', _grimorio, _idPersonagem),
-    putGrimorio: (_grimorio: Grimorio): Promise<void> =>
-      ipcRenderer.invoke('put-grimorio', _grimorio),
-    deleteGrimorio: (_id: number): Promise<void> => ipcRenderer.invoke('delete-grimorio', _id),
-    postMagia: (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> =>
-      ipcRenderer.invoke('post-magia', _magia, _idGrimorio),
+    getMagiasPersonagem: (_idPersonagem: number): Promise<Magia[]> =>
+      ipcRenderer.invoke('get-magias-personagem', _idPersonagem),
+    putMagia: (_magia: Magia): Promise<void> => ipcRenderer.invoke('put-magia', _magia),
+    postMagia: (_magia: DeepPartial<Magia>, _idPersonagem: number): Promise<void> =>
+      ipcRenderer.invoke('post-magia', _magia, _idPersonagem),
     deleteMagia: (_id: number): Promise<void> => ipcRenderer.invoke('delete-magia', _id)
   },
 

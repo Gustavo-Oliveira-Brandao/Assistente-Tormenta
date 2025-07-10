@@ -50,7 +50,9 @@ export const MenuPrincipal = (): JSX.Element => {
 
   const selecionarPersonagemPorId = (id: number): void => {
     dispatch(selecionarPersonagem(id))
-    navigate('/personagem')
+    if (personagemSelecionado) {
+      navigate(`/personagem/${personagemSelecionado.id}`)
+    }
   }
 
   const selecionarPersonagemExibido = async (id: number): Promise<void> => {
@@ -67,39 +69,41 @@ export const MenuPrincipal = (): JSX.Element => {
       <div className={styles.backdrop}></div>
       <div className={styles.screen}>
         <h1 className="tormenta20Font">Arquivos de Tanna-Toh</h1>
-        <div className={styles.botoes}>
-          <BotaoModular
-            font="tormenta20Font"
-            css="botaoMenuPrincipal"
-            cor="vermelhoEscuro"
-            onClickEvent={() => setSelecaoPersonagensEstaAberta(true)}
-          >
-            <p>Personagens</p>
-          </BotaoModular>
-          <BotaoModular
-            font="tormenta20Font"
-            css="botaoMenuPrincipal"
-            cor="vermelhoEscuro"
-            onClickEvent={() => {
-              window.open('https://jamboeditora.com.br/', '_blank')
-              return false
-            }}
-          >
-            <p>Adquira Tormenta20</p>
-          </BotaoModular>
-          <BotaoModular
-            font="tormenta20Font"
-            css="botaoMenuPrincipal"
-            cor="vermelhoEscuro"
-            onClickEvent={() => exibirPoderesDefault()}
-          >
-            <p>Sair</p>
-          </BotaoModular>
+        <div className={styles.footer}>
+          <div className={styles.botoes}>
+            <BotaoModular
+              font="tormenta20Font"
+              css="botaoMenuPrincipal"
+              cor="vermelhoEscuro"
+              onClickEvent={() => setSelecaoPersonagensEstaAberta(true)}
+            >
+              <p>Personagens</p>
+            </BotaoModular>
+            <BotaoModular
+              font="tormenta20Font"
+              css="botaoMenuPrincipal"
+              cor="vermelhoEscuro"
+              onClickEvent={() => {
+                window.open('https://jamboeditora.com.br/', '_blank')
+                return false
+              }}
+            >
+              <p>Adquira Tormenta20</p>
+            </BotaoModular>
+            <BotaoModular
+              font="tormenta20Font"
+              css="botaoMenuPrincipal"
+              cor="vermelhoEscuro"
+              onClickEvent={() => exibirPoderesDefault()}
+            >
+              <p>Sair</p>
+            </BotaoModular>
+          </div>
+          <p className={`${styles.copyright} inter`}>
+            Isso se trata de um produto NÃO-OFICIAL. Tormenta 20 pertence a Jambo Editora. Todos os
+            direitos são reservados a editora.
+          </p>
         </div>
-        <p className={`${styles.copyright} inter`}>
-          Isso se trata de um produto NÃO-OFICIAL. Tormenta 20 pertence a Jambo Editora. Todos os
-          direitos são reservados a editora.
-        </p>
       </div>
       <DialogTrigger
         isOpen={selecaoPersonagensEstaAberta}
@@ -229,9 +233,13 @@ export const MenuPrincipal = (): JSX.Element => {
                                 <div className={styles.secao}>
                                   <h3 className={`tormenta20Font ${styles.titulo}`}>Atributos</h3>
                                   <div className={styles.itens}>
-                                  {racaExibida.atributos.map((atributo) => (
-                                    <p key={atributo.atributo} className='inter'><span className={styles.title}>{atributo.atributo}:</span> { atributo.valor }</p>
-                                  ))}</div>
+                                    {racaExibida.atributos.map((atributo) => (
+                                      <p key={atributo.atributo} className="inter">
+                                        <span className={styles.title}>{atributo.atributo}:</span>{' '}
+                                        {atributo.valor}
+                                      </p>
+                                    ))}
+                                  </div>
                                 </div>
                                 <div className={styles.secao}>
                                   <h3 className={`tormenta20Font ${styles.titulo}`}>Poderes</h3>

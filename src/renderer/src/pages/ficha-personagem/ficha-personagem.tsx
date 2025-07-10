@@ -1,7 +1,5 @@
 import { useExibirPersonagemPorId } from '@renderer/hooks/selectors/usePersonagemQuery'
-import { RootState } from '@renderer/store/store'
 import { JSX, useState } from 'react'
-import { useSelector } from 'react-redux'
 import styles from './ficha-personagem.module.scss'
 import { SidebarFicha } from '@renderer/templates/sidebar/sidebar-ficha'
 import { FichaAtributos } from './ficha-atributos'
@@ -9,10 +7,11 @@ import { FichaPoderes } from './ficha-poderes'
 import { FichaMagias } from './ficha-magias'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { FichaEfeitos } from './ficha-efeitos'
+import { useParams } from 'react-router-dom'
 
 export const FichaPersonagem = (): JSX.Element => {
-  const idPersonagem = useSelector((state: RootState) => state.personagem.idPersonagem)
-  const { data: personagem } = useExibirPersonagemPorId(idPersonagem)
+  const params = useParams()
+  const { data: personagem } = useExibirPersonagemPorId(Number(params.id))
   const [aba, setAba] = useState('ATRIBUTOS')
 
   return (

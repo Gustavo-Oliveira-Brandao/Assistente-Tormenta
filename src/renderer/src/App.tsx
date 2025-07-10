@@ -11,7 +11,7 @@ function App(): React.JSX.Element {
         <HashRouter>
           <Routes>
             <Route path="/" element={<MenuPrincipal />} />
-            <Route path="/personagem" element={<FichaPersonagem />} />
+            <Route path="/personagem/:id" element={<FichaPersonagem />} />
           </Routes>
         </HashRouter>
       </div>

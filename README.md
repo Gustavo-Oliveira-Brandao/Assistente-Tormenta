@@ -1,5 +1,7 @@
 # Arquivos de Tanna Toh 🎲
 
+Atenção! Esse não é um projeto oficial, muito pelo contrário, é um projeto feito de fã para fã.
+
 Essa é uma aplicação web desktop, que tem como objetivo oferecer uma solução digital para criação e gerenciamento de personagens de Tormenta20 (e futuramente Imperio de Jade).
 
 ## Recursos planejados 🚀

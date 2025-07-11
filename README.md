@@ -1,12 +1,14 @@
 # Arquivos de Tanna Toh 🎲
 
+Atenção! Esse <b>NÃO</b> é um projeto oficial, muito pelo contrário, é um projeto feito de fã para fã.
+
 Essa é uma aplicação web desktop, que tem como objetivo oferecer uma solução digital para criação e gerenciamento de personagens de Tormenta20 (e futuramente Imperio de Jade).
 
 ## Recursos planejados 🚀
 
 - Os usuários poderão criar personagens de Tormenta20 do zero, tendo total controle de cada atributo e valor de seus personagens.
 - Os usuários poderão buscar raças, classes, poderes, magias e itens de Tormenta20 - Edição Jogo do Ano, graças a base de dados que o projeto possui por debaixo dos panos.
-- Os usuários poderão customizar os itens mencionados no tópico anterior, assim permitindo abrangir a Iniciativa T20.
+- Os usuários poderão customizar os itens mencionados no tópico anterior.
 - Todos os dados armazenados são armazenados localmente, permitindo o uso sem internet.
 
 ## Recursos em andamento 👷

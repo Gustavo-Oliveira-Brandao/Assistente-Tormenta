@@ -10,6 +10,17 @@
   font-size: 16px;
 }
 
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campo {
+  display: flex;
+  gap: 10px;
+}
+
 .mainMenu {
   background: url('./background.jpg');
   background-size: cover;
@@ -43,21 +54,21 @@
     }
 
     .footer {
-    .botoes {
-      display: flex;
-      gap: 24px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 300px;
-      width: fit-content;
-    }
+      .botoes {
+        display: flex;
+        gap: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        width: fit-content;
+      }
 
-    .copyright {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 20px;
+      .copyright {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+      }
     }
-  }
   }
 }
 
@@ -73,13 +84,6 @@
 
     .nome {
       font-size: 16px;
-    }
-
-    .smallInfo {
-      p {
-        font-size: 13px;
-        color: variables.$cinza-claro-1;
-      }
     }
 
     &:hover {

@@ -1,10 +1,10 @@
 {
   "key": 12,
   "nome": "lutador",
+  "icone": "lutador",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
-  "progressaoConjuracao": "none",
   "pericias": ["fortitude", "luta"],
   "numeroPericiasExtras": 4,
   "periciasExtras": [

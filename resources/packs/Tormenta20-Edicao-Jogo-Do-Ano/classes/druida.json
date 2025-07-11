@@ -1,10 +1,10 @@
 {
   "key": 8,
   "nome": "druida",
+  "icone": "druida",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
-  "progressaoConjuracao": "completa",
   "pericias": ["sobrevivencia", "vontade"],
   "numeroPericiasExtras": 4,
   "periciasExtras": [

@@ -16,6 +16,21 @@ export class ClassePersonagem {
   })
   nivel: number
 
+  @Column({
+    type: 'integer'
+  })
+  vidaInicial: number
+
+  @Column({
+    type: 'integer'
+  })
+  vidaPorNivel: number
+
+  @Column({
+    type: 'integer'
+  })
+  manaPorNivel: number
+
   @ManyToOne(() => Personagem, (personagem) => personagem.classes, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'

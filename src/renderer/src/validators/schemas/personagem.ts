@@ -35,6 +35,17 @@ export const criacaoPersonagemSchema = z
     inteligenciaBase: z.coerce.number(),
     sabedoriaBase: z.coerce.number(),
     carismaBase: z.coerce.number(),
-    periciasTreinadas: z.string().array()
+    atributosRaca: z.array(
+      z.object({
+        atributo: z.string(),
+        valor: z.coerce.number()
+      })
+    ),
+    periciasTreinadas: z.array(
+      z.object({
+        nome: z.string(),
+        nomeOficio: z.string()
+      })
+    )
   })
   .required()

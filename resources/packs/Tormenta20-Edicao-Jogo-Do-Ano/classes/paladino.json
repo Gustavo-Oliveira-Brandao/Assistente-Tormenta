@@ -1,10 +1,10 @@
 {
   "key": 14,
   "nome": "paladino",
+  "icone": "paladino",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
-  "progressaoConjuracao": "none",
   "pericias": ["luta", "vontade"],
   "numeroPericiasExtras": 2,
   "periciasExtras": [

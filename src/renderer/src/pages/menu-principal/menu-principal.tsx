@@ -1,4 +1,4 @@
-import { JSX, useMemo, useState } from 'react'
+import { JSX, useEffect, useMemo, useState } from 'react'
 import styles from './menu-principal.module.scss'
 import { useDispatch } from 'react-redux'
 import { useExibirTodosPersonagem } from '@renderer/hooks/selectors/usePersonagemQuery'
@@ -11,7 +11,7 @@ import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { exibirPersonagemPorId } from '@renderer/api/personagem-service'
-import { FormProvider, useForm } from 'react-hook-form'
+import { FormProvider, useFieldArray, useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { criacaoPersonagemSchema } from '@renderer/validators/schemas/personagem'
 import { FieldsetModular } from '@renderer/components/fieldset/fieldset'
@@ -19,6 +19,11 @@ import { TextFieldModular } from '@renderer/components/text-field/text-field'
 import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
 import { useExibirPoderesDefault } from '@renderer/hooks/selectors/usePoderQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
+import { OptionModular, SelectFieldModular } from '@renderer/components/select-field/select-field'
+import { atributosData } from '@renderer/utils/common data/atributosData'
+import { NumberFieldModular } from '@renderer/components/number-field/number-field'
+import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -26,15 +31,46 @@ export const MenuPrincipal = (): JSX.Element => {
   const [criacaoPersonagemEstaAberta, setCriacaoPersonagemEstaAberta] = useState(false)
   const [selecaoPersonagensEstaAberta, setSelecaoPersonagensEstaAberta] = useState(false)
   const [personagemSelecionado, setPersonagemSelecionado] = useState<IPersonagem | null>(null)
-  const { data: personagens } = useExibirTodosPersonagem()
-  const {data: compendioPoderes} = useExibirPoderesDefault()
-  const navigate = useNavigate()
-  const criarPersonagemMutation = useCriarPersonagemDemo()
-  const [etapaFormulario, setEtapaFormulario] = useState('DETALHES')
-  const methods = useForm<z.infer<typeof criacaoPersonagemSchema>>()
-
-  const { data: racas } = useExibirRacasDefault()
   const [racaSelecionada, setRacaSelecionada] = useState(1)
+  const [classeSelecionada, setClasseSelecionada] = useState(1)
+  const [etapaFormulario, setEtapaFormulario] = useState('DETALHES')
+
+  const { data: personagens } = useExibirTodosPersonagem()
+  const { data: compendioPoderes } = useExibirPoderesDefault()
+  const { data: racas } = useExibirRacasDefault()
+  const { data: classes } = useExibirClassesDefault()
+
+  const navigate = useNavigate()
+
+  const criarPersonagemMutation = useCriarPersonagemDemo()
+
+  const methods = useForm<z.infer<typeof criacaoPersonagemSchema>>({
+    resolver: zodResolver(criacaoPersonagemSchema)
+  })
+
+  const { control } = methods
+
+  const { fields: periciasTreinadasFields, append: appendPericiaTreinada } = useFieldArray({
+    control: control,
+    name: 'periciasTreinadas'
+  })
+
+  const { fields: atributosRacaFields, append: appendAtributoRaca } = useFieldArray({
+    control: control,
+    name: 'atributosRaca'
+  })
+
+  const classeExibida = useMemo(() => {
+    if (!classes) {
+      return null
+    }
+    for (const classe of classes) {
+      if (classe.key == classeSelecionada) {
+        return classe
+      }
+    }
+    return null
+  }, [classes, classeSelecionada])
 
   const racaExibida = useMemo(() => {
     if (!racas) {
@@ -47,6 +83,32 @@ export const MenuPrincipal = (): JSX.Element => {
     }
     return null
   }, [racas, racaSelecionada])
+
+  useEffect(() => {
+    methods.setValue('atributosRaca', [])
+
+    if (racaExibida) {
+      for (const atributo of racaExibida.atributos) {
+        appendAtributoRaca({
+          atributo: atributo.atributo,
+          valor: atributo.valor
+        })
+      }
+    }
+  }, [racaExibida, methods, appendAtributoRaca])
+
+  useEffect(() => {
+    methods.setValue('periciasTreinadas', [])
+
+    if (classeExibida) {
+      for (let i = 0; i < classeExibida.numeroPericiasExtras; i++) {
+        appendPericiaTreinada({
+          nome: classeExibida.periciasExtras[i],
+          nomeOficio: 'Nome padrão'
+        })
+      }
+    }
+  }, [classeExibida, appendPericiaTreinada, methods])
 
   const selecionarPersonagemPorId = (id: number): void => {
     dispatch(selecionarPersonagem(id))
@@ -130,7 +192,8 @@ export const MenuPrincipal = (): JSX.Element => {
                     height="500px"
                     titulo="Criar personagem"
                     sidebar={
-                      etapaFormulario != 'DETALHES' && (
+                      etapaFormulario != 'DETALHES' &&
+                      etapaFormulario != 'ATRIBUTOS' && (
                         <>
                           <div className={styles.siderbarItens}>
                             {etapaFormulario == 'RACA' &&
@@ -147,6 +210,22 @@ export const MenuPrincipal = (): JSX.Element => {
                                 >
                                   <img src={`./icons/${raca.icone}.svg`} alt={raca.nome} />
                                   <p className="tormenta20Font">{raca.nome}</p>
+                                </BotaoModular>
+                              ))}
+                            {etapaFormulario == 'CLASSE' &&
+                              classes?.map((classe) => (
+                                <BotaoModular
+                                  onClickEvent={() => setClasseSelecionada(classe.key)}
+                                  key={classe.key}
+                                  css={
+                                    classeSelecionada == classe.key
+                                      ? 'botaoItemSelecionado'
+                                      : 'botaoItem'
+                                  }
+                                  cor="transparente"
+                                >
+                                  <img src={`./icons/${classe.icone}.svg`} alt={classe.nome} />
+                                  <p className="tormenta20Font">{classe.nome}</p>
                                 </BotaoModular>
                               ))}
                           </div>
@@ -191,6 +270,24 @@ export const MenuPrincipal = (): JSX.Element => {
                             </BotaoModular>
                           </>
                         )}
+                        {etapaFormulario == 'CLASSE' && (
+                          <>
+                            <BotaoModular
+                              css="botaoFooterModal"
+                              cor="verdePrimario"
+                              onClickEvent={() => setEtapaFormulario('RACA')}
+                            >
+                              <p className="tormenta20Font">Raça</p>
+                            </BotaoModular>
+                            <BotaoModular
+                              css="botaoFooterModal"
+                              cor="verdePrimario"
+                              onClickEvent={() => setEtapaFormulario('ATRIBUTOS')}
+                            >
+                              <p className="tormenta20Font">Atributos</p>
+                            </BotaoModular>
+                          </>
+                        )}
                       </div>
                     }
                   >
@@ -232,12 +329,28 @@ export const MenuPrincipal = (): JSX.Element => {
                                 <p className="inter">{racaExibida.descricao}</p>
                                 <div className={styles.secao}>
                                   <h3 className={`tormenta20Font ${styles.titulo}`}>Atributos</h3>
-                                  <div className={styles.itens}>
-                                    {racaExibida.atributos.map((atributo) => (
-                                      <p key={atributo.atributo} className="inter">
-                                        <span className={styles.title}>{atributo.atributo}:</span>{' '}
-                                        {atributo.valor}
-                                      </p>
+                                  <div className={styles.campos}>
+                                    {atributosRacaFields.map((field, index) => (
+                                      <div key={field.id} className={styles.campo}>
+                                        <SelectFieldModular
+                                          label="Atributo"
+                                          name={`atributosRaca.${index}.atributo`}
+                                        >
+                                          {atributosData.map((opt) => (
+                                            <OptionModular
+                                              key={opt.value}
+                                              name={opt.value}
+                                              value={opt.nome}
+                                            />
+                                          ))}
+                                        </SelectFieldModular>
+                                        <NumberFieldModular
+                                          name={`atributosRaca.${index}.valor`}
+                                          label="Valor"
+                                          css="start"
+                                          placeholder="0"
+                                        />
+                                      </div>
                                     ))}
                                   </div>
                                 </div>
@@ -250,6 +363,102 @@ export const MenuPrincipal = (): JSX.Element => {
                               </div>
                             </>
                           )}
+                        </div>
+                      )}
+                      {etapaFormulario == 'CLASSE' && (
+                        <div className={styles.selecaoPersonagem}>
+                          {classeExibida && (
+                            <>
+                              <div className={styles.info}>
+                                <h1 className="tormenta20Font">{classeExibida.nome}</h1>
+                              </div>
+                              <div className={styles.description}>
+                                <div className={styles.secao}>
+                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
+                                    Status por nivel
+                                  </h3>
+                                  <div className={styles.itens}>
+                                    <p className="inter">
+                                      Pontos de vida iniciais: {classeExibida.vidaInicial} +
+                                      Constituição
+                                    </p>
+                                    <p className="inter">
+                                      Pontos de vida por nivel: {classeExibida.vidaPorNivel} +
+                                      Constituição
+                                    </p>
+                                    <p className="inter">
+                                      Pontos de mana: {classeExibida.manaPorNivel} por nível
+                                    </p>
+                                  </div>
+                                </div>
+                                <div className={styles.secao}>
+                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
+                                    Pericias treinadas
+                                  </h3>
+
+                                  <div className={styles.itens}>
+                                    {classeExibida.pericias.map((pericia) => (
+                                      <p key={pericia} className="inter">
+                                        {pericia}
+                                      </p>
+                                    ))}
+                                  </div>
+                                </div>
+                                <div className={styles.secao}>
+                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
+                                    Pericias extras treinadas
+                                  </h3>
+                                  <div className={styles.campos}>
+                                    {periciasTreinadasFields.map((field, index) => (
+                                      <div key={field.id} className={styles.campo}>
+                                        <SelectFieldModular
+                                          label="Pericia"
+                                          name={`periciasTreinadas.${index}.nome`}
+                                        >
+                                          {classeExibida.periciasExtras.map((pericia) => (
+                                            <OptionModular
+                                              key={pericia}
+                                              name={pericia}
+                                              value={pericia}
+                                            />
+                                          ))}
+                                        </SelectFieldModular>
+                                        {methods.watch(`periciasTreinadas.${index}.nome`) ==
+                                          'oficio' && (
+                                          <TextFieldModular
+                                            placeholder="Culinaria"
+                                            name={`periciasTreinadas.${index}.nomeOficio`}
+                                            label="Nome"
+                                          />
+                                        )}
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                                <div className={styles.secao}>
+                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
+                                    Proficiências
+                                  </h3>
+                                  <div className={styles.itens}>
+                                    {classeExibida.proficiencias.length > 0 ? (
+                                      classeExibida.proficiencias.map((prof) => (
+                                        <p key={prof.nome} className="inter">
+                                          {prof.nome}
+                                        </p>
+                                      ))
+                                    ) : (
+                                      <p className="inter">Nenhuma</p>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            </>
+                          )}
+                        </div>
+                      )}
+                      {etapaFormulario == 'ATRIBUTOS' && (
+                        <div className={styles.selecaoPersonagem}>
+                          <></>
                         </div>
                       )}
                     </form>
@@ -284,11 +493,9 @@ export const MenuPrincipal = (): JSX.Element => {
                   type="button"
                 >
                   <p className={`tormenta20Font ${styles.nome}`}>{personagem.nome}</p>
-                  <div className={styles.smallInfo}>
-                    <p className={'tormenta20Font'}>
-                      {personagem.raca} {personagem.classeInicial} {personagem.nivelAtual}
-                    </p>
-                  </div>
+                  <p className={'tormenta20Font'}>
+                    {personagem.raca} {personagem.classeInicial} {personagem.nivelAtual}
+                  </p>
                 </Button>
               ))}
             </div>
@@ -311,38 +518,32 @@ export const MenuPrincipal = (): JSX.Element => {
                   <p className="tormenta20Font">{personagemSelecionado.divindade}</p>
                 </div>
                 <div className={styles.description}>
-                  <h2 className="inter">Status</h2>
-                  <div className={styles.itens}>
-                    <p className="inter">
-                      <span className={styles.title}>Pontos de vida: </span>{' '}
-                      {personagemSelecionado.status.vidaMaxima}
-                    </p>
-                    <p className="inter">
-                      <span className={styles.title}>Pontos de mana: </span>{' '}
-                      {personagemSelecionado.status.manaMaxima}
-                    </p>
-                    <p className="inter">
-                      <span className={styles.title}>Defesa: </span>{' '}
-                      {personagemSelecionado.status.defesaAtual}
-                    </p>
-                    <p className="inter">
-                      <span className={styles.title}>Deslocamento de caminhada: </span>{' '}
-                      {personagemSelecionado.deslocamento.caminhadaAtual}
-                    </p>
+                  <div className={styles.secao}>
+                    <h3 className={`${styles.titulo} tormenta20Font`}>Status</h3>
+                    <div className={styles.itens}>
+                      <p className="inter">
+                        Pontos de vida: {personagemSelecionado.status.vidaMaxima}
+                      </p>
+                      <p className="inter">
+                        Pontos de mana: {personagemSelecionado.status.manaMaxima}
+                      </p>
+                      <p className="inter">Defesa: {personagemSelecionado.status.defesaAtual}</p>
+                    </div>
                   </div>
-                  <hr />
-                  <h2 className="inter">Atributos</h2>
-                  <div className={styles.itens}>
-                    {personagemSelecionado.atributos
-                      .sort((a, b) => a.ordem - b.ordem)
-                      .map((atributo) => (
-                        <p key={atributo.id} className="inter">
-                          <span className={styles.title}>{atributo.nome}:</span>{' '}
-                          {atributo.valorAtual != null && atributo.valorAtual > 0
-                            ? `+${atributo.valorAtual}`
-                            : `${atributo.valorAtual}`}
-                        </p>
-                      ))}
+                  <div className={styles.secao}>
+                    <h3 className={`${styles.titulo} tormenta20Font`}>Atributos</h3>
+                    <div className={styles.itens}>
+                      {personagemSelecionado.atributos
+                        .sort((a, b) => a.ordem - b.ordem)
+                        .map((atributo) => (
+                          <p key={atributo.id} className="inter">
+                            {atributo.nome}:{' '}
+                            {atributo.valorAtual != null && atributo.valorAtual > 0
+                              ? `+${atributo.valorAtual}`
+                              : `${atributo.valorAtual}`}
+                          </p>
+                        ))}
+                    </div>
                   </div>
                 </div>
               </>

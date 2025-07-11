@@ -1,10 +1,10 @@
 export type IClasse = {
   key: number
   nome: string
+  icone: string
   vidaInicial: number
   vidaPorNivel: number
   manaPorNivel: number
-  progressaoConjuracao: string
   pericias: string[]
   numeroPericiasExtras: number
   periciasExtras: string[]

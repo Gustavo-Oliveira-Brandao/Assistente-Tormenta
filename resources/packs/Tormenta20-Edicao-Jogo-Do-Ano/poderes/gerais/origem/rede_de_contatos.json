@@ -5,12 +5,12 @@
   "categoria": "origem",
   "tags": [
     {
-      "label": "membro da guila"
+      "label": "membro da guilda"
     }
   ],
   "tempoExecucao": "passivo",
   "subEfeitos": [],
   "key": "9d8cfe4f-a354-457d-bbc7-92bb68e1a115",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
-  "fonte": "geral"
+  "fonte": "membro da guilda"
 }

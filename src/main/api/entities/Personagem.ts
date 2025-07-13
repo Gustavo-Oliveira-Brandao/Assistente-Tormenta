@@ -27,26 +27,6 @@ export class Personagem {
   tipo: string
 
   @Column({
-    type: 'integer',
-    nullable: true
-  })
-  idade?: number
-
-  @Column({
-    type: 'varchar',
-    length: 10,
-    nullable: true
-  })
-  altura?: string
-
-  @Column({
-    type: 'varchar',
-    length: 20,
-    nullable: true
-  })
-  peso?: string
-
-  @Column({
     type: 'varchar',
     length: 20
   })

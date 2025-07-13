@@ -9,9 +9,6 @@ export type IPersonagem = {
   id: number
   nome: string
   tipo: string
-  idade?: number
-  altura?: string
-  peso?: string
   raca: string
   classeInicial: string
   classes: IClassePersonagem[]

@@ -24,6 +24,8 @@ import { atributosData } from '@renderer/utils/common data/atributosData'
 import { NumberFieldModular } from '@renderer/components/number-field/number-field'
 import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { divindadesData } from '@renderer/utils/common data/divindadesData'
+import { eticoData, moralData } from '@renderer/utils/common data/alinhamentoData'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -31,84 +33,10 @@ export const MenuPrincipal = (): JSX.Element => {
   const [criacaoPersonagemEstaAberta, setCriacaoPersonagemEstaAberta] = useState(false)
   const [selecaoPersonagensEstaAberta, setSelecaoPersonagensEstaAberta] = useState(false)
   const [personagemSelecionado, setPersonagemSelecionado] = useState<IPersonagem | null>(null)
-  const [racaSelecionada, setRacaSelecionada] = useState(1)
-  const [classeSelecionada, setClasseSelecionada] = useState(1)
-  const [etapaFormulario, setEtapaFormulario] = useState('DETALHES')
 
   const { data: personagens } = useExibirTodosPersonagem()
-  const { data: compendioPoderes } = useExibirPoderesDefault()
-  const { data: racas } = useExibirRacasDefault()
-  const { data: classes } = useExibirClassesDefault()
 
   const navigate = useNavigate()
-
-  const criarPersonagemMutation = useCriarPersonagemDemo()
-
-  const methods = useForm<z.infer<typeof criacaoPersonagemSchema>>({
-    resolver: zodResolver(criacaoPersonagemSchema)
-  })
-
-  const { control } = methods
-
-  const { fields: periciasTreinadasFields, append: appendPericiaTreinada } = useFieldArray({
-    control: control,
-    name: 'periciasTreinadas'
-  })
-
-  const { fields: atributosRacaFields, append: appendAtributoRaca } = useFieldArray({
-    control: control,
-    name: 'atributosRaca'
-  })
-
-  const classeExibida = useMemo(() => {
-    if (!classes) {
-      return null
-    }
-    for (const classe of classes) {
-      if (classe.key == classeSelecionada) {
-        return classe
-      }
-    }
-    return null
-  }, [classes, classeSelecionada])
-
-  const racaExibida = useMemo(() => {
-    if (!racas) {
-      return null
-    }
-    for (const raca of racas) {
-      if (raca.key == racaSelecionada) {
-        return raca
-      }
-    }
-    return null
-  }, [racas, racaSelecionada])
-
-  useEffect(() => {
-    methods.setValue('atributosRaca', [])
-
-    if (racaExibida) {
-      for (const atributo of racaExibida.atributos) {
-        appendAtributoRaca({
-          atributo: atributo.atributo,
-          valor: atributo.valor
-        })
-      }
-    }
-  }, [racaExibida, methods, appendAtributoRaca])
-
-  useEffect(() => {
-    methods.setValue('periciasTreinadas', [])
-
-    if (classeExibida) {
-      for (let i = 0; i < classeExibida.numeroPericiasExtras; i++) {
-        appendPericiaTreinada({
-          nome: classeExibida.periciasExtras[i],
-          nomeOficio: 'Nome padrão'
-        })
-      }
-    }
-  }, [classeExibida, appendPericiaTreinada, methods])
 
   const selecionarPersonagemPorId = (id: number): void => {
     dispatch(selecionarPersonagem(id))
@@ -120,10 +48,6 @@ export const MenuPrincipal = (): JSX.Element => {
   const selecionarPersonagemExibido = async (id: number): Promise<void> => {
     const personagemCarregado = await exibirPersonagemPorId(id)
     setPersonagemSelecionado(personagemCarregado)
-  }
-
-  const criarPersonagem = (data): void => {
-    console.log(data)
   }
 
   return (
@@ -185,285 +109,9 @@ export const MenuPrincipal = (): JSX.Element => {
                 <BotaoModular css="botaoFooterModal" cor="verdePrimario" font="tormenta20Font">
                   <p>Criar personagem</p>
                 </BotaoModular>
-                <FormProvider {...methods}>
-                  <ModalModular
-                    placement="center"
-                    width="700px"
-                    height="500px"
-                    titulo="Criar personagem"
-                    sidebar={
-                      etapaFormulario != 'DETALHES' &&
-                      etapaFormulario != 'ATRIBUTOS' && (
-                        <>
-                          <div className={styles.siderbarItens}>
-                            {etapaFormulario == 'RACA' &&
-                              racas?.map((raca) => (
-                                <BotaoModular
-                                  onClickEvent={() => setRacaSelecionada(raca.key)}
-                                  key={raca.key}
-                                  css={
-                                    racaSelecionada == raca.key
-                                      ? 'botaoItemSelecionado'
-                                      : 'botaoItem'
-                                  }
-                                  cor="transparente"
-                                >
-                                  <img src={`./icons/${raca.icone}.svg`} alt={raca.nome} />
-                                  <p className="tormenta20Font">{raca.nome}</p>
-                                </BotaoModular>
-                              ))}
-                            {etapaFormulario == 'CLASSE' &&
-                              classes?.map((classe) => (
-                                <BotaoModular
-                                  onClickEvent={() => setClasseSelecionada(classe.key)}
-                                  key={classe.key}
-                                  css={
-                                    classeSelecionada == classe.key
-                                      ? 'botaoItemSelecionado'
-                                      : 'botaoItem'
-                                  }
-                                  cor="transparente"
-                                >
-                                  <img src={`./icons/${classe.icone}.svg`} alt={classe.nome} />
-                                  <p className="tormenta20Font">{classe.nome}</p>
-                                </BotaoModular>
-                              ))}
-                          </div>
-                        </>
-                      )
-                    }
-                    footer={
-                      <div className={styles.etapasFormulario}>
-                        {etapaFormulario == 'DETALHES' && (
-                          <>
-                            <BotaoModular
-                              css="botaoFooterModal"
-                              cor="vermelhoEscuro"
-                              onClickEvent={() => setCriacaoPersonagemEstaAberta(false)}
-                            >
-                              <p className="tormenta20Font">Cancelar</p>
-                            </BotaoModular>
-                            <BotaoModular
-                              css="botaoFooterModal"
-                              cor="verdePrimario"
-                              onClickEvent={() => setEtapaFormulario('RACA')}
-                            >
-                              <p className="tormenta20Font">Raça</p>
-                            </BotaoModular>
-                          </>
-                        )}
-                        {etapaFormulario == 'RACA' && (
-                          <>
-                            <BotaoModular
-                              css="botaoFooterModal"
-                              cor="verdePrimario"
-                              onClickEvent={() => setEtapaFormulario('DETALHES')}
-                            >
-                              <p className="tormenta20Font">Detalhes</p>
-                            </BotaoModular>
-                            <BotaoModular
-                              css="botaoFooterModal"
-                              cor="verdePrimario"
-                              onClickEvent={() => setEtapaFormulario('CLASSE')}
-                            >
-                              <p className="tormenta20Font">Classe</p>
-                            </BotaoModular>
-                          </>
-                        )}
-                        {etapaFormulario == 'CLASSE' && (
-                          <>
-                            <BotaoModular
-                              css="botaoFooterModal"
-                              cor="verdePrimario"
-                              onClickEvent={() => setEtapaFormulario('RACA')}
-                            >
-                              <p className="tormenta20Font">Raça</p>
-                            </BotaoModular>
-                            <BotaoModular
-                              css="botaoFooterModal"
-                              cor="verdePrimario"
-                              onClickEvent={() => setEtapaFormulario('ATRIBUTOS')}
-                            >
-                              <p className="tormenta20Font">Atributos</p>
-                            </BotaoModular>
-                          </>
-                        )}
-                      </div>
-                    }
-                  >
-                    <form onSubmit={methods.handleSubmit(criarPersonagem)}>
-                      {etapaFormulario == 'DETALHES' && (
-                        <>
-                          <FieldsetModular legend={<p className="inter">Detalhes</p>}>
-                            <TextFieldModular placeholder="Ragnar" name="nome" label="Nome" />
-                            <TextFieldModular placeholder="18" name="idade" label="Idade" />
-                            <TextFieldModular placeholder="1,50m" name="altura" label="Altura" />
-                            <TextFieldModular placeholder="80kg" name="peso" label="Peso" />
-                          </FieldsetModular>
-                          <FieldsetModular legend={<p className="inter">Alinhamento</p>}>
-                            <TextFieldModular
-                              placeholder="Leal"
-                              name="alinhamentoEtico"
-                              label="Ético"
-                            />
-                            <TextFieldModular
-                              placeholder="Bom"
-                              name="alinhamentoMoral"
-                              label="Moral"
-                            />
-                          </FieldsetModular>
-                        </>
-                      )}
-                      {etapaFormulario == 'RACA' && (
-                        <div className={styles.selecaoPersonagem}>
-                          {racaExibida && (
-                            <>
-                              <div className={styles.info}>
-                                <h1 className="tormenta20Font">{racaExibida.nome}</h1>
-                              </div>
-                              <div className={styles.tags}>
-                                <p className="tormenta20Font">{racaExibida.tipo}</p>
-                                <p className="tormenta20Font">{racaExibida.tamanho}</p>
-                              </div>
-                              <div className={styles.description}>
-                                <p className="inter">{racaExibida.descricao}</p>
-                                <div className={styles.secao}>
-                                  <h3 className={`tormenta20Font ${styles.titulo}`}>Atributos</h3>
-                                  <div className={styles.campos}>
-                                    {atributosRacaFields.map((field, index) => (
-                                      <div key={field.id} className={styles.campo}>
-                                        <SelectFieldModular
-                                          label="Atributo"
-                                          name={`atributosRaca.${index}.atributo`}
-                                        >
-                                          {atributosData.map((opt) => (
-                                            <OptionModular
-                                              key={opt.value}
-                                              name={opt.value}
-                                              value={opt.nome}
-                                            />
-                                          ))}
-                                        </SelectFieldModular>
-                                        <NumberFieldModular
-                                          name={`atributosRaca.${index}.valor`}
-                                          label="Valor"
-                                          css="start"
-                                          placeholder="0"
-                                        />
-                                      </div>
-                                    ))}
-                                  </div>
-                                </div>
-                                <div className={styles.secao}>
-                                  <h3 className={`tormenta20Font ${styles.titulo}`}>Poderes</h3>
-                                  {compendioPoderes
-                                    ?.filter((poder) => poder.fonte == racaExibida.nome)
-                                    .map((poder) => <CardPoder key={poder.key} poder={poder} />)}
-                                </div>
-                              </div>
-                            </>
-                          )}
-                        </div>
-                      )}
-                      {etapaFormulario == 'CLASSE' && (
-                        <div className={styles.selecaoPersonagem}>
-                          {classeExibida && (
-                            <>
-                              <div className={styles.info}>
-                                <h1 className="tormenta20Font">{classeExibida.nome}</h1>
-                              </div>
-                              <div className={styles.description}>
-                                <div className={styles.secao}>
-                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
-                                    Status por nivel
-                                  </h3>
-                                  <div className={styles.itens}>
-                                    <p className="inter">
-                                      Pontos de vida iniciais: {classeExibida.vidaInicial} +
-                                      Constituição
-                                    </p>
-                                    <p className="inter">
-                                      Pontos de vida por nivel: {classeExibida.vidaPorNivel} +
-                                      Constituição
-                                    </p>
-                                    <p className="inter">
-                                      Pontos de mana: {classeExibida.manaPorNivel} por nível
-                                    </p>
-                                  </div>
-                                </div>
-                                <div className={styles.secao}>
-                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
-                                    Pericias treinadas
-                                  </h3>
-
-                                  <div className={styles.itens}>
-                                    {classeExibida.pericias.map((pericia) => (
-                                      <p key={pericia} className="inter">
-                                        {pericia}
-                                      </p>
-                                    ))}
-                                  </div>
-                                </div>
-                                <div className={styles.secao}>
-                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
-                                    Pericias extras treinadas
-                                  </h3>
-                                  <div className={styles.campos}>
-                                    {periciasTreinadasFields.map((field, index) => (
-                                      <div key={field.id} className={styles.campo}>
-                                        <SelectFieldModular
-                                          label="Pericia"
-                                          name={`periciasTreinadas.${index}.nome`}
-                                        >
-                                          {classeExibida.periciasExtras.map((pericia) => (
-                                            <OptionModular
-                                              key={pericia}
-                                              name={pericia}
-                                              value={pericia}
-                                            />
-                                          ))}
-                                        </SelectFieldModular>
-                                        {methods.watch(`periciasTreinadas.${index}.nome`) ==
-                                          'oficio' && (
-                                          <TextFieldModular
-                                            placeholder="Culinaria"
-                                            name={`periciasTreinadas.${index}.nomeOficio`}
-                                            label="Nome"
-                                          />
-                                        )}
-                                      </div>
-                                    ))}
-                                  </div>
-                                </div>
-                                <div className={styles.secao}>
-                                  <h3 className={`tormenta20Font ${styles.titulo}`}>
-                                    Proficiências
-                                  </h3>
-                                  <div className={styles.itens}>
-                                    {classeExibida.proficiencias.length > 0 ? (
-                                      classeExibida.proficiencias.map((prof) => (
-                                        <p key={prof.nome} className="inter">
-                                          {prof.nome}
-                                        </p>
-                                      ))
-                                    ) : (
-                                      <p className="inter">Nenhuma</p>
-                                    )}
-                                  </div>
-                                </div>
-                              </div>
-                            </>
-                          )}
-                        </div>
-                      )}
-                      {etapaFormulario == 'ATRIBUTOS' && (
-                        <div className={styles.selecaoPersonagem}>
-                          <></>
-                        </div>
-                      )}
-                    </form>
-                  </ModalModular>
-                </FormProvider>
+                <CriacaoPersonagemForm
+                  setCriacaoPersonagemEstaAberta={setCriacaoPersonagemEstaAberta}
+                />
               </DialogTrigger>
               <BotaoModular
                 css="botaoFooterModal"
@@ -552,5 +200,436 @@ export const MenuPrincipal = (): JSX.Element => {
         </ModalModular>
       </DialogTrigger>
     </main>
+  )
+}
+
+type CriacaoPersonagemFormProps = {
+  setCriacaoPersonagemEstaAberta: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export const CriacaoPersonagemForm = ({
+  setCriacaoPersonagemEstaAberta
+}: CriacaoPersonagemFormProps): JSX.Element => {
+  const [racaSelecionada, setRacaSelecionada] = useState(1)
+  const [classeSelecionada, setClasseSelecionada] = useState(1)
+  const [etapaFormulario, setEtapaFormulario] = useState('DETALHES')
+
+  const { data: compendioPoderes } = useExibirPoderesDefault()
+  const { data: racas } = useExibirRacasDefault()
+  const { data: classes } = useExibirClassesDefault()
+
+  const criarPersonagemMutation = useCriarPersonagemDemo()
+
+  const methods = useForm<z.infer<typeof criacaoPersonagemSchema>>({
+    resolver: zodResolver(criacaoPersonagemSchema),
+    defaultValues: {
+      nome: 'Escolha um nome',
+      origem: 'Escolha uma origem',
+      divindade: 'ateu',
+      alinhamentoEtico: 'neutro',
+      alinhamentoMoral: 'neutro',
+      forcaBase: 0,
+      destrezaBase: 0,
+      constituicaoBase: 0,
+      inteligenciaBase: 0,
+      sabedoriaBase: 0,
+      carismaBase: 0
+    }
+  })
+  const { control } = methods
+
+  const { fields: periciasTreinadasFields, append: appendPericiaTreinada } = useFieldArray({
+    control: control,
+    name: 'periciasTreinadas'
+  })
+
+  const { fields: atributosRacaFields, append: appendAtributoRaca } = useFieldArray({
+    control: control,
+    name: 'atributosRaca'
+  })
+
+  const classeExibida = useMemo(() => {
+    if (!classes) {
+      return null
+    }
+    for (const classe of classes) {
+      if (classe.key == classeSelecionada) {
+        methods.setValue('classeInicial', classe.nome)
+        return classe
+      }
+    }
+    return null
+  }, [classes, classeSelecionada, methods])
+
+  const racaExibida = useMemo(() => {
+    if (!racas) {
+      return null
+    }
+    for (const raca of racas) {
+      if (raca.key == racaSelecionada) {
+        methods.setValue('raca', raca.nome)
+        return raca
+      }
+    }
+    return null
+  }, [racas, racaSelecionada, methods])
+
+  useEffect(() => {
+    methods.setValue('atributosRaca', [])
+
+    if (racaExibida) {
+      for (const atributo of racaExibida.atributos) {
+        appendAtributoRaca({
+          atributo: atributo.atributo,
+          valor: atributo.valor
+        })
+      }
+    }
+  }, [racaExibida, methods, appendAtributoRaca])
+
+  useEffect(() => {
+    methods.setValue('periciasTreinadas', [])
+
+    if (classeExibida) {
+      for (let i = 0; i < classeExibida.numeroPericiasExtras; i++) {
+        appendPericiaTreinada({
+          nome: classeExibida.periciasExtras[i],
+          nomeOficio: 'Nome padrão'
+        })
+      }
+    }
+  }, [classeExibida, appendPericiaTreinada, methods])
+
+  const criarPersonagem = (data): void => {
+    console.log(data)
+  }
+
+  return (
+    <FormProvider {...methods}>
+      <ModalModular
+        placement="center"
+        width="700px"
+        height="500px"
+        titulo="Criar personagem"
+        sidebar={
+          etapaFormulario != 'DETALHES' && (
+            <>
+              <div className={styles.siderbarItens}>
+                {etapaFormulario == 'RACA' &&
+                  racas?.map((raca) => (
+                    <BotaoModular
+                      onClickEvent={() => {
+                        setRacaSelecionada(raca.key)
+                      }}
+                      key={raca.key}
+                      css={racaSelecionada == raca.key ? 'botaoItemSelecionado' : 'botaoItem'}
+                      cor="transparente"
+                    >
+                      <img src={`./icons/${raca.icone}.svg`} alt={raca.nome} />
+                      <p className="tormenta20Font">{raca.nome}</p>
+                    </BotaoModular>
+                  ))}
+                {etapaFormulario == 'CLASSE' &&
+                  classes?.map((classe) => (
+                    <BotaoModular
+                      onClickEvent={() => {
+                        setClasseSelecionada(classe.key)
+                      }}
+                      key={classe.key}
+                      css={classeSelecionada == classe.key ? 'botaoItemSelecionado' : 'botaoItem'}
+                      cor="transparente"
+                    >
+                      <img src={`./icons/${classe.icone}.svg`} alt={classe.nome} />
+                      <p className="tormenta20Font">{classe.nome}</p>
+                    </BotaoModular>
+                  ))}
+                {etapaFormulario == 'ATRIBUTOS' && (
+                  <div className={styles.description}>
+                    <div className={styles.campos}>
+                      <div className={styles.campo}>
+                        <NumberFieldModular
+                          name="forcaBase"
+                          placeholder="0"
+                          css="start"
+                          label="Força"
+                        />
+                      </div>
+                      <div className={styles.campo}>
+                        <NumberFieldModular
+                          name="destrezaBase"
+                          placeholder="0"
+                          css="start"
+                          label="Destreza"
+                        />
+                      </div>
+                      <div className={styles.campo}>
+                        <NumberFieldModular
+                          name="constituicaoBase"
+                          placeholder="0"
+                          css="start"
+                          label="Constituição"
+                        />
+                      </div>
+                      <div className={styles.campo}>
+                        <NumberFieldModular
+                          name="inteligenciaBase"
+                          placeholder="0"
+                          css="start"
+                          label="Inteligência"
+                        />
+                      </div>
+                      <div className={styles.campo}>
+                        <NumberFieldModular
+                          name="sabedoriaBase"
+                          placeholder="0"
+                          css="start"
+                          label="Sabedoria"
+                        />
+                      </div>
+                      <div className={styles.campo}>
+                        <NumberFieldModular
+                          name="carismaBase"
+                          placeholder="0"
+                          css="start"
+                          label="Carisma"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </>
+          )
+        }
+        footer={
+          <div className={styles.etapasFormulario}>
+            {etapaFormulario == 'DETALHES' && (
+              <>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="vermelhoEscuro"
+                  onClickEvent={() => setCriacaoPersonagemEstaAberta(false)}
+                >
+                  <p className="tormenta20Font">Cancelar</p>
+                </BotaoModular>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('RACA')}
+                >
+                  <p className="tormenta20Font">Raça</p>
+                </BotaoModular>
+              </>
+            )}
+            {etapaFormulario == 'RACA' && (
+              <>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('DETALHES')}
+                >
+                  <p className="tormenta20Font">Detalhes</p>
+                </BotaoModular>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('CLASSE')}
+                >
+                  <p className="tormenta20Font">Classe</p>
+                </BotaoModular>
+              </>
+            )}
+            {etapaFormulario == 'CLASSE' && (
+              <>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('RACA')}
+                >
+                  <p className="tormenta20Font">Raça</p>
+                </BotaoModular>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('ATRIBUTOS')}
+                >
+                  <p className="tormenta20Font">Atributos</p>
+                </BotaoModular>
+              </>
+            )}
+            {etapaFormulario == 'ATRIBUTOS' && (
+              <>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('CLASSE')}
+                >
+                  <p className="tormenta20Font">Classe</p>
+                </BotaoModular>
+              </>
+            )}
+          </div>
+        }
+      >
+        <form onSubmit={methods.handleSubmit(criarPersonagem)}>
+          {etapaFormulario == 'DETALHES' && (
+            <>
+              <FieldsetModular legend={<p className="inter">Detalhes</p>}>
+                <TextFieldModular placeholder="Ragnar" name="nome" label="Nome" />
+                <TextFieldModular placeholder="Taverneiro" name="origem" label="Origem" />
+                <SelectFieldModular name="divindade" label="Divindade">
+                  <OptionModular name="ateu" value="Nenhuma" />
+                  {divindadesData.map((opt) => (
+                    <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
+                  ))}
+                </SelectFieldModular>
+              </FieldsetModular>
+              <FieldsetModular legend={<p className="inter">Alinhamento</p>}>
+                <SelectFieldModular name="alinhamentoEtico" label="Ético">
+                  {eticoData.map((opt) => (
+                    <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
+                  ))}
+                </SelectFieldModular>
+                <SelectFieldModular name="alinhamentoMoral" label="Moral">
+                  {moralData.map((opt) => (
+                    <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
+                  ))}
+                </SelectFieldModular>
+              </FieldsetModular>
+            </>
+          )}
+          {etapaFormulario == 'RACA' && (
+            <div className={styles.selecaoPersonagem}>
+              {racaExibida && (
+                <>
+                  <div className={styles.info}>
+                    <h1 className="tormenta20Font">{racaExibida.nome}</h1>
+                  </div>
+                  <div className={styles.tags}>
+                    <p className="tormenta20Font">{racaExibida.tipo}</p>
+                    <p className="tormenta20Font">{racaExibida.tamanho}</p>
+                  </div>
+                  <div className={styles.description}>
+                    <p className="inter">{racaExibida.descricao}</p>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Atributos</h3>
+                      <div className={styles.campos}>
+                        {atributosRacaFields.map((field, index) => (
+                          <div key={field.id} className={styles.campo}>
+                            <SelectFieldModular
+                              label="Atributo"
+                              name={`atributosRaca.${index}.atributo`}
+                            >
+                              {atributosData.map((opt) => (
+                                <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
+                              ))}
+                            </SelectFieldModular>
+                            <NumberFieldModular
+                              name={`atributosRaca.${index}.valor`}
+                              label="Valor"
+                              css="start"
+                              placeholder="0"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Poderes</h3>
+                      {compendioPoderes
+                        ?.filter((poder) => poder.fonte == racaExibida.nome)
+                        .map((poder) => <CardPoder key={poder.key} poder={poder} />)}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+          {etapaFormulario == 'CLASSE' && (
+            <div className={styles.selecaoPersonagem}>
+              {classeExibida && (
+                <>
+                  <div className={styles.info}>
+                    <h1 className="tormenta20Font">{classeExibida.nome}</h1>
+                  </div>
+                  <div className={styles.description}>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Status por nivel</h3>
+                      <div className={styles.itens}>
+                        <p className="inter">
+                          Pontos de vida iniciais: {classeExibida.vidaInicial} + Constituição
+                        </p>
+                        <p className="inter">
+                          Pontos de vida por nivel: {classeExibida.vidaPorNivel} + Constituição
+                        </p>
+                        <p className="inter">
+                          Pontos de mana: {classeExibida.manaPorNivel} por nível
+                        </p>
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Pericias treinadas</h3>
+
+                      <div className={styles.itens}>
+                        {classeExibida.pericias.map((pericia) => (
+                          <p key={pericia} className="inter">
+                            {pericia}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>
+                        Pericias extras treinadas
+                      </h3>
+                      <div className={styles.campos}>
+                        {periciasTreinadasFields.map((field, index) => (
+                          <div key={field.id} className={styles.campo}>
+                            <SelectFieldModular
+                              label="Pericia"
+                              name={`periciasTreinadas.${index}.nome`}
+                            >
+                              {classeExibida.periciasExtras.map((pericia) => (
+                                <OptionModular key={pericia} name={pericia} value={pericia} />
+                              ))}
+                            </SelectFieldModular>
+                            {methods.watch(`periciasTreinadas.${index}.nome`) == 'oficio' && (
+                              <TextFieldModular
+                                placeholder="Culinaria"
+                                name={`periciasTreinadas.${index}.nomeOficio`}
+                                label="Nome"
+                              />
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Proficiências</h3>
+                      <div className={styles.itens}>
+                        {classeExibida.proficiencias.length > 0 ? (
+                          classeExibida.proficiencias.map((prof) => (
+                            <p key={prof.nome} className="inter">
+                              {prof.nome}
+                            </p>
+                          ))
+                        ) : (
+                          <p className="inter">Nenhuma</p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+          {etapaFormulario == 'ATRIBUTOS' && (
+            <div className={styles.selecaoPersonagem}>
+              <></>
+            </div>
+          )}
+        </form>
+      </ModalModular>
+    </FormProvider>
   )
 }

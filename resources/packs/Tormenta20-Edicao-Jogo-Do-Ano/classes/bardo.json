@@ -5,10 +5,7 @@
   "vidaInicial": 12,
   "vidaPorNivel": 3,
   "manaPorNivel": 4,
-  "pericias": [
-    "atuacao",
-    "reflexos"
-  ],
+  "pericias": ["atuacao", "reflexos"],
   "numeroPericiasExtras": 6,
   "periciasExtras": [
     "acrobacia",

@@ -1,0 +1,12 @@
+{
+  "nome": "atuacao",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Carisma",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "5376922f-599f-4935-a02f-20a7a44db8cd",
+  "atributoKey": "c7cc754b-eec2-489e-a59e-aa4e06737c37"
+}

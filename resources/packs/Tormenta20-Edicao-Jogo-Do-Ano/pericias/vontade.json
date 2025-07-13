@@ -1,0 +1,12 @@
+{
+  "nome": "vontade",
+  "treinamento": "destreinado",
+  "categoria": "testeResistencia",
+  "atributo": "Sabedoria",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "831f1a69-9444-4b4f-b9b1-87986961b05c",
+  "atributoKey": "64f30a49-1969-47c3-92b0-32583f26673d"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "percepcao",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Sabedoria",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "1d931f31-830a-4db2-98f7-ca8974a4c798",
+  "atributoKey": "18d1c8f7-cdbe-4a6f-b04e-fe8b8bc3dc29"
+}

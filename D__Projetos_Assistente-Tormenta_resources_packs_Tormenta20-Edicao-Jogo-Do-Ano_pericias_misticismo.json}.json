@@ -1,0 +1,12 @@
+{
+  "nome": "misticismo",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Inteligência",
+  "requerTreinamento": true,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "64286161-223e-4627-90d5-8e57c09ff6b9",
+  "atributoKey": "5fc0ef7d-643f-4fa3-8083-2e46c9766e23"
+}

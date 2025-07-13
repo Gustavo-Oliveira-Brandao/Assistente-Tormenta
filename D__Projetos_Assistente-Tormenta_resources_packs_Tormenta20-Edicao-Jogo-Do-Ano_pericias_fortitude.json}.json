@@ -1,0 +1,10 @@
+{
+  "nome": "fortitude",
+  "categoria": "testeResistencia",
+  "atributo": "Constituição",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "key": "a7ae4666-a6fd-470a-b58e-7dd7c3a468f2",
+  "atributoKey": "dee40743-56be-45eb-907e-97d41f546b1b"
+}

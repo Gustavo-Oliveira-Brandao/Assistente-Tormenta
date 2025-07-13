@@ -1,0 +1,12 @@
+{
+  "nome": "fortitude",
+  "treinamento": "destreinado",
+  "categoria": "testeResistencia",
+  "atributo": "Constituição",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "e5a209ca-d2c6-4fe1-b0cd-a5a586f240e9",
+  "atributoKey": "6365a970-2282-4191-a9e3-3c4064827741"
+}

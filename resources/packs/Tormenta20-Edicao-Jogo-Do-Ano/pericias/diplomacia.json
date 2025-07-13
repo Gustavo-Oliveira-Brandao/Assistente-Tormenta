@@ -1,0 +1,12 @@
+{
+  "nome": "diplomacia",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Carisma",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "632d4e27-11ab-4f70-a982-f1b52157208d",
+  "atributoKey": "c7cc754b-eec2-489e-a59e-aa4e06737c37"
+}

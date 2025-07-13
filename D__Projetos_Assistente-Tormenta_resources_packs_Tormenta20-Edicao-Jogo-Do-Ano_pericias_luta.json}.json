@@ -1,0 +1,12 @@
+{
+  "nome": "luta",
+  "treinamento": "destreinado",
+  "categoria": "combate",
+  "atributo": "Força",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "ed5fbe0e-8748-40e5-b789-0767aaf761dc",
+  "atributoKey": "6c1a1167-f965-4dc0-8ec8-92ad1cc15227"
+}

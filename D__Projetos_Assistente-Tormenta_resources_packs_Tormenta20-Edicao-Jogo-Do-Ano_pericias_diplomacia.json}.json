@@ -1,0 +1,10 @@
+{
+  "nome": "diplomacia",
+  "categoria": "geral",
+  "atributo": "Carisma",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "key": "0867b2d1-4f46-4f9c-8fca-779b80dafa1f",
+  "atributoKey": "4f414e2c-16c7-403f-973a-aa5a135f3bcf"
+}

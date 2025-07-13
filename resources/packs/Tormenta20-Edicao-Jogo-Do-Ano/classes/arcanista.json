@@ -5,10 +5,7 @@
   "vidaInicial": 8,
   "vidaPorNivel": 2,
   "manaPorNivel": 6,
-  "pericias": [
-    "misticismo",
-    "vontade"
-  ],
+  "pericias": ["misticismo", "vontade"],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "conhecimento",

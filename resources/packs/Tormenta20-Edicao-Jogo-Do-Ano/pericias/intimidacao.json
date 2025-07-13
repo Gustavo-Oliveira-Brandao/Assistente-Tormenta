@@ -1,0 +1,12 @@
+{
+  "nome": "intimidacao",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Carisma",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "fac535a4-2317-4df0-842e-b18c6bcdf726",
+  "atributoKey": "c7cc754b-eec2-489e-a59e-aa4e06737c37"
+}

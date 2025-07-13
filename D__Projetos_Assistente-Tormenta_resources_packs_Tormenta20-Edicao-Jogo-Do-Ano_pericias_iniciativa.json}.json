@@ -1,0 +1,12 @@
+{
+  "nome": "iniciativa",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Destreza",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "49f4e80f-8b91-47ae-89bd-d8ddc723909c",
+  "atributoKey": "0554b248-6797-40ab-a6cc-40c67ea2be21"
+}

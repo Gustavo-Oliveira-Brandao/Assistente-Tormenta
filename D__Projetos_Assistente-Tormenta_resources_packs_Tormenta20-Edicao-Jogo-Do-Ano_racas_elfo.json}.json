@@ -1,0 +1,31 @@
+{
+  "key": "980b012c-8ea3-4627-a2ed-a7315127ab4e",
+  "nome": "elfo",
+  "icone": "elfo",
+  "descricao": "Elfos são seres feitos para a beleza e para a guerra, tão habilidosos com magia quanto com espadas e arcos. Elegantes, astutos, de vidas quase eternas, parecem superiores aos humanos em tudo. Poderiam ter governado toda Arton, não fosse a arrogância herdada de sua deusa. Com a queda de Glórienn, os elfos se tornaram um povo sem uma deusa. Um povo independente. Enquanto alguns veem a falta de uma divindade como uma tragédia, outros acreditam que, pela primeira vez na história, são livres.",
+  "atributos": [
+    {
+      "atributo": "inteligencia",
+      "valor": 2
+    },
+    {
+      "atributo": "destreza",
+      "valor": 1
+    },
+    {
+      "atributo": "constituicao",
+      "valor": -1
+    }
+  ],
+  "tipo": "humanoide",
+  "tamanho": "medio",
+  "deslocamentos": {
+    "caminhada": 12,
+    "voo": 0,
+    "escalada": 0,
+    "escavacao": 0,
+    "natacao": 0,
+    "plana": false
+  },
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

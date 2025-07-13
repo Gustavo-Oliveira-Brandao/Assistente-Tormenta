@@ -1,0 +1,12 @@
+{
+  "nome": "reflexos",
+  "treinamento": "destreinado",
+  "categoria": "testeResistencia",
+  "atributo": "Destreza",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "e91d9961-fcef-4805-b33f-49fef8cbff63",
+  "atributoKey": "0554b248-6797-40ab-a6cc-40c67ea2be21"
+}

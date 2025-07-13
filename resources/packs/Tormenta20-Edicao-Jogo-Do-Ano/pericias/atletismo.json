@@ -1,0 +1,12 @@
+{
+  "nome": "atletismo",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Força",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "da8c0211-b333-4b4c-b831-759d54b5cef4",
+  "atributoKey": "457f03d9-9316-4774-afd0-095861108183"
+}

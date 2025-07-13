@@ -1,0 +1,12 @@
+{
+  "nome": "pilotagem",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Destreza",
+  "requerTreinamento": true,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "551517ee-24ca-4e65-ba96-a732ff273287",
+  "atributoKey": "0554b248-6797-40ab-a6cc-40c67ea2be21"
+}

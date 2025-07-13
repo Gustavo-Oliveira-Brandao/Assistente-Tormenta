@@ -1,0 +1,10 @@
+{
+  "nome": "acrobacia",
+  "categoria": "geral",
+  "atributo": "Destreza",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": true,
+  "descricao": "",
+  "key": "c6f1cabf-1082-4607-aa5d-6320c5a5210a",
+  "atributoKey": "0554b248-6797-40ab-a6cc-40c67ea2be21"
+}

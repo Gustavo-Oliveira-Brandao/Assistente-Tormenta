@@ -5,10 +5,7 @@
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 5,
-  "pericias": [
-    "religiao",
-    "vontade"
-  ],
+  "pericias": ["religiao", "vontade"],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "conhecimento",

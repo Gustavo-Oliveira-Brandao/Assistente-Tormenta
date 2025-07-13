@@ -39,7 +39,7 @@ export const MenuPrincipal = (): JSX.Element => {
   const { data: poderes } = useExibirPoderesDefault()
   const { data: racas } = useExibirRacasDefault()
   const { data: classes } = useExibirClassesDefault()
-  const { data: magias} = useExibirCompendioMagias()
+  const { data: magias } = useExibirCompendioMagias()
   const navigate = useNavigate()
 
   const selecionarPersonagemPorId = (id: number): void => {

@@ -37,6 +37,11 @@ export class Pericia {
   categoria: string
 
   @Column({
+    type: 'varchar'
+  })
+  atributoKey: string
+
+  @Column({
     type: 'varchar',
     length: 20
   })

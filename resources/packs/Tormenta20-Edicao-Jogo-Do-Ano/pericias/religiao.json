@@ -1,0 +1,12 @@
+{
+  "nome": "religiao",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Sabedoria",
+  "requerTreinamento": true,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "c2e056b5-4462-45c8-8c3a-21287b9a5a30",
+  "atributoKey": "64f30a49-1969-47c3-92b0-32583f26673d"
+}

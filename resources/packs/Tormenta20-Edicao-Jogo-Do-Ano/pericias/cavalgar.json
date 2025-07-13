@@ -1,0 +1,12 @@
+{
+  "nome": "cavalgar",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Destreza",
+  "requerTreinamento": false,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "a8cba80d-1436-45d2-b322-e5dc571927aa",
+  "atributoKey": "0beeb488-3cff-4859-ac4c-966906eae769"
+}

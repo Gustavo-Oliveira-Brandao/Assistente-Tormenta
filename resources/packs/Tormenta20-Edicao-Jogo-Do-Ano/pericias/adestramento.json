@@ -1,0 +1,12 @@
+{
+  "nome": "adestramento",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "Carisma",
+  "requerTreinamento": true,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": [],
+  "key": "a952a639-40e8-4367-9f4a-0f772d439d93",
+  "atributoKey": "c7cc754b-eec2-489e-a59e-aa4e06737c37"
+}

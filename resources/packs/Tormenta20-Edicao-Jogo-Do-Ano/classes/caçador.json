@@ -5,9 +5,7 @@
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
-  "pericias": [
-    "sobrevivencia"
-  ],
+  "pericias": ["sobrevivencia"],
   "numeroPericiasExtras": 7,
   "periciasExtras": [
     "adestramento",

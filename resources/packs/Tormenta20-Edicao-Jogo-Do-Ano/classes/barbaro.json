@@ -5,10 +5,7 @@
   "vidaInicial": 24,
   "vidaPorNivel": 6,
   "manaPorNivel": 3,
-  "pericias": [
-    "fortitude",
-    "luta"
-  ],
+  "pericias": ["fortitude", "luta"],
   "numeroPericiasExtras": 4,
   "periciasExtras": [
     "adestramento",

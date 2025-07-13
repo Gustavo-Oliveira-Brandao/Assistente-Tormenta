@@ -1,5 +1,5 @@
 {
-  "key": 2,
+  "key": "c6450128-b5e5-42ba-8275-0016a3a91fd8",
   "nome": "anao",
   "icone": "anao",
   "descricao": "Anões são o mais resiliente dos povos. Em suas cidadelas subterrâneas, trabalham duro escavando minas e forjando metal em belas armas, armaduras e joias. São honestos e determinados, honrando a família e a tradição. Apesar de sua profunda paixão por forja e cerveja, pouca coisa é mais preciosa para um anão que cultivar uma barba longa e orgulhosa.",
@@ -26,5 +26,6 @@
     "natacao": 0,
     "plana": false
   },
-  "tamanho": "medio"
+  "tamanho": "medio",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

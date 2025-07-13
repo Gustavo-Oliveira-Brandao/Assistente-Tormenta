@@ -1,6 +1,6 @@
 {
   "nome": "Escudo da Fé",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "muda a duração para 1 dia. Requer 2º círculo."
     }
   ],
-  "key": 28
+  "key": "9f27ffc0-37c6-45ea-88fd-c930062e6479"
 }

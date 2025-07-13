@@ -1,6 +1,6 @@
 {
   "nome": "Lendas e Histórias",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 craitura, objeto ou local",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda a execução para 1 dia, o alcance para ilimitado e adiciona componente material (cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000). Você ainda precisa ter alguma informação sobre o alvo, como um nome, descrição ou localização."
     }
   ],
-  "key": 127
+  "key": "03605a1f-9a55-4db2-975d-8559be0c4900"
 }

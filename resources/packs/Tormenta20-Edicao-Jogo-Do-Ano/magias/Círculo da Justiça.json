@@ -1,6 +1,6 @@
 {
   "nome": "Círculo da Justiça",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 9m de raio;",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a duração para permanente e adiciona componente material (balança de prata no valor de T$ 5.000)."
     }
   ],
-  "key": 71
+  "key": "f2239f91-1015-427a-9c77-9695d17dc8d5"
 }

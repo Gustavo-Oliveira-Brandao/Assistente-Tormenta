@@ -1,11 +1,13 @@
 {
-  "key": 5,
+  "key": "31018e39-fb85-4924-aba9-18a80b240447",
   "nome": "caçador",
   "icone": "caçador",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
-  "pericias": ["sobrevivencia"],
+  "pericias": [
+    "sobrevivencia"
+  ],
   "numeroPericiasExtras": 7,
   "periciasExtras": [
     "adestramento",
@@ -31,5 +33,6 @@
       "categoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

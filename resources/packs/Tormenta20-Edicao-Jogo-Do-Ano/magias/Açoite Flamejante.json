@@ -1,6 +1,6 @@
 {
   "nome": "Açoite Flamejante",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "açoite de chamas criado em sua mão (veja texto)",
@@ -26,5 +26,5 @@
       "descricao": "muda o dano para 6d6. Requer 3º círculo."
     }
   ],
-  "key": 3
+  "key": "1a04f080-a26b-46ea-8633-5e6b965db06f"
 }

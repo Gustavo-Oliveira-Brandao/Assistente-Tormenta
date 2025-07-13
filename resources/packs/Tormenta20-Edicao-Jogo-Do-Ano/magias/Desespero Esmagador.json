@@ -1,6 +1,6 @@
 {
   "nome": "Desespero Esmagador",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "Cone de 6m",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "além do normal, criaturas que falhem na resistência ficam aos prantos (em termos de jogo, adquirem a condição pasmo) por 1 rodada (apenas uma vez por cena). Requer 3º círculo."
     }
   ],
-  "key": 72
+  "key": "3bf6b8ac-fa16-4a91-9c28-8e12ed58f7ef"
 }

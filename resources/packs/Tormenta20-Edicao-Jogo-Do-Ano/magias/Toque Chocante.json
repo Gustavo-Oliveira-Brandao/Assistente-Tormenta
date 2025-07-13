@@ -1,6 +1,6 @@
 {
   "nome": "Toque Chocante",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alcance para pessoal e o alvo para área: esfera com 6m de raio. Você dispara raios pelas pontas dos dedos que afetam todas as criaturas na área."
     }
   ],
-  "key": 51
+  "key": "f6b03b32-ed7e-4c67-831a-5751243b1b9f"
 }

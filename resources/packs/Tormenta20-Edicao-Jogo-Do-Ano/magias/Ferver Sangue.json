@@ -1,6 +1,6 @@
 {
   "nome": "Ferver Sangue",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda alvo para criaturas escolhidas. Requer 5º círculo."
     }
   ],
-  "key": 121
+  "key": "48792b14-863c-4ab4-95f1-5ab0326fe74f"
 }

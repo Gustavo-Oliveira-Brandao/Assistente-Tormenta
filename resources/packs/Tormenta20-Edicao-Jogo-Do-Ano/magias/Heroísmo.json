@@ -1,6 +1,6 @@
 {
   "nome": "Heroísmo",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o bônus para +6."
     }
   ],
-  "key": 123
+  "key": "c8c0f24a-1131-4936-8a42-fdd58e65b07b"
 }

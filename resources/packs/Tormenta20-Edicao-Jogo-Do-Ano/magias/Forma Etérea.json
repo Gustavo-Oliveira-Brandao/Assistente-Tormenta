@@ -1,6 +1,6 @@
 {
   "nome": "Forma Etérea",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alcance para toque e o alvo para até 5 criaturas voluntárias que estejam de mãos dadas. Depois que a magia é lançada, as criaturas podem soltar as mãos. Requer 5º círculo."
     }
   ],
-  "key": 162
+  "key": "f5b430e7-8bcd-46d2-91f7-b1ad958ec30e"
 }

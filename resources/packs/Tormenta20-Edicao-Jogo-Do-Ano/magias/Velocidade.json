@@ -1,6 +1,6 @@
 {
   "nome": "Velocidade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo."
     }
   ],
-  "key": 105
+  "key": "67b259e2-de60-435b-b3dd-bfbc2a5bc4f4"
 }

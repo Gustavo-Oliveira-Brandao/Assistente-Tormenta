@@ -1,6 +1,6 @@
 {
   "nome": "Manto de Sombras",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alcance para toque e o alvo para 1 criatura voluntária. Requer 4º círculo."
     }
   ],
-  "key": 128
+  "key": "42df725c-ff02-487b-b3d3-078d15c66db9"
 }

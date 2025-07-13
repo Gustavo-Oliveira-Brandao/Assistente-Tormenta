@@ -1,6 +1,6 @@
 {
   "nome": "Oração",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "todas as criaturas (veja texto)",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda a duração para cena. Requer 4º círculo"
     }
   ],
-  "key": 90
+  "key": "3df365da-b8ba-4b16-8def-c54786cb5b0a"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Orientação",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alvo para criaturas escolhidas. Requer 3º círculo."
     }
   ],
-  "key": 38
+  "key": "f14d4bec-25bb-4cac-aba0-b5bc022569fc"
 }

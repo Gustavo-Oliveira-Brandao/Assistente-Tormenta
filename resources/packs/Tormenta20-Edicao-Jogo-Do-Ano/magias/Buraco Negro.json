@@ -1,6 +1,6 @@
 {
   "nome": "Buraco Negro",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "Buraco Negro",
@@ -18,5 +18,5 @@
       "descricao": "muda o efeito para que você não seja afetado."
     }
   ],
-  "key": 183
+  "key": "135fd859-2f00-42d8-917b-c085326ddabe"
 }

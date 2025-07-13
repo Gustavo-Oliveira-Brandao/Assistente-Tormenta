@@ -1,5 +1,5 @@
 {
-  "key": 7,
+  "key": "4a50a517-f8bc-4317-a1b0-3d1a7b44ef2d",
   "nome": "minotauro",
   "icone": "minotauro",
   "descricao": "Povo guerreiro, orgulhoso e poderoso, criadores de uma civilização avançada, com a missão sagrada de proteger e governar os fracos — ou assim se enxergavam. Em seus tempos áureos, tomaram grande parte de Arton. Hoje, após a morte de sua divindade e a decadência de seu Império, os minotauros lutam para recuperar a glória perdida ou encontrar um novo papel no mundo.",
@@ -26,5 +26,6 @@
     "natacao": 0,
     "plana": false
   },
-  "tamanho": "medio"
+  "tamanho": "medio",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

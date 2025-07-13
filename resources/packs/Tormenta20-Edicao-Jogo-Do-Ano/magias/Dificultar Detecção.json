@@ -1,6 +1,6 @@
 {
   "nome": "Dificultar Detecção",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou objeto",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para 1 semana."
     }
   ],
-  "key": 117
+  "key": "599e5e20-4ae7-408c-82da-8265a055d358"
 }

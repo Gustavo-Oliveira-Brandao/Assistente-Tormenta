@@ -1,6 +1,6 @@
 {
   "nome": "Despertar Consciência",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 animal ou planta",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para permanente e adiciona penalidade de -3 PM."
     }
   ],
-  "key": 116
+  "key": "4ff7f583-bd97-4967-83af-2f9819af8dc3"
 }

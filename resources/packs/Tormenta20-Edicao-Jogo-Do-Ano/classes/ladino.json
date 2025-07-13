@@ -1,11 +1,14 @@
 {
-  "key": 11,
+  "key": "95b4414e-6951-4753-be4d-3fcaafaa0d6d",
   "nome": "ladino",
   "icone": "ladino",
   "vidaInicial": 12,
   "vidaPorNivel": 3,
   "manaPorNivel": 4,
-  "pericias": ["ladinagem", "reflexos"],
+  "pericias": [
+    "ladinagem",
+    "reflexos"
+  ],
   "numeroPericiasExtras": 8,
   "periciasExtras": [
     "acrobacia",
@@ -27,5 +30,6 @@
     "pilotagem",
     "pontaria"
   ],
-  "proficiencias": []
+  "proficiencias": [],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

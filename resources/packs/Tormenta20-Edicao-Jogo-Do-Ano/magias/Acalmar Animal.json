@@ -1,6 +1,6 @@
 {
   "nome": "Acalmar Animal",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 animal",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alvo para 1 monstro ou espírito. Requer 3o círculo."
     }
   ],
-  "key": 2
+  "key": "a5658325-e6b5-46cd-8328-6d927f444319"
 }

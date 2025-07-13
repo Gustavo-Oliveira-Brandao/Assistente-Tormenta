@@ -1,6 +1,6 @@
 {
   "nome": "Sono",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 humanoide",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "afeta todos os alvos válidos a sua escolha dentro do alcance."
     }
   ],
-  "key": 48
+  "key": "24b0b253-e7f3-4130-8e62-82a341622010"
 }

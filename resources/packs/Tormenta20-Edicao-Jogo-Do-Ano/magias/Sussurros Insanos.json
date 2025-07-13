@@ -1,6 +1,6 @@
 {
   "nome": "Sussurros Insanos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 humanoide",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alvo para criaturas escolhidas. Requer 5º círculo."
     }
   ],
-  "key": 102
+  "key": "0b202e42-0f67-4efc-851d-2bf0f73b1cc7"
 }

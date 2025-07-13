@@ -1,6 +1,6 @@
 {
   "nome": "Miasma Mefítico",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "nuvem com 6m de raio",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o tipo do dano para trevas."
     }
   ],
-  "key": 87
+  "key": "03e83eb4-e40b-4fe1-9ad7-610d3e5bb297"
 }

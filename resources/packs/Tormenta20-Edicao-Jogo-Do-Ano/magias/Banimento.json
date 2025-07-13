@@ -1,6 +1,6 @@
 {
   "nome": "Banimento",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda a resistência para nenhum. Em vez do normal, devolve automaticamente uma criatura conjurada (como por uma magia de convocação) para seu plano de origem."
     }
   ],
-  "key": 109
+  "key": "897b156f-4c29-4288-b01a-582747ca7b3c"
 }

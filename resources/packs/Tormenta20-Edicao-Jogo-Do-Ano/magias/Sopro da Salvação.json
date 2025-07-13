@@ -1,6 +1,6 @@
 {
   "nome": "Sopro da Salvação",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cone de 9m",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "remove todas as condições listadas, em vez de apenas uma."
     }
   ],
-  "key": 139
+  "key": "8b436f35-9613-480b-885c-1386ed3f29ce"
 }

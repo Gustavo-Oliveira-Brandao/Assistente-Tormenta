@@ -1,6 +1,6 @@
 {
   "nome": "Condição",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "até 5 criaturas",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta a duração para 1 dia."
     }
   ],
-  "key": 66
+  "key": "48d05568-61f2-4ff0-9944-01acc5a19823"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Globo da Verdade de Gwen",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "1 globo",
@@ -30,5 +30,5 @@
       "descricao": "muda o alcance para longo e o efeito para 10 globos. Todos mostram a mesma cena."
     }
   ],
-  "key": 78
+  "key": "45a267ce-f588-4b4b-bd52-0b665d4c630b"
 }

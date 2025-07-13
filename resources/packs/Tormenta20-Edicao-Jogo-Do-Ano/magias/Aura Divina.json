@@ -1,6 +1,6 @@
 {
   "nome": "Aura Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 9m de raio",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta os bônus na Defesa e em testes de resistência em +1."
     }
   ],
-  "key": 181
+  "key": "3b0d59ec-34ad-4a5d-b167-dfb98319ad2a"
 }

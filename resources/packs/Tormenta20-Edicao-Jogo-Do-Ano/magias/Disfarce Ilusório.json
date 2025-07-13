@@ -1,6 +1,6 @@
 {
   "nome": "Disfarce Ilusório",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Cada criatura pode ter uma aparência diferente. Criaturas involuntárias podem anular o efeito com um teste de Vontade. Requer 2º círculo."
     }
   ],
-  "key": 26
+  "key": "7c690820-a080-4966-9b2b-9b2207c71752"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Visão da Verdade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "além do normal, o alvo enxerga através de paredes e barreiras com 30cm de espessura ou menos (as paredes e barreiras parecem translúcidas)."
     }
   ],
-  "key": 178
+  "key": "6bc8ff37-9035-490d-b837-449df6c54411"
 }

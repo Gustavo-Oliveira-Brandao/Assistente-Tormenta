@@ -1,6 +1,6 @@
 {
   "nome": "Anular a Luz",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera de 6m de raio",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o círculo máximo de magias dissipadas para 5º. Requer 5º Círculo."
     }
   ],
-  "key": 108
+  "key": "80884a44-c07c-4dfb-9141-1bf362b298f5"
 }

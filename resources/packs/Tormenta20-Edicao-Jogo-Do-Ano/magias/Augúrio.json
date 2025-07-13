@@ -1,6 +1,6 @@
 {
   "nome": "Augúrio",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "o mestre rola 1d20; a magia só falha em um resultado 1."
     }
   ],
-  "key": 62
+  "key": "41c2896c-1759-4214-91c0-fdcdef9ab7ba"
 }

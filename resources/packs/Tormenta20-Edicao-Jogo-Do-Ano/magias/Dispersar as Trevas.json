@@ -1,6 +1,6 @@
 {
   "nome": "Dispersar as Trevas",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "Esfera de 6m de raio",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o círculo máximo de magias dissipadas para 5º. Requer 5º círculo."
     }
   ],
-  "key": 118
+  "key": "ccc83cac-d83b-487f-b30b-593e7d10b723"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Missão Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta a duração para 1 ano ou até ser descarregada."
     }
   ],
-  "key": 130
+  "key": "12cbcd13-9781-4812-987d-2ea31d6cdeb3"
 }

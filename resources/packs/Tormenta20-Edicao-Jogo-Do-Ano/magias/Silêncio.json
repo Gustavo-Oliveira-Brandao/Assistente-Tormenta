@@ -1,6 +1,6 @@
 {
   "nome": "Silêncio",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 6m de raio",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para cena. Em vez do normal, nenhum som pode deixar a área, mas criaturas dentro da área podem falar, ouvir e lançar magias com palavras mágicas normalmente."
     }
   ],
-  "key": 99
+  "key": "dc122830-b5b4-417d-9ebd-f0d9ab3374a3"
 }

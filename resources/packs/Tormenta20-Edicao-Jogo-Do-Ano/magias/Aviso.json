@@ -1,6 +1,6 @@
 {
   "nome": "Aviso",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "aumenta o número de alvos em +1."
     }
   ],
-  "key": 11
+  "key": "7385afec-f874-41b8-8952-f1bb53c9849e"
 }

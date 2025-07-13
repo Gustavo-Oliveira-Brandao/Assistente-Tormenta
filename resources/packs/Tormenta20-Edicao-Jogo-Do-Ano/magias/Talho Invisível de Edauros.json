@@ -1,6 +1,6 @@
 {
   "nome": "Talho Invisível de Edauros",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cone de 9m",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alvo para você, a duração para sustentada e o efeito para uma vez por rodada, como uma ação de movimento, você pode disparar uma lâmina de ar contra um alvo em alcance médio, causando 6d8 pontos de dano de corte (Fortitude reduz à metade)."
     }
   ],
-  "key": 174
+  "key": "63b9e52b-62cc-4893-9c53-8511f7be097f"
 }

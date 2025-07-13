@@ -1,6 +1,6 @@
 {
   "nome": "Comando",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 humanóide",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta a quantidade de alvos em +1"
     }
   ],
-  "key": 14
+  "key": "227f0454-d896-4bba-a838-b85f69aac9fb"
 }

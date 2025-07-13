@@ -1,6 +1,6 @@
 {
   "nome": "Mente Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "em vez do normal, o alvo recebe +4 nos três atributos mentais. Requer 5º círculo."
     }
   ],
-  "key": 85
+  "key": "1418e5c0-5c5c-4e4c-ae7d-2d121b48d3d3"
 }

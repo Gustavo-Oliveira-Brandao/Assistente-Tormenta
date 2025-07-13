@@ -1,6 +1,6 @@
 {
   "nome": "Controlar Madeira",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1objeto de madeira grande ou menor",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alvo para Colossal ou menor. Requer 4º círculo."
     }
   ],
-  "key": 69
+  "key": "46591fc0-b196-4449-b729-1fe88dbb2c68"
 }

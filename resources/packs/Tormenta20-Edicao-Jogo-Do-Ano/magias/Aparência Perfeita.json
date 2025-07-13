@@ -1,6 +1,6 @@
 {
   "nome": "Aparência Perfeita",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alcance para toque e o alvo para 1 humanoide"
     }
   ],
-  "key": 61
+  "key": "79cfb9d3-07cb-4901-9184-103cb33c4b2e"
 }

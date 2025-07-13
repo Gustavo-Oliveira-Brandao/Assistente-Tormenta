@@ -1,11 +1,14 @@
 {
-  "key": 1,
+  "key": "82372b8c-75a9-4f98-86f1-5886a6eb0084",
   "nome": "arcanista",
   "icone": "arcanista",
   "vidaInicial": 8,
   "vidaPorNivel": 2,
   "manaPorNivel": 6,
-  "pericias": ["misticismo", "vontade"],
+  "pericias": [
+    "misticismo",
+    "vontade"
+  ],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "conhecimento",
@@ -20,5 +23,6 @@
     "oficio",
     "percepcao"
   ],
-  "proficiencias": []
+  "proficiencias": [],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

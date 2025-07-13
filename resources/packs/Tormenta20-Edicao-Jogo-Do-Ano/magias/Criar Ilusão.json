@@ -1,6 +1,6 @@
 {
   "nome": "Criar Ilusão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "ilusão que se estende a até 4 cubos de 1,5m",
@@ -46,5 +46,5 @@
       "descricao": "muda a duração para sustentada. Além do normal, você pode gastar uma ação livre para modificar livremente a ilusão (mas não pode acrescentar novos aprimoramentos após lançá-la). Requer 3º círculo."
     }
   ],
-  "key": 21
+  "key": "bb3da115-c8fb-4fb9-bd6e-89aba4889387"
 }

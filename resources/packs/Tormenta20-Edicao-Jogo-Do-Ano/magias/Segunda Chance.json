@@ -1,6 +1,6 @@
 {
   "nome": "Segunda Chance",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alvo para uma criatura que tenha morrido há até uma rodada. Esta magia pode curá-la."
     }
   ],
-  "key": 202
+  "key": "360e3850-3548-441b-99f5-caae78c57b14"
 }

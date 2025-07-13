@@ -1,6 +1,6 @@
 {
   "nome": "Leque Cromático",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cone de 4,5m",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."
     }
   ],
-  "key": 35
+  "key": "0625bca1-c2be-465c-8fa2-a051ce8f0029"
 }

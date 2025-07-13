@@ -1,6 +1,6 @@
 {
   "nome": "Libertação",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "pode dissipar Aprisionamento."
     }
   ],
-  "key": 164
+  "key": "efdb78bd-9936-4d4b-89cf-df8fe849b99d"
 }

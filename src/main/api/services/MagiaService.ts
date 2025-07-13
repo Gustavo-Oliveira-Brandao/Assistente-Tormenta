@@ -2,9 +2,10 @@ import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entities/Personagem'
 import path from 'path'
-import { extrairJson } from './JsonService'
+import { extrairJson, reescreverJson } from './JsonService'
 import { Magia } from '../entities/Magia'
 import { app } from 'electron'
+import { v4 as uuidv4 } from 'uuid'
 
 const MagiaRepository = SQLiteDataSource.getRepository(Magia)
 
@@ -72,5 +73,11 @@ export const getMagiasDefault = async (): Promise<DeepPartial<Magia>[]> => {
     : path.join(app.getAppPath(), 'resources', pasta)
   const result = await extrairJson<DeepPartial<Magia>>(caminhoBase)
   const magias = result
+
+  for (const magia of magias) {
+    magia.key = uuidv4()
+    magia.publicacao = 'Tormenta20 - Edição Jogo do Ano'
+    await reescreverJson(magia, path.join(caminhoBase, `${magia.nome}.json`))
+  }
   return magias
 }

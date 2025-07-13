@@ -1,6 +1,6 @@
 {
   "nome": "Vestimenta da Fé",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 armadura, escudo ou vestimenta",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "o objeto também oferece resistência a dano 5. Requer 4º círculo."
     }
   ],
-  "key": 106
+  "key": "b2e84c89-54ca-40fd-b872-db1cea06165a"
 }

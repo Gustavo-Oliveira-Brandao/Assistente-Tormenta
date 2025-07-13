@@ -1,6 +1,6 @@
 {
   "nome": "Servo Morto-Vivo",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 cadáver",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o componente material para ferramentas de embalsamar (T$ 1.000). Em vez de um zumbi ou esqueleto, cria uma múmia. Ela pode funcionar como um aliado mestre, escolhido entre ajudante, destruidor, guardião ou médico. O restante da magia segue normal. Requer 4º círculo."
     }
   ],
-  "key": 138
+  "key": "83c33bef-2244-43ee-9229-7fee24694acd"
 }

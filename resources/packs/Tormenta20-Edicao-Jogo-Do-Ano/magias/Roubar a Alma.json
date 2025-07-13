@@ -1,6 +1,6 @@
 {
   "nome": "Roubar a Alma",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "como uma reação ao lançar esta magia, você possui o corpo sem alma do alvo, como na magia Possessão (mesmo que não conheça a magia)."
     }
   ],
-  "key": 200
+  "key": "7012c421-c353-450b-83e3-3d4fa67fb623"
 }

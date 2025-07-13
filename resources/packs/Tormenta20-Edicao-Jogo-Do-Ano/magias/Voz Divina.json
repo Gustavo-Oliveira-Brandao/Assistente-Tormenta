@@ -1,6 +1,6 @@
 {
   "nome": "Voz Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "você pode falar com plantas (normais ou monstruosas) e rochas. Plantas e rochas têm percepção limitada de seus arredores e normalmente fornecem respostas simplórias."
     }
   ],
-  "key": 107
+  "key": "519bc063-bc95-4bf6-89ab-94825c161ee1"
 }

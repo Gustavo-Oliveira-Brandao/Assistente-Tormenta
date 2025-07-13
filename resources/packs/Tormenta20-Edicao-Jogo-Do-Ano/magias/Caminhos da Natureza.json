@@ -1,6 +1,6 @@
 {
   "nome": "Caminhos da Natureza",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "criaturas escolhidas",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "aumenta o bônus de deslocamento em +3m."
     }
   ],
-  "key": 13
+  "key": "29cc4f65-252f-4154-a79e-b0621167dca9"
 }

@@ -1,11 +1,14 @@
 {
-  "key": 7,
+  "key": "ae6e586f-da5d-422a-aee6-889f2d68f225",
   "nome": "clerigo",
   "icone": "clerigo",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 5,
-  "pericias": ["religiao", "vontade"],
+  "pericias": [
+    "religiao",
+    "vontade"
+  ],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "conhecimento",
@@ -29,5 +32,6 @@
       "cateegoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Proteção Contra Magia",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "em vez do normal, o alvo fica imune a duas escolas de magia a sua escolha. Requer 5º Círculo."
     }
   ],
-  "key": 135
+  "key": "0021a692-12dc-4517-bc2d-d009c5e1c3d2"
 }

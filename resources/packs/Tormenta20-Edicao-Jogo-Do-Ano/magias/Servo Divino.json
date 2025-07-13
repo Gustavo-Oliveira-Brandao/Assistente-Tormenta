@@ -1,6 +1,6 @@
 {
   "nome": "Servo Divino",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "criatura conjurada",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para 1 semana ou até ser descarregada. O espírito realiza uma tarefa que exija até uma semana. O custo do pagamento aumenta para T$ 1.000. O resto segue normal."
     }
   ],
-  "key": 137
+  "key": "402590af-f8b2-4f7c-9749-325d824da639"
 }

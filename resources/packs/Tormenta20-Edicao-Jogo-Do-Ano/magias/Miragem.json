@@ -1,6 +1,6 @@
 {
   "nome": "Miragem",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cubo de até 90m de lado",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para permanente e adiciona componente material (pó de diamante no valor de T$ 1.000). Requer 5º círculo."
     }
   ],
-  "key": 129
+  "key": "75f8f874-8d7a-4d97-979c-5208a277b55a"
 }

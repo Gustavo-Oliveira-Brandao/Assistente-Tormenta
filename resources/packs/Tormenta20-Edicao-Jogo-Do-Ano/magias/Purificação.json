@@ -1,6 +1,6 @@
 {
   "nome": "Purificação",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "também dissipa magias e efeitos prejudiciais de encantamento, necromancia e transmutação afetando o alvo. Requer 3º círculo."
     }
   ],
-  "key": 91
+  "key": "f440a0f7-70c2-4ebf-80d8-8e493d768e26"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Viagem Arbórea",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alcance para toque, o alvo para até cinco criaturas e a duração para instantânea. Os alvos entram em uma planta (de tamanho Médio ou maior) e saem em outra planta do mesmo tamanho a até 100km de distância, especificada em direção e distância aproximadas (como “50km ao norte”)."
     }
   ],
-  "key": 144
+  "key": "d991622c-13c5-4b95-8dc7-f320b1548f39"
 }

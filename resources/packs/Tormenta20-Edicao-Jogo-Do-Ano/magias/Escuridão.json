@@ -1,6 +1,6 @@
 {
   "nome": "Escuridão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 objeto",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você é coberto por sombras, recebendo +10 em testes de Furtividade e camuflagem leve. Requer 2º círculo."
     }
   ],
-  "key": 29
+  "key": "596dd39f-a70b-4a4a-8c90-b05a04b263cd"
 }

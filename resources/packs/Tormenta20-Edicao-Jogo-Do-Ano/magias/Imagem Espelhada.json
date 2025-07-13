@@ -1,6 +1,6 @@
 {
   "nome": "Imagem Espelhada",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "além do normal, toda vez que uma cópia é destruída, emite um clarão de luz. A criatura que destruiu a cópia fica ofuscada por uma rodada. Requer 2º círculo."
     }
   ],
-  "key": 32
+  "key": "b47e264c-e1ab-46aa-89bd-35ab265be385"
 }

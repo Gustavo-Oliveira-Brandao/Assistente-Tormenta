@@ -1,6 +1,6 @@
 {
   "nome": "Transformação em Dragão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "o bônus em atributos se torna +4."
     }
   ],
-  "key": 176
+  "key": "c369543d-7213-4a30-b899-2e74326a46cc"
 }

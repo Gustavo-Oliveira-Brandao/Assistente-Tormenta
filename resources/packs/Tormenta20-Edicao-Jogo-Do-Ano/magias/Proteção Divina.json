@@ -1,6 +1,6 @@
 {
   "nome": "Proteção Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "também torna o alvo imune a efeitos mentais e de medo. Requer 3º círculo."
     }
   ],
-  "key": 42
+  "key": "241dc6ea-21b1-46de-b1fb-c0d9f47b9800"
 }

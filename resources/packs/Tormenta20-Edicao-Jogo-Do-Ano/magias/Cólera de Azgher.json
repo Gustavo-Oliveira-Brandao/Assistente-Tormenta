@@ -1,6 +1,6 @@
 {
   "nome": "Cólera de Azgher",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 6m de raio",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "a luz purificadora do Deus-Sol dissipa todas as magias de necromancia ativas na área. Requer 5º círculo"
     }
   ],
-  "key": 157
+  "key": "5111850f-7b29-4877-92ac-42c4398f0270"
 }

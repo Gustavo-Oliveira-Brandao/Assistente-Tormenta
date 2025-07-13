@@ -1,6 +1,6 @@
 {
   "nome": "Bola de Fogo",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 6m de raio",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a duração para 1 dia ou até ser descarregada. Em vez do normal, você cria uma pequena pedra flamejante, que pode detonar como uma reação, descarregando a magia. A pedra pode ser usada como uma arma de arremesso com alcance curto. Uma vez detonada, causa o dano da magia numa área de esfera de 6m com raio."
     }
   ],
-  "key": 63
+  "key": "5ac4a9d6-2128-474b-9114-a3fa5b25a628"
 }

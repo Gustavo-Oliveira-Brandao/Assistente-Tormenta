@@ -1,11 +1,14 @@
 {
-  "key": 12,
+  "key": "73b17c3e-7c0a-4340-9f3c-5146062693a5",
   "nome": "lutador",
   "icone": "lutador",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
-  "pericias": ["fortitude", "luta"],
+  "pericias": [
+    "fortitude",
+    "luta"
+  ],
   "numeroPericiasExtras": 4,
   "periciasExtras": [
     "acrobacia",
@@ -20,5 +23,6 @@
     "pontaria",
     "reflexos"
   ],
-  "proficiencias": []
+  "proficiencias": [],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

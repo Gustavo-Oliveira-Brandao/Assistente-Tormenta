@@ -1,6 +1,6 @@
 {
   "nome": "Campo de Força",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "como o aprimoramento acima, mas tudo dentro da esfera fica praticamente sem peso. Uma vez por rodada, você pode gastar uma ação livre para flutuar a esfera e seu conteúdo 9m em uma direção. Requer 4º círculo."
     }
   ],
-  "key": 64
+  "key": "70c6f9e7-2659-4b29-9dc9-6c5cfcb0ab97"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Teia",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cubo com 6m de lado",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "aumenta a área em +1 cubo de 1,5m."
     }
   ],
-  "key": 50
+  "key": "aad2155a-ea64-4f4d-8b0c-db483bd2d3fd"
 }

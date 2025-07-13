@@ -14,6 +14,11 @@ export class Atributo {
   nome: string
 
   @Column({
+    type: 'varchar'
+  })
+  key: string
+
+  @Column({
     type: 'integer',
     nullable: false
   })

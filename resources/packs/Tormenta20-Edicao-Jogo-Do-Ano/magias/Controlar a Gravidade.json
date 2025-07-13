@@ -1,6 +1,6 @@
 {
   "nome": "Controlar a Gravidade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cubo de 12m de lado",
   "efeito": "",
@@ -13,5 +13,5 @@
   "tradicao": "Arcana",
   "escola": "Transmutação",
   "aprimoramentos": [],
-  "key": 154
+  "key": "a716119c-45db-4a4d-bc7a-5b2b6a1e27ac"
 }

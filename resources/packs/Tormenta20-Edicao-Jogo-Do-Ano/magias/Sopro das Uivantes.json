@@ -1,6 +1,6 @@
 {
   "nome": "Sopro das Uivantes",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cone de 9m",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta o tamanho máximo das criaturas afetadas em uma categoria. Requer 3º círculo."
     }
   ],
-  "key": 101
+  "key": "845e7378-6509-4f8b-a1fe-fd78be4b2d3b"
 }

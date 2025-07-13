@@ -1,6 +1,6 @@
 {
   "nome": "Armamento da Natureza",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 arma (veja texto)",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "aumenta o dano da arma em mais um passo."
     }
   ],
-  "key": 10
+  "key": "df6ea13d-65bb-432b-9304-96007fc191af"
 }

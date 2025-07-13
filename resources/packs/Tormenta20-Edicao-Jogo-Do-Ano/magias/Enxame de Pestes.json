@@ -1,6 +1,6 @@
 {
   "nome": "Enxame de Pestes",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "1 enxame Médio (quadrado de 1,5m)",
@@ -30,5 +30,5 @@
       "descricao": "muda a resistência para Reflexos reduz à metade e o enxame para criaturas elementais. Ele causa 5d12 pontos do dano (a sua escolha entre ácido, eletricidade, fogo ou frio). O resto da magia segue normal. Requer 4º círculo."
     }
   ],
-  "key": 74
+  "key": "aac1d3db-48e3-41f4-8155-8a0b0588e1d2"
 }

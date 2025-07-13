@@ -1,6 +1,6 @@
 {
   "nome": "Mata-Dragão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cone de 30m",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o dano em 1d12."
     }
   ],
-  "key": 195
+  "key": "a428bc04-4663-43ff-92fd-5e152add630a"
 }

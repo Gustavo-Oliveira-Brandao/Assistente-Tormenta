@@ -1,6 +1,6 @@
 {
   "nome": "Coluna de Chamas",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cilindro com 3m de raio e 30m de altura",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta o dano de luz em +1d6."
     }
   ],
-  "key": 110
+  "key": "88a3687b-0c03-4689-9caf-77a248c406b8"
 }

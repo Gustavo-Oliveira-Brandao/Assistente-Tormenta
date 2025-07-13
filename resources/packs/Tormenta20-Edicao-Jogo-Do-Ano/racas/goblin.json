@@ -1,5 +1,5 @@
 {
-  "key": 5,
+  "key": "83a7ba75-5400-424e-89e1-6af47440d76c",
   "icone": "goblin",
   "nome": "goblin",
   "descricao": "Estes pequenos seres feiosos conseguiram um lugar entre os povos do Reinado. Podem ser encontrados em todas as grandes cidades, muitos vivendo na imundície, outros prosperando em carreiras que quase ninguém tentaria: espiões, aeronautas, engenhoqueiros. Onde o anão teimoso e o elfo empolado falham, o goblin pode dar um jeito. Porque ele não tem vergonha. Nem orgulho. Nem bom senso.",
@@ -26,5 +26,6 @@
     "escavacao": 0,
     "natacao": 0,
     "plana": false
-  }
+  },
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

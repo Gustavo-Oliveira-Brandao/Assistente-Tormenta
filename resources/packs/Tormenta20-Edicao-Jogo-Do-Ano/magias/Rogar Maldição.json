@@ -1,6 +1,6 @@
 {
   "nome": "Rogar Maldição",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para permanente e resistência para Fortitude parcial. Se passar, a criatura ainda sofre os efeitos da maldição, mas por 1 rodada. Requer 4º círculo."
     }
   ],
-  "key": 95
+  "key": "daff4914-893b-4596-afbd-85344fd1afaf"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Relâmpago",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "linha",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alcance para médio e a área para alvo (criaturas escolhidas). Em vez do normal, você dispara vários relâmpagos, um para cada alvo escolhido, causando 6d6 pontos de dano de eletricidade. Requer 3º círculo."
     }
   ],
-  "key": 94
+  "key": "aae99cb9-9b6e-46b6-a806-7d5d914a58fb"
 }

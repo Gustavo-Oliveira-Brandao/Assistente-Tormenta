@@ -1,11 +1,14 @@
 {
-  "key": 14,
+  "key": "ac33dfcb-3732-4907-bcfa-119db296ba2d",
   "nome": "paladino",
   "icone": "paladino",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
-  "pericias": ["luta", "vontade"],
+  "pericias": [
+    "luta",
+    "vontade"
+  ],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "adestramento",
@@ -34,5 +37,6 @@
       "categoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

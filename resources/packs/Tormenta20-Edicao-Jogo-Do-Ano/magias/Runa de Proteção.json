@@ -1,6 +1,6 @@
 {
   "nome": "Runa de Proteção",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "uma área com 6m de raio",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "como o aprimoramento anterior, mas você pode escolher magias de 2º  círculo. Requer 3º\ncírculo."
     }
   ],
-  "key": 96
+  "key": "92cedf51-6c25-44b1-b2fe-307b7e11b542"
 }

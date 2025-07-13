@@ -1,6 +1,6 @@
 {
   "nome": "Concentração de Combate",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda a execução para padrão e a duração para 1 dia. Além do normal, você recebe um sexto sentido que o avisa de qualquer perigo ou ameaça. Você fica imune às condições surpreendido e desprevenido e recebe +10 em Defesa e Reflexos. Requer 5º círculo."
     }
   ],
-  "key": 16
+  "key": "d0ab2bde-fc87-499c-a0e5-c45448adf690"
 }

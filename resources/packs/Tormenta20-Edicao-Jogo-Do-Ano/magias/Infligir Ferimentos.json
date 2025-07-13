@@ -1,6 +1,6 @@
 {
   "nome": "Infligir Ferimentos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
     }
   ],
-  "key": 33
+  "key": "c9c8ac96-4bd0-4648-9a28-1dfa98040049"
 }

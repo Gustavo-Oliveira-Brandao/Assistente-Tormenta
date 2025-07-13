@@ -1,6 +1,6 @@
 {
   "nome": "Explosão de Chamas",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "Cone de 6m",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica em chamas (veja Condições, no Apêndice)."
     }
   ],
-  "key": 30
+  "key": "ba6f1816-0152-4f69-980c-cb31b8b7ddf1"
 }

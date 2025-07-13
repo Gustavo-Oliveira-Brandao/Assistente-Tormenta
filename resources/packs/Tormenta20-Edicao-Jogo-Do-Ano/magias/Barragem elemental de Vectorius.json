@@ -1,6 +1,6 @@
 {
   "nome": "Barragem elemental de Vectorius",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "4 esferas elementais",
@@ -22,5 +22,5 @@
       "descricao": "muda o tipo de dano de todas as esferas para essência (mas elas ainda causam os outros efeitos como se seu tipo de dano não mudasse)."
     }
   ],
-  "key": 182
+  "key": "e8f74318-16e3-448f-9974-732eef433c58"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Seta Infalível de Talude",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "criaturas escolhidas",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o número de setas/lanças para dez. Requer 4º círculo."
     }
   ],
-  "key": 47
+  "key": "6b4e7d59-b881-48be-921b-2433c7d7c197"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Metamorfose",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -42,5 +42,5 @@
       "descricao": "além do normal, no início de seus turnos o alvo pode mudar de forma novamente, como uma ação livre, fazendo novas escolhas. Requer 5º círculo."
     }
   ],
-  "key": 86
+  "key": "0508f148-3dbf-4ffa-be54-f695f72c5ff3"
 }

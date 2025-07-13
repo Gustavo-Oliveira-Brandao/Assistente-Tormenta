@@ -1,6 +1,6 @@
 {
   "nome": "Alterar Tamanho",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 objeto",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alcance para toque, o alvo para 1 criatura, a duração para permanente e a resistência para Fortitude anula. Em vez do normal, se falhar na resistência o alvo e seu equipamento têm seu tamanho mudado para Minúsculo. O alvo também tem seu valor de Força reduzido a 1 e suas formas de deslocamento reduzidas a 3m. Requer 4o círculo."
     }
   ],
-  "key": 59
+  "key": "9e95568f-0b0c-4751-82e1-5a2bd95c2013"
 }

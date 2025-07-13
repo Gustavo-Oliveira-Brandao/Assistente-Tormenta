@@ -1,6 +1,6 @@
 {
   "nome": "Contato Extraplanar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "Muda os dados de auxílio para d12. Sempre que rolar um resultado 12 num desses d12, a entidade “suga” 2 PM de você. Requer 4º círculo."
     }
   ],
-  "key": 112
+  "key": "5be72999-bcfb-4f42-add1-bde5b3c08a77"
 }

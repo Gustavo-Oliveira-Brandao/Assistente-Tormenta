@@ -1,6 +1,6 @@
 {
   "nome": "Chuva de Meteoros",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "quadrado com 18m de lado",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o número de meteoros que atingem a área, o que aumenta o dano em +2d6 de impacto e +2d6 de fogo."
     }
   ],
-  "key": 184
+  "key": "e4b51d8b-c0d6-4de5-a793-d5ee3331584d"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Deflagração de Mana",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera de 15m de raio",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "afeta apenas criaturas a sua escolha."
     }
   ],
-  "key": 186
+  "key": "0d98855b-9923-409f-b175-163a5b2f535e"
 }

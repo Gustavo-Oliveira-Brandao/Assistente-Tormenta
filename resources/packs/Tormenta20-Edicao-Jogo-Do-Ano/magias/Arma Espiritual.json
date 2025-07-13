@@ -1,6 +1,6 @@
 {
   "nome": "Arma Espiritual",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -38,5 +38,5 @@
       "descricao": "aumenta o dano causado pela arma em +1d6, limitado pelo círculo máximo de magia que você pode lançar."
     }
   ],
-  "key": 7
+  "key": "daad0686-868c-42f6-b0b5-dcd2cc767d09"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Visão Mística",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "também pode enxergar objetos e criaturas invisíveis. Eles aparecem como formas translúcidas."
     }
   ],
-  "key": 55
+  "key": "1b0f637e-d2ae-4b42-b477-a67429543c4a"
 }

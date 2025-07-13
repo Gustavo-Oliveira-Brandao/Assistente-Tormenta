@@ -1,6 +1,6 @@
 {
   "nome": "Viagem Planar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "pessoal",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alvo para até cinco criaturas voluntárias que você esteja tocando."
     }
   ],
-  "key": 177
+  "key": "ba3709cb-7fbc-41a0-9d59-32c26f45a99c"
 }

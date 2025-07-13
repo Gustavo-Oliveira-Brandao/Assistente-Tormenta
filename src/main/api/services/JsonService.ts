@@ -47,26 +47,16 @@ export const extrairJson = async <T>(caminhoBase: string): Promise<T[]> => {
   }
 }
 
-export const reescreverJson = async <T>(
-  data: T,
-  nomeSubPasta: string,
-  nomeArquivo: string,
-  caminhoBase: string
-): Promise<void> => {
+export const reescreverJson = async <T>(data: T, caminhoArquivo: string): Promise<void> => {
   try {
+    const dir = path.dirname(caminhoArquivo)
+    await fs.mkdir(dir, { recursive: true })
+
     const jsonString = JSON.stringify(data, null, 2)
 
-    const caminhoPasta = path.join(caminhoBase, nomeSubPasta)
-
-    const caminhoDoArquivo = path.join(
-      caminhoPasta,
-      `${nomeArquivo.replace(/[\s/\\?%*:|"<>]/g, '_')}.json`
-    )
-
-    await fs.mkdir(caminhoPasta, { recursive: true })
-    await fs.writeFile(caminhoDoArquivo, jsonString, { encoding: 'utf-8' })
+    await fs.writeFile(caminhoArquivo, jsonString, { encoding: 'utf-8' })
   } catch (err) {
-    console.log(err)
-    throw new Error('Erro ao escrever arquivo')
+    console.error(`Erro ao reescrever o arquivo JSON ${caminhoArquivo}:`, err)
+    throw new Error(`Não foi possível reescrever o arquivo JSON`)
   }
 }

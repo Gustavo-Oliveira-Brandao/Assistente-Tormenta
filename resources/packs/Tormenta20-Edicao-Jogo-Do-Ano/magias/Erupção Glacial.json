@@ -1,6 +1,6 @@
 {
   "nome": "Erupção Glacial",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "quadrado de 6m de lado",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a área para cilindro com 6m de raio e 6m de altura e a duração para sustentada. Em vez do normal, a magia cria uma tempestade de granizo que causa 3d6 pontos de dano de impacto e 3d6 pontos de dano de frio em todas as criaturas na área (sem teste de resistência). A tempestade fornece camuflagem leve as criaturas dentro dela e deixa o piso escorregadio. Piso escorregadio conta como terreno difícil e obriga criaturas na área a fazer testes de Acrobacia para equilíbrio (veja o Capítulo 2). Requer 4º círculo."
     }
   ],
-  "key": 120
+  "key": "7ea89732-0103-4af7-960f-ee1c3543f142"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Consagrar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 9m de raio",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."
     }
   ],
-  "key": 18
+  "key": "e95197ee-29a0-47e8-b5a1-391c82166f2e"
 }

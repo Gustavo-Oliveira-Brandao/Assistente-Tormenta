@@ -1,6 +1,6 @@
 {
   "nome": "Área Escorregadia",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "ou",
   "area": "Quadrado de 3m ou 1 objeto",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a CD dos testes de Acrobacia para 20."
     }
   ],
-  "key": 57
+  "key": "82d1f97f-23b1-4c86-b9a9-d418deecb637"
 }

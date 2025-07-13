@@ -1,6 +1,6 @@
 {
   "nome": "Raio Polar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alvo para área de esfera de 6m de raio. Em vez de um raio, você dispara uma esfera de gelo que explode, causando o efeito da magia em todas as criaturas na área."
     }
   ],
-  "key": 171
+  "key": "9035369c-d3fd-426c-b7c0-01621ff30aad"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Potência Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alcance para toque e o alvo para 1 criatura. A magia falha se você e o alvo não forem devotos da mesma divindade."
     }
   ],
-  "key": 134
+  "key": "50dae803-27ca-4140-973f-161be1ca8b20"
 }

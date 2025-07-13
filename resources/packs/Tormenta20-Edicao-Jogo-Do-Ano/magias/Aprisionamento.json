@@ -1,6 +1,6 @@
 {
   "nome": "Aprisionamento",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -13,5 +13,5 @@
   "tradicao": "Arcana",
   "escola": "Abjuração",
   "aprimoramentos": [],
-  "key": 180
+  "key": "19ef4a97-d3fe-4152-9539-dfdc942ce8b8"
 }

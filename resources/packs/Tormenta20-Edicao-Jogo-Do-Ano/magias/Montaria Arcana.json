@@ -1,6 +1,6 @@
 {
   "nome": "Montaria Arcana",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "criatura conjurada",
@@ -30,5 +30,5 @@
       "descricao": "muda o nível do aliado para mestre. Requer 3º círculo."
     }
   ],
-  "key": 89
+  "key": "2cfedf5c-658e-48d1-8c06-838bc539e99b"
 }

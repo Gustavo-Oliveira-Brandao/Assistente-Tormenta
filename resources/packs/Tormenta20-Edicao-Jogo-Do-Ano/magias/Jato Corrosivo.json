@@ -1,6 +1,6 @@
 {
   "nome": "Jato Corrosivo",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "linha de 9m",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica vulnerável."
     }
   ],
-  "key": 34
+  "key": "a5e11008-26cf-43c7-8043-2a5a281da28c"
 }

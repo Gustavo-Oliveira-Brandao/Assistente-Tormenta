@@ -1,6 +1,6 @@
 {
   "nome": "Despedaçar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou objeto mundano pequeno",
   "area": "",
   "efeito": "",
@@ -38,5 +38,5 @@
       "descricao": "muda o alcance para pessoal e a área para esfera de 6m de raio. Todas as criaturas e objetos na área são afetados."
     }
   ],
-  "key": 24
+  "key": "9df49220-b602-4d7f-93d4-489e1197e18e"
 }

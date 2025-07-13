@@ -1,6 +1,6 @@
 {
   "nome": "Momento de Tormenta",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cubo de 30m",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a área para círculo de 1km de raio."
     }
   ],
-  "key": 88
+  "key": "453a2f9d-a0e6-425a-a67c-a5fb84e4e115"
 }

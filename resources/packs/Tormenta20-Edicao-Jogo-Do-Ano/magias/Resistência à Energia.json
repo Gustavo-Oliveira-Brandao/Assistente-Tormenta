@@ -1,6 +1,6 @@
 {
   "nome": "Resistência à Energia",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo"
     }
   ],
-  "key": 45
+  "key": "8d475279-5eaf-48ad-9b7a-ee29b1a35be6"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Localização",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 90m de raio",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta a área em um fator de 10 (90m para 900m, 900m para 9km e assim por diante)."
     }
   ],
-  "key": 82
+  "key": "67dff5ce-b1e6-492b-b2d1-34bd5e70c031"
 }

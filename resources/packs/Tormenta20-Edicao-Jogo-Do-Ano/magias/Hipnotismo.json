@@ -1,6 +1,6 @@
 {
   "nome": "Hipnotismo",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 animal ou humanoide",
   "area": "",
   "efeito": "",
@@ -38,5 +38,5 @@
       "descricao": "também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."
     }
   ],
-  "key": 31
+  "key": "3e0f348e-6c06-4edb-8fb6-bd0279691d2d"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Invisibilidade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda a execução para ação padrão, o alcance para toque e o alvo para 1 criatura. A magia não é dissipada caso o alvo faça um ação hostil. Requer 4º círculo."
     }
   ],
-  "key": 79
+  "key": "ffc8bbb2-b0d2-4de7-b93a-5b0b056dacc8"
 }

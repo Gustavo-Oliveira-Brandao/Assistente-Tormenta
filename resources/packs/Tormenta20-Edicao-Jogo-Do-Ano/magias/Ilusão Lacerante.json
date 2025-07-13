@@ -1,6 +1,6 @@
 {
   "nome": "Ilusão Lacerante",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cubo de 9m",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a área para um cubo de 90m. Requer 4º círculo."
     }
   ],
-  "key": 124
+  "key": "9cf71558-8a39-48a5-b339-5e5276f77b97"
 }

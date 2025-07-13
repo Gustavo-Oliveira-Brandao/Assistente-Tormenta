@@ -1,6 +1,6 @@
 {
   "nome": "Criar Elementos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "elemento escolhido",
@@ -26,5 +26,5 @@
       "descricao": "se escolheu fogo, aumenta o dano inicial de cada chama em +1d6."
     }
   ],
-  "key": 20
+  "key": "97c6a450-d0f0-4b0d-99a1-c7f37c573c71"
 }

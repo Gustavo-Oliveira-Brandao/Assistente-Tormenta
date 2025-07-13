@@ -1,6 +1,6 @@
 {
   "nome": "Voo",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alcance para curto e o alvo para até 10 criaturas. Requer 4° círculo."
     }
   ],
-  "key": 146
+  "key": "79fd66b0-1afb-463d-8d0d-cf7e7787903d"
 }

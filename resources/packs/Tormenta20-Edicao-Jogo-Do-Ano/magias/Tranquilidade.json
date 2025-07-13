@@ -1,6 +1,6 @@
 {
   "nome": "Tranquilidade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 animal ou humanóide",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alcance para médio e o alvo para criaturas escolhidas. Requer 3º círculo."
     }
   ],
-  "key": 53
+  "key": "aef53a80-a108-4c7e-9613-aeebbd139289"
 }

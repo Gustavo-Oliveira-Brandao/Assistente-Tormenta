@@ -1,6 +1,6 @@
 {
   "nome": "Convocação Instantânea",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 objeto de 2 espaços",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alvo para 1 objeto de até 10 espaços. Um objeto muito grande ou pesado para aparecer em suas mãos surge em um espaço adjacente a sua escolha."
     }
   ],
-  "key": 115
+  "key": "51289b37-3f6b-4f1c-ab52-1e6b02634904"
 }

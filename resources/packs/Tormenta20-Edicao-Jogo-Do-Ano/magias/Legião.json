@@ -1,6 +1,6 @@
 {
   "nome": "Legião",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "até 10 criaturas na área",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o número de alvos em +1."
     }
   ],
-  "key": 193
+  "key": "6b6b72ef-cf68-4412-8f23-548bdc770e48"
 }

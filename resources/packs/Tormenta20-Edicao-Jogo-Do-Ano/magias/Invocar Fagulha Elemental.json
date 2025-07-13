@@ -1,6 +1,6 @@
 {
   "nome": "Invocar Fagulha Elemental",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "familiar elemental",
@@ -22,5 +22,5 @@
       "descricao": "em vez do normal, o elemental recebe a habilidade de dois familiares, um comum e um elemental."
     }
   ],
-  "key": 80
+  "key": "a800cef9-20ec-40a7-876c-78323d302227"
 }

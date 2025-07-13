@@ -1,11 +1,14 @@
 {
-  "key": 10,
+  "key": "fd610fad-a703-4c34-87ae-5c5e9e5e7580",
   "nome": "inventor",
   "icone": "inventor",
   "vidaInicial": 12,
   "vidaPorNivel": 3,
   "manaPorNivel": 4,
-  "pericias": ["oficio", "vontade"],
+  "pericias": [
+    "oficio",
+    "vontade"
+  ],
   "numeroPericiasExtras": 4,
   "periciasExtras": [
     "conhecimento",
@@ -21,5 +24,6 @@
     "percepcao",
     "pontaria"
   ],
-  "proficiencias": []
+  "proficiencias": [],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

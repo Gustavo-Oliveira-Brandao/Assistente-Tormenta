@@ -1,6 +1,6 @@
 {
   "nome": "Conjurar Monstro",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "1 criatura conjurada",
@@ -62,5 +62,5 @@
       "descricao": "aumenta o tamanho do monstro para Colossal. Ele tem For 15, Des 0, 180 PV, deslocamento 15m e seu ataque causa 4d12+20 pontos de dano com 9m de alcance. Requer 5º círculo."
     }
   ],
-  "key": 17
+  "key": "5a2673b5-13df-44b0-97fc-d0a65637cd08"
 }

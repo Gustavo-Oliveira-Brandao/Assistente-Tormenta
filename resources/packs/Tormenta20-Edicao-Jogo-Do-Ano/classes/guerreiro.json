@@ -1,11 +1,13 @@
 {
-  "key": 9,
+  "key": "0f504676-9a7d-47cc-aec2-6ea187384df7",
   "nome": "guerreiro",
   "icone": "guerreiro",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
-  "pericias": ["fortitude"],
+  "pericias": [
+    "fortitude"
+  ],
   "numeroPericiasExtras": 3,
   "periciasExtras": [
     "adestramento",
@@ -33,5 +35,6 @@
       "categoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

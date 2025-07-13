@@ -1,6 +1,6 @@
 {
   "nome": "Curar Ferimentos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas."
     }
   ],
-  "key": 22
+  "key": "36e9fe5a-3116-4d06-866e-dfa30e583218"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Terremoto",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 30m de raio",
   "efeito": "",
@@ -13,5 +13,5 @@
   "tradicao": "Divina",
   "escola": "Evocação",
   "aprimoramentos": [],
-  "key": 175
+  "key": "84d728b3-b30e-465d-b1e9-6418078bc619"
 }

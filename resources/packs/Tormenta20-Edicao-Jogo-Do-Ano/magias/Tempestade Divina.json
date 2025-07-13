@@ -1,6 +1,6 @@
 {
   "nome": "Tempestade Divina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "cilindro com 15m de raio e 15m de altura",
   "efeito": "",
@@ -38,5 +38,5 @@
       "descricao": "muda a área para cilindro com 90m de raio e 90m de altura."
     }
   ],
-  "key": 103
+  "key": "bc3f9d39-d84f-48fe-aa97-7f8f3ce3897a"
 }

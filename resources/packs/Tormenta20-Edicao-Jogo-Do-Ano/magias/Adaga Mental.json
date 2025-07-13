@@ -1,6 +1,6 @@
 {
   "nome": "Adaga Mental",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "aumenta o dano em +1d6."
     }
   ],
-  "key": 4
+  "key": "62444537-d686-4516-ac71-28bb7ffdd66d"
 }

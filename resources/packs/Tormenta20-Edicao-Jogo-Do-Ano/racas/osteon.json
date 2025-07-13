@@ -1,5 +1,5 @@
 {
-  "key": 13,
+  "key": "c7844f37-6920-472c-b38a-3cb8ffcd4a7b",
   "nome": "osteon",
   "icone": "osteon",
   "descricao": "Esqueletos sempre foram temidos como monstros profanos, movidos por puro rancor pelos vivos. Isso mudou; conhecidos como osteon, estes esqueletos demonstram a inteligência e a consciência das raças vivas, sendo capazes de adotar quaisquer de suas profissões e devoções. Alguns atribuem seu surgimento à queda de Ragnar, antigo Deus da Morte; outros dizem ser consequência da ascensão de Ferren Asloth como um poderoso lich, transformando a nação de Aslothia em um reino necromante.",
@@ -30,5 +30,6 @@
     "natacao": 0,
     "plana": false
   },
-  "tamanho": "medio"
+  "tamanho": "medio",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

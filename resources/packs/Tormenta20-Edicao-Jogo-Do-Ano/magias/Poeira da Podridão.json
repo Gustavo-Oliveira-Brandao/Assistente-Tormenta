@@ -1,6 +1,6 @@
 {
   "nome": "Poeira da Podridão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "nuvem com 6m de raio",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o dano em 1d8+4."
     }
   ],
-  "key": 133
+  "key": "e8616b7f-6c92-4120-9133-909109a9ddab"
 }

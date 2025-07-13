@@ -1,6 +1,6 @@
 {
   "nome": "Raio do Enfraquecimento",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo."
     }
   ],
-  "key": 44
+  "key": "9eaf86bb-d257-4ce4-814c-f6ddf715c085"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Controlar o Clima",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 2km de raio",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "(Apenas Druidas): muda o raio da área para 3km e duração para 1d4 dias."
     }
   ],
-  "key": 155
+  "key": "59b823d5-77b2-454f-979e-cf498604eefe"
 }

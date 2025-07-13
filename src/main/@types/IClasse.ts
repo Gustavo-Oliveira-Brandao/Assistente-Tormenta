@@ -1,5 +1,5 @@
 export type IClasse = {
-  key: number
+  key: string
   nome: string
   icone: string
   vidaInicial: number
@@ -12,4 +12,5 @@ export type IClasse = {
     categoria: string
     nome: string
   }[]
+  publicacao: string
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Detectar Ameaças",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "Esfera de 18m de raio",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "além do normal, você não fica surpreso e desprevenido contra perigos detectados com sucesso e recebe +5 em testes de resistência contra armadilhas. Requer 2º círculo."
     }
   ],
-  "key": 25
+  "key": "a7f2d755-2e97-4394-8537-e8d659469be7"
 }

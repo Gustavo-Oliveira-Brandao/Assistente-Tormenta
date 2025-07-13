@@ -1,6 +1,6 @@
 {
   "nome": "Toque da Morte",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alcance para curto e o alvo para inimigos no alcance. Em vez de tocar no alvo, você dispara raios púrpuras da ponta de seus dedos."
     }
   ],
-  "key": 205
+  "key": "bf2e17d0-62a4-4c32-9dc3-319a34ed9afd"
 }

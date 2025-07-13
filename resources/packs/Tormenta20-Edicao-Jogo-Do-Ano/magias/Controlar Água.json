@@ -1,6 +1,6 @@
 {
   "nome": "Controlar Água",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 30m de raio",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o dano em +2d8."
     }
   ],
-  "key": 114
+  "key": "277e56df-07b3-459d-b384-e62c0d4d177c"
 }

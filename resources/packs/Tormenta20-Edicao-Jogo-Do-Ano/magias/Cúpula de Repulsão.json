@@ -1,6 +1,6 @@
 {
   "nome": "Cúpula de Repulsão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "além do normal, criaturas afetadas também precisam fazer o teste de resistência se fizerem um ataque ou efeito à distância você. Se falharem, o efeito é desviado pela cúpula. Requer 5º círculo."
     }
   ],
-  "key": 158
+  "key": "c40cb515-5118-4edd-91f3-94997dbab2bb"
 }

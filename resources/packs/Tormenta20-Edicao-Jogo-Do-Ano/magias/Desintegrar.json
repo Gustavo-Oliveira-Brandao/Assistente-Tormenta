@@ -1,6 +1,6 @@
 {
   "nome": "Desintegrar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou objeto",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o dano total em +2d12 e o dano mínimo em +1d12."
     }
   ],
-  "key": 159
+  "key": "b753ffaa-1358-413a-b6fc-700ca8af96b8"
 }

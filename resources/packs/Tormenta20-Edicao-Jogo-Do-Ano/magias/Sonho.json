@@ -1,6 +1,6 @@
 {
   "nome": "Sonho",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura viva",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta o número de alvos em +1. Todos os alvos compartilham um mesmo sonho (ou pesadelo) entre si e com você."
     }
   ],
-  "key": 173
+  "key": "c934dbc7-7a46-484a-a7d5-622a664f9a0d"
 }

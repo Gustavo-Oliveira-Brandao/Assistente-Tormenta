@@ -1,6 +1,6 @@
 {
   "nome": "Alarme",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "Esfera de 9m de raio",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a duração para 1 dia ou até ser descarregada e a resistência para Vontade anula. Quando um intruso entra na área, você pode descarregar a magia. Se o intruso falhar na resistência, ficará paralisado por 1d4 rodadas. Além disso, pelas próximas 24 horas você e as criaturas escolhidas ganham +10 em testes de Sobrevivência para rastrear o intruso."
     }
   ],
-  "key": 5
+  "key": "f20a2d24-d927-46ed-81c0-82a2cffa0f02"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Telecinésia",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "veja texto;",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o tamanho máximo da criatura em uma categoria (para Grande, Enorme e Colossal) ou dobra a quantidade de espaços do objeto."
     }
   ],
-  "key": 140
+  "key": "cf511d56-0183-45f1-a1ef-f0f89aa50c27"
 }

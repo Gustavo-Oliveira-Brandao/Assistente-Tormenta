@@ -1,6 +1,6 @@
 {
   "nome": "Abençoar Alimentos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "alimento para 1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a duração para permanente, o alvo para 1 frasco com água e adiciona componente material (pó de prata no valor de T$ 5). Em vez do normal, cria um frasco de água benta."
     }
   ],
-  "key": 1
+  "key": "4a53935f-499f-4011-adf8-33b49263290f"
 }

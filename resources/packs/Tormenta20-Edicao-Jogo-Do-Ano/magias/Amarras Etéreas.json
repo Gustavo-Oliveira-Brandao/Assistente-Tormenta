@@ -1,6 +1,6 @@
 {
   "nome": "Amarras Etéreas",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "em vez do normal, cada laço é destruído automaticamente com um único ataque bem-sucedido; porém, cada laço destruído libera um choque de energia que causa 1d8+1 pontos de dano de essência na criatura amarrada. Requer 3º círculo."
     }
   ],
-  "key": 60
+  "key": "16d32e97-5ee9-4f56-bb1f-280f8e5c3926"
 }

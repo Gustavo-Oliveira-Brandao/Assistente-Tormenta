@@ -1,6 +1,6 @@
 {
   "nome": "Invulnerabilidade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alcance para curto e o alvo para 1 criatura."
     }
   ],
-  "key": 191
+  "key": "1e4a4b14-898e-4f3e-a6c6-53dec6115d24"
 }

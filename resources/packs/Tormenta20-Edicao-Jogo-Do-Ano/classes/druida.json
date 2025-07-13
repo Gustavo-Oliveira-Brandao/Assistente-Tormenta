@@ -1,11 +1,14 @@
 {
-  "key": 8,
+  "key": "3a8ba8b9-183b-479b-b102-dd708dc3aac2",
   "nome": "druida",
   "icone": "druida",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
-  "pericias": ["sobrevivencia", "vontade"],
+  "pericias": [
+    "sobrevivencia",
+    "vontade"
+  ],
   "numeroPericiasExtras": 4,
   "periciasExtras": [
     "adestramento",
@@ -27,5 +30,6 @@
       "categoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

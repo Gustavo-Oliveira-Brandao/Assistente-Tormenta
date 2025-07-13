@@ -1,6 +1,6 @@
 {
   "nome": "Transformação de Guerra",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "adiciona componente material (uma barra de adamante no valor de T$ 100). Sua forma de combate ganha um aspecto metálico e sem expressões. Além do normal, você recebe resistência a dano 10 e imunidade a atordoamento e efeitos de cansaço, encantamento, metabolismo, trevas e veneno, e não precisa respirar."
     }
   ],
-  "key": 143
+  "key": "18b1a046-3cf4-4797-a708-be8d477e7ed2"
 }

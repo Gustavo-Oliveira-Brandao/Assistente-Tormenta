@@ -1,6 +1,6 @@
 {
   "nome": "Arma Mágica",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 arma empunhada",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o bônus de dano do aprimoramento elemental para +2d6."
     }
   ],
-  "key": 8
+  "key": "ecaf6908-f835-4d37-8e45-bc47f79c132e"
 }

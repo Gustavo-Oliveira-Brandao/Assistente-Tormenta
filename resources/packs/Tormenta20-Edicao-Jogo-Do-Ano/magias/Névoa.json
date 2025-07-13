@@ -1,6 +1,6 @@
 {
   "nome": "Névoa",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "nuvem com 6m de raio e 6m de altura",
@@ -38,5 +38,5 @@
       "descricao": "além do normal, a nuvem fica espessa, quase sólida. Qualquer criatura dentro dela tem seu deslocamento reduzido para 3m (independentemente de seu deslocamento normal) e sofre –2 em testes de ataque e rolagens de dano."
     }
   ],
-  "key": 37
+  "key": "f895f382-fdef-4313-856e-dc68ffdd4ec0"
 }

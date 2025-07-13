@@ -1,6 +1,6 @@
 {
   "nome": "Salto Dimensional",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alcance para longo."
     }
   ],
-  "key": 97
+  "key": "136bc468-51b8-4478-b910-4e6bd2fc6b2b"
 }

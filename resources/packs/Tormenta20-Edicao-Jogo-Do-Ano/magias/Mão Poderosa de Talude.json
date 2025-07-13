@@ -1,6 +1,6 @@
 {
   "nome": "Mão Poderosa de Talude",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "mão gigante de energia",
@@ -22,5 +22,5 @@
       "descricao": "muda o bônus adicional em Misticismo para +20. Requer 5º círculo."
     }
   ],
-  "key": 169
+  "key": "1485ee37-3ee0-4b9c-9f3c-7e889eb1d15d"
 }

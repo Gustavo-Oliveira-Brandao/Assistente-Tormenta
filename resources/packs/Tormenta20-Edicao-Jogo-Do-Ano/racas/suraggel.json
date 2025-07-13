@@ -1,5 +1,5 @@
 {
-  "key": 16,
+  "key": "e90b952d-6fc5-4bdb-9cd3-bf8e989c0746",
   "nome": "suraggel",
   "icone": "suraggel aggelus",
   "descricao": "Descendentes de extraplanares divinos, esta raça é formada por seres com traços angelicais ou demoníacos — ou ambos. Por serem ligados às forças opostas da luz e trevas, suraggel têm traços diferentes quando orientados para seu lado celestial, sendo então conhecidos como aggelus; ou para o lado abissal, assim sendo chamados sulfure. Sua natureza em geral combina com a ascendência, lembrando habitantes dos Mundos dos Deuses, mas eles também podem ser surpreendentes e contraditórios: não se espante muito ao conhecer um aggelus ladino ou um sulfure paladino.",
@@ -30,5 +30,6 @@
     "plana": false
   },
   "tamanho": "medio",
-  "tipo": "espirito"
+  "tipo": "espirito",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

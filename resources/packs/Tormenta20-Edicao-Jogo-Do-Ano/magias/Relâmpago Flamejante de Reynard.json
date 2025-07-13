@@ -1,6 +1,6 @@
 {
   "nome": "Relâmpago Flamejante de Reynard",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "bolas de fogo e relâmpagos",
@@ -18,5 +18,5 @@
       "descricao": "aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12."
     }
   ],
-  "key": 172
+  "key": "0d4cd971-a317-4fa3-993d-af0717a6c0cc"
 }

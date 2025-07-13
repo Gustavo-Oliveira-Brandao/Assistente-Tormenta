@@ -1,6 +1,6 @@
 {
   "nome": "Controlar Plantas",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "quadrado com 9m de lado",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alcance para pessoal, a área para alvo (você) e a resistência para nenhuma. Em vez do normal, você consegue se comunicar com plantas, que começam com atitude prestativa em relação a você. Além disso, você pode fazer testes de Diplomacia com plantas. Em geral, plantas têm uma percepção limitada de seus arredores e normalmente fornecem respostas simplórias."
     }
   ],
-  "key": 19
+  "key": "8cbf2457-c615-40cd-8c1e-5a305b189faf"
 }

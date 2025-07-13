@@ -1,6 +1,6 @@
 {
   "nome": "Premonição",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para 1 dia."
     }
   ],
-  "key": 170
+  "key": "4c167d75-23c2-45ed-9583-2e80dc81c303"
 }

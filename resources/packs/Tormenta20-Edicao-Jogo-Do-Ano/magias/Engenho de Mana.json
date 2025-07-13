@@ -1,6 +1,6 @@
 {
   "nome": "Engenho de Mana",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "disco de energia com 1,5m de diâmetro",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para 1 dia."
     }
   ],
-  "key": 188
+  "key": "c857e3bf-b484-45ec-b809-16cd9198dd06"
 }

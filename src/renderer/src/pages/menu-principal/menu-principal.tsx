@@ -26,6 +26,7 @@ import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuer
 import { zodResolver } from '@hookform/resolvers/zod'
 import { divindadesData } from '@renderer/utils/common data/divindadesData'
 import { eticoData, moralData } from '@renderer/utils/common data/alinhamentoData'
+import { useExibirCompendioMagias } from '@renderer/hooks/selectors/useMagiaQuery'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -35,7 +36,10 @@ export const MenuPrincipal = (): JSX.Element => {
   const [personagemSelecionado, setPersonagemSelecionado] = useState<IPersonagem | null>(null)
 
   const { data: personagens } = useExibirTodosPersonagem()
-
+  const { data: poderes } = useExibirPoderesDefault()
+  const { data: racas } = useExibirRacasDefault()
+  const { data: classes } = useExibirClassesDefault()
+  const { data: magias} = useExibirCompendioMagias()
   const navigate = useNavigate()
 
   const selecionarPersonagemPorId = (id: number): void => {

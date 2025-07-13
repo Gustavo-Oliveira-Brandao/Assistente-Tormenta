@@ -1,6 +1,6 @@
 {
   "nome": "Conceder Milagre",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o círculo da magia concedida para 3º e a penalidade de PM para –6."
     }
   ],
-  "key": 152
+  "key": "52678ae8-b031-42ad-b038-d88ab7e991c7"
 }

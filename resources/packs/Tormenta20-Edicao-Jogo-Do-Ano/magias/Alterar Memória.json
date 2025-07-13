@@ -1,6 +1,6 @@
 {
   "nome": "Alterar Memória",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "você pode alterar ou apagar as memórias das últimas 24 horas."
     }
   ],
-  "key": 148
+  "key": "c313ac1e-55f1-4fe7-9e37-e3a603d3dc30"
 }

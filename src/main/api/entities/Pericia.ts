@@ -8,6 +8,11 @@ export class Pericia {
   id: number
 
   @Column({
+    type: 'varchar'
+  })
+  key: string
+
+  @Column({
     type: 'varchar',
     length: 50
   })

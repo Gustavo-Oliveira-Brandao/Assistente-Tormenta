@@ -1,6 +1,6 @@
 {
   "nome": "Sombra Assassina",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda o alvo para criaturas escolhidas na área."
     }
   ],
-  "key": 204
+  "key": "6db90451-ffe3-4df5-8007-d9729ffcdf40"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Muralha de Ossos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "muro de ossos",
@@ -22,5 +22,5 @@
       "descricao": "o muro é feito de uma massa de esqueletos animados. Sempre que uma criatura iniciar seu turno adjacente ou escalando a muralha, deve fazer um teste de Reflexos. Se falhar fica agarrada, sofrendo os feitos normais de estar agarrada pela magia."
     }
   ],
-  "key": 168
+  "key": "f6c4066e-6f72-4885-bebb-3f0005e03447"
 }

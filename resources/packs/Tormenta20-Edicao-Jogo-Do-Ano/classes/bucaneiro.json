@@ -1,11 +1,13 @@
 {
-  "key": 4,
+  "key": "7d224bf6-42d2-4f2e-97c3-257db647d65f",
   "nome": "bucaneiro",
   "icone": "bucaneiro",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 3,
-  "pericias": ["reflexos"],
+  "pericias": [
+    "reflexos"
+  ],
   "numeroPericiasExtras": 5,
   "periciasExtras": [
     "acrobacia",
@@ -28,5 +30,6 @@
       "categoria": "equipamento",
       "nome": "armas marciais"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

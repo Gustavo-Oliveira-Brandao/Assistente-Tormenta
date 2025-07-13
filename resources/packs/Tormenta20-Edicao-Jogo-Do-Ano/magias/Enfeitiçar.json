@@ -1,6 +1,6 @@
 {
   "nome": "Enfeitiçar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 humanóide",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "afeta todos os alvos dentro do alcance."
     }
   ],
-  "key": 27
+  "key": "6fb48e6c-e00e-4615-b1a9-6e94c91ab8f7"
 }

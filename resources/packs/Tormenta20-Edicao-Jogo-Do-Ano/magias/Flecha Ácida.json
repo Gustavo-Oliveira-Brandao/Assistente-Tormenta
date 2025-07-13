@@ -1,6 +1,6 @@
 {
   "nome": "Flecha Ácida",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou objeto",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "aumenta o dano inicial e o dano por rodada em +1d6."
     }
   ],
-  "key": 76
+  "key": "1f66ec62-b103-4742-be56-f1c1366e173d"
 }

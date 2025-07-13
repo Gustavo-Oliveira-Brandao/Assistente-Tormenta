@@ -1,6 +1,6 @@
 {
   "nome": "Imobilizar",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 humanóide ou animal",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alvo para 1 criatura. Requer 4º círculo"
     }
   ],
-  "key": 125
+  "key": "12aa055d-765e-4542-bb5b-8bc3bf2717a4"
 }

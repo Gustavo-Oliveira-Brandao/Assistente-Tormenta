@@ -1,6 +1,6 @@
 {
   "nome": "Transmutar Objetos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "matéria-prima, como madeira, rochas, ossos",
   "area": "",
   "efeito": "",
@@ -38,5 +38,5 @@
       "descricao": "como o aprimoramento anterior, mas passa a afetar itens mágicos."
     }
   ],
-  "key": 54
+  "key": "cff21772-9ad7-4866-8050-89f40f46c4d6"
 }

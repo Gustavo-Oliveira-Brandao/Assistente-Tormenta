@@ -1,6 +1,6 @@
 {
   "nome": "Armadura Arcana",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a duração para 1 dia."
     }
   ],
-  "key": 9
+  "key": "32bebe45-f105-4a99-bbc4-bae00c002144"
 }

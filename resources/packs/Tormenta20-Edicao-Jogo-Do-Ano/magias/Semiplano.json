@@ -1,6 +1,6 @@
 {
   "nome": "Semiplano",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "semiplano com 30m de lado",
@@ -22,5 +22,5 @@
       "descricao": "muda a duração para permanente e adiciona componente material (maquete do semiplano feito de materiais preciosos no valor de T$ 5.000). Você pode lançar a magia diversas vezes para aumentar as dimensões do semiplano em +30m de lado a cada vez."
     }
   ],
-  "key": 203
+  "key": "3b962bd8-6491-4a58-acc3-053c8eba6770"
 }

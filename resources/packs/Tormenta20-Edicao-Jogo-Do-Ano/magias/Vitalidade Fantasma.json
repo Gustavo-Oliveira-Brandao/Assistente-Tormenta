@@ -1,6 +1,6 @@
 {
   "nome": "Vitalidade Fantasma",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alvo para área: esfera com 6m de raio centrada em você e a resistência para Fortitude reduz à metade. Em vez do normal, você suga energia das criaturas vivas na área, causando 1d10 pontos de dano de trevas e recebendo PV temporários iguais ao dano total causado. Os PV temporários desaparecem ao final da cena. Requer 2º círculo."
     }
   ],
-  "key": 56
+  "key": "cd048a4a-fd93-4b7f-b709-8e29cde1b870"
 }

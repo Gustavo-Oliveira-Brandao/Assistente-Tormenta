@@ -7,9 +7,9 @@ export class Magia {
   id: number
 
   @Column({
-    type: 'integer'
+    type: 'varchar'
   })
-  key: number
+  key: string
 
   @Column({
     type: 'varchar'

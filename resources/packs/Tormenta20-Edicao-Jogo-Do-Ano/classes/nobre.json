@@ -1,11 +1,13 @@
 {
-  "key": 13,
+  "key": "260cfd6c-150d-4e51-bcc5-43898b782759",
   "nome": "nobre",
   "icone": "nobre",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
-  "pericias": ["vontade"],
+  "pericias": [
+    "vontade"
+  ],
   "numeroPericiasExtras": 5,
   "periciasExtras": [
     "adestramento",
@@ -40,5 +42,6 @@
       "categoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

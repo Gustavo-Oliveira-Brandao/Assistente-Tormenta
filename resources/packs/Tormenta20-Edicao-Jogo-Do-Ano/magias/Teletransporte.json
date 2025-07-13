@@ -1,6 +1,6 @@
 {
   "nome": "Teletransporte",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "até 5 criaturas voluntárias",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda a execução para ação completa, a duração para cena e adiciona sacrifício de 1 PM. Em vez do normal, você cria um círculo de 1,5m de diâmetro no chão, que transporta qualquer criatura que pisar nele. O destino é escolhido quando a magia é lançada e pode ser qualquer lugar, em qualquer mundo, sem a necessidade de testes, desde que seja conhecido por você. O círculo é tênue e praticamente invisível. Você pode marcá-lo de alguma forma (por exemplo, lançando-o sobre uma plataforma elevada). Se não fizer isso, alguém pode pisar nele por acidente. Junte isso a um destino hostil e você terá uma armadilha bastante eficaz! Requer 5º círculo."
     }
   ],
-  "key": 141
+  "key": "dc7d87cf-2711-4b44-b77e-8f6d71e5368e"
 }

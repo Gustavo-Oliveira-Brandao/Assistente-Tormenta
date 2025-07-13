@@ -1,6 +1,6 @@
 {
   "nome": "Bênção",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Aliados",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta os bônus em +1, limitado pelo círculo máximo de magia que você pode lançar."
     }
   ],
-  "key": 12
+  "key": "881915c0-dd3a-4d98-9d0e-74c31647bde5"
 }

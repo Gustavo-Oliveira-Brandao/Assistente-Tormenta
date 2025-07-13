@@ -1,6 +1,6 @@
 {
   "nome": "Enxame Rubro de Ichabod",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "1 enxame Grande (quadrado de 3m);",
@@ -38,5 +38,5 @@
       "descricao": "o enxame inclui parasitas inchados que explodem e criam novos enxames. No início de cada um de seus turnos, role 1d6. Em um resultado 5 ou 6, um novo enxame surge adjacente a um já existente à sua escolha. Você pode mover todos os enxames com uma única ação de movimento, mas eles não podem ocupar o mesmo espaço. Requer 4º círculo."
     }
   ],
-  "key": 119
+  "key": "d0bbd4d3-90b6-4f04-a452-8c3cf7e537f8"
 }

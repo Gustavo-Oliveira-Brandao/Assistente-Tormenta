@@ -1,6 +1,6 @@
 {
   "nome": "Soco de Arsenal",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o tipo do dano para essência."
     }
   ],
-  "key": 100
+  "key": "476d48e7-5027-4b17-acbc-2d16fb0bf9b1"
 }

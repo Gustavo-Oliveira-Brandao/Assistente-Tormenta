@@ -1,6 +1,6 @@
 {
   "nome": "Projetar Consciência",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "local ou criatura conhecidos",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "além do normal, sua projeção é capaz de lançar magias que não precisem de componentes materiais e tenham duração diferente de sustentada. Sua forma fantasmagórica funciona como na magia Forma Etérea, sendo afetada por magias de abjuração e essência, mas as magias que ela lança podem afetar criaturas corpóreas."
     }
   ],
-  "key": 198
+  "key": "649850c7-cc86-40e6-b8d3-900bdda0d660"
 }

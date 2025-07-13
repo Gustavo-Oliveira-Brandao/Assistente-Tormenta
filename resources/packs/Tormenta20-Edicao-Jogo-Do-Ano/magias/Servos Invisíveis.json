@@ -1,6 +1,6 @@
 {
   "nome": "Servos Invisíveis",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "criaturas conjuradas",
@@ -22,5 +22,5 @@
       "descricao": "você pode comandar os servos para realizar uma única tarefa no seu lugar. Em termos de jogo, eles passam automaticamente em um teste de perícia com CD máxima igual ao seu nível, +2 para cada servo conjurado. O tempo necessário para realizar a tarefa é o tempo do uso da perícia em questão. Requer 3º círculo"
     }
   ],
-  "key": 98
+  "key": "9fbe3811-b13b-4fc1-8b38-c435dee9bebf"
 }

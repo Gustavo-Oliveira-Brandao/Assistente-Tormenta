@@ -1,6 +1,6 @@
 {
   "nome": "Dardo Gélido",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta o número de alvos em +1 (total de alvos limitado pelo círculo máximo de magia que você pode lançar)."
     }
   ],
-  "key": 23
+  "key": "a07c22ab-0d79-472c-aa11-ffd174306c67"
 }

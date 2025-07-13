@@ -1,6 +1,6 @@
 {
   "nome": "Refúgio",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "domo com 6m de raio",
@@ -30,5 +30,5 @@
       "descricao": "em vez do normal, cria uma mansão extradimensional que comporta até 100 criaturas Médias, com quartos luxuosos, comida e bebida e dez servos fantasmagóricos (como na magia Servos Invisíveis). Descansar na mansão concede recuperação luxuosa (recupera PV e PM igual ao triplo do nível). A mansão tem uma única entrada, uma porta feita de luz. Você pode deixá-la visível ou invisível como uma ação livre e apenas criaturas escolhidas por você podem passar. Requer 4º círculo."
     }
   ],
-  "key": 93
+  "key": "faf82df5-854a-4f12-b1aa-9b08671fc790"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Queda Suave",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou objeto Grande ou menor",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "aumenta a categoria de tamanho do alvo em uma"
     }
   ],
-  "key": 43
+  "key": "1bf54e4a-3e5a-431a-a797-5bc88d0be785"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Animar Objetos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda a duração para permanente e adiciona componente material (prataria no valor de T$ 1.000). Você pode ter um máximo de objetos animados igual à metade do seu nível."
     }
   ],
-  "key": 149
+  "key": "a6dbd709-9455-49fb-b169-ef1a207e0e79"
 }

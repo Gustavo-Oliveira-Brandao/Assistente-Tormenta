@@ -1,6 +1,6 @@
 {
   "nome": "Camuflagem Ilusória",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alcance para curto e o alvo para criaturas escolhidas. Requer 4º círculo."
     }
   ],
-  "key": 65
+  "key": "7ec7ad3c-2a18-4a15-9a71-69d1300969a4"
 }

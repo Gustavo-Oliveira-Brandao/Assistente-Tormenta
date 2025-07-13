@@ -1,6 +1,6 @@
 {
   "nome": "Katana Celestial",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "linha de 60m ou duas linhas de 30m",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda a área para uma linha de 120m ou quatro linhas de 30m em direções opostas, formando um  “X”."
     }
   ],
-  "key": 192
+  "key": "f56ccc90-ea8f-4597-86f6-4c76c316f2ea"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Globo de Invulnerabilidade",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Você",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo."
     }
   ],
-  "key": 122
+  "key": "7d600708-67e6-4335-b395-07bd7c488aeb"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Aliado Animal",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 animal prestativo",
   "area": "",
   "efeito": "",
@@ -26,5 +26,5 @@
       "descricao": "muda o alvo para 2 animais prestativos. Cada animal funciona como um parceiro de um tipo diferente, e você pode receber a ajuda de ambos (mas ainda precisa seguir o limite de parceiros de acordo com o seu nível de personagem). Requer 4º círculo."
     }
   ],
-  "key": 58
+  "key": "7872b7a3-2e2a-4033-964a-0bf69deb26bb"
 }

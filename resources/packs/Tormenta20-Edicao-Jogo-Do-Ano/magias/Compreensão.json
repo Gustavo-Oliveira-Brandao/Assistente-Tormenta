@@ -1,6 +1,6 @@
 {
   "nome": "Compreensão",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou texto",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você pode falar, entender e escrever qualquer idioma. Requer 3º círculo."
     }
   ],
-  "key": 15
+  "key": "879dffbf-ee4a-4886-b2f3-8a8aff805cf8"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Duplicata Ilusória",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "cópia ilusória",
@@ -18,5 +18,5 @@
       "descricao": "cria uma cópia adicional."
     }
   ],
-  "key": 160
+  "key": "7cefa1bb-7af5-420e-8305-159f1bbe4327"
 }

@@ -1,11 +1,14 @@
 {
-  "key": 3,
+  "key": "776de05a-f540-40f0-a7f1-a7382cd04aac",
   "nome": "bardo",
   "icone": "bardo",
   "vidaInicial": 12,
   "vidaPorNivel": 3,
   "manaPorNivel": 4,
-  "pericias": ["atuacao", "reflexos"],
+  "pericias": [
+    "atuacao",
+    "reflexos"
+  ],
   "numeroPericiasExtras": 6,
   "periciasExtras": [
     "acrobacia",
@@ -31,5 +34,6 @@
       "categoria": "equipamento",
       "nome": "armas marciais"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

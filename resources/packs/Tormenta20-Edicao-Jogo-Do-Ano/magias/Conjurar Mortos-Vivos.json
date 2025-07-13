@@ -1,6 +1,6 @@
 {
   "nome": "Conjurar Mortos-Vivos",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "",
   "efeito": "6 mortos-vivos",
@@ -42,5 +42,5 @@
       "descricao": "em vez de esqueletos, conjura sombras. Requer 4º círculo."
     }
   ],
-  "key": 67
+  "key": "31602351-1777-4bff-96f4-19c0c4ce2b1f"
 }

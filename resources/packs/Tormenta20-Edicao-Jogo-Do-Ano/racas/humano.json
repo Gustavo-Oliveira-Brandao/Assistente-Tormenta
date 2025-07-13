@@ -1,5 +1,5 @@
 {
-  "key": 1,
+  "key": "795a257f-32aa-4521-b027-7fec1016353a",
   "nome": "humano",
   "icone": "humano",
   "descricao": "O povo mais numeroso em Arton, humanos são considerados os escolhidos dos deuses, aqueles que governam o mundo. Em sua variedade e adaptabilidade, são encontrados em quase todos os pontos do continente – dos vales férteis do Reinado às vastidões áridas do Deserto da Perdição. São exploradores e desbravadores ambiciosos, sempre buscando algo além.",
@@ -17,7 +17,6 @@
       "valor": 1
     }
   ],
-
   "tipo": "humanoide",
   "deslocamentos": {
     "caminhada": 9,
@@ -27,5 +26,6 @@
     "natacao": 0,
     "plana": false
   },
-  "tamanho": "medio"
+  "tamanho": "medio",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

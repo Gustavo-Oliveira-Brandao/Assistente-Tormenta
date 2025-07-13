@@ -1,6 +1,6 @@
 {
   "nome": "Dissipar Magia",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou 1 objeto mágico",
   "area": "ou esfera com 3m de raio",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "muda a área para esfera com 9m de raio. Em vez do normal, cria um efeito de disjunção. Todas as magias na área são automaticamente dissipadas e todos os itens mágicos na área, exceto aqueles que você estiver carregando, viram itens mundanos por uma cena (com direito a um teste de resistência para evitar esse efeito). Requer 5º círculo."
     }
   ],
-  "key": 73
+  "key": "81bab755-d208-4e25-85c3-eb26010e8770"
 }

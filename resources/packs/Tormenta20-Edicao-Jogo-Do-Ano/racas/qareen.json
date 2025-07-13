@@ -1,5 +1,5 @@
 {
-  "key": 8,
+  "key": "a0960b06-e351-4df2-92dc-96c921903ba7",
   "nome": "qareen",
   "icone": "qareen",
   "descricao": "Descendentes de poderosos gênios, os qareen são otimistas, generosos e prestativos, sempre ansiosos por ajudar. Consideram-se abençoados pela Deusa da Magia, exibindo como evidência a marca de Wynna em seus corpos. Sua magia é mais poderosa quando usada para realizar desejos de outros.",
@@ -17,7 +17,6 @@
       "valor": -1
     }
   ],
-
   "deslocamentos": {
     "caminhada": 9,
     "voo": 0,
@@ -27,5 +26,6 @@
     "plana": false
   },
   "tipo": "humanoide",
-  "tamanho": "medio"
+  "tamanho": "medio",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

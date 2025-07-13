@@ -1,6 +1,6 @@
 {
   "nome": "Ligação Telepática",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "2 criaturas voluntárias",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "muda o alvo para 1 criatura. Em vez do normal, você cria um elo mental que permite que você veja e ouça pelos sentidos da criatura, se gastar uma ação de movimento. Uma criatura involuntária pode fazer um teste de Vontade para suprimir a magia por uma hora. Requer 3º círculo."
     }
   ],
-  "key": 81
+  "key": "da47d13c-5e8b-4ac7-8aa8-2443e8977f37"
 }

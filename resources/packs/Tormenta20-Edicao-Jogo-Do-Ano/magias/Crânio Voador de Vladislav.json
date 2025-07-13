@@ -1,6 +1,6 @@
 {
   "nome": "Crânio Voador de Vladislav",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta o número de alvos em +1."
     }
   ],
-  "key": 70
+  "key": "9a43369b-c825-4078-af8e-99895dd52aff"
 }

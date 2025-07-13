@@ -1,6 +1,6 @@
 {
   "nome": "Perdição",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "Criaturas Escolhidas",
   "area": "",
   "efeito": "",
@@ -18,5 +18,5 @@
       "descricao": "aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar."
     }
   ],
-  "key": 39
+  "key": "a0d0081b-561e-4ec9-ae35-9c8b39d36888"
 }

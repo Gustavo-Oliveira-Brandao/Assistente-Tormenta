@@ -1,11 +1,14 @@
 {
-  "key": 6,
+  "key": "bea79dfb-9e8e-4c3a-9e9b-0fb012a2c94d",
   "nome": "cavaleiro",
   "icone": "cavaleiro",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
   "manaPorNivel": 3,
-  "pericias": ["fortitude", "luta"],
+  "pericias": [
+    "fortitude",
+    "luta"
+  ],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "adestramento",
@@ -32,5 +35,6 @@
       "categoria": "equipamento",
       "nome": "escudos"
     }
-  ]
+  ],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
 }

@@ -1,6 +1,6 @@
 {
   "nome": "Físico Divino",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "em vez do normal, o alvo recebe +4 nos três atributos físicos. Requer 5º círculo."
     }
   ],
-  "key": 77
+  "key": "2d704893-4a73-4bae-b3e6-84087443ddb5"
 }

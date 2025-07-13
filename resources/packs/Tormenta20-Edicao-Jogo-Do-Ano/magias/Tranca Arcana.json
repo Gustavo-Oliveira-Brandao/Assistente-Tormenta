@@ -1,6 +1,6 @@
 {
   "nome": "Tranca Arcana",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 objeto Grande ou menor",
   "area": "",
   "efeito": "",
@@ -30,5 +30,5 @@
       "descricao": "muda o alvo para 1 objeto de qualquer tamanho, podendo afetar até mesmo os portões de um castelo. Requer 3º círculo."
     }
   ],
-  "key": 52
+  "key": "708a468a-8c52-4c0a-8e36-53ecd4c24937"
 }

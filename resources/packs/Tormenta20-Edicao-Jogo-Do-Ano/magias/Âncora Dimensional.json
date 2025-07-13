@@ -1,6 +1,6 @@
 {
   "nome": "Âncora Dimensional",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "1 criatura ou objeto",
   "area": "",
   "efeito": "",
@@ -34,5 +34,5 @@
       "descricao": "muda o alcance para médio, a área para esfera de 3m de raio e o alvo para criaturas escolhidas. Cria um fio de energia (veja acima) que prende todos os alvos ao centro da área."
     }
   ],
-  "key": 147
+  "key": "610ddbb0-9a91-4b8f-9e0f-f61705511411"
 }

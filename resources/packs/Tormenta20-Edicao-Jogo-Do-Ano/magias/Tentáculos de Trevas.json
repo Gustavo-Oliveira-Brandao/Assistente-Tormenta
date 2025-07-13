@@ -1,6 +1,6 @@
 {
   "nome": "Tentáculos de Trevas",
-  "publicacao": "Edição jogo do ano",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "alvo": "",
   "area": "esfera com 6m de raio",
   "efeito": "",
@@ -22,5 +22,5 @@
       "descricao": "aumenta o dano dos tentáculos em +2d6."
     }
   ],
-  "key": 142
+  "key": "02de03da-2101-4845-83ff-a04e2ddd442d"
 }

@@ -1199,5 +1199,197 @@
         "atributo": "Nenhum"
       }
     ]
+  },
+  {
+    "nome": "Armadura acolchoada",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras leves",
+    "espacos": 2,
+    "preco": 5,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 1,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": 0,
+    "material": "comum"
+  },
+  {
+    "nome": "Armadura de couro",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras leves",
+    "espacos": 2,
+    "preco": 20,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 2,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": 0,
+    "material": "comum"
+  },
+  {
+    "nome": "Couro batido",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras leves",
+    "espacos": 2,
+    "preco": 35,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 3,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -1,
+    "material": "comum"
+  },
+  {
+    "nome": "Gibão de peles",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras leves",
+    "espacos": 2,
+    "preco": 25,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 4,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -3,
+    "material": "comum"
+  },
+  {
+    "nome": "Couraça",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras leves",
+    "espacos": 2,
+    "preco": 500,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 5,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -4,
+    "material": "comum"
+  },
+  {
+    "nome": "Brunea",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras pesadas",
+    "espacos": 5,
+    "preco": 50,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 5,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -2,
+    "material": "comum"
+  },
+  {
+    "nome": "Cota de malha",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras pesadas",
+    "espacos": 5,
+    "preco": 150,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 6,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -2,
+    "material": "comum"
+  },
+  {
+    "nome": "Loriga segmentada",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras pesadas",
+    "espacos": 5,
+    "preco": 250,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 7,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -3,
+    "material": "comum"
+  },
+  {
+    "nome": "Meia armadura",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras pesadas",
+    "espacos": 5,
+    "preco": 600,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 8,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -4,
+    "material": "comum"
+  },
+  {
+    "nome": "Armadura completa",
+    "categoria": "armadura",
+    "equipado": false,
+    "proficiencia": "armaduras pesadas",
+    "espacos": 5,
+    "preco": 3000,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 10,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -5,
+    "material": "comum"
+  },
+  {
+    "nome": "Escudo leve",
+    "categoria": "escudo",
+    "equipado": false,
+    "proficiencia": "escudos",
+    "espacos": 1,
+    "preco": 5,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 1,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -1,
+    "material": "comum"
+  },
+  {
+    "nome": "Escudo pesado",
+    "categoria": "escudo",
+    "equipado": false,
+    "proficiencia": "escudos",
+    "espacos": 2,
+    "preco": 15,
+    "quantidade": 1,
+    "armadura": {
+      "defesa": 2,
+      "bonus": 0,
+      "maxAtributoDefesa": 99
+    },
+    "penalidadeArmadura": -2,
+    "material": "comum"
   }
 ]

@@ -1391,5 +1391,1111 @@
     },
     "penalidadeArmadura": -2,
     "material": "comum"
+  },
+  {
+    "nome": "Água Benta",
+    "descricao": "Produzida com a magia Abençoar Alimentos, esta água sagrada é um poderoso recurso na luta contra o mal. Para usar a água benta, você gasta uma ação padrão e escolhe um morto-vivo ou abissal em alcance curto (a água benta é inofensiva contra outras criaturas). O alvo sofre 2d10 pontos de dano de luz (Reflexos CD Sab reduz à metade).",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "alcance": "curto",
+    "preco": 10,
+    "quantidade": 1,
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 10,
+        "tipo": "luz",
+        "bonus": 0,
+        "atributo": "Sabedoria"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Algemas",
+    "descricao": "Um par de algemas para criaturas Médias. Prender uma criatura que não esteja indefesa exige empunhar a algema, agarrar o alvo (veja “Manobras de Combate”, no Capítulo 5) e vencer um novo teste de agarrar contra ela. Você pode prender os dois pulsos da pessoa (–5 em testes que exijam o uso das mãos, impede conjuração) ou um dos pulsos dela em um objeto imóvel adjacente, caso haja, para impedir que ela se mova. Escapar das algemas exige uma ação completa e um teste de Acrobacia contra CD 30 ou de Força contra CD 25 — ou ter as chaves...",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 15,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Arpéu",
+    "descricao": "Um gancho de aço amarrado na ponta de uma corda para se fixar em muros, janelas, parapeitos de prédios... Prender um arpéu exige um teste de Pontaria (CD 15). Subir um muro com a ajuda de uma corda fornece +5 no teste de Atletismo.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 5,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Bandoleira de Poções",
+    "descricao": "Um cinto de couro com bolsos que comportam pequenos frascos. Se você estiver vestindo uma bandoleira, pode sacar itens alquímicos e poções como uma ação livre.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Barraca",
+    "descricao": "Esta barraca de lona conta como um saco de dormir para duas pessoas e fornece +2 em testes de Sobrevivência para acampar.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Corda",
+    "descricao": "Um rolo com 10 metros de corda de cânhamo, o mesmo tipo usado em navios. Possui diversas utilidades: pode ajudar a descer um buraco ou muro (+5 em testes de Atletismo nessas situações), amarrar pessoas etc. Dar um nó firme ou especial (por exemplo, capaz de deslizar, se desfazer com um puxão etc.) exige um teste de Destreza (CD 15). Arrebentar a corda exige 2 pontos de dano de corte ou uma ação padrão e um teste de Força (CD 20).",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 1,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Espelho",
+    "descricao": "Este pequeno espelho possui diversas utilidades: observar cantos, fazer sinais de luz e, claro, garantir que você esteja apresentável.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Lampião",
+    "descricao": "Um cilindro com uma alça e duas portinholas. Uma chama alimentada por óleo é acesa dentro do cilindro e uma das portinholas aberta deixa a luz sair. Acender um lampião é uma ação padrão e sua luz ilumina um raio com 15m. Carregar um lampião com óleo é uma ação padrão e ele dura uma cena.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 7,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Mochila",
+    "descricao": "Uma bolsa de lona com tiras para ser carregada nas costas. Não conta como item vestido.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0,
+    "preco": 2,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Mochila de Aventureiro",
+    "descricao": "Feita de couro resistente, esta mochila é repleta de bolsos para prender equipamento. Vestir uma mochila de aventureiro aumenta sua capacidade de carga em 2 espaços (ela própria não gasta um espaço).",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0,
+    "preco": 50,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Óleo",
+    "descricao": "Um frasco com óleo inflamável para lampião. Você pode atirar o frasco em uma criatura em alcance curto com uma ação padrão. Se ela sofrer dano de fogo até o fim do seu próximo turno, sofre 1d6 pontos de dano extra e fica em chamas.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "alcance": "curto",
+    "preco": 0.1,
+    "quantidade": 1,
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "fogo",
+        "bonus": 0,
+        "atributo": "Destreza"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Organizador de Pergaminhos",
+    "descricao": "Um estojo de madeira ou couro rígido. Se você estiver vestindo um organizador de pergaminhos, pode sacar pergaminhos como uma ação livre.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 25,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Pé de Cabra",
+    "descricao": "Esta barra de ferro fornece +5 em testes de Força para abrir portas, janelas e baús fechados. Um pé de cabra pode ser usado como arma, com as estatísticas de uma clava.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "preco": 2,
+    "quantidade": 1,
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Saco de Dormir",
+    "descricao": "Um colchão com uma coberta fina o bastante para ser enrolada e amarrada, é especialmente útil para aventureiros, que nunca sabem onde vão passar a noite. Dormir ao relento sem um acampamento e um saco de dormir diminui sua recuperação de PV e PM (veja a página 106).",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 1,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Símbolo Sagrado",
+    "descricao": "Um medalhão de madeira ou metal com o símbolo de uma divindade. Se você estiver vestindo (normalmente com uma corrente ao redor do pescoço) ou empunhando o símbolo sagrado de um deus do qual é devoto, recebe +1 em testes de resistência.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 5,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Tocha",
+    "descricao": "Um bastão de madeira com algum combustível na ponta (geralmente trapos embebidos em parafina). Acender uma tocha é uma ação padrão. Ela ilumina um raio de 9m e dura uma cena. Pode ser usada como uma arma simples leve (dano 1d4 de impacto mais 1 de fogo, crítico x2).",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "preco": 0.1,
+    "quantidade": 1,
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 4,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      },
+      {
+        "quantidade": 0,
+        "dado": 0,
+        "tipo": "fogo",
+        "bonus": 1,
+        "atributo": "Nenhum"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Vara de Madeira (3m)",
+    "descricao": "Uma haste com 3m de comprimento. Útil para alcançar pontos distantes, mas frágil demais para servir como arma.",
+    "categoria": "equipamento de aventura",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 0.2,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Alaúde Élfico",
+    "descricao": "Feito com madeira de alta qualidade e manufatura delicada, este alaúde gera notas vívidas e emocionantes. Enquanto empunha este item, você pode usar a habilidade Inspiração como uma ação de movimento. Conta como um instrumento musical.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 300,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Coleção de Livros",
+    "descricao": "Uma pequena coleção de tomos e tratados sobre um assunto. Fornece +1 em Conhecimento, Guerra, Misticismo, Nobreza ou Religião (definido quando o item é comprado ou fabricado).",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 75,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Equipamento de Viagem",
+    "descricao": "Um saco de lona contendo instrumentos úteis para sobreviver nos ermos, como pederneira (pedra para fazer fogo), panelas e talheres para cozinhar, anzól e linha para pescar e uma pequena pá. Um personagem sem este item sofre –5 em testes de Sobrevivência para fazer um acampamento. Não inclui saco de dormir ou barraca.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Estojo de Disfarces",
+    "descricao": "Um conjunto de cosméticos, tintas para cabelo e algumas próteses simples (como bigodes e narizes falsos). Um personagem sem este item sofre –5 em testes de Enganação para disfarce.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 50,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Flauta Mística",
+    "descricao": "Um instrumento delicado, repleto de runas e pequenas gemas místicas. Um bardo que empunhe este item aumenta a CD para resistir às magias lançadas por ele em +1. Conta como um instrumento musical.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 150,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Gazua",
+    "descricao": "Uma barra fina de ferro, com a ponta torta ou em forma de gancho. Um personagem sem este item sofre –5 em testes de Ladinagem para abrir fechaduras.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 5,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Instrumentos de Ofício",
+    "descricao": "Existe uma versão deste item para cada perícia de Ofício. Por exemplo, martelo, pregos e serrote para Ofício (carpinteiro), pergaminhos em branco, tinta e pena para Ofício (escriba) e assim por diante. Um personagem sem os instrumentos de seu Ofício sofre –5 nessa perícia.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Instrumento Musical",
+    "descricao": "Um instrumento típico, como um bandolim, flauta ou lira. Você precisa empunhar um instrumento musical com as duas mãos para receber seus benefícios e para usar Músicas de Bardo. Instrumentos musicais podem ser usados como esotéricos por bardos (permitindo que lance magias usando a mão que empunha o instrumento). Instrumentos musicais podem receber melhorias de ferramentas (contam como itens ligados a Atuação) e de esotéricos (mas afetam apenas magias lançadas por bardos).",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 35,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Luneta",
+    "descricao": "Este instrumento valioso consiste de um cilindro metálico com duas lentes. Fornece +5 em testes de Percepção para observar coisas em alcance longo ou além.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 100,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Maleta de Medicamentos",
+    "descricao": "Caixa de madeira com ervas, unguentos, bandagens e outros materiais úteis. Um personagem sem este item sofre –5 em Cura.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 50,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Sela",
+    "descricao": "Uma peça de couro e pelego colocada sobre o lombo da montaria, sobre a qual o cavaleiro se senta. Inclui arreios para conduzir o animal. Um personagem montado em uma montaria sem sela sofre –5 em testes de Cavalgar. Usada no animal, a sela não ocupa espaço de carga do personagem.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Tambor das Profundezas",
+    "descricao": "Um instrumento típico de anões de Doherimm, capaz de sons graves e retumbantes. Enquanto empunha este item, o alcance da habilidade Inspiração e de qualquer Música de Bardo é dobrado. Conta como um instrumento musical.",
+    "categoria": "ferramenta",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 80,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Andrajos de Aldeão",
+    "descricao": "Roupas típicas de camponês. Consiste de camisa larga e calças soltas ou blusa e saia e não inclui botas — os mais pobres andam descalços. Fornece +2 em testes de Investigação para interrogar (ninguém se importa com o que um aldeão escuta) e, se você possuir o poder Aparência Inofensiva, a CD para resistir a ele aumenta em +2. Porém, impõe –2 em perícias baseadas em Carisma contra pessoas que se importam com classe social.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 1,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Bandana",
+    "descricao": "Um lenço tipicamente usado por bandidos e piratas. Fornece +1 em Intimidação.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 5,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Botas Reforçadas",
+    "descricao": "Grossas e resistentes, estas botas de cano alto protegem contra perigos do terreno. Aumentam seu deslocamento em +1,5m se ele for reduzido por terreno difícil (após a redução).",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Camisa Bufante",
+    "descricao": "Blusa colorida, com mangas e golas longas e encrespadas. Fornece +1 em Atuação.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 25,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Capa Esvoaçante",
+    "descricao": "Favorita entre heróis ousados, esta capa de seda produz movimentos amplos e chamativos, que fornecem +1 em Enganação.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 25,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Capa Pesada",
+    "descricao": "Uma capa de couro grossa e resistente. Protege e aquece o corpo, fornecendo +1 em Fortitude.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 15,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Casaco Longo",
+    "descricao": "Feito de peles ou couro grosso forrado com lã, e impermeabilizado com óleo, este casaco é quente e pesado. Fornece +5 em testes de Fortitude para resistir a efeitos de frio, mas impõe penalidade de armadura de –2.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 1,
+    "penalidadeArmadura": -2,
+    "material": "comum"
+  },
+  {
+    "nome": "Chapéu Arcano",
+    "descricao": "Com pinturas e bordados de símbolos místicos, este chapéu pontudo ajuda a canalizar energias mágicas. Ele fornece +1 ponto de mana, mas apenas se você possuir a habilidade de classe Caminho do Arcanista.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 50,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Enfeite de Elmo",
+    "descricao": "Um adorno chamativo, como crina de cavalo, plumas, asas ou um totem de animal. Fornece resistência a medo +2.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 15,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Farrapos de Ermitão",
+    "descricao": "Trapos “adornados” com plantas e raízes. Uma pessoa vestindo farrapos de ermitão não parece muito civilizada, e sofre –2 em Diplomacia e em testes de Investigação para interrogar. Entretanto, recebe +2 em Adestramento.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 1,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Gorro de Ervas",
+    "descricao": "Formado por duas camadas de tecido, este chapéu é preenchido com ervas preparadas para auxiliar a concentração do usuário. Fornece +1 em Vontade.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 75,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Luva de Pelica",
+    "descricao": "Estas luvas delicadas preservam o tato e impedem que o suor deixe os dedos escorregadios. Fornecem +1 em Ladinagem.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 5,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Manopla",
+    "descricao": "Luva metálica que permite socos mais perigosos — o dano de seus ataques desarmados torna-se letal. Uma manopla conta como uma arma para receber melhorias e encantos para usá-los em seus ataques desarmados.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Manto Camuflado",
+    "descricao": "Um manto camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, na página 51). Por exemplo, um manto camuflado para floresta pode ser verde e marrom e coberto de folhas, enquanto um manto urbano pode ser cinza ou negro. Usar um manto camuflado no terreno correto fornece +2 em Furtividade.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 12,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Manto Eclesiástico",
+    "descricao": "Um manto típico de igrejas e templos. Fornece +1 em Religião.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Robe Místico",
+    "descricao": "Um manto longo, adornado com temas arcanos. Fornece +1 em Misticismo.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 50,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Sapatos de Camurça",
+    "descricao": "Leves e resistentes, aprimoram o equilíbrio e a firmeza dos pés, fornecendo +1 em Acrobacia.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 8,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Tabardo",
+    "descricao": "Uma peça de tecido usada como um colete, cobrindo o peito e as costas. Geralmente ostenta a heráldica de um reino, igreja, casa nobre ou ordem de cavaleiros. Fornece +1 em Diplomacia.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Traje da Corte",
+    "descricao": "Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza. Inclui algumas joias, como aneis e colares. Em certos ambientes (um baile, um salão de palácio), um personagem que não esteja vestindo este item sofre –5 em perícias baseadas em Carisma.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 100,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Traje de Viajante",
+    "descricao": "Inclui botas, calças ou saias, cinto, camisa de linho e capa com capuz. A roupa padrão de aventureiros.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0,
+    "preco": 10,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Veste de Seda",
+    "descricao": "Esta roupa leve e elegante deixa seus movimentos os mais livres possíveis. Fornece +1 em Reflexos.",
+    "categoria": "vestuário",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 25,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Bolsa de Pó",
+    "descricao": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 300,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Cajado Arcano",
+    "descricao": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 2,
+    "preco": 1000,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Cetro Elemental",
+    "descricao": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 750,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Costela de Lich",
+    "descricao": "Esta varinha é feita a partir do osso de um morto-vivo. Quando lança uma magia, ela causa +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 300,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Dedo de Ente",
+    "descricao": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 200,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Luva de Ferro",
+    "descricao": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 150,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Medalhão de Prata",
+    "descricao": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em –1 PM o custo de magias de alcance pessoal.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 750,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Orbe Cristalino",
+    "descricao": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 750,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Tomo Hermético",
+    "descricao": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 1500,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Varinha Arcana",
+    "descricao": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1.",
+    "categoria": "esotérico",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 100,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Ácido",
+    "descricao": "Frasco de vidro contendo um ácido alquímico altamente corrosivo. Para usar o ácido, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 2d4 pontos de dano de ácido (Reflexos CD Des reduz à metade).",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "alcance": "curto",
+    "preco": 10,
+    "quantidade": 1,
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 4,
+        "tipo": "ácido",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Bálsamo Restaurador",
+    "descricao": "Uma pasta verde e fedorenta, feita de ervas medicinais. Usá-la é uma ação completa e recupera 2d4 pontos de vida.",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 10,
+    "quantidade": 1,
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 4,
+        "tipo": "cura",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Bomba",
+    "descricao": "Uma granada rudimentar. Para usar a bomba, você precisa empunhá-la, gastar uma ação de movimento para acender seu pavio e uma ação padrão para arremessá-la em um ponto em alcance curto. Criaturas a até 3m desse ponto sofrem 6d6 pontos de dano de impacto (Reflexos CD Des reduz à metade).",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "alcance": "curto",
+    "preco": 50,
+    "quantidade": 1,
+    "danos": [
+      {
+        "quantidade": 6,
+        "dado": 6,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Cosmético",
+    "descricao": "Perfume ou maquiagem. Usá-lo é uma ação completa e fornece +2 em testes de perícias baseadas em Carisma até o fim da cena.",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Elixir do Amor",
+    "descricao": "Um humanoide que beba este líquido adocicado fica apaixonado pela primeira criatura que enxergar (condição enfeitiçado; Vontade CD Car anula). O efeito dura 1d3 dias.",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 100,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Essência de Mana",
+    "descricao": "Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal. Beber a essência de mana é uma ação padrão e recupera 1d4 pontos de mana.",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 50,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Fogo Alquímico",
+    "descricao": "Frasco de cerâmica contendo uma substância que entra em combustão em contato com o ar. Para usar o fogo alquímico, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 1d6 pontos de dano de fogo e fica em chamas. Um teste de Reflexos (CD Des) reduz o dano à metade e evita as chamas.",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "alcance": "curto",
+    "preco": 10,
+    "quantidade": 1,
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "fogo",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ],
+    "material": "comum"
+  },
+  {
+    "nome": "Pó do Desaparecimento",
+    "descricao": "Uma criatura ou objeto coberto por este pó torna-se invisível (como em Invisibilidade) por 2d6 rodadas. O usuário não sabe quando a invisibilidade vai terminar.",
+    "categoria": "alquímico - preparado",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 100,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Baga-de-Fogo",
+    "descricao": "Pequeno fruto vermelho, apreciado por seu sabor picante. Usado como catalisador, adiciona +1d6 de dano de fogo a magias.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Dente-de-Dragão",
+    "descricao": "Uma flor comum em regiões montanhosas, especialmente nas Sanguinárias, possui formato parecido com uma presa de monstro. Suas propriedades místicas aumentam o dano de magias em um dado do mesmo tipo.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 45,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Essência Abissal",
+    "descricao": "Um líquido espesso, produzido através do sangue de criaturas demoníacas. Aumenta os dados de dano de magias de fogo em uma categoria — d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (o máximo).",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 150,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Líquen Lilás",
+    "descricao": "Esta estranha planta tem aspecto cristalino e cresce em abundância na região das Uivantes. Adiciona +1d6 de dano de frio a magias.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Musgo Púrpura",
+    "descricao": "Encontrado em florestas fechadas, esse fungo cintilante possui propriedades que fornecem +2 na CD de magias de ilusão.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 45,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Ossos de Monstro",
+    "descricao": "Pequenas falanges de criaturas monstruosas, tratadas com óleos alquímicos. Fornece +2 na CD de magias de necromancia.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 45,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Pó de Cristal",
+    "descricao": "Uma pitada de pó de um mineral cristalino puro, como quartzo ou topázio. Diminui o custo de magias de encantamento em –1 PM.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Pó de Giz",
+    "descricao": "Calcário esmagado em pó, uma substância comum que, usada como catalisador, diminui o custo de magias de convocação em –1 PM.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Ramo Verdejante",
+    "descricao": "Esta combinação de ervas potencializa magias de cura, aumentando sua cura em +1 PV por dado.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 45,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Saco de Sal",
+    "descricao": "Um pequeno saco de couro com sal marinho. Fornece +2 na CD de magias de abjuração.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 45,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Seixo de Âmbar",
+    "descricao": "Essa “gema” feita de seiva de árvore fossilizada diminui o custo de magias de transmutação em –1 PM.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Terra de Cemitério",
+    "descricao": "Um punhado de terra cinzenta, colhida à noite de um cemitério. Adiciona +1d6 de dano de trevas a magias.",
+    "categoria": "alquímico - catalisador",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Beladona",
+    "descricao": "Planta extremamente tóxica que afeta o sistema nervoso da vítima. Ingestão, vítima fica paralisada (lenta) por 3 rodadas. A CD para fabricar e para resistir a este veneno aumenta em +5.",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 1500,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Bruma Sonolenta",
+    "descricao": "Um gás sonífero. Inalação, vítima fica inconsciente (enjoada por 1 rodada).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 150,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Cicuta",
+    "descricao": "Planta cuja ingestão pode causar náusea, dores e até morte. Ingestão, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 60,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Essência de Sombra",
+    "descricao": "Produzido a partir de compostos alquímicos que canalizam energia de trevas. Contato, vítima fica debilitada (fraca).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 100,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Névoa Tóxica",
+    "descricao": "Este gás verde queima e corrói a pele e os pulmões. Inalação, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 30,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Peçonha Comum",
+    "descricao": "Veneno típico, extraído de animais ou plantas tóxicas. Contato, perde 1d12 PV.",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 15,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Peçonha Concentrada",
+    "descricao": "Dose concentrada da peçonha comum. Contato, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 90,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Peçonha Potente",
+    "descricao": "Veneno poderoso, extraído de animais ou plantas perigosos. Contato, perde 2d12 PV por rodada durante 3 rodadas (perde 2d12 PV).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 600,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Pó de Lich",
+    "descricao": "Veneno letal, usado para assassinar alvos poderosos. Ingestão, perde 4d12 PV por rodada durante 5 rodadas (perde 4d12 PV). A CD para fabricar e para resistir a este veneno aumenta em +5.",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 3000,
+    "quantidade": 1,
+    "material": "comum"
+  },
+  {
+    "nome": "Riso de Nimb",
+    "descricao": "Este gás púrpura faz a vítima rir descontroladamente e agir de forma caótica. Inalação, vítima fica confusa (lenta por 1 rodada).",
+    "categoria": "alquímico - veneno",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 0.5,
+    "preco": 150,
+    "quantidade": 1,
+    "material": "comum"
   }
 ]

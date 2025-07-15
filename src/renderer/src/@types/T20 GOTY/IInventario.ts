@@ -18,10 +18,10 @@ export type IEquipamento = {
   nome: string
   descricao?: string
   categoria: string
-  carregado: boolean
   equipado?: boolean
-  proficiencia?: string
+  proficiencia: string
   espacos: number
+  alcance?: string
   preco: number
   quantidade: number
   vidaMaxima?: number
@@ -31,29 +31,35 @@ export type IEquipamento = {
   penalidadeArmadura?: number
   publicacao?: string
   material?: string
-  arma?: IArma
+  ataque?: IAtaque
+  danos?: IDano[]
   armadura?: IArmadura
   propriedades?: IPropriedade[]
 }
 
-export type IArma = {
-  alcance: string
+export type IAtaque = {
   proposito: string
-  recarga?: string
   bonusAcerto: number
   periciaAcerto: string
-  danos: IDano[]
   margemCritico: number
   multiplicadorCritico: number
 }
 
 export type IArmadura = {
-  bonusDefesa?: number
-  maxAtributoDefesa?: number
+  defesa: number
+  bonus: number
+  maxAtributoDefesa: number
 }
 
 export type IPropriedade = {
   id: number
   nome: string
   categoria: string
+}
+
+export type IResistencia = {
+  atributoCD: string
+  cdFixo?: number
+  periciaCD: string
+  bonusCD: number
 }

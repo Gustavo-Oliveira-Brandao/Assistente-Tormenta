@@ -1,0 +1,1203 @@
+[
+  {
+    "nome": "Adaga",
+    "descricao": "Esta faca afiada é usada por muitos habitantes adultos do Reinado, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +5 em testes de Ladinagem para ocultá-la). Quando ataca com uma adaga, você pode usar sua Destreza em vez de Força nos testes de ataque. Uma adaga pode ser arremessada.",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "alcance": "curto",
+    "preco": 2,
+    "quantidade": 1,
+    "empunhadura": "leve",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 4,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Espada curta",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "empunhadura": "leve",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Foice",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "preco": 4,
+    "quantidade": 1,
+    "empunhadura": "leve",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "periciaAcerto": "luta",
+      "bonusAcerto": 0,
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Clava",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "preco": 0,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "bonus": 0,
+        "tipo": "impacto",
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Lança",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "alcance": "curto",
+    "preco": 2,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Maça",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "preco": 12,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Bordão",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 2,
+    "preco": 0,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      },
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Pique",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 2,
+    "preco": 2,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Tacape",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 2,
+    "preco": 0,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 10,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Azagaia",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "alcance": "medio",
+    "preco": 1,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Besta leve",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "alcance": "medio",
+    "preco": 35,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  },
+  {
+    "nome": "Virotes",
+    "descricao": "(20 unidades)",
+    "categoria": "munição",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 2,
+    "quantidade": 20,
+    "empunhadura": "nenhuma",
+    "material": "comum"
+  },
+  {
+    "nome": "Funda",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 1,
+    "alcance": "medio",
+    "preco": 0,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 4,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  },
+  {
+    "nome": "Pedras",
+    "descricao": "(20 unidades)",
+    "categoria": "munição",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 0.5,
+    "quantidade": 20,
+    "empunhadura": "nenhuma",
+    "material": "comum"
+  },
+  {
+    "nome": "Arco curto",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas simples",
+    "espacos": 2,
+    "alcance": "medio",
+    "preco": 30,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  },
+  {
+    "nome": "Flechas",
+    "descricao": "(20 unidades)",
+    "categoria": "munição",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 1,
+    "quantidade": 20,
+    "empunhadura": "nenhuma",
+    "material": "comum"
+  },
+  {
+    "nome": "Machadinha",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "alcance": "curto",
+    "preco": 6,
+    "quantidade": 1,
+    "empunhadura": "leve",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Cimitarra",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 15,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 18,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Espada longa",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 15,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Florete",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 18,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Machado de batalha",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 10,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Mangual",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 8,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Martelo de guerra",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 12,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Picareta",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "preco": 8,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 4
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Tridente",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 1,
+    "alcance": "curto",
+    "preco": 15,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Alabarda",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 10,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 10,
+        "tipo": "corte/perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Alfange",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 75,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 18,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 4,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Gadanho",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 18,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 4
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 4,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Lança montada",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 10,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Machado de guerra",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 20,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 12,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Marreta",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 20,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 3,
+        "dado": 4,
+        "tipo": "impacto",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Montante",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "preco": 50,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 6,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Arco longo",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "alcance": "medio",
+    "preco": 100,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  },
+  {
+    "nome": "Besta pesada",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas marciais",
+    "espacos": 2,
+    "alcance": "medio",
+    "preco": 50,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 12,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  },
+  {
+    "nome": "Chicote",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 1,
+    "preco": 2,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 3,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Espada bastarda",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 1,
+    "preco": 35,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 10,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      },
+      {
+        "quantidade": 1,
+        "dado": 12,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Katana",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 1,
+    "preco": 100,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 8,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      },
+      {
+        "quantidade": 1,
+        "dado": 10,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Machado anão",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 1,
+    "preco": 30,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 1,
+        "dado": 10,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Corrente de espinhos",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 2,
+    "preco": 25,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 19,
+      "multiplicadorCritico": 2
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 4,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      },
+      {
+        "quantidade": 2,
+        "dado": 4,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Machado táurico",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 2,
+    "preco": 50,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "corpo a corpo",
+      "bonusAcerto": 0,
+      "periciaAcerto": "luta",
+      "margemCritico": 20,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 8,
+        "tipo": "corte",
+        "bonus": 0,
+        "atributo": "Força"
+      }
+    ]
+  },
+  {
+    "nome": "Rede",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas exóticas",
+    "espacos": 1,
+    "alcance": "curto",
+    "preco": 20,
+    "quantidade": 1,
+    "empunhadura": "1 mão",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 20,
+      "multiplicadorCritico": 1
+    },
+    "danos": []
+  },
+  {
+    "nome": "Pistola",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas de fogo",
+    "espacos": 1,
+    "alcance": "curto",
+    "preco": 250,
+    "quantidade": 1,
+    "empunhadura": "leve",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 19,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 6,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  },
+  {
+    "nome": "Balas",
+    "descricao": "(20 unidades)",
+    "categoria": "munição",
+    "equipado": false,
+    "proficiencia": "nenhuma",
+    "espacos": 1,
+    "preco": 20,
+    "quantidade": 20,
+    "empunhadura": "nenhuma",
+    "material": "comum"
+  },
+  {
+    "nome": "Mosquete",
+    "descricao": "",
+    "categoria": "arma",
+    "equipado": false,
+    "proficiencia": "armas de fogo",
+    "espacos": 2,
+    "alcance": "medio",
+    "preco": 500,
+    "quantidade": 1,
+    "empunhadura": "2 mãos",
+    "material": "comum",
+    "ataque": {
+      "proposito": "distancia",
+      "bonusAcerto": 0,
+      "periciaAcerto": "pontaria",
+      "margemCritico": 19,
+      "multiplicadorCritico": 3
+    },
+    "danos": [
+      {
+        "quantidade": 2,
+        "dado": 8,
+        "tipo": "perfuracao",
+        "bonus": 0,
+        "atributo": "Nenhum"
+      }
+    ]
+  }
+]

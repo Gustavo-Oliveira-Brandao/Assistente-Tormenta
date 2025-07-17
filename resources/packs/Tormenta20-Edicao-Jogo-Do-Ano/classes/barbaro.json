@@ -2,6 +2,7 @@
   "key": "a8f06251-4a96-4abe-86ba-38e3a563fe4f",
   "nome": "barbaro",
   "icone": "barbaro",
+  "devotoFiel": false,
   "vidaInicial": 24,
   "vidaPorNivel": 6,
   "manaPorNivel": 3,

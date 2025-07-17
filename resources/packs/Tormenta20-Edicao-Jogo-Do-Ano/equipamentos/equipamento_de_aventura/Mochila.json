@@ -1,0 +1,13 @@
+{
+  "nome": "Mochila",
+  "descricao": "Uma bolsa de lona com tiras para ser carregada nas costas. Não conta como item vestido.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0,
+  "preco": 2,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "fed5b5a0-aff8-4b77-b066-0bae6453d1bc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Capa Esvoaçante",
+  "descricao": "Favorita entre heróis ousados, esta capa de seda produz movimentos amplos e chamativos, que fornecem +1 em Enganação.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 25,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "bbcad50b-95e5-4f5c-91b6-57bdac220acc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

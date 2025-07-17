@@ -1,0 +1,14 @@
+{
+  "nome": "Virotes",
+  "descricao": "(20 unidades)",
+  "categoria": "munição",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 2,
+  "quantidade": 20,
+  "empunhadura": "nenhuma",
+  "material": "comum",
+  "key": "1a4124a1-a2b8-4dd8-9736-113b76239da0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

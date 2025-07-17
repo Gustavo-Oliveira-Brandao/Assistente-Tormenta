@@ -1,0 +1,13 @@
+{
+  "nome": "Flauta Mística",
+  "descricao": "Um instrumento delicado, repleto de runas e pequenas gemas místicas. Um bardo que empunhe este item aumenta a CD para resistir às magias lançadas por ele em +1. Conta como um instrumento musical.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 150,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "40d12900-3cf7-4cbe-a6dd-d6f87332d4e1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,23 @@
+{
+  "nome": "Bomba",
+  "descricao": "Uma granada rudimentar. Para usar a bomba, você precisa empunhá-la, gastar uma ação de movimento para acender seu pavio e uma ação padrão para arremessá-la em um ponto em alcance curto. Criaturas a até 3m desse ponto sofrem 6d6 pontos de dano de impacto (Reflexos CD Des reduz à metade).",
+  "categoria": "alquímico - preparado",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "alcance": "curto",
+  "preco": 50,
+  "quantidade": 1,
+  "danos": [
+    {
+      "quantidade": 6,
+      "dado": 6,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "material": "comum",
+  "key": "fae80959-136e-4a17-97ca-adb60cef688f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

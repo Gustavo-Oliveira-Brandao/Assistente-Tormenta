@@ -1,0 +1,13 @@
+{
+  "nome": "Andrajos de Aldeão",
+  "descricao": "Roupas típicas de camponês. Consiste de camisa larga e calças soltas ou blusa e saia e não inclui botas — os mais pobres andam descalços. Fornece +2 em testes de Investigação para interrogar (ninguém se importa com o que um aldeão escuta) e, se você possuir o poder Aparência Inofensiva, a CD para resistir a ele aumenta em +2. Porém, impõe –2 em perícias baseadas em Carisma contra pessoas que se importam com classe social.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 1,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "15cd0b73-ced5-42c9-a560-a2ed29fadd17",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

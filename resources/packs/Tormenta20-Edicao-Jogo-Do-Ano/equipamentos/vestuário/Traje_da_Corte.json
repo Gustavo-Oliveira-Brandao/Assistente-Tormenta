@@ -1,0 +1,13 @@
+{
+  "nome": "Traje da Corte",
+  "descricao": "Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza. Inclui algumas joias, como aneis e colares. Em certos ambientes (um baile, um salão de palácio), um personagem que não esteja vestindo este item sofre –5 em perícias baseadas em Carisma.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 100,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "f7a1c090-6450-4499-b8ce-069cb1161856",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

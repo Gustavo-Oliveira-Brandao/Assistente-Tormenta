@@ -1,0 +1,30 @@
+{
+  "nome": "Chicote",
+  "descricao": "Esta arma pode ser usada para atacar inimigos a até 4,5m e pode se enroscar nas mãos, pernas ou armas de seus adversários. O chicote é uma arma ágil e versátil, fornecendo +2 em testes para derrubar ou desarmar.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas exóticas",
+  "espacos": 1,
+  "preco": 2,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 3,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "941e1082-16e6-4e51-b3a2-97a4e61ea01e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

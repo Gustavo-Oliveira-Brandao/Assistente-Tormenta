@@ -4,8 +4,6 @@ import { useDispatch } from 'react-redux'
 import { useExibirTodosPersonagem } from '@renderer/hooks/selectors/usePersonagemQuery'
 import { useNavigate } from 'react-router-dom'
 import { selecionarPersonagem } from '@renderer/store/slices/personagemSlice'
-import { useCriarPersonagemDemo } from '@renderer/hooks/mutations/usePersonagemMutations'
-import { exibirPoderesDefault } from '@renderer/api/poder-service'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
@@ -16,17 +14,14 @@ import { z } from 'zod'
 import { criacaoPersonagemSchema } from '@renderer/validators/schemas/personagem'
 import { FieldsetModular } from '@renderer/components/fieldset/fieldset'
 import { TextFieldModular } from '@renderer/components/text-field/text-field'
-import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
-import { useExibirPoderesDefault } from '@renderer/hooks/selectors/usePoderQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
 import { OptionModular, SelectFieldModular } from '@renderer/components/select-field/select-field'
 import { atributosData } from '@renderer/utils/common data/atributosData'
 import { NumberFieldModular } from '@renderer/components/number-field/number-field'
-import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { divindadesData } from '@renderer/utils/common data/divindadesData'
 import { eticoData, moralData } from '@renderer/utils/common data/alinhamentoData'
-import { useExibirCompendioMagias } from '@renderer/hooks/selectors/useMagiaQuery'
+import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -36,10 +31,7 @@ export const MenuPrincipal = (): JSX.Element => {
   const [personagemSelecionado, setPersonagemSelecionado] = useState<IPersonagem | null>(null)
 
   const { data: personagens } = useExibirTodosPersonagem()
-  const { data: poderes } = useExibirPoderesDefault()
-  const { data: racas } = useExibirRacasDefault()
-  const { data: classes } = useExibirClassesDefault()
-  const { data: magias } = useExibirCompendioMagias()
+
   const navigate = useNavigate()
 
   const selecionarPersonagemPorId = (id: number): void => {
@@ -80,12 +72,7 @@ export const MenuPrincipal = (): JSX.Element => {
             >
               <p>Adquira Tormenta20</p>
             </BotaoModular>
-            <BotaoModular
-              font="tormenta20Font"
-              css="botaoMenuPrincipal"
-              cor="vermelhoEscuro"
-              onClickEvent={() => exibirPoderesDefault()}
-            >
+            <BotaoModular font="tormenta20Font" css="botaoMenuPrincipal" cor="vermelhoEscuro">
               <p>Sair</p>
             </BotaoModular>
           </div>
@@ -214,15 +201,13 @@ type CriacaoPersonagemFormProps = {
 export const CriacaoPersonagemForm = ({
   setCriacaoPersonagemEstaAberta
 }: CriacaoPersonagemFormProps): JSX.Element => {
-  const [racaSelecionada, setRacaSelecionada] = useState(1)
-  const [classeSelecionada, setClasseSelecionada] = useState(1)
+  const [racaSelecionada, setRacaSelecionada] = useState<string>()
+  const [classeSelecionada, setClasseSelecionada] = useState<string>()
+  const [origemSelecionada, setOrigemSelecionada] = useState<string>()
+  const [divindadeSelecionada, setDivindadeSelecionada] = useState<string>()
   const [etapaFormulario, setEtapaFormulario] = useState('DETALHES')
 
-  const { data: compendioPoderes } = useExibirPoderesDefault()
-  const { data: racas } = useExibirRacasDefault()
-  const { data: classes } = useExibirClassesDefault()
-
-  const criarPersonagemMutation = useCriarPersonagemDemo()
+  const { data: compendio } = useExibirCompendio()
 
   const methods = useForm<z.infer<typeof criacaoPersonagemSchema>>({
     resolver: zodResolver(criacaoPersonagemSchema),
@@ -253,30 +238,57 @@ export const CriacaoPersonagemForm = ({
   })
 
   const classeExibida = useMemo(() => {
-    if (!classes) {
+    if (!compendio) {
       return null
     }
-    for (const classe of classes) {
+    for (const classe of compendio.classes) {
       if (classe.key == classeSelecionada) {
         methods.setValue('classeInicial', classe.nome)
         return classe
       }
     }
     return null
-  }, [classes, classeSelecionada, methods])
+  }, [compendio, classeSelecionada, methods])
 
   const racaExibida = useMemo(() => {
-    if (!racas) {
+    if (!compendio) {
       return null
     }
-    for (const raca of racas) {
+    for (const raca of compendio.racas) {
       if (raca.key == racaSelecionada) {
         methods.setValue('raca', raca.nome)
         return raca
       }
     }
     return null
-  }, [racas, racaSelecionada, methods])
+  }, [compendio, racaSelecionada, methods])
+
+  const origemExibida = useMemo(() => {
+    if (!compendio) {
+      return null
+    }
+    for (const origem of compendio.origens) {
+      if (origem.key == origemSelecionada) {
+        methods.setValue('origem', origem.nome)
+        return origem
+      }
+    }
+    return null
+  }, [compendio, methods, origemSelecionada])
+
+  const divindadeExibida = useMemo(() => {
+    if (!compendio) {
+      return null
+    }
+
+    for (const divindade of compendio.divindades) {
+      if (divindade.key == divindadeSelecionada) {
+        methods.setValue('divindade', divindade.nome)
+        return divindade
+      }
+    }
+    return null
+  }, [compendio, divindadeSelecionada, methods])
 
   useEffect(() => {
     methods.setValue('atributosRaca', [])
@@ -320,7 +332,7 @@ export const CriacaoPersonagemForm = ({
             <>
               <div className={styles.siderbarItens}>
                 {etapaFormulario == 'RACA' &&
-                  racas?.map((raca) => (
+                  compendio?.racas.map((raca) => (
                     <BotaoModular
                       onClickEvent={() => {
                         setRacaSelecionada(raca.key)
@@ -334,7 +346,7 @@ export const CriacaoPersonagemForm = ({
                     </BotaoModular>
                   ))}
                 {etapaFormulario == 'CLASSE' &&
-                  classes?.map((classe) => (
+                  compendio?.classes.map((classe) => (
                     <BotaoModular
                       onClickEvent={() => {
                         setClasseSelecionada(classe.key)
@@ -540,7 +552,7 @@ export const CriacaoPersonagemForm = ({
                     </div>
                     <div className={styles.secao}>
                       <h3 className={`tormenta20Font ${styles.titulo}`}>Poderes</h3>
-                      {compendioPoderes
+                      {compendio?.poderes
                         ?.filter((poder) => poder.fonte == racaExibida.nome)
                         .map((poder) => <CardPoder key={poder.key} poder={poder} />)}
                     </div>
@@ -620,6 +632,33 @@ export const CriacaoPersonagemForm = ({
                         ) : (
                           <p className="inter">Nenhuma</p>
                         )}
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+          {etapaFormulario == 'ORIGEM' && (
+            <div className={styles.selecaoPersonagem}>
+              {origemExibida && (
+                <>
+                  <div className={styles.info}>
+                    <h1 className="tormenta20Font">{origemExibida.nome}</h1>
+                  </div>
+                  <div className={styles.description}>
+                    <p className="inter">{origemExibida.descricao}</p>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Itens concedidos</h3>
+                      <div className={styles.itens}>
+                        <p className="inter">{origemExibida.itens}</p>
+                      </div>
+                    </div>
+
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Beneficios</h3>
+                      <div className={styles.itens}>
+                        <p className="inter">{origemExibida.beneficios}</p>
                       </div>
                     </div>
                   </div>

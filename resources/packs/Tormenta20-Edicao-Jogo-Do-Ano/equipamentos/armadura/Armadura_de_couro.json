@@ -1,0 +1,19 @@
+{
+  "nome": "Armadura de couro",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras leves",
+  "espacos": 2,
+  "preco": 20,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 2,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": 0,
+  "material": "comum",
+  "descricao": "O peitoral desta armadura é feito de couro curtido em óleo fervente, para ficar mais rígido, enquanto as demais partes são feitas de couro flexível.",
+  "key": "27ba2a82-a2d6-490c-9d45-b073bc42b5b3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

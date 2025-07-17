@@ -1,0 +1,13 @@
+{
+  "nome": "Sela",
+  "descricao": "Uma peça de couro e pelego colocada sobre o lombo da montaria, sobre a qual o cavaleiro se senta. Inclui arreios para conduzir o animal. Um personagem montado em uma montaria sem sela sofre –5 em testes de Cavalgar. Usada no animal, a sela não ocupa espaço de carga do personagem.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 20,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "681d7434-b6f2-40f8-8868-2cfb981f9e81",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

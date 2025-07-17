@@ -4,6 +4,7 @@
   "icone": "druida",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
+  "devotoFiel": true,
   "manaPorNivel": 4,
   "pericias": ["sobrevivencia", "vontade"],
   "numeroPericiasExtras": 4,

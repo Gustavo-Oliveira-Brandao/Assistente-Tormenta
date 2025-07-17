@@ -4,6 +4,7 @@
   "icone": "ladino",
   "vidaInicial": 12,
   "vidaPorNivel": 3,
+  "devotoFiel": false,
   "manaPorNivel": 4,
   "pericias": ["ladinagem", "reflexos"],
   "numeroPericiasExtras": 8,

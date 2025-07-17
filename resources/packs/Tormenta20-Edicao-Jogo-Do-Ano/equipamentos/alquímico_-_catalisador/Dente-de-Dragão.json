@@ -1,0 +1,13 @@
+{
+  "nome": "Dente-de-Dragão",
+  "descricao": "Uma flor comum em regiões montanhosas, especialmente nas Sanguinárias, possui formato parecido com uma presa de monstro. Suas propriedades místicas aumentam o dano de magias em um dado do mesmo tipo.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 45,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "060ee4d4-ca9d-4bdf-8d28-eec69efbada0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

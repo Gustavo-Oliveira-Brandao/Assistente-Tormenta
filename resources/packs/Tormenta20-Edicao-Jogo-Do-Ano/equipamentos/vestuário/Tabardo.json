@@ -1,0 +1,13 @@
+{
+  "nome": "Tabardo",
+  "descricao": "Uma peça de tecido usada como um colete, cobrindo o peito e as costas. Geralmente ostenta a heráldica de um reino, igreja, casa nobre ou ordem de cavaleiros. Fornece +1 em Diplomacia.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "217dddd1-691f-4119-9c04-52b8e3b916ea",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

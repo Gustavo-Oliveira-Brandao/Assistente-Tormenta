@@ -1,0 +1,13 @@
+{
+  "nome": "Estojo de Disfarces",
+  "descricao": "Um conjunto de cosméticos, tintas para cabelo e algumas próteses simples (como bigodes e narizes falsos). Um personagem sem este item sofre –5 em testes de Enganação para disfarce.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 50,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "e9ed39b9-911d-4f7c-a528-de60a7eb6ae5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

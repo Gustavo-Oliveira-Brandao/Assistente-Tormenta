@@ -1,0 +1,30 @@
+{
+  "nome": "Florete",
+  "descricao": "A lâmina leve e fina desta espada torna a arma muito precisa. O florete é uma arma ágil.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "preco": 20,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 18,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "6ae3fac8-0fa3-4f50-b7b2-d4f4e268ce89",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

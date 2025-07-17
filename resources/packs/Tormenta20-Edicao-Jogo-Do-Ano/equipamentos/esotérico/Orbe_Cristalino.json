@@ -1,0 +1,13 @@
+{
+  "nome": "Orbe Cristalino",
+  "descricao": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 750,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "4895152d-d6e1-4a20-986f-3715890fa269",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

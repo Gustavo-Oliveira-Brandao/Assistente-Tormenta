@@ -1,39 +1,54 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
-import { Personagem } from '../entities/Personagem'
-import path from 'path'
-import { extrairJson } from './JsonService'
-import { Magia } from '../entities/Magia'
-import { app } from 'electron'
+import { Grimorio, Magia } from '../entities/Magia'
 
+const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
 const MagiaRepository = SQLiteDataSource.getRepository(Magia)
 
-export const getMagiasPersonagem = async (_idPersonagem: number): Promise<Magia[]> => {
+export const putGrimorio = async (_grimorio: Grimorio): Promise<void> => {
   try {
-    const magias = await MagiaRepository.find({
-      where: { personagem: { id: _idPersonagem } }
-    })
-    return magias
-  } catch {
-    throw new Error('Erro ao recuperar magias.')
+    const grimorioEncontrado = await GrimorioRepository.findOneBy({ id: _grimorio.id })
+
+    if (!grimorioEncontrado) {
+      throw new Error('Grimório não encontrado!')
+    }
+
+    GrimorioRepository.merge(grimorioEncontrado, _grimorio)
+
+    await GrimorioRepository.save(grimorioEncontrado)
+  } catch (error) {
+    console.log(error)
+    throw new Error('Erro ao atualizar grimório')
   }
 }
 
-export const postMagia = async (
-  _magia: DeepPartial<Magia>,
-  _idPersonagem: number
-): Promise<void> => {
+export const getGrimorioPersonagem = async (_idPersonagem: number): Promise<Grimorio> => {
   try {
-    const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
-    const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
-    if (!personagem) {
-      throw new Error('Personagem não encontrado.')
+    const grimorio = await GrimorioRepository.findOne({
+      where: { personagem: { id: _idPersonagem } }
+    })
+
+    if (grimorio) {
+      return grimorio
+    }
+
+    throw new Error('Grimório não encontrado!')
+  } catch {
+    throw new Error('Erro ao recuperar grimório.')
+  }
+}
+
+export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> => {
+  try {
+    const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })
+    if (!grimorio) {
+      throw new Error('Grimório não encontrado.')
     }
 
     const novaMagia = MagiaRepository.create({
       ..._magia,
       aprimoramentos: _magia.aprimoramentos,
-      personagem: personagem
+      grimorio: grimorio
     })
 
     await MagiaRepository.save(novaMagia)
@@ -46,14 +61,14 @@ export const putMagia = async (_magia: Magia): Promise<void> => {
   try {
     const magiaEncontrada = await MagiaRepository.findOneBy({ id: _magia.id })
     if (!magiaEncontrada) {
-      throw new Error('Grimorio não encontrado!')
+      throw new Error('Magia não encontrada!')
     }
 
     MagiaRepository.merge(magiaEncontrada, _magia)
     magiaEncontrada.aprimoramentos = _magia.aprimoramentos
     await MagiaRepository.save(magiaEncontrada)
   } catch {
-    throw new Error('Erro ao atualizar magias!')
+    throw new Error('Erro ao atualizar magia!')
   }
 }
 
@@ -63,14 +78,4 @@ export const deleteMagia = async (_id: number): Promise<void> => {
   } catch {
     throw new Error('Erro ao deletar magia.')
   }
-}
-
-export const getMagiasDefault = async (): Promise<DeepPartial<Magia>[]> => {
-  const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'magias')
-  const caminhoBase = app.isPackaged
-    ? path.join(process.resourcesPath, pasta)
-    : path.join(app.getAppPath(), 'resources', pasta)
-  const result = await extrairJson<DeepPartial<Magia>>(caminhoBase)
-  const magias = result
-  return magias
 }

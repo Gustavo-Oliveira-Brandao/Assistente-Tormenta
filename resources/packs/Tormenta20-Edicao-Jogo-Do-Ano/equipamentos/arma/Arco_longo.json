@@ -1,0 +1,31 @@
+{
+  "nome": "Arco longo",
+  "descricao": "Este arco reforçado tem a altura de uma pessoa. Ao contrário da versão curta, é primariamente uma arma de guerra. Por ter uma puxada pesada, permite que você aplique sua Força às rolagens de dano (ao contrário de outras armas de disparo). Porém, um arco longo não pode ser usado se você estiver montado.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "alcance": "medio",
+  "preco": 100,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "distancia",
+    "bonusAcerto": 0,
+    "periciaAcerto": "pontaria",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "key": "9f82ef9e-076d-4b65-b5c3-ab5d79f8d486",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

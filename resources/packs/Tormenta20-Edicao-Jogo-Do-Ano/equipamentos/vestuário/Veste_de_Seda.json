@@ -1,0 +1,13 @@
+{
+  "nome": "Veste de Seda",
+  "descricao": "Esta roupa leve e elegante deixa seus movimentos os mais livres possíveis. Fornece +1 em Reflexos.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 25,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "8cdf933d-adaa-41e4-9a4f-84e58e1ce192",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Traje de Viajante",
+  "descricao": "Inclui botas, calças ou saias, cinto, camisa de linho e capa com capuz. A roupa padrão de aventureiros.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0,
+  "preco": 10,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "c64cee5d-a8ff-44ed-88e5-f10a8dbad3d5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

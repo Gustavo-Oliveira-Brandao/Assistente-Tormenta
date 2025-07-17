@@ -1,0 +1,13 @@
+{
+  "nome": "Costela de Lich",
+  "descricao": "Esta varinha é feita a partir do osso de um morto-vivo. Quando lança uma magia, ela causa +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 300,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "120722e1-9c9a-4996-b339-23d2c80bd413",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

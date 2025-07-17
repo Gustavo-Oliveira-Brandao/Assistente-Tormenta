@@ -1,0 +1,19 @@
+{
+  "nome": "Couro batido",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras leves",
+  "espacos": 2,
+  "preco": 35,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 3,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -1,
+  "material": "comum",
+  "descricao": "Versão mais pesada da armadura de couro, reforçada com rebites de metal.",
+  "key": "087cdff4-4daf-47df-918e-35cb93dae578",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

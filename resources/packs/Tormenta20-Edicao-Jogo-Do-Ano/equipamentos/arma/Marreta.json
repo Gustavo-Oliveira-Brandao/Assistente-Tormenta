@@ -1,0 +1,30 @@
+{
+  "nome": "Marreta",
+  "descricao": "Uma haste de madeira resistente com uma pesada cabeça de metal ou pedra.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "preco": 20,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 3,
+      "dado": 4,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "e0a3d5dc-d80b-4b81-9999-29bfd5217cd8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

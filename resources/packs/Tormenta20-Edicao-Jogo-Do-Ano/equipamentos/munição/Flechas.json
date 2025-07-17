@@ -1,0 +1,14 @@
+{
+  "nome": "Flechas",
+  "descricao": "(20 unidades)",
+  "categoria": "munição",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 1,
+  "quantidade": 20,
+  "empunhadura": "nenhuma",
+  "material": "comum",
+  "key": "4f8e7673-b7c8-47f4-9219-99a5534a58db",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

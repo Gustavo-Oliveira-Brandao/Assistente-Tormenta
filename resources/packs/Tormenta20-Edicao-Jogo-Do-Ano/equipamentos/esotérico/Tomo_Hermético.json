@@ -1,0 +1,13 @@
+{
+  "nome": "Tomo Hermético",
+  "descricao": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 1500,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "bdbe31b3-3adc-44b3-ab2e-0f0d28e7458e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

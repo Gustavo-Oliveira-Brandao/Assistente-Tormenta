@@ -1,0 +1,13 @@
+{
+  "nome": "Riso de Nimb",
+  "descricao": "Este gás púrpura faz a vítima rir descontroladamente e agir de forma caótica. Inalação, vítima fica confusa (lenta por 1 rodada).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 150,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "978f2fd6-f056-4a7d-a428-951a627f8d76",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

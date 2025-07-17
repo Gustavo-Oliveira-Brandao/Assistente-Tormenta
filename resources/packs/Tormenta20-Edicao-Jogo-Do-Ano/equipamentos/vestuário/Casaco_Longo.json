@@ -1,0 +1,14 @@
+{
+  "nome": "Casaco Longo",
+  "descricao": "Feito de peles ou couro grosso forrado com lã, e impermeabilizado com óleo, este casaco é quente e pesado. Fornece +5 em testes de Fortitude para resistir a efeitos de frio, mas impõe penalidade de armadura de –2.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 20,
+  "quantidade": 1,
+  "penalidadeArmadura": -2,
+  "material": "comum",
+  "key": "f03733cb-2ef4-4cb5-96ee-d4d164132558",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Espada curta",
+  "descricao": "O tipo mais comum de espada, usada por guardas ou como arma secundária de guerreiros mais capazes. Mede entre 40 e 50cm.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "empunhadura": "leve",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "b9392338-f2b9-43fd-8c26-e4683acafd0e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

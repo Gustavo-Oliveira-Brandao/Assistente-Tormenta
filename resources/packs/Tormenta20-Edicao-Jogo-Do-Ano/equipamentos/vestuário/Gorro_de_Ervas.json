@@ -1,0 +1,13 @@
+{
+  "nome": "Gorro de Ervas",
+  "descricao": "Formado por duas camadas de tecido, este chapéu é preenchido com ervas preparadas para auxiliar a concentração do usuário. Fornece +1 em Vontade.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 75,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "21769c31-7140-47d2-95ab-401e9405aae6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

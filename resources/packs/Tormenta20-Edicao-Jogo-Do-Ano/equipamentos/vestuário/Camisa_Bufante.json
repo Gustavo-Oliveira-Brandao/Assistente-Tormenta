@@ -1,0 +1,13 @@
+{
+  "nome": "Camisa Bufante",
+  "descricao": "Blusa colorida, com mangas e golas longas e encrespadas. Fornece +1 em Atuação.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 25,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "71b94934-b70d-4487-bc61-070f1683f5c8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

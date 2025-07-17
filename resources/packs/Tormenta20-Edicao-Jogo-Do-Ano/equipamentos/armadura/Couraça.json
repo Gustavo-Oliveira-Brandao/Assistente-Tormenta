@@ -1,0 +1,19 @@
+{
+  "nome": "Couraça",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras leves",
+  "espacos": 2,
+  "preco": 500,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 5,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -4,
+  "material": "comum",
+  "descricao": "A mais robusta das armaduras leves, formada por uma placa metálica que protege o peito e as costas, presa sobre um casaco de couro.",
+  "key": "28c5c031-545d-4e7a-9d6c-73d6b6f323e1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

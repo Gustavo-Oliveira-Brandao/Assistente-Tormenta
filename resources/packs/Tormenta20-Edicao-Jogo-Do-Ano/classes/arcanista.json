@@ -2,6 +2,7 @@
   "key": "82372b8c-75a9-4f98-86f1-5886a6eb0084",
   "nome": "arcanista",
   "icone": "arcanista",
+  "devotoFiel": false,
   "vidaInicial": 8,
   "vidaPorNivel": 2,
   "manaPorNivel": 6,

@@ -1,24 +1,9 @@
-import path from 'path'
 import { SQLiteDataSource } from '../data-source'
-import { extrairJson } from './JsonService'
 import { Personagem } from '../entities/Personagem'
 import { Poder } from '../entities/Poder'
 import { DeepPartial } from 'typeorm'
-import { app } from 'electron'
 
 export const PoderRepository = SQLiteDataSource.getRepository(Poder)
-
-export const getCompendioPoderes = async (): Promise<DeepPartial<Poder>[]> => {
-  const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'poderes')
-  const caminhoBase = app.isPackaged
-    ? path.join(process.resourcesPath, pasta)
-    : path.join(app.getAppPath(), 'resources', pasta)
-
-  const result = await extrairJson<DeepPartial<Poder>>(caminhoBase)
-  const poderes = result
-
-  return poderes
-}
 
 export const getPoderesPersonagem = async (_idPersonagem: number): Promise<Poder[]> => {
   try {

@@ -1,0 +1,13 @@
+{
+  "nome": "Gazua",
+  "descricao": "Uma barra fina de ferro, com a ponta torta ou em forma de gancho. Um personagem sem este item sofre –5 em testes de Ladinagem para abrir fechaduras.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 5,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "78e1fa19-feb5-4223-83cc-a670786dacaf",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

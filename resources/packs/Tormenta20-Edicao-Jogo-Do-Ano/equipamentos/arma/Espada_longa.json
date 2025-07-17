@@ -1,0 +1,30 @@
+{
+  "nome": "Espada longa",
+  "descricao": "Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "preco": 15,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "a1fe2095-bac8-4296-a4b9-fe5889514247",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

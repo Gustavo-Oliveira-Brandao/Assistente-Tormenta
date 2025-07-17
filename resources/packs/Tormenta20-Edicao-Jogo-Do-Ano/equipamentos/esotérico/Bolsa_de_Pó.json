@@ -1,0 +1,13 @@
+{
+  "nome": "Bolsa de Pó",
+  "descricao": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 300,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "551b68bd-1217-4ae3-aedd-5fe1d860f1a7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

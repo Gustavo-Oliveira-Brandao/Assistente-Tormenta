@@ -19,8 +19,6 @@ export type IPersonagem = {
   tamanho: string
   alinhamentoEtico: string
   alinhamentoMoral: string
-  atributoChaveMagias: string
-  cdMagias?: number
   atributos: IAtributo[]
   pericias: IPericia[]
   deslocamento: IDeslocamento

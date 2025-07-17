@@ -1,0 +1,19 @@
+{
+  "nome": "Loriga segmentada",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras pesadas",
+  "espacos": 5,
+  "preco": 250,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 7,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -3,
+  "material": "comum",
+  "descricao": "Composta por tiras horizontais de metal, esta armadura pesada é muito utilizada por legionários do Império de Tauron.",
+  "key": "3720a9fb-febf-4ef1-8b68-4cd89b56d3fe",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

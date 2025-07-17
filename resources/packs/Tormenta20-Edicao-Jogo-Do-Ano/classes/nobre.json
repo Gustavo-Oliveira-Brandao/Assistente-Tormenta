@@ -5,6 +5,7 @@
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 4,
+  "devotoFiel": false,
   "pericias": ["vontade"],
   "numeroPericiasExtras": 5,
   "periciasExtras": [

@@ -1,0 +1,14 @@
+{
+  "nome": "Balas",
+  "descricao": "(20 unidades)",
+  "categoria": "munição",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 20,
+  "quantidade": 20,
+  "empunhadura": "nenhuma",
+  "material": "comum",
+  "key": "d049ae32-6112-47fc-b1ff-37e32b8ffdee",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

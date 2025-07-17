@@ -1,0 +1,31 @@
+{
+  "nome": "Mosquete",
+  "descricao": "Uma arma de fogo de uso difícil, mas com poder devastador. Recarregar um mosquete é uma ação padrão.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas de fogo",
+  "espacos": 2,
+  "alcance": "medio",
+  "preco": 500,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "distancia",
+    "bonusAcerto": 0,
+    "periciaAcerto": "pontaria",
+    "margemCritico": 19,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 8,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "key": "45c1fc50-5af2-41f2-9259-b3029c4b3fec",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

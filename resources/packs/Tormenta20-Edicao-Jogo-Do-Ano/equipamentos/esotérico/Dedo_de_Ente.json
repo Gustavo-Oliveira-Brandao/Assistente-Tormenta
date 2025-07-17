@@ -1,0 +1,13 @@
+{
+  "nome": "Dedo de Ente",
+  "descricao": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 200,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "09d0648f-fe05-4c57-b323-139d7d458520",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Ramo Verdejante",
+  "descricao": "Esta combinação de ervas potencializa magias de cura, aumentando sua cura em +1 PV por dado.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 45,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "df7ec088-3e29-4224-9b54-7dd48eee321d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

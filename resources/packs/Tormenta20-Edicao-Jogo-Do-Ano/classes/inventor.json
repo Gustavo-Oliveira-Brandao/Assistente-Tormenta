@@ -4,6 +4,7 @@
   "icone": "inventor",
   "vidaInicial": 12,
   "vidaPorNivel": 3,
+  "devotoFiel": false,
   "manaPorNivel": 4,
   "pericias": ["oficio", "vontade"],
   "numeroPericiasExtras": 4,

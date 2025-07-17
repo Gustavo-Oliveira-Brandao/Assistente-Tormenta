@@ -1,0 +1,13 @@
+{
+  "nome": "Seixo de Âmbar",
+  "descricao": "Essa “gema” feita de seiva de árvore fossilizada diminui o custo de magias de transmutação em –1 PM.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "971bb31c-650a-4d4b-b21a-b7a98d66212b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

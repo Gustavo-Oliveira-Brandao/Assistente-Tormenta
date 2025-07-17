@@ -1,0 +1,13 @@
+{
+  "nome": "Cicuta",
+  "descricao": "Planta cuja ingestão pode causar náusea, dores e até morte. Ingestão, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 60,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "eaea9db8-9df0-4fa1-81b9-289198e6a1ad",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

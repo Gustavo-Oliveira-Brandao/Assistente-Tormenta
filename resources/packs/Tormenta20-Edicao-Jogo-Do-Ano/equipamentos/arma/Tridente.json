@@ -1,0 +1,31 @@
+{
+  "nome": "Tridente",
+  "descricao": "Uma lança com três pontas, favorita de povos marinhos e gladiadores e própria para prender as pernas do oponente. O tridente é uma arma versátil, fornecendo +2 em testes para derrubar. Um tridente pode ser arremessado.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "alcance": "curto",
+  "preco": 15,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "2febb640-4e28-42e8-b78d-2aa929684233",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

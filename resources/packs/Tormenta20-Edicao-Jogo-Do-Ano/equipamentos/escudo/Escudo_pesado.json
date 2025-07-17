@@ -1,0 +1,19 @@
+{
+  "nome": "Escudo pesado",
+  "categoria": "escudo",
+  "equipado": false,
+  "proficiencia": "escudos",
+  "espacos": 2,
+  "preco": 15,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 2,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -2,
+  "material": "comum",
+  "descricao": "Normalmente feito de aço, este escudo é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão.",
+  "key": "1e9e2352-49d7-4325-a80c-9fa866059c68",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

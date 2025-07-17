@@ -1,0 +1,30 @@
+{
+  "nome": "Machado anão",
+  "descricao": "A arma preferida de onze entre dez guerreiros anões. Um machado anão é muito grande para ser usado com uma só mão sem treinamento especial; por isso é uma arma exótica. Ele pode ser usado como uma arma marcial de duas mãos.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas exóticas",
+  "espacos": 1,
+  "preco": 30,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 10,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "976a1585-dff1-4e96-8f7b-4fdaa3840fa9",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

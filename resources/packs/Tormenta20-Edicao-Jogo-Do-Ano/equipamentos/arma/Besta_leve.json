@@ -1,0 +1,31 @@
+{
+  "nome": "Besta leve",
+  "descricao": "Um arco montado sobre uma coronha de madeira com um gatilho, a besta leve é uma arma que dispara virotes com grande potência. Recarregar uma besta leve é uma ação de movimento.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "alcance": "medio",
+  "preco": 35,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "distancia",
+    "bonusAcerto": 0,
+    "periciaAcerto": "pontaria",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "key": "fcb40426-7163-463e-84cf-4c188b6be144",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

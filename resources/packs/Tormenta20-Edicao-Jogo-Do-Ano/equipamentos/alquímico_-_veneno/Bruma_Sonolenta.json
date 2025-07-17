@@ -1,0 +1,13 @@
+{
+  "nome": "Bruma Sonolenta",
+  "descricao": "Um gás sonífero. Inalação, vítima fica inconsciente (enjoada por 1 rodada).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 150,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "e946e2e9-117f-4aa3-ad7f-a2e3ddd24770",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

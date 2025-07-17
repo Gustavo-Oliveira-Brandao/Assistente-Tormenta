@@ -1,0 +1,13 @@
+{
+  "nome": "Cetro Elemental",
+  "descricao": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 750,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "bf9d01f2-ac7c-445e-b55a-6cbab92e9527",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

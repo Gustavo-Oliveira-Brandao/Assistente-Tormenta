@@ -1,0 +1,30 @@
+{
+  "nome": "Martelo de guerra",
+  "descricao": "Outra ferramenta adaptada para combate, esta é a arma favorita de quase todos os anões que não usam machados.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "preco": 12,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "8a71b2c3-931e-45ec-88b5-900d92f9c58d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

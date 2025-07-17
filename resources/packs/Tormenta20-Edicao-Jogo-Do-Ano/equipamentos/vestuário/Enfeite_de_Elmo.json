@@ -1,0 +1,13 @@
+{
+  "nome": "Enfeite de Elmo",
+  "descricao": "Um adorno chamativo, como crina de cavalo, plumas, asas ou um totem de animal. Fornece resistência a medo +2.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 15,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "783c0b39-3768-49b7-be31-04338c121040",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

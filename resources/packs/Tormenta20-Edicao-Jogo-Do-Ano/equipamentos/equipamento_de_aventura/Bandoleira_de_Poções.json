@@ -1,0 +1,13 @@
+{
+  "nome": "Bandoleira de Poções",
+  "descricao": "Um cinto de couro com bolsos que comportam pequenos frascos. Se você estiver vestindo uma bandoleira, pode sacar itens alquímicos e poções como uma ação livre.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 20,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "7a5eb6ce-4804-4c83-9ee8-402cdc97638d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

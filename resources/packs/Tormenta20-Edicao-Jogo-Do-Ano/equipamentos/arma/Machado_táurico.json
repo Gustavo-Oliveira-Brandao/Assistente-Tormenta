@@ -1,0 +1,30 @@
+{
+  "nome": "Machado táurico",
+  "descricao": "Uma haste comprida com uma lâmina extremamente grossa na ponta, esta é uma arma ancestral dos minotauros. Um machado táurico é uma arma desbalanceada. Além disso, é muito grande para ser usado sem treinamento especial; por isso, é uma arma exótica.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas exóticas",
+  "espacos": 2,
+  "preco": 50,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 8,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "a6d79866-19be-46ae-8c19-c7669eec3ed7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

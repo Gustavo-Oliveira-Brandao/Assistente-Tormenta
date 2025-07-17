@@ -1,0 +1,30 @@
+{
+  "nome": "Machado de batalha",
+  "descricao": "Adaptado do machado de lenhador, este não é um instrumento para corte de árvores, mas sim uma arma capaz de causar ferimentos terríveis.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "3efa0494-71f5-4e40-97c3-b5e0c52b28d3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

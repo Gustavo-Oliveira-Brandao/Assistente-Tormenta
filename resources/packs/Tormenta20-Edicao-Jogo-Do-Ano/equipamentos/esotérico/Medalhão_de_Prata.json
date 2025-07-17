@@ -1,0 +1,13 @@
+{
+  "nome": "Medalhão de Prata",
+  "descricao": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em –1 PM o custo de magias de alcance pessoal.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 750,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "8156e8d7-9d75-4c47-8d2b-da94c9566e5d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

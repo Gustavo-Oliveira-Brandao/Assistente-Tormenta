@@ -1,9 +1,5 @@
 import { CardMagia } from '@renderer/components/card-magia/card-magia'
 import { useCriarMagia, useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
-import {
-  useExibirCompendioMagias,
-  useExibirMagiasPersonagem
-} from '@renderer/hooks/selectors/useMagiaQuery'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { JSX, useMemo, useState } from 'react'
 import styles from './ficha-personagem.module.scss'
@@ -13,17 +9,19 @@ import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
 import { escolasMagiasData, tradicoesMagiasData } from '@renderer/utils/common data/magiasData'
-import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
 import { DeepPartial } from 'typeorm'
+import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
+import { useExibirMagiasPersonagem } from '@renderer/hooks/selectors/useMagiaQuery'
+import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
 
 type FichaMagiasProps = {
   personagem: IPersonagem
 }
 
 export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
-  const { data: compendioMagias } = useExibirCompendioMagias()
+  const { data: compendio } = useExibirCompendio()
   const adicionarMagia = useCriarMagia()
-  const { data: magias } = useExibirMagiasPersonagem(personagem.id)
+  const { data: grimorio } = useExibirMagiasPersonagem(personagem.id)
   const removerMagia = useDeletarMagia()
   const [lojaEstaAberta, setLojaEstaAberta] = useState(false)
 
@@ -32,17 +30,19 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
   const [filtroNivel, setFiltroNivel] = useState(1)
 
   const magiasFiltradas = useMemo(() => {
-    return compendioMagias?.filter(
+    return compendio?.magias?.filter(
       (magia) =>
         (magia.escola?.toLowerCase() == filtroEscola.toLowerCase() || filtroEscola == 'TODAS') &&
         (magia.tradicao?.toLowerCase() == filtroTradicao.toLowerCase() ||
           filtroTradicao == 'TODAS') &&
         magia.nivelCirculo == filtroNivel
     )
-  }, [compendioMagias, filtroEscola, filtroTradicao, filtroNivel])
+  }, [compendio, filtroEscola, filtroTradicao, filtroNivel])
 
-  const submitMagia = (magia: DeepPartial<IMagiaPersonagem>): void => {
-    adicionarMagia.mutate({ magia: magia, idPersonagem: personagem.id })
+  const submitMagia = (magia: DeepPartial<IMagia>): void => {
+    if (grimorio) {
+      adicionarMagia.mutate({ magia: magia, idGrimorio: grimorio.id })
+    }
     setLojaEstaAberta(false)
   }
 
@@ -69,8 +69,8 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
         css="poderes"
       >
         <DisclosureGroup allowsMultipleExpanded>
-          {magias &&
-            magias
+          {grimorio &&
+            grimorio.magias
               .filter((magia) => magia.nivelCirculo == 1)
               .map((magia) => (
                 <CardMagia
@@ -103,8 +103,8 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
         css="poderes"
       >
         <DisclosureGroup allowsMultipleExpanded>
-          {magias &&
-            magias
+          {grimorio &&
+            grimorio.magias
               .filter((magia) => magia.nivelCirculo == 2)
               .map((magia) => (
                 <CardMagia
@@ -137,8 +137,8 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
         css="poderes"
       >
         <DisclosureGroup allowsMultipleExpanded>
-          {magias &&
-            magias
+          {grimorio &&
+            grimorio.magias
               .filter((magia) => magia.nivelCirculo == 3)
               .map((magia) => (
                 <CardMagia
@@ -171,8 +171,8 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
         css="poderes"
       >
         <DisclosureGroup allowsMultipleExpanded>
-          {magias &&
-            magias
+          {grimorio &&
+            grimorio.magias
               .filter((magia) => magia.nivelCirculo == 4)
               .map((magia) => (
                 <CardMagia
@@ -205,8 +205,8 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
         css="poderes"
       >
         <DisclosureGroup allowsMultipleExpanded>
-          {magias &&
-            magias
+          {grimorio &&
+            grimorio.magias
               .filter((magia) => magia.nivelCirculo == 5)
               .map((magia) => (
                 <CardMagia

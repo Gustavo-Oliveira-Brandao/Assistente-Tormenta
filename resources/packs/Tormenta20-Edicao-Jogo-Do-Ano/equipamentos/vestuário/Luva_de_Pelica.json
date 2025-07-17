@@ -1,0 +1,13 @@
+{
+  "nome": "Luva de Pelica",
+  "descricao": "Estas luvas delicadas preservam o tato e impedem que o suor deixe os dedos escorregadios. Fornecem +1 em Ladinagem.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 5,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "51faafcd-1591-4214-8666-82fc47a63581",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

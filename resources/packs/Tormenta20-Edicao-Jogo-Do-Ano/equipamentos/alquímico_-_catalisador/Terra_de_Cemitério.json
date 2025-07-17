@@ -1,0 +1,13 @@
+{
+  "nome": "Terra de Cemitério",
+  "descricao": "Um punhado de terra cinzenta, colhida à noite de um cemitério. Adiciona +1d6 de dano de trevas a magias.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "31cb7ba5-dfb7-4bde-86a3-a2745328a70f",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

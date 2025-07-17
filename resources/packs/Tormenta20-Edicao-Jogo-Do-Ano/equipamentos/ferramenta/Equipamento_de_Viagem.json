@@ -1,0 +1,13 @@
+{
+  "nome": "Equipamento de Viagem",
+  "descricao": "Um saco de lona contendo instrumentos úteis para sobreviver nos ermos, como pederneira (pedra para fazer fogo), panelas e talheres para cozinhar, anzól e linha para pescar e uma pequena pá. Um personagem sem este item sofre –5 em testes de Sobrevivência para fazer um acampamento. Não inclui saco de dormir ou barraca.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "52b96e0f-7478-4f1c-a8d0-e28b41c00de7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

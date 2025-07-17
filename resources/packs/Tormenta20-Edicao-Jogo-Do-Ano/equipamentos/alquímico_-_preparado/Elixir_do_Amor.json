@@ -1,0 +1,13 @@
+{
+  "nome": "Elixir do Amor",
+  "descricao": "Um humanoide que beba este líquido adocicado fica apaixonado pela primeira criatura que enxergar (condição enfeitiçado; Vontade CD Car anula). O efeito dura 1d3 dias.",
+  "categoria": "alquímico - preparado",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 100,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "5f7a9d47-972a-4aba-9c79-935b8a4d94dc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

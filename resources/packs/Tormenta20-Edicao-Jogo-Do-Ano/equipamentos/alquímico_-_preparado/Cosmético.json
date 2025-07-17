@@ -1,0 +1,13 @@
+{
+  "nome": "Cosmético",
+  "descricao": "Perfume ou maquiagem. Usá-lo é uma ação completa e fornece +2 em testes de perícias baseadas em Carisma até o fim da cena.",
+  "categoria": "alquímico - preparado",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "5641ee73-f1d8-4cae-9b53-6c9309c751b4",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Pó de Giz",
+  "descricao": "Calcário esmagado em pó, uma substância comum que, usada como catalisador, diminui o custo de magias de convocação em –1 PM.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "9a78dded-0ed1-4528-a2a8-88363982f204",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -5,6 +5,7 @@
   "vidaInicial": 16,
   "vidaPorNivel": 4,
   "manaPorNivel": 5,
+  "devotoFiel": true,
   "pericias": ["religiao", "vontade"],
   "numeroPericiasExtras": 2,
   "periciasExtras": [

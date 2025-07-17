@@ -1,0 +1,13 @@
+{
+  "nome": "Símbolo Sagrado",
+  "descricao": "Um medalhão de madeira ou metal com o símbolo de uma divindade. Se você estiver vestindo (normalmente com uma corrente ao redor do pescoço) ou empunhando o símbolo sagrado de um deus do qual é devoto, recebe +1 em testes de resistência.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 5,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "ea45e848-cd75-4444-8fe7-9e6686741b47",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

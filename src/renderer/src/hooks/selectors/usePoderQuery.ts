@@ -1,18 +1,8 @@
-import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
-import { exibirPoderesDefault, exibirPoderesPersonagem } from '@renderer/api/poder-service'
+import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
+import { exibirPoderesPersonagem } from '@renderer/api/poder-service'
 import { useQuery, UseQueryResult } from '@tanstack/react-query'
-import { DeepPartial } from 'typeorm'
 
-export const useExibirPoderesDefault = (): UseQueryResult<DeepPartial<IPoderPersonagem>[]> => {
-  return useQuery({
-    queryKey: ['poderesDefault'],
-    queryFn: () => exibirPoderesDefault()
-  })
-}
-
-export const useExibirPoderesPersonagem = (
-  _idPersonagem: number
-): UseQueryResult<IPoderPersonagem[]> => {
+export const useExibirPoderesPersonagem = (_idPersonagem: number): UseQueryResult<IPoder[]> => {
   return useQuery({
     queryKey: ['poderesPersonagem'],
     queryFn: () => exibirPoderesPersonagem(_idPersonagem)

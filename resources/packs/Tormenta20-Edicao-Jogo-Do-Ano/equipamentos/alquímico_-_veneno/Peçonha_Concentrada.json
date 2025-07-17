@@ -1,0 +1,13 @@
+{
+  "nome": "Peçonha Concentrada",
+  "descricao": "Dose concentrada da peçonha comum. Contato, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 90,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "943ab567-3216-4423-ae32-ad9d78787b71",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,31 @@
+{
+  "nome": "Lança",
+  "descricao": "Qualquer arma feita com uma haste de madeira e uma ponta afiada, natural ou metálica. Por sua facilidade de fabricação, é muito comum entre orcs, kobolds, trogloditas e outras raças menos civilizadas. Uma lança pode ser arremessada.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "alcance": "curto",
+  "preco": 2,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "845d0037-d47e-45a8-98a3-3f9046abe36e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

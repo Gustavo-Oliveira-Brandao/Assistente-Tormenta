@@ -4,6 +4,7 @@
   "icone": "lutador",
   "vidaInicial": 20,
   "vidaPorNivel": 5,
+  "devotoFiel": false,
   "manaPorNivel": 3,
   "pericias": ["fortitude", "luta"],
   "numeroPericiasExtras": 4,

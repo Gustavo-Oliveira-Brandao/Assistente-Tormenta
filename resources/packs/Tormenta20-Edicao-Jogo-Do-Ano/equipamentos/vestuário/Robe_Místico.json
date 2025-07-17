@@ -1,0 +1,13 @@
+{
+  "nome": "Robe Místico",
+  "descricao": "Um manto longo, adornado com temas arcanos. Fornece +1 em Misticismo.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 50,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "d7687f89-43ad-460c-81fa-3516223fcbd9",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -12,7 +12,7 @@ export const getStatusPersonagem = async (_idPersonagem: number): Promise<Status
     return status
   } catch (err) {
     console.log(err)
-    throw new Error('Erro ao recuperar recursos!')
+    throw new Error('Erro ao recuperar status!')
   }
 }
 
@@ -20,12 +20,12 @@ export const putRecurso = async (_status: Status): Promise<void> => {
   try {
     const recursoEncontrado = await statusRepository.findOneBy({ id: _status.id })
     if (!recursoEncontrado) {
-      throw new Error('Recurso não encontrado!')
+      throw new Error('Status não encontrado!')
     }
     statusRepository.merge(recursoEncontrado, _status)
 
     await statusRepository.save(recursoEncontrado)
   } catch {
-    throw new Error('Erro ao atualizar o recurso')
+    throw new Error('Erro ao atualizar o status')
   }
 }

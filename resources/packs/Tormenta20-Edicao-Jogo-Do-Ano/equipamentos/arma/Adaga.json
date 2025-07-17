@@ -1,0 +1,31 @@
+{
+  "nome": "Adaga",
+  "descricao": "Esta faca afiada é usada por muitos habitantes adultos do Reinado, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +5 em testes de Ladinagem para ocultá-la). Quando ataca com uma adaga, você pode usar sua Destreza em vez de Força nos testes de ataque.  Uma adaga pode ser arremessada.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "alcance": "curto",
+  "preco": 2,
+  "quantidade": 1,
+  "empunhadura": "leve",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 4,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "430d9313-ccdb-481c-9b0f-91d4bbdaa582",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

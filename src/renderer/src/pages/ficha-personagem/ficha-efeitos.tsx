@@ -1,6 +1,6 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import styles from './ficha-personagem.module.scss'
-import { JSX, useState } from 'react'
+import { JSX } from 'react'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { CardEfeito } from '@renderer/components/card-efeito/card-efeito'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'

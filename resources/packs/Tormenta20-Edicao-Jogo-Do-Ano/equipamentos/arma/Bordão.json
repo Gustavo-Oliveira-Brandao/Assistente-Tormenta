@@ -1,0 +1,37 @@
+{
+  "nome": "Bordão",
+  "descricao": "Um cajado apreciado por viajantes e camponeses por sua praticidade e fácil acesso (seu preço é zero). O bordão é uma arma dupla.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 2,
+  "preco": 0,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    },
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "ce99065c-0d13-4293-8d4d-7740b078cc96",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

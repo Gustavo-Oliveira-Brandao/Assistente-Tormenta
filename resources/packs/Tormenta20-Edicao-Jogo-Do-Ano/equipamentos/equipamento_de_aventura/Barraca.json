@@ -1,0 +1,13 @@
+{
+  "nome": "Barraca",
+  "descricao": "Esta barraca de lona conta como um saco de dormir para duas pessoas e fornece +2 em testes de Sobrevivência para acampar.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "4758baf3-4de3-46b1-82dd-6a536be365c8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

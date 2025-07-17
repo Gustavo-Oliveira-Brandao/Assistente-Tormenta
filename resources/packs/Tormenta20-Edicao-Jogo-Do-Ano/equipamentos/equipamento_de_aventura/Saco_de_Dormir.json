@@ -1,0 +1,13 @@
+{
+  "nome": "Saco de Dormir",
+  "descricao": "Um colchão com uma coberta fina o bastante para ser enrolada e amarrada, é especialmente útil para aventureiros, que nunca sabem onde vão passar a noite. Dormir ao relento sem um acampamento e um saco de dormir diminui sua recuperação de PV e PM (veja a página 106).",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 1,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "98a62413-090d-4f39-b2d1-a511fb4e42d1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

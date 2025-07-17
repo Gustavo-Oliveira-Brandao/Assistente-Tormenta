@@ -1,0 +1,13 @@
+{
+  "nome": "Luva de Ferro",
+  "descricao": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 150,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "04fba76e-c1ff-445b-b536-d562142e375b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

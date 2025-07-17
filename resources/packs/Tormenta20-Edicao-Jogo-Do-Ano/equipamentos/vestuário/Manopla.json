@@ -1,0 +1,13 @@
+{
+  "nome": "Manopla",
+  "descricao": "Luva metálica que permite socos mais perigosos — o dano de seus ataques desarmados torna-se letal. Uma manopla conta como uma arma para receber melhorias e encantos para usá-los em seus ataques desarmados.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "95338fbd-0cb0-40c1-bb21-a00d097dfd0c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

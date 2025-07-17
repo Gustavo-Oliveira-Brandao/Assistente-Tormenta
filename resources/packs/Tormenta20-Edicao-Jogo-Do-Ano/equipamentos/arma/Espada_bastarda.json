@@ -1,0 +1,37 @@
+{
+  "nome": "Espada bastarda",
+  "descricao": "Maior e mais pesada que a espada longa, esta arma é tradicionalmente usada pelos cavaleiros de Bielefeld. A espada bastarda é uma arma adaptável. É muito grande para ser usada com uma só mão sem treinamento especial; por isso é uma arma exótica. Ela pode ser usada como uma arma marcial de duas mãos.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas exóticas",
+  "espacos": 1,
+  "preco": 35,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 10,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    },
+    {
+      "quantidade": 1,
+      "dado": 12,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "0b252cc9-f4b4-48e5-9f01-8dce0ae6aa18",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

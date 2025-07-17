@@ -1,0 +1,30 @@
+{
+  "nome": "Cimitarra",
+  "descricao": "Espada com a lâmina curva e muito afiada. A cimitarra é uma arma ágil.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "preco": 15,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 18,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "b36ec408-be66-482b-a630-046f581011e7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

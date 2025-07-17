@@ -1,0 +1,19 @@
+{
+  "nome": "Escudo leve",
+  "categoria": "escudo",
+  "equipado": false,
+  "proficiencia": "escudos",
+  "espacos": 1,
+  "preco": 5,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 1,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -1,
+  "material": "comum",
+  "descricao": "Tipicamente feito de madeira, este escudo é amarrado no antebraço, deixando a mão livre. Você pode carregar um objeto na mão que empunha o escudo, mas não manusear uma arma.",
+  "key": "b300acc1-a1e8-4d0c-91c5-bacb1ef4898e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

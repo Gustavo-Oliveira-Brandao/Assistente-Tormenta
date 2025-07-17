@@ -17,17 +17,26 @@
   "classes": [
     {
       "nome": "arcanista",
-      "nivel": 1
+      "nivel": 1,
+      "vidaInicial": 8,
+      "vidaPorNivel": 2,
+      "manaPorNivel": 2
     },
 
     {
       "nome": "barbaro",
-      "nivel": 4
+      "nivel": 4,
+      "vidaInicial": 8,
+      "vidaPorNivel": 2,
+      "manaPorNivel": 2
     },
 
     {
       "nome": "druida",
-      "nivel": 3
+      "nivel": 3,
+      "vidaInicial": 8,
+      "vidaPorNivel": 2,
+      "manaPorNivel": 2
     }
   ],
   "atributos": [

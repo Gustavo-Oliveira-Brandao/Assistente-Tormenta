@@ -4,6 +4,7 @@
   "icone": "caçador",
   "vidaInicial": 16,
   "vidaPorNivel": 4,
+  "devotoFiel": false,
   "manaPorNivel": 4,
   "pericias": ["sobrevivencia"],
   "numeroPericiasExtras": 7,

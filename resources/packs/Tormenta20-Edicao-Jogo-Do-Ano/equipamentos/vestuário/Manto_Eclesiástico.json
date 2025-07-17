@@ -1,0 +1,13 @@
+{
+  "nome": "Manto Eclesiástico",
+  "descricao": "Um manto típico de igrejas e templos. Fornece +1 em Religião.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 20,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "d1b2177f-6174-42ff-b4af-e47274682b04",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,30 @@
+{
+  "nome": "Alfange",
+  "descricao": "Uma versão maior da cimitarra, esta espada de lâmina larga e curva é bastante usada por guerreiros do Deserto da Perdição.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "preco": 75,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 18,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 4,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "c4a0668e-31ad-4fb0-b704-6132e3cf5599",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

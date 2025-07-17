@@ -1,0 +1,30 @@
+{
+  "nome": "Cajado Arcano",
+  "descricao": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 2,
+  "preco": 1000,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "material": "comum",
+  "key": "2dd0bea7-484a-4a6c-aaeb-284df55f07ab",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

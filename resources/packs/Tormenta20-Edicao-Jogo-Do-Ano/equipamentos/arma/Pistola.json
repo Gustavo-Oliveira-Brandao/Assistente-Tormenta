@@ -1,0 +1,31 @@
+{
+  "nome": "Pistola",
+  "descricao": "A arma de fogo mais comum. Recarregar uma pistola é uma ação padrão.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas de fogo",
+  "espacos": 1,
+  "alcance": "curto",
+  "preco": 250,
+  "quantidade": 1,
+  "empunhadura": "leve",
+  "material": "comum",
+  "ataque": {
+    "proposito": "distancia",
+    "bonusAcerto": 0,
+    "periciaAcerto": "pontaria",
+    "margemCritico": 19,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 6,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "key": "3bc3e8e1-0dfd-461e-9ab5-230965999a0a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,19 @@
+{
+  "nome": "Cota de malha",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras pesadas",
+  "espacos": 5,
+  "preco": 150,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 6,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -2,
+  "material": "comum",
+  "descricao": "Longa veste de anéis metálicos interligados, formando uma malha flexível e resistente, que vai até os joelhos.",
+  "key": "317ca37a-a6c5-4803-b052-e1220b951eca",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

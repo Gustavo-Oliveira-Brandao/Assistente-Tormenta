@@ -1,0 +1,13 @@
+{
+  "nome": "Saco de Sal",
+  "descricao": "Um pequeno saco de couro com sal marinho. Fornece +2 na CD de magias de abjuração.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 45,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "a81788c3-1844-4b69-9252-33a85b706c95",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -2,30 +2,25 @@ import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { JSX, useMemo, useState } from 'react'
 import styles from './ficha-personagem.module.scss'
 import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
-import {
-  useExibirPoderesDefault,
-  useExibirPoderesPersonagem
-} from '@renderer/hooks/selectors/usePoderQuery'
-import { useExibirClassesDefault } from '@renderer/hooks/selectors/useClasseQuery'
-import { useExibirRacasDefault } from '@renderer/hooks/selectors/useRacaQuery'
+import { useExibirPoderesPersonagem } from '@renderer/hooks/selectors/usePoderQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
 import { DeepPartial } from 'typeorm'
-import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
 import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
 import { categoriasPoderesData } from '@renderer/utils/common data/categoriasPoderesData'
+import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
+import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
 }
 
 export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => {
-  const { data: compendioPoderes } = useExibirPoderesDefault()
-  const { data: compendioClasses } = useExibirClassesDefault()
-  const { data: compendioRacas } = useExibirRacasDefault()
+  const { data: compendio } = useExibirCompendio()
+
   const { data: poderesPersonagem } = useExibirPoderesPersonagem(personagem.id)
 
   const [categoriaPoderes, setCategoriaPoderes] = useState('CLASSE')
@@ -35,16 +30,16 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
   const [lojaEstaAberta, setLojaEstaAberta] = useState(false)
 
   const poderesFiltrados = useMemo(() => {
-    if (!compendioPoderes) {
+    if (!compendio) {
       return []
     }
 
     if (categoriaPoderes == 'RACA') {
-      return compendioPoderes.filter((poder) => poder.fonte && poder.fonte == filtroRacaPesquisa)
+      return compendio.poderes.filter((poder) => poder.fonte && poder.fonte == filtroRacaPesquisa)
     }
 
     if (categoriaPoderes == 'HABILIDADES_CLASSE') {
-      return compendioPoderes
+      return compendio.poderes
         .filter(
           (poder) =>
             poder.categoria &&
@@ -61,7 +56,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
     }
 
     if (categoriaPoderes == 'PODERES_CLASSE') {
-      return compendioPoderes.filter(
+      return compendio.poderes.filter(
         (poder) =>
           poder.categoria &&
           poder.categoria == 'poder de classe' &&
@@ -70,15 +65,15 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
       )
     }
 
-    return compendioPoderes.filter(
+    return compendio.poderes.filter(
       (poder) => poder.categoria && poder.categoria.toLowerCase() == categoriaPoderes.toLowerCase()
     )
-  }, [categoriaPoderes, compendioPoderes, filtroClassePesquisa, filtroRacaPesquisa])
+  }, [categoriaPoderes, compendio, filtroClassePesquisa, filtroRacaPesquisa])
 
   const adicionarPoderMutation = useCriarPoder()
   const removerPoderMutation = useDeletarPoder()
 
-  const adicionarPoder = (poder: DeepPartial<IPoderPersonagem>): void => {
+  const adicionarPoder = (poder: DeepPartial<IPoder>): void => {
     adicionarPoderMutation.mutate({
       poder: poder,
       nivelPoder: personagem.nivelAtual ?? 1,
@@ -305,8 +300,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                   name="filtroClasse"
                   label="Classe"
                 >
-                  {compendioClasses &&
-                    compendioClasses.map((opt) => (
+                  {compendio &&
+                    compendio.classes.map((opt) => (
                       <OptionModular key={opt.nome} name={opt.nome} value={opt.nome} />
                     ))}
                 </StandaloneSelect>
@@ -318,8 +313,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
                   label="Raça"
                   name="filtroRaca"
                 >
-                  {compendioRacas &&
-                    compendioRacas.map((opt) => (
+                  {compendio &&
+                    compendio.racas.map((opt) => (
                       <OptionModular key={opt.nome} name={opt.nome} value={opt.nome} />
                     ))}
                 </StandaloneSelect>

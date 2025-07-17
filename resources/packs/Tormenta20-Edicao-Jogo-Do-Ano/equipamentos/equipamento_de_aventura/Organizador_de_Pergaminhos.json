@@ -1,0 +1,13 @@
+{
+  "nome": "Organizador de Pergaminhos",
+  "descricao": "Um estojo de madeira ou couro rígido. Se você estiver vestindo um organizador de pergaminhos, pode sacar pergaminhos como uma ação livre.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 25,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "830fc205-639a-46cd-83c8-84a70fed1091",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

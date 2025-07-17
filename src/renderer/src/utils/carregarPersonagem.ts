@@ -5,7 +5,7 @@ import { IModificador } from '@renderer/@types/T20 GOTY/IModificador'
 import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { IStatus } from '@renderer/@types/T20 GOTY/IStatus'
-import { exibirClassesDefault } from '@renderer/api/classe-service'
+import { exibirCompendio } from '@renderer/api/compendio-service'
 
 export const filtrarModificadoresPorTipoAlvo = (
   efeitos: IEfeito[],
@@ -100,7 +100,8 @@ export const calcularStatus = async (
   let vidaInicial = 0
   let vidaTotalPorNivel = 0
   let manaTotalPorNivel = 0
-  const classes = await exibirClassesDefault()
+  const compendio = await exibirCompendio()
+  const classes = compendio.classes
   for (const classe of classes) {
     if (classe.nome === personagem.classeInicial) {
       vidaInicial = classe.vidaInicial

@@ -1,0 +1,14 @@
+{
+  "nome": "Pedras",
+  "descricao": "(20 unidades)",
+  "categoria": "munição",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 0.5,
+  "quantidade": 20,
+  "empunhadura": "nenhuma",
+  "material": "comum",
+  "key": "54924056-ee81-449b-85bf-be57a405448b",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

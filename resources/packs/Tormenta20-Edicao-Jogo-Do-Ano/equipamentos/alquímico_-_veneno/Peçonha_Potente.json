@@ -1,0 +1,13 @@
+{
+  "nome": "Peçonha Potente",
+  "descricao": "Veneno poderoso, extraído de animais ou plantas perigosos. Contato, perde 2d12 PV por rodada durante 3 rodadas (perde 2d12 PV).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 600,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "b4425dee-8d7a-4404-81c7-c50457b4aade",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

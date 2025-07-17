@@ -1,0 +1,13 @@
+{
+  "nome": "Pó do Desaparecimento",
+  "descricao": "Uma criatura ou objeto coberto por este pó torna-se invisível (como em Invisibilidade) por 2d6 rodadas. O usuário não sabe quando a invisibilidade vai terminar.",
+  "categoria": "alquímico - preparado",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 100,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "419bd350-1fe1-43fc-9eb0-531a0c1ff38c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

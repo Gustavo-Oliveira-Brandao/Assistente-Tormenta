@@ -1,0 +1,13 @@
+{
+  "nome": "Manto Camuflado",
+  "descricao": "Um manto camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, na página 51). Por exemplo, um manto camuflado para floresta pode ser verde e marrom e coberto de folhas, enquanto um manto urbano pode ser cinza ou negro. Usar um manto camuflado no terreno correto fornece +2 em Furtividade.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 12,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "615b1f69-0536-4191-b16e-1aeab15f13d8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

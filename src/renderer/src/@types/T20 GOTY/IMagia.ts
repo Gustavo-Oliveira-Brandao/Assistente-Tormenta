@@ -1,4 +1,12 @@
-export type IMagiaPersonagem = {
+export type IGrimorio = {
+  id: number
+  atributoChaveMagias: string
+  bonusCD: number
+  cdMagias?: number
+  magias: IMagia[]
+}
+
+export type IMagia = {
   id: number
   key: number
   nome: string

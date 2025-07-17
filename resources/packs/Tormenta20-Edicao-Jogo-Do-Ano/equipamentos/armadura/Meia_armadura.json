@@ -1,0 +1,19 @@
+{
+  "nome": "Meia armadura",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras pesadas",
+  "espacos": 5,
+  "preco": 600,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 8,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -4,
+  "material": "comum",
+  "descricao": "Uma cota de malha reforçada com placas de metal.",
+  "key": "29f06786-1ac8-49e1-b71b-7885be400261",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

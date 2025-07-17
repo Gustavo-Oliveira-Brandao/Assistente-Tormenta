@@ -1,0 +1,13 @@
+{
+  "nome": "Luneta",
+  "descricao": "Este instrumento valioso consiste de um cilindro metálico com duas lentes. Fornece +5 em testes de Percepção para observar coisas em alcance longo ou além.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 100,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "51c1eb79-e426-4baf-b6ff-8f0f075ca4cd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

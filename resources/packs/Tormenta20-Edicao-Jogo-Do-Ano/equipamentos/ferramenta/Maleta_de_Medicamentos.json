@@ -1,0 +1,13 @@
+{
+  "nome": "Maleta de Medicamentos",
+  "descricao": "Caixa de madeira com ervas, unguentos, bandagens e outros materiais úteis. Um personagem sem este item sofre –5 em Cura.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 50,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "396402d7-2d16-4b6a-9554-681f85b44969",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Espelho",
+  "descricao": "Este pequeno espelho possui diversas utilidades: observar cantos, fazer sinais de luz e, claro, garantir que você esteja apresentável.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 10,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "29a392a1-c68a-41a9-87fe-4d7e4fe9bbd7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Essência de Mana",
+  "descricao": "Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal. Beber a essência de mana é uma ação padrão e recupera 1d4 pontos de mana.",
+  "categoria": "alquímico - preparado",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 50,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "0bd3b3aa-9565-4d31-a6f6-cdfbdfffe4fa",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

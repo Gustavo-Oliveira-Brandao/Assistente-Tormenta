@@ -1,0 +1,13 @@
+{
+  "nome": "Névoa Tóxica",
+  "descricao": "Este gás verde queima e corrói a pele e os pulmões. Inalação, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "d9dc58c3-ee53-40b4-8041-648ef6b30465",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

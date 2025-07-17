@@ -1,0 +1,30 @@
+{
+  "nome": "Mangual",
+  "descricao": "Uma haste metálica ligada a uma corrente com uma esfera de aço na ponta, que pode se enroscar na arma do adversário. O mangual é uma arma versátil, fornecendo +2 em testes para desarmar.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 1,
+  "preco": 8,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "d31ad5bb-7bad-4d2e-a9d8-ce8040249e98",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

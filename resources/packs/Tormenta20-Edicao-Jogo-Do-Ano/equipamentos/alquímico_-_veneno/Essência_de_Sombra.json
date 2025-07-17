@@ -1,0 +1,13 @@
+{
+  "nome": "Essência de Sombra",
+  "descricao": "Produzido a partir de compostos alquímicos que canalizam energia de trevas. Contato, vítima fica debilitada (fraca).",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 100,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "b95815d2-43e6-4a02-b678-e456b709a5ee",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

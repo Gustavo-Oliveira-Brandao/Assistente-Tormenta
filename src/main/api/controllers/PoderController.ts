@@ -1,17 +1,7 @@
 import { ipcMain } from 'electron'
-import {
-  deletePoder,
-  getCompendioPoderes,
-  getPoderesPersonagem,
-  postPoder
-} from '../services/PoderService'
+import { deletePoder, getPoderesPersonagem, postPoder } from '../services/PoderService'
 import { DeepPartial } from 'typeorm'
 import { Poder } from '../entities/Poder'
-
-ipcMain.handle('get-poderes-default', async () => {
-  const poderes = await getCompendioPoderes()
-  return poderes
-})
 
 ipcMain.handle('get-poderes-personagem', async (_, _idPersonagem: number) => {
   const poderes = await getPoderesPersonagem(_idPersonagem)

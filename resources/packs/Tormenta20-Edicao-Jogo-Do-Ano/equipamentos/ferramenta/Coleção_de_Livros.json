@@ -1,0 +1,13 @@
+{
+  "nome": "Coleção de Livros",
+  "descricao": "Uma pequena coleção de tomos e tratados sobre um assunto. Fornece +1 em Conhecimento, Guerra, Misticismo, Nobreza ou Religião (definido quando o item é comprado ou fabricado).",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 75,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "420dc32e-79ee-4d19-833a-cb440f2854c8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,31 @@
+{
+  "nome": "Besta pesada",
+  "descricao": "Versão maior e mais potente da besta leve. Recarregar uma besta pesada é uma ação padrão.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "alcance": "medio",
+  "preco": 50,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "distancia",
+    "bonusAcerto": 0,
+    "periciaAcerto": "pontaria",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 12,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "key": "b053cd5d-630e-4803-9c65-d65bf93b5c63",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Ossos de Monstro",
+  "descricao": "Pequenas falanges de criaturas monstruosas, tratadas com óleos alquímicos. Fornece +2 na CD de magias de necromancia.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 45,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "5c881c3d-4a71-4fe2-9548-07204e888e94",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

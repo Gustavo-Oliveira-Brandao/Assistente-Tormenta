@@ -1,0 +1,13 @@
+{
+  "nome": "Arpéu",
+  "descricao": "Um gancho de aço amarrado na ponta de uma corda para se fixar em muros, janelas, parapeitos de prédios... Prender um arpéu exige um teste de Pontaria (CD 15). Subir um muro com a ajuda de uma corda fornece +5 no teste de Atletismo.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 5,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "693a1efb-531f-4b75-8499-a124e6c6a194",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

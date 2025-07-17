@@ -1,0 +1,19 @@
+{
+  "nome": "Gibão de peles",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras leves",
+  "espacos": 2,
+  "preco": 25,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 4,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -3,
+  "material": "comum",
+  "descricao": "Usada principalmente por bárbaros e selvagens, esta armadura é formada por várias camadas de peles e couro de animais.",
+  "key": "cc8784c0-4ebc-452b-b5cf-c1a4993901ff",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

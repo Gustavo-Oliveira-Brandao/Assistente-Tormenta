@@ -4,6 +4,7 @@
   "icone": "bardo",
   "vidaInicial": 12,
   "vidaPorNivel": 3,
+  "devotoFiel": false,
   "manaPorNivel": 4,
   "pericias": ["atuacao", "reflexos"],
   "numeroPericiasExtras": 6,

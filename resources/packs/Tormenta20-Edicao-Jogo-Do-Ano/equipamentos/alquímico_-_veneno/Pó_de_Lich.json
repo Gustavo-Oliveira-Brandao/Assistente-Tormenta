@@ -1,0 +1,13 @@
+{
+  "nome": "Pó de Lich",
+  "descricao": "Veneno letal, usado para assassinar alvos poderosos. Ingestão, perde 4d12 PV por rodada durante 5 rodadas (perde 4d12 PV). A CD para fabricar e para resistir a este veneno aumenta em +5.",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 3000,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "5b327576-3680-4739-9c48-54906b2be802",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

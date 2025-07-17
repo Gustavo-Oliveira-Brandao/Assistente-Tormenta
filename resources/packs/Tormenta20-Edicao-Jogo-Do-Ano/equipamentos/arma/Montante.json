@@ -1,0 +1,30 @@
+{
+  "nome": "Montante",
+  "descricao": "Enorme e pesada, esta espada de 1,5m de comprimento é uma arma poderosa.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "preco": 50,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 6,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "60c90ef1-ce80-4424-bbf4-6dd064253db8",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

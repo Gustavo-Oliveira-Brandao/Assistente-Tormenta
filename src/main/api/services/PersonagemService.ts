@@ -53,17 +53,7 @@ export const putPersonagem = async (_personagem: Personagem): Promise<void> => {
   try {
     const personagemEncontrado = await PersonagemRepository.findOneBy({ id: _personagem.id })
     if (personagemEncontrado) {
-      personagemEncontrado.nome = _personagem.nome
-      personagemEncontrado.raca = _personagem.raca
-      personagemEncontrado.origem = _personagem.origem
-      personagemEncontrado.divindade = _personagem.divindade
-      personagemEncontrado.experiencia = _personagem.experiencia
-      personagemEncontrado.alinhamentoEtico = _personagem.alinhamentoEtico
-      personagemEncontrado.alinhamentoMoral = _personagem.alinhamentoMoral
-      personagemEncontrado.altura = _personagem.altura
-      personagemEncontrado.peso = _personagem.peso
-      personagemEncontrado.tamanho = _personagem.tamanho
-      personagemEncontrado.tipo = _personagem.tipo
+      PersonagemRepository.merge(personagemEncontrado, _personagem)
       await PersonagemRepository.save(personagemEncontrado)
     }
     throw new Error('Personagem não encontrado!')

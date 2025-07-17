@@ -1,0 +1,13 @@
+{
+  "nome": "Essência Abissal",
+  "descricao": "Um líquido espesso, produzido através do sangue de criaturas demoníacas. Aumenta os dados de dano de magias de fogo em uma categoria — d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (o máximo).",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 150,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "cf56a796-6d6e-45e9-8ce3-8947b8372abc",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

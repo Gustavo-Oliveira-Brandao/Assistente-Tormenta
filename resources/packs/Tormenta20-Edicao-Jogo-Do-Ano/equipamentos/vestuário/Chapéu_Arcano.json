@@ -1,0 +1,13 @@
+{
+  "nome": "Chapéu Arcano",
+  "descricao": "Com pinturas e bordados de símbolos místicos, este chapéu pontudo ajuda a canalizar energias mágicas. Ele fornece +1 ponto de mana, mas apenas se você possuir a habilidade de classe Caminho do Arcanista.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 50,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "026c82af-e29a-4be9-8a34-d2565e6b7cba",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

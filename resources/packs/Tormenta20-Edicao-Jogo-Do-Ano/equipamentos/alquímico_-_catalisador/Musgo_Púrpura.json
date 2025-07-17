@@ -1,0 +1,13 @@
+{
+  "nome": "Musgo Púrpura",
+  "descricao": "Encontrado em florestas fechadas, esse fungo cintilante possui propriedades que fornecem +2 na CD de magias de ilusão.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 45,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "d5642e69-0990-4ed1-88fb-7908f52dac5c",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

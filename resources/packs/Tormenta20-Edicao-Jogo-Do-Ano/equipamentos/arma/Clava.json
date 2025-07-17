@@ -1,0 +1,30 @@
+{
+  "nome": "Clava",
+  "descricao": "Um pedaço de madeira empunhado como arma, geralmente usado por bárbaros ou criaturas brutais — ou como arma improvisada, como um galho de árvore ou pedaço de mobília. Sendo fácil de conseguir, seu preço é zero.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "preco": 0,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "bonus": 0,
+      "tipo": "impacto",
+      "atributo": "Força"
+    }
+  ],
+  "key": "948bdfce-5a7e-4a17-87b5-ef30c2126ad7",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

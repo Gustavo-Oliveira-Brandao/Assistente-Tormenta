@@ -3,6 +3,7 @@ import { IDano } from './IDano'
 export type IInventario = {
   id: number
   limiteCarga?: number
+  bonusLimiteCarga: number
   cargaAtual?: number
   limiteItensVestidos: number
   limiteCargaEstaAtivo: boolean
@@ -15,8 +16,9 @@ export type IInventario = {
 
 export type IEquipamento = {
   id: number
+  key: string
   nome: string
-  descricao?: string
+  descricao: string
   categoria: string
   equipado?: boolean
   proficiencia: string
@@ -29,7 +31,7 @@ export type IEquipamento = {
   reducaoDano?: number
   empunhadura?: string
   penalidadeArmadura?: number
-  publicacao?: string
+  publicacao: string
   material?: string
   ataque?: IAtaque
   danos?: IDano[]
@@ -38,6 +40,7 @@ export type IEquipamento = {
 }
 
 export type IAtaque = {
+  id: number
   proposito: string
   bonusAcerto: number
   periciaAcerto: string
@@ -46,6 +49,7 @@ export type IAtaque = {
 }
 
 export type IArmadura = {
+  id: number
   defesa: number
   bonus: number
   maxAtributoDefesa: number

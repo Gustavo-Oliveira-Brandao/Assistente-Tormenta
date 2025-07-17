@@ -1,0 +1,13 @@
+{
+  "nome": "Tambor das Profundezas",
+  "descricao": "Um instrumento típico de anões de Doherimm, capaz de sons graves e retumbantes. Enquanto empunha este item, o alcance da habilidade Inspiração e de qualquer Música de Bardo é dobrado. Conta como um instrumento musical.",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 80,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "7fbd5bbd-a425-44bc-a4b1-e0016211133d",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

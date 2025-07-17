@@ -1,0 +1,19 @@
+{
+  "nome": "Brunea",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras pesadas",
+  "espacos": 5,
+  "preco": 50,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 5,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": -2,
+  "material": "comum",
+  "descricao": "Colete de couro coberto com plaquetas de metal sobrepostas, como escamas de um peixe. Por ser barata de produzir, é a armadura mais utilizada no Reinado por soldados de infantaria e guardas de castelo.",
+  "key": "95a729a9-8ae8-45ce-a6fd-89df79baf77a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

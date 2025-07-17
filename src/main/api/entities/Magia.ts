@@ -1,5 +1,41 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import {
+  Column,
+  Entity,
+  JoinColumn,
+  ManyToOne,
+  OneToMany,
+  OneToOne,
+  PrimaryGeneratedColumn
+} from 'typeorm'
 import { Personagem } from './Personagem'
+
+@Entity()
+export class Grimorio {
+  @PrimaryGeneratedColumn()
+  id: number
+
+  @Column({
+    type: 'varchar',
+    length: 15
+  })
+  atributoChaveMagias: string
+
+  @Column({ type: 'integer' })
+  bonusCD: number
+
+  @OneToMany(() => Magia, (magia) => magia.grimorio, {
+    cascade: true,
+    eager: true
+  })
+  magias: Magia[]
+
+  @OneToOne(() => Personagem, (personagem) => personagem.grimorio, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  @JoinColumn()
+  personagem: Personagem
+}
 
 @Entity()
 export class Magia {
@@ -83,11 +119,11 @@ export class Magia {
   })
   aprimoramentos: AprimoramentoMagia[]
 
-  @ManyToOne(() => Personagem, (personagem) => personagem.magias, {
+  @ManyToOne(() => Grimorio, (grimorio) => grimorio.magias, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'
   })
-  personagem: Personagem
+  grimorio: Grimorio
 }
 
 @Entity()

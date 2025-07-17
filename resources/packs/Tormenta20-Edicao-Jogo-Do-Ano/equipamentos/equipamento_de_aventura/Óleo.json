@@ -1,0 +1,23 @@
+{
+  "nome": "Óleo",
+  "descricao": "Um frasco com óleo inflamável para lampião. Você pode atirar o frasco em uma criatura em alcance curto com uma ação padrão. Se ela sofrer dano de fogo até o fim do seu próximo turno, sofre 1d6 pontos de dano extra e fica em chamas.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "alcance": "curto",
+  "preco": 0.1,
+  "quantidade": 1,
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "fogo",
+      "bonus": 0,
+      "atributo": "Destreza"
+    }
+  ],
+  "material": "comum",
+  "key": "c6dcc552-c53a-4276-9af2-ba0563b757bb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

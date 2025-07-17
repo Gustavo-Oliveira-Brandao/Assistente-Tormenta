@@ -1,4 +1,4 @@
-export type IPoderPersonagem = {
+export type IPoder = {
   id: number
   key: string
   icone?: string

@@ -1,0 +1,30 @@
+{
+  "nome": "Gadanho",
+  "descricao": "Outra ferramenta agrícola, o gadanho é uma versão maior da foice, para uso com as duas mãos. Foi criada para ceifar cereais, mas também pode ceifar vidas.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "preco": 18,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 4
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 4,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "81a84f8f-00a8-4ca9-a4f2-1ac9acf24cd0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

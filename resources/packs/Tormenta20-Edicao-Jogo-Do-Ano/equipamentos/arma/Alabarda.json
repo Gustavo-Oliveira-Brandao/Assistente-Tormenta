@@ -1,0 +1,37 @@
+{
+  "nome": "Alabarda",
+  "descricao": "Uma haste de madeira com 2m de comprimento e uma lâmina de machado na ponta. A alabarda é uma arma alongada.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "preco": 10,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 10,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    },
+    {
+      "quantidade": 1,
+      "dado": 10,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "3d4cbddc-10da-4afb-8c05-b01b67752313",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

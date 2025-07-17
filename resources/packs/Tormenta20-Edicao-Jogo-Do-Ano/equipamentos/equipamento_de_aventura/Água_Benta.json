@@ -1,0 +1,23 @@
+{
+  "nome": "Água Benta",
+  "descricao": "Produzida com a magia Abençoar Alimentos, esta água sagrada é um poderoso recurso na luta contra o mal. Para usar a água benta, você gasta uma ação padrão e escolhe um morto-vivo ou abissal em alcance curto (a água benta é inofensiva contra outras criaturas). O alvo sofre 2d10 pontos de dano de luz (Reflexos CD Sab reduz à metade).",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "alcance": "curto",
+  "preco": 10,
+  "quantidade": 1,
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 10,
+      "tipo": "luz",
+      "bonus": 0,
+      "atributo": "Sabedoria"
+    }
+  ],
+  "material": "comum",
+  "key": "1a864a77-1d55-4faa-b9c8-46a67582b467",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

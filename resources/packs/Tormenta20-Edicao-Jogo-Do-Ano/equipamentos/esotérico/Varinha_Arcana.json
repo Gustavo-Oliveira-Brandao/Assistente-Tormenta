@@ -1,0 +1,13 @@
+{
+  "nome": "Varinha Arcana",
+  "descricao": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1.",
+  "categoria": "esotérico",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 100,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "8ddb8fa4-3558-496e-9344-01510c96edc5",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

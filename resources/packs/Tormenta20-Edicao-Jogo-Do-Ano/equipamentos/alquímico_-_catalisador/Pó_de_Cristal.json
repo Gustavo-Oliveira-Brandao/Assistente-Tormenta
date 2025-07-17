@@ -1,0 +1,13 @@
+{
+  "nome": "Pó de Cristal",
+  "descricao": "Uma pitada de pó de um mineral cristalino puro, como quartzo ou topázio. Diminui o custo de magias de encantamento em –1 PM.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "97b0a693-4083-4929-a03d-5e3518ee9dd9",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Peçonha Comum",
+  "descricao": "Veneno típico, extraído de animais ou plantas tóxicas. Contato, perde 1d12 PV.",
+  "categoria": "alquímico - veneno",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 15,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "62cc1bba-0b81-4038-a10d-c825a9d65fd0",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

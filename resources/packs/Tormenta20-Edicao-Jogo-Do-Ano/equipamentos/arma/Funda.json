@@ -1,0 +1,31 @@
+{
+  "nome": "Funda",
+  "descricao": "Uma simples tira de couro usada para arremessar pedras polidas. Na falta de munição adequada, pode disparar pedras comuns, mas o dano é reduzido em um passo. Recarregar uma funda é uma ação de movimento. Ao contrário de outras armas de disparo, você aplica sua Força a rolagens de dano com uma funda.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "alcance": "medio",
+  "preco": 0,
+  "quantidade": 1,
+  "empunhadura": "1 mão",
+  "material": "comum",
+  "ataque": {
+    "proposito": "distancia",
+    "bonusAcerto": 0,
+    "periciaAcerto": "pontaria",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 4,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "key": "ae9ae450-e181-4549-ae0a-a6902ad9b7da",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

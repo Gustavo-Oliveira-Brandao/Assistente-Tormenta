@@ -1,0 +1,13 @@
+{
+  "nome": "Lampião",
+  "descricao": "Um cilindro com uma alça e duas portinholas. Uma chama alimentada por óleo é acesa dentro do cilindro e uma das portinholas aberta deixa a luz sair. Acender um lampião é uma ação padrão e sua luz ilumina um raio com 15m. Carregar um lampião com óleo é uma ação padrão e ele dura uma cena.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 7,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "f2269347-0755-4c43-97ee-e05b7675d763",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

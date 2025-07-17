@@ -10,15 +10,12 @@ declare global {
         putPersonagem: (personagem: Personagem) => Promise<void>
         deletePersonagem: (id: number) => Promise<void>
       }
+      compendio: {
+        getCompendio: () => Promise<ICompendio>
+      }
       atributos: {
         getAtributosPersonagem: (_idPersonagem: number) => Promise<IAtributo[]>
         putAtributo: (atributo: Atributo) => Promise<void>
-      }
-      classes: {
-        getClassesDefault: () => Promise<IClasse[]>
-      }
-      racas: {
-        getRacasDefault: () => Promise<IRaca[]>
       }
       deslocamentos: {
         getDeslocamentoPersonagem: (_idPersonagem: number) => Promise<IDeslocamento>
@@ -31,14 +28,13 @@ declare global {
         deleteEfeito: (_id: number) => Promise<void>
       }
       magias: {
-        getMagiasDefault: () => Promise<IMagiaDTO[]>
-        getMagiasPersonagem: (_idPersonagem: number) => Promise<Magia[]>
+        putGrimorio: (_grimorio: Grimorio) => Promise<void>
+        getGrimorioPersonagem: (_idPersonagem: number) => Promise<Grimorio>
         putMagia: (magia: Magia) => Promise<void>
-        postMagia: (magia: DeepPartial<Magia>, idPersonagem: number) => Promise<void>
+        postMagia: (magia: DeepPartial<Magia>, idGrimorio: number) => Promise<void>
         deleteMagia: (id: number) => Promise<void>
       }
       poderes: {
-        getPoderesDefault: () => Promise<DeepPartial<Poder>[]>
         getPoderesPersonagem: (_idPersonagem: number) => Promise<Poder[]>
         postPoder: (
           poder: DeepPartial<Poder>,

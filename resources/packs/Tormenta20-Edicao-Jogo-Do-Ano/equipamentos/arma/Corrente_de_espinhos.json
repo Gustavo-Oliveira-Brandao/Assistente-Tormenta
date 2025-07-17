@@ -1,0 +1,37 @@
+{
+  "nome": "Corrente de espinhos",
+  "descricao": "Esta arma pode ser usada para atacar inimigos a até 4,5m e pode se enroscar nas mãos, pernas ou armas de seus adversários. A corrente de espinhos é uma arma ágil, dupla e versátil, fornecendo +2 em testes para derrubar ou desarmar.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas exóticas",
+  "espacos": 2,
+  "preco": 25,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 19,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 4,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    },
+    {
+      "quantidade": 2,
+      "dado": 4,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "ef4d131c-1b01-4922-a63c-6f9e8f881608",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

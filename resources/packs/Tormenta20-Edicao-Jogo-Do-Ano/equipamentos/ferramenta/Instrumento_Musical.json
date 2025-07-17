@@ -1,0 +1,13 @@
+{
+  "nome": "Instrumento Musical",
+  "descricao": "Um instrumento típico, como um bandolim, flauta ou lira. Você precisa empunhar um instrumento musical com as duas mãos para receber seus benefícios e para usar Músicas de Bardo. Instrumentos musicais podem ser usados como esotéricos por bardos (permitindo que lance magias usando a mão que empunha o instrumento). Instrumentos musicais podem receber melhorias de ferramentas (contam como itens ligados a Atuação) e de esotéricos (mas afetam apenas magias lançadas por bardos).",
+  "categoria": "ferramenta",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 35,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "1841ee3a-7caa-44af-828c-ee2c9d8666ef",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

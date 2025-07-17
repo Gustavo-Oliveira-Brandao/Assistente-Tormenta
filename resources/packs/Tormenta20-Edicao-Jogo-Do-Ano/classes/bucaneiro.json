@@ -3,6 +3,7 @@
   "nome": "bucaneiro",
   "icone": "bucaneiro",
   "vidaInicial": 16,
+  "devotoFiel": false,
   "vidaPorNivel": 4,
   "manaPorNivel": 3,
   "pericias": ["reflexos"],

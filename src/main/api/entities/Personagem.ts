@@ -7,7 +7,7 @@ import { Proficiencia } from './Proficiencia'
 import { ClassePersonagem } from './ClassePersonagem'
 import { Poder } from './Poder'
 import { Efeito } from './Efeito'
-import { Magia } from './Magia'
+import { Grimorio } from './Magia'
 
 @Entity()
 export class Personagem {
@@ -72,12 +72,6 @@ export class Personagem {
   })
   alinhamentoMoral: string
 
-  @Column({
-    type: 'varchar',
-    length: 15
-  })
-  atributoChaveMagias: string
-
   @OneToMany(() => Poder, (poder) => poder.personagem, {
     cascade: true
   })
@@ -104,8 +98,7 @@ export class Personagem {
   deslocamento: Deslocamento
 
   @OneToMany(() => Efeito, (efeito) => efeito.personagem, {
-    cascade: true,
-    nullable: true
+    cascade: true
   })
   efeitos?: Efeito[]
 
@@ -115,14 +108,12 @@ export class Personagem {
   status: Status
 
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
-    cascade: true,
-    nullable: true
+    cascade: true
   })
   proficiencias?: Proficiencia[]
 
-  @OneToMany(() => Magia, (magia) => magia.personagem, {
-    cascade: true,
-    nullable: true
+  @OneToOne(() => Grimorio, (grimorio) => grimorio.personagem, {
+    cascade: true
   })
-  magias?: Magia[]
+  grimorio?: Grimorio
 }

@@ -1,0 +1,13 @@
+{
+  "nome": "Vara de Madeira (3m)",
+  "descricao": "Uma haste com 3m de comprimento. Útil para alcançar pontos distantes, mas frágil demais para servir como arma.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 0.2,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "4b80d772-2cf7-4fa0-8430-96e6a2a2edaf",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

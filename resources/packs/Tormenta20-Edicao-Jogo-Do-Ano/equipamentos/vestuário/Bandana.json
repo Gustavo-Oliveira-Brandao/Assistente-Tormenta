@@ -1,0 +1,13 @@
+{
+  "nome": "Bandana",
+  "descricao": "Um lenço tipicamente usado por bandidos e piratas. Fornece +1 em Intimidação.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 5,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "ddf14525-e224-4fa0-a20e-9f03df6a621e",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

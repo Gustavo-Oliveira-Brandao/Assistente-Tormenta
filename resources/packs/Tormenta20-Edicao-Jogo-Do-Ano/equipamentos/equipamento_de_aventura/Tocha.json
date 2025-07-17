@@ -1,0 +1,36 @@
+{
+  "nome": "Tocha",
+  "descricao": "Um bastão de madeira com algum combustível na ponta (geralmente trapos embebidos em parafina). Acender uma tocha é uma ação padrão. Ela ilumina um raio de 9m e dura uma cena. Pode ser usada como uma arma simples leve (dano 1d4 de impacto mais 1 de fogo, crítico x2).",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "preco": 0.1,
+  "quantidade": 1,
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 4,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    },
+    {
+      "quantidade": 0,
+      "dado": 0,
+      "tipo": "fogo",
+      "bonus": 1,
+      "atributo": "Nenhum"
+    }
+  ],
+  "material": "comum",
+  "key": "23ce44ac-599f-4de0-ad99-3dc3c3acea06",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,29 @@
+{
+  "nome": "Pé de Cabra",
+  "descricao": "Esta barra de ferro fornece +5 em testes de Força para abrir portas, janelas e baús fechados. Um pé de cabra pode ser usado como arma, com as estatísticas de uma clava.",
+  "categoria": "equipamento de aventura",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 1,
+  "preco": 2,
+  "quantidade": 1,
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 6,
+      "tipo": "impacto",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "material": "comum",
+  "key": "3a1f92d4-66cf-4ded-9ecd-5476e327b8b1",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

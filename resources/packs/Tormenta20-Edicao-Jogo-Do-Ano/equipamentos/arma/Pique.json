@@ -1,0 +1,30 @@
+{
+  "nome": "Pique",
+  "descricao": "Essencialmente uma lança muito longa. O pique é uma arma alongada.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas simples",
+  "espacos": 2,
+  "preco": 2,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 2
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 8,
+      "tipo": "perfuracao",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "b429d9d9-b73d-4978-b45b-884f0fe96cf2",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

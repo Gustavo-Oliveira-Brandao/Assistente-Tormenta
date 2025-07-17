@@ -1,0 +1,13 @@
+{
+  "nome": "Capa Pesada",
+  "descricao": "Uma capa de couro grossa e resistente. Protege e aquece o corpo, fornecendo +1 em Fortitude.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 15,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "79e389f4-987c-486b-af6b-57be313e94fb",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

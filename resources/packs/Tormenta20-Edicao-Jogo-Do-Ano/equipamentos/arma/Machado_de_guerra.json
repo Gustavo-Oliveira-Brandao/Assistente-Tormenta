@@ -1,0 +1,30 @@
+{
+  "nome": "Machado de guerra",
+  "descricao": "Este imenso machado de lâmina dupla é uma arma extremamente perigosa.",
+  "categoria": "arma",
+  "equipado": false,
+  "proficiencia": "armas marciais",
+  "espacos": 2,
+  "preco": 20,
+  "quantidade": 1,
+  "empunhadura": "2 mãos",
+  "material": "comum",
+  "ataque": {
+    "proposito": "corpo a corpo",
+    "bonusAcerto": 0,
+    "periciaAcerto": "luta",
+    "margemCritico": 20,
+    "multiplicadorCritico": 3
+  },
+  "danos": [
+    {
+      "quantidade": 1,
+      "dado": 12,
+      "tipo": "corte",
+      "bonus": 0,
+      "atributo": "Força"
+    }
+  ],
+  "key": "3c00b215-47d6-4aed-a356-509425123c59",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

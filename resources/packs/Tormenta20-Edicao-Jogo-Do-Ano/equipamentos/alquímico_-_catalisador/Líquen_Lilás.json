@@ -1,0 +1,13 @@
+{
+  "nome": "Líquen Lilás",
+  "descricao": "Esta estranha planta tem aspecto cristalino e cresce em abundância na região das Uivantes. Adiciona +1d6 de dano de frio a magias.",
+  "categoria": "alquímico - catalisador",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 30,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "fa49a12a-f696-4978-b642-6b36aa83a8d6",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

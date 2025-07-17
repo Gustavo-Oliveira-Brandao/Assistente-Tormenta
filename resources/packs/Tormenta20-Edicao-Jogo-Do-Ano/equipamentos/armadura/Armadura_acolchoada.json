@@ -1,0 +1,19 @@
+{
+  "nome": "Armadura acolchoada",
+  "categoria": "armadura",
+  "equipado": false,
+  "proficiencia": "armaduras leves",
+  "espacos": 2,
+  "preco": 5,
+  "quantidade": 1,
+  "armadura": {
+    "defesa": 1,
+    "bonus": 0,
+    "maxAtributoDefesa": 99
+  },
+  "penalidadeArmadura": 0,
+  "material": "comum",
+  "descricao": "Uma túnica almofadada feita em linho ou lã. É a armadura mais leve, mas protege todo o corpo, fornecendo +2 em Fortitude.",
+  "key": "f4db9fde-62e8-46a7-b310-669c76c8b1dd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

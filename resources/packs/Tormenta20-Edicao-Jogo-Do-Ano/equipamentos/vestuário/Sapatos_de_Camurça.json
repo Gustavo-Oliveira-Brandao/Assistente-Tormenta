@@ -1,0 +1,13 @@
+{
+  "nome": "Sapatos de Camurça",
+  "descricao": "Leves e resistentes, aprimoram o equilíbrio e a firmeza dos pés, fornecendo +1 em Acrobacia.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 8,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "8ce98d03-3f35-45bf-b42f-16e00276e585",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

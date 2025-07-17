@@ -1,0 +1,13 @@
+{
+  "nome": "Farrapos de Ermitão",
+  "descricao": "Trapos “adornados” com plantas e raízes. Uma pessoa vestindo farrapos de ermitão não parece muito civilizada, e sofre –2 em Diplomacia e em testes de Investigação para interrogar. Entretanto, recebe +2 em Adestramento.",
+  "categoria": "vestuário",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 1,
+  "preco": 1,
+  "quantidade": 1,
+  "material": "comum",
+  "key": "640cbf99-8227-46c3-a1ff-ae4f25fcadee",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

@@ -1,0 +1,22 @@
+{
+  "nome": "Bálsamo Restaurador",
+  "descricao": "Uma pasta verde e fedorenta, feita de ervas medicinais. Usá-la é uma ação completa e recupera 2d4 pontos de vida.",
+  "categoria": "alquímico - preparado",
+  "equipado": false,
+  "proficiencia": "nenhuma",
+  "espacos": 0.5,
+  "preco": 10,
+  "quantidade": 1,
+  "danos": [
+    {
+      "quantidade": 2,
+      "dado": 4,
+      "tipo": "cura",
+      "bonus": 0,
+      "atributo": "Nenhum"
+    }
+  ],
+  "material": "comum",
+  "key": "abbedce7-df1c-4314-aaf3-a1552f27c2bd",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+}

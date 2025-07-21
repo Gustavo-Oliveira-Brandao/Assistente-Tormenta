@@ -1,7 +1,7 @@
 export type IPericia = {
   id: number
   nome: string
-  valorAtual?: number
+  valorAtual: number
   bonus: number
   treinamento: string
   categoria: string

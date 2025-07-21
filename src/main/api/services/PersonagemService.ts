@@ -1,6 +1,8 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
 import { Personagem } from '../entities/Personagem'
+import { calcularPersonagem } from '../utils/CalcularPersonagem'
+import { IPersonagemDTO } from '../../@types/T20 GOTY/dto/IPersonagemDTO'
 
 export const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
 
@@ -13,10 +15,10 @@ export const getTodosPersonagem = async (): Promise<Personagem[]> => {
   }
 }
 
-export const getPersonagem = async (id: number): Promise<Personagem> => {
+export const getPersonagem = async (id: number): Promise<IPersonagemDTO> => {
   try {
     console.log('pedidoPersonagemRecebido:' + Date.now())
-    const personagem = await PersonagemRepository.findOne({
+    const personagemBruto = await PersonagemRepository.findOne({
       where: { id: id },
       relations: {
         classes: true,
@@ -28,10 +30,13 @@ export const getPersonagem = async (id: number): Promise<Personagem> => {
         proficiencias: true
       }
     })
-    if (personagem == null) {
+
+    if (personagemBruto == null) {
       throw new Error('Personagem não encontrado!')
     }
-    console.log('personagemEncontrado:' + Date.now())
+
+    const personagem = await calcularPersonagem(personagemBruto)
+
     return personagem
   } catch (err) {
     console.log(err)

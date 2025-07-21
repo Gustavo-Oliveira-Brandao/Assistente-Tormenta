@@ -4,5 +4,8 @@
   "itens": "Joia de família no valor de T$ 300, traje da corte.",
   "beneficios": "Diplomacia, Enganação, Nobreza (perícias); Comandar, Sangue Azul (poderes).",
   "key": "a5e065f4-3809-450a-83e6-5e4ba42eb005",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": ["diplomacia", "enganacao", "nobreza"],
+  "poderes": ["8a32483f-d8d3-4565-80e0-0cfa55e4d954", "aeb868a0-94d3-4c0b-9cb8-354e2dd90e63"]
 }

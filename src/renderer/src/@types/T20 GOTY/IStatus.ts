@@ -2,14 +2,14 @@ export type IStatus = {
   id: number
 
   // Pontos de Vida (PV)
-  vidaMaxima?: number
+  vidaMaxima: number
   vidaAtual: number
   vidaTemporaria: number
   vidaMaximaBonus: number
   atributoVidaMaxima: string
 
   // Pontos de Mana (PM)
-  manaMaxima?: number
+  manaMaxima: number
   manaAtual: number
   manaTemporaria: number
   manaMaximaBonus: number
@@ -17,7 +17,7 @@ export type IStatus = {
 
   // Defesa
   defesaBase: number
-  defesaAtual?: number
+  defesaAtual: number
   defesaBonus: number
   atributoDefesa: string
 }

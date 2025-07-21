@@ -1,13 +1,13 @@
 export type IDeslocamento = {
   id: number
   caminhadaBase: number
-  caminhadaAtual?: number
+  caminhadaAtual: number
   vooBase: number
-  vooAtual?: number
+  vooAtual: number
   natacaoBase: number
-  natacaoAtual?: number
+  natacaoAtual: number
   escaladaBase: number
-  escaladaAtual?: number
+  escaladaAtual: number
   escavacaoBase: number
-  escavacaoAtual?: number
+  escavacaoAtual: number
 }

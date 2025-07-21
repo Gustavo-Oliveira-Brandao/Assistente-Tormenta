@@ -1,5 +1,4 @@
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
-import { carregarPersonagem } from '@renderer/utils/carregarPersonagem'
 import { DeepPartial } from 'typeorm'
 
 export const exibirTodosPersonagens = async (): Promise<IPersonagem[]> => {
@@ -7,11 +6,9 @@ export const exibirTodosPersonagens = async (): Promise<IPersonagem[]> => {
 }
 
 export const exibirPersonagemPorId = async (id: number): Promise<IPersonagem> => {
-  const personagemBruto = await window.api.personagens.getPersonagem(id)
-  console.log('personagemRecebidoDoBack:' + Date.now())
-  const personagem = await carregarPersonagem(personagemBruto)
-  console.log('personagemCarregado:' + Date.now())
-
+  console.log('Requisição enviada: ' + Date.now())
+  const personagem = await window.api.personagens.getPersonagem(id)
+  console.log('Requisição completa: ' + Date.now())
   return personagem
 }
 

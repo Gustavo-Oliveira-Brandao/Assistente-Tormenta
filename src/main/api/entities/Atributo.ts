@@ -8,8 +8,7 @@ export class Atributo {
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
   nome: string
 
@@ -24,12 +23,6 @@ export class Atributo {
     nullable: false
   })
   bonus: number
-
-  @Column({
-    type: 'integer',
-    nullable: false
-  })
-  ordem: number
 
   @ManyToOne(() => Personagem, (personagem) => personagem.atributos, {
     onDelete: 'CASCADE',

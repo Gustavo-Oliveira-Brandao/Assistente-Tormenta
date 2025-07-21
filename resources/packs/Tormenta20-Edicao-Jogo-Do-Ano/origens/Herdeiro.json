@@ -4,5 +4,8 @@
   "itens": "Um símbolo de sua herança, como um anel de sinete ou manto cerimonial. Enquanto estiver com esse item, você pode ser reconhecido por sua descendência, o que pode ser bom... ou não!",
   "beneficios": "Misticismo, Nobreza, Ofício (perícias); Comandar, Herança (poderes).",
   "key": "41fd137d-e637-4fc6-b351-996cbde53684",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "poderes": ["fff3ae28-ceb8-4790-864e-0c9aa1e6eb51", "aeb868a0-94d3-4c0b-9cb8-354e2dd90e63"]
 }

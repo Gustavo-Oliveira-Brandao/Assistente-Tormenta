@@ -2,7 +2,7 @@ export type IGrimorio = {
   id: number
   atributoChaveMagias: string
   bonusCD: number
-  cdMagias?: number
+  cdMagias: number
   magias: IMagia[]
 }
 

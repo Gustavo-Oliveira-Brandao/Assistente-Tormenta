@@ -4,5 +4,8 @@
   "itens": "Cão de caça, cavalo, pônei ou trobo (escolha um).",
   "beneficios": "Adestramento, Cavalgar (perícias); Amigo Especial (poder).",
   "key": "fe3eba58-54b1-4f84-bd6c-b063bc93538f",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": ["adestramento", "cavalgar"],
+  "poderes": ["41b2a6bd-ca47-4e63-bf3e-f9d4c1511b43"]
 }

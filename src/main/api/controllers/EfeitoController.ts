@@ -1,10 +1,5 @@
 import { ipcMain } from 'electron'
-import {
-  deleteEfeito,
-  getEfeitosPersonagem,
-  postEfeito,
-  putEfeito
-} from '../services/EfeitoService'
+import { deleteEfeito, postEfeito, putEfeito } from '../services/EfeitoService'
 import { Efeito } from '../entities/Efeito'
 import { DeepPartial } from 'typeorm'
 
@@ -18,8 +13,4 @@ ipcMain.handle('put-efeito', async (_, _efeito: Efeito) => {
 
 ipcMain.handle('delete-efeito', async (_, _id: number) => {
   await deleteEfeito(_id)
-})
-
-ipcMain.handle('get-efeitos-personagem', async (_, _idPersonagem: number) => {
-  return await getEfeitosPersonagem(_idPersonagem)
 })

@@ -4,5 +4,8 @@
   "itens": "Um ou mais itens (somando até T$ 500), aprovados pelo mestre, que podem ser uma pista misteriosa do seu passado.",
   "beneficios": "Em vez de dois benefícios de uma lista, você recebe uma perícia e um poder escolhidos pelo mestre e o poder Lembranças Graduais.",
   "key": "01f49441-a24a-4dec-b84f-50f10eaa262f",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "poderes": ["3635d6ae-975e-4a4b-81d9-c0bf1d2321b7"]
 }

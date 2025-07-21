@@ -14,7 +14,7 @@ export type IPersonagem = {
   classes: IClassePersonagem[]
   origem: string
   divindade: string
-  nivelAtual?: number
+  nivelAtual: number
   experiencia: number
   tamanho: string
   alinhamentoEtico: string

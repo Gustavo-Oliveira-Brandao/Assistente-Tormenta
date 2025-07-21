@@ -8,8 +8,7 @@ export class Pericia {
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 50
+    type: 'varchar'
   })
   nome: string
 
@@ -20,20 +19,17 @@ export class Pericia {
   bonus: number
 
   @Column({
-    type: 'varchar',
-    length: 15
+    type: 'varchar'
   })
   treinamento: string
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
   categoria: string
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
   atributo: string
 

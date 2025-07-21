@@ -32,6 +32,11 @@ export class Deslocamento {
   })
   escavacaoBase: number
 
+  @Column({
+    type: 'boolean'
+  })
+  plana: boolean
+
   @OneToOne(() => Personagem, (personagem) => personagem.deslocamento, {
     onDelete: 'CASCADE',
     orphanedRowAction: 'delete'

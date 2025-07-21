@@ -1,10 +1,17 @@
-import { Column, Entity, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm'
+import {
+  Column,
+  Entity,
+  Index,
+  ManyToOne,
+  OneToMany,
+  OneToOne,
+  PrimaryGeneratedColumn
+} from 'typeorm'
 import { Atributo } from './Atributo'
 import { Pericia } from './Pericia'
 import { Deslocamento } from './Deslocamento'
 import { Status } from './Status'
 import { Proficiencia } from './Proficiencia'
-import { ClassePersonagem } from './ClassePersonagem'
 import { Poder } from './Poder'
 import { Efeito } from './Efeito'
 import { Grimorio } from './Magia'
@@ -15,20 +22,17 @@ export class Personagem {
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 150
+    type: 'varchar'
   })
   nome: string
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
   tipo: string
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
   raca: string
 
@@ -38,14 +42,12 @@ export class Personagem {
   classeInicial: string
 
   @Column({
-    type: 'varchar',
-    length: 30
+    type: 'varchar'
   })
   origem: string
 
   @Column({
-    type: 'varchar',
-    length: 30
+    type: 'varchar'
   })
   divindade: string
 
@@ -55,20 +57,17 @@ export class Personagem {
   experiencia: number
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
   tamanho: string
 
   @Column({
-    type: 'varchar',
-    length: 10
+    type: 'varchar'
   })
   alinhamentoEtico: string
 
   @Column({
-    type: 'varchar',
-    length: 10
+    type: 'varchar'
   })
   alinhamentoMoral: string
 
@@ -77,10 +76,10 @@ export class Personagem {
   })
   poderes: Poder[]
 
-  @OneToMany(() => ClassePersonagem, (classes) => classes.personagem, {
+  @OneToMany(() => Classe, (classes) => classes.personagem, {
     cascade: true
   })
-  classes: ClassePersonagem[]
+  classes: Classe[]
 
   @OneToMany(() => Atributo, (atributos) => atributos.personagem, {
     cascade: true
@@ -100,7 +99,7 @@ export class Personagem {
   @OneToMany(() => Efeito, (efeito) => efeito.personagem, {
     cascade: true
   })
-  efeitos?: Efeito[]
+  efeitos: Efeito[]
 
   @OneToOne(() => Status, (status) => status.personagem, {
     cascade: true
@@ -110,10 +109,53 @@ export class Personagem {
   @OneToMany(() => Proficiencia, (proficiencia) => proficiencia.personagem, {
     cascade: true
   })
-  proficiencias?: Proficiencia[]
+  proficiencias: Proficiencia[]
 
   @OneToOne(() => Grimorio, (grimorio) => grimorio.personagem, {
     cascade: true
   })
-  grimorio?: Grimorio
+  grimorio: Grimorio
+}
+
+@Entity()
+export class Classe {
+  @PrimaryGeneratedColumn()
+  id: number
+
+  @Column({
+    type: 'varchar'
+  })
+  nome: string
+
+  @Column({
+    type: 'integer'
+  })
+  nivel: number
+
+  @Column({
+    type: 'integer'
+  })
+  vidaInicial: number
+
+  @Column({
+    type: 'integer'
+  })
+  vidaPorNivel: number
+
+  @Column({
+    type: 'boolean'
+  })
+  devotoFiel: true
+
+  @Column({
+    type: 'integer'
+  })
+  manaPorNivel: number
+
+  @ManyToOne(() => Personagem, (personagem) => personagem.classes, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  @Index()
+  personagem: Personagem
 }

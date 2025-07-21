@@ -5,7 +5,7 @@ import { Poder } from '../entities/Poder'
 import { extrairJson } from './JsonService'
 import { Equipamento } from '../entities/Inventario'
 import { Magia } from '../entities/Magia'
-import { IClasse, ICompendio, IDivindade, IOrigem, IRaca } from '../../@types/ICompendio'
+import { ICompendio, IClasse, IRaca, IDivindade, IOrigem } from '../../@types/T20 GOTY/ICompendio'
 
 export const getCompendioGeral = async (): Promise<ICompendio> => {
   try {

@@ -23,11 +23,6 @@ export class Dano {
   tipo: string
 
   @Column({
-    type: 'boolean'
-  })
-  aplicaModificador: boolean
-
-  @Column({
     type: 'varchar',
     length: 20
   })

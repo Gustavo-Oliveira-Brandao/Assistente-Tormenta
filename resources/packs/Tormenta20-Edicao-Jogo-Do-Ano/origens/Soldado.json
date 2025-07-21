@@ -4,5 +4,8 @@
   "itens": "Uma arma marcial, um uniforme militar, uma insígnia de seu exército.",
   "beneficios": "Fortitude, Guerra, Luta, Pontaria (perícias); Influência Militar, um poder de combate a sua escolha (poderes).",
   "key": "bb48e4ba-ffd3-4252-8a1b-6ff24bbd6388",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "poderes": ["ba746114-5bbf-47eb-9b03-80968c253019"]
 }

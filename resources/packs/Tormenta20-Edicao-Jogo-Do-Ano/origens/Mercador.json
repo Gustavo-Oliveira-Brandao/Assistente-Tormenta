@@ -4,5 +4,12 @@
   "itens": "Carroça, trobo, mercadorias para vender no valor de T$ 100.",
   "beneficios": "Diplomacia, Intuição, Ofício (perícias); Negociação, Proficiência, Sortudo (poderes).",
   "key": "dd0acdf0-c7d3-4906-8eab-35fde539cb9d",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "poderes": [
+    "1338bc7a-6454-4f5c-8dd5-dc13cc4600dd",
+    "b951f607-0e23-447e-a1e2-288a3e1a6b00",
+    "eed377b9-897d-4d1d-ab6b-142ed72a81f4"
+  ]
 }

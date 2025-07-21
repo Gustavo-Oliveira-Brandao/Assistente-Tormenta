@@ -4,5 +4,8 @@
   "itens": "Tatuagem ou outro adereço de sua gangue (+1 em Intimidação), uma arma simples corpo a corpo.",
   "beneficios": "Luta, Intimidação (perícias); Confissão, um poder de combate a sua escolha (poderes).",
   "key": "217a7ba8-b5e5-41b0-aacc-7c0695cf9476",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "poderes": ["6fb0afc5-035a-40f2-a5ad-82f3b16dbaac"]
 }

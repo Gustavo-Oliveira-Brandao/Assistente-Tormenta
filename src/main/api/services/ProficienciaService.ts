@@ -5,19 +5,6 @@ import { Proficiencia } from '../entities/Proficiencia'
 
 export const ProficienciaRepository = SQLiteDataSource.getRepository(Proficiencia)
 
-export const getProficienciasPorPersonagem = async (
-  _idPersonagem: number
-): Promise<Proficiencia[]> => {
-  try {
-    const proficiencias = await ProficienciaRepository.find({
-      where: { personagem: { id: _idPersonagem } }
-    })
-    return proficiencias
-  } catch (err) {
-    throw new Error('Erro ao buscar proficiencias: ' + err)
-  }
-}
-
 export const postProficiencia = async (
   _proficiencia: DeepPartial<Proficiencia>,
   _idPersonagem: number

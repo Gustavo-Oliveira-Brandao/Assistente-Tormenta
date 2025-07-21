@@ -15,8 +15,7 @@ export class Grimorio {
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 15
+    type: 'varchar'
   })
   atributoChaveMagias: string
 

@@ -1,7 +1,7 @@
 import { DeepPartial } from 'typeorm'
-import { Poder } from '../api/entities/Poder'
-import { Magia } from '../api/entities/Magia'
-import { Equipamento } from '../api/entities/Inventario'
+import { Equipamento } from '../../api/entities/Inventario'
+import { Poder } from '../../api/entities/Poder'
+import { Magia } from '../../api/entities/Magia'
 
 export type ICompendio = {
   classes: IClasse[]

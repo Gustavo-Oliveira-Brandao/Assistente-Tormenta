@@ -2,9 +2,9 @@ import { IDano } from './IDano'
 
 export type IInventario = {
   id: number
-  limiteCarga?: number
+  limiteCarga: number
   bonusLimiteCarga: number
-  cargaAtual?: number
+  cargaAtual: number
   limiteItensVestidos: number
   limiteCargaEstaAtivo: boolean
   limiteItensVestidosEstaAtivo: boolean

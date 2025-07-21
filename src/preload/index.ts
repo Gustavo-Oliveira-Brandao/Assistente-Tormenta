@@ -10,7 +10,7 @@ import { Poder } from '../main/api/entities/Poder'
 import { Grimorio, Magia } from '../main/api/entities/Magia'
 import { Status } from '../main/api/entities/Status'
 import { Efeito } from '../main/api/entities/Efeito'
-import { ICompendio } from '../main/@types/ICompendio'
+import { ICompendio } from '../main/@types/T20 GOTY/ICompendio'
 
 // Custom APIs for renderer
 const api = {

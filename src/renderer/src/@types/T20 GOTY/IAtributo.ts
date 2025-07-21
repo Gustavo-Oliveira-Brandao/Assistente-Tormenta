@@ -3,6 +3,5 @@ export type IAtributo = {
   nome: string
   valorBase: number
   bonus: number
-  valorAtual?: number
-  ordem: number
+  valorAtual: number
 }

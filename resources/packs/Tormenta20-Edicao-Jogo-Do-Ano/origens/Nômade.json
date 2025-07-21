@@ -4,5 +4,12 @@
   "itens": "Bordão, equipamento de viagem.",
   "beneficios": "Cavalgar, Pilotagem, Sobrevivência (perícias); Lobo Solitário, Mochileiro, Sentidos Aguçados (poderes).",
   "key": "1ca939f7-e161-4e86-beba-ff677935fad2",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "poderes": [
+    "b2d6af0a-3dba-4170-abe4-f9362f57b365",
+    "55c1b217-81a6-4cfe-89ca-2a1d53f94f27",
+    "25e1e3e9-9ca7-45a3-8664-94f47990147c"
+  ]
 }

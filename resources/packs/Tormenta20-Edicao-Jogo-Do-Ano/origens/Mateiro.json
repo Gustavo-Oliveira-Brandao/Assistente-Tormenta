@@ -4,5 +4,12 @@
   "itens": "Arco curto, barraca, equipamento de viagem, 20 flechas.",
   "beneficios": "Atletismo, Furtividade, Sobrevivência (perícias); Lobo Solitário, Sentidos Aguçados, Vendedor de Carcaças (poderes).",
   "key": "1e3a4931-5071-4ad0-96bf-de92f114b4b4",
-  "publicacao": "Tormenta20 - Edição Jogo do Ano"
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "quantidadeBeneficios": 2,
+  "pericias": [],
+  "poderes": [
+    "fdbbc7a9-ce32-4885-973c-8a545a943ff4",
+    "25e1e3e9-9ca7-45a3-8664-94f47990147c",
+    "55c1b217-81a6-4cfe-89ca-2a1d53f94f27"
+  ]
 }

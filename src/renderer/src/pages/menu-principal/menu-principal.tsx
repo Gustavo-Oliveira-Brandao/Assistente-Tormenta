@@ -19,7 +19,6 @@ import { OptionModular, SelectFieldModular } from '@renderer/components/select-f
 import { atributosData } from '@renderer/utils/common data/atributosData'
 import { NumberFieldModular } from '@renderer/components/number-field/number-field'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { divindadesData } from '@renderer/utils/common data/divindadesData'
 import { eticoData, moralData } from '@renderer/utils/common data/alinhamentoData'
 import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
 
@@ -201,10 +200,18 @@ type CriacaoPersonagemFormProps = {
 export const CriacaoPersonagemForm = ({
   setCriacaoPersonagemEstaAberta
 }: CriacaoPersonagemFormProps): JSX.Element => {
-  const [racaSelecionada, setRacaSelecionada] = useState<string>()
-  const [classeSelecionada, setClasseSelecionada] = useState<string>()
-  const [origemSelecionada, setOrigemSelecionada] = useState<string>()
-  const [divindadeSelecionada, setDivindadeSelecionada] = useState<string>()
+  const [racaSelecionada, setRacaSelecionada] = useState<string>(
+    '25c5e36c-e3a3-429a-9b90-92d19fed9446'
+  )
+  const [classeSelecionada, setClasseSelecionada] = useState<string>(
+    '82372b8c-75a9-4f98-86f1-5886a6eb0084'
+  )
+  const [origemSelecionada, setOrigemSelecionada] = useState<string>(
+    '9ad3f5fb-c6b6-47b8-9124-9349c8ffe95d'
+  )
+  const [divindadeSelecionada, setDivindadeSelecionada] = useState<string>(
+    '1ff50850-67a7-49a8-a890-e3abbc9b9af1'
+  )
   const [etapaFormulario, setEtapaFormulario] = useState('DETALHES')
 
   const { data: compendio } = useExibirCompendio()
@@ -359,6 +366,34 @@ export const CriacaoPersonagemForm = ({
                       <p className="tormenta20Font">{classe.nome}</p>
                     </BotaoModular>
                   ))}
+                {etapaFormulario == 'ORIGEM' &&
+                  compendio?.origens.map((origem) => (
+                    <BotaoModular
+                      onClickEvent={() => setOrigemSelecionada(origem.key)}
+                      key={origem.key}
+                      css={origemSelecionada == origem.key ? 'botaoItemSelecionado' : 'botaoItem'}
+                      cor="transparente"
+                    >
+                      <p className="tormenta20Font">{origem.nome}</p>
+                    </BotaoModular>
+                  ))}
+                {etapaFormulario == 'DIVINDADE' &&
+                  compendio?.divindades.map((divindade) => (
+                    <BotaoModular
+                      key={divindade.key}
+                      onClickEvent={() => setDivindadeSelecionada(divindade.key)}
+                      css={
+                        divindadeSelecionada == divindade.key ? 'botaoItemSelecionado' : 'botaoItem'
+                      }
+                      cor="transparente"
+                    >
+                      <img
+                        src={`./icons/${divindade.nome.toLowerCase()}.svg`}
+                        alt={divindade.nome}
+                      />
+                      <p className="tormenta20Font">{divindade.nome}</p>
+                    </BotaoModular>
+                  ))}
                 {etapaFormulario == 'ATRIBUTOS' && (
                   <div className={styles.description}>
                     <div className={styles.campos}>
@@ -467,13 +502,13 @@ export const CriacaoPersonagemForm = ({
                 <BotaoModular
                   css="botaoFooterModal"
                   cor="verdePrimario"
-                  onClickEvent={() => setEtapaFormulario('ATRIBUTOS')}
+                  onClickEvent={() => setEtapaFormulario('ORIGEM')}
                 >
-                  <p className="tormenta20Font">Atributos</p>
+                  <p className="tormenta20Font">Origem</p>
                 </BotaoModular>
               </>
             )}
-            {etapaFormulario == 'ATRIBUTOS' && (
+            {etapaFormulario == 'ORIGEM' && (
               <>
                 <BotaoModular
                   css="botaoFooterModal"
@@ -481,6 +516,31 @@ export const CriacaoPersonagemForm = ({
                   onClickEvent={() => setEtapaFormulario('CLASSE')}
                 >
                   <p className="tormenta20Font">Classe</p>
+                </BotaoModular>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('DIVINDADE')}
+                >
+                  <p className="tormenta20Font">Atributos</p>
+                </BotaoModular>
+              </>
+            )}
+            {etapaFormulario == 'DIVINDADE' && (
+              <>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('ORIGEM')}
+                >
+                  <p className="tormenta20Font">Classe</p>
+                </BotaoModular>
+                <BotaoModular
+                  css="botaoFooterModal"
+                  cor="verdePrimario"
+                  onClickEvent={() => setEtapaFormulario('ATRIBUTOS')}
+                >
+                  <p className="tormenta20Font">Atributos</p>
                 </BotaoModular>
               </>
             )}
@@ -492,13 +552,6 @@ export const CriacaoPersonagemForm = ({
             <>
               <FieldsetModular legend={<p className="inter">Detalhes</p>}>
                 <TextFieldModular placeholder="Ragnar" name="nome" label="Nome" />
-                <TextFieldModular placeholder="Taverneiro" name="origem" label="Origem" />
-                <SelectFieldModular name="divindade" label="Divindade">
-                  <OptionModular name="ateu" value="Nenhuma" />
-                  {divindadesData.map((opt) => (
-                    <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
-                  ))}
-                </SelectFieldModular>
               </FieldsetModular>
               <FieldsetModular legend={<p className="inter">Alinhamento</p>}>
                 <SelectFieldModular name="alinhamentoEtico" label="Ético">
@@ -650,15 +703,67 @@ export const CriacaoPersonagemForm = ({
                     <p className="inter">{origemExibida.descricao}</p>
                     <div className={styles.secao}>
                       <h3 className={`tormenta20Font ${styles.titulo}`}>Itens concedidos</h3>
-                      <div className={styles.itens}>
+                      <div>
                         <p className="inter">{origemExibida.itens}</p>
                       </div>
                     </div>
 
                     <div className={styles.secao}>
-                      <h3 className={`tormenta20Font ${styles.titulo}`}>Beneficios</h3>
-                      <div className={styles.itens}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>
+                        Beneficios (escolha dois)
+                      </h3>
+                      <div>
                         <p className="inter">{origemExibida.beneficios}</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+          {etapaFormulario == 'DIVINDADE' && (
+            <div className={styles.selecaoPersonagem}>
+              {divindadeExibida && (
+                <>
+                  <div className={styles.info}>
+                    <h1 className="tormenta20Font">{divindadeExibida.nome}</h1>
+                  </div>
+                  <div className={styles.description}>
+                    <p className="inter">{divindadeExibida.descricao}</p>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Crenças e objetivos</h3>
+                      <div>
+                        <p className="inter">{divindadeExibida.crencas}</p>
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Símbolo sagrado</h3>
+                      <div>
+                        <p className="inter">{divindadeExibida.simbolo}</p>
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Canalizar energia</h3>
+                      <div>
+                        <p className="inter"> {divindadeExibida.canalizarEnergia}</p>
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Devotos</h3>
+                      <div>
+                        <p className="inter">{divindadeExibida.devotos}</p>
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Obrigações e restrições</h3>
+                      <div>
+                        <p className="inter">{divindadeExibida.obrigacoes}</p>
+                      </div>
+                    </div>
+                    <div className={styles.secao}>
+                      <h3 className={`tormenta20Font ${styles.titulo}`}>Arma preferida</h3>
+                      <div>
+                        <p className="inter">{divindadeExibida.armaPreferida}</p>
                       </div>
                     </div>
                   </div>

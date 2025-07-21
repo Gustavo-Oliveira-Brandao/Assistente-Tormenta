@@ -5,7 +5,7 @@ export type IClasse = {
   vidaInicial: number
   vidaPorNivel: number
   manaPorNivel: number
-  progressaoConjuracao: string
+  devotoFiel: boolean
   pericias: string[]
   numeroPericiasExtras: number
   periciasExtras: string[]
@@ -19,4 +19,8 @@ export type IClassePersonagem = {
   id: number
   nome: string
   nivel: number
+  vidaInicial: number
+  vidaPorNivel: number
+  manaPorNivel: number
+  devotoFiel: boolean
 }

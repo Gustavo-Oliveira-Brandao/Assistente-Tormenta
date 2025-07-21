@@ -8,14 +8,12 @@ export class Proficiencia {
   id: number
 
   @Column({
-    type: 'varchar',
-    length: 50
+    type: 'varchar'
   })
   categoria: string
 
   @Column({
-    type: 'varchar',
-    length: 100
+    type: 'varchar'
   })
   nome: string
 

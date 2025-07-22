@@ -6,10 +6,24 @@
   "key": "1e3a4931-5071-4ad0-96bf-de92f114b4b4",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["atletismo", "furtividade", "sobrevivencia"],
+  "pericias": [],
   "poderes": [
     "fdbbc7a9-ce32-4885-973c-8a545a943ff4",
     "25e1e3e9-9ca7-45a3-8664-94f47990147c",
     "55c1b217-81a6-4cfe-89ca-2a1d53f94f27"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:atle",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:furt",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:sobr",
+      "ehOficio": false
+    }
   ]
 }

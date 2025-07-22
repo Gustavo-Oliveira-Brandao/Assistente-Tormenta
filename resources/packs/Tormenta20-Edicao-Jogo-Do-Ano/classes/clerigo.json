@@ -6,20 +6,23 @@
   "vidaPorNivel": 4,
   "manaPorNivel": 5,
   "devotoFiel": true,
-  "pericias": ["religiao", "vontade"],
+  "pericias": [
+    "T20:pericias:reli",
+    "T20:pericias:vont"
+  ],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
-    "conhecimento",
-    "cura",
-    "diplomacia",
-    "fortitude",
-    "iniciativa",
-    "intuicao",
-    "luta",
-    "misticismo",
-    "nobreza",
-    "oficio",
-    "percepcao"
+    "T20:pericias:conh",
+    "T20:pericias:cura",
+    "T20:pericias:dipl",
+    "T20:pericias:fort",
+    "T20:pericias:inic",
+    "T20:pericias:intu",
+    "T20:pericias:luta",
+    "T20:pericias:mist",
+    "T20:pericias:nobr",
+    "T20:pericias:ofic",
+    "T20:pericias:perc"
   ],
   "proficiencias": [
     {

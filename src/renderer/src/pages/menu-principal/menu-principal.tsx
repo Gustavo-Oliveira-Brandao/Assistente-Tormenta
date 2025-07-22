@@ -24,7 +24,7 @@ import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
 
 export const MenuPrincipal = (): JSX.Element => {
   const dispatch = useDispatch()
-
+  const { data: compendio } = useExibirCompendio()
   const [criacaoPersonagemEstaAberta, setCriacaoPersonagemEstaAberta] = useState(false)
   const [selecaoPersonagensEstaAberta, setSelecaoPersonagensEstaAberta] = useState(false)
   const [personagemSelecionado, setPersonagemSelecionado] = useState<IPersonagem | null>(null)

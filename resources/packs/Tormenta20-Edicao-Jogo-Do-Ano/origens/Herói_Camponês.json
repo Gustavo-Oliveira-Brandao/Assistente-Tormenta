@@ -6,11 +6,21 @@
   "key": "3d1c52dd-9fe8-4d00-b9dc-b74ea3014ff2",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["adestramento", "oficio"],
+  "pericias": [],
   "poderes": [
     "660f90d3-7713-4d37-ae43-90a8697dc91d",
     "eed377b9-897d-4d1d-ab6b-142ed72a81f4",
     "eb0fecff-5aff-4313-b86f-fb7b21da02f0",
     "4cca8d75-1320-4ca4-95e4-064569d83340"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:ades",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:ofic",
+      "ehOficio": false
+    }
   ]
 }

@@ -6,10 +6,19 @@
   "key": "03f9cc6f-e779-44bd-a4ba-3a1f7b9ef229",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["cura", "vontade"],
   "poderes": [
     "546244e4-9857-41f5-8bce-bd42cf21c1eb",
     "5737548c-621d-47e5-ace0-89d6798b3faf",
     "2cabc7d2-085e-49f1-b9b7-91a965dc60b0"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:cura",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:vont",
+      "ehOficio": false
+    }
   ]
 }

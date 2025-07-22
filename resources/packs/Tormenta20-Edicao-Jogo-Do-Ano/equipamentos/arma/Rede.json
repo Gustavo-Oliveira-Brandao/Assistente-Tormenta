@@ -13,7 +13,7 @@
   "ataque": {
     "proposito": "distancia",
     "bonusAcerto": 0,
-    "periciaAcerto": "pontaria",
+    "periciaAcerto": "T20:pericias:pont",
     "margemCritico": 20,
     "multiplicadorCritico": 1
   },

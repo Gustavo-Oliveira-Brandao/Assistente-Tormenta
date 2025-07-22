@@ -5,19 +5,19 @@
   "descricao": "Com a influência macabra da Tormenta permeando cada vez mais o mundo, surgiram os lefou. Estes meios-demônios de aparência grotesca passaram a nascer em famílias de outras raças, sendo logo sacrificados ou expulsos. Entre os que escapam, por sua facilidade em manifestar poderes aberrantes, muitos escolhem abraçar o mal, enquanto outros decidem combatê-lo.",
   "atributos": [
     {
-      "atributo": "forca",
+      "atributo": "T20:atributos:for",
       "valor": 1
     },
     {
-      "atributo": "destreza",
+      "atributo": "T20:atributos:des",
       "valor": 1
     },
     {
-      "atributo": "constituicao",
+      "atributo": "T20:atributos:con",
       "valor": 1
     },
     {
-      "atributo": "carisma",
+      "atributo": "T20:atributos:car",
       "valor": -1
     }
   ],

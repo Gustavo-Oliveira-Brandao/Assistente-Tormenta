@@ -6,21 +6,24 @@
   "vidaPorNivel": 3,
   "devotoFiel": false,
   "manaPorNivel": 4,
-  "pericias": ["oficio", "vontade"],
+  "pericias": [
+    "T20:pericias:ofic",
+    "T20:pericias:vont"
+  ],
   "numeroPericiasExtras": 4,
   "periciasExtras": [
-    "conhecimento",
-    "cura",
-    "diplomacia",
-    "fortitude",
-    "iniciativa",
-    "investigacao",
-    "luta",
-    "misticismo",
-    "oficio",
-    "pilotagem",
-    "percepcao",
-    "pontaria"
+    "T20:pericias:conh",
+    "T20:pericias:cura",
+    "T20:pericias:dipl",
+    "T20:pericias:fort",
+    "T20:pericias:inic",
+    "T20:pericias:inve",
+    "T20:pericias:luta",
+    "T20:pericias:mist",
+    "T20:pericias:ofic",
+    "T20:pericias:pilo",
+    "T20:pericias:perc",
+    "T20:pericias:pont"
   ],
   "proficiencias": [],
   "publicacao": "Tormenta20 - Edição Jogo do Ano"

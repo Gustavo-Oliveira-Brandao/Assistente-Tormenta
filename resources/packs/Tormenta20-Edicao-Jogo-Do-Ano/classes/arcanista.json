@@ -6,20 +6,23 @@
   "vidaInicial": 8,
   "vidaPorNivel": 2,
   "manaPorNivel": 6,
-  "pericias": ["misticismo", "vontade"],
+  "pericias": [
+    "T20:pericias:mist",
+    "T20:pericias:vont"
+  ],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
-    "conhecimento",
-    "diplomacia",
-    "enganacao",
-    "guerra",
-    "iniciativa",
-    "intimidacao",
-    "intuicao",
-    "investigacao",
-    "nobreza",
-    "oficio",
-    "percepcao"
+    "T20:pericias:conh",
+    "T20:pericias:dipl",
+    "T20:pericias:enga",
+    "T20:pericias:guer",
+    "T20:pericias:inic",
+    "T20:pericias:inti",
+    "T20:pericias:intu",
+    "T20:pericias:inve",
+    "T20:pericias:nobr",
+    "T20:pericias:ofic",
+    "T20:pericias:perc"
   ],
   "proficiencias": [],
   "publicacao": "Tormenta20 - Edição Jogo do Ano"

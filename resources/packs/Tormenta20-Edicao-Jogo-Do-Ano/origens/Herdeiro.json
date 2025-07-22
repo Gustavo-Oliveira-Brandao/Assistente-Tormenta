@@ -6,6 +6,23 @@
   "key": "41fd137d-e637-4fc6-b351-996cbde53684",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["misticismo", "nobreza", "oficio"],
-  "poderes": ["fff3ae28-ceb8-4790-864e-0c9aa1e6eb51", "aeb868a0-94d3-4c0b-9cb8-354e2dd90e63"]
+  "pericias": [],
+  "poderes": [
+    "fff3ae28-ceb8-4790-864e-0c9aa1e6eb51",
+    "aeb868a0-94d3-4c0b-9cb8-354e2dd90e63"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:mist",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:nobr",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:ofic",
+      "ehOficio": false
+    }
+  ]
 }

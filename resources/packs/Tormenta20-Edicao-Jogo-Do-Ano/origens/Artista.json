@@ -6,11 +6,20 @@
   "key": "fc255dc2-f1e6-4921-8e1c-f2ce3c9c4fbf",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["atuacao", "enganacao"],
   "poderes": [
     "dcaa2976-9408-4dd9-8fdf-a60d4ee09b18",
     "eed377b9-897d-4d1d-ab6b-142ed72a81f4",
     "1e8bbb70-d939-4bad-ac4e-05eee4e7d6cf",
     "4cca8d75-1320-4ca4-95e4-064569d83340"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:atua",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:enga",
+      "ehOficio": false
+    }
   ]
 }

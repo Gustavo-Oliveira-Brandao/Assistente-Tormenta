@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { Equipamento } from './Inventario'
 
 //OK
 @Entity()
@@ -30,4 +31,15 @@ export class Rolagem {
     type: 'integer'
   })
   bonus: number
+
+  @Column({
+    type: 'varchar'
+  })
+    atributo: string
+
+  @ManyToOne(() => (Equipamento), (equipamento) => equipamento.rolagens, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  equipamento: Equipamento
 }

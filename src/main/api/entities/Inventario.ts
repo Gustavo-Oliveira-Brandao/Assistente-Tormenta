@@ -7,6 +7,7 @@ import {
   OneToOne,
   PrimaryGeneratedColumn
 } from 'typeorm'
+import { Rolagem } from './Rolagem'
 
 @Entity()
 export class Inventario {
@@ -149,6 +150,12 @@ export class Equipamento {
     eager: true
   })
   ataque: Ataque
+
+  @OneToMany(() => Rolagem, (rolagens) => rolagens.equipamento, {
+    cascade: true,
+    eager: true
+  })
+    rolagens: Rolagem[]
 
   @OneToOne(() => Armadura, (armadura) => armadura.equipamento, {
     cascade: true,

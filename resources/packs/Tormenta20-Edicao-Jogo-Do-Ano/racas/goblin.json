@@ -5,15 +5,15 @@
   "descricao": "Estes pequenos seres feiosos conseguiram um lugar entre os povos do Reinado. Podem ser encontrados em todas as grandes cidades, muitos vivendo na imundície, outros prosperando em carreiras que quase ninguém tentaria: espiões, aeronautas, engenhoqueiros. Onde o anão teimoso e o elfo empolado falham, o goblin pode dar um jeito. Porque ele não tem vergonha. Nem orgulho. Nem bom senso.",
   "atributos": [
     {
-      "atributo": "destreza",
+      "atributo": "T20:atributos:des",
       "valor": 2
     },
     {
-      "atributo": "inteligencia",
+      "atributo": "T20:atributos:int",
       "valor": 1
     },
     {
-      "atributo": "carisma",
+      "atributo": "T20:atributos:car",
       "valor": -1
     }
   ],

@@ -11,7 +11,7 @@
   "material": "comum",
   "ataque": {
     "proposito": "corpo a corpo",
-    "periciaAcerto": "luta",
+    "periciaAcerto": "T20:pericias:luta",
     "bonusAcerto": 0,
     "margemCritico": 20,
     "multiplicadorCritico": 3
@@ -22,7 +22,7 @@
       "dado": 6,
       "descricao": "corte",
       "bonus": 0,
-      "atributo": "Força",
+      "atributo": "T20:atributos:for",
       "tipo": "dano"
     }
   ],

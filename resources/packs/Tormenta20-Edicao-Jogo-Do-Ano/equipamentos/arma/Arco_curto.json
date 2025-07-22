@@ -13,7 +13,7 @@
   "ataque": {
     "proposito": "distancia",
     "bonusAcerto": 0,
-    "periciaAcerto": "pontaria",
+    "periciaAcerto": "T20:pericias:pont",
     "margemCritico": 20,
     "multiplicadorCritico": 3
   },
@@ -24,7 +24,7 @@
       "descricao": "perfuracao",
       "bonus": 0,
       "tipo": "dano",
-      "atributo": "Nenhum"
+      "atributo": "T20:atributos:nen"
     }
   ],
   "key": "cadd3b6c-1a47-4876-802c-89bf4b6735b2",

@@ -6,10 +6,24 @@
   "key": "8bd5b1dc-57b1-4740-b852-f69d7ab8710c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["furtividade", "iniciativa", "ladinagem"],
+  "pericias": [],
   "poderes": [
     "6a49bd0b-22b1-49d9-8161-f45471d0fe32",
     "bf21f0f1-ab61-4221-a402-79ab9534b4e8",
     "9a8385aa-91bb-4b8c-890f-19929c3c0a37"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:furt",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:inic",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:ladi",
+      "ehOficio": false
+    }
   ]
 }

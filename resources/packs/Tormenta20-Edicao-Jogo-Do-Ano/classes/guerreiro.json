@@ -6,20 +6,22 @@
   "vidaPorNivel": 5,
   "devotoFiel": false,
   "manaPorNivel": 3,
-  "pericias": ["fortitude"],
+  "pericias": [
+    "T20:pericias:fort"
+  ],
   "numeroPericiasExtras": 3,
   "periciasExtras": [
-    "adestramento",
-    "atletismo",
-    "cavalgar",
-    "guerra",
-    "iniciativa",
-    "intimidacao",
-    "luta",
-    "oficio",
-    "percepcao",
-    "pontaria",
-    "reflexos"
+    "T20:pericias:ades",
+    "T20:pericias:atle",
+    "T20:pericias:cava",
+    "T20:pericias:guer",
+    "T20:pericias:inic",
+    "T20:pericias:inti",
+    "T20:pericias:luta",
+    "T20:pericias:ofic",
+    "T20:pericias:perc",
+    "T20:pericias:pont",
+    "T20:pericias:refl"
   ],
   "proficiencias": [
     {

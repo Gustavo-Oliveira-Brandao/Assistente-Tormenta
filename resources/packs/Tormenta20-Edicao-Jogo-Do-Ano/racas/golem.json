@@ -5,15 +5,15 @@
   "descricao": "Diz-se que estes seres são apenas construtos sem vida, criados não pelos deuses, mas por mortais. No entanto, são movidos por forças vivas — espíritos elementais selvagens, capturados e lacrados por meios mágicos em corpos de pedra e metal. Muitos conformam-se com seus papéis como trabalhadores e soldados, enquanto outros demonstram alta inteligência, personalidade e iniciativa. Podem fazer tudo que outras raças fazem, até mesmo conjurar magias. Será que têm alma? Será que encontrarão os deuses quando chegar sua hora?",
   "atributos": [
     {
-      "atributo": "forca",
+      "atributo": "T20:atributos:for",
       "valor": 2
     },
     {
-      "atributo": "constituicao",
+      "atributo": "T20:atributos:con",
       "valor": 1
     },
     {
-      "atributo": "carisma",
+      "atributo": "T20:atributos:car",
       "valor": -1
     }
   ],

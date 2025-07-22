@@ -5,15 +5,15 @@
   "descricao": "Parte humanas, parte fadas, as Dahllan são uma raça de mulheres com a seiva de árvores correndo nas veias. Falam com os animais, controlam as plantas — mas também são ferozes em batalha, retorcendo madeira para formar armaduras.",
   "atributos": [
     {
-      "atributo": "sabedoria",
+      "atributo": "T20:atributos:sab",
       "valor": 2
     },
     {
-      "atributo": "destreza",
+      "atributo": "T20:atributos:des",
       "valor": 1
     },
     {
-      "atributo": "inteligencia",
+      "atributo": "T20:atributos:int",
       "valor": -1
     }
   ],

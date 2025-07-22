@@ -13,7 +13,7 @@
   "ataque": {
     "proposito": "corpo a corpo",
     "bonusAcerto": 0,
-    "periciaAcerto": "luta",
+    "periciaAcerto": "T20:pericias:luta",
     "margemCritico": 20,
     "multiplicadorCritico": 2
   },
@@ -23,7 +23,7 @@
       "dado": 6,
       "descricao": "perfuracao",
       "bonus": 0,
-      "atributo": "Força",
+      "atributo": "T20:atributos:for",
       "tipo": "dano"
     }
   ],

@@ -6,6 +6,19 @@
   "key": "fe323274-56fa-40b7-8047-a3ac31087af2",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["oficio", "vontade"],
-  "poderes": ["6a5906db-cbe1-4f70-ab99-c3a5993f30cb", "eed377b9-897d-4d1d-ab6b-142ed72a81f4"]
+  "poderes": [
+    "6a5906db-cbe1-4f70-ab99-c3a5993f30cb",
+    "eed377b9-897d-4d1d-ab6b-142ed72a81f4"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:ofic",
+      "nomeOficio": "",
+      "ehOficio": true
+    },
+    {
+      "pericia": "T20:pericias:vont",
+      "ehOficio": false
+    }
+  ]
 }

@@ -5,15 +5,15 @@
   "descricao": "Anões são o mais resiliente dos povos. Em suas cidadelas subterrâneas, trabalham duro escavando minas e forjando metal em belas armas, armaduras e joias. São honestos e determinados, honrando a família e a tradição. Apesar de sua profunda paixão por forja e cerveja, pouca coisa é mais preciosa para um anão que cultivar uma barba longa e orgulhosa.",
   "atributos": [
     {
-      "atributo": "constituicao",
+      "atributo": "T20:atributos:con",
       "valor": 2
     },
     {
-      "atributo": "sabedoria",
+      "atributo": "T20:atributos:sab",
       "valor": 1
     },
     {
-      "atributo": "destreza",
+      "atributo": "T20:atributos:des",
       "valor": -1
     }
   ],

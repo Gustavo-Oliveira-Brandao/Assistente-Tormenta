@@ -6,10 +6,24 @@
   "key": "b510813e-b3e6-4e33-8d1e-56395453c7d3",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": ["percepcao", "reflexos", "sobrevivencia"],
+  "pericias": [],
   "poderes": [
     "e85a10b9-7f1e-486f-812a-ca5586068b03",
     "25e1e3e9-9ca7-45a3-8664-94f47990147c",
     "cce4ecf0-297b-4048-8ea9-d331a76fed50"
+  ],
+  "beneficioPericias": [
+    {
+      "pericia": "T20:pericias:perc",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:refl",
+      "ehOficio": false
+    },
+    {
+      "pericia": "T20:pericias:sobr",
+      "ehOficio": false
+    }
   ]
 }

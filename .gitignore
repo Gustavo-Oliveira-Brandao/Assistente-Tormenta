@@ -4,3 +4,7 @@ out
 .DS_Store
 .eslintcache
 *.log*
+
+/prisma/src/main/api/dataModel
+
+/prisma/src/main/api/dataModel

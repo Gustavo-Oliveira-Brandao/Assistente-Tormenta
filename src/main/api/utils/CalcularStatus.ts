@@ -15,7 +15,7 @@ export const calcularStatus = (
   let manaTotalPorNivel = 0
 
   for (const classe of personagem.classes) {
-    if (classe.nome === personagem.classeInicial) {
+    if (classe.nome === personagem.detalhesPJ.classeOriginal) {
       vidaInicial = classe.vidaInicial
     }
   }

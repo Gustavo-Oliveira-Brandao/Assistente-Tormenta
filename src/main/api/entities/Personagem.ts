@@ -2,6 +2,7 @@ import {
   Column,
   Entity,
   Index,
+  JoinColumn,
   ManyToOne,
   OneToMany,
   OneToOne,
@@ -29,47 +30,32 @@ export class Personagem {
   @Column({
     type: 'varchar'
   })
+  categoria: string
+
+  @Column({
+    type: 'varchar'
+  })
   tipo: string
-
-  @Column({
-    type: 'varchar'
-  })
-  raca: string
-
-  @Column({
-    type: 'varchar'
-  })
-  classeInicial: string
-
-  @Column({
-    type: 'varchar'
-  })
-  origem: string
-
-  @Column({
-    type: 'varchar'
-  })
-  divindade: string
 
   @Column({
     type: 'integer'
   })
-  experiencia: number
+  nivel: number
 
   @Column({
     type: 'varchar'
   })
   tamanho: string
 
-  @Column({
-    type: 'varchar'
+  @OneToOne(() => DetalhesPJ, (detalhesPJ) => detalhesPJ.personagem, {
+    cascade: true
   })
-  alinhamentoEtico: string
+  detalhesPJ: DetalhesPJ
 
-  @Column({
-    type: 'varchar'
+  @OneToOne(() => DetalhesAmeaca, (detalhesAmeaca) => detalhesAmeaca.personagem, {
+    cascade: true
   })
-  alinhamentoMoral: string
+  detalhesAmeaca: DetalhesAmeaca
 
   @OneToMany(() => Poder, (poder) => poder.personagem, {
     cascade: true
@@ -145,7 +131,7 @@ export class Classe {
   @Column({
     type: 'boolean'
   })
-  devotoFiel: true
+  devotoFiel: boolean
 
   @Column({
     type: 'integer'
@@ -157,5 +143,82 @@ export class Classe {
     orphanedRowAction: 'delete'
   })
   @Index()
+  personagem: Personagem
+}
+
+@Entity()
+export class DetalhesPJ {
+  @PrimaryGeneratedColumn()
+  id: number
+
+  @Column({
+    type: 'varchar'
+  })
+  raca: string
+
+  @Column({
+    type: 'varchar'
+  })
+  classeOriginal: string
+
+  @Column({
+    type: 'varchar'
+  })
+  origem: string
+
+  @Column({
+    type: 'varchar'
+  })
+  divindade: string
+
+  @Column({
+    type: 'integer'
+  })
+  experiencia: number
+
+  @Column({
+    type: 'varchar'
+  })
+  alinhamentoEtico: string
+
+  @Column({
+    type: 'varchar'
+  })
+  alinhamentoMoral: string
+
+  @OneToOne(() => Personagem, (personagem) => personagem.detalhesPJ, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  @JoinColumn()
+  personagem: Personagem
+}
+
+@Entity()
+export class DetalhesAmeaca {
+  @PrimaryGeneratedColumn()
+  id: number
+
+  @Column({
+    type: 'varchar'
+  })
+  papelCombate: string
+
+  @Column({
+    type: 'varchar',
+    nullable: true
+  })
+  subtipo: string
+
+  @Column({
+    type: 'varchar'
+  })
+  tesouro: string
+
+  @OneToOne(() => Personagem, (personagem) => personagem.detalhesAmeaca, {
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete'
+  })
+  @JoinColumn()
   personagem: Personagem
 }

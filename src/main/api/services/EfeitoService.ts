@@ -1,9 +1,10 @@
 import { DeepPartial } from 'typeorm'
 import { SQLiteDataSource } from '../data-source'
-import { Efeito } from '../entities/Efeito'
+import { Efeito, Modificador } from '../entities/Efeito'
 import { Personagem } from '../entities/Personagem'
 
 export const EfeitoRepository = SQLiteDataSource.getRepository(Efeito)
+const ModificadorRepository = SQLiteDataSource.getRepository(Modificador)
 
 export const getEfeitosPersonagem = async (_idPersonagem: number): Promise<Efeito[]> => {
   try {
@@ -58,11 +59,39 @@ export const putEfeito = async (_efeito: Efeito): Promise<void> => {
   }
 }
 
+export const putModificador = async (_modificador: Modificador): Promise<void> => {
+  try {
+    const modificadorEncontrado = await ModificadorRepository.findOne({
+      where: { id: _modificador.id }
+    })
+
+    if (!modificadorEncontrado) {
+      throw new Error('Modificador não encontrado!')
+    }
+
+    ModificadorRepository.merge(modificadorEncontrado, _modificador)
+
+    await ModificadorRepository.save(modificadorEncontrado)
+  } catch (error) {
+    console.log(error)
+    throw new Error('Erro ao atualizar modificador!')
+  }
+}
+
 export const deleteEfeito = async (_id: number): Promise<void> => {
   try {
     await EfeitoRepository.delete(_id)
   } catch (err) {
     console.log(err)
     throw new Error('Erro ao deletar efeito')
+  }
+}
+
+export const deleteModificador = async (_id: number): Promise<void> => {
+  try {
+    await ModificadorRepository.delete(_id)
+  } catch (error) {
+    console.log(error)
+    throw new Error('Erro ao deletar modificador.')
   }
 }

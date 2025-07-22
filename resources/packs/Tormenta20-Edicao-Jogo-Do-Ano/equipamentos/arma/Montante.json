@@ -16,13 +16,14 @@
     "margemCritico": 19,
     "multiplicadorCritico": 2
   },
-  "danos": [
+  "rolagens": [
     {
       "quantidade": 2,
       "dado": 6,
-      "tipo": "corte",
+      "descricao": "corte",
       "bonus": 0,
-      "atributo": "Força"
+      "atributo": "Força",
+      "tipo": "dano"
     }
   ],
   "key": "60c90ef1-ce80-4424-bbf4-6dd064253db8",

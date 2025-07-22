@@ -17,13 +17,14 @@
     "margemCritico": 19,
     "multiplicadorCritico": 3
   },
-  "danos": [
+  "rolagens": [
     {
       "quantidade": 2,
       "dado": 6,
-      "tipo": "perfuracao",
+      "descricao": "perfuracao",
       "bonus": 0,
-      "atributo": "Nenhum"
+      "atributo": "Nenhum",
+      "tipo": "dano"
     }
   ],
   "key": "3bc3e8e1-0dfd-461e-9ab5-230965999a0a",

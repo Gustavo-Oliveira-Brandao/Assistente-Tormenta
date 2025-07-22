@@ -1,16 +1,14 @@
 import { DataSource } from 'typeorm'
 import { Atributo } from './entities/Atributo'
-import { Dano } from './entities/Dano'
+import { Dano } from './entities/Rolagem'
 import { Deslocamento } from './entities/Deslocamento'
 import { Pericia } from './entities/Pericia'
-import { Personagem } from './entities/Personagem'
+import { Classe, DetalhesAmeaca, DetalhesPJ, Personagem } from './entities/Personagem'
 import { Proficiencia } from './entities/Proficiencia'
-import { ClassePersonagem } from './entities/ClassePersonagem'
 import { Poder, SubEfeito, Tag } from './entities/Poder'
 import { AprimoramentoMagia, Grimorio, Magia } from './entities/Magia'
-import { Modificador } from './entities/Modificador'
 import { Status } from './entities/Status'
-import { Efeito } from './entities/Efeito'
+import { Efeito, Modificador } from './entities/Efeito'
 import {
   Armadura,
   Ataque,
@@ -27,10 +25,12 @@ export const SQLiteDataSource = new DataSource({
   entities: [
     Atributo,
     Dano,
-    ClassePersonagem,
+    Classe,
     Poder,
     Tag,
+    DetalhesAmeaca,
     Modificador,
+    DetalhesPJ,
     SubEfeito,
     Efeito,
     Deslocamento,

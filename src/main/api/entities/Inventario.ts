@@ -196,6 +196,11 @@ export class Ataque {
   periciaAcerto: string
 
   @Column({
+    type: 'varchar'
+  })
+  atributoDano: string
+
+  @Column({
     type: 'integer'
   })
   margemCritico: number

@@ -21,6 +21,7 @@ export const getPersonagem = async (id: number): Promise<IPersonagemDTO> => {
     const personagemBruto = await PersonagemRepository.findOne({
       where: { id: id },
       relations: {
+        detalhesPJ: true,
         classes: true,
         atributos: true,
         pericias: true,

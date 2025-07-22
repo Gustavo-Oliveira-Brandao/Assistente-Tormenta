@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
 //OK
 @Entity()
-export class Dano {
+export class Rolagem {
   @PrimaryGeneratedColumn()
   id: number
 
@@ -17,14 +17,17 @@ export class Dano {
   dado: number
 
   @Column({
-    type: 'varchar',
-    length: 50
+    type: 'varchar'
   })
   tipo: string
 
   @Column({
-    type: 'varchar',
-    length: 20
+    type: 'varchar'
   })
-  atributo: string
+  descricao: string
+
+  @Column({
+    type: 'integer'
+  })
+  bonus: number
 }

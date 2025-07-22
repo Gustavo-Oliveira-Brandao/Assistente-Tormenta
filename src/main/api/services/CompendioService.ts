@@ -2,7 +2,7 @@ import { app } from 'electron'
 import path from 'path'
 import { DeepPartial } from 'typeorm'
 import { Poder } from '../entities/Poder'
-import { extrairJson } from './JsonService'
+import { extrairJson, reescreverJson } from './JsonService'
 import { Equipamento } from '../entities/Inventario'
 import { Magia } from '../entities/Magia'
 import { ICompendio, IClasse, IRaca, IDivindade, IOrigem } from '../../@types/T20 GOTY/ICompendio'
@@ -105,6 +105,21 @@ const getCompendioOrigens = async (): Promise<IOrigem[]> => {
     : path.join(app.getAppPath(), 'resources', pasta)
 
   const origens = await extrairJson<IOrigem>(caminhoBase)
+
+  for (const origem of origens) {
+    for (const pericia of origem.pericias) {
+      const periciaAtt = {
+        pericia: pericia,
+        ehOficio: false
+      }
+
+      origem.beneficioPericias.push(periciaAtt)
+    }
+    await reescreverJson(
+      origem,
+      path.join(caminhoBase, origem.nome.replace(/[\s/\\?%*:|"<>]/g, '_'))
+    )
+  }
 
   return origens
 }

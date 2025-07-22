@@ -6,7 +6,7 @@
   "key": "1ca939f7-e161-4e86-beba-ff677935fad2",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["cavalgar", "pilotagem", "sobrevivencia"],
   "poderes": [
     "b2d6af0a-3dba-4170-abe4-f9362f57b365",
     "55c1b217-81a6-4cfe-89ca-2a1d53f94f27",

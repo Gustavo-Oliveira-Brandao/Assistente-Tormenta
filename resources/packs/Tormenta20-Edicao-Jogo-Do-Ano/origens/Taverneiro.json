@@ -6,7 +6,7 @@
   "key": "2a00e35c-9786-41ba-91a2-48f6cf781de6",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["diplomacia", "jogatina", "oficio"],
   "poderes": [
     "0bfe929e-1d7e-4e49-99e5-e8b3e75f3601",
     "cce4ecf0-297b-4048-8ea9-d331a76fed50",

@@ -6,6 +6,6 @@
   "key": "bb48e4ba-ffd3-4252-8a1b-6ff24bbd6388",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["fortitude", "guerra", "luta", "pontaria"],
   "poderes": ["ba746114-5bbf-47eb-9b03-80968c253019"]
 }

@@ -5,7 +5,7 @@
   "beneficios": "Adestramento, Cavalgar, Ofício, Sobrevivência (perícias); Água no Feijão, Ginete (poderes).",
   "key": "754341c0-dc9b-4413-95f9-51f70490f0f1",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["adestramento", "cavalgar", "oficio", "sobrevivencia"],
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "poderes": ["b157023f-af35-4d12-8842-436efbba7a19", "124de8f3-a81b-43f4-bc86-7ee0ba1848e7"]
 }

@@ -6,6 +6,6 @@
   "key": "53cc9836-0930-4193-883d-23e91b914f7b",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["atletismo", "jogatina", "pilotagem"],
   "poderes": ["e0deaef2-8fd7-4ada-ae79-8c3dbeca6785", "bf21f0f1-ab61-4221-a402-79ab9534b4e8"]
 }

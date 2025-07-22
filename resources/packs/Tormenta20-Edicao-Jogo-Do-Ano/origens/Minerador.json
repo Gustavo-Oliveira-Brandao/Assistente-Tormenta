@@ -6,7 +6,7 @@
   "key": "a428a970-285b-4e01-a1f9-59225d4df941",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["atletismo", "fortitude", "oficio"],
   "poderes": [
     "68e8636e-dccb-4bc9-9b42-4ac994a7b41b",
     "2b119ec9-51b3-438e-8d12-cc3b0f15b8b6",

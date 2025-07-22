@@ -6,7 +6,7 @@
   "key": "5e9d7d58-ed84-4d3e-b61e-d187859c2bba",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["enganacao", "jogatina"],
   "poderes": [
     "4b1a1b24-30db-458a-97de-ca225709084e",
     "9a8385aa-91bb-4b8c-890f-19929c3c0a37",

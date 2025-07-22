@@ -6,7 +6,7 @@
   "key": "8e299f18-bf38-43e3-9867-4b6a81b0a377",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["atuacao", "luta"],
   "poderes": [
     "90917f69-6af0-4c6e-8831-5d9894b5adea",
     "1e8bbb70-d939-4bad-ac4e-05eee4e7d6cf",

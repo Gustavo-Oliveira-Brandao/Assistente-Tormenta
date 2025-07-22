@@ -52,6 +52,12 @@ export type IOrigem = {
   publicacao: string
   itens: string
   beneficios: string
+  poderes: string[]
+  pericias: string[]
+  beneficioPericias: {
+    pericia: string
+    ehOficio: boolean
+  }[]
 }
 
 export type IRaca = {

@@ -6,7 +6,7 @@
   "key": "0099f613-8557-4759-a61c-7c7a93c4bc41",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
-  "pericias": [],
+  "pericias": ["acrobacia", "atuacao", "reflexos"],
   "poderes": [
     "c485881f-b20b-4beb-8505-5b38fdbb45a5",
     "bf21f0f1-ab61-4221-a402-79ab9534b4e8",

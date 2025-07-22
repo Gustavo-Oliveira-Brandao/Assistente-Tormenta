@@ -1,8 +1,9 @@
 {
-  "nome": "reflexos",
+  "key": "T20:pericias:refl",
+  "nome": "Reflexos",
   "treinamento": "destreinado",
   "categoria": "testeResistencia",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

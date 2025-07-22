@@ -1,8 +1,9 @@
 {
-  "nome": "jogatina",
+  "key": "T20:pericias:joga",
+  "nome": "Jogatina",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Carisma",
+  "atributo": "T20:atributos:car",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

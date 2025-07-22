@@ -1,8 +1,9 @@
 {
-  "nome": "furtividade",
+  "key": "T20:pericias:furt",
+  "nome": "Furtividade",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": true,
   "descricao": "",

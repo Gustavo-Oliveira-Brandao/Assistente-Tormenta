@@ -1,8 +1,9 @@
 {
-  "nome": "cura",
+  "key": "T20:pericias:cura",
+  "nome": "Cura",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Sabedoria",
+  "atributo": "T20:atributos:sab",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

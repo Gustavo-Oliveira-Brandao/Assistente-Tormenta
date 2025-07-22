@@ -1,8 +1,9 @@
 {
-  "nome": "atuacao",
+  "key": "T20:pericias:atua",
+  "nome": "Atuação",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Carisma",
+  "atributo": "T20:atributos:car",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

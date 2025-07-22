@@ -1,8 +1,9 @@
 {
-  "nome": "ladinagem",
+  "key": "T20:pericias:ladi",
+  "nome": "Ladinagem",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": true,
   "descricao": "",

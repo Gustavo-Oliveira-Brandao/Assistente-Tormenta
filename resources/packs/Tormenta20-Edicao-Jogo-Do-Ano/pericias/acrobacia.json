@@ -1,8 +1,9 @@
 {
-  "nome": "acrobacia",
+  "key": "T20:pericias:acro",
+  "nome": "Acrobacia",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": true,
   "descricao": "",

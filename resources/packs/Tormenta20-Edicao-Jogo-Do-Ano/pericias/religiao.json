@@ -1,8 +1,9 @@
 {
-  "nome": "religiao",
+  "key": "T20:pericias:reli",
+  "nome": "Religião",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Sabedoria",
+  "atributo": "T20:atributos:sab",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

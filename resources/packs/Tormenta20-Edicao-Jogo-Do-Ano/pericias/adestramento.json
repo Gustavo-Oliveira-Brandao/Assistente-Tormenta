@@ -1,8 +1,9 @@
 {
-  "nome": "adestramento",
+  "key": "T20:pericias:ades",
+  "nome": "Adestramento",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Carisma",
+  "atributo": "T20:atributos:car",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

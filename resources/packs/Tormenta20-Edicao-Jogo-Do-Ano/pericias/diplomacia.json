@@ -1,8 +1,9 @@
 {
-  "nome": "diplomacia",
+  "key": "T20:pericias:dipl",
+  "nome": "Diplomacia",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Carisma",
+  "atributo": "T20:atributos:car",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

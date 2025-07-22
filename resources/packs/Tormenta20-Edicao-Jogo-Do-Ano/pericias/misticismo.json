@@ -1,8 +1,9 @@
 {
-  "nome": "misticismo",
+  "key": "T20:pericias:mist",
+  "nome": "Misticismo",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Inteligência",
+  "atributo": "T20:atributos:int",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

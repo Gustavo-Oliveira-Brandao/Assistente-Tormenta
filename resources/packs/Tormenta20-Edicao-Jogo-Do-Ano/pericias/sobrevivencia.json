@@ -1,8 +1,9 @@
 {
-  "nome": "sobrevivencia",
+  "key": "T20:pericias:sobr",
+  "nome": "Sobrevivência",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Sabedoria",
+  "atributo": "T20:atributos:sab",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

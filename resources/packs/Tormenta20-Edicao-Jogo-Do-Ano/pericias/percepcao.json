@@ -1,8 +1,9 @@
 {
-  "nome": "percepcao",
+  "key": "T20:pericias:perc",
+  "nome": "Percepção",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Sabedoria",
+  "atributo": "T20:atributos:sab",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

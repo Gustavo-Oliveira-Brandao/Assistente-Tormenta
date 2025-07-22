@@ -1,8 +1,9 @@
 {
-  "nome": "investigacao",
+  "key": "T20:pericias:inve",
+  "nome": "Investigação",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Inteligência",
+  "atributo": "T20:atributos:int",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

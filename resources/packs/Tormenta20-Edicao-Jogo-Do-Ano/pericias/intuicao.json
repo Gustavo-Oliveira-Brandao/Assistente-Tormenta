@@ -1,8 +1,9 @@
 {
-  "nome": "intuicao",
+  "key": "T20:pericias:intu",
+  "nome": "Intuição",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Sabedoria",
+  "atributo": "T20:atributos:sab",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

@@ -1,8 +1,9 @@
 {
-  "nome": "guerra",
+  "key": "T20:pericias:guer",
+  "nome": "Guerra",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Inteligência",
+  "atributo": "T20:atributos:int",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

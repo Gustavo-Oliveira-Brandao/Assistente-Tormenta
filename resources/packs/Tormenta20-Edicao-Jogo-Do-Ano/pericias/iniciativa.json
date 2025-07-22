@@ -1,8 +1,9 @@
 {
-  "nome": "iniciativa",
+  "key": "T20:pericias:inic",
+  "nome": "Iniciativa",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

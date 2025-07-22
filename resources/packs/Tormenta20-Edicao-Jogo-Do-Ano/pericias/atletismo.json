@@ -1,8 +1,9 @@
 {
-  "nome": "atletismo",
+  "key": "T20:pericias:atle",
+  "nome": "Atletismo",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Força",
+  "atributo": "T20:atributos:for",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

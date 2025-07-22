@@ -1,8 +1,9 @@
 {
-  "nome": "nobreza",
+  "key": "T20:pericias:nobr",
+  "nome": "Nobreza",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Inteligência",
+  "atributo": "T20:atributos:int",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

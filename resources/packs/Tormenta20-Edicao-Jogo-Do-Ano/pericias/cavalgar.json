@@ -1,8 +1,9 @@
 {
-  "nome": "cavalgar",
+  "key": "T20:pericias:cava",
+  "nome": "Cavalgar",
   "treinamento": "destreinado",
   "categoria": "geral",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

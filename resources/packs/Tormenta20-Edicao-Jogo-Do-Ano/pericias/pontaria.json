@@ -1,8 +1,9 @@
 {
-  "nome": "pontaria",
+  "key": "T20:pericias:pont",
+  "nome": "Pontaria",
   "treinamento": "destreinado",
   "categoria": "combate",
-  "atributo": "Destreza",
+  "atributo": "T20:atributos:des",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
   "descricao": "",

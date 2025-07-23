@@ -1,14 +1,23 @@
-import { IDeslocamentoDTO } from '../../@types/T20 GOTY/dto/IDeslocamentoDTO'
-import { Deslocamento } from '../entities/Deslocamento'
-import { Efeito, Modificador } from '../entities/Efeito'
-import { calcularModificadores } from './CalcularModificadores'
+import { IDeslocamento } from '@renderer/@types/T20 GOTY/IDeslocamento'
+import { IEfeito, IModificador } from '@renderer/@types/T20 GOTY/IEfeito'
+import { calcularModificadores } from './Calcular_Modificadores'
+
+type IDeslocamentosPreCalculo = {
+  id: number
+  caminhadaBase: number
+  vooBase: number
+  natacaoBase: number
+  escaladaBase: number
+  escavacaoBase: number
+  plana: boolean
+}
 
 export const calcularDeslocamentos = (
-  deslocamentosBrutos: Deslocamento,
-  efeitos: Efeito[],
+  deslocamentosBrutos: IDeslocamentosPreCalculo,
+  efeitos: IEfeito[],
   nivelPersonagem: number
-): IDeslocamentoDTO => {
-  const modificadores: Modificador[] = []
+): IDeslocamento => {
+  const modificadores: IModificador[] = []
 
   for (const efeito of efeitos) {
     for (const mod of efeito.modificadores) {
@@ -39,7 +48,7 @@ export const calcularDeslocamentos = (
     nivelPersonagem
   )
 
-  const deslocamentos: IDeslocamentoDTO = {
+  const deslocamentos: IDeslocamento = {
     ...deslocamentosBrutos,
     caminhadaAtual: deslocamentosBrutos.caminhadaBase + bonusCaminhada,
     vooAtual: deslocamentosBrutos.vooBase + bonusVoo,

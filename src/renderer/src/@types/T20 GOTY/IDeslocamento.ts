@@ -10,4 +10,5 @@ export type IDeslocamento = {
   escaladaAtual: number
   escavacaoBase: number
   escavacaoAtual: number
+  plana: boolean
 }

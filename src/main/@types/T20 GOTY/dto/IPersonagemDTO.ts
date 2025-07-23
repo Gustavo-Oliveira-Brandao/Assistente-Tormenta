@@ -1,27 +1,47 @@
-import { Efeito } from '../../../api/entities/Efeito'
-import { Classe } from '../../../api/entities/Personagem'
-import { IAtributoDTO } from './IAtributoDTO'
-import { IDeslocamentoDTO } from './IDeslocamentoDTO'
-import { IPericiaDTO } from './IPericiaDTO'
-import { IStatusDTO } from './IStatusDTO'
+import { IClassePersonagem } from '../IClasse'
+import { IDetalhesPJ } from '../IPersonagem'
+import { IAtributoRequestDTO } from './IAtributoDTO'
+import { IDeslocamentoRequestDTO } from './IDeslocamentoDTO'
+import { IEfeitoRequestDTO } from './IEfeitoDTO'
+import { IPericiaRequestDTO } from './IPericiaDTO'
 
-export type IPersonagemDTO = {
+export type IPersonagemJogadorRequestDTO = {
   id: number
   nome: string
   tipo: string
+  nivel: number
+  tamanho: string
+  detalhesPJ: IDetalhesPJRequestDTO
+  classes: IClassePersonagem[]
+  atributos: IAtributoRequestDTO[]
+  pericias: IPericiaRequestDTO[]
+  deslocamentos: IDeslocamentoRequestDTO
+  efeitos: IEfeitoRequestDTO[]
+}
+
+export type IClassePersonagemRequestDTO = {
+  nome: string
+  vidaInicial: number
+  vidaPorNivel: number
+  devotoFiel: boolean
+  manaPorNivel: boolean
+}
+
+export type IDetalhesPJRequestDTO = {
   raca: string
-  classeInicial: string
-  classes: Classe[]
+  classeOriginal: string
   origem: string
   divindade: string
-  nivelAtual: number
-  experiencia: number
-  tamanho: string
   alinhamentoEtico: string
   alinhamentoMoral: string
-  atributos: IAtributoDTO[]
-  pericias: IPericiaDTO[]
-  deslocamento: IDeslocamentoDTO
-  status: IStatusDTO
-  efeitos: Efeito[]
+}
+
+export type IPersonagemResponseManyDTO = {
+  id: number
+  nome: string
+  tipo: string
+  nivel: number
+  tamanho: string
+  categoria: string
+  detalhesPJ: IDetalhesPJ | null
 }

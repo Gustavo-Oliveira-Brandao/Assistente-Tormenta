@@ -1,16 +1,15 @@
-import { DeepPartial } from 'typeorm'
-import { Equipamento } from '../../api/entities/Inventario'
-import { Poder } from '../../api/entities/Poder'
-import { Magia } from '../../api/entities/Magia'
+import { IEquipamento } from './IInventario'
+import { IMagia } from './IMagia'
+import { IPoder } from './IPoder'
 
 export type ICompendio = {
   classes: IClasse[]
   divindades: IDivindade[]
   origens: IOrigem[]
   racas: IRaca[]
-  equipamentos: DeepPartial<Equipamento>[]
-  poderes: DeepPartial<Poder>[]
-  magias: DeepPartial<Magia>[]
+  equipamentos: Partial<IEquipamento>[]
+  poderes: Partial<IPoder>[]
+  magias: Partial<IMagia>[]
 }
 
 export type IClasse = {

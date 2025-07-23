@@ -1,17 +1,21 @@
-import { SQLiteDataSource } from '../data-source'
-import { Deslocamento } from '../entities/Deslocamento'
+import { prisma } from '../..'
+import { IDeslocamento } from '../../@types/T20 GOTY/IDeslocamento'
 
-export const DeslocamentoRepository = SQLiteDataSource.getRepository(Deslocamento)
-
-export const putDeslocamento = async (_deslocamento: Deslocamento): Promise<void> => {
+export const putDeslocamento = async (id: number, _deslocamento: IDeslocamento): Promise<void> => {
   try {
-    const deslocamentoEncontrado = await DeslocamentoRepository.findOneBy({ id: _deslocamento.id })
-    if (!deslocamentoEncontrado) {
-      throw new Error('Deslocamento não encontrado!')
-    }
-
-    DeslocamentoRepository.merge(deslocamentoEncontrado, _deslocamento)
-    await DeslocamentoRepository.save(deslocamentoEncontrado)
+    await prisma.deslocamento.update({
+      where: {
+        id: id
+      },
+      data: {
+        caminhadaBase: _deslocamento.caminhadaBase,
+        vooBase: _deslocamento.vooBase,
+        natacaoBase: _deslocamento.natacaoBase,
+        escaladaBase: _deslocamento.escaladaBase,
+        escavacaoBase: _deslocamento.escavacaoBase,
+        plana: _deslocamento.plana
+      }
+    })
   } catch {
     throw new Error('Ocorreu um erro ao atualizar o deslocamento.')
   }

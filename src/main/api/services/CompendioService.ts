@@ -1,11 +1,10 @@
 import { app } from 'electron'
 import path from 'path'
-import { DeepPartial } from 'typeorm'
-import { Poder } from '../entities/Poder'
 import { extrairJson } from './JsonService'
-import { Equipamento } from '../entities/Inventario'
-import { Magia } from '../entities/Magia'
 import { ICompendio, IClasse, IRaca, IDivindade, IOrigem } from '../../@types/T20 GOTY/ICompendio'
+import { IPoder } from '../../@types/T20 GOTY/IPoder'
+import { IEquipamento } from '../../@types/T20 GOTY/IInventario'
+import { IMagia } from '../../@types/T20 GOTY/IMagia'
 
 export const getCompendioGeral = async (): Promise<ICompendio> => {
   try {
@@ -34,35 +33,35 @@ export const getCompendioGeral = async (): Promise<ICompendio> => {
   }
 }
 
-const getCompendioPoderes = async (): Promise<DeepPartial<Poder>[]> => {
+const getCompendioPoderes = async (): Promise<Partial<IPoder>[]> => {
   const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'poderes')
   const caminhoBase = app.isPackaged
     ? path.join(process.resourcesPath, pasta)
     : path.join(app.getAppPath(), 'resources', pasta)
 
-  const result = await extrairJson<DeepPartial<Poder>>(caminhoBase)
+  const result = await extrairJson<Partial<IPoder>>(caminhoBase)
   const poderes = result
 
   return poderes
 }
 
-const getCompendioEquipamentos = async (): Promise<DeepPartial<Equipamento>[]> => {
+const getCompendioEquipamentos = async (): Promise<Partial<IEquipamento>[]> => {
   const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'equipamentos')
   const caminhoBase = app.isPackaged
     ? path.join(process.resourcesPath, pasta)
     : path.join(app.getAppPath(), 'resources', pasta)
 
-  const result = await extrairJson<DeepPartial<Equipamento>>(caminhoBase)
+  const result = await extrairJson<Partial<IEquipamento>>(caminhoBase)
   const equipamentos = result
   return equipamentos
 }
 
-const getCompendioMagias = async (): Promise<DeepPartial<Magia>[]> => {
+const getCompendioMagias = async (): Promise<Partial<IMagia>[]> => {
   const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'magias')
   const caminhoBase = app.isPackaged
     ? path.join(process.resourcesPath, pasta)
     : path.join(app.getAppPath(), 'resources', pasta)
-  const result = await extrairJson<DeepPartial<Magia>>(caminhoBase)
+  const result = await extrairJson<Partial<IMagia>>(caminhoBase)
   const magias = result
   return magias
 }

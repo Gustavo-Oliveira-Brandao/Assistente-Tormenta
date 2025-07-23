@@ -1,13 +1,8 @@
-export type IDeslocamentoDTO = {
-  id: number
+export type IDeslocamentoRequestDTO = {
   caminhadaBase: number
-  caminhadaAtual: number
-  vooBase: number
-  vooAtual: number
   natacaoBase: number
-  natacaoAtual: number
+  vooBase: number
   escaladaBase: number
-  escaladaAtual: number
   escavacaoBase: number
-  escavacaoAtual: number
+  plana: boolean
 }

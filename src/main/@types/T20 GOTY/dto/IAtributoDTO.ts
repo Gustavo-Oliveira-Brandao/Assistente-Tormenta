@@ -1,7 +1,6 @@
-export type IAtributoDTO = {
-  id: number
+export type IAtributoRequestDTO = {
   nome: string
+  key: string
   valorBase: number
   bonus: number
-  valorAtual: number
 }

@@ -1,15 +1,16 @@
-import { DeepPartial } from 'typeorm'
-import { SQLiteDataSource } from '../data-source'
-import { Efeito, Modificador } from '../entities/Efeito'
-import { Personagem } from '../entities/Personagem'
+import { prisma } from '../..'
+import { IEfeitoRequestDTO } from '../../@types/T20 GOTY/dto/IEfeitoDTO'
+import { IEfeito } from '../../@types/T20 GOTY/IEfeito'
 
-export const EfeitoRepository = SQLiteDataSource.getRepository(Efeito)
-const ModificadorRepository = SQLiteDataSource.getRepository(Modificador)
-
-export const getEfeitosPersonagem = async (_idPersonagem: number): Promise<Efeito[]> => {
+export const getEfeitosPersonagem = async (_idPersonagem: number): Promise<IEfeito[]> => {
   try {
-    const efeitos = await EfeitoRepository.find({
-      where: { personagem: { id: _idPersonagem } }
+    const efeitos = await prisma.efeito.findMany({
+      where: {
+        personagemId: _idPersonagem
+      },
+      include: {
+        modificadores: true
+      }
     })
     return efeitos
   } catch (err) {
@@ -19,79 +20,81 @@ export const getEfeitosPersonagem = async (_idPersonagem: number): Promise<Efeit
 }
 
 export const postEfeito = async (
-  _efeito: DeepPartial<Efeito>,
+  _efeito: IEfeitoRequestDTO,
   _idPersonagem: number
 ): Promise<void> => {
   try {
-    const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
-    const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
-    if (!personagem) {
-      throw new Error('Personagem não encontrado!')
-    }
-
-    const novoEfeito = EfeitoRepository.create({
-      ..._efeito,
-      modificadores: _efeito.modificadores,
-      personagem: personagem
+    await prisma.efeito.create({
+      data: {
+        ..._efeito,
+        modificadores: {
+          create: _efeito.modificadores
+        },
+        personagem: {
+          connect: {
+            id: _idPersonagem
+          }
+        }
+      }
     })
-
-    await EfeitoRepository.save(novoEfeito)
   } catch (err) {
     console.log(err)
     throw new Error('Erro ao adicionar efeito.')
   }
 }
 
-export const putEfeito = async (_efeito: Efeito): Promise<void> => {
+export const putEfeito = async (id: number, _efeito: IEfeito): Promise<void> => {
   try {
-    const efeitoEncontrado = await EfeitoRepository.findOneBy({ id: _efeito.id })
-    if (!efeitoEncontrado) {
-      throw new Error('Efeito não encontrado!')
-    }
+    const idsModificadoresAManter = _efeito.modificadores
+      .map((mod) => mod.id)
+      .filter((id) => id != undefined)
 
-    EfeitoRepository.merge(efeitoEncontrado, _efeito)
-    efeitoEncontrado.modificadores = _efeito.modificadores
-
-    await EfeitoRepository.save(efeitoEncontrado)
+    await prisma.efeito.update({
+      where: {
+        id: id
+      },
+      data: {
+        nome: _efeito.nome,
+        estaAtivo: _efeito.estaAtivo,
+        modificadores: {
+          deleteMany: {
+            id: {
+              notIn: idsModificadoresAManter
+            },
+            efeitoId: _efeito.id
+          },
+          upsert: _efeito.modificadores.map((mod) => ({
+            where: {
+              id: mod.id
+            },
+            update: {
+              tipo: mod.tipo,
+              alvo: mod.alvo,
+              valor: mod.valor,
+              modoBonus: mod.modoBonus,
+              estaAtivo: mod.estaAtivo,
+              escalonamento: mod.escalonamento
+            },
+            create: { ...mod }
+          }))
+        }
+      }
+    })
   } catch (err) {
     console.log(err)
     throw new Error('Erro ao atualizar efeito!')
   }
 }
 
-export const putModificador = async (_modificador: Modificador): Promise<void> => {
-  try {
-    const modificadorEncontrado = await ModificadorRepository.findOne({
-      where: { id: _modificador.id }
-    })
-
-    if (!modificadorEncontrado) {
-      throw new Error('Modificador não encontrado!')
-    }
-
-    ModificadorRepository.merge(modificadorEncontrado, _modificador)
-
-    await ModificadorRepository.save(modificadorEncontrado)
-  } catch (error) {
-    console.log(error)
-    throw new Error('Erro ao atualizar modificador!')
-  }
-}
-
 export const deleteEfeito = async (_id: number): Promise<void> => {
   try {
-    await EfeitoRepository.delete(_id)
+    await prisma.efeito.delete({
+      where: {
+        id: _id
+      }
+    })
   } catch (err) {
     console.log(err)
     throw new Error('Erro ao deletar efeito')
-  }
-}
-
-export const deleteModificador = async (_id: number): Promise<void> => {
-  try {
-    await ModificadorRepository.delete(_id)
-  } catch (error) {
-    console.log(error)
-    throw new Error('Erro ao deletar modificador.')
   }
 }

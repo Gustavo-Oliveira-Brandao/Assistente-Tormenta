@@ -1,11 +1,9 @@
-export type IPericiaDTO = {
-  id: number
+export type IPericiaRequestDTO = {
+  key: string
   nome: string
-  valorAtual: number
+  ehTreinado: boolean
   bonus: number
-  treinamento: string
-  categoria: string
-  atributo: string
   requerTreinamento: boolean
   sofrePenalidadeArmadura: boolean
+  atributo: string
 }

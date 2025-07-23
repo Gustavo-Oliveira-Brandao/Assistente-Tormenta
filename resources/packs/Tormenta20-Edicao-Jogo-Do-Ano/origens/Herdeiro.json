@@ -7,10 +7,7 @@
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "quantidadeBeneficios": 2,
   "pericias": [],
-  "poderes": [
-    "fff3ae28-ceb8-4790-864e-0c9aa1e6eb51",
-    "aeb868a0-94d3-4c0b-9cb8-354e2dd90e63"
-  ],
+  "poderes": ["fff3ae28-ceb8-4790-864e-0c9aa1e6eb51", "aeb868a0-94d3-4c0b-9cb8-354e2dd90e63"],
   "beneficioPericias": [
     {
       "pericia": "T20:pericias:mist",

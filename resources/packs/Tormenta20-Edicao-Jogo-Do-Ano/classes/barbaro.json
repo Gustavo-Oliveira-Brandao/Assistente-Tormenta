@@ -6,10 +6,7 @@
   "vidaInicial": 24,
   "vidaPorNivel": 6,
   "manaPorNivel": 3,
-  "pericias": [
-    "T20:pericias:fort",
-    "T20:pericias:luta"
-  ],
+  "pericias": ["T20:pericias:fort", "T20:pericias:luta"],
   "numeroPericiasExtras": 4,
   "periciasExtras": [
     "T20:pericias:ades",

@@ -607,7 +607,9 @@ export const CriacaoPersonagemForm = ({
                       <h3 className={`tormenta20Font ${styles.titulo}`}>Poderes</h3>
                       {compendio?.poderes
                         ?.filter((poder) => poder.fonte == racaExibida.nome)
-                        .map((poder) => <CardPoder key={poder.key} poder={poder} />)}
+                        .map((poder) => (
+                          <CardPoder key={poder.key} poder={poder} />
+                        ))}
                     </div>
                   </div>
                 </>

@@ -1,10 +1,10 @@
-import { Modificador } from '../entities/Efeito'
+import { IModificador } from '@renderer/@types/T20 GOTY/IEfeito'
 
-export const calcularModificadores = (modificadores: Modificador[], nivel: number): number => {
+export const calcularModificadores = (modificadores: IModificador[], nivel: number): number => {
   let bonusTotal = 0
   for (const mod of modificadores) {
     if (mod.estaAtivo) {
-      if (mod.ehPorNivel) {
+      if (mod.escalonamento == 'nivel') {
         bonusTotal += mod.valor * nivel
       } else {
         bonusTotal += mod.valor

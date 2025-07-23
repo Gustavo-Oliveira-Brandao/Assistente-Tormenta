@@ -3,12 +3,11 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "./src/main/api/prisma"
 }
 
 datasource db {
   provider = "sqlite"
-  url      = "./src/main/UserData/db.sqlite"
+  url      = "file:../src/main/UserData/db.sqlite"
 }
 
 model Personagem {
@@ -37,7 +36,7 @@ model DetalhesPJ {
   classeOriginal String
   origem String
   divindade String
-  experiencia String
+  experiencia Int
   alinhamentoEtico String
   alinhamentoMoral String
   personagem Personagem @relation(fields: [personagemId], references: [id])
@@ -78,6 +77,7 @@ model Atributo {
 model Pericia {
   id Int @id @default(autoincrement())
   nome String
+  key String
   bonus Int
   ehTreinado Boolean
   categoria String
@@ -95,6 +95,7 @@ model Status {
   vidaTemporaria Int
   atributoVidaMaxima String
   manaAtual Int
+  manaTemporaria Int
   manaMaximaBonus Int
   atributoManaMaxima String
   defesaBase Int

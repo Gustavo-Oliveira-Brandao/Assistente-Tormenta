@@ -1,72 +1,110 @@
-import { DeepPartial } from 'typeorm'
-import { SQLiteDataSource } from '../data-source'
-import { Grimorio, Magia } from '../entities/Magia'
+import { prisma } from '../..'
+import { IMagiaRequestDTO } from '../../@types/T20 GOTY/dto/IMagiaDTO'
+import { IGrimorio, IMagia } from '../../@types/T20 GOTY/IMagia'
 
-const GrimorioRepository = SQLiteDataSource.getRepository(Grimorio)
-const MagiaRepository = SQLiteDataSource.getRepository(Magia)
-
-export const putGrimorio = async (_grimorio: Grimorio): Promise<void> => {
+export const putGrimorio = async (_grimorio: IGrimorio): Promise<void> => {
   try {
-    const grimorioEncontrado = await GrimorioRepository.findOneBy({ id: _grimorio.id })
-
-    if (!grimorioEncontrado) {
-      throw new Error('Grimório não encontrado!')
-    }
-
-    GrimorioRepository.merge(grimorioEncontrado, _grimorio)
-
-    await GrimorioRepository.save(grimorioEncontrado)
+    await prisma.grimorio.update({
+      where: { id: _grimorio.id },
+      data: {
+        atributoChaveMagias: _grimorio.atributoChaveMagias,
+        bonusCD: _grimorio.bonusCD
+      }
+    })
   } catch (error) {
     console.log(error)
     throw new Error('Erro ao atualizar grimório')
   }
 }
 
-export const getGrimorioPersonagem = async (_idPersonagem: number): Promise<Grimorio> => {
+export const getGrimorioPersonagem = async (_idPersonagem: number): Promise<IGrimorio> => {
   try {
-    const grimorio = await GrimorioRepository.findOne({
-      where: { personagem: { id: _idPersonagem } }
+    const grimorio = await prisma.grimorio.findUnique({
+      where: {
+        personagemId: _idPersonagem
+      },
+      include: {
+        magias: {
+          include: {
+            aprimoramentos: true
+          }
+        }
+      }
     })
 
-    if (grimorio) {
-      return grimorio
+    if (grimorio == null) {
+      throw new Error('Grimório não encontrado!')
     }
 
-    throw new Error('Grimório não encontrado!')
+    return grimorio
   } catch {
     throw new Error('Erro ao recuperar grimório.')
   }
 }
 
-export const postMagia = async (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (_magia: IMagiaRequestDTO, _idGrimorio: number): Promise<void> => {
   try {
-    const grimorio = await GrimorioRepository.findOneBy({ id: _idGrimorio })
-    if (!grimorio) {
-      throw new Error('Grimório não encontrado.')
-    }
-
-    const novaMagia = MagiaRepository.create({
-      ..._magia,
-      aprimoramentos: _magia.aprimoramentos,
-      grimorio: grimorio
+    await prisma.magia.create({
+      data: {
+        ..._magia,
+        aprimoramentos: {
+          create: _magia.aprimoramentos
+        },
+        grimorio: {
+          connect: {
+            id: _idGrimorio
+          }
+        }
+      }
     })
-
-    await MagiaRepository.save(novaMagia)
   } catch {
     throw new Error('Erro ao adicionar magia.')
   }
 }
 
-export const putMagia = async (_magia: Magia): Promise<void> => {
+export const putMagia = async (id: number, _magia: IMagia): Promise<void> => {
   try {
-    const magiaEncontrada = await MagiaRepository.findOneBy({ id: _magia.id })
-    if (!magiaEncontrada) {
-      throw new Error('Magia não encontrada!')
-    }
+    const idsAprimoramentosAManter = _magia.aprimoramentos
+      .map((aprimoramento) => aprimoramento.id)
+      .filter((id) => id != undefined)
 
-    MagiaRepository.merge(magiaEncontrada, _magia)
-    magiaEncontrada.aprimoramentos = _magia.aprimoramentos
-    await MagiaRepository.save(magiaEncontrada)
+    await prisma.magia.update({
+      where: {
+        id: id
+      },
+      data: {
+        nome: _magia.nome,
+        alvo: _magia.alvo,
+        area: _magia.area,
+        efeito: _magia.efeito,
+        execucao: _magia.execucao,
+        resistencia: _magia.resistencia,
+        descricao: _magia.descricao,
+        duracao: _magia.duracao,
+        nivelCirculo: _magia.nivelCirculo,
+        alcance: _magia.alcance,
+        tradicao: _magia.tradicao,
+        publicacao: _magia.publicacao,
+        escola: _magia.escola,
+        aprimoramentos: {
+          deleteMany: {
+            id: {
+              notIn: idsAprimoramentosAManter
+            }
+          },
+          upsert: _magia.aprimoramentos.map((aprimoramento) => ({
+            where: {
+              id: aprimoramento.id
+            },
+            update: {
+              custo: aprimoramento.custo,
+              descricao: aprimoramento.descricao
+            },
+            create: { ...aprimoramento }
+          }))
+        }
+      }
+    })
   } catch {
     throw new Error('Erro ao atualizar magia!')
   }
@@ -74,7 +112,11 @@ export const putMagia = async (_magia: Magia): Promise<void> => {
 
 export const deleteMagia = async (_id: number): Promise<void> => {
   try {
-    await MagiaRepository.delete(_id)
+    await prisma.magia.delete({
+      where: {
+        id: _id
+      }
+    })
   } catch {
     throw new Error('Erro ao deletar magia.')
   }

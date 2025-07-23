@@ -1,11 +1,10 @@
-import { IPersonagemDTO } from '../../@types/T20 GOTY/dto/IPersonagemDTO'
-import { Personagem } from '../entities/Personagem'
-import { calcularAtributos } from './CalcularAtributos'
-import { calcularDeslocamentos } from './CalcularDeslocamentos'
-import { calcularPericias } from './CalcularPericias'
-import { calcularStatus } from './CalcularStatus'
+import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
+import { calcularAtributos } from './Calcular_Atributos'
+import { calcularPericias } from './Calcular_Pericias'
+import { calcularStatus } from './Calcular_Status'
+import { calcularDeslocamentos } from './Calcular_Deslocamentos'
 
-export const calcularPersonagem = async (personagemBruto: Personagem): Promise<IPersonagemDTO> => {
+export const calcularPersonagem = async (personagemBruto: IPersonagem): Promise<IPersonagem> => {
   let nivelAtual = 0
 
   for (const classe of personagemBruto.classes) {
@@ -26,9 +25,9 @@ export const calcularPersonagem = async (personagemBruto: Personagem): Promise<I
     nivelAtual
   )
 
-  const personagemFinal: IPersonagemDTO = {
+  const personagemFinal: IPersonagem = {
     ...personagemBruto,
-    nivelAtual: nivelAtual,
+    nivel: nivelAtual,
     atributos: atributos,
     pericias: pericias,
     status: status,

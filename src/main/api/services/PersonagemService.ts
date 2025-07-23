@@ -1,44 +1,45 @@
-import { DeepPartial } from 'typeorm'
-import { SQLiteDataSource } from '../data-source'
-import { Personagem } from '../entities/Personagem'
-import { calcularPersonagem } from '../utils/CalcularPersonagem'
-import { IPersonagemDTO } from '../../@types/T20 GOTY/dto/IPersonagemDTO'
+import { prisma } from '../..'
+import { IPersonagemResponseManyDTO } from '../../@types/T20 GOTY/dto/IPersonagemDTO'
+import { IPersonagemJogador } from '../../@types/T20 GOTY/IPersonagem'
 
-export const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
-
-export const getTodosPersonagem = async (): Promise<Personagem[]> => {
+export const getTodosPersonagem = async (): Promise<IPersonagemResponseManyDTO[]> => {
   try {
-    const personagens = await PersonagemRepository.find()
+    const personagens = await prisma.personagem.findMany({
+      include: {
+        detalhesPJ: true
+      }
+    })
     return personagens
   } catch {
     throw new Error('Erro ao exibir personagens!')
   }
 }
 
-export const getPersonagem = async (id: number): Promise<IPersonagemDTO> => {
+export const getPersonagem = async (id: number): Promise<IPersonagemJogador> => {
   try {
-    console.log('pedidoPersonagemRecebido:' + Date.now())
-    const personagemBruto = await PersonagemRepository.findOne({
+    const personagem = await prisma.personagem.findUnique({
       where: { id: id },
-      relations: {
+      include: {
         detalhesPJ: true,
         classes: true,
         atributos: true,
         pericias: true,
-        deslocamento: true,
+        deslocamentos: true,
         status: true,
-        efeitos: true,
-        proficiencias: true
+        efeitos: {
+          include: {
+            modificadores: true
+          }
+        }
       }
     })
+    
 
-    if (personagemBruto == null) {
-      throw new Error('Personagem não encontrado!')
+    if (personagem && personagem.detalhesPJ) {
+      return personagem
     }
 
-    const personagem = await calcularPersonagem(personagemBruto)
-
-    return personagem
+    throw new Error('Personagem não encontrado')
   } catch (err) {
     console.log(err)
     throw new Error('Erro ao exibir personagem.')

@@ -6,10 +6,7 @@
   "vidaPorNivel": 4,
   "manaPorNivel": 5,
   "devotoFiel": true,
-  "pericias": [
-    "T20:pericias:reli",
-    "T20:pericias:vont"
-  ],
+  "pericias": ["T20:pericias:reli", "T20:pericias:vont"],
   "numeroPericiasExtras": 2,
   "periciasExtras": [
     "T20:pericias:conh",

@@ -1,6 +1,6 @@
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
-  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*"],
+  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*", "src/renderer/src/utils/calculos da ficha/CalcularAtributos.ts", "src/renderer/src/utils/calculos da ficha/CalcularDeslocamentos.ts", "src/renderer/src/utils/calculos da ficha/CalcularModificadores.ts", "src/renderer/src/utils/calculos da ficha/CalcularPericias.ts", "src/renderer/src/utils/calculos da ficha/CalcularPersonagem.ts", "src/renderer/src/utils/calculos da ficha/CalcularStatus.ts"],
   "compilerOptions": {
     "composite": true,
     "types": ["electron-vite/node"],

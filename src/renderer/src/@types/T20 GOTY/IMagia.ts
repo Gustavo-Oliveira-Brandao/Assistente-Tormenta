@@ -8,7 +8,7 @@ export type IGrimorio = {
 
 export type IMagia = {
   id: number
-  key: number
+  key: string
   nome: string
   alvo: string
   area: string

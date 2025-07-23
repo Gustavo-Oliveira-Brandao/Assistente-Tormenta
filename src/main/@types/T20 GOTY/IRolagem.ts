@@ -1,4 +1,4 @@
-export type IDano = {
+export type IRolagem = {
   id: number
   quantidade: number
   dado: number

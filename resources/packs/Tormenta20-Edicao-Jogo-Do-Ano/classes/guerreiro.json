@@ -6,9 +6,7 @@
   "vidaPorNivel": 5,
   "devotoFiel": false,
   "manaPorNivel": 3,
-  "pericias": [
-    "T20:pericias:fort"
-  ],
+  "pericias": ["T20:pericias:fort"],
   "numeroPericiasExtras": 3,
   "periciasExtras": [
     "T20:pericias:ades",

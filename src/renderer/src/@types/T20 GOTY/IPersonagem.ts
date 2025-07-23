@@ -8,20 +8,33 @@ import { IStatus } from './IStatus'
 export type IPersonagem = {
   id: number
   nome: string
+  categoria: string
   tipo: string
-  raca: string
-  classeInicial: string
-  classes: IClassePersonagem[]
-  origem: string
-  divindade: string
-  nivelAtual: number
-  experiencia: number
+  nivel: number
   tamanho: string
-  alinhamentoEtico: string
-  alinhamentoMoral: string
+  detalhesPJ: IDetalhesPJ
+  classes: IClassePersonagem[]
   atributos: IAtributo[]
   pericias: IPericia[]
-  deslocamento: IDeslocamento
+  deslocamentos: IDeslocamento
   status: IStatus
   efeitos: IEfeito[]
+}
+
+export type IDetalhesPJ = {
+  id: number
+  raca: string
+  classeOriginal: string
+  origem: string
+  divindade: string
+  experiencia: number
+  alinhamentoEtico: string
+  alinhamentoMoral: string
+}
+
+export type IDetalhesAmeaca = {
+  id: number
+  papelCombate: string
+  subTipo?: string
+  tesouro?: string
 }

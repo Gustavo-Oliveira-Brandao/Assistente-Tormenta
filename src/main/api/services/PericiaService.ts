@@ -1,16 +1,22 @@
-import { SQLiteDataSource } from '../data-source'
-import { Pericia } from '../entities/Pericia'
+import { prisma } from '../..'
+import { IPericia } from '../../@types/T20 GOTY/IPericia'
 
-export const PericiaRepository = SQLiteDataSource.getRepository(Pericia)
-
-export const putPericia = async (_pericia: Pericia): Promise<void> => {
+export const putPericia = async (id: number, _pericia: IPericia): Promise<void> => {
   try {
-    const periciaEncontrada = await PericiaRepository.findOneBy({ id: _pericia.id })
-    if (!periciaEncontrada) {
-      throw new Error('Pericia não encontrada!')
-    }
-    PericiaRepository.merge(periciaEncontrada, _pericia)
-    await PericiaRepository.save(periciaEncontrada)
+    await prisma.pericia.update({
+      where: {
+        id: id
+      },
+      data: {
+        nome: _pericia.nome,
+        bonus: _pericia.bonus,
+        ehTreinado: _pericia.ehTreinado,
+        categoria: _pericia.categoria,
+        atributo: _pericia.atributo,
+        requerTreinamento: _pericia.requerTreinamento,
+        sofrePenalidadeArmadura: _pericia.sofrePenalidadeArmadura
+      }
+    })
   } catch {
     throw new Error('Ocorreu um erro ao atualizar pericia!')
   }

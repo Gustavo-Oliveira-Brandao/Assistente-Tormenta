@@ -1,17 +1,26 @@
-import { SQLiteDataSource } from '../data-source'
-import { Status } from '../entities/Status'
+import { prisma } from '../..'
+import { IStatus } from '../../@types/T20 GOTY/IStatus'
 
-export const statusRepository = SQLiteDataSource.getRepository(Status)
-
-export const putRecurso = async (_status: Status): Promise<void> => {
+export const putStatus = async (id: number, _status: IStatus): Promise<void> => {
   try {
-    const recursoEncontrado = await statusRepository.findOneBy({ id: _status.id })
-    if (!recursoEncontrado) {
-      throw new Error('Status não encontrado!')
-    }
-    statusRepository.merge(recursoEncontrado, _status)
-
-    await statusRepository.save(recursoEncontrado)
+    await prisma.status.update({
+      where: {
+        id: id
+      },
+      data: {
+        vidaAtual: _status.vidaAtual,
+        vidaTemporaria: _status.vidaTemporaria,
+        vidaMaximaBonus: _status.vidaMaximaBonus,
+        atributoVidaMaxima: _status.atributoVidaMaxima,
+        manaAtual: _status.manaAtual,
+        manaTemporaria: _status.manaTemporaria,
+        manaMaximaBonus: _status.manaMaximaBonus,
+        atributoManaMaxima: _status.atributoManaMaxima,
+        defesaBase: _status.defesaBase,
+        defesaBonus: _status.defesaBonus,
+        atributoDefesa: _status.atributoDefesa
+      }
+    })
   } catch {
     throw new Error('Erro ao atualizar o status')
   }

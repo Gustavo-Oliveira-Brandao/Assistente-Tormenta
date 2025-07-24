@@ -1,7 +1,7 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import { criarPoder, deletarPoder } from '@renderer/api/poder-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
-import { DeepPartial } from 'typeorm'
 
 type criarPoderVariaveis = {
   poder: DeepPartial<IPoder>

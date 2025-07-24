@@ -1,7 +1,7 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IEfeito } from '@renderer/@types/T20 GOTY/IEfeito'
 import { atualizarEfeito, criarEfeito, deletarEfeito } from '@renderer/api/efeito-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
-import { DeepPartial } from 'typeorm'
 
 type criarEfeitoVariaveis = {
   efeito: DeepPartial<IEfeito>
@@ -16,10 +16,15 @@ export const useCriarEfeito = (): UseMutationResult<void, Error, criarEfeitoVari
   })
 }
 
-export const useAtualizarEfeito = (): UseMutationResult<void, Error, IEfeito, unknown> => {
+type atualizarEfeitoMutation = {
+  id: number
+  efeito: IEfeito
+}
+
+export const useAtualizarEfeito = (): UseMutationResult<void, Error, atualizarEfeitoMutation, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (efeito) => atualizarEfeito(efeito),
+    mutationFn: ({id, efeito}) => atualizarEfeito(id, efeito),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
   })
 }

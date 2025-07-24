@@ -1,4 +1,4 @@
-import { IModificador } from '@renderer/@types/T20 GOTY/IEfeito'
+import { IModificador } from '../../@types/T20 GOTY/IEfeito'
 
 export const calcularModificadores = (modificadores: IModificador[], nivel: number): number => {
   let bonusTotal = 0

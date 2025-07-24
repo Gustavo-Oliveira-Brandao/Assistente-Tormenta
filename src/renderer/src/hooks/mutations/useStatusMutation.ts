@@ -2,10 +2,15 @@ import { IStatus } from '@renderer/@types/T20 GOTY/IStatus'
 import { atualizarStatus } from '@renderer/api/status-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
 
-export const useAtualizarStatus = (): UseMutationResult<void, Error, IStatus, unknown> => {
+type atualizarStatusMutation = {
+  id: number
+  status: IStatus
+}
+
+export const useAtualizarStatus = (): UseMutationResult<void, Error, atualizarStatusMutation, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (status) => atualizarStatus(status),
+    mutationFn: ({ id, status }) => atualizarStatus(id, status),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
   })
 }

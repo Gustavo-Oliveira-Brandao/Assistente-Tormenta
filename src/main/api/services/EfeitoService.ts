@@ -1,32 +1,16 @@
 import { prisma } from '../..'
-import { IEfeitoRequestDTO } from '../../@types/T20 GOTY/dto/IEfeitoDTO'
-import { IEfeito } from '../../@types/T20 GOTY/IEfeito'
-
-export const getEfeitosPersonagem = async (_idPersonagem: number): Promise<IEfeito[]> => {
-  try {
-    const efeitos = await prisma.efeito.findMany({
-      where: {
-        personagemId: _idPersonagem
-      },
-      include: {
-        modificadores: true
-      }
-    })
-    return efeitos
-  } catch (err) {
-    console.log(err)
-    throw new Error('Erro ao recuperar efeitos!')
-  }
-}
+import { IEfeito, IEfeitoPostRequestDTO } from '../../@types/T20 GOTY/IEfeito'
 
 export const postEfeito = async (
-  _efeito: IEfeitoRequestDTO,
+  _efeito: IEfeitoPostRequestDTO,
   _idPersonagem: number
 ): Promise<void> => {
   try {
     await prisma.efeito.create({
       data: {
-        ..._efeito,
+        nome: _efeito.nome,
+        estaAtivo: _efeito.estaAtivo,
+        fonte: _efeito.fonte,
         modificadores: {
           create: _efeito.modificadores
         },

@@ -10,8 +10,8 @@ export type IModificador = {
   id: number
   tipo: string
   alvo: string
-  modoBonus: string
   valor: number
+  modoBonus: string
   estaAtivo: boolean
   escalonamento: string
 }

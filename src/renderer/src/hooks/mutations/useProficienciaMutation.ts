@@ -1,3 +1,4 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IProficiencia } from '@renderer/@types/T20 GOTY/IProficiencia'
 import {
   atualizarProficiencia,
@@ -5,7 +6,6 @@ import {
   deletarProficiencia
 } from '@renderer/api/proficiencia-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
-import { DeepPartial } from 'typeorm'
 
 type criarProficienciaVariaveis = {
   proficiencia: DeepPartial<IProficiencia>
@@ -25,15 +25,20 @@ export const useCriarProficiencia = (): UseMutationResult<
   })
 }
 
+type atualizarProficienciaMutation = {
+  id: number
+  proficiencia: IProficiencia
+}
+
 export const useAtualizarProficiencia = (): UseMutationResult<
   void,
   Error,
-  IProficiencia,
+  atualizarProficienciaMutation,
   unknown
 > => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (proficiencia) => atualizarProficiencia(proficiencia),
+    mutationFn: ({ id, proficiencia }) => atualizarProficiencia(id, proficiencia),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['proficiencias'] })
   })
 }

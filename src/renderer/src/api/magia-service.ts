@@ -1,12 +1,12 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IGrimorio, IMagia } from '@renderer/@types/T20 GOTY/IMagia'
-import { DeepPartial } from 'typeorm'
 
 export const exibirGrimorioPersonagem = async (idPersonagem: number): Promise<IGrimorio> => {
   return await window.api.magias.getGrimorioPersonagem(idPersonagem)
 }
 
-export const atualizarMagia = async (magia: IMagia): Promise<void> => {
-  await window.api.magias.putMagia(magia)
+export const atualizarMagia = async (id: number, magia: IMagia): Promise<void> => {
+  await window.api.magias.putMagia(id, magia)
 }
 
 export const criarMagia = async (

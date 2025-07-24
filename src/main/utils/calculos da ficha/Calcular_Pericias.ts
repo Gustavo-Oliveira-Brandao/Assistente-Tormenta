@@ -1,26 +1,15 @@
-import { IAtributo } from '@renderer/@types/T20 GOTY/IAtributo'
-import { IEfeito, IModificador } from '@renderer/@types/T20 GOTY/IEfeito'
-import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
+import { IAtributoCalculado } from '../../@types/T20 GOTY/IAtributo'
+import { IEfeito, IModificador } from '../../@types/T20 GOTY/IEfeito'
+import { IPericia, IPericiaCalculada } from '../../@types/T20 GOTY/IPericia'
 import { calcularModificadores } from './Calcular_Modificadores'
 
-type IPericiaPreCalculo = {
-  id: number
-  nome: string
-  bonus: number
-  ehTreinado: boolean
-  categoria: string
-  atributo: string
-  requerTreinamento: boolean
-  sofrePenalidadeArmadura: boolean
-}
-
 export const calcularPericias = (
-  pericias: IPericiaPreCalculo[],
-  atributosCalculados: IAtributo[],
+  pericias: IPericia[],
+  atributosCalculados: IAtributoCalculado[],
   efeitos: IEfeito[],
   nivelAtual: number
-): IPericia[] => {
-  const periciasFinais: IPericia[] = []
+): IPericiaCalculada[] => {
+  const periciasFinais: IPericiaCalculada[] = []
   const todosModificadores: IModificador[] = []
 
   for (const efeito of efeitos) {
@@ -35,14 +24,14 @@ export const calcularPericias = (
     let valorTreinamento = 0
 
     const modificadores: IModificador[] = todosModificadores.filter(
-      (mod) => mod.alvo == pericia.nome
+      (mod) => mod.alvo == pericia.key
     )
 
     const valorModificadoresPericia = calcularModificadores(modificadores, nivelAtual)
     if (pericia.ehTreinado) {
       valorTreinamento = nivelAtual <= 6 ? 2 : nivelAtual <= 14 ? 4 : 6
     }
-    const atributo = atributosCalculados.find((atributo) => atributo.nome === pericia.atributo)
+    const atributo = atributosCalculados.find((atributo) => atributo.key === pericia.atributo)
     if (atributo) {
       periciasFinais.push({
         ...pericia,

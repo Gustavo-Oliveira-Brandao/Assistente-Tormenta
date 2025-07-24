@@ -1,15 +1,15 @@
-import { IAtributo } from '@renderer/@types/T20 GOTY/IAtributo'
-import { IEfeito, IModificador } from '@renderer/@types/T20 GOTY/IEfeito'
-import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
-import { IStatus } from '@renderer/@types/T20 GOTY/IStatus'
+import { IAtributoCalculado } from '../../@types/T20 GOTY/dto/IAtributoDTO'
+import { IStatusCalculado } from '../../@types/T20 GOTY/dto/IStatusDTO'
+import { IEfeito, IModificador } from '../../@types/T20 GOTY/IEfeito'
+import { IPersonagemJogador } from '../../@types/T20 GOTY/IPersonagem'
 import { calcularModificadores } from './Calcular_Modificadores'
 
 export const calcularStatus = (
-  personagem: IPersonagem,
-  atributosCalculados: IAtributo[],
+  personagem: IPersonagemJogador,
+  atributosCalculados: IAtributoCalculado[],
   efeitos: IEfeito[],
   nivelPersonagem: number
-): IStatus => {
+): IStatusCalculado => {
   let vidaInicial = 0
   let vidaTotalPorNivel = 0
   let manaTotalPorNivel = 0
@@ -59,7 +59,7 @@ export const calcularStatus = (
     (atributo) => atributo.nome == personagem.status.atributoDefesa
   )
 
-  const status: IStatus = {
+  const status: IStatusCalculado = {
     ...personagem.status,
     vidaMaxima:
       vidaInicial +

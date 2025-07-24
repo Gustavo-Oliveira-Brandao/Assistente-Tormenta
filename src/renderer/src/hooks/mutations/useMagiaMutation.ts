@@ -1,12 +1,17 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
 import { atualizarMagia, criarMagia, deletarMagia } from '@renderer/api/magia-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
-import { DeepPartial } from 'typeorm'
 
-export const useAtualizarMagia = (): UseMutationResult<void, Error, IMagia, unknown> => {
+type atualizarMagiaMutation = {
+  id: number
+  magia: IMagia
+}
+
+export const useAtualizarMagia = (): UseMutationResult<void, Error, atualizarMagiaMutation, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (magia) => atualizarMagia(magia),
+    mutationFn: ({id, magia}) => atualizarMagia(id, magia),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['magias'] })
   })
 }

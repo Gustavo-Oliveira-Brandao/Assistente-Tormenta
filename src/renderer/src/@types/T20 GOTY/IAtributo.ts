@@ -3,6 +3,7 @@ export type IAtributo = {
   key: string
   nome: string
   valorBase: number
+  descricao: string
   bonus: number
   valorAtual: number
 }

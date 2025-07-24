@@ -4,61 +4,59 @@ declare global {
     electron: ElectronAPI
     api: {
       personagens: {
-        getTodosPersonagem: () => Promise<Personagem[]>
-        getPersonagem: (id: number) => Promise<Personagem>
-        postPersonagem: (personagem: DeepPartial<Personagem>) => Promise<void>
-        putPersonagem: (personagem: Personagem) => Promise<void>
-        deletePersonagem: (id: number) => Promise<void>
+        getTodosPersonagem: () => Promise<IPersonagemResponseManyDTO[]>
+        getPersonagem: (_id: number) => Promise<IPersonagemFinal>
+        postPersonagem: (nomePersonagem: string) => Promise<void>
+        putPersonagem: (id: number, _personagem: Personagem) => Promise<void>
+        deletePersonagem: (_id: number) => Promise<void>
+        putRaca: (id: number, raca: IRacaRequestPutDTO) => Promise<void>
+        postClasse: (classe: IClasseRequestPostDTO, idPersonagem: number) => Promise<void>
+        putClasse: (id: number, classe: IClasseRequestPutDTO) => Promise<void>
+        deleteClasse: (id: number) => Promise<void>
+      }
+      atributos: {
+        putAtributo: (id: number, _atributo: Atributo) => Promise<void>
+      }
+      deslocamentos: {
+        putDeslocamento: (id: number, _deslocamento: Deslocamento) => Promise<void>
+      }
+      efeitos: {
+        postEfeito: (_efeito: IEfeitoPostRequestDTO, _idPersonagem: number) => Promise<void>
+        putEfeito: (id: number, _efeito: IEfeito) => Promise<void>
+        deleteEfeito: (_id: number) => Promise<void>
+      }
+      magias: {
+        putGrimorio: (id: number, _grimorio: IGrimorio) => Promise<void>
+        getGrimorioPersonagem: (_idPersonagem: number) => Promise<IGrimorio>
+        putMagia: (id: number, _magia: IMagia) => Promise<void>
+        postMagia: (_magia: IMagiaPostRequestDTO, _idGrimorio: number) => Promise<void>
+        deleteMagia: (_id: number) => Promise<void>
       }
       compendio: {
         getCompendio: () => Promise<ICompendio>
       }
-      atributos: {
-        getAtributosPersonagem: (_idPersonagem: number) => Promise<IAtributo[]>
-        putAtributo: (atributo: Atributo) => Promise<void>
-      }
-      deslocamentos: {
-        getDeslocamentoPersonagem: (_idPersonagem: number) => Promise<IDeslocamento>
-        putDeslocamento: (deslocamento: Deslocamento) => Promise<void>
-      }
-      efeitos: {
-        getEfeitosPersonagem: (_idPersonagem: number) => Promise<IEfeito[]>
-        postEfeito: (_efeito: DeepPartial<Efeito>, _idPersonagem: number) => Promise<void>
-        putEfeito: (_efeito: Efeito) => Promise<void>
-        deleteEfeito: (_id: number) => Promise<void>
-      }
-      magias: {
-        putGrimorio: (_grimorio: Grimorio) => Promise<void>
-        getGrimorioPersonagem: (_idPersonagem: number) => Promise<Grimorio>
-        putMagia: (magia: Magia) => Promise<void>
-        postMagia: (magia: DeepPartial<Magia>, idGrimorio: number) => Promise<void>
-        deleteMagia: (id: number) => Promise<void>
-      }
       poderes: {
-        getPoderesPersonagem: (_idPersonagem: number) => Promise<Poder[]>
+        getPoderesPersonagem: (_idPersonagem: number) => Promise<IPoder[]>
         postPoder: (
-          poder: DeepPartial<Poder>,
+          _poder: IPoderPostRequestDTO,
           nivelPoder: number,
           _idPersonagem: number
         ) => Promise<void>
-        deletePoder: (id: number) => Promise<void>
+        deletePoder: (_id: number) => Promise<void>
       }
       proficiencias: {
-        getProficienciasPorPersonagem: (_idPersonagem: number) => Promise<Proficiencia[]>
         postProficiencia: (
-          proficiencia: DeepPartial<Proficiencia>,
-          idPersonagem: number
+          _proficiencia: IProficienciaPostRequestDTO,
+          _idPersonagem: number
         ) => Promise<void>
-        putProficiencia: (proficiencia: Proficiencia) => Promise<void>
-        deleteProficiencia: (id: number) => Promise<void>
+        putProficiencia: (id: number, _proficiencia: Proficiencia) => Promise<void>
+        deleteProficiencia: (_id: number) => Promise<void>
       }
       pericias: {
-        getPericiasPersonagem: (_idPersonagem: number) => Promise<IPericia[]>
-        putPericia: (pericia: Pericia) => Promise<void>
+        putPericia: (id: number, _pericia: IPericia) => Promise<void>
       }
       status: {
-        getStatusPersonagem: (_idPersonagem: number) => Promise<IStatus>
-        putStatus: (status: Status) => Promise<void>
+        putStatus: (id: number, _status: IStatus) => Promise<void>
       }
     }
   }

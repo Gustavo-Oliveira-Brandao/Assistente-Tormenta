@@ -23,6 +23,10 @@ export type IClasse = {
   pericias: string[]
   numeroPericiasExtras: number
   periciasExtras: string[]
+  habilidades: {
+    key: string
+    nivel: number
+  }[]
   proficiencias: {
     categoria: string
     nome: string
@@ -75,6 +79,7 @@ export type IRaca = {
     caminhada: number
     voo: number
     escalada: number
+    escavacao: number
     natacao: number
     plana: boolean
   }

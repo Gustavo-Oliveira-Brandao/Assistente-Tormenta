@@ -3,6 +3,17 @@ import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 import { PrismaClient } from '@prisma/client'
+import './api/controllers/AtributoController'
+import './api/controllers/CompendioController'
+import './api/controllers/DeslocamentoController'
+import './api/controllers/EfeitoController'
+import './api/controllers/InventarioController'
+import './api/controllers/MagiaController'
+import './api/controllers/PericiaController'
+import './api/controllers/PersonagemController'
+import './api/controllers/PoderController'
+import './api/controllers/ProficienciaController'
+import './api/controllers/StatusController'
 
 export const prisma = new PrismaClient()
 

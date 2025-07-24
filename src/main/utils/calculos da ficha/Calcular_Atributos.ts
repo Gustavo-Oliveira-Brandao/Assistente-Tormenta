@@ -1,21 +1,13 @@
-import { IAtributo } from '@renderer/@types/T20 GOTY/IAtributo'
-import { IEfeito, IModificador } from '@renderer/@types/T20 GOTY/IEfeito'
+import { IAtributo, IAtributoCalculado } from '../../@types/T20 GOTY/IAtributo'
+import { IEfeito, IModificador } from '../../@types/T20 GOTY/IEfeito'
 import { calcularModificadores } from './Calcular_Modificadores'
 
-type IAtributoPreCalculo = {
-  id: number
-  nome: string
-  key: string
-  valorBase: number
-  bonus: number
-}
-
 export const calcularAtributos = (
-  atributos: IAtributoPreCalculo[],
+  atributos: IAtributo[],
   efeitos: IEfeito[],
   nivelPersonagem: number
-): IAtributo[] => {
-  const atributosFinais: IAtributo[] = []
+): IAtributoCalculado[] => {
+  const atributosFinais: IAtributoCalculado[] = []
   const todosModificadores: IModificador[] = []
 
   for (const efeito of efeitos) {
@@ -27,10 +19,10 @@ export const calcularAtributos = (
   }
 
   for (const atributo of atributos) {
-    const modificadores = todosModificadores.filter((mod) => mod.alvo == atributo.nome)
+    const modificadores = todosModificadores.filter((mod) => mod.alvo == atributo.key)
     const valorModificadores = calcularModificadores(modificadores, nivelPersonagem)
     if (atributo) {
-      const atributoFinal: IAtributo = {
+      const atributoFinal: IAtributoCalculado = {
         ...atributo,
         valorAtual: atributo.valorBase + atributo.bonus + valorModificadores
       }

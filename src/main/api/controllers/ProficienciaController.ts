@@ -4,18 +4,18 @@ import {
   postProficiencia,
   putProficiencia
 } from '../services/ProficienciaService'
-import { Proficiencia } from '../entities/Proficiencia'
-import { DeepPartial } from 'typeorm'
+import { IProficienciaPostRequestDTO } from '../../@types/T20 GOTY/IProficiencia'
+import { Proficiencia } from '@prisma/client'
 
 ipcMain.handle(
   'post-proficiencia',
-  async (_, _proficiencia: DeepPartial<Proficiencia>, _idPersonagem: number) => {
+  async (_, _proficiencia: IProficienciaPostRequestDTO, _idPersonagem: number) => {
     return await postProficiencia(_proficiencia, _idPersonagem)
   }
 )
 
-ipcMain.handle('put-proficiencia', async (_, _proficiencia: Proficiencia) => {
-  await putProficiencia(_proficiencia)
+ipcMain.handle('put-proficiencia', async (_, id: number, _proficiencia: Proficiencia) => {
+  await putProficiencia(id, _proficiencia)
 })
 
 ipcMain.handle('delete-proficiencia', async (_, _id: number) => {

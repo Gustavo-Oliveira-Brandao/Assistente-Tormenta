@@ -1,5 +1,5 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
-import { DeepPartial } from 'typeorm'
 
 export const exibirPoderesPersonagem = async (_idPersonagem: number): Promise<IPoder[]> => {
   const poderes = await window.api.poderes.getPoderesPersonagem(_idPersonagem)

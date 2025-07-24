@@ -1,7 +1,6 @@
 import { ipcMain } from 'electron'
 import { deletePoder, getPoderesPersonagem, postPoder } from '../services/PoderService'
-import { DeepPartial } from 'typeorm'
-import { Poder } from '../entities/Poder'
+import { IPoderPostRequestDTO } from '../../@types/T20 GOTY/IPoder'
 
 ipcMain.handle('get-poderes-personagem', async (_, _idPersonagem: number) => {
   const poderes = await getPoderesPersonagem(_idPersonagem)
@@ -10,7 +9,7 @@ ipcMain.handle('get-poderes-personagem', async (_, _idPersonagem: number) => {
 
 ipcMain.handle(
   'post-poder',
-  async (_, _poder: DeepPartial<Poder>, nivelPoder: number, _idPersonagem: number) => {
+  async (_, _poder: IPoderPostRequestDTO, nivelPoder: number, _idPersonagem: number) => {
     await postPoder(_poder, nivelPoder, _idPersonagem)
   }
 )

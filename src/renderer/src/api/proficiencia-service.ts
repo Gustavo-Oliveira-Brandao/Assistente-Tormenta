@@ -1,11 +1,5 @@
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IProficiencia } from '@renderer/@types/T20 GOTY/IProficiencia'
-import { DeepPartial } from 'typeorm'
-
-export const exibirProficienciasPersonagem = async (
-  idPersonagem: number
-): Promise<IProficiencia[]> => {
-  return await window.api.proficiencias.getProficienciasPorPersonagem(idPersonagem)
-}
 
 export const criarProficiencia = async (
   proficiencia: DeepPartial<IProficiencia>,
@@ -14,8 +8,8 @@ export const criarProficiencia = async (
   await window.api.proficiencias.postProficiencia(proficiencia, idPersonagem)
 }
 
-export const atualizarProficiencia = async (proficiencia: IProficiencia): Promise<void> => {
-  await window.api.proficiencias.putProficiencia(proficiencia)
+export const atualizarProficiencia = async (id: number, proficiencia: IProficiencia): Promise<void> => {
+  await window.api.proficiencias.putProficiencia(id, proficiencia)
 }
 
 export const deletarProficiencia = async (id: number): Promise<void> => {

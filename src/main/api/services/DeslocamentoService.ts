@@ -1,7 +1,7 @@
+import { Deslocamento } from '@prisma/client'
 import { prisma } from '../..'
-import { IDeslocamento } from '../../@types/T20 GOTY/IDeslocamento'
 
-export const putDeslocamento = async (id: number, _deslocamento: IDeslocamento): Promise<void> => {
+export const putDeslocamento = async (id: number, _deslocamento: Deslocamento): Promise<void> => {
   try {
     await prisma.deslocamento.update({
       where: {

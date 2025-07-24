@@ -1,11 +1,10 @@
 import { prisma } from '../..'
-import { IMagiaRequestDTO } from '../../@types/T20 GOTY/dto/IMagiaDTO'
-import { IGrimorio, IMagia } from '../../@types/T20 GOTY/IMagia'
+import { IGrimorio, IMagia, IMagiaPostRequestDTO } from '../../@types/T20 GOTY/IMagia'
 
-export const putGrimorio = async (_grimorio: IGrimorio): Promise<void> => {
+export const putGrimorio = async (id: number, _grimorio: IGrimorio): Promise<void> => {
   try {
     await prisma.grimorio.update({
-      where: { id: _grimorio.id },
+      where: { id: id },
       data: {
         atributoChaveMagias: _grimorio.atributoChaveMagias,
         bonusCD: _grimorio.bonusCD
@@ -42,13 +41,29 @@ export const getGrimorioPersonagem = async (_idPersonagem: number): Promise<IGri
   }
 }
 
-export const postMagia = async (_magia: IMagiaRequestDTO, _idGrimorio: number): Promise<void> => {
+export const postMagia = async (
+  magia: IMagiaPostRequestDTO,
+  _idGrimorio: number
+): Promise<void> => {
   try {
     await prisma.magia.create({
       data: {
-        ..._magia,
+        key: magia.key,
+        nome: magia.nome,
+        alvo: magia.alvo,
+        area: magia.area,
+        efeito: magia.efeito,
+        execucao: magia.execucao,
+        resistencia: magia.resistencia,
+        descricao: magia.descricao,
+        duracao: magia.duracao,
+        nivelCirculo: magia.nivelCirculo,
+        alcance: magia.alcance,
+        tradicao: magia.tradicao,
+        publicacao: magia.publicacao,
+        escola: magia.escola,
         aprimoramentos: {
-          create: _magia.aprimoramentos
+          create: magia.aprimoramentos
         },
         grimorio: {
           connect: {

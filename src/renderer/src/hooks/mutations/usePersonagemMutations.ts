@@ -4,35 +4,30 @@ import {
   criarPersonagem,
   deletarPersonagem
 } from '@renderer/api/personagem-service'
-import { criarPersonagemDemo } from '@renderer/api/teste-service'
 import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-query'
-import { DeepPartial } from 'typeorm'
 
-export const useCriarPersonagem = (): UseMutationResult<
+export const useCriarPersonagem = (): UseMutationResult<void, Error, string, unknown> => {
+  const queryClient = useQueryClient()
+  return useMutation({
+    mutationFn: (nomePersonagem) => criarPersonagem(nomePersonagem),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagens'] })
+  })
+}
+
+type atualizarPersonagemMutation = {
+  id: number
+  personagem: IPersonagem
+}
+
+export const useAtualizarPersonagem = (): UseMutationResult<
   void,
   Error,
-  DeepPartial<IPersonagem>,
+  atualizarPersonagemMutation,
   unknown
 > => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (personagem: DeepPartial<IPersonagem>) => criarPersonagem(personagem),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagens'] })
-  })
-}
-
-export const useCriarPersonagemDemo = (): UseMutationResult<void, Error, void, unknown> => {
-  const queryClient = useQueryClient()
-  return useMutation({
-    mutationFn: () => criarPersonagemDemo(),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagens'] })
-  })
-}
-
-export const useAtualizarPersonagem = (): UseMutationResult<void, Error, IPersonagem, unknown> => {
-  const queryClient = useQueryClient()
-  return useMutation({
-    mutationFn: (personagem: IPersonagem) => atualizarPersonagem(personagem),
+    mutationFn: ({ id, personagem }) => atualizarPersonagem(id, personagem),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
   })
 }

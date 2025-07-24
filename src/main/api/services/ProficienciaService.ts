@@ -1,43 +1,38 @@
-import { DeepPartial } from 'typeorm'
-import { SQLiteDataSource } from '../data-source'
-import { Personagem } from '../entities/Personagem'
-import { Proficiencia } from '../entities/Proficiencia'
-
-export const ProficienciaRepository = SQLiteDataSource.getRepository(Proficiencia)
+import { Proficiencia } from '@prisma/client'
+import { prisma } from '../..'
+import { IProficienciaPostRequestDTO } from '../../@types/T20 GOTY/IProficiencia'
 
 export const postProficiencia = async (
-  _proficiencia: DeepPartial<Proficiencia>,
+  _proficiencia: IProficienciaPostRequestDTO,
   _idPersonagem: number
 ): Promise<void> => {
   try {
-    const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
-    const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
-
-    if (!personagem) {
-      throw new Error('Personagem não encontrado!')
-    }
-
-    const novaProficiencia = ProficienciaRepository.create({
-      ..._proficiencia,
-      personagem: personagem
+    await prisma.proficiencia.create({
+      data: {
+        ..._proficiencia,
+        personagem: {
+          connect: {
+            id: _idPersonagem
+          }
+        }
+      }
     })
-
-    await ProficienciaRepository.save(novaProficiencia)
   } catch {
     throw new Error('Erro ao criar proficiencia!')
   }
 }
 
-export const putProficiencia = async (_proficiencia: Proficiencia): Promise<void> => {
+export const putProficiencia = async (id: number, _proficiencia: Proficiencia): Promise<void> => {
   try {
-    const proficienciaEncontrada = await ProficienciaRepository.findOneBy({ id: _proficiencia.id })
-    if (proficienciaEncontrada == null) {
-      throw new Error('Proficiência não encontrada!')
-    }
-
-    ProficienciaRepository.merge(proficienciaEncontrada, _proficiencia)
-
-    await ProficienciaRepository.save(proficienciaEncontrada)
+    await prisma.proficiencia.update({
+      where: {
+        id: id
+      },
+      data: {
+        nome: _proficiencia.nome,
+        categoria: _proficiencia.categoria
+      }
+    })
   } catch {
     throw new Error('Erro ao atualizar proficiencia')
   }
@@ -45,7 +40,9 @@ export const putProficiencia = async (_proficiencia: Proficiencia): Promise<void
 
 export const deleteProficiencia = async (_id: number): Promise<void> => {
   try {
-    await ProficienciaRepository.delete(_id)
+    await prisma.proficiencia.delete({
+      where: { id: _id }
+    })
   } catch {
     throw new Error('Erro ao deletar proficiência!')
   }

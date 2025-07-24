@@ -14,11 +14,15 @@ model Personagem {
   id Int @id @default(autoincrement())
   nome String
   categoria String
-  tipo String
   nivel Int
   tamanho String
-  detalhesPJ DetalhesPJ?
-  detalhesAmeaca DetalhesAmeaca?
+  classeOriginal String
+  origem String
+  divindade String
+  experiencia Int
+  alinhamentoEtico String
+  alinhamentoMoral String
+  raca Raca?
   classes Classe[]
   atributos Atributo[]
   pericias Pericia[]
@@ -30,38 +34,46 @@ model Personagem {
   efeitos Efeito[]
 }
 
-model DetalhesPJ {
-  id Int @id @default(autoincrement())
-  raca String
-  classeOriginal String
-  origem String
-  divindade String
-  experiencia Int
-  alinhamentoEtico String
-  alinhamentoMoral String
-  personagem Personagem @relation(fields: [personagemId], references: [id])
-  personagemId Int @unique
-}
-
-model DetalhesAmeaca {
-  id Int @id @default(autoincrement())
-  papelCombate String
-  subTipo String?
-  tesouro String?
-  personagem Personagem @relation(fields: [personagemId], references: [id])
-  personagemId Int @unique
-}
-
 model Classe {
   id Int @id @default(autoincrement())
   nome String
+  key String
   nivel Int
+  descricao String
   vidaInicial Int
   vidaPorNivel Int
   devotoFiel Boolean
   manaPorNivel Int
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  habilidades ClasseHabilidades[]
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
+}
+
+model ClasseHabilidades {
+  id Int @id @default(autoincrement())
+  key String
+  nivel Int
+  classe Classe @relation(fields: [classeId], references: [id], onDelete: Cascade)
+  classeId Int
+}
+
+model Raca {
+  id Int @id @default(autoincrement())
+  key String
+  nome String
+  tipo String
+  descricao String
+  racaAtributos RacaAtributo[]
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
+  personagemId Int @unique
+}
+
+model RacaAtributo {
+  id Int @id @default(autoincrement())
+  atributo String
+  valor Int
+  raca Raca @relation(fields: [racaId], references: [id], onDelete: Cascade)
+  racaId Int
 }
 
 model Atributo {
@@ -69,8 +81,9 @@ model Atributo {
   nome String
   key String
   valorBase Int
+  descricao String
   bonus Int
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
 }
 
@@ -82,9 +95,10 @@ model Pericia {
   ehTreinado Boolean
   categoria String
   atributo String
+  descricao String
   requerTreinamento Boolean
   sofrePenalidadeArmadura Boolean
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
 }
 
@@ -101,7 +115,7 @@ model Status {
   defesaBase Int
   defesaBonus Int
   atributoDefesa String
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int @unique
 }
 
@@ -113,7 +127,7 @@ model Deslocamento {
   escaladaBase Int
   escavacaoBase Int
   plana Boolean
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int @unique
 }
 
@@ -131,7 +145,7 @@ model Poder {
   fonte String
   subEfeitos SubEfeito[]
   tags Tag[]
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
 }
 
@@ -139,14 +153,14 @@ model SubEfeito {
   id Int @id @default(autoincrement())
   nome String
   descricao String
-  poder Poder @relation(fields: [poderId], references: [id])
+  poder Poder @relation(fields: [poderId], references: [id], onDelete: Cascade)
   poderId Int
 }
 
 model Tag {
   id Int @id @default(autoincrement())
   label String
-  poder Poder @relation(fields: [poderId], references: [id])
+  poder Poder @relation(fields: [poderId], references: [id], onDelete: Cascade)
   poderId Int
 }
 
@@ -155,7 +169,7 @@ model Grimorio {
   atributoChaveMagias String
   bonusCD Int
   magias Magia[]
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int @unique
 }
 
@@ -176,7 +190,7 @@ model Magia {
   publicacao String
   escola String
   aprimoramentos AprimoramentoMagia[]
-  grimorio Grimorio @relation(fields: [grimorioId], references: [id])
+  grimorio Grimorio @relation(fields: [grimorioId], references: [id], onDelete: Cascade)
   grimorioId Int
 }
 
@@ -184,7 +198,7 @@ model AprimoramentoMagia {
   id Int @id @default(autoincrement())
   custo Int
   descricao String
-  magia Magia @relation(fields: [magiaId], references: [id])
+  magia Magia @relation(fields: [magiaId], references: [id], onDelete: Cascade)
   magiaId Int
 }
 
@@ -192,7 +206,7 @@ model Proficiencia {
   id Int @id @default(autoincrement())
   categoria String
   nome String
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
 }
 
@@ -202,7 +216,7 @@ model Efeito {
   estaAtivo Boolean
   fonte String
   modificadores Modificador[]
-  personagem Personagem @relation(fields: [personagemId], references: [id])
+  personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
 }
 
@@ -214,6 +228,6 @@ model Modificador {
   valor Int
   estaAtivo Boolean
   escalonamento String
-  efeito Efeito @relation(fields: [efeitoId], references: [id])
+  efeito Efeito @relation(fields: [efeitoId], references: [id], onDelete: Cascade)
   efeitoId Int
 }

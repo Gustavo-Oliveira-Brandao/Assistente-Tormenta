@@ -1,57 +1,65 @@
 import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
-import { Personagem } from '../main/api/entities/Personagem'
-import { Atributo } from '../main/api/entities/Atributo'
-import { Deslocamento } from '../main/api/entities/Deslocamento'
-import { Pericia } from '../main/api/entities/Pericia'
-import { Proficiencia } from '../main/api/entities/Proficiencia'
-import { DeepPartial } from 'typeorm'
-import { Poder } from '../main/api/entities/Poder'
-import { Grimorio, Magia } from '../main/api/entities/Magia'
-import { Status } from '../main/api/entities/Status'
-import { Efeito } from '../main/api/entities/Efeito'
+import {
+  IPersonagemFinal,
+  IPersonagemResponseManyDTO
+} from '../main/@types/T20 GOTY/IPersonagem'
+import { Atributo, Deslocamento, Personagem, Proficiencia } from '@prisma/client'
+import { IRacaRequestPutDTO } from '../main/@types/T20 GOTY/IRaca'
+import { IClasseRequestPostDTO, IClasseRequestPutDTO } from '../main/@types/T20 GOTY/IClasse'
+import { IEfeito, IEfeitoPostRequestDTO } from '../main/@types/T20 GOTY/IEfeito'
+import { IGrimorio, IMagia, IMagiaPostRequestDTO } from '../main/@types/T20 GOTY/IMagia'
 import { ICompendio } from '../main/@types/T20 GOTY/ICompendio'
+import { IPoder, IPoderPostRequestDTO } from '../main/@types/T20 GOTY/IPoder'
+import { IProficienciaPostRequestDTO } from '../main/@types/T20 GOTY/IProficiencia'
+import { IPericia } from '../main/@types/T20 GOTY/IPericia'
+import { IStatus } from '../main/@types/T20 GOTY/IStatus'
 
 // Custom APIs for renderer
 const api = {
   personagens: {
-    getTodosPersonagem: (): Promise<Personagem[]> => ipcRenderer.invoke('get-personagens'),
-    getPersonagem: (_id: number): Promise<Personagem> => ipcRenderer.invoke('get-personagem', _id),
-    postPersonagem: (_personagem: DeepPartial<Personagem>): Promise<void> =>
-      ipcRenderer.invoke('post-personagem', _personagem),
-    putPersonagem: (_personagem: Personagem): Promise<void> =>
-      ipcRenderer.invoke('put-personagem', _personagem),
-    deletePersonagem: (_id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', _id)
+    getTodosPersonagem: (): Promise<IPersonagemResponseManyDTO[]> =>
+      ipcRenderer.invoke('get-personagens'),
+    getPersonagem: (_id: number): Promise<IPersonagemFinal> =>
+      ipcRenderer.invoke('get-personagem', _id),
+    postPersonagem: (nomePersonagem: string): Promise<void> =>
+      ipcRenderer.invoke('post-personagem', nomePersonagem),
+    putPersonagem: (id: number, _personagem: Personagem): Promise<void> =>
+      ipcRenderer.invoke('put-personagem', id, _personagem),
+    deletePersonagem: (_id: number): Promise<void> => ipcRenderer.invoke('delete-personagem', _id),
+    putRaca: (id: number, raca: IRacaRequestPutDTO): Promise<void> =>
+      ipcRenderer.invoke('put-raca', id, raca),
+    postClasse: (classe: IClasseRequestPostDTO, idPersonagem: number): Promise<void> =>
+      ipcRenderer.invoke('post-classe', classe, idPersonagem),
+    putClasse: (id: number, classe: IClasseRequestPutDTO): Promise<void> =>
+      ipcRenderer.invoke('put-classe', id, classe),
+    deleteClasse: (id: number): Promise<void> => ipcRenderer.invoke('delete-classe', id)
   },
 
   atributos: {
-    getAtributosPersonagem: (_idPersonagem: number): Promise<Atributo[]> =>
-      ipcRenderer.invoke('get-atributos-personagem', _idPersonagem),
-    putAtributo: (_atributo: Atributo): Promise<void> =>
-      ipcRenderer.invoke('put-atributo', _atributo)
+    putAtributo: (id: number, _atributo: Atributo): Promise<void> =>
+      ipcRenderer.invoke('put-atributo', id, _atributo)
   },
   deslocamentos: {
-    getDeslocamentoPersonagem: (_idPersonagem: number): Promise<Deslocamento> =>
-      ipcRenderer.invoke('get-deslocamento-personagem', _idPersonagem),
-    putDeslocamento: (_deslocamento: Deslocamento): Promise<void> =>
-      ipcRenderer.invoke('put-deslocamento', _deslocamento)
+    putDeslocamento: (id: number, _deslocamento: Deslocamento): Promise<void> =>
+      ipcRenderer.invoke('put-deslocamento', id, _deslocamento)
   },
 
   efeitos: {
-    getEfeitosPersonagem: (_idPersonagem: number): Promise<Efeito[]> =>
-      ipcRenderer.invoke('get-efeitos-personagem', _idPersonagem),
-    postEfeito: (_efeito: DeepPartial<Efeito>, _idPersonagem: number): Promise<void> =>
+    postEfeito: (_efeito: IEfeitoPostRequestDTO, _idPersonagem: number): Promise<void> =>
       ipcRenderer.invoke('post-efeito', _efeito, _idPersonagem),
-    putEfeito: (_efeito: Efeito): Promise<void> => ipcRenderer.invoke('put-efeito', _efeito),
+    putEfeito: (id: number, _efeito: IEfeito): Promise<void> =>
+      ipcRenderer.invoke('put-efeito', id, _efeito),
     deleteEfeito: (_id: number): Promise<void> => ipcRenderer.invoke('delete-efeito', _id)
   },
   magias: {
-    putGrimorio: (_grimorio: Grimorio): Promise<void> =>
-      ipcRenderer.invoke('put-grimorio', _grimorio),
-    getGrimorioPersonagem: (_idPersonagem: number): Promise<Magia[]> =>
+    putGrimorio: (id: number, _grimorio: IGrimorio): Promise<void> =>
+      ipcRenderer.invoke('put-grimorio', id, _grimorio),
+    getGrimorioPersonagem: (_idPersonagem: number): Promise<IGrimorio> =>
       ipcRenderer.invoke('get-grimorio-personagem', _idPersonagem),
-    putMagia: (_magia: Magia): Promise<void> => ipcRenderer.invoke('put-magia', _magia),
-    postMagia: (_magia: DeepPartial<Magia>, _idGrimorio: number): Promise<void> =>
+    putMagia: (id: number, _magia: IMagia): Promise<void> =>
+      ipcRenderer.invoke('put-magia', id, _magia),
+    postMagia: (_magia: IMagiaPostRequestDTO, _idGrimorio: number): Promise<void> =>
       ipcRenderer.invoke('post-magia', _magia, _idGrimorio),
     deleteMagia: (_id: number): Promise<void> => ipcRenderer.invoke('delete-magia', _id)
   },
@@ -59,10 +67,10 @@ const api = {
     getCompendio: (): Promise<ICompendio> => ipcRenderer.invoke('get-compendio-t20')
   },
   poderes: {
-    getPoderesPersonagem: (_idPersonagem: number): Promise<Poder[]> =>
+    getPoderesPersonagem: (_idPersonagem: number): Promise<IPoder[]> =>
       ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
     postPoder: (
-      _poder: DeepPartial<Poder>,
+      _poder: IPoderPostRequestDTO,
       nivelPoder: number,
       _idPersonagem: number
     ): Promise<void> => ipcRenderer.invoke('post-poder', _poder, nivelPoder, _idPersonagem),
@@ -70,28 +78,24 @@ const api = {
   },
 
   proficiencias: {
-    getProficienciasPorPersonagem: (_idPersonagem: number): Promise<Proficiencia[]> =>
-      ipcRenderer.invoke('get-proficiencias-personagem', _idPersonagem),
     postProficiencia: (
-      _proficiencia: DeepPartial<Proficiencia>,
+      _proficiencia: IProficienciaPostRequestDTO,
       _idPersonagem: number
     ): Promise<void> => ipcRenderer.invoke('post-proficiencia', _proficiencia, _idPersonagem),
-    putProficiencia: (_proficiencia: Proficiencia): Promise<void> =>
-      ipcRenderer.invoke('put-proficiencia', _proficiencia),
+    putProficiencia: (id: number, _proficiencia: Proficiencia): Promise<void> =>
+      ipcRenderer.invoke('put-proficiencia', id, _proficiencia),
     deleteProficiencia: (_id: number): Promise<void> =>
       ipcRenderer.invoke('delete-proficiencia', _id)
   },
 
   pericias: {
-    getPericiasPersonagem: (_idPersonagem: number): Promise<Pericia[]> =>
-      ipcRenderer.invoke('get-pericias-personagem', _idPersonagem),
-    putPericia: (_pericia: Pericia): Promise<void> => ipcRenderer.invoke('put-pericia', _pericia)
+    putPericia: (id: number, _pericia: IPericia): Promise<void> =>
+      ipcRenderer.invoke('put-pericia', id, _pericia)
   },
 
   status: {
-    getStatusPersonagem: (_idPersonagem: number): Promise<Status> =>
-      ipcRenderer.invoke('get-status-personagem', _idPersonagem),
-    putStatus: (_status: Status): Promise<void> => ipcRenderer.invoke('put-status', _status)
+    putStatus: (id: number, _status: IStatus): Promise<void> =>
+      ipcRenderer.invoke('put-status', id, _status)
   }
 }
 

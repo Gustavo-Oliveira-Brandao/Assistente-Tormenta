@@ -1,13 +1,15 @@
-import { SQLiteDataSource } from '../data-source'
-import { Personagem } from '../entities/Personagem'
-import { Poder } from '../entities/Poder'
-import { DeepPartial } from 'typeorm'
+import { prisma } from '../..'
+import { IPoder, IPoderPostRequestDTO } from '../../@types/T20 GOTY/IPoder'
 
-export const PoderRepository = SQLiteDataSource.getRepository(Poder)
-
-export const getPoderesPersonagem = async (_idPersonagem: number): Promise<Poder[]> => {
+export const getPoderesPersonagem = async (idPersonagem: number): Promise<IPoder[]> => {
   try {
-    const poderes = await PoderRepository.find({ where: { personagem: { id: _idPersonagem } } })
+    const poderes = await prisma.poder.findMany({
+      where: { personagemId: idPersonagem },
+      include: {
+        subEfeitos: true,
+        tags: true
+      }
+    })
     return poderes
   } catch {
     throw new Error('Erro ao recuperar poderes')
@@ -15,33 +17,46 @@ export const getPoderesPersonagem = async (_idPersonagem: number): Promise<Poder
 }
 
 export const postPoder = async (
-  _poder: DeepPartial<Poder>,
+  poder: IPoderPostRequestDTO,
   nivelPoder: number,
-  _idPersonagem: number
+  idPersonagem: number
 ): Promise<void> => {
   try {
-    const PersonagemRepository = SQLiteDataSource.getRepository(Personagem)
-    const personagem = await PersonagemRepository.findOneBy({ id: _idPersonagem })
-    if (!personagem) {
-      throw new Error('Personagem não encontrado')
-    }
-
-    const novoPoder = PoderRepository.create({
-      ..._poder,
-      nivel: nivelPoder,
-      tags: _poder.tags,
-      subEfeitos: _poder.subEfeitos,
-      personagem: personagem
+    await prisma.poder.create({
+      data: {
+        key: poder.key,
+        icone: poder.icone,
+        nome: poder.nome,
+        tempoExecucao: poder.tempoExecucao,
+        descricao: poder.descricao,
+        categoria: poder.categoria,
+        fonte: poder.fonte,
+        publicacao: poder.publicacao,
+        nivel: nivelPoder,
+        preRequisitos: poder.preRequisitos,
+        subEfeitos: {
+          create: poder.subEfeitos
+        },
+        tags: {
+          create: poder.tags
+        },
+        personagem: {
+          connect: {
+            id: idPersonagem
+          }
+        }
+      }
     })
-    await PoderRepository.save(novoPoder)
   } catch {
     throw new Error('Erro ao adicionar poder!')
   }
 }
 
-export const deletePoder = async (_id: number): Promise<void> => {
+export const deletePoder = async (id: number): Promise<void> => {
   try {
-    await PoderRepository.delete(_id)
+    await prisma.poder.delete({
+      where: { id: id }
+    })
   } catch {
     throw new Error('Erro ao deletar poder.')
   }

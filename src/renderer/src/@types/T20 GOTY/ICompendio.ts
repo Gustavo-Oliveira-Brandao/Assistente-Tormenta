@@ -12,6 +12,28 @@ export type ICompendio = {
   magias: Partial<IMagia>[]
 }
 
+export type IClasse = {
+  key: string
+  nome: string
+  icone: string
+  devotoFiel: boolean
+  vidaInicial: number
+  vidaPorNivel: number
+  manaPorNivel: number
+  pericias: string[]
+  numeroPericiasExtras: number
+  periciasExtras: string[]
+  habilidades: {
+    key: string
+    nivel: number
+  }[]
+  proficiencias: {
+    categoria: string
+    nome: string
+  }[]
+  publicacao: string
+}
+
 export type IDivindade = {
   key: string
   nome: string
@@ -22,6 +44,7 @@ export type IDivindade = {
   publicacao: string
   devotos: string
   obrigacoes: string
+  poderesConcedidos: string
   descricao: string
 }
 
@@ -33,27 +56,10 @@ export type IOrigem = {
   itens: string
   beneficios: string
   poderes: string[]
+  pericias: string[]
   beneficioPericias: {
     pericia: string
     ehOficio: boolean
-    nomeOficio?: string
-  }[]
-}
-
-export type IClasse = {
-  key: string
-  nome: string
-  icone: string
-  vidaInicial: number
-  vidaPorNivel: number
-  manaPorNivel: number
-  devotoFiel: boolean
-  pericias: string[]
-  numeroPericiasExtras: number
-  periciasExtras: string[]
-  proficiencias: {
-    categoria: string
-    nome: string
   }[]
 }
 

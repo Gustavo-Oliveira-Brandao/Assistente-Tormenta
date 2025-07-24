@@ -5,6 +5,7 @@ export type IPericia = {
   bonus: number
   ehTreinado: boolean
   categoria: string
+  key: string
   atributo: string
   requerTreinamento: boolean
   sofrePenalidadeArmadura: boolean

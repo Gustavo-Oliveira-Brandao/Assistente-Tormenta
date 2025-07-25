@@ -36,20 +36,28 @@ export type IClasseHabilidade = {
   nivel: number
 }
 
-export type IClasseRequestPostDTO = {
-  key: string
-  nome: string
-  descricao: string
-  nivel: number
-  vidaInicial: number
-  vidaPorNivel: number
-  devotoFiel: boolean
-  manaPorNivel: number
-  habilidades: {
-    key: string
-    nivel: number
-  }[]
-}
+const classePersonagemPost = Prisma.validator<Prisma.ClasseDefaultArgs>()({
+  select: {
+    key: true,
+    nome: true,
+    descricao: true,
+    nivel: true,
+    vidaInicial: true,
+    vidaPorNivel: true,
+    devotoFiel: true,
+    manaPorNivel: true
+  },
+  include: {
+    habilidades: {
+      select: {
+        key: true,
+        nivel: true
+      }
+    }
+  }
+})
+
+export type IClasseRequestPostDTO = Prisma.ClasseGetPayload<typeof classePersonagemPost>
 
 const classePersonagemPut = Prisma.validator<Prisma.ClasseDefaultArgs>()({
   include: {

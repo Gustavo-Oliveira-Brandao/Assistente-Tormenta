@@ -1,10 +1,7 @@
 import { Personagem } from '@prisma/client'
 import { prisma } from '../..'
 import { calcularPersonagem } from '../../utils/calculos da ficha/Calcular_Personagem'
-import {
-  IPersonagemFinal,
-  IPersonagemResponseManyDTO
-} from '../../@types/T20 GOTY/IPersonagem'
+import { IPersonagemFinal, IPersonagemResponseManyDTO } from '../../@types/T20 GOTY/IPersonagem'
 import { IRacaRequestPutDTO } from '../../@types/T20 GOTY/IRaca'
 import { IClasseRequestPostDTO, IClasseRequestPutDTO } from '../../@types/T20 GOTY/IClasse'
 
@@ -573,7 +570,14 @@ export const postClasse = async (
   try {
     await prisma.classe.create({
       data: {
-        ...classe,
+        key: classe.key,
+        nivel: classe.nivel,
+        descricao: classe.descricao,
+        vidaInicial: classe.vidaInicial,
+        vidaPorNivel: classe.vidaPorNivel,
+        manaPorNivel: classe.manaPorNivel,
+        nome: classe.nome,
+        devotoFiel: classe.devotoFiel,
         habilidades: {
           create: classe.habilidades
         },

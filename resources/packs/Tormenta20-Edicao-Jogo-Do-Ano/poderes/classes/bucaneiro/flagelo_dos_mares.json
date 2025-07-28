@@ -1,7 +1,6 @@
 {
   "nome": "flagelo dos mares",
-  "descricao": "Você aprende e pode lançar Amedrontar (atributo-chave Carisma). Esta não é uma habilidade mágica e provém de sua capacidade de incutir medo em seus inimigos.",
-  "preRequisitos": "treinado em Intimidação.",
+  "descricao": "Você aprende e pode lançar Amedrontar (atributo-chave Carisma). Esta não é uma habilidade mágica e provém de sua capacidade de incutir medo em seus inimigos.\n @[destaque]{Pré-requisitos:} treinado em Intimidação.",
   "categoria": "poder de classe",
   "icone": "terror",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "2fddb63a-61b7-4e94-b4ec-237476d1e64e",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

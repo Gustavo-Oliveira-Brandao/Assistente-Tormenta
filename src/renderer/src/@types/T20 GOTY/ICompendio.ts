@@ -1,15 +1,16 @@
 import { IEquipamento } from './IInventario'
 import { IPoder } from './IPoder'
 import { IMagia } from './IMagia'
+import { DeepPartial } from '../DeepPartial'
 
 export type ICompendio = {
   classes: IClasse[]
   divindades: IDivindade[]
   origens: IOrigem[]
   racas: IRaca[]
-  equipamentos: Partial<IEquipamento>[]
-  poderes: Partial<IPoder>[]
-  magias: Partial<IMagia>[]
+  equipamentos: DeepPartial<IEquipamento>[]
+  poderes: DeepPartial<IPoder>[]
+  magias: DeepPartial<IMagia>[]
 }
 
 export type IClasse = {

@@ -2,7 +2,7 @@
 
 .fotoPersonagem {
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: relative;
   cursor: pointer;
 
@@ -20,33 +20,5 @@
     top: 0;
     left: 0;
     z-index: 2;
-  }
-
-  .detalhes {
-    position: absolute;
-    bottom: 10%;
-    transform: translateY(10%);
-    left: 5px;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .detalhe {
-      display: flex;
-      align-items: center;
-      width: 200px;
-      padding: 2px;
-
-      img {
-        width: 20px !important;
-        height: 20px !important;
-      }
-
-      p {
-        margin-left: 5px;
-        font-size: 13.3px;
-      }
-    }
   }
 }

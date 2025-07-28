@@ -2,7 +2,7 @@
   "nome": "curandeira perfeita - lena",
   "icone": "lena",
   "descricao": "Você sempre pode escolher 10 em testes de Cura. Além disso, pode usar essa perícia mesmo sem um kit de medicamentos. Se usar o kit, recebe +2 no teste de Cura.",
-  "preRequisitos": "",
+
   "categoria": "concedido",
   "tags": [
     {

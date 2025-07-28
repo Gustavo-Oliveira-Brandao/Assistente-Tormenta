@@ -1,8 +1,7 @@
 {
   "nome": "olhar atordoante",
-  "nivel": 1,
   "descricao": "Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se a criatura falhar, fica atordoada por uma rodada (apenas uma vez por cena).",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "5289ca17-94cc-46d3-8754-0714d6c0b6aa",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "medusa"

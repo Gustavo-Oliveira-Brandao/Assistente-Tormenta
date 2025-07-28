@@ -1,7 +1,6 @@
 {
   "nome": "inventario organizado",
-  "descricao": "Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço.",
-  "preRequisitos": "Int +1.",
+  "descricao": "Você soma sua Inteligência no limite de espaços que pode carregar. Para você, itens muito leves ou pequenos, que normalmente ocupam meio espaço, em vez disso ocupam 1/4 de espaço.\n @[destaque]{Pré-requisitos:} Int +1.",
   "categoria": "destino",
   "tags": [],
   "tempoExecucao": "passivo",

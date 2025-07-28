@@ -1,8 +1,6 @@
 {
   "nome": "ataque especial",
   "descricao": "Quando faz um ataque, você pode gastar 1 PM para receber +4 no teste de ataque ou na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o bônus em +4. Você pode dividir os bônus igualmente. Por exemplo, no 17º nível, pode gastar 5 PM para receber +20 no ataque, +20 no dano ou +10 no ataque e +10 no dano.",
-  "preRequisitos": "",
-  "nivel": 1,
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "d0864de2-1b8f-4c61-a73a-bb061f21da15",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "guerreiro"

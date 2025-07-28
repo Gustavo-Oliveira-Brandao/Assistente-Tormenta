@@ -1,7 +1,6 @@
 {
   "nome": "mestre dos sussurros",
-  "descricao": "Você é dissimulado, atento para rumores e ótimo em espalhar fofocas. Quando faz um teste de Investigação para interrogar ou um teste de Enganação para intriga, você rola dois dados e usa o melhor resultado. Além disso, pode fazer esses testes em ambientes sociais (taverna, festival, corte...) sem custo e em apenas uma hora (em vez de um dia).",
-  "preRequisitos": "Car 1, treinado em Enganação e Investigação.",
+  "descricao": "Você é dissimulado, atento para rumores e ótimo em espalhar fofocas. Quando faz um teste de Investigação para interrogar ou um teste de Enganação para intriga, você rola dois dados e usa o melhor resultado. Além disso, pode fazer esses testes em ambientes sociais (taverna, festival, corte...) sem custo e em apenas uma hora (em vez de um dia).\n @[destaque]{Pré-requisitos:} Car 1, treinado em Enganação e Investigação.",
   "categoria": "poder de classe",
   "icone": "misterio",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação padrão",
-  "subEfeitos": [],
   "key": "185cdc2f-b3da-46c4-93d6-2f8d98eb3901",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bardo"

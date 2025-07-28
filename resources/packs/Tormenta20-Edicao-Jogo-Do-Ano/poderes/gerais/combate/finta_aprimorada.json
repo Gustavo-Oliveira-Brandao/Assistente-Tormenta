@@ -1,7 +1,6 @@
 {
   "nome": "finta aprimorada",
-  "descricao": "Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento.",
-  "preRequisitos": "treinado em Enganação e Luta.",
+  "descricao": "Você recebe +2 em testes de Enganação para fintar e pode fintar como uma ação de movimento.\n @[destaque]{Pré-requisitos:} treinado em Enganação e Luta.",
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "passivo",

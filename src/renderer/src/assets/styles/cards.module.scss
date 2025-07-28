@@ -97,6 +97,7 @@
 
 .descricao {
   font-size: 15px;
+  white-space: pre-line;
 }
 
 .subEfeitos {
@@ -118,9 +119,10 @@
 }
 
 .destaque {
-  font-size: 15px;
+  font-size: 14px;
   color: variables.$vermelho-claro !important;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .aprimoramentos {

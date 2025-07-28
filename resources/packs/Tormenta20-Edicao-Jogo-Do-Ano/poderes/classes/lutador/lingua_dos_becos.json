@@ -1,7 +1,6 @@
 {
   "nome": "lingua dos becos",
-  "descricao": "Você pode pagar 1 PM para usar seu bônus de Força no lugar de Carisma em um teste de perícia baseada em Carisma.",
-  "preRequisitos": "For 13, treinado em Intimidação.",
+  "descricao": "Você pode pagar 1 PM para usar seu bônus de Força no lugar de Carisma em um teste de perícia baseada em Carisma.\n @[destaque]{Pré-requisitos:} For 13, treinado em Intimidação.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "6090b394-30e5-41d3-a073-ec10a701abee",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

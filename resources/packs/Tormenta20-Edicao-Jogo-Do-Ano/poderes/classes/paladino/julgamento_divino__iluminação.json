@@ -1,7 +1,7 @@
 {
   "nome": "julgamento divino: iluminação",
   "descricao": "Você pode marcar um inimigo em alcance curto. Quando acerta um ataque corpo a corpo nesse inimigo, você recebe 2 PM temporários. Você só pode proferir este julgamento uma vez por cena.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "2c1a7ad5-f373-412b-b801-9c3b09472a05",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

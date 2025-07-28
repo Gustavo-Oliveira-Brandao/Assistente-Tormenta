@@ -1,7 +1,6 @@
 {
   "nome": "linhagem dracônica",
-  "descricao": "Um de seus antepassados foi um majestoso dragão. Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio.",
-  "preRequisitos": "",
+  "descricao": "Um de seus antepassados foi um majestoso dragão. Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio.\n @[destaque]{Básica:} Você soma seu Carisma em seus pontos de vida iniciais e recebe redução de dano 5 ao tipo escolhido.\n @[destaque]{Aprimorada:} Suas magias do tipo escolhido custam –1 PM e causam +1 ponto de dano por dado.\n @[destaque]{Superior:} Você passa a somar o dobro do seu Carisma em seus pontos de vida iniciais e se torna imune a dano do tipo escolhido. Além disso, sempre que reduz um ou mais inimigos a 0 PV ou menos com uma magia do tipo escolhido, você recebe uma quantidade de PM temporários igual ao círculo da magia.",
   "icone": "kallyadranoch",
   "categoria": "poder de classe",
   "tags": [
@@ -13,20 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [
-    {
-      "nome": "Básica:",
-      "descricao": "Você soma seu Carisma em seus pontos de vida iniciais e recebe redução de dano 5 ao tipo escolhido."
-    },
-    {
-      "nome": "Aprimorada:",
-      "descricao": "Suas magias do tipo escolhido custam –1 PM e causam +1 ponto de dano por dado."
-    },
-    {
-      "nome": "Superior:",
-      "descricao": "Você passa a somar o dobro do seu Carisma em seus pontos de vida iniciais e se torna imune a dano do tipo escolhido. Além disso, sempre que reduz um ou mais inimigos a 0 PV ou menos com uma magia do tipo escolhido, você recebe uma quantidade de PM temporários igual ao círculo da magia."
-    }
-  ],
   "key": "5d25ad04-fd48-4e2e-af3d-2f9fc764c2cb",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

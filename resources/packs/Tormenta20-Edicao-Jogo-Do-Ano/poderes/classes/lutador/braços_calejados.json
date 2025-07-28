@@ -1,7 +1,7 @@
 {
   "nome": "braços calejados",
   "descricao": "Se você não estiver usando armadura, soma seu bônus de Força na Defesa, limitado pelo seu nível.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "ddef5b0f-857b-4bd8-83f0-4eea46681731",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

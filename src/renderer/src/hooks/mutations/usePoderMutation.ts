@@ -5,15 +5,15 @@ import { useMutation, UseMutationResult, useQueryClient } from '@tanstack/react-
 
 type criarPoderVariaveis = {
   poder: DeepPartial<IPoder>
-  nivelPoder: number
+  nivel: number
   idPersonagem: number
 }
 
 export const useCriarPoder = (): UseMutationResult<void, Error, criarPoderVariaveis, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: ({ poder, nivelPoder, idPersonagem }) =>
-      criarPoder(poder, nivelPoder, idPersonagem),
+    mutationFn: ({ poder, nivel, idPersonagem }) =>
+      criarPoder(poder, nivel, idPersonagem),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['poderesPersonagem'] })
   })
 }

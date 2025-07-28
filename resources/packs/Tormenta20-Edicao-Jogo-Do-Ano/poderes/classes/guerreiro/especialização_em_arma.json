@@ -1,7 +1,7 @@
 {
   "nome": "especialização em arma",
   "descricao": "Escolha uma arma. Você recebe +2 em rolagens de dano com essa arma. Você pode escolher este poder outras vezes para armas diferentes.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "7aa12e19-d1a2-428c-a5d4-dc1e45706134",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "guerreiro"

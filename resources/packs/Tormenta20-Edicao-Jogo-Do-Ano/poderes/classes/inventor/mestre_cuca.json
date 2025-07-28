@@ -1,7 +1,6 @@
 {
   "nome": "mestre cuca",
-  "descricao": "Todas as comidas que cozinha têm seu bônus numérico aumentado em +1.",
-  "preRequisitos": "Treinado em Ofício (culinária).",
+  "descricao": "Todas as comidas que cozinha têm seu bônus numérico aumentado em +1.\n @[destaque]{Pré-requisitos:} Treinado em Ofício (culinária).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "1effd83b-17b8-46a1-9487-20551d9c9119",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

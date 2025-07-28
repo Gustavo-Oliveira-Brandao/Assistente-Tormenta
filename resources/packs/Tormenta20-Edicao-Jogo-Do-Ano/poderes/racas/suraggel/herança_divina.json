@@ -1,8 +1,7 @@
 {
   "nome": "herança divina",
-  "nivel": 1,
   "descricao": "Você é uma criatura do tipo espírito e recebe visão no escuro.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -13,7 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "39d8a775-1c67-4615-8a9f-6580234e3ddd",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "suraggel"

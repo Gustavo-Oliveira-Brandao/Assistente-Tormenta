@@ -1,7 +1,6 @@
 {
   "nome": "veneno potente",
-  "descricao": "A CD para resistir aos venenos que você usa aumenta em +2 e esses venenos causam +1 ponto de dano por dado de dano.",
-  "preRequisitos": "treinado em Ofício (alquimia).",
+  "descricao": "A CD para resistir aos venenos que você usa aumenta em +2 e esses venenos causam +1 ponto de dano por dado de dano.\n @[destaque]{Pré-requisitos:} treinado em Ofício (alquimia).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "284974cc-f131-4fce-8690-aed3d9aa6d64",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

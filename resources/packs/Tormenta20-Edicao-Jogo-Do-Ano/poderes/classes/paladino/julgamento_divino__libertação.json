@@ -1,7 +1,7 @@
 {
   "nome": "julgamento divino: libertação",
   "descricao": "Você pode gastar 5 PM para cancelar uma condição negativa qualquer (como abalado, paralisado etc.) que esteja afetando uma criatura em alcance curto.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "92aad21b-c862-4c19-bd5a-0e54da053432",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

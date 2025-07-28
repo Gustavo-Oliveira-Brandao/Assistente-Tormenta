@@ -1,7 +1,7 @@
 {
   "nome": "missa: escudo divino",
   "descricao": "Os participantes recebem +1 na Defesa e testes de resistência.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "1 hora",
-  "subEfeitos": [],
   "key": "b6e67119-c95f-455c-b207-914d2f73cd6a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "clerigo"

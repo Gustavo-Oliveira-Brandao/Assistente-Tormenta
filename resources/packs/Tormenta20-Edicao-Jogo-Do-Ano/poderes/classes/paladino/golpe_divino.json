@@ -1,8 +1,6 @@
 {
   "nome": "golpe divino",
   "descricao": "Quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um golpe destruidor. Você soma seu bônus de Carisma no teste de ataque e +1d8 na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o dano em +1d8.",
-  "preRequisitos": "",
-  "nivel": 1,
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "4cd7cf6f-3e96-4287-bff0-1e5ff248b0c6",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

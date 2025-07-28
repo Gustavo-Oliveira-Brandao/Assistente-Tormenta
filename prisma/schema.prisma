@@ -139,22 +139,12 @@ model Poder {
   tempoExecucao String
   descricao String
   categoria String
-  nivel Int
-  preRequisitos String
   publicacao String
+  nivel Int
   fonte String
-  subEfeitos SubEfeito[]
   tags Tag[]
   personagem Personagem @relation(fields: [personagemId], references: [id], onDelete: Cascade)
   personagemId Int
-}
-
-model SubEfeito {
-  id Int @id @default(autoincrement())
-  nome String
-  descricao String
-  poder Poder @relation(fields: [poderId], references: [id], onDelete: Cascade)
-  poderId Int
 }
 
 model Tag {

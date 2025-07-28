@@ -1,7 +1,6 @@
 {
   "nome": "golpe mágico",
-  "descricao": "Enquanto estiver sob efeito de Inspiração, sempre que você acertar um ataque corpo a corpo em um inimigo, recebe 2 PM temporários cumulativos. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível. Esses pontos temporários desaparecem no final da cena.",
-  "preRequisitos": "Esgrima Mágica.",
+  "descricao": "Enquanto estiver sob efeito de Inspiração, sempre que você acertar um ataque corpo a corpo em um inimigo, recebe 2 PM temporários cumulativos. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível. Esses pontos temporários desaparecem no final da cena.\n @[destaque]{Pré-requisitos:} Esgrima Mágica.",
   "icone": "ataque",
   "categoria": "poder de classe",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "d0c80e3a-d2c4-40dd-97de-1cee0b141564",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bardo"

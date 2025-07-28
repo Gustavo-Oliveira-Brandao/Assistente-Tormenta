@@ -1,7 +1,6 @@
 {
   "nome": "forma primal",
-  "descricao": "Quando usa Forma Selvagem, você pode se transformar em uma fera primal. Você recebe os benefícios de dois tipos de animais (bônus iguais não se acumulam; use o que você quiser de cada tipo).",
-  "preRequisitos": "18º nível de druida.",
+  "descricao": "Quando usa Forma Selvagem, você pode se transformar em uma fera primal. Você recebe os benefícios de dois tipos de animais (bônus iguais não se acumulam; use o que você quiser de cada tipo).\n @[destaque]{Pré-requisitos:} 18º nível de druida.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "46210002-9385-41e7-b5e2-ad5de888c477",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

@@ -1,7 +1,6 @@
 {
   "nome": "inexpugnável",
-  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência.",
-  "preRequisitos": "Encouraçado, 6º nível de personagem.",
+  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 em todos os testes de resistência.\n @[destaque]{Pré-requisitos:} Encouraçado, 6º nível de personagem.",
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "passivo",

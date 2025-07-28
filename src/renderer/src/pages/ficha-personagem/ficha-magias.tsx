@@ -9,10 +9,10 @@ import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
 import { escolasMagiasData, tradicoesMagiasData } from '@renderer/utils/common data/magiasData'
-import { DeepPartial } from 'typeorm'
 import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
 import { useExibirMagiasPersonagem } from '@renderer/hooks/selectors/useMagiaQuery'
 import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 
 type FichaMagiasProps = {
   personagem: IPersonagem

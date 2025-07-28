@@ -1,7 +1,6 @@
 {
   "nome": "chave",
-  "descricao": "Se estiver agarrando uma criatura e fizer um teste de manobra contra ela para causar dano, o dano desarmado aumenta em um passo.",
-  "preRequisitos": "Int 13, Lutador de Chão, 4º nível de lutador.",
+  "descricao": "Se estiver agarrando uma criatura e fizer um teste de manobra contra ela para causar dano, o dano desarmado aumenta em um passo.\n @[destaque]{Pré-requisitos:} Int 13, Lutador de Chão, 4º nível de lutador.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "4db5a609-0eb0-41fd-9437-5195c7c53070",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

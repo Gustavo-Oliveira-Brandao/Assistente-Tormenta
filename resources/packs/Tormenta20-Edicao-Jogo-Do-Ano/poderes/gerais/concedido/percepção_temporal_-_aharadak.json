@@ -2,7 +2,7 @@
   "nome": "percepção temporal - aharadak",
   "icone": "aharadak",
   "descricao": "Você pode gastar 3 PM para adicionar seu bônus de Sabedoria (mínimo +1, limitado por seu nível) a seus ataques, Defesa e testes de Reflexos até o fim da cena.",
-  "preRequisitos": "",
+
   "categoria": "concedido",
   "tags": [
     {

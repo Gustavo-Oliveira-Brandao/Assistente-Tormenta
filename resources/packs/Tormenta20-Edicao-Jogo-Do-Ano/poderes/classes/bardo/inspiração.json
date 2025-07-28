@@ -1,17 +1,18 @@
 {
   "nome": "inspiração",
   "descricao": "Você pode gastar uma ação padrão e 2 PM para inspirar as pessoas com sua arte. Você e todos os seus aliados em alcance curto ganham +1 em testes de perícia até o fim da cena. A cada quatro níveis, pode gastar +2 PM para aumentar o bônus em +1.",
-  "preRequisitos": "",
   "nivel": 1,
   "icone": "bardo",
   "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "bardo"
+    },
+    {
+      "label": "inspiração"
     }
   ],
   "tempoExecucao": "ação padrão",
-  "subEfeitos": [],
   "key": "2a14504a-befe-47af-897b-443809a8ef95",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bardo"

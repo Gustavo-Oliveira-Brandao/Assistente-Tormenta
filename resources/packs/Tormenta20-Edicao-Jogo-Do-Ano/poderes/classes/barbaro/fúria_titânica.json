@@ -1,17 +1,17 @@
 {
   "nome": "fúria titânica",
   "descricao": "No 20º nível, o bônus que você recebe nos testes de ataque e rolagens de dano quando usa Fúria é dobrado. Por exemplo, se gastar 5 PM, em vez de um bônus de +5, recebe um bônus de +10.",
-  "nivel": 20,
-  "preRequisitos": "",
   "icone": "furia",
   "categoria": "habilidade de classe",
   "tags": [
     {
       "label": "barbaro"
+    },
+    {
+      "label": "furia"
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "06120fc4-3353-49cf-8807-173e3e9812e6",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

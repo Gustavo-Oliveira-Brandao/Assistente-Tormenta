@@ -1,7 +1,6 @@
 {
   "nome": "rolamento defensivo",
-  "descricao": "Sempre que sofre dano, você pode gastar 2 PM para reduzir esse dano à metade. Após usar este poder, você fica caído.",
-  "preRequisitos": "treinado em Reflexos.",
+  "descricao": "Sempre que sofre dano, você pode gastar 2 PM para reduzir esse dano à metade. Após usar este poder, você fica caído.\n @[destaque]{Pré-requisitos:} treinado em Reflexos.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "3eb6a5e1-e4ef-4a1c-9d11-eadbcf545c6d",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

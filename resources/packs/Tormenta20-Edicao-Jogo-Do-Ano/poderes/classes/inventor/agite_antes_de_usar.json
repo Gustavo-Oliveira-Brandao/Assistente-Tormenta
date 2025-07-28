@@ -1,7 +1,6 @@
 {
   "nome": "agite antes de usar",
-  "descricao": "Quando usa um preparado alquímico que cause dano, você pode gastar uma quantidade de PM a sua escolha (limitado por sua Inteligência). Para cada PM que gastar, o item causa um dado extra de dano do mesmo tipo.",
-  "preRequisitos": "treinado em Ofício (alquimista).",
+  "descricao": "Quando usa um preparado alquímico que cause dano, você pode gastar uma quantidade de PM a sua escolha (limitado por sua Inteligência). Para cada PM que gastar, o item causa um dado extra de dano do mesmo tipo.\n @[destaque]{Pré-requisitos:} treinado em Ofício (alquimista).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "8731e8b1-6a59-48bc-aeec-3cdabce5641b",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

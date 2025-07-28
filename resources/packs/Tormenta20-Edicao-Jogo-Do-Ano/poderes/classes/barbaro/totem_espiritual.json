@@ -1,7 +1,6 @@
 {
   "nome": "totem espiritual",
-  "descricao": "Você soma sua Sabedoria no seu total de pontos de mana. Escolha um animal totêmico (veja abaixo). Você aprende e pode lançar uma magia definida pelo animal escolhido (atributo-chave Sabedoria) e pode lançá-la mesmo em fúria.",
-  "preRequisitos": "Sab 1, 4º nível de bárbaro.",
+  "descricao": "Você soma sua Sabedoria no seu total de pontos de mana. Escolha um animal totêmico (veja abaixo). Você aprende e pode lançar uma magia definida pelo animal escolhido (atributo-chave Sabedoria) e pode lançá-la mesmo em fúria.\n\n@[destaque]{Coruja:} A sábia coruja guia seus discípulos. Você pode lançar Orientação.\n@[destaque]{Corvo:} Um seguidor do corvo enxerga além do véu. Você pode lançar Visão Mística.\n@[destaque]{Falcão:} Sempre atento, o falcão permite que você lance Detectar Ameaças.\n@[destaque]{Grifo:} O mais veloz dos animais, o grifo permite que você lance Primor Atlético.\n@[destaque]{Lobo:} O lobo é feroz e letal. Você pode lançar Concentração de Combate.\n@[destaque]{Raposa:} A sagaz raposa nunca está onde se espera. Você pode lançar Imagem Espelhada.\n@[destaque]{Tartaruga:} A tartaruga protege os seus. Você pode lançar Armadura Arcana.\n@[destaque]{Urso:} O vigoroso urso permite que você lance Vitalidade Fantasma e possa usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um druida de seu nível.\n\n@[destaque]{Pré-requisitos:} Sab 1, 4º nível de bárbaro.",
   "categoria": "poder de classe",
   "icone": "totem",
   "tags": [
@@ -10,40 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [
-    {
-      "nome": "coruja:",
-      "descricao": "A sábia coruja guia seus discípulos. Você pode lançar Orientação."
-    },
-    {
-      "nome": "corvo:",
-      "descricao": "Um seguidor do corvo enxerga além do véu. Você pode lançar Visão Mística."
-    },
-    {
-      "nome": "falcão:",
-      "descricao": "Sempre atento, o falcão permite que você lance Detectar Ameaças."
-    },
-    {
-      "nome": "grifo:",
-      "descricao": "O mais veloz dos animais, o grifo permite que você lance Primor Atlético."
-    },
-    {
-      "nome": "lobo:",
-      "descricao": "O lobo é feroz e letal. Você pode lançar Concentração de Combate."
-    },
-    {
-      "nome": "raposa:",
-      "descricao": "A sagaz raposa nunca está onde se espera. Você pode lançar Imagem Espelhada."
-    },
-    {
-      "nome": "tartaruga:",
-      "descricao": "A tartaruga protege os seus. Você pode lançar Armadura Arcana."
-    },
-    {
-      "nome": "urso:",
-      "descricao": "O vigoroso urso permite que você lance Vitalidade Fantasma e possa usar seus aprimoramentos como se tivesse acesso aos mesmos círculos de magia que um druida de seu nível."
-    }
-  ],
   "key": "1132cbd4-32de-4286-940a-b9fcb4e87b52",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

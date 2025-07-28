@@ -5,7 +5,6 @@ import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { useExibirPoderesPersonagem } from '@renderer/hooks/selectors/usePoderQuery'
 import { CardPoder } from '@renderer/components/card-poder/card-poder'
 import { useCriarPoder, useDeletarPoder } from '@renderer/hooks/mutations/usePoderMutation'
-import { DeepPartial } from 'typeorm'
 import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
@@ -13,6 +12,7 @@ import { OptionModular, StandaloneSelect } from '@renderer/components/select-fie
 import { categoriasPoderesData } from '@renderer/utils/common data/categoriasPoderesData'
 import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 
 type FichaPoderesProps = {
   personagem: IPersonagem
@@ -24,8 +24,8 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
   const { data: poderesPersonagem } = useExibirPoderesPersonagem(personagem.id)
 
   const [categoriaPoderes, setCategoriaPoderes] = useState('CLASSE')
-  const [filtroClassePesquisa, setFiltroClassePesquisa] = useState(personagem.classeInicial)
-  const [filtroRacaPesquisa, setFiltroRacaPesquisa] = useState(personagem.raca)
+  const [filtroClassePesquisa, setFiltroClassePesquisa] = useState(personagem.classeOriginal)
+  const [filtroRacaPesquisa, setFiltroRacaPesquisa] = useState(personagem.raca.nome)
 
   const [lojaEstaAberta, setLojaEstaAberta] = useState(false)
 
@@ -76,7 +76,7 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
   const adicionarPoder = (poder: DeepPartial<IPoder>): void => {
     adicionarPoderMutation.mutate({
       poder: poder,
-      nivelPoder: personagem.nivelAtual ?? 1,
+      nivel: personagem.nivel ?? 1,
       idPersonagem: personagem.id
     })
     setLojaEstaAberta(false)

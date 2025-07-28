@@ -1,7 +1,7 @@
 {
   "nome": "bater e correr",
   "descricao": "Quando faz uma investida, você pode continuar se movendo após o ataque, até o limite de seu deslocamento. Se gastar 2 PM, pode fazer uma investida sobre terreno difícil e sem sofrer a penalidade de Defesa.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "a2d80600-0e4d-4c85-86a5-f078de39acdb",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "guerreiro"

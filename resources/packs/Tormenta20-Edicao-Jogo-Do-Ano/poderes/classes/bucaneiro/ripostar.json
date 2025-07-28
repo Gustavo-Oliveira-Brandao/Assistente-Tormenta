@@ -1,7 +1,6 @@
 {
   "nome": "ripostar",
-  "descricao": "Quando usa a habilidade aparar e evita o ataque, você pode gastar 1 PM. Se fizer isso, pode fazer um ataque corpo a corpo imediato contra o inimigo que o atacou (se ele estiver em alcance).",
-  "preRequisitos": "Aparar, 12º nível de bucaneiro.",
+  "descricao": "Quando usa a habilidade aparar e evita o ataque, você pode gastar 1 PM. Se fizer isso, pode fazer um ataque corpo a corpo imediato contra o inimigo que o atacou (se ele estiver em alcance).\n @[destaque]{Pré-requisitos:} Aparar, 12º nível de bucaneiro.",
   "categoria": "poder de classe",
   "icone": "status",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "f8ce6198-d3f0-4bad-931f-81cd58436e33",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

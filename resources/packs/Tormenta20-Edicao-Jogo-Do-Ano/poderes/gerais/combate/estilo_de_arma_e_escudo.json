@@ -1,7 +1,7 @@
 {
   "nome": "estilo de arma e escudo",
   "descricao": "Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2.",
-  "preRequisitos": "",
+
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "passivo",

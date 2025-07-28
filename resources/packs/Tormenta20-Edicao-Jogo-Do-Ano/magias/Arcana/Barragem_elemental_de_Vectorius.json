@@ -6,7 +6,7 @@
   "efeito": "4 esferas elementais",
   "execucao": "padrão",
   "resistencia": "Reflexos parcial",
-  "descricao": "Criada pelo arquimago Vectorius, esta magia produz quatro esferas, de ácido, eletricidade, fogo e frio, que voam até um ponto a sua escolha. Quando atingem o ponto escolhido, explodem causando 6d6 pontos de dano de seu respectivo tipo numa área com 12m de raio. Um teste de Reflexos reduz o dano à metade. Você pode mirar cada esfera em uma criatura ou ponto dife- rente. Uma criatura ao alcance da explosão de mais de uma esfera deve fazer um teste de resistência para cada uma. Além disso, as esferas causam os seguintes efeitos em criaturas que falharem em seus testes de resistência::\n• Ácido: Vulnerável até o fim da cena.\n• Elétrica: Atordoado por uma rodada. (apenas uma vez por cena).\n• Fogo: Em Chamas.\n• Frio: Lentoaté o fim da cena.",
+  "descricao": "Criada pelo arquimago Vectorius, esta magia produz quatro esferas, de ácido, eletricidade, fogo e frio, que voam até um ponto a sua escolha. Quando atingem o ponto escolhido, explodem causando 6d6 pontos de dano de seu respectivo tipo numa área com 12m de raio. Um teste de Reflexos reduz o dano à metade. Você pode mirar cada esfera em uma criatura ou ponto diferente. Uma criatura ao alcance da explosão de mais de uma esfera deve fazer um teste de resistência para cada uma. Além disso, as esferas causam os seguintes efeitos em criaturas que falharem em seus testes de resistência:\n@[destaque]{Ácido:} Vulnerável até o fim da cena.\n@[destaque]{Elétrica:} Atordoado por uma rodada. (apenas uma vez por cena).\n@[destaque]{Fogo:} Em Chamas.\n@[destaque]{Frio:} Lento até o fim da cena.",
   "duracao": "instantânea",
   "nivelCirculo": 5,
   "alcance": "longo",

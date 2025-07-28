@@ -1,7 +1,6 @@
 {
   "nome": "planejamento marcial",
-  "descricao": "Uma vez por dia, você pode gastar uma hora e 3 PM para escolher um poder de guerreiro ou de combate cujos pré-requisitos cumpra. Você recebe os benefícios desse poder até o próximo dia.",
-  "preRequisitos": "treinado em Guerra, 10º nível de guerreiro.",
+  "descricao": "Uma vez por dia, você pode gastar uma hora e 3 PM para escolher um poder de guerreiro ou de combate cujos pré-requisitos cumpra. Você recebe os benefícios desse poder até o próximo dia.\n @[destaque]{Pré-requisitos:} treinado em Guerra, 10º nível de guerreiro.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "1 hora",
-  "subEfeitos": [],
   "key": "96d5eede-c360-4f5e-85a1-7e0bc1876cfd",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "guerreiro"

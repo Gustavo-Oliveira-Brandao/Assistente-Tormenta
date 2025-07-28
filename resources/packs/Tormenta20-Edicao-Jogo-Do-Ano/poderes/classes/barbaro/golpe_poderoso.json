@@ -1,7 +1,6 @@
 {
   "nome": "golpe poderoso",
   "descricao": "Ao acertar um ataque corpo a corpo ou com uma arma de arremesso, você pode gastar 1 PM para causar um dado extra de dano do mesmo tipo (por exemplo, com um montante, causa +1d6, para um dano total de 3d6; com um machado de guerra, causa +1d12, para um dano total de 2d12).",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "icone": "ataque",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "37c64dee-6a75-4449-a5e1-3312572d4676",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

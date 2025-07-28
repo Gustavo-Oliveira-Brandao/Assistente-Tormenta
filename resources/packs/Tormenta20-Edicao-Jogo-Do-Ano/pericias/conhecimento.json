@@ -1,0 +1,11 @@
+{
+  "key": "T20:pericias:conh",
+  "nome": "Conhecimento",
+  "treinamento": "destreinado",
+  "categoria": "geral",
+  "atributo": "T20:atributos:int",
+  "requerTreinamento": true,
+  "sofrePenalidadeArmadura": false,
+  "descricao": "",
+  "bonus": []
+}

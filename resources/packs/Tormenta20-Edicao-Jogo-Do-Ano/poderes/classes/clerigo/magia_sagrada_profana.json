@@ -1,7 +1,7 @@
 {
   "nome": "magia sagrada/profana",
   "descricao": "Quando lança uma magia divina que causa dano, você pode gastar +1 PM. Se fizer isso, muda o tipo de dano da magia para luz (se sua divindade canaliza energia positiva) ou trevas (se canaliza energia negativa).",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "a3d73fb7-8cee-4bff-af97-7d0e7e6c921c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "clerigo"

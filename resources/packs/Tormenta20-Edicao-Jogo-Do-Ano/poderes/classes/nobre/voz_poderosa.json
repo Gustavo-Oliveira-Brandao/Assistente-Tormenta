@@ -1,7 +1,7 @@
 {
   "nome": "voz poderosa",
   "descricao": "Você recebe +2 em Diplomacia e Intimidação. Suas habilidades de nobre com alcance curto passam para alcance médio.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "3d50076e-148f-4964-86eb-8547df7814d7",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

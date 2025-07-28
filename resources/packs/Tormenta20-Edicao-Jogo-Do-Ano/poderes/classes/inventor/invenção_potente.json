@@ -1,7 +1,7 @@
 {
   "nome": "invenção potente",
   "descricao": "Quando usa um item fabricado por você mesmo, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ele.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "50efebdf-ba93-4f54-a328-effb3a6a79a7",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

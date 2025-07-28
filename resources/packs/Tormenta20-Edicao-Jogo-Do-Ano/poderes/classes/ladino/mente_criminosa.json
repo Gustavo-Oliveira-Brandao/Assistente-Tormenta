@@ -1,7 +1,6 @@
 {
   "nome": "mente criminosa",
-  "descricao": "Você soma seu bônus de Inteligência em Ladinagem e Furtividade.",
-  "preRequisitos": "Int 13.",
+  "descricao": "Você soma seu bônus de Inteligência em Ladinagem e Furtividade.\n @[destaque]{Pré-requisitos:} Int 13.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "77a8adb7-6def-45d3-bfdc-31d8a7bbaf55",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

@@ -1,7 +1,6 @@
 {
   "nome": "foco vital",
-  "descricao": "Se você estiver segurando seu foco e sofrer dano que o levaria a 0 PV ou menos, você fica com 1 PV e o foco perde PV igual ao valor excedente ou até ser destruído (se o foco for destruído, você sofre o dano excedente).",
-  "preRequisitos": "Bruxo.",
+  "descricao": "Se você estiver segurando seu foco e sofrer dano que o levaria a 0 PV ou menos, você fica com 1 PV e o foco perde PV igual ao valor excedente ou até ser destruído (se o foco for destruído, você sofre o dano excedente).\n @[destaque]{Pré-requisitos:} Bruxo.",
   "icone": "cajado",
   "categoria": "poder de classe",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "f92a451f-2325-4bd4-a5ea-0fc7bdd4b468",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

@@ -71,9 +71,9 @@ const api = {
       ipcRenderer.invoke('get-poderes-personagem', _idPersonagem),
     postPoder: (
       _poder: IPoderPostRequestDTO,
-      nivelPoder: number,
+      nivel: number,
       _idPersonagem: number
-    ): Promise<void> => ipcRenderer.invoke('post-poder', _poder, nivelPoder, _idPersonagem),
+    ): Promise<void> => ipcRenderer.invoke('post-poder', _poder, nivel, _idPersonagem),
     deletePoder: (_id: number): Promise<void> => ipcRenderer.invoke('delete-poder', _id)
   },
 

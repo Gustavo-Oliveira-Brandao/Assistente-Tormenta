@@ -1,7 +1,6 @@
 {
   "nome": "herança superior",
-  "descricao": "Você recebe a herança superior de sua linhagem sobrenatural.",
-  "preRequisitos": "Herança Aprimorada, 11º nível de arcanista.",
+  "descricao": "Você recebe a herança superior de sua linhagem sobrenatural.\n @[destaque]{Pré-requisitos:} Herança Aprimorada, 11º nível de arcanista.",
   "categoria": "poder de classe",
   "icone": "sobrenatural",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "9c817b5e-b858-46a2-a019-47fac642cabf",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

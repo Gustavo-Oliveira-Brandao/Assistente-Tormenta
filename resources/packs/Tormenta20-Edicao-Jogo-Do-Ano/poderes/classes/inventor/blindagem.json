@@ -1,7 +1,6 @@
 {
   "nome": "blindagem",
-  "descricao": "Você pode usar sua Inteligência na Defesa quando usa armadura pesada. Se fizer isso, não pode somar sua Destreza, mesmo que outras habilidades ou efeitos permitam isso.",
-  "preRequisitos": "Couraceiro, 8º nível de inventor.",
+  "descricao": "Você pode usar sua Inteligência na Defesa quando usa armadura pesada. Se fizer isso, não pode somar sua Destreza, mesmo que outras habilidades ou efeitos permitam isso.\n @[destaque]{Pré-requisitos:} Couraceiro, 8º nível de inventor.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "23eb38c0-1410-4d39-81af-99a2917b0866",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

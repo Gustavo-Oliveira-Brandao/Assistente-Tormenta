@@ -6,7 +6,6 @@ export const getPoderesPersonagem = async (idPersonagem: number): Promise<IPoder
     const poderes = await prisma.poder.findMany({
       where: { personagemId: idPersonagem },
       include: {
-        subEfeitos: true,
         tags: true
       }
     })
@@ -18,7 +17,7 @@ export const getPoderesPersonagem = async (idPersonagem: number): Promise<IPoder
 
 export const postPoder = async (
   poder: IPoderPostRequestDTO,
-  nivelPoder: number,
+  nivel: number,
   idPersonagem: number
 ): Promise<void> => {
   try {
@@ -31,12 +30,8 @@ export const postPoder = async (
         descricao: poder.descricao,
         categoria: poder.categoria,
         fonte: poder.fonte,
+        nivel: nivel,
         publicacao: poder.publicacao,
-        nivel: nivelPoder,
-        preRequisitos: poder.preRequisitos,
-        subEfeitos: {
-          create: poder.subEfeitos
-        },
         tags: {
           create: poder.tags
         },

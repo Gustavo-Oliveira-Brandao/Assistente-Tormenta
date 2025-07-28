@@ -1,8 +1,7 @@
 {
   "nome": "teurgista mistíco - wynna",
   "icone": "wynna",
-  "descricao": "Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino).",
-  "preRequisitos": "habilidade de classe Magias.",
+  "descricao": "Até uma magia de cada círculo que você aprender poderá ser escolhida entre magias divinas (se você for um conjurador arcano) ou entre magias arcanas (se for um conjurador divino).\n @[destaque]{Pré-requisitos:} habilidade de classe Magias.",
   "categoria": "concedido",
   "tags": [
     {

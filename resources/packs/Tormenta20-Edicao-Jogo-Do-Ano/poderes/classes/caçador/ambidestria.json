@@ -1,7 +1,6 @@
 {
   "nome": "ambidestria",
-  "descricao": "Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.",
-  "preRequisitos": "Des 2.",
+  "descricao": "Se estiver empunhando duas armas (e pelo menos uma delas for leve) e fizer a ação agredir, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.\n @[destaque]{Pré-requisitos:} Des 2.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "0814e5a6-736d-4508-a6a3-142e8e0a0ac5",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

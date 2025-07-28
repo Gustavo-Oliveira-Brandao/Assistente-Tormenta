@@ -1,7 +1,6 @@
 {
   "nome": "arma sagrada",
-  "descricao": "Se estiver empunhando a arma preferida de seu deus, o dado de dano que você rola por Golpe Divino aumenta para d12.",
-  "preRequisitos": "devoto de uma divindade (exceto Vida e Paz).",
+  "descricao": "Se estiver empunhando a arma preferida de seu deus, o dado de dano que você rola por Golpe Divino aumenta para d12.\n @[destaque]{Pré-requisitos:} devoto de uma divindade (exceto Vida e Paz).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "76e298bd-9494-44da-9862-62faeecaf109",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

@@ -1,6 +1,6 @@
 import { IPersonagem } from "@renderer/@types/T20 GOTY/IPersonagem"
 
-export const exibirTodosPersonagens = async (): Promise<Partial<IPersonagem>[]> => {
+export const exibirTodosPersonagens = async (): Promise<IPersonagem[]> => {
   return await window.api.personagens.getTodosPersonagem()
 }
 

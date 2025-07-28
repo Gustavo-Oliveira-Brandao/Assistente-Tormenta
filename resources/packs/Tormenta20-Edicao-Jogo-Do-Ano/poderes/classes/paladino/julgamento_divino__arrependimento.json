@@ -1,7 +1,7 @@
 {
   "nome": "julgamento divino: arrependimento",
   "descricao": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. Na próxima vez que esse inimigo acertar um ataque em você ou em um de seus aliados, deve fazer um teste de Vontade (CD Car). Se falhar, fica atordoado no próximo turno dele. Você só pode proferir este julgamento uma vez por cena contra cada criatura.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "b66b6706-0c2c-476f-841c-f58c204b1ed8",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

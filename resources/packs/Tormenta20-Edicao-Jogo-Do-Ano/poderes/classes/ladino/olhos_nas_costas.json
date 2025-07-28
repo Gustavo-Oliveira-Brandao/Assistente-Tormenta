@@ -1,8 +1,7 @@
 {
   "nome": "olhos nas costas",
   "descricao": "A partir do 8º nível, você consegue lutar contra diversos inimigos como se fossem apenas um. Você não pode ser flanqueado.",
-  "preRequisitos": "",
-  "nivel": 8,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "61747274-5814-45b5-aff8-249f79b8132a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

@@ -1,8 +1,7 @@
 {
   "nome": "duro como pedra",
-  "nivel": 1,
   "descricao": "Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "e851abc9-1697-4b6b-add4-01b97458ad91",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "anao"

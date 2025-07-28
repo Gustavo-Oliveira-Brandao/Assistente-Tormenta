@@ -1,7 +1,6 @@
 {
   "nome": "alquimista iniciado",
-  "descricao": "Você recebe um livro de fórmulas e pode fabricar poções com fórmulas que conheça de 1º e 2º círculos.",
-  "preRequisitos": "Int 1, Sab 1, treinado em Ofício (alquimista).",
+  "descricao": "Você recebe um livro de fórmulas e pode fabricar poções com fórmulas que conheça de 1º e 2º círculos.\n @[destaque]{Pré-requisitos:} Int 1, Sab 1, treinado em Ofício (alquimista).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "8454d8f9-489e-4f2f-8373-5509783b4cb1",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

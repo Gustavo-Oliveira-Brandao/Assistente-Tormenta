@@ -1,16 +1,17 @@
 {
   "nome": "fúria raivosa",
   "descricao": "Se sua Fúria for terminar por você não ter atacado nem sido alvo de um efeito hostil, você pode pagar 1 PM para continuar em fúria nesta rodada. Se você atacar ou for atacado na rodada seguinte, sua fúria continua normalmente.",
-  "preRequisitos": "",
   "icone": "furia",
   "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"
+    },
+    {
+      "label": "furia"
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "10111c33-30ee-4ef2-a847-1392a3c90be0",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

@@ -1,7 +1,6 @@
 {
   "nome": "educação privilegiada",
   "descricao": "Você se torna treinado em duas perícias de nobre a sua escolha.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "e0f0d14e-993f-46b5-bcf0-4d7c0f898b21",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

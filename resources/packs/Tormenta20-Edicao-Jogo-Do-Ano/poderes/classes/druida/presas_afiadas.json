@@ -1,7 +1,6 @@
 {
   "nome": "presas afiadas",
   "descricao": "A margem de ameaça de suas armas naturais aumenta em +2.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "b5a83ab0-167d-4b5c-8b91-8b3f1b9ab1f9",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

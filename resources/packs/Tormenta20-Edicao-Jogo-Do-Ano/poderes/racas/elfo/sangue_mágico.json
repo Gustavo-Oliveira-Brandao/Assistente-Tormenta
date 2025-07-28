@@ -1,8 +1,7 @@
 {
   "nome": "sangue mágico",
-  "nivel": 1,
   "descricao": "Você recebe +1 ponto de mana por nível.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "9aff5b74-d271-4129-a62f-dd45dac9c62c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "elfo"

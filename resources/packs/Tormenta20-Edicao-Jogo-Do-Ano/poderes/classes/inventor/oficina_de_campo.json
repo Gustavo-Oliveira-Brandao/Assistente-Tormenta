@@ -1,7 +1,6 @@
 {
   "nome": "oficina de campo",
-  "descricao": "Você pode gastar uma hora e 2 PM para fazer a manutenção do equipamento de seu grupo. Cada membro do grupo escolhe uma arma, armadura ou escudo para manutenção. Armas recebem +1 em testes de ataque; armaduras e escudos têm sua penalidade de armadura reduzida em 1. Os benefícios duram um dia.",
-  "preRequisitos": "Treinado em Ofício (armeiro).",
+  "descricao": "Você pode gastar uma hora e 2 PM para fazer a manutenção do equipamento de seu grupo. Cada membro do grupo escolhe uma arma, armadura ou escudo para manutenção. Armas recebem +1 em testes de ataque; armaduras e escudos têm sua penalidade de armadura reduzida em 1. Os benefícios duram um dia.\n @[destaque]{Pré-requisitos:} Treinado em Ofício (armeiro).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "1 hora",
-  "subEfeitos": [],
   "key": "f312af02-119a-49f8-a217-097deebaf06f",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

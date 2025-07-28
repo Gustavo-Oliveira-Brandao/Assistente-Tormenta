@@ -1,7 +1,6 @@
 {
   "nome": "mãos rápidas",
-  "descricao": "Ao fazer um teste de Ladinagem para abrir fechaduras, ocultar item, punga ou sabotar, você pode pagar 1 PM para fazê-lo como uma ação livre.",
-  "preRequisitos": "Des 15, treinado em Ladinagem.",
+  "descricao": "Ao fazer um teste de Ladinagem para abrir fechaduras, ocultar item, punga ou sabotar, você pode pagar 1 PM para fazê-lo como uma ação livre.\n @[destaque]{Pré-requisitos:} Des 15, treinado em Ladinagem.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "04acc207-eddf-45b3-80bb-0697a29fe9b5",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

@@ -1,7 +1,6 @@
 {
   "nome": "bravata audaz",
   "descricao": "Você jura fazer uma façanha específica, como roubar o tesouro de Sckhar ou ganhar um beijo do príncipe e da princesa até o fim do baile. Se cumprir a bravata, seus PM aumentam em +2 por nível de bucaneiro até o fim da aventura.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "icone": "bucaneiro",
   "tags": [
@@ -13,7 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "b732d382-ae34-4aa5-8836-b06c880ada13",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

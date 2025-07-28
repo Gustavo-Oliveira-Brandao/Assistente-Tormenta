@@ -1,12 +1,12 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
-import { JSX } from 'react'
-import { IPoderPersonagem } from '@renderer/@types/T20 GOTY/IPoder'
-import { DeepPartial } from 'typeorm'
+import { JSX, useMemo } from 'react'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { Button, Disclosure, DisclosurePanel, Heading } from 'react-aria-components'
+import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
+import { DeepPartial } from '@renderer/@types/DeepPartial'
 
 type cardPoderProps = {
-  poder: IPoderPersonagem | DeepPartial<IPoderPersonagem>
+  poder: IPoder | DeepPartial<IPoder>
   onInteract?: () => void
   exibeCategoria?: boolean
   exibeFonte?: boolean
@@ -22,6 +22,39 @@ export const CardPoder = ({
   exibeFonte = false,
   nivel
 }: cardPoderProps): JSX.Element => {
+
+  const descricao = useMemo(() => {
+    if (poder.descricao == null) {
+      return null
+    }
+
+    const regex = /(@\[destaque\]\{)(.*?)(\})/g
+
+    const partes: Array<string | JSX.Element> = []
+    let ultimoIndice = 0
+    let match: RegExpExecArray | null
+
+    while ((match = regex.exec(poder.descricao)) !== null) {
+      const conteudo = match[2]
+
+      if (match.index > ultimoIndice) {
+        partes.push(poder.descricao.substring(ultimoIndice, match.index))
+      }
+
+      partes.push(
+        <span key={match.index} className={styles.destaque}>
+          {conteudo}
+        </span>
+      )
+
+      ultimoIndice = match.index + match[0].length
+    }
+    if (ultimoIndice < poder.descricao.length) {
+      partes.push(poder.descricao.substring(ultimoIndice))
+    }
+    return <p className={`${styles.descricao} inter`}>{partes}</p>
+  }, [poder])
+
   return (
     <Disclosure className={styles.card}>
       <div className={styles.header}>
@@ -58,25 +91,7 @@ export const CardPoder = ({
                 </p>
               ))}
           </div>
-          <p className={`${styles.descricao} inter`}>{poder.descricao}</p>
-          {poder.subEfeitos && poder.subEfeitos.length !== 0 && (
-            <div className={styles.subEfeitos}>
-              {poder.subEfeitos.map((subEfeito, index) => (
-                <div key={index} className={styles.subEfeito}>
-                  <p>
-                    <span className={styles.destaque + ' inter'}>{subEfeito.nome} </span>
-                    <span className="inter">{subEfeito.descricao}</span>
-                  </p>
-                </div>
-              ))}
-            </div>
-          )}
-          {poder.preRequisitos !== '' && (
-            <p className={styles.preRequisitos}>
-              <span className={`${styles.destaque} inter`}>Pré requisitos: </span>
-              <span className="inter">{poder.preRequisitos}</span>
-            </p>
-          )}
+          <p className={`${styles.descricao} inter`}>{descricao}</p>
         </DisclosurePanel>
       )}
     </Disclosure>

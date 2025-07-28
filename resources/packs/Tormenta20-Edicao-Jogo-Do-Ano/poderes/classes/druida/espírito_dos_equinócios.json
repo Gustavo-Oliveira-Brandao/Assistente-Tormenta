@@ -1,7 +1,6 @@
 {
   "nome": "espírito dos equinócios",
-  "descricao": "Você pode gastar 4 PM para ficar em equilíbrio com o mundo. Até o final da cena, quando rola um dado, pode rolar novamente qualquer resultado 1.",
-  "preRequisitos": "Aspecto da Primavera, Aspecto do Outono, 10º nível de druida.",
+  "descricao": "Você pode gastar 4 PM para ficar em equilíbrio com o mundo. Até o final da cena, quando rola um dado, pode rolar novamente qualquer resultado 1.\n @[destaque]{Pré-requisitos:} Aspecto da Primavera, Aspecto do Outono, 10º nível de druida.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "a07f8245-48b1-49ae-b35a-dd76547a7608",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

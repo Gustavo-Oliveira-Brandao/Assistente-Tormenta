@@ -1,7 +1,6 @@
 {
   "nome": "tinta do mago",
-  "descricao": "Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade.",
-  "preRequisitos": "Mago, treinado em Ofício (escriba).",
+  "descricao": "Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade.\n @[destaque]{Pré-requisitos:} Mago, treinado em Ofício (escriba).",
   "categoria": "poder de classe",
   "icone": "tinta",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "b78bad6a-19ca-414a-8a45-85cc2a5f0da8",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

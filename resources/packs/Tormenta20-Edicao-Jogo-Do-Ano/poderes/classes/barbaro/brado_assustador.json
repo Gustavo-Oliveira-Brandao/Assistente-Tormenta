@@ -1,7 +1,6 @@
 {
   "nome": "brado assustador",
-  "descricao": "Você pode gastar uma ação de movimento e 1 PM para soltar um berro feroz. Todos os inimigos em alcance curto ficam vulneráveis até o fim da cena.",
-  "preRequisitos": "treinado em Intimidação. Medo.",
+  "descricao": "Você pode gastar uma ação de movimento e 1 PM para soltar um berro feroz. Todos os inimigos em alcance curto ficam vulneráveis até o fim da cena.\n @[destaque]{Pré-requistos:} treinado em Intimidação. Medo.",
   "categoria": "poder de classe",
   "icone": "grito",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "d448e4a4-e156-4d98-b42c-88447e14fd87",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

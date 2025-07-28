@@ -1,7 +1,6 @@
 {
   "nome": "magia pungente",
   "descricao": "Quando lança uma magia, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ela.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "96abcbe6-a02a-4f04-bd64-efa81a98cfae",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

@@ -1,7 +1,7 @@
 {
   "nome": "presença aristocrática",
   "descricao": "Sempre que uma criatura inteligente (Int 3 ou mais) tentar machucá-lo (causar dano com um ataque, magia ou habilidade) você pode gastar 2 PM. Se fizer isso, a criatura deve fazer um teste de Vontade (CD Car). Se falhar, não conseguirá machucá-lo e perderá a ação. Você só pode usar esta habilidade uma vez por cena contra cada criatura.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "afb3fa62-5463-4260-94a6-e5a4df194429",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

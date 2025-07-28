@@ -1,0 +1,18 @@
+{
+  "nome": "Caminho do arcanista: Feiticeiro",
+  "descricao": "Você lança magias através de um poder inato que corre em seu sangue. Escolha uma linhagem como origem de seus poderes (veja a página 39). Você recebe a herança básica da linhagem escolhida. Você não depende de nenhum item ou estudo, mas sua capacidade de aprender magias é limitada — você aprende uma magia nova a cada nível ímpar (3º, 5º, 7º etc.), em vez de a cada nível. Seu atributo-chave para magias é Carisma.",
+  "icone": "arcanista",
+  "categoria": "habilidade de classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    },
+    {
+      "label": "feiticeiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "key": "723fdce3-02a0-40fa-a2a5-7961a591b3b3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

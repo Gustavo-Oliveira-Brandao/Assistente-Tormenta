@@ -1,7 +1,6 @@
 {
   "nome": "conhecimento de fórmulas",
-  "descricao": "Você aprende três fórmulas de quaisquer círculos que possa aprender. Você pode escolher este poder quantas vezes quiser.",
-  "preRequisitos": "Alquimista Iniciado.",
+  "descricao": "Você aprende três fórmulas de quaisquer círculos que possa aprender. Você pode escolher este poder quantas vezes quiser.\n @[destaque]{Pré-requisitos:} Alquimista Iniciado.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "6e2e2f7b-c3d9-43e4-99d5-e1237183754d",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

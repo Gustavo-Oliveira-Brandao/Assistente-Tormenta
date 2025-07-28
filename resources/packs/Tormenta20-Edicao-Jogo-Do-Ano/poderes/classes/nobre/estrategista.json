@@ -1,7 +1,6 @@
 {
   "nome": "estrategista",
-  "descricao": "Você pode direcionar aliados em alcance curto. Gaste uma ação padrão e 1 PM por aliado que quiser direcionar (limitado pelo seu modificador de Carisma). No próximo turno do aliado, ele ganha uma ação de movimento.",
-  "preRequisitos": "Int 13, treinado em Guerra, 6º nível de nobre.",
+  "descricao": "Você pode direcionar aliados em alcance curto. Gaste uma ação padrão e 1 PM por aliado que quiser direcionar (limitado pelo seu modificador de Carisma). No próximo turno do aliado, ele ganha uma ação de movimento.\n @[destaque]{Pré-requisitos:} Int 13, treinado em Guerra, 6º nível de nobre.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação padrão",
-  "subEfeitos": [],
   "key": "bca90744-afd7-4eab-8a07-cf135b7dfc2d",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

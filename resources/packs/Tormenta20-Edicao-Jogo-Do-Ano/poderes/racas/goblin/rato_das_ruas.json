@@ -1,8 +1,7 @@
 {
   "nome": "rato das ruas",
-  "nivel": 1,
   "descricao": "Você recebe +2 em Fortitude e sua recuperação de PV e PM nunca é inferior ao seu nível.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "c8f34c13-1a72-4353-9cef-e0f2f346d3c3",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "goblin"

@@ -1,7 +1,6 @@
 {
   "nome": "forma selvagem superior",
-  "descricao": "Quando usa Forma Selvagem, você pode gastar 10 PM ao todo para assumir uma forma superior.",
-  "preRequisitos": "Forma Selvagem Aprimorada, 12º nível de druida.",
+  "descricao": "Quando usa Forma Selvagem, você pode gastar 10 PM ao todo para assumir uma forma superior.\n\n@[destaque]{Forma Selvagem Ágil:} Você recebe Destreza +6, deslocamento +6m e duas armas naturais (como acima, mas com dano de 1d10). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra).\n@[destaque]{Forma Selvagem Feroz:} Você recebe Força +10, +6 na Defesa e uma arma natural que causa 4d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra).\n@[destaque]{Forma Selvagem Resistente:} Você recebe Força +5, +10 na Defesa, redução de dano 10 e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra).\n@[destaque]{Forma Selvagem Sorrateira:} Você recebe Destreza +6 e deslocamento de voo 18m. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra).\n@[destaque]{Forma Selvagem Veloz:} Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m.\n\n@[destaque]{Pré-requisitos:} Forma Selvagem Aprimorada, 12º nível de druida.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,28 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [
-    {
-      "nome": "forma selvagem ágil",
-      "descricao": "Você recebe Destreza +6, deslocamento +6m e duas armas naturais (como acima, mas com dano de 1d10). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
-    },
-    {
-      "nome": "forma selvagem feroz",
-      "descricao": "Você recebe Força +10, +6 na Defesa e uma arma natural que causa 4d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra)."
-    },
-    {
-      "nome": "forma selvagem resistente",
-      "descricao": "Você recebe Força +5, +10 na Defesa, redução de dano 10 e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra)."
-    },
-    {
-      "nome": "forma selvagem sorrateira",
-      "descricao": "Você recebe Destreza +6 e deslocamento de voo 18m. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
-    },
-    {
-      "nome": "forma selvagem veloz",
-      "descricao": "Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m."
-    }
-  ],
   "key": "e8c6eeb0-7468-4c19-b8a5-c0652b9e16bc",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

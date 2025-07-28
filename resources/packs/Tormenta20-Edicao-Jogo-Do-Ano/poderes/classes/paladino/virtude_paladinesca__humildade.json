@@ -1,7 +1,7 @@
 {
   "nome": "virtude paladinesca: humildade",
   "descricao": "Na primeira rodada de um combate, você pode gastar uma ação completa para rezar e pedir orientação. Você recebe uma quantidade de PM temporários igual ao seu bônus de Carisma.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação completa",
-  "subEfeitos": [],
   "key": "1c876682-5c90-4754-9834-b74555ff1943",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

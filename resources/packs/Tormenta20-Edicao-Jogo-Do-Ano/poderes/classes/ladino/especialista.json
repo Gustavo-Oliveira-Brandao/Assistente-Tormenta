@@ -1,8 +1,7 @@
 {
   "nome": "especialista",
-  "nivel": 1,
   "descricao": "Escolha um número de perícias treinadas igual ao seu bônus de Inteligência (mínimo 1). Ao fazer um teste de uma dessas perícias, você pode gastar 1 PM para dobrar seu bônus de treinamento. Você não pode usar esta habilidade em testes de ataque.",
-  "preRequisitos": "",
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "56cf9680-ebde-4cc1-8c10-6273a6268b34",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

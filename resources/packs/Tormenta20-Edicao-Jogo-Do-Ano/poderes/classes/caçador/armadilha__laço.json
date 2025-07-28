@@ -1,7 +1,6 @@
 {
   "nome": "armadilha: laço",
   "descricao": "A vítima deve fazer um teste de Reflexos (CD Sab). Se passar, fica caída. Se falhar, fica agarrada. Uma criatura agarrada pode se soltar com uma ação padrão e um teste de Força ou Acrobacia (CD Sab).",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +11,6 @@
     }
   ],
   "tempoExecucao": "ação completa",
-  "subEfeitos": [],
   "key": "e0c391f8-7fe7-41cc-a520-5494dbe0b6f7",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

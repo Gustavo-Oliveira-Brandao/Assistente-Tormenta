@@ -1,7 +1,7 @@
 {
   "nome": "julgamento divino: coragem",
   "descricao": "Você pode gastar 2 PM para inspirar coragem em uma criatura em alcance curto, incluindo você mesmo. A criatura fica imune a efeitos de medo e recebe +2 em testes de ataque contra alvos de ND maior que o nível dela.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "62e59a81-8dc8-4fdf-b82f-8c927acb7bdd",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

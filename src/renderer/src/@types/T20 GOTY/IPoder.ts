@@ -6,21 +6,13 @@ export type IPoder = {
   tempoExecucao: string
   descricao: string
   categoria: string
+  nivel: number
   fonte: string
   publicacao: string
-  nivel: number
-  preRequisitos: string
-  subEfeitos: ISubEfeito[]
   tags: ITag[]
 }
 
 export type ITag = {
   id: number
   label: string
-}
-
-export type ISubEfeito = {
-  id: number
-  nome: string
-  descricao: string
 }

@@ -1,8 +1,7 @@
 {
   "nome": "memória póstuma",
-  "nivel": 1,
   "descricao": "Você se torna treinado em uma perícia (não precisa ser da sua classe) ou recebe um poder geral a sua escolha. Como alternativa, você pode ser um osteon de outra raça humanoide que não humano. Neste caso, você ganha uma habilidade dessa raça a sua escolha. Se a raça era de tamanho diferente de Médio, você também possui sua categoria de tamanho.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "7719d972-eaf9-483f-a65d-db1415c7b532",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "osteon"

@@ -1,7 +1,6 @@
 {
   "nome": "general",
-  "descricao": "Quando você usa o poder Estrategista, os aliados direcionados recebem 1d4 pontos de mana temporários. Esses PM duram até o fim do turno do aliado e não podem ser usados em efeitos que concedam PM.",
-  "preRequisitos": "Estrategista, 12º nível de nobre.",
+  "descricao": "Quando você usa o poder Estrategista, os aliados direcionados recebem 1d4 pontos de mana temporários. Esses PM duram até o fim do turno do aliado e não podem ser usados em efeitos que concedam PM.\n @[destaque]{Pré-requisitos:} Estrategista, 12º nível de nobre.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "4263ae3c-5a99-4562-b540-3c969b399d8e",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

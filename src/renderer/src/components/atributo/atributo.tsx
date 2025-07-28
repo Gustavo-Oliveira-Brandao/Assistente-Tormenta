@@ -24,6 +24,7 @@ export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
     resolver: zodResolver(atributoSchema),
     defaultValues: {
       valorBase: atributo.valorBase,
+      descricao: atributo.descricao,
       bonus: atributo.bonus
     }
   })
@@ -32,10 +33,11 @@ export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
     const novoAtributo: IAtributo = {
       ...atributo,
       valorBase: data.valorBase,
+      descricao: data.descricao,
       bonus: data.bonus
     }
 
-    atualizarAtributo.mutate(novoAtributo)
+    atualizarAtributo.mutate({ id: atributo.id, atributo: novoAtributo })
     setEdicaoEstaAberta(false)
   }
 

@@ -1,11 +1,9 @@
 {
   "key": "T20:pericias:ades",
   "nome": "Adestramento",
-  "treinamento": "destreinado",
   "categoria": "geral",
   "atributo": "T20:atributos:car",
   "requerTreinamento": true,
   "sofrePenalidadeArmadura": false,
-  "descricao": "",
-  "bonus": []
+  "descricao": ""
 }

@@ -1,7 +1,6 @@
 {
   "nome": "aura da invencibilidade",
-  "descricao": "Enquanto sua aura estiver ativa, você ignora o primeiro dano que sofrer na cena. O mesmo se aplica a seus aliados dentro da aura.",
-  "preRequisitos": "18° nível de paladino.",
+  "descricao": "Enquanto sua aura estiver ativa, você ignora o primeiro dano que sofrer na cena. O mesmo se aplica a seus aliados dentro da aura.\n @[destaque]{Pré-requisitos:} 18° nível de paladino.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "3551f4fb-3634-4625-ac92-a4549f6b7904",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

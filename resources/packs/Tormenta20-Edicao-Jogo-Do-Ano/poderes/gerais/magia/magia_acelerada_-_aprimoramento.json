@@ -1,7 +1,7 @@
 {
   "nome": "magia acelerada - aprimoramento",
-  "descricao": "Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada. Custo: +4 PM.",
-  "preRequisitos": "",
+  "descricao": "Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada.\n @[destaque]{Custo:} +4 PM.\n @[destaque]{Pré-requisito:} lançar magias de 2º círculo",
+
   "categoria": "magia",
   "tags": [],
   "tempoExecucao": "ação livre",

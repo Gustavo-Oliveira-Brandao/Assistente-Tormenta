@@ -1,8 +1,7 @@
 {
   "nome": "empatia selvagem",
-  "nivel": 1,
   "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e persuasão com animais. Caso receba esta habilidade novamente, recebe +2 em Adestramento.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "e57d283a-5aec-4917-8d1e-7b12e965c2bf",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "dahllan"

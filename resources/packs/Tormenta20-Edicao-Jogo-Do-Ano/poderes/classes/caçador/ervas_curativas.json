@@ -1,7 +1,6 @@
 {
   "nome": "ervas curativas",
   "descricao": "Você pode gastar uma ação completa e uma quantidade de PM a sua escolha (limitado por sua Sabedoria) para aplicar ervas que curam ou desintoxicam em você ou num aliado adjacente. Para cada PM que gastar, cura 2d6 PV ou remove uma condição envenenado afetando o alvo.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação completa",
-  "subEfeitos": [],
   "key": "8767939b-3182-4f8c-915c-e16a34d8183b",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

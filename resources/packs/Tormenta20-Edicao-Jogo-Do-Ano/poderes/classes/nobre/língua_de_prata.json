@@ -1,7 +1,7 @@
 {
   "nome": "língua de prata",
   "descricao": "Quando faz um teste de perícia baseada em Carisma, você pode gastar 2 PM para receber um bônus no teste igual a metade do seu nível.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "5b82946c-cb9c-4b83-8331-0bc9acd2a761",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

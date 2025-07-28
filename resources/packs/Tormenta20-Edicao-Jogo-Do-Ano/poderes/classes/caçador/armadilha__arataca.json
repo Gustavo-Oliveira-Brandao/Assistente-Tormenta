@@ -1,7 +1,6 @@
 {
   "nome": "armadilha: arataca",
   "descricao": "A vítima sofre 2d6 pontos de dano de perfuração e fica agarrada. Uma criatura agarrada pode escapar com uma ação padrão e um teste de Força ou Acrobacia (CD Sab).",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +11,6 @@
     }
   ],
   "tempoExecucao": "ação completa",
-  "subEfeitos": [],
   "key": "455d3a35-eb1a-4b26-8806-03486d8f2f34",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

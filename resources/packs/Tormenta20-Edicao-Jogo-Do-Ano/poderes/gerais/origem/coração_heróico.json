@@ -1,7 +1,7 @@
 {
   "nome": "coração heróico",
   "descricao": "Você recebe +3 pontos de mana. Quando atinge um novo patamar (no 5º, 11º e 17º níveis), recebe +3 PM.",
-  "preRequisitos": "",
+
   "categoria": "origem",
   "tags": [
     {

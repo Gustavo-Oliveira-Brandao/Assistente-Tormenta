@@ -1,7 +1,6 @@
 {
   "nome": "ponto fraco",
   "descricao": "Quando usa a habilidade Marca da Presa, seus ataques contra a criatura marcada recebem +2 na margem de ameaça. Esse bônus dobra com a habilidade Inimigo.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "890ca397-01fb-4161-bde5-1d668758b2d2",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

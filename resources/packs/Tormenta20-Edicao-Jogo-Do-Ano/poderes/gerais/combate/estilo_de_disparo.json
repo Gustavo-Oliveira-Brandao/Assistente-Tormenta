@@ -1,7 +1,6 @@
 {
   "nome": "estilo de disparo",
   "descricao": "Se estiver usando uma arma de disparo, você soma o bônus de Destreza nas rolagens de dano.",
-  "preRequisitos": "",
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "passivo",

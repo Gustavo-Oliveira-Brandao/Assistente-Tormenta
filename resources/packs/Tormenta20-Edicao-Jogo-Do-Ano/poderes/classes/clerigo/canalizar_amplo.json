@@ -1,7 +1,6 @@
 {
   "nome": "canalizar amplo",
-  "descricao": "Quando você usa a habilidade Canalizar Energia, pode gastar +2 PM para aumentar o alcance dela para médio.",
-  "preRequisitos": "Canalizar Energia Positiva ou Negativa.",
+  "descricao": "Quando você usa a habilidade Canalizar Energia, pode gastar +2 PM para aumentar o alcance dela para médio.\n @[destaque]{Pré-requisitos:} Canalizar Energia Positiva ou Negativa.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "316abc57-1226-472e-bf9e-dd6f520d3ba6",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "clerigo"

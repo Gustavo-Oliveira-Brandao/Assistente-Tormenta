@@ -1,8 +1,6 @@
 {
   "nome": "mestre caçador",
   "descricao": "No 20º nível, você pode usar a habilidade Marca da Presa como uma ação livre. Além disso, quando usa a habilidade, pode pagar 5 PM para aumentar sua margem de ameaça contra a criatura em +2. Se você reduz uma criatura contra a qual usou Marca da Presa a 0 pontos de vida, recupera 5 PM.",
-  "preRequisitos": "",
-  "nivel": 20,
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "40c307a1-bfa5-4a6f-ac14-e78d0036e83c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

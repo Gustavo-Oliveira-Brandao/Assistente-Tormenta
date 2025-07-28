@@ -1,7 +1,6 @@
 {
   "nome": "grudar o cano",
-  "descricao": "Quando faz um ataque à distância com uma arma de fogo contra um oponente adjacente, você não sofre a penalidade de –5 no teste de ataque e aumenta seu dano em um passo.",
-  "preRequisitos": "treinado em Luta, Pistoleiro.",
+  "descricao": "Quando faz um ataque à distância com uma arma de fogo contra um oponente adjacente, você não sofre a penalidade de –5 no teste de ataque e aumenta seu dano em um passo.\n @[destaque]{Pré-requisitos:} treinado em Luta, Pistoleiro.",
   "categoria": "poder de classe",
   "icone": "espada-pistola",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "ccb6813f-7114-4026-98fb-940920a53113",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

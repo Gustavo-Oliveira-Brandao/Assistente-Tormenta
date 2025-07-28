@@ -1,8 +1,7 @@
 {
   "nome": "caminho dos ermos",
   "descricao": "No 2º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastreá-lo aumenta em +10. Esta habilidade só funciona em terrenos naturais.",
-  "preRequisitos": "",
-  "nivel": 2,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "ffe13e7e-298f-4b99-a8b4-9abd5c6e2cda",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

@@ -1,7 +1,7 @@
 {
   "nome": "segredos da natureza",
   "descricao": "Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "65d509b0-ded1-4c4a-b27c-c5af70bc03f8",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

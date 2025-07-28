@@ -1,7 +1,6 @@
 {
   "nome": "folião",
-  "descricao": "Você sabe fazer amizades durante festas, de noitadas em tavernas a bailes na corte. Nesses locais, você recebe +2 em testes de perícias de Carisma e a atitude de todas as pessoas em relação a você melhora em uma categoria.",
-  "preRequisitos": "Car 1.",
+  "descricao": "Você sabe fazer amizades durante festas, de noitadas em tavernas a bailes na corte. Nesses locais, você recebe +2 em testes de perícias de Carisma e a atitude de todas as pessoas em relação a você melhora em uma categoria.\n @[destaque]{Pré-requisitos:} Car 1.",
   "categoria": "poder de classe",
   "icone": "encantamento",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "16a9d46d-82f0-4696-adac-0b64f96691a6",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

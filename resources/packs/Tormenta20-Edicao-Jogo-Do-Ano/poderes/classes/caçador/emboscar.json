@@ -1,7 +1,6 @@
 {
   "nome": "emboscar",
-  "descricao": "Você pode gastar 2 PM para realizar uma ação padrão adicional em seu turno. Você só pode usar este poder na primeira rodada de um combate.",
-  "preRequisitos": "treinado em Furtividade.",
+  "descricao": "Você pode gastar 2 PM para realizar uma ação padrão adicional em seu turno. Você só pode usar este poder na primeira rodada de um combate.\n @[destaque]{Pré-requisitos:} treinado em Furtividade.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "b0bde0e4-8eaa-41fd-9bdb-a51770b8c992",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

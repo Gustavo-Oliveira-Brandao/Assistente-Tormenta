@@ -2,7 +2,7 @@
   "nome": "sorte dos loucos - nimb",
   "icone": "nimb",
   "descricao": "Você pode pagar 1 PM para rolar novamente um teste recém realizado. Se ainda assim falhar no teste, você perde 1d6 PM.",
-  "preRequisitos": "",
+
   "categoria": "concedido",
   "tags": [
     {

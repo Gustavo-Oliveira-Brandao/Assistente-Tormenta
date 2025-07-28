@@ -203,6 +203,17 @@ export const postPersonagem = async (nomePersonagem: string): Promise<void> => {
               bonus: 0
             },
             {
+              key: 'T20:pericias:conh',
+              nome: 'Conhecimento',
+              ehTreinado: false,
+              categoria: 'geral',
+              atributo: 'T20:atributos:int',
+              requerTreinamento: true,
+              sofrePenalidadeArmadura: false,
+              descricao: '',
+              bonus: 0
+            },
+            {
               key: 'T20:pericias:cura',
               nome: 'Cura',
               ehTreinado: false,
@@ -272,7 +283,7 @@ export const postPersonagem = async (nomePersonagem: string): Promise<void> => {
               key: 'T20:pericias:inic',
               nome: 'Iniciativa',
               ehTreinado: false,
-              categoria: 'geral',
+              categoria: 'combate',
               atributo: 'T20:atributos:des',
               requerTreinamento: false,
               sofrePenalidadeArmadura: false,

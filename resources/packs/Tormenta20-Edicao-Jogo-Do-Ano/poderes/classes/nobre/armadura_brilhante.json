@@ -1,7 +1,6 @@
 {
   "nome": "armadura brilhante",
-  "descricao": "Você pode somar o modificador de Carisma na Defesa quando usa armadura pesada. Se fizer isso, não pode somar o modificador de Destreza, mesmo que outras habilidades ou efeitos permitam isso.",
-  "preRequisitos": "8º nível de nobre.",
+  "descricao": "Você pode somar o modificador de Carisma na Defesa quando usa armadura pesada. Se fizer isso, não pode somar o modificador de Destreza, mesmo que outras habilidades ou efeitos permitam isso.\n @[destaque]{Pré-requisitos:} 8º nível de nobre.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "767493f0-45a8-4698-9fa3-f461a60ae3e8",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

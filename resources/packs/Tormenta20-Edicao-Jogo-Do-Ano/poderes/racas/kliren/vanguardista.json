@@ -1,8 +1,7 @@
 {
   "nome": "vanguardista",
-  "nivel": 1,
   "descricao": "Você recebe proficiência em armas de fogo e +2 em Ofício (um qualquer, a sua escolha).",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "cbd6d41c-d84f-46f3-a2e4-bc85656f2a79",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "kliren"

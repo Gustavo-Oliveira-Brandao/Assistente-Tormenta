@@ -1,7 +1,6 @@
 {
   "nome": "roubo de mana",
-  "descricao": "Quando você causa dano com um ataque furtivo em uma criatura, a criatura perde 1 ponto de mana para cada 1d6 de dano de seu ataque furtivo. Você recebe PM temporários iguais aos PM que a criatura perder. Você só pode usar este poder uma vez por cena contra cada criatura específica.",
-  "preRequisitos": "Truque Mágico, 7º nível de ladino.",
+  "descricao": "Quando você causa dano com um ataque furtivo em uma criatura, a criatura perde 1 ponto de mana para cada 1d6 de dano de seu ataque furtivo. Você recebe PM temporários iguais aos PM que a criatura perder. Você só pode usar este poder uma vez por cena contra cada criatura específica.\n @[destaque]{Pré-requisitos:} Truque Mágico, 7º nível de ladino.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "a2ad9831-3818-4db5-8232-54b86f49b4fb",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

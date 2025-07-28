@@ -1,0 +1,18 @@
+{
+  "nome": "Caminho do arcanista: Mago",
+  "descricao": "Você lança magias através de estudo e memorização de fórmulas arcanas. Você só pode lançar magias memorizadas; suas outras magias não podem ser lançadas, mesmo que você tenha pontos de mana para tal. Para memorizar magias, você precisa estudar seu grimório por uma hora. Quando faz isso, escolhe metade das magias que conhece (por exemplo, se conhece 7 magias, escolhe 3). Essas serão suas magias memorizadas. Você pode memorizar magias uma vez por dia. Caso não possa estudar (por não ter tempo, por ter perdido o grimório...), não poderá trocar suas magias memorizadas. Um grimório tem as mesmas estatísticas de um foco (veja acima) e pode ser recuperado da mesma forma. Você começa com uma magia adicional (para um total de 4) e, sempre que ganha acesso a um novo círculo de magias, aprende uma magia adicional daquele círculo. Seu atributo-chave para magias é Inteligência.",
+  "icone": "arcanista",
+  "categoria": "habilidade de classe",
+  "tags": [
+    {
+      "label": "arcanista"
+    },
+    {
+      "label": "mago"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "key": "72e25ce3-02a0-40fa-a2a5-7961b121b3b3",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "arcanista"
+}

@@ -1,7 +1,6 @@
 {
   "nome": "autoridade feudal",
-  "descricao": "Você pode gastar 2 PM para conclamar o povo a realizar uma tarefa para você. Em termos de jogo, passa automaticamente em um teste de perícia com CD máxima igual ao seu nível +5. O tempo necessário para conclamar o povo é o tempo do uso da perícia em questão. Esta habilidade só pode ser usada em locais onde sua posição carregue alguma influência (a critério do mestre).",
-  "preRequisitos": "6º nível de nobre.",
+  "descricao": "Você pode gastar 2 PM para conclamar o povo a realizar uma tarefa para você. Em termos de jogo, passa automaticamente em um teste de perícia com CD máxima igual ao seu nível +5. O tempo necessário para conclamar o povo é o tempo do uso da perícia em questão. Esta habilidade só pode ser usada em locais onde sua posição carregue alguma influência (a critério do mestre).\n @[destaque]{Pré-requisitos:} 6º nível de nobre.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "9db3be66-71c6-447e-9a67-fadc0bee73db",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

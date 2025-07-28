@@ -1,7 +1,7 @@
 {
   "nome": "gatuno",
   "descricao": "Você recebe +2 em Atletismo. Quando escala, avança seu deslocamento normal, em vez de metade dele.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "d3700d55-ad77-4404-bc32-1f109ab0b659",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

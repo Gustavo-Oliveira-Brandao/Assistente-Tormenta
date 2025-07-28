@@ -43,7 +43,7 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
 
     console.log(novaPericia)
 
-    atualizarPericia.mutate(novaPericia)
+    atualizarPericia.mutate({ id: pericia.id, pericia: novaPericia })
     setEdicaoEstaAberta(false)
   }
 
@@ -94,7 +94,9 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
         </DialogTrigger>
         <div className={styles.rolagem}>
           {exibeTreinamento && (
-            <p className={styles.treinamento + ' tormenta20Font'}>{pericia.treinamento}</p>
+            <p className={styles.treinamento + ' tormenta20Font'}>
+              {pericia.ehTreinado ? 'Treinado' : 'Destreinado'}
+            </p>
           )}
           <BotaoModular css="rollBtn" font="tormenta20Font" cor="transparente">
             <img src="./icons/d20 cinza.svg" alt="rolagem" />

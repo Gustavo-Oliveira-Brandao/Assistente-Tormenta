@@ -1,8 +1,7 @@
 {
   "nome": "vingador sagrado",
   "descricao": "No 20º nível, você pode gastar uma ação completa e 10 PM para se cobrir de energia divina, assumindo a forma de um vingador sagrado até o fim da cena. Nesta forma, você recebe deslocamento de voo 18m, resistência a dano 20 e soma seu modificador de Carisma em seus testes de ataque e rolagens de dano corpo a corpo.",
-  "preRequisitos": "",
-  "nivel": 20,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação completa",
-  "subEfeitos": [],
   "key": "458e5ce9-8250-4eab-95a6-68559d1e8e29",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

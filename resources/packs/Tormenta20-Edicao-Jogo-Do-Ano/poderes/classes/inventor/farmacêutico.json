@@ -1,7 +1,7 @@
 {
   "nome": "farmacêutico",
-  "descricao": "Quando usa um item alquímico que cure pontos de vida, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Inteligência). Para cada PM que gastar, o item cura um dado extra do mesmo tipo.",
-  "preRequisitos": "Sab 13, treinado em Ofício (alquimia).",
+  "descricao": "Quando usa um item alquímico que cure pontos de vida, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Inteligência). Para cada PM que gastar, o item cura um dado extra do mesmo tipo.\n @[destaque]{Pré-requisitos:} Sab 13, treinado em Ofício (alquimia).",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "87653dec-222b-4965-b4f6-b992b9de65e0",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

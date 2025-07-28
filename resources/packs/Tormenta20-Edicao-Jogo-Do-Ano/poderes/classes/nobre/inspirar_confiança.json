@@ -1,7 +1,7 @@
 {
   "nome": "inspirar confiança",
   "descricao": "Sua presença faz as pessoas darem o melhor de si. Você pode gastar 2 PM para fazer um aliado em alcance curto rolar novamente um teste recém realizado.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "90243064-0885-4328-9eb3-98fc962679a6",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

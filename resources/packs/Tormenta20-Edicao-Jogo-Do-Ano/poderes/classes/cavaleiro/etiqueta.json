@@ -1,7 +1,7 @@
 {
   "nome": "etiqueta",
   "descricao": "Você recebe +2 em Diplomacia ou Nobreza e pode gastar 1 PM para rolar novamente um teste recém realizado de uma dessas perícias.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "fb5e6483-e09c-4ca2-ad08-61a1870a23a4",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "cavaleiro"

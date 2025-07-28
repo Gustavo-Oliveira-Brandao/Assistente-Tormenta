@@ -1,8 +1,7 @@
 {
   "nome": "briga",
   "descricao": "Seus ataques desarmados causam 1d6 pontos de dano, e podem causar dano letal ou não letal (a sua escolha). A cada quatro níveis, seu dano desarmado aumenta, conforme a tabela presente no livro Tormenta20 - Edição Jogo do Ano. \n O dano visto na tabela é para criaturas Pequenas e Médias. Criaturas Minúsculas diminuem esse dano em um passo, criaturas Grandes e Enormes aumentam em um passo e criaturas Colossais aumentam em dois passos.",
-  "preRequisitos": "",
-  "nivel": 1,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "138be6b3-cde3-456a-b9e1-4bcb5d8dbf64",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

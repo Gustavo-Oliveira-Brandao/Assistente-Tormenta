@@ -1,7 +1,6 @@
 {
   "nome": "aura poderosa",
-  "descricao": "O alcance da sua aura aumenta para médio.",
-  "preRequisitos": "6° nível de paladino.",
+  "descricao": "O alcance da sua aura aumenta para médio.\n @[destaque]{Pré-requisitos:} 6° nível de paladino.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "61b849c4-63b4-429c-9d14-c997cae7fb28",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

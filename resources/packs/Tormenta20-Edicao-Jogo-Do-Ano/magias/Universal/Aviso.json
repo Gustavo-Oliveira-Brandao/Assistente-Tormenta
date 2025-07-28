@@ -6,7 +6,7 @@
   "efeito": "",
   "execucao": "movimento",
   "resistencia": "",
-  "descricao": "Envia um aviso telepático para uma criatura, mesmo que não possa vê-la nem tenha linha de efeito.\nEscolha um:\nAlerta: o alvo recebe +5 em seu próximo teste de Iniciativa e de Percepção até o fim da próxima cena.\nMensagem: o alvo recebe uma mensagem sua de até 25 palavras. Vocês devem ter um idioma em comum para o alvo poder entendê-lo.\nLocalização: o alvo sabe onde você está naquele momento. Se você mudar de posição, ele não saberá.",
+  "descricao": "Envia um aviso telepático para uma criatura, mesmo que não possa vê-la nem tenha linha de efeito.\nEscolha um:\n @[destaque]{Alerta:} o alvo recebe +5 em seu próximo teste de Iniciativa e de Percepção até o fim da próxima cena.\n @[destaque]{Mensagem:} o alvo recebe uma mensagem sua de até 25 palavras. Vocês devem ter um idioma em comum para o alvo poder entendê-lo.\n @[destaque]{Localização:} o alvo sabe onde você está naquele momento. Se você mudar de posição, ele não saberá.",
   "duracao": "instantânea",
   "nivelCirculo": 1,
   "alcance": "longo",

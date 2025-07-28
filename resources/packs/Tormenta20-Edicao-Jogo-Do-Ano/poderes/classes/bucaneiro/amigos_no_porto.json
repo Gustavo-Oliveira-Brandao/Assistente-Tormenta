@@ -1,7 +1,6 @@
 {
   "nome": "amigos no porto",
-  "descricao": "Quando chega em uma comunidade portuária, você pode fazer um teste de Carisma (CD 10). Se passar, encontra um amigo para o qual pode pedir um favor ou que pode ajudá-lo como parceiro veterano de um tipo a sua escolha por um dia.",
-  "preRequisitos": "Car 1, 6º nível de bucaneiro.",
+  "descricao": "Quando chega em uma comunidade portuária, você pode fazer um teste de Carisma (CD 10). Se passar, encontra um amigo para o qual pode pedir um favor ou que pode ajudá-lo como parceiro veterano de um tipo a sua escolha por um dia.\n @[destaque]{Pré-requisitos:} Car 1, 6º nível de bucaneiro.",
   "categoria": "poder de classe",
   "icone": "porto",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "2a5a35ee-9143-4b83-b646-9d1f6d636cdb",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

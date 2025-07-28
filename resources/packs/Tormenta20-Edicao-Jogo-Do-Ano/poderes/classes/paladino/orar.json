@@ -1,7 +1,7 @@
 {
   "nome": "orar",
   "descricao": "Você aprende e pode lançar uma magia divina de 1º círculo a sua escolha. Seu atributo-chave para esta magia é Sabedoria. Você pode escolher este poder quantas vezes quiser.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "fe099af4-45e0-4d63-beec-03faf2ad47d5",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

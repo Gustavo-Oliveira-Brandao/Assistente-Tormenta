@@ -1,7 +1,6 @@
 {
   "nome": "arqueiro",
-  "descricao": "Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria em rolagens de dano (limitado pelo seu nível).",
-  "preRequisitos": "Sab 1.",
+  "descricao": "Se estiver usando uma arma de ataque à distância, você soma sua Sabedoria em rolagens de dano (limitado pelo seu nível).\n @[destaque]{Pré-requisitos:} Sab 1.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "7583c259-cf66-4020-a72b-71ee42eecc5c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "guerreiro"

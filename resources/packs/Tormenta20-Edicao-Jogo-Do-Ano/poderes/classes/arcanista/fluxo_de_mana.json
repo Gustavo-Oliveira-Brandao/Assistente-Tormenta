@@ -1,7 +1,6 @@
 {
   "nome": "fluxo de mana",
-  "descricao": "Você pode manter dois efeitos sustentados ativos simultaneamente com apenas uma ação livre, pagando o custo de cada efeito separadamente.",
-  "preRequisitos": "10º nível de arcanista.",
+  "descricao": "Você pode manter dois efeitos sustentados ativos simultaneamente com apenas uma ação livre, pagando o custo de cada efeito separadamente. \n @[destaque]{Pré-requisitos:} 10º nível de arcanista.",
   "icone": "mao-magica",
   "categoria": "poder de classe",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "a6626d7b-c2e9-4086-b443-0be998fc7816",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

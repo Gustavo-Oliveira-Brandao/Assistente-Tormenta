@@ -1,7 +1,6 @@
 {
   "nome": "encouraçado",
-  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito.",
-  "preRequisitos": "proficiência com armaduras pesadas.",
+  "descricao": "Se estiver usando uma armadura pesada, você recebe +2 na Defesa. Esse bônus aumenta em +2 para cada outro poder que você possua que tenha Encouraçado como pré-requisito.\n @[destaque]{Pré-requisitos:} proficiência com armaduras pesadas.",
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "passivo",

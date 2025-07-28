@@ -1,7 +1,6 @@
 {
   "nome": "contramágica aprimorada",
-  "descricao": "Uma vez por rodada, você pode fazer uma contramágica como uma reação.",
-  "preRequisitos": "Dissipar Magia.",
+  "descricao": "Uma vez por rodada, você pode fazer uma contramágica como uma reação.\n @[destaque]{Pré-requisitos:} Dissipar magia.",
   "icone": "abjuração",
   "categoria": "poder de classe",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "f247862c-b447-41f7-9e44-e4a69be77a35",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

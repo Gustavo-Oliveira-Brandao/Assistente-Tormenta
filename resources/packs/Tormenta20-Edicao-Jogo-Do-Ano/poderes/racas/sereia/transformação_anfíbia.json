@@ -1,8 +1,7 @@
 {
   "nome": "transformação anfíbia",
-  "nivel": 1,
   "descricao": "Você pode respirar debaixo d’água e possui uma cauda que fornece deslocamento de natação 12m. Quando fora d’água, sua cauda desaparece e dá lugar a pernas (deslocamento 9m). Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água (ou, pelo menos, tomar um bom banho!).",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "6ab7018a-c876-43d4-810c-4e7d33b6606f",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "sereia/tritao"

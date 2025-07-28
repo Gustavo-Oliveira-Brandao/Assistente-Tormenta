@@ -1,7 +1,6 @@
 {
   "nome": "sarado",
-  "descricao": "Você soma seu bônus de Força no seu total de pontos de vida e em testes de Fortitude. A critério do mestre, você pode chamar a atenção de pessoas que se atraiam por físicos bem definidos.",
-  "preRequisitos": "For 17.",
+  "descricao": "Você soma seu bônus de Força no seu total de pontos de vida e em testes de Fortitude. A critério do mestre, você pode chamar a atenção de pessoas que se atraiam por físicos bem definidos.\n @[destaque]{Pré-requisitos:} For 17.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "17cef2cf-5928-43a6-97c2-850dce18b2c4",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

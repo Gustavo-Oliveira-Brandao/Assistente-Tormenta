@@ -1,7 +1,7 @@
 {
   "nome": "negociação",
   "descricao": "Você pode vender itens 10% mais caro (não cumulativo com barganha).",
-  "preRequisitos": "",
+
   "categoria": "origem",
   "tags": [
     {

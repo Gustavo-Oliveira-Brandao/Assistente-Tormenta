@@ -1,7 +1,6 @@
 {
   "nome": "chutes e palavrões",
-  "descricao": "Uma vez por rodada, você pode pagar 1 PM para repetir um teste de Ofício (engenhoqueiro) recém realizado para ativar uma engenhoca.",
-  "preRequisitos": "Engenhoqueiro.",
+  "descricao": "Uma vez por rodada, você pode pagar 1 PM para repetir um teste de Ofício (engenhoqueiro) recém realizado para ativar uma engenhoca.\n @[destaque]{Pré-requisitos:} Engenhoqueiro.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "6713a39c-6515-449d-93d0-c58cca579e59",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

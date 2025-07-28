@@ -2,7 +2,7 @@
   "nome": "servos do dragão - kallyadranoch",
   "icone": "kallyadranoch",
   "descricao": "Você pode gastar uma ação completa e 2 PM para invocar 2d4+1 kobolds em espaços desocupados em alcance curto. Você pode usar uma ação de movimento para fazer os kobolds andarem (eles têm deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6–1 pontos de dano de perfuração cada). Os kobolds têm For 8 (-1), Des 14 (+2), Defesa 12, 1 PV e falham automaticamente em qualquer teste oposto. Eles desaparecem quando morrem ou no fim da cena. Os kobolds não agem sem receber uma ordem. Usos criativos para criaturas invocadas fora de combate ficam a critério do mestre.",
-  "preRequisitos": "",
+
   "categoria": "concedido",
   "tags": [
     {

@@ -1,7 +1,7 @@
 {
   "nome": "postura de combate: foco de batalha",
   "descricao": "Sempre que um inimigo atacá-lo, você recebe 1 PM temporário (cumulativos). Você pode ganhar um máximo de PM temporários por cena igual ao seu nível. Esses pontos temporários desaparecem no final da cena.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "75e86a77-3d3b-4d52-aaf9-61ed2add8be3",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "cavaleiro"

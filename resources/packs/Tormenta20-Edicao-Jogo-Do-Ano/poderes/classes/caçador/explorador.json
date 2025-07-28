@@ -1,8 +1,6 @@
 {
   "nome": "explorador",
   "descricao": "No 3º nível, escolha um tipo de terreno entre aquático, ártico, colina, deserto, floresta, montanha, pântano, planície, subterrâneo ou urbano. A partir do 11º nível, você também pode escolher área de Tormenta. Quando estiver no tipo de terreno escolhido, você soma sua Sabedoria (mínimo +1) na Defesa e nos testes de Acrobacia, Atletismo, Furtividade, Percepção e Sobrevivência. A cada quatro níveis, escolha outro tipo de terreno para receber o bônus ou aumente o bônus em um tipo de terreno já escolhido em +2.",
-  "preRequisitos": "",
-  "nivel": 3,
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "446a1e95-9caa-46d7-82d9-5ed08685006a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

@@ -1,7 +1,6 @@
 {
   "nome": "esquiva sobrenatural",
   "descricao": "Seus instintos são tão apurados que você consegue reagir ao perigo antes que seus sentidos o percebam. Você nunca fica surpreendido.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "icone": "esquiva",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "28f72c63-1124-4f86-b06f-64bb58c0bb43",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

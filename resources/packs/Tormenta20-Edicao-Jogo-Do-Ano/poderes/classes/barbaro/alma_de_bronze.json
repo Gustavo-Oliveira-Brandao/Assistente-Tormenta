@@ -1,16 +1,17 @@
 {
   "nome": "alma de bronze",
   "descricao": "Quando entra em fúria, você recebe uma quantidade de pontos de vida temporários igual a seu nível + sua Força.",
-  "preRequisitos": "",
   "icone": "furia",
   "categoria": "poder de classe",
   "tags": [
     {
       "label": "barbaro"
+    },
+    {
+      "label": "furia"
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "47de1e09-f02b-4b00-a689-c3a8cbfe8c9d",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

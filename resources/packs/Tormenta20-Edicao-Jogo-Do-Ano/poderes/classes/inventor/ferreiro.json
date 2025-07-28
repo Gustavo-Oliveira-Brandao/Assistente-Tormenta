@@ -1,7 +1,6 @@
 {
   "nome": "ferreiro",
-  "descricao": "Quando usa uma arma corpo a corpo feita por você mesmo, o dano dela aumenta em um passo.",
-  "preRequisitos": "Armeiro, 5º nível de inventor.",
+  "descricao": "Quando usa uma arma corpo a corpo feita por você mesmo, o dano dela aumenta em um passo.\n @[destaque]{Pré-requisitos:} Armeiro, 5º nível de inventor.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "69d4cbd8-cc30-4e6c-8bbf-fa631a4b92d4",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

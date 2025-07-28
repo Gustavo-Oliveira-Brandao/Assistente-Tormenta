@@ -1,7 +1,6 @@
 {
   "nome": "companheiro animal",
-  "descricao": "Você recebe um companheiro animal. Veja o quadro para detalhes. Você pode escolher este poder quantas vezes quiser, mas deve escolher companheiros diferentes e ainda está sujeito ao limite de parceiros que pode ter.",
-  "preRequisitos": "Car 1, treinado em Adestramento.",
+  "descricao": "Você recebe um companheiro animal. Veja o quadro para detalhes. Você pode escolher este poder quantas vezes quiser, mas deve escolher companheiros diferentes e ainda está sujeito ao limite de parceiros que pode ter.\n\n@[destaque]{Ajudante:} Corvo, macaco, raposa, serpente ou outro animal ágil ou esperto.\n@[destaque]{Assassino:} Lince, onça ou outro animal treinado para abater presas.\n@[destaque]{Atirador:} Águia, falcão ou outro animal capaz de mergulhar rapidamente nos alvos de seus ataques à distância.\n@[destaque]{Fortão:} Crocodilo, javali, leão, lobo ou outro animal capaz de lutar ao seu lado.\n@[destaque]{Guardião:} Alce, cão, coruja, tartaruga, urso ou outro animal pesado ou atento.\n@[destaque]{Perseguidor:} Gambá, sabujo ou outro animal farejador.\n\n@[destaque]{Pré-requisitos:} Car 1, treinado em Adestramento.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,32 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [
-    {
-      "nome": "Ajudante:",
-      "descricao": "Corvo, macaco, raposa, serpente ou outro animal ágil ou esperto."
-    },
-    {
-      "nome": "Assassino:",
-      "descricao": "Lince, onça ou outro animal treinado para abater presas."
-    },
-    {
-      "nome": "Atirador:",
-      "descricao": "Águia, falcão ou outro animal capaz de mergulhar rapidamente nos alvos de seus ataques à distância."
-    },
-    {
-      "nome": "Fortão:",
-      "descricao": "Crocodilo, javali, leão, lobo ou outro animal capaz de lutar ao seu lado."
-    },
-    {
-      "nome": "Guardião:",
-      "descricao": "Alce, cão, coruja, tartaruga, urso ou outro animal pesado ou atento."
-    },
-    {
-      "nome": "Perseguidor:",
-      "descricao": "Gambá, sabujo ou outro animal farejador."
-    }
-  ],
   "key": "b758858a-4985-4584-aa22-30fc79364889",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

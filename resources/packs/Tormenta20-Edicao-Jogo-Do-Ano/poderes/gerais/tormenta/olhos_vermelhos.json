@@ -1,7 +1,7 @@
 {
   "nome": "olhos vermelhos",
   "descricao": "Você recebe visão no escuro e +1 em testes de Intimidação. Este bônus aumenta em +1 para cada dois outros poderes da Tormenta que você possui.",
-  "preRequisitos": "",
+
   "categoria": "tormenta",
   "tags": [],
   "tempoExecucao": "passivo",

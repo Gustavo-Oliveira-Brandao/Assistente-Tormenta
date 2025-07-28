@@ -1,8 +1,7 @@
 {
   "nome": "eclético",
   "descricao": "A partir do 2º nível, você pode gastar 1 PM para receber todos os benefícios de ser treinado em uma perícia por um teste.",
-  "preRequisitos": "",
-  "nivel": 2,
+
   "categoria": "habilidade de classe",
   "icone": "tanna-toh",
   "tags": [
@@ -11,7 +10,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "1a50393d-c0e5-4769-b2e5-ed1a159d257f",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bardo"

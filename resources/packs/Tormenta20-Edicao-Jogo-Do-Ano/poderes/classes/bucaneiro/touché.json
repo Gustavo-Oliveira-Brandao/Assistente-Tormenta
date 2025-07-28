@@ -1,7 +1,6 @@
 {
   "nome": "touché",
-  "descricao": "Quando se aproxima de um inimigo e o ataca com uma arma corpo a corpo leve ou ágil no mesmo turno, você pode gastar 2 PM para aumentar seu dano em um passo e receber +5 na margem de ameaça neste ataque.",
-  "preRequisitos": "Esgrimista, 10º nível de bucaneiro.",
+  "descricao": "Quando se aproxima de um inimigo e o ataca com uma arma corpo a corpo leve ou ágil no mesmo turno, você pode gastar 2 PM para aumentar seu dano em um passo e receber +5 na margem de ameaça neste ataque.\n @[destaque]{Pré-requisitos:} Esgrimista, 10º nível de bucaneiro.",
   "categoria": "poder de classe",
   "icone": "esgrima",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "1c0deba7-88b3-4b87-810d-b8d85326336a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

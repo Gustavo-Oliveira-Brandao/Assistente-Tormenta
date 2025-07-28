@@ -6,7 +6,7 @@
   "efeito": "",
   "execucao": "padrão",
   "resistencia": "Reflexos (veja texto)",
-  "descricao": "Você canaliza uma poderosa rajada de energia positiva que ilumina o campo de batalha. Criaturas na área sofrem 4d8 pontos de dano de luz (ou 4d12, se forem mortos-vivos) e ficam Ofuscado por uma rodada. Se passarem na resistência, sofrem metade do dano e não ficam ofuscadas.\nCego",
+  "descricao": "Você canaliza uma poderosa rajada de energia positiva que ilumina o campo de batalha. Criaturas na área sofrem 4d8 pontos de dano de luz (ou 4d12, se forem mortos-vivos) e ficam Ofuscado por uma rodada. Se passarem na resistência, sofrem metade do dano e não ficam ofuscadas.",
   "duracao": "instantânea",
   "nivelCirculo": 2,
   "alcance": "médio",

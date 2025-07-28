@@ -1,7 +1,6 @@
 {
   "nome": "armeiro",
-  "descricao": "Você recebe proficiência com armas marciais corpo a corpo. Quando empunha uma arma corpo a corpo, pode usar sua Inteligência em vez de Força nos testes de ataque e rolagens de dano.",
-  "preRequisitos": "treinado em Luta e Ofício (armeiro).",
+  "descricao": "Você recebe proficiência com armas marciais corpo a corpo. Quando empunha uma arma corpo a corpo, pode usar sua Inteligência em vez de Força nos testes de ataque e rolagens de dano.\n @[destaque]{Pré-requisitos:} treinado em Luta e Ofício (armeiro).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "1122b61a-2cd7-4180-86b1-9fae59eb5476",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

@@ -1,8 +1,7 @@
 {
   "nome": "sentidos élficos",
-  "nivel": 1,
   "descricao": "Você recebe visão na penumbra e +2 em Misticismo e Percepção.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "de9de483-acb1-4b11-8e2a-45aebab20e9c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "elfo"

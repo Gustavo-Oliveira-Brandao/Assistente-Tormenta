@@ -6,7 +6,7 @@
   "efeito": "",
   "execucao": "padrão",
   "resistencia": "Fortitude parcial",
-  "descricao": "Esta magia cria uma forte explosão de luzes estroboscópicas e sons cacofônicos que desorientam as criaturas atingidas. O efeito que cada criatura sofre depende do ND dela.\nND 4 ou menor: se falhar no teste de resistência, fica inconsciente. Se passar, fica atordoada por 1d4 rodadas e enjoada pelo resto da cena.\nND entre 5 e 9: se falhar no teste de resistência, fica atordoada por 1d4 rodadas e enjoada pelo resto da cena. Se passar, fica atordoada por 1 rodada e enjoada por 1d4 rodadas.\nND 10 ou maior: se falhar no teste de resistência, fica atordoada por 1 rodada e enjoada por 1d4 rodadas. Se passar, fica desprevenida e enjoada por 1 rodada.\nUma criatura só pode ser atordoada por esta magia uma vez por cena.\nInconsciente\nAtordoado\nEnjoado",
+  "descricao": "Esta magia cria uma forte explosão de luzes estroboscópicas e sons cacofônicos que desorientam as criaturas atingidas. O efeito que cada criatura sofre depende do ND dela.\n@[destaque]{ND 4 ou menor:} se falhar no teste de resistência, fica inconsciente. Se passar, fica atordoada por 1d4 rodadas e enjoada pelo resto da cena.\n@[destaque]{ND entre 5 e 9:} se falhar no teste de resistência, fica atordoada por 1d4 rodadas e enjoada pelo resto da cena. Se passar, fica atordoada por 1 rodada e enjoada por 1d4 rodadas.\n@[destaque]{ND 10 ou maior:} se falhar no teste de resistência, fica atordoada por 1 rodada e enjoada por 1d4 rodadas. Se passar, fica desprevenida e enjoada por 1 rodada.\nUma criatura só pode ser atordoada por esta magia uma vez por cena.",
   "duracao": "instantânea",
   "nivelCirculo": 4,
   "alcance": "curto",

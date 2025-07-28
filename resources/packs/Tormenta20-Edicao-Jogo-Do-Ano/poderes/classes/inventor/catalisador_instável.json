@@ -1,7 +1,6 @@
 {
   "nome": "catalisador instável",
-  "descricao": "Você pode gastar uma ação completa e 3 PM para fabricar um preparado alquímico ou poção cuja fórmula conheça instantaneamente. O custo do item é reduzido à metade e você não precisa fazer o teste de Ofício (alquimista), mas ele só dura até o fim da cena.",
-  "preRequisitos": "Alquimista Iniciado.",
+  "descricao": "Você pode gastar uma ação completa e 3 PM para fabricar um preparado alquímico ou poção cuja fórmula conheça instantaneamente. O custo do item é reduzido à metade e você não precisa fazer o teste de Ofício (alquimista), mas ele só dura até o fim da cena.\n @[destaque]{Pré-requisitos:} Alquimista Iniciado.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação completa",
-  "subEfeitos": [],
   "key": "4daad5c3-b06a-4904-ab32-4afc516e0f2c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

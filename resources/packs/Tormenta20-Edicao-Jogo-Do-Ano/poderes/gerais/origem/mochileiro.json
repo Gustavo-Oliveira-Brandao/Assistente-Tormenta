@@ -1,7 +1,7 @@
 {
   "nome": "mochileiro",
   "descricao": "Você não sofre a penalidade de armadura e a redução de deslocamento por transportar carga pesada.",
-  "preRequisitos": "",
+
   "categoria": "origem",
   "tags": [
     {

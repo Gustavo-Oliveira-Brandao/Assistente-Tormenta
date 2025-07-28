@@ -1,7 +1,7 @@
 {
   "nome": "oportunismo",
   "descricao": "Você recebe +2 em testes de ataque contra inimigos que já sofreram dano desde seu último turno.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "470badb4-88b3-49e3-b545-8cc1c629cb60",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

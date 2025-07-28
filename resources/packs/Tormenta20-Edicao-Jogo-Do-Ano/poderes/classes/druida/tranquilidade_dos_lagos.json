@@ -1,7 +1,7 @@
 {
   "nome": "tranquilidade dos lagos",
   "descricao": "Você recebe +2 em Vontade. Se estiver portando um recipiente com água (não precisa estar empunhando), uma vez por rodada, quando faz um teste de resistência, pode pagar 1 PM para refazer a rolagem.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "3599d702-a42e-49ad-b7c1-04b68019b888",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

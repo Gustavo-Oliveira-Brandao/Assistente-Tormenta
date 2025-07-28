@@ -1,7 +1,6 @@
 {
   "nome": "arremesso potente",
-  "descricao": "Quando usa uma arma de arremesso, você pode usar seu modificador de Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso.",
-  "preRequisitos": "For 13, Estilo de Arremesso.",
+  "descricao": "Quando usa uma arma de arremesso, você pode usar seu modificador de Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso.\n @[destaque]{Pré-requisitos:} For 13, Estilo de Arremesso.",
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "passivo",

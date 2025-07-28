@@ -11,21 +11,12 @@ export type IPoder = {
   categoria: string
   fonte: string
   publicacao: string
-  nivel: number
-  preRequisitos: string
-  subEfeitos: ISubEfeito[]
   tags: ITag[]
 }
 
 export type ITag = {
   id: number
   label: string
-}
-
-export type ISubEfeito = {
-  id: number
-  nome: string
-  descricao: string
 }
 
 const poderPost = Prisma.validator<Prisma.PoderDefaultArgs>()({
@@ -37,17 +28,9 @@ const poderPost = Prisma.validator<Prisma.PoderDefaultArgs>()({
     descricao: true,
     categoria: true,
     fonte: true,
-    publicacao: true,
-    nivel: true,
-    preRequisitos: true
+    publicacao: true
   },
   include: {
-    subEfeitos: {
-      select: {
-        nome: true,
-        descricao: true
-      }
-    },
     tags: {
       select: {
         label: true

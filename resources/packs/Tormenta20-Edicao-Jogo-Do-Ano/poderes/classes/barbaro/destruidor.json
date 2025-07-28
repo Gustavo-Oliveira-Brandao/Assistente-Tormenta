@@ -1,7 +1,6 @@
 {
   "nome": "destruidor",
-  "descricao": "Quando causa dano com uma arma corpo a corpo de duas mãos, você pode rolar novamente qualquer resultado 1 ou 2 das rolagens de dano da arma.",
-  "preRequisitos": "For 1.",
+  "descricao": "Quando causa dano com uma arma corpo a corpo de duas mãos, você pode rolar novamente qualquer resultado 1 ou 2 das rolagens de dano da arma.\n @[destaque]{Pré-requisitos:} For 1.",
   "categoria": "poder de classe",
   "icone": "ataque",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "9ff3795a-293e-4f27-98d7-0fa50b92a987",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

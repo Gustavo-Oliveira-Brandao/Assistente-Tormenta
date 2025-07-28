@@ -1,7 +1,6 @@
 {
   "nome": "valentão",
   "descricao": "Você recebe +2 em testes de ataque e rolagens de dano contra oponentes caídos, desprevenidos, flanqueados ou indefesos.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "67499ec6-83e9-4735-aea6-78329507da0f",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

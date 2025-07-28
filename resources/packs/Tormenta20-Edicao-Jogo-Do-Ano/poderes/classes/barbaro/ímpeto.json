@@ -1,7 +1,6 @@
 {
   "nome": "ímpeto",
   "descricao": "Você pode gastar 1 PM para aumentar seu deslocamento em +6m por uma rodada.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "icone": "corrida",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "f768f69d-38fa-4654-9bc7-e274da1db49a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

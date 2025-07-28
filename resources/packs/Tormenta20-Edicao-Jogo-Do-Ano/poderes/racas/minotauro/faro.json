@@ -1,8 +1,7 @@
 {
   "nome": "faro",
-  "nivel": 1,
   "descricao": "Você tem olfato apurado. Contra inimigos em alcance curto que você não possa ver, você não fica desprevenido, e a camuflagem total lhe causa apenas 20% de chance de falha.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "363e6bd0-b91a-4ee5-9ff6-a65c41cf1e05",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "minotauro"

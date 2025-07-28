@@ -1,8 +1,7 @@
 {
   "nome": "tatuagem mística",
-  "nivel": 1,
   "descricao": "Você pode lançar uma magia de 1º círculo à sua escolha (atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "c9ec71b4-c851-44cb-a1a6-317212e2918b",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "qareen"

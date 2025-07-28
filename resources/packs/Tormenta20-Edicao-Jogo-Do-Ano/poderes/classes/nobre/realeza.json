@@ -1,8 +1,7 @@
 {
   "nome": "realeza",
   "descricao": "No 20º nível, sua presença impõe mais do que respeito — impõe veneração. Uma criatura que seja alvo de sua Presença Aristocrática e falhe no teste de Vontade por 10 ou mais se arrepende tanto de ter tentado machucá-lo que passa a lutar ao seu lado (e seguir suas ordens, se puder entendê-lo) pelo resto da cena. Uma criatura que seja reduzida a 0 PV por Palavras Afiadas não sofre este dano; em vez disso, passa a lutar ao seu lado pelo resto da cena.",
-  "preRequisitos": "",
-  "nivel": 20,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "f00e5762-8eed-4526-a7c2-8463cb22dbd7",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

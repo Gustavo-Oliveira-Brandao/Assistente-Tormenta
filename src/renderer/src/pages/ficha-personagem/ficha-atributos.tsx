@@ -13,11 +13,9 @@ export const FichaAtributos = ({ personagem }: FichaAtributosProps): JSX.Element
   return (
     <div className={styles.secao}>
       <SecaoFicha header={<h2 className="tormenta20Font">Atributos</h2>} css="atributos">
-        {personagem.atributos
-          .sort((a, b) => a.ordem - b.ordem)
-          .map((atributo) => (
-            <Atributo key={atributo.id} atributo={atributo} />
-          ))}
+        {personagem.atributos.map((atributo) => (
+          <Atributo key={atributo.id} atributo={atributo} />
+        ))}
       </SecaoFicha>
       <div className={styles.partePericias}>
         <div className={styles.combate}>

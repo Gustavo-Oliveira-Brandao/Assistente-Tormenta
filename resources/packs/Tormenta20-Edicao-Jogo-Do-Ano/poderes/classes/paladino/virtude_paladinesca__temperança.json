@@ -1,7 +1,7 @@
 {
   "nome": "virtude paladinesca: temperança",
   "descricao": "Quando ingere um alimento, item alquímico ou poção, você consome apenas metade do item. Na prática, cada item desses rende duas “doses” para você.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "c2a2da6d-3161-4294-8148-43ea027fdf5c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

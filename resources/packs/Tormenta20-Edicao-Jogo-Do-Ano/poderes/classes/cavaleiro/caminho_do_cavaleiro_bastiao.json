@@ -1,0 +1,15 @@
+{
+  "nome": "Caminho do cavaleiro: Bastião",
+  "descricao": "Se estiver usando armadura pesada, você recebe redução de dano 5 (cumulativa com a RD fornecida por Especialização em Armadura).",
+  "icone": "cavaleiro",
+  "categoria": "habilidade de classe",
+  "tags": [
+    {
+      "label": "cavaleiro"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "key": "85087dsac-d72c-4d6d-bcfa-a83d75539353",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "cavaleiro"
+}

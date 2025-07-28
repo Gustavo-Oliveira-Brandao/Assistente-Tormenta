@@ -1,8 +1,7 @@
 {
   "nome": "canção dos mares",
-  "nivel": 1,
   "descricao": "Você pode lançar duas das magias a seguir: Amedrontar, Comando, Despedaçar, Enfeitiçar, Hipnotismo ou Sono (atributo-chave Carisma). Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "0900e9c3-5fce-4ed2-b8e2-39629be7d177",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "sereia/tritao"

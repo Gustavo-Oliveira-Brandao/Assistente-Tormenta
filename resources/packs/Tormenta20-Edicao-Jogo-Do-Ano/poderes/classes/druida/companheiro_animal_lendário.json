@@ -1,7 +1,6 @@
 {
   "nome": "companheiro animal lendário",
-  "descricao": "Escolha um de seus companheiros animais. Esse animal passa a dobrar os bônus concedidos de seu tipo original.",
-  "preRequisitos": "Companheiro Animal, 18º nível de druida.",
+  "descricao": "Escolha um de seus companheiros animais. Esse animal passa a dobrar os bônus concedidos de seu tipo original.\n @[destaque]{Pré-requisitos:} Companheiro Animal, 18º nível de druida.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "f20a1ed2-95c9-4983-9335-acb231839010",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

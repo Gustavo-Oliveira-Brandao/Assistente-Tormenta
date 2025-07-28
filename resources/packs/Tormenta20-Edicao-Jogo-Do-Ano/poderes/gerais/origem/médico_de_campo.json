@@ -1,7 +1,7 @@
 {
   "nome": "médico de campo",
   "descricao": "Quando você faz primeiros socorros em um personagem com 0 ou menos PV, ele recupera 1d6 PV.",
-  "preRequisitos": "",
+
   "categoria": "origem",
   "tags": [
     {

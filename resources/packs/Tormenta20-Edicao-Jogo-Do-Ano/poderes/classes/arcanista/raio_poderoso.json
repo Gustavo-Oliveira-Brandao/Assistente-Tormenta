@@ -1,7 +1,6 @@
 {
   "nome": "raio poderoso",
-  "descricao": "Os dados de dano do seu Raio Arcano aumentam para d12 e o alcance dele aumenta para médio.",
-  "preRequisitos": "Raio Arcano.",
+  "descricao": "Os dados de dano do seu Raio Arcano aumentam para d12 e o alcance dele aumenta para médio.\n @[destaque]{Pré-requisitos:} Raio Arcano.",
   "icone": "rajada",
   "categoria": "poder de classe",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "e9a28e15-05eb-4f81-b12f-c3a49816d29c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

@@ -1,7 +1,6 @@
 {
   "nome": "trocação tumultuosa",
-  "descricao": "Quando usa a ação atacar para fazer um ataque desarmado, você pode gastar 2 PM para atingir todas as criaturas adjacentes — incluindo aliados! Você deve usar este poder antes de rolar o ataque e compara o resultado de seu teste contra a Defesa de cada criatura.",
-  "preRequisitos": "Trocação, 8º nível de lutador.",
+  "descricao": "Quando usa a ação atacar para fazer um ataque desarmado, você pode gastar 2 PM para atingir todas as criaturas adjacentes — incluindo aliados! Você deve usar este poder antes de rolar o ataque e compara o resultado de seu teste contra a Defesa de cada criatura.\n @[destaque]{Pré-requisitos:} Trocação, 8º nível de lutador.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "c5225065-6416-42a3-aa88-207c83160149",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

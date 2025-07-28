@@ -1,7 +1,6 @@
 {
   "nome": "aventureiro ávido",
   "descricao": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional. Se possuir o poder Surto Heroico, em vez disso seu custo diminui em –2 PM.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "icone": "bucaneiro",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "3f4530dd-f3ee-4a45-b5da-9be77db7ec83",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

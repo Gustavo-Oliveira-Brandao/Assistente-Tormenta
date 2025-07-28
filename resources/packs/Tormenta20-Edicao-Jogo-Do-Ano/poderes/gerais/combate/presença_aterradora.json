@@ -1,7 +1,7 @@
 {
   "nome": "presença aterradora",
   "descricao": "Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar.",
-  "preRequisitos": "",
+
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "ação padrão",

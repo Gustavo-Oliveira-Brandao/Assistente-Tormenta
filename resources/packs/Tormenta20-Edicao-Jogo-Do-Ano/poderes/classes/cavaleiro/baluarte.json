@@ -1,8 +1,6 @@
 {
   "nome": "baluarte",
   "descricao": "Quando sofre um ataque ou faz um teste de resistência, você pode gastar 1 PM para receber +2 na Defesa e nos testes de resistência até o início do seu próximo turno. A cada quatro níveis, pode gastar +1 PM para aumentar o bônus em +2. A partir do 7º nível Quando usa esta habilidade, você pode gastar 2 PM adicionais para fornecer o mesmo bônus a todos os aliados adjacentes. Por exemplo, pode gastar 4 PM ao todo para receber +4 na Defesa e nos testes de resistência e fornecer este mesmo bônus aos outros. A partir do 15º nível, você pode gastar 5 PM adicionais para fornecer o mesmo bônus a todos os aliados em alcance curto.",
-  "preRequisitos": "",
-  "nivel": 1,
   "icone": "muralha",
   "categoria": "habilidade de classe",
   "tags": [
@@ -11,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "b0d32fab-a4cf-491e-8c55-5e7c0bfc681f",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "cavaleiro"

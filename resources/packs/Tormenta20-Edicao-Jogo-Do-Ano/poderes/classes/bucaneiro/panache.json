@@ -1,8 +1,6 @@
 {
   "nome": "panache",
   "descricao": "A partir do 5º nível, sempre que faz um acerto crítico em combate ou reduz um inimigo a 0 PV, você recupera 1 PM.",
-  "preRequisitos": "",
-  "nivel": 5,
   "icone": "critico",
   "categoria": "habilidade de classe",
   "tags": [
@@ -11,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "1d594e9f-96d7-4c0c-a47d-f454cf864c89",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

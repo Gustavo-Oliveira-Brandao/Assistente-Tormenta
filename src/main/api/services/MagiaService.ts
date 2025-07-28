@@ -72,7 +72,8 @@ export const postMagia = async (
         }
       }
     })
-  } catch {
+  } catch (err) {
+    console.log(err)
     throw new Error('Erro ao adicionar magia.')
   }
 }

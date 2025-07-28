@@ -1,8 +1,7 @@
 {
   "nome": "engenhoso",
-  "nivel": 1,
   "descricao": "Você não sofre penalidades em testes de perícia por não usar ferramentas. Se usar a ferramenta necessária, recebe +2 no teste de perícia.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "33417e06-61e2-4fde-9e48-0a36cfc61234",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "goblin"

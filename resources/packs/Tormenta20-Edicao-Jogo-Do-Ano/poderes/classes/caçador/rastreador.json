@@ -1,8 +1,6 @@
 {
   "nome": "rastreador",
   "descricao": "Você recebe +2 em Sobrevivência. Além disso, pode se mover com seu deslocamento normal enquanto rastreia sem sofrer penalidades no teste de Sobrevivência.",
-  "preRequisitos": "",
-  "nivel": 1,
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "7d0af715-a756-4bbc-b76c-232acba5ba94",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

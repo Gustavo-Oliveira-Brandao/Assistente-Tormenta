@@ -1,7 +1,6 @@
 {
   "nome": "balística",
-  "descricao": "Você recebe proficiência com armas marciais de ataque à distância ou com armas de fogo. Quando usa uma arma de ataque à distância, pode usar sua Inteligência em vez de Destreza nos testes de ataque (e, caso possua o poder Estilo de Disparo, nas rolagens de dano).",
-  "preRequisitos": "treinado em Pontaria e Ofício (armeiro).",
+  "descricao": "Você recebe proficiência com armas marciais de ataque à distância ou com armas de fogo. Quando usa uma arma de ataque à distância, pode usar sua Inteligência em vez de Destreza nos testes de ataque (e, caso possua o poder Estilo de Disparo, nas rolagens de dano).\n @[destaque]{Pré-requisitos:} treinado em Pontaria e Ofício (armeiro).",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "2ddfdc6f-823c-4413-ad81-bb3a699db25a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

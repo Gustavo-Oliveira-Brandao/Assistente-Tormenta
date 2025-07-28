@@ -1,7 +1,6 @@
 {
   "nome": "costas largas",
-  "descricao": "Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional.",
-  "preRequisitos": "Con +1, For +1.",
+  "descricao": "Seu limite de carga aumenta em 5 espaços e você pode se beneficiar de um item vestido adicional.\n @[destaque]{Pré-requisitos:} Con +1, For +1.",
   "categoria": "destino",
   "tags": [],
   "tempoExecucao": "passivo",

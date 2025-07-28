@@ -39,7 +39,7 @@ declare global {
         getPoderesPersonagem: (_idPersonagem: number) => Promise<IPoder[]>
         postPoder: (
           _poder: IPoderPostRequestDTO,
-          nivelPoder: number,
+          nivel: number,
           _idPersonagem: number
         ) => Promise<void>
         deletePoder: (_id: number) => Promise<void>

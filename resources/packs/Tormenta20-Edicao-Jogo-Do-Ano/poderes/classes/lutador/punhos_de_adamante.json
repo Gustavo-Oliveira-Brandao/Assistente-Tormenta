@@ -1,7 +1,6 @@
 {
   "nome": "punhos de adamante",
-  "descricao": "Seus ataques desarmados ignoram 10 pontos de resistência a dano do alvo, se houver.",
-  "preRequisitos": "8º nível de lutador.",
+  "descricao": "Seus ataques desarmados ignoram 10 pontos de resistência a dano do alvo, se houver.\n @[destaque]{Pré-requisitos:} 8º nível de lutador.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "da582ba5-1eb2-40c6-a6f2-dd3b8ab56222",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

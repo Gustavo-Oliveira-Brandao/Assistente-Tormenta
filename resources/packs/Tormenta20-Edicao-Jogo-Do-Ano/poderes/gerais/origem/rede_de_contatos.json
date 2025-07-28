@@ -1,7 +1,7 @@
 {
   "nome": "rede de contatos",
   "descricao": "Graças à influência de sua guilda, você pode usar Diplomacia para obter informação sem custo (veja Investigação).",
-  "preRequisitos": "",
+
   "categoria": "origem",
   "tags": [
     {

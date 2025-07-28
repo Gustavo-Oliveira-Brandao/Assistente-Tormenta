@@ -1,7 +1,6 @@
 {
   "nome": "companheiro animal",
-  "descricao": "Você recebe um companheiro animal.",
-  "preRequisitos": "Car 1, treinado em Adestramento.",
+  "descricao": "Você recebe um companheiro animal.\n @[destaque]{Pré-requisitos:} Car 1, treinado em Adestramento.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "7eae780c-ece4-4f21-8bf4-5decdd5e08d5",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "caçador"

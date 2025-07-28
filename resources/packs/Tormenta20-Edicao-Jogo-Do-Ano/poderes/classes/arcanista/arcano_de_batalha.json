@@ -2,7 +2,6 @@
   "nome": "arcano de batalha",
   "icone": "machado-magico",
   "descricao": "Quando lança uma magia, você soma seu atributo-chave na rolagem de dano.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "3eb12057-1d1f-44fe-89c7-bf9bd4b833a7",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

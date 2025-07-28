@@ -1,7 +1,6 @@
 {
   "nome": "atraente",
-  "descricao": "Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você.",
-  "preRequisitos": "Car 13.",
+  "descricao": "Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você.\n @[destaque]{Pré-requisitos:} Car 13.",
   "categoria": "destino",
   "tags": [],
   "tempoExecucao": "passivo",

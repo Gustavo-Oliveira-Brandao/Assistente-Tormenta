@@ -1,8 +1,7 @@
 {
   "nome": "magias",
   "descricao": "Você pode lançar magias divinas de 1º círculo.\nA cada quatro níveis, pode lançar magias de um círculo maior (2º círculo no 5º nível, 3º círculo no 9º nível e assim por diante).\nVocê começa com três magias de 1º círculo.\nA cada nível, aprende uma magia de qualquer círculo que possa lançar.\nSeu atributo-chave para lançar magias é Sabedoria e você soma sua Sabedoria no seu total de PM.",
-  "preRequisitos": "",
-  "nivel": 1,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -13,7 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "57e836e3-c345-4e5d-80ad-c7b3d54d5006",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "clerigo"

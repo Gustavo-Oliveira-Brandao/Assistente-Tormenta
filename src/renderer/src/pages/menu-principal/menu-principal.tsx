@@ -1,9 +1,7 @@
 import { JSX, useEffect, useMemo, useState } from 'react'
 import styles from './menu-principal.module.scss'
-import { useDispatch } from 'react-redux'
 import { useExibirTodosPersonagem } from '@renderer/hooks/selectors/usePersonagemQuery'
 import { useNavigate } from 'react-router-dom'
-import { selecionarPersonagem } from '@renderer/store/slices/personagemSlice'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
@@ -21,28 +19,35 @@ import { NumberFieldModular } from '@renderer/components/number-field/number-fie
 import { zodResolver } from '@hookform/resolvers/zod'
 import { eticoData, moralData } from '@renderer/utils/common data/alinhamentoData'
 import { useExibirCompendio } from '@renderer/hooks/selectors/useCompendioQuery'
+import { useCriarPersonagem } from '@renderer/hooks/mutations/usePersonagemMutations'
 
 export const MenuPrincipal = (): JSX.Element => {
-  const dispatch = useDispatch()
-  const { data: compendio } = useExibirCompendio()
   const [criacaoPersonagemEstaAberta, setCriacaoPersonagemEstaAberta] = useState(false)
   const [selecaoPersonagensEstaAberta, setSelecaoPersonagensEstaAberta] = useState(false)
   const [personagemSelecionado, setPersonagemSelecionado] = useState<IPersonagem | null>(null)
 
   const { data: personagens } = useExibirTodosPersonagem()
+  const adicionarPersonagem = useCriarPersonagem()
 
   const navigate = useNavigate()
 
+  const methods = useForm<z.infer<typeof criacaoPersonagemSchema>>({
+    resolver: zodResolver(criacaoPersonagemSchema)
+  })
+
   const selecionarPersonagemPorId = (id: number): void => {
-    dispatch(selecionarPersonagem(id))
     if (personagemSelecionado) {
-      navigate(`/personagem/${personagemSelecionado.id}`)
+      navigate(`/personagem/${id}`)
     }
   }
 
   const selecionarPersonagemExibido = async (id: number): Promise<void> => {
     const personagemCarregado = await exibirPersonagemPorId(id)
     setPersonagemSelecionado(personagemCarregado)
+  }
+
+  const criarPersonagem = async (data): Promise<void> => {
+    adicionarPersonagem.mutate(data.nome)
   }
 
   return (
@@ -99,9 +104,19 @@ export const MenuPrincipal = (): JSX.Element => {
                 <BotaoModular css="botaoFooterModal" cor="verdePrimario" font="tormenta20Font">
                   <p>Criar personagem</p>
                 </BotaoModular>
-                <CriacaoPersonagemForm
-                  setCriacaoPersonagemEstaAberta={setCriacaoPersonagemEstaAberta}
-                />
+                <ModalModular
+                  placement="center"
+                  titulo="Criar personagem"
+                  height="fit-content"
+                  width="fit-content"
+                >
+                  <FormProvider {...methods}>
+                    <form onSubmit={methods.handleSubmit(criarPersonagem)}>
+                      <TextFieldModular placeholder="Ragnar" label="Nome" name="nome" />
+                      <Button type="submit">Criar</Button>
+                    </form>
+                  </FormProvider>
+                </ModalModular>
               </DialogTrigger>
               <BotaoModular
                 css="botaoFooterModal"
@@ -119,23 +134,26 @@ export const MenuPrincipal = (): JSX.Element => {
           }
           sidebar={
             <div className={styles.personagens}>
-              {personagens?.map((personagem) => (
-                <Button
-                  onClick={() => selecionarPersonagemExibido(personagem.id)}
-                  key={personagem.id}
-                  className={
-                    personagemSelecionado != null && personagemSelecionado.id == personagem.id
-                      ? `${styles.personagem} ${styles.selecionado}`
-                      : `${styles.personagem}`
-                  }
-                  type="button"
-                >
-                  <p className={`tormenta20Font ${styles.nome}`}>{personagem.nome}</p>
-                  <p className={'tormenta20Font'}>
-                    {personagem.raca} {personagem.classeInicial} {personagem.nivelAtual}
-                  </p>
-                </Button>
-              ))}
+              {personagens &&
+                personagens.map((personagem) => (
+                  <>
+                    <Button
+                      onClick={() => selecionarPersonagemExibido(personagem.id)}
+                      key={personagem.id}
+                      className={
+                        personagemSelecionado != null && personagemSelecionado.id == personagem.id
+                          ? `${styles.personagem} ${styles.selecionado}`
+                          : `${styles.personagem}`
+                      }
+                      type="button"
+                    >
+                      <p className={`tormenta20Font ${styles.nome}`}>{personagem.nome}</p>
+                      <p className={'tormenta20Font'}>
+                        {personagem.raca?.nome} {personagem.classeOriginal} {personagem.nivel}
+                      </p>
+                    </Button>
+                  </>
+                ))}
             </div>
           }
         >
@@ -145,12 +163,12 @@ export const MenuPrincipal = (): JSX.Element => {
                 <div className={styles.info}>
                   <h1 className="tormenta20Font">{personagemSelecionado.nome}</h1>
                   <h1 className="tormenta20Font">
-                    {personagemSelecionado.classeInicial} {personagemSelecionado.nivelAtual}
+                    {personagemSelecionado.classeOriginal} {personagemSelecionado.nivel}
                   </h1>
                 </div>
                 <div className={styles.tags}>
-                  <p className="tormenta20Font">{personagemSelecionado.raca}</p>
-                  <p className="tormenta20Font">{personagemSelecionado.tipo}</p>
+                  <p className="tormenta20Font">{personagemSelecionado.raca.nome}</p>
+                  <p className="tormenta20Font">{personagemSelecionado.raca.tipo}</p>
                   <p className="tormenta20Font">{personagemSelecionado.tamanho}</p>
                   <p className="tormenta20Font">{personagemSelecionado.origem}</p>
                   <p className="tormenta20Font">{personagemSelecionado.divindade}</p>
@@ -171,16 +189,14 @@ export const MenuPrincipal = (): JSX.Element => {
                   <div className={styles.secao}>
                     <h3 className={`${styles.titulo} tormenta20Font`}>Atributos</h3>
                     <div className={styles.itens}>
-                      {personagemSelecionado.atributos
-                        .sort((a, b) => a.ordem - b.ordem)
-                        .map((atributo) => (
-                          <p key={atributo.id} className="inter">
-                            {atributo.nome}:{' '}
-                            {atributo.valorAtual != null && atributo.valorAtual > 0
-                              ? `+${atributo.valorAtual}`
-                              : `${atributo.valorAtual}`}
-                          </p>
-                        ))}
+                      {personagemSelecionado.atributos.map((atributo) => (
+                        <p key={atributo.id} className="inter">
+                          {atributo.nome}:{' '}
+                          {atributo.valorAtual != null && atributo.valorAtual > 0
+                            ? `+${atributo.valorAtual}`
+                            : `${atributo.valorAtual}`}
+                        </p>
+                      ))}
                     </div>
                   </div>
                 </div>

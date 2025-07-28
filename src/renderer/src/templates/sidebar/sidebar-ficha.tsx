@@ -12,7 +12,6 @@ import { useAtualizarStatus } from '@renderer/hooks/mutations/useStatusMutation'
 import { IStatus } from '@renderer/@types/T20 GOTY/IStatus'
 import { NumberFieldModular } from '@renderer/components/number-field/number-field'
 import { FieldsetModular } from '@renderer/components/fieldset/fieldset'
-import { ModalModular } from '@renderer/components/modal/modal'
 import { PopoverModular } from '@renderer/components/popover/popover'
 
 type SidebarFichaProps = {
@@ -29,7 +28,7 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
 
   const onSubmitStatus = (data): void => {
     const novoStatus: IStatus = { ...personagem.status, ...data }
-    atualizarStatus.mutate(novoStatus)
+    atualizarStatus.mutate({ id: personagem.status.id, status: novoStatus })
   }
 
   return (
@@ -42,7 +41,7 @@ export const SidebarFicha = ({ personagem }: SidebarFichaProps): JSX.Element => 
           </div>
           <div className={styles.personagemNivel}>
             <img src="./icons/upgrade.svg" alt="nivel" />
-            <p className="tormenta20Font">{personagem.nivelAtual}</p>
+            <p className="tormenta20Font">{personagem.nivel}</p>
           </div>
         </div>
         <div className={styles.recursos}>

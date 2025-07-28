@@ -1,7 +1,7 @@
 {
   "nome": "golpe baixo",
   "descricao": "Quando faz um ataque desarmado, você pode gastar 2 PM. Se fizer isso e acertar o ataque, o oponente deve fazer um teste de Fortitude (CD For). Se ele falhar, fica atordoado por uma rodada. Você só pode usar este poder uma vez por cena contra uma mesma criatura.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "1c6533b9-ee99-457d-896c-69b4ad869a31",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

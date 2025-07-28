@@ -1,7 +1,7 @@
 {
   "nome": "maestria em perícia",
   "descricao": "Escolha um número de perícias treinadas igual ao seu bônus de Inteligência. Com essas perícias, você pode gastar 1 PM para escolher 10 em qualquer situação, exceto testes de ataque.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "ca136d3e-e457-4001-bd10-d0fc3a7337e5",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

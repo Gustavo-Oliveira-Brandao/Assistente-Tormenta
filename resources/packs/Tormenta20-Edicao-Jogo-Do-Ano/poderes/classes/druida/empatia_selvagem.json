@@ -1,8 +1,7 @@
 {
   "nome": "empatia selvagem",
   "descricao": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e persuasão.",
-  "preRequisitos": "",
-  "nivel": 1,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "235b9ae0-df86-45f2-8029-47268b76035c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "druida"

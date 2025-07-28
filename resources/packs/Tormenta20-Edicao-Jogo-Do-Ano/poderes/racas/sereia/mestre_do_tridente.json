@@ -1,8 +1,7 @@
 {
   "nome": "mestre do tridente",
-  "nivel": 1,
   "descricao": "Para você, o tridente é uma arma simples. Além disso, você recebe +2 em rolagens de dano com azagaias, lanças e tridentes.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "857a57c5-813b-4942-a53f-aa8c60da19d3",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "sereia/tritao"

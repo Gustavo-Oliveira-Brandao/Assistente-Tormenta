@@ -1,7 +1,7 @@
 {
   "nome": "surto heróico",
   "descricao": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.",
-  "preRequisitos": "",
+
   "categoria": "destino",
   "tags": [],
   "tempoExecucao": "ação livre",

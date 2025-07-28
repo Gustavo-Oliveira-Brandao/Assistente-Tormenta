@@ -1,16 +1,48 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
-import { JSX } from 'react'
-import { IMagiaPersonagem } from '@renderer/@types/T20 GOTY/IMagia'
-import { DeepPartial } from 'typeorm'
+import { JSX, useMemo } from 'react'
 import { BotaoModular } from '../botao-modular/botao-modular'
 import { Button, Disclosure, DisclosurePanel, Heading } from 'react-aria-components'
+import { DeepPartial } from '@renderer/@types/DeepPartial'
+import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
 
 type cardMagiaProps = {
-  magia: IMagiaPersonagem | DeepPartial<IMagiaPersonagem>
+  magia: IMagia | DeepPartial<IMagia>
   onInteract?: () => void
   iconeBotaoInteracao?: string
 }
 export const CardMagia = (props: cardMagiaProps): JSX.Element => {
+  const descricao = useMemo(() => {
+    if (props.magia.descricao == null) {
+      return null
+    }
+
+    const regex = /(@\[destaque\]\{)(.*?)(\})/g
+
+    const partes: Array<string | JSX.Element> = []
+    let ultimoIndice = 0
+    let match: RegExpExecArray | null
+
+    while ((match = regex.exec(props.magia.descricao)) !== null) {
+      const conteudo = match[2]
+
+      if (match.index > ultimoIndice) {
+        partes.push(props.magia.descricao.substring(ultimoIndice, match.index))
+      }
+
+      partes.push(
+        <span key={match.index} className={styles.destaque}>
+          {conteudo}
+        </span>
+      )
+
+      ultimoIndice = match.index + match[0].length
+    }
+    if (ultimoIndice < props.magia.descricao.length) {
+      partes.push(props.magia.descricao.substring(ultimoIndice))
+    }
+    return <p className={`${styles.descricao} inter`}>{partes}</p>
+  }, [props.magia])
+
   return (
     <Disclosure className={styles.card}>
       <div className={styles.header}>
@@ -44,14 +76,14 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
           <p className="tormenta20Font">{props.magia.tradicao}</p>
           <p className="tormenta20Font">{props.magia.escola}</p>
         </div>
-        <p className={`${styles.descricao} inter`}>{props.magia.descricao}</p>
+        <p className={`${styles.descricao} inter`}>{descricao}</p>
         {props.magia.aprimoramentos && props.magia.aprimoramentos.length !== 0 && (
           <div className={styles.subEfeitos}>
             {props.magia.aprimoramentos.map((aprimoramento, index) => (
               <div key={index} className={styles.subEfeito}>
                 <p className="inter">
                   {aprimoramento.custo === 0 ? (
-                    <span className={styles.destaque}>Truque: </span>
+                    <span className={styles.destaque}>TRUQUE: </span>
                   ) : (
                     <span className={styles.destaque}>+{aprimoramento.custo} PM: </span>
                   )}

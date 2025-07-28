@@ -1,8 +1,7 @@
 {
   "nome": "a pessoa certa para o trabalho",
   "descricao": "No 20º nível, você se torna um verdadeiro mestre da ladinagem. Ao fazer um ataque furtivo ou usar uma perícia da lista de ladino, você pode gastar 5 PM para receber +10 no teste.",
-  "preRequisitos": "",
-  "nivel": 20,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "3878afa4-6e30-46c4-bb59-2d9bb90abb86",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

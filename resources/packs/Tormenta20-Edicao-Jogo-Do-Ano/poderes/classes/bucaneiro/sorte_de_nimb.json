@@ -1,8 +1,6 @@
 {
   "nome": "sorte de nimb",
   "descricao": "No 20º nível, você encara os piores desafios e ri na cara deles — pois sabe que tem a sorte ao seu lado. Você pode gastar 5 PM para rolar novamente um teste recém realizado. Qualquer resultado 11 ou mais na segunda rolagem será considerado um 20 natural.",
-  "preRequisitos": "",
-  "nivel": 20,
   "icone": "nimb",
   "categoria": "habilidade de classe",
   "tags": [
@@ -11,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "d07f4e11-a229-4017-8eba-acca9f8e7811",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

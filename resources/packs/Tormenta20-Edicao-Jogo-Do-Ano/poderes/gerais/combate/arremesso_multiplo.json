@@ -1,11 +1,9 @@
 {
   "nome": "arremesso multiplo",
-  "descricao": "Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso.",
-  "preRequisitos": "Des +1, Estilo de Arremesso.",
+  "descricao": "Uma vez por rodada, quando faz um ataque com uma arma de arremesso, você pode gastar 1 PM para fazer um ataque adicional contra o mesmo alvo, arremessando outra arma de arremesso.\n @[destaque]{Pré-requisitos:} Des +1, Estilo de Arremesso.",
   "categoria": "combate",
   "tags": [],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "d98fcd07-dfa6-4af9-a54f-bdaf4a347667",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "geral"

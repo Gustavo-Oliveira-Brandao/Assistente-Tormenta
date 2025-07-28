@@ -1,7 +1,7 @@
 {
   "nome": "missa: elevação de espírito",
   "descricao": "Os participantes recebem pontos de mana temporários em um valor igual a sua Sabedoria.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "1 hora",
-  "subEfeitos": [],
   "key": "2b3aa1c6-9fdf-4773-83ae-7160e9bde99c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "clerigo"

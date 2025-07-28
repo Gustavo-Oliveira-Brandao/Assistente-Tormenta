@@ -1,7 +1,7 @@
 {
   "nome": "rasteira",
   "descricao": "Quando faz um ataque desarmado, você pode gastar 2 PM. Se fizer isso e acertar o ataque, o oponente fica caído.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "138373bd-aed8-4f32-b69d-b716849ac6e4",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

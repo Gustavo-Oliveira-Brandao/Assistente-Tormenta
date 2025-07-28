@@ -1,7 +1,6 @@
 {
   "nome": "ajuste de mira",
-  "descricao": "Você pode gastar uma ação padrão e uma quantidade de PM a sua escolha (limitado pela sua Inteligência) para aprimorar uma arma de ataque à distância. Para cada PM que gastar, você recebe +1 em rolagens de dano com a arma até o final da cena.",
-  "preRequisitos": "Balística.",
+  "descricao": "Você pode gastar uma ação padrão e uma quantidade de PM a sua escolha (limitado pela sua Inteligência) para aprimorar uma arma de ataque à distância. Para cada PM que gastar, você recebe +1 em rolagens de dano com a arma até o final da cena.\n @[destaque]{Pré-requisitos:} Balística.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação padrão",
-  "subEfeitos": [],
   "key": "9ebcb9a1-4c7b-458b-92de-80a327d2ce43",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "inventor"

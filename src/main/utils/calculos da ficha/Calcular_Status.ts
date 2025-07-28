@@ -1,21 +1,26 @@
-import { IAtributoCalculado } from '../../@types/T20 GOTY/dto/IAtributoDTO'
-import { IStatusCalculado } from '../../@types/T20 GOTY/dto/IStatusDTO'
+import { IAtributoCalculado } from '../../@types/T20 GOTY/IAtributo'
 import { IEfeito, IModificador } from '../../@types/T20 GOTY/IEfeito'
-import { IPersonagemJogador } from '../../@types/T20 GOTY/IPersonagem'
+import { IPersonagemResponseDTO } from '../../@types/T20 GOTY/IPersonagem'
+import { IStatusCalculado } from '../../@types/T20 GOTY/IStatus'
 import { calcularModificadores } from './Calcular_Modificadores'
 
 export const calcularStatus = (
-  personagem: IPersonagemJogador,
+  personagem: IPersonagemResponseDTO,
   atributosCalculados: IAtributoCalculado[],
   efeitos: IEfeito[],
   nivelPersonagem: number
 ): IStatusCalculado => {
+  const statusPersonagem = personagem.status
+  if (statusPersonagem == null) {
+    throw new Error('Erro ao processar personagem.')
+  }
+
   let vidaInicial = 0
   let vidaTotalPorNivel = 0
   let manaTotalPorNivel = 0
 
   for (const classe of personagem.classes) {
-    if (classe.nome === personagem.detalhesPJ.classeOriginal) {
+    if (classe.nome === personagem.classeOriginal) {
       vidaInicial = classe.vidaInicial
     }
   }
@@ -49,35 +54,35 @@ export const calcularStatus = (
   )
 
   const atributoVidaMaxima = atributosCalculados.find(
-    (atributo) => atributo.nome == personagem.status.atributoVidaMaxima
+    (atributo) => atributo.nome == statusPersonagem.atributoVidaMaxima
   )
 
   const atributoManaMaxima = atributosCalculados.find(
-    (atributo) => atributo.nome == personagem.status.atributoManaMaxima
+    (atributo) => atributo.nome == statusPersonagem.atributoManaMaxima
   )
   const atributoDefesa = atributosCalculados.find(
-    (atributo) => atributo.nome == personagem.status.atributoDefesa
+    (atributo) => atributo.nome == statusPersonagem.atributoDefesa
   )
 
   const status: IStatusCalculado = {
-    ...personagem.status,
+    ...statusPersonagem,
     vidaMaxima:
       vidaInicial +
       (vidaTotalPorNivel +
-        personagem.status.vidaMaximaBonus +
+        statusPersonagem.vidaMaximaBonus +
         (atributoVidaMaxima?.valorAtual ?? 0)) *
         nivelPersonagem +
       modificadoresVidaMaxima,
     manaMaxima:
       vidaInicial +
       (manaTotalPorNivel +
-        personagem.status.manaMaximaBonus +
+        statusPersonagem.manaMaximaBonus +
         (atributoManaMaxima?.valorAtual ?? 0)) *
         nivelPersonagem +
       modificadoresManaMaxima,
     defesaAtual:
-      personagem.status.defesaBase +
-      personagem.status.defesaBonus +
+      statusPersonagem.defesaBase +
+      statusPersonagem.defesaBonus +
       (atributoDefesa?.valorAtual ?? 0) +
       modificadoresDefesa
   }

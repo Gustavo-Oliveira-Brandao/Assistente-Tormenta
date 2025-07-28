@@ -1,7 +1,6 @@
 {
   "nome": "dança das lâminas",
-  "descricao": "Quando você lança uma magia com execução de uma ação padrão, pode gastar 1 PM para fazer um ataque corpo a corpo como uma ação livre.",
-  "preRequisitos": "Esgrima Mágica, 10º nível de bardo.",
+  "descricao": "Quando você lança uma magia com execução de uma ação padrão, pode gastar 1 PM para fazer um ataque corpo a corpo como uma ação livre.\n @[destaque]{Pré-requisitos:} Esgrima Mágica, 10º nível de bardo.",
   "categoria": "poder de classe",
   "icone": "ataque",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "e1b10c66-1e92-46fe-9e34-8f8775c9b491",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bardo"

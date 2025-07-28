@@ -1,7 +1,6 @@
 {
   "nome": "asas insetoides",
-  "descricao": "Você pode gastar 1 PM para receber deslocamento de voo 9m até o fim da rodada. O deslocamento aumenta em 1,5m para cada outro poder da Tormenta que você possui.",
-  "preRequisitos": "quatro outros poderes da Tormenta.",
+  "descricao": "Você pode gastar 1 PM para receber deslocamento de voo 9m até o fim da rodada. O deslocamento aumenta em 1,5m para cada outro poder da Tormenta que você possui.\n @[destaque]{Pré-requisitos:} quatro outros poderes da Tormenta.",
   "categoria": "tormenta",
   "tags": [],
   "tempoExecucao": "ação livre",

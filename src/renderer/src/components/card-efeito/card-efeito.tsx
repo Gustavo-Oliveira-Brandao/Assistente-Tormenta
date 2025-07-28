@@ -33,7 +33,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
 
   const onChange = (estaAtivo: boolean): void => {
     const novoEfeito = { ...efeito, estaAtivo: estaAtivo }
-    atualizarEfeito.mutate(novoEfeito)
+    atualizarEfeito.mutate({ id: efeito.id, efeito: novoEfeito })
   }
 
   const onSubmit = (data): void => {

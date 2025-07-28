@@ -1,7 +1,7 @@
 {
   "nome": "virtude paladinesca: caridade",
   "descricao": "O custo de suas habilidades de paladino que tenham um aliado como alvo é reduzido em 1 PM.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "6dc045c0-1e43-4eae-a371-092802159fa4",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

@@ -1,7 +1,7 @@
 {
   "nome": "assassinar",
   "descricao": "Você pode gastar uma ação de movimento e 3 PM para analisar uma criatura em alcance curto. Se desferir um ataque furtivo contra essa criatura até o fim do seu próximo turno, você dobra os dados de dano de seu ataque furtivo. Pré-requisito. 5º nível de ladino.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "bff90376-69b8-4494-95fd-9bcb5db5a4d8",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

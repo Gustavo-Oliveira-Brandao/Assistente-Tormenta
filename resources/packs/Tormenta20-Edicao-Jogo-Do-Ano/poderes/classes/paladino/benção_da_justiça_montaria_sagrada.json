@@ -1,0 +1,14 @@
+{
+  "nome": "Benção da justiça: Montaria Sagrada",
+  "descricao": "Você pode gastar uma ação de movimento e 2 PM para invocar uma montaria sagrada. Veja o livro jogo do ano para mais detalhes.",
+  "categoria": "habilidade de classe",
+  "tags": [
+    {
+      "label": "paladino"
+    }
+  ],
+  "tempoExecucao": "passivo",
+  "key": "57khgfsb-0ebf-420d-8808-68b706e6449a",
+  "publicacao": "Tormenta20 - Edição Jogo do Ano",
+  "fonte": "paladino"
+}

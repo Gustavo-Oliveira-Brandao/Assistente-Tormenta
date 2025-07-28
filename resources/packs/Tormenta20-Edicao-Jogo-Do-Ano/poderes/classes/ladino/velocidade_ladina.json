@@ -1,7 +1,6 @@
 {
   "nome": "velocidade ladina",
-  "descricao": "Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno.",
-  "preRequisitos": "treinado em Iniciativa.",
+  "descricao": "Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno.\n @[destaque]{Pré-requisitos:} treinado em Iniciativa.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "ação livre",
-  "subEfeitos": [],
   "key": "108a839b-b18b-47a7-8cee-df927cbd5903",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

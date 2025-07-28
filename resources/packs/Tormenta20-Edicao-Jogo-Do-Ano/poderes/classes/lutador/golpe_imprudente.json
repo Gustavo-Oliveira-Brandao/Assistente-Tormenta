@@ -1,7 +1,7 @@
 {
   "nome": "golpe imprudente",
   "descricao": "Quando usa Golpe Relâmpago, você pode atacar de forma impulsiva. Se fizer isso, você aumenta seu dano desarmado em mais um dado do mesmo tipo (por exemplo, se o seu dano é 2d6, você causa 3d6), mas sofre –5 em sua Defesa, até o início de seu próximo turno.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "503098d1-381f-449f-af0d-39ba316c4dfd",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

@@ -1,7 +1,7 @@
 {
   "nome": "julgamento divino: salvação",
   "descricao": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. Até o fim da cena, quando você acerta um ataque corpo a corpo nesse inimigo, recupera 5 pontos de vida.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -12,7 +12,6 @@
     }
   ],
   "tempoExecucao": "ação de movimento",
-  "subEfeitos": [],
   "key": "5ad95fd4-9d61-4d01-b84a-656c1892adc7",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "paladino"

@@ -1,7 +1,7 @@
 {
   "nome": "estoico",
   "descricao": "Sua recuperação de pontos de vida e pontos de mana com descanso aumenta em uma categoria: normal em condições ruins, confortável em condições normais e assim por diante.",
-  "preRequisitos": "",
+
   "categoria": "origem",
   "tags": [
     {

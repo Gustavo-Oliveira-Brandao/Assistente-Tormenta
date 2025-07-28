@@ -1,8 +1,7 @@
 {
   "nome": "engenhosidade",
-  "nivel": 1,
   "descricao": "Quando faz um teste de perícia, você pode gastar 2 PM para somar sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque. Caso receba esta habilidade novamente, seu custo é reduzido em –1 PM.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "19053431-543b-43dd-b8d5-2de9cd5d1030",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "kliren"

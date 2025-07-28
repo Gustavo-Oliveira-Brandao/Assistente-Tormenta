@@ -1,8 +1,6 @@
 {
   "nome": "bravura final",
   "descricao": "No 20º nível, sua virtude vence a morte. Se for reduzido a 0 ou menos PV, pode gastar 3 PM para continuar consciente e de pé. Esta habilidade tem duração sustentada. Quando se encerra, você sofre os efeitos de seus PV atuais, podendo cair inconsciente ou mesmo morrer.",
-  "preRequisitos": "",
-  "nivel": 20,
   "icone": "cavaleiro",
   "categoria": "habilidade de classe",
   "tags": [
@@ -11,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "173d36fb-15b3-468e-9eec-cfb803e3170a",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "cavaleiro"

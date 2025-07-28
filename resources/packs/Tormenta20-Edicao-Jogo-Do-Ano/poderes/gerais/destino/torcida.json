@@ -1,7 +1,6 @@
 {
   "nome": "torcida",
-  "descricao": "Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você.",
-  "preRequisitos": "Car 13.",
+  "descricao": "Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida” qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você.\n @[destaque]{Pré-requisitos:} Car 13.",
   "categoria": "destino",
   "tags": [],
   "tempoExecucao": "passivo",

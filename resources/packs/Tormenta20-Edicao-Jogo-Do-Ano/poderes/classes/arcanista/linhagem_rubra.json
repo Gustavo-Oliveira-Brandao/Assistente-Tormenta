@@ -1,7 +1,6 @@
 {
   "nome": "linhagem rubra",
-  "descricao": "Seu sangue foi corrompido pela Tormenta.",
-  "preRequisitos": "",
+  "descricao": "Seu sangue foi corrompido pela Tormenta.\n @[destaque]{Básica:} Você recebe um poder da Tormenta. Além disso, pode perder outro atributo em vez de Carisma por poderes da Tormenta.\n @[destaque]{Aprimodada:} Escolha uma magia para cada poder da Tormenta que você possui. Essas magias custam –1 PM. Sempre que recebe um novo poder da Tormenta, você pode escolher uma nova magia. Esta herança conta como um poder da Tormenta (exceto para perda de Carisma).\n @[destaque]{Superior:} Você recebe +4 PM para cada poder da Tormenta que tiver. Esta herança conta como um poder da Tormenta (exceto para perda de Carisma).",
   "categoria": "poder de classe",
   "icone": "aharadak",
   "tags": [
@@ -13,20 +12,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [
-    {
-      "nome": "Básica:",
-      "descricao": "Você recebe um poder da Tormenta. Além disso, pode perder outro atributo em vez de Carisma por poderes da Tormenta."
-    },
-    {
-      "nome": "Aprimorada:",
-      "descricao": "Escolha uma magia para cada poder da Tormenta que você possui. Essas magias custam –1 PM. Sempre que recebe um novo poder da Tormenta, você pode escolher uma nova magia. Esta herança conta como um poder da Tormenta (exceto para perda de Carisma)."
-    },
-    {
-      "nome": "Superior:",
-      "descricao": "Você recebe +4 PM para cada poder da Tormenta que tiver. Esta herança conta como um poder da Tormenta (exceto para perda de Carisma)."
-    }
-  ],
   "key": "42aa136c-f54f-42ee-ab73-086ee92b42c5",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "arcanista"

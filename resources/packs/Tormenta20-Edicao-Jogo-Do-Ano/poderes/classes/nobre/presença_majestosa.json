@@ -1,7 +1,6 @@
 {
   "nome": "presença majestosa",
-  "descricao": "Você impõe respeito a todos. A habilidade Presença Aristocrática passa a funcionar contra criaturas com Int 1 ou mais (passa a afetar até mesmo animais, embora continue não funcionando contra criaturas sem valor de Inteligência). Além disso, você pode usá-la mais de uma vez contra uma mesma criatura na mesma cena.",
-  "preRequisitos": "Presença Aristocrática, 16º nível de nobre.",
+  "descricao": "Você impõe respeito a todos. A habilidade Presença Aristocrática passa a funcionar contra criaturas com Int 1 ou mais (passa a afetar até mesmo animais, embora continue não funcionando contra criaturas sem valor de Inteligência). Além disso, você pode usá-la mais de uma vez contra uma mesma criatura na mesma cena.\n @[destaque]{Pré-requisitos:} Presença Aristocrática, 16º nível de nobre.",
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +8,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "52ecc8d4-171c-40be-a248-5cc93e8d7a16",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "nobre"

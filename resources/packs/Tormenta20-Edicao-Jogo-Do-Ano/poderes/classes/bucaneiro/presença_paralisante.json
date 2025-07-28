@@ -1,7 +1,6 @@
 {
   "nome": "presença paralisante",
-  "descricao": "Você soma seu Carisma em Iniciativa e, se for o primeiro na iniciativa, ganha uma ação padrão extra na primeira rodada.",
-  "preRequisitos": "Car 1, 4º nível de bucaneiro.",
+  "descricao": "Você soma seu Carisma em Iniciativa e, se for o primeiro na iniciativa, ganha uma ação padrão extra na primeira rodada.\n @[destaque]{Pré-requisitos:} Car 1, 4º nível de bucaneiro.",
   "categoria": "poder de classe",
   "icone": "bucaneiro",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "787af843-7b49-42c3-915b-6766c4f9de58",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "bucaneiro"

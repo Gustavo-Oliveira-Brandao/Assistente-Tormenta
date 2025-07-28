@@ -1,7 +1,7 @@
 {
   "nome": "comunhão vital",
   "descricao": "Quando lança uma magia que cure uma criatura, você pode pagar +2 PM para que outra criatura em alcance curto (incluindo você mesmo) recupere uma quantidade de pontos de vida igual à metade dos PV da cura original.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "59e1c194-b64c-4c1c-adaa-ae35e8d6ce3c",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "clerigo"

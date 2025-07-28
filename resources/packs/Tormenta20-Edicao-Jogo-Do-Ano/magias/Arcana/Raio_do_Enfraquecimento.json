@@ -6,7 +6,7 @@
   "efeito": "",
   "execucao": "padrão",
   "resistencia": "Fortitude parcial",
-  "descricao": "Você dispara um raio púrpura que drena as forças do alvo. Se falhar na resistência, o alvo fica Fatigado Se passar, fica Vulnerável.\nNote que, como efeitos de magia não acumulam, lançar esta magia duas vezes contra o mesmo alvo não irá deixá-lo exausto.",
+  "descricao": "Você dispara um raio púrpura que drena as forças do alvo. Se falhar na resistência, o alvo fica Fatigado. Se passar, fica Vulnerável.\nNote que, como efeitos de magia não acumulam, lançar esta magia duas vezes contra o mesmo alvo não irá deixá-lo exausto.",
   "duracao": "cena",
   "nivelCirculo": 1,
   "alcance": "curto",

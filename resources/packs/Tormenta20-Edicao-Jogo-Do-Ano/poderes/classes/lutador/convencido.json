@@ -1,7 +1,7 @@
 {
   "nome": "convencido",
   "descricao": "Acostumado a contar apenas com seus próprios músculos, você adquiriu certo desdém por artes mais sofisticadas. Você recebe +5 em testes de resistência contra magias e efeitos de Encantamento.",
-  "preRequisitos": "",
+
   "categoria": "poder de classe",
   "tags": [
     {
@@ -9,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "9e840520-d280-45ad-b644-e2ea7b5fe961",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "lutador"

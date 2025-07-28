@@ -1,8 +1,7 @@
 {
   "nome": "evasão aprimorada",
   "descricao": "No 10º nível, quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar e sofre apenas metade do dano se falhar. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver imóvel ou usando armadura pesada.",
-  "preRequisitos": "",
-  "nivel": 10,
+
   "categoria": "habilidade de classe",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "b52df1a3-dc0a-43d5-9bb8-39fd75edbe47",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "ladino"

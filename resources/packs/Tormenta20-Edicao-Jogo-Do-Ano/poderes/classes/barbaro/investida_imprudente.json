@@ -1,7 +1,6 @@
 {
   "nome": "investida imprudente",
   "descricao": "Quando faz uma investida, você pode aumentar sua penalidade na Defesa pela investida para –5 para receber um bônus de +1d12 na rolagem de dano deste ataque.",
-  "preRequisitos": "",
   "categoria": "poder de classe",
   "icone": "investida",
   "tags": [
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "reação",
-  "subEfeitos": [],
   "key": "78fd351f-09b0-4e88-95e0-3f322421a8cd",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "barbaro"

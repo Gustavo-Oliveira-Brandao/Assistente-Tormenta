@@ -1,8 +1,7 @@
 {
   "nome": "conhecimentos das rochas",
-  "nivel": 1,
   "descricao": "Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo.",
-  "preRequisitos": "",
+
   "categoria": "raca",
   "tags": [
     {
@@ -10,7 +9,6 @@
     }
   ],
   "tempoExecucao": "passivo",
-  "subEfeitos": [],
   "key": "1398cb73-1ab3-42d5-9766-2fe2830e6660",
   "publicacao": "Tormenta20 - Edição Jogo do Ano",
   "fonte": "anao"

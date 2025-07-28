@@ -8,11 +8,16 @@ type atualizarMagiaMutation = {
   magia: IMagia
 }
 
-export const useAtualizarMagia = (): UseMutationResult<void, Error, atualizarMagiaMutation, unknown> => {
+export const useAtualizarMagia = (): UseMutationResult<
+  void,
+  Error,
+  atualizarMagiaMutation,
+  unknown
+> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: ({id, magia}) => atualizarMagia(id, magia),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['magias'] })
+    mutationFn: ({ id, magia }) => atualizarMagia(id, magia),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['grimorio'] })
   })
 }
 
@@ -25,7 +30,7 @@ export const useCriarMagia = (): UseMutationResult<void, Error, criarMagiaVariav
   const queryClient = useQueryClient()
   return useMutation({
     mutationFn: (x: criarMagiaVariaveis) => criarMagia(x.magia, x.idGrimorio),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['magias'] })
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['grimorio'] })
   })
 }
 
@@ -33,6 +38,6 @@ export const useDeletarMagia = (): UseMutationResult<void, Error, number, unknow
   const queryClient = useQueryClient()
   return useMutation({
     mutationFn: (id) => deletarMagia(id),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['magias'] })
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['grimorio'] })
   })
 }

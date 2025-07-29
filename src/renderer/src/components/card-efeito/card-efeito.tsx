@@ -1,5 +1,6 @@
 import { IEfeito } from '@renderer/@types/T20 GOTY/IEfeito'
 import styles from '@renderer/assets/styles/cards.module.scss'
+import btnStyles from '@renderer/assets/styles/botoes.module.scss'
 import { JSX, useState } from 'react'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { StandaloneSwitch, SwitchFieldModular } from '../switch-field/switch-field'
@@ -11,7 +12,6 @@ import { efeitoSchema } from '@renderer/validators/schemas/efeito'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldsetModular } from '../fieldset/fieldset'
 import { TextFieldModular } from '../text-field/text-field'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { NumberFieldModular } from '../number-field/number-field'
 import { OptionModular, SelectFieldModular } from '../select-field/select-field'
 import {
@@ -84,11 +84,9 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                     legend={
                       <>
                         <p>Modificadores</p>
-                        <BotaoModular
-                          css="botaoAcompanhanteHeader"
-                          cor="cinzaEscuro02"
-                          font="inter"
-                          onClickEvent={() =>
+                        <Button
+                          className={btnStyles.botaoAcompanhanteHeader}
+                          onClick={() =>
                             append({
                               valor: 0,
                               tipo: 'atributos',
@@ -101,7 +99,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                         >
                           <img src="./icons/adicao.svg" alt="Adicionar" />
                           <p>Adicionar</p>
-                        </BotaoModular>{' '}
+                        </Button>
                       </>
                     }
                   >
@@ -169,14 +167,9 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                             name={`modificadores.${index}.ehPorNivel`}
                             label="P/ nivel?"
                           />
-                          <BotaoModular
-                            css="botaoAcaoPequeno"
-                            onClickEvent={() => remove(index)}
-                            font="inter"
-                            cor="cinzaEscuro03"
-                          >
+                          <Button className={styles.botaoAcao} onClick={() => remove(index)}>
                             <img src="./icons/delete.svg" alt="Remover modificador" />
-                          </BotaoModular>
+                          </Button>
                         </div>
                       ))}
                     </div>
@@ -189,13 +182,9 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
         </div>
         <div className={styles.interacoes}>
           <StandaloneSwitch name="estaAtivo" estadoInicial={efeito.estaAtivo} onChange={onChange} />
-          <BotaoModular
-            css="botaoAcaoPequeno"
-            cor="cinzaEscuro03"
-            onClickEvent={() => removerEfeito.mutate(efeito.id)}
-          >
-            <img src="./icons/delete.svg" alt="Remover efeito" />
-          </BotaoModular>
+          <Button className={styles.botaoAcao} onClick={() => removerEfeito.mutate(efeito.id)}>
+            <img src="./icons/delete.svg" alt="Remover modificador" />
+          </Button>
         </div>
       </div>
     </div>

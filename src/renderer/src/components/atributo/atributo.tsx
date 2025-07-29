@@ -8,9 +8,9 @@ import { atributoSchema } from '@renderer/validators/schemas/atributo'
 import { z } from 'zod'
 import { NumberFieldModular } from '../number-field/number-field'
 import { Button, DialogTrigger } from 'react-aria-components'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { FieldsetModular } from '../fieldset/fieldset'
 import { ModalModular } from '../modal/modal'
+import { RollBtn } from '../roll-btn/roll-btn'
 
 type AtributoProps = {
   atributo: IAtributo
@@ -45,9 +45,9 @@ export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
     <div className={styles.atributo} key={atributo.id}>
       <div className={styles.titulo}>
         <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
-          <BotaoModular css="botaoTimido" font="tormenta20Font" cor="transparente">
-            <p>{atributo.nome}</p>
-          </BotaoModular>
+          <Button className={`${styles.nome} inter`}>
+            <p>{atributo.nome.substring(0, 3)}</p>
+          </Button>
           <ModalModular
             titulo={`${atributo.nome}`}
             placement="center"
@@ -66,10 +66,7 @@ export const Atributo = ({ atributo }: AtributoProps): JSX.Element => {
           </ModalModular>
         </DialogTrigger>
       </div>
-      <BotaoModular css="rollBtn" cor="transparente" font="tormenta20Font">
-        <img src="./icons/d20 cinza.svg" alt="rolagem" />
-        <p>{atributo.valorAtual}</p>
-      </BotaoModular>
+      <RollBtn valor={atributo.valorAtual} />
     </div>
   )
 }

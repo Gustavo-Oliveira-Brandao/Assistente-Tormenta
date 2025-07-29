@@ -6,46 +6,28 @@ button:hover {
   }
 }
 
-.combate:last-child {
+.card:last-child {
   border: none;
-}
-
-.combate {
-  border-bottom: 1px solid variables.$cinza-escuro-3;
-}
-
-.geral {
-  border-bottom: 1px solid variables.$cinza-escuro-3;
-  border-right: 1px solid variables.$cinza-escuro-3;
-}
-
-.geral:nth-last-child(1),
-.geral:nth-last-child(2) {
-  border-bottom: none;
-}
-
-.geral:nth-child(even) {
-  border-right: none;
 }
 
 .card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  border-bottom: 1px solid variables.$borda-cinza-escuro;
+  padding: 3.5px;
   height: fit-content;
   width: 100%;
 }
 
-.titulo {
+.nome {
+  font-size: 12px;
   background-color: transparent;
-  p {
-    text-align: left;
-  }
+  font-weight: 500;
+}
 
-  .nome {
-    font-size: 13.5px;
-  }
+.nome:hover {
+  color: variables.$vermelho-claro;
 }
 
 .rolagem {

@@ -1,8 +1,8 @@
 export const atributosData = [
-  { value: 'forca', nome: 'Força' },
-  { value: 'destreza', nome: 'Destreza' },
-  { value: 'constituicao', nome: 'Constituição' },
-  { value: 'inteligencia', nome: 'Inteligência' },
-  { value: 'sabedoria', nome: 'Sabedoria' },
-  { value: 'carisma', nome: 'Carisma' }
+  { value: 'T20:atributos:for', nome: 'Força' },
+  { value: 'T20:atributos:des', nome: 'Destreza' },
+  { value: 'T20:atributos:con', nome: 'Constituição' },
+  { value: 'T20:atributos:int', nome: 'Inteligência' },
+  { value: 'T20:atributos:sab', nome: 'Sabedoria' },
+  { value: 'T20:atributos:car', nome: 'Carisma' }
 ]

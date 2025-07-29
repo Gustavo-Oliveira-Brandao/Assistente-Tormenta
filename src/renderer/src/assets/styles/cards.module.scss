@@ -9,7 +9,7 @@
   padding: 10px;
   width: 100%;
   height: fit-content;
-  border-bottom: 1px solid variables.$cinza-escuro-3;
+  border-bottom: 1px solid variables.$borda-cinza-escuro;
   display: flex;
   flex-direction: column;
 
@@ -42,12 +42,13 @@
         text-align: start;
         cursor: pointer;
         h3 {
-          font-size: 16px;
+          font-size: 13px;
+          font-weight: 500;
           text-transform: capitalize;
         }
         h4 {
-          font-size: 14px;
-          margin-top: 2px;
+          font-size: 12px;
+          text-transform: capitalize;
           color: variables.$cinza-claro-1;
         }
       }
@@ -96,19 +97,18 @@
 }
 
 .descricao {
-  font-size: 15px;
+  font-size: 14px;
   white-space: pre-line;
 }
 
 .subEfeitos {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  margin-top: 5px;
 
   .subEfeito {
     p {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 }
@@ -119,7 +119,7 @@
 }
 
 .destaque {
-  font-size: 14px;
+  font-size: 13px;
   color: variables.$vermelho-claro !important;
   text-transform: uppercase;
   font-weight: bold;

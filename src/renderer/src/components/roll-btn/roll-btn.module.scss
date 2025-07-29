@@ -1,0 +1,49 @@
+@use '@renderer/assets/variables.scss';
+
+.rollBtn {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+
+  img {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 0;
+    width: 35px;
+    height: 35px;
+
+  }
+
+  p {
+    font-size: 18px;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    margin-left: 0 !important;
+    color: #fff;
+  }
+}
+
+.rollBtn:hover {
+  color: variables.$amarelo-primario;
+  transform: scale(1.3);
+
+  img {
+    animation: roll 1.5s infinite linear;
+  }
+
+  p {
+    color: variables.$amarelo-primario;
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,6 +1,6 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
+import btnStyles from '@renderer/assets/styles/botoes.module.scss'
 import { JSX, useMemo } from 'react'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { Button, Disclosure, DisclosurePanel, Heading } from 'react-aria-components'
 import { IPoder } from '@renderer/@types/T20 GOTY/IPoder'
 import { DeepPartial } from '@renderer/@types/DeepPartial'
@@ -22,7 +22,6 @@ export const CardPoder = ({
   exibeFonte = false,
   nivel
 }: cardPoderProps): JSX.Element => {
-
   const descricao = useMemo(() => {
     if (poder.descricao == null) {
       return null
@@ -63,8 +62,8 @@ export const CardPoder = ({
           <img loading="lazy" src={`./icons/${poder.icone ?? 'arcanista'}.svg`} alt={poder.nome} />
 
           <Button slot="trigger" className={styles.nome}>
-            <h3 className="tormenta20Font">{poder.nome}</h3>
-            <h4 className="tormenta20Font">{poder.tempoExecucao}</h4>
+            <h3 className="inter">{poder.nome}</h3>
+            <h4 className="inter">{poder.tempoExecucao}</h4>
           </Button>
         </Heading>
         <div className={styles.interacoes}>
@@ -73,9 +72,9 @@ export const CardPoder = ({
           )}
           {exibeFonte && <p className={`${styles.categoria} tormenta20Font`}>{poder.fonte}</p>}
           {onInteract && (
-            <BotaoModular css="botaoAcaoPequeno" onClickEvent={onInteract} cor="cinzaEscuro03">
+            <Button className={btnStyles.botaoAcao} onClick={onInteract}>
               <img src={iconeBotaoInteracao} alt={poder.nome} />
-            </BotaoModular>
+            </Button>
           )}
         </div>
       </div>

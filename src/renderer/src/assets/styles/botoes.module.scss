@@ -1,0 +1,77 @@
+@use '@renderer/assets/variables.scss';
+
+.botaoAcao {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.botaoAcompanhanteHeader {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: transparent;
+
+  img {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 5px;
+  }
+
+  p {
+    font-size: 13.3px;
+  }
+
+  &:hover {
+    p {
+      color: variables.$amarelo-primario;
+    }
+  }
+}
+
+.botaoFooterModal {
+  width: 165px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: variables.$verde-primario;
+
+  p {
+    font-size: 13px;
+  }
+}
+
+.listItem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    p {
+      color: variables.$vermelho-claro;
+    }
+  }
+}

@@ -11,6 +11,24 @@ export type ICompendio = {
   equipamentos: DeepPartial<IEquipamento>[]
   poderes: DeepPartial<IPoder>[]
   magias: DeepPartial<IMagia>[]
+  pericias: IPericiaCompendio[]
+  atributos: IAtributoCompendio[]
+}
+
+export type IPericiaCompendio = {
+  key: string
+  nome: string
+  categoria: string
+  atributo: string
+  requerTreinamento: boolean
+  sofrePenalidadeArmadura: string
+  descricao: string
+}
+
+export type IAtributoCompendio = {
+  nome: string
+  key: string
+  descricao: string
 }
 
 export type IClasse = {

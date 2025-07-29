@@ -68,6 +68,7 @@ export const calcularStatus = (
     ...statusPersonagem,
     vidaMaxima:
       vidaInicial +
+      30 +
       (vidaTotalPorNivel +
         statusPersonagem.vidaMaximaBonus +
         (atributoVidaMaxima?.valorAtual ?? 0)) *
@@ -75,6 +76,7 @@ export const calcularStatus = (
       modificadoresVidaMaxima,
     manaMaxima:
       vidaInicial +
+      30 +
       (manaTotalPorNivel +
         statusPersonagem.manaMaximaBonus +
         (atributoManaMaxima?.valorAtual ?? 0)) *

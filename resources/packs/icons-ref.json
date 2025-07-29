@@ -318,6 +318,11 @@
     "author": "Lorc",
     "usedIcons": [
       {
+        "url": "https://game-icons.net/1x1/lorc/cog.html",
+        "iconName": "cog",
+        "newName": "config"
+      },
+      {
         "url": "https://game-icons.net/1x1/lorc/icicles-aura.html",
         "iconName": "icicles aura",
         "newName": "aura"

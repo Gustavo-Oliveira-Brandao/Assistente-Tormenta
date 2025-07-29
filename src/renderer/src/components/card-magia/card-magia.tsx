@@ -1,6 +1,6 @@
 import styles from '@renderer/assets/styles/cards.module.scss'
+import btnStyles from '@renderer/assets/styles/botoes.module.scss'
 import { JSX, useMemo } from 'react'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { Button, Disclosure, DisclosurePanel, Heading } from 'react-aria-components'
 import { DeepPartial } from '@renderer/@types/DeepPartial'
 import { IMagia } from '@renderer/@types/T20 GOTY/IMagia'
@@ -53,20 +53,16 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
             alt={props.magia.nome}
           />
           <Button slot="trigger" className={styles.nome}>
-            <h3 className="tormenta20Font">{props.magia.nome}</h3>
-            <h4 className="tormenta20Font">{props.magia.execucao}</h4>
+            <h3 className="inter">{props.magia.nome}</h3>
+            <h4 className="inter">{props.magia.execucao}</h4>
           </Button>
         </Heading>
         <div className={styles.interacoes}>
           <p className={`${styles.categoria} tormenta20Font`}>{props.magia.escola}</p>
           {props.onInteract && (
-            <BotaoModular
-              css="botaoAcaoPequeno"
-              onClickEvent={props.onInteract}
-              cor="cinzaEscuro03"
-            >
+            <Button className={btnStyles.botaoAcao} onClick={props.onInteract}>
               <img src={props.iconeBotaoInteracao} alt={props.magia.nome} />
-            </BotaoModular>
+            </Button>
           )}
         </div>
       </div>

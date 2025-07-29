@@ -11,21 +11,21 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  border-right: 1px solid variables.$cinza-escuro-3;
+  border-right: 1px solid variables.$borda-cinza-escuro;
 
   .titulo {
     height: 20px;
     margin-bottom: 5px;
-  }
-}
 
-.modificadores {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    .nome {
+      background-color: transparent;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
 
-  p {
-    font-size: 13px;
+    .nome:hover {
+      color: variables.$vermelho-claro;
+    }
   }
 }

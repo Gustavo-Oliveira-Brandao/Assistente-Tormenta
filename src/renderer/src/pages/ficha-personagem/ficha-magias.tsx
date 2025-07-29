@@ -1,10 +1,9 @@
 import { CardMagia } from '@renderer/components/card-magia/card-magia'
 import { useCriarMagia, useDeletarMagia } from '@renderer/hooks/mutations/useMagiaMutation'
-import { SecaoFicha } from '@renderer/templates/secao-ficha/secao-ficha'
 import { JSX, useMemo, useState } from 'react'
+import btnStyles from '@renderer/assets/styles/botoes.module.scss'
 import styles from './ficha-personagem.module.scss'
-import { DialogTrigger, DisclosureGroup } from 'react-aria-components'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
+import { Button, DialogTrigger, DisclosureGroup } from 'react-aria-components'
 import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 import { ModalModular } from '@renderer/components/modal/modal'
 import { OptionModular, StandaloneSelect } from '@renderer/components/select-field/select-field'
@@ -48,176 +47,159 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
 
   return (
     <div className={styles.secao}>
-      <SecaoFicha
-        header={
-          <>
-            <h2 className="tormenta20Font">1º circulo</h2>
-            <BotaoModular
-              css="botaoAcompanhanteHeader"
-              onClickEvent={() => {
-                setFiltroNivel(1)
-                setLojaEstaAberta(true)
-              }}
-              cor="transparente"
-              font="tormenta20Font"
-            >
-              <img src="./icons/busca.svg" alt="Buscar magias" />
-              <p>Buscar magias</p>
-            </BotaoModular>
-          </>
-        }
-        css="poderes"
-      >
-        <DisclosureGroup allowsMultipleExpanded>
-          {grimorio &&
-            grimorio.magias
-              .filter((magia) => magia.nivelCirculo == 1)
-              .map((magia) => (
-                <CardMagia
-                  key={magia.id}
-                  magia={magia}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                  onInteract={() => removerMagia.mutate(magia.id)}
-                />
-              ))}
-        </DisclosureGroup>
-      </SecaoFicha>
-      <SecaoFicha
-        header={
-          <>
-            <h2 className="tormenta20Font">2º circulo</h2>
-            <BotaoModular
-              css="botaoAcompanhanteHeader"
-              onClickEvent={() => {
-                setFiltroNivel(2)
-                setLojaEstaAberta(true)
-              }}
-              cor="transparente"
-              font="tormenta20Font"
-            >
-              <img src="./icons/busca.svg" alt="Buscar magias" />
-              <p>Buscar magias</p>
-            </BotaoModular>
-          </>
-        }
-        css="poderes"
-      >
-        <DisclosureGroup allowsMultipleExpanded>
-          {grimorio &&
-            grimorio.magias
-              .filter((magia) => magia.nivelCirculo == 2)
-              .map((magia) => (
-                <CardMagia
-                  key={magia.id}
-                  magia={magia}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                  onInteract={() => removerMagia.mutate(magia.id)}
-                />
-              ))}
-        </DisclosureGroup>
-      </SecaoFicha>
-      <SecaoFicha
-        header={
-          <>
-            <h2 className="tormenta20Font">3º circulo</h2>
-            <BotaoModular
-              css="botaoAcompanhanteHeader"
-              onClickEvent={() => {
-                setFiltroNivel(3)
-                setLojaEstaAberta(true)
-              }}
-              cor="transparente"
-              font="tormenta20Font"
-            >
-              <img src="./icons/busca.svg" alt="Buscar magias" />
-              <p>Buscar magias</p>
-            </BotaoModular>
-          </>
-        }
-        css="poderes"
-      >
-        <DisclosureGroup allowsMultipleExpanded>
-          {grimorio &&
-            grimorio.magias
-              .filter((magia) => magia.nivelCirculo == 3)
-              .map((magia) => (
-                <CardMagia
-                  key={magia.id}
-                  magia={magia}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                  onInteract={() => removerMagia.mutate(magia.id)}
-                />
-              ))}
-        </DisclosureGroup>
-      </SecaoFicha>
-      <SecaoFicha
-        header={
-          <>
-            <h2 className="tormenta20Font">4º circulo</h2>
-            <BotaoModular
-              css="botaoAcompanhanteHeader"
-              onClickEvent={() => {
-                setFiltroNivel(4)
-                setLojaEstaAberta(true)
-              }}
-              cor="transparente"
-              font="tormenta20Font"
-            >
-              <img src="./icons/busca.svg" alt="Buscar magias" />
-              <p>Buscar magias</p>
-            </BotaoModular>
-          </>
-        }
-        css="poderes"
-      >
-        <DisclosureGroup allowsMultipleExpanded>
-          {grimorio &&
-            grimorio.magias
-              .filter((magia) => magia.nivelCirculo == 4)
-              .map((magia) => (
-                <CardMagia
-                  key={magia.id}
-                  magia={magia}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                  onInteract={() => removerMagia.mutate(magia.id)}
-                />
-              ))}
-        </DisclosureGroup>
-      </SecaoFicha>
-      <SecaoFicha
-        header={
-          <>
-            <h2 className="tormenta20Font">5º circulo</h2>
-            <BotaoModular
-              css="botaoAcompanhanteHeader"
-              onClickEvent={() => {
-                setFiltroNivel(5)
-                setLojaEstaAberta(true)
-              }}
-              cor="transparente"
-              font="tormenta20Font"
-            >
-              <img src="./icons/busca.svg" alt="Buscar magias" />
-              <p>Buscar magias</p>
-            </BotaoModular>
-          </>
-        }
-        css="poderes"
-      >
-        <DisclosureGroup allowsMultipleExpanded>
-          {grimorio &&
-            grimorio.magias
-              .filter((magia) => magia.nivelCirculo == 5)
-              .map((magia) => (
-                <CardMagia
-                  key={magia.id}
-                  magia={magia}
-                  iconeBotaoInteracao="./icons/delete.svg"
-                  onInteract={() => removerMagia.mutate(magia.id)}
-                />
-              ))}
-        </DisclosureGroup>
-      </SecaoFicha>
+      <div className={styles.secaoTemplate}>
+        <div className={styles.multiHeader}>
+          <h2 className="tormenta20Font">1º circulo</h2>
+          <Button
+            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
+            onClick={() => {
+              setFiltroNivel(1)
+              setLojaEstaAberta(true)
+            }}
+          >
+            <img src="./icons/busca.svg" alt="Buscar magias" />
+            <p>Buscar magias</p>
+          </Button>
+        </div>
+        <div className={styles.conteudoSecao}>
+          <DisclosureGroup allowsMultipleExpanded>
+            {grimorio &&
+              grimorio.magias
+                .filter((magia) => magia.nivelCirculo == 1)
+                .map((magia) => (
+                  <CardMagia
+                    key={magia.id}
+                    magia={magia}
+                    iconeBotaoInteracao="./icons/delete.svg"
+                    onInteract={() => removerMagia.mutate(magia.id)}
+                  />
+                ))}
+          </DisclosureGroup>
+        </div>
+      </div>
+      <div className={styles.secaoTemplate}>
+        <div className={styles.multiHeader}>
+          <h2 className="tormenta20Font">2º circulo</h2>
+          <Button
+            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
+            onClick={() => {
+              setFiltroNivel(2)
+              setLojaEstaAberta(true)
+            }}
+          >
+            <img src="./icons/busca.svg" alt="Buscar magias" />
+            <p>Buscar magias</p>
+          </Button>
+        </div>
+        <div className={styles.conteudoSecao}>
+          <DisclosureGroup allowsMultipleExpanded>
+            {grimorio &&
+              grimorio.magias
+                .filter((magia) => magia.nivelCirculo == 2)
+                .map((magia) => (
+                  <CardMagia
+                    key={magia.id}
+                    magia={magia}
+                    iconeBotaoInteracao="./icons/delete.svg"
+                    onInteract={() => removerMagia.mutate(magia.id)}
+                  />
+                ))}
+          </DisclosureGroup>
+        </div>
+      </div>
+      <div className={styles.secaoTemplate}>
+        <div className={styles.multiHeader}>
+          {' '}
+          <h2 className="tormenta20Font">3º circulo</h2>
+          <Button
+            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
+            onClick={() => {
+              setFiltroNivel(3)
+              setLojaEstaAberta(true)
+            }}
+          >
+            <img src="./icons/busca.svg" alt="Buscar magias" />
+            <p>Buscar magias</p>
+          </Button>
+        </div>
+        <div className={styles.conteudoSecao}>
+          <DisclosureGroup allowsMultipleExpanded>
+            {grimorio &&
+              grimorio.magias
+                .filter((magia) => magia.nivelCirculo == 3)
+                .map((magia) => (
+                  <CardMagia
+                    key={magia.id}
+                    magia={magia}
+                    iconeBotaoInteracao="./icons/delete.svg"
+                    onInteract={() => removerMagia.mutate(magia.id)}
+                  />
+                ))}
+          </DisclosureGroup>
+        </div>
+      </div>
+      <div className={styles.secaoTemplate}>
+        <div className={styles.multiHeader}>
+          {' '}
+          <h2 className="tormenta20Font">4º circulo</h2>
+          <Button
+            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
+            onClick={() => {
+              setFiltroNivel(4)
+              setLojaEstaAberta(true)
+            }}
+          >
+            <img src="./icons/busca.svg" alt="Buscar magias" />
+            <p>Buscar magias</p>
+          </Button>
+        </div>
+        <div className={styles.conteudoSecao}>
+          <DisclosureGroup allowsMultipleExpanded>
+            {grimorio &&
+              grimorio.magias
+                .filter((magia) => magia.nivelCirculo == 4)
+                .map((magia) => (
+                  <CardMagia
+                    key={magia.id}
+                    magia={magia}
+                    iconeBotaoInteracao="./icons/delete.svg"
+                    onInteract={() => removerMagia.mutate(magia.id)}
+                  />
+                ))}
+          </DisclosureGroup>
+        </div>
+      </div>
+      <div className={styles.secaoTemplate}>
+        <div className={styles.multiHeader}>
+          {' '}
+          <h2 className="tormenta20Font">5º circulo</h2>
+          <Button
+            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
+            onClick={() => {
+              setFiltroNivel(5)
+              setLojaEstaAberta(true)
+            }}
+          >
+            <img src="./icons/busca.svg" alt="Buscar magias" />
+            <p>Buscar magias</p>
+          </Button>
+        </div>
+        <div className={styles.conteudoSecao}>
+          <DisclosureGroup allowsMultipleExpanded>
+            {grimorio &&
+              grimorio.magias
+                .filter((magia) => magia.nivelCirculo == 5)
+                .map((magia) => (
+                  <CardMagia
+                    key={magia.id}
+                    magia={magia}
+                    iconeBotaoInteracao="./icons/delete.svg"
+                    onInteract={() => removerMagia.mutate(magia.id)}
+                  />
+                ))}
+          </DisclosureGroup>
+        </div>
+      </div>
       <DialogTrigger isOpen={lojaEstaAberta} onOpenChange={setLojaEstaAberta}>
         <ModalModular
           placement="center"

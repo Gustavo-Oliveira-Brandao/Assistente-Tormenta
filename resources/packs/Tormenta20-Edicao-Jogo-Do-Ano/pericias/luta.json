@@ -1,11 +1,9 @@
 {
   "key": "T20:pericias:luta",
   "nome": "Luta",
-  "treinamento": "destreinado",
   "categoria": "combate",
   "atributo": "T20:atributos:for",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
-  "descricao": "",
-  "bonus": []
+  "descricao": ""
 }

@@ -1,7 +1,6 @@
 import { IPericia } from '@renderer/@types/T20 GOTY/IPericia'
 import { JSX, useState } from 'react'
 import styles from './pericia.module.scss'
-import { BotaoModular } from '../botao-modular/botao-modular'
 import { Button, DialogTrigger } from 'react-aria-components'
 import { FormProvider, useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -15,15 +14,14 @@ import { NumberFieldModular } from '../number-field/number-field'
 import { SwitchFieldModular } from '../switch-field/switch-field'
 import { TextFieldModular } from '../text-field/text-field'
 import { atributosData } from '@renderer/utils/common data/atributosData'
-import { grausTreinamentoData } from '@renderer/utils/common data/treinamentosData'
+import { RollBtn } from '../roll-btn/roll-btn'
 
 type periciaProps = {
   pericia: IPericia
   exibeTreinamento: boolean
-  css: string
 }
 
-export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.Element => {
+export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Element => {
   const methods = useForm<z.infer<typeof periciaSchema>>({
     defaultValues: {
       ...pericia
@@ -49,11 +47,11 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
 
   return (
     <>
-      <div className={`${styles.card} ${styles[css]}`}>
+      <div className={`${styles.card}`}>
         <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
-          <BotaoModular css="botaoTimido" cor="transparente" font="tormenta20Font">
+          <Button className={`${styles.nome} inter`}>
             <p>{pericia.nome}</p>
-          </BotaoModular>
+          </Button>
           <ModalModular
             placement="center"
             height="fit-content"
@@ -70,21 +68,17 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
                     {atributosData.map((opt) => (
                       <OptionModular key={opt.value} name={opt.value} value={opt.nome} />
                     ))}
-                  </SelectFieldModular>{' '}
+                  </SelectFieldModular>
                   <SwitchFieldModular
                     name="sofrePenalidadeArmadura"
                     label="Penalidade de armadura?"
                   />
-                </FieldsetModular>{' '}
+                </FieldsetModular>
                 <FieldsetModular legend="Valores">
                   <NumberFieldModular name="bonus" label="Bônus" css="start" placeholder="0" />
                 </FieldsetModular>
                 <FieldsetModular legend="Treinamento">
-                  <SelectFieldModular label="Grau de treinamento" name="treinamento">
-                    {grausTreinamentoData.map((opt) => (
-                      <OptionModular key={opt.value} value={opt.nome} name={opt.value} />
-                    ))}
-                  </SelectFieldModular>
+                  <SwitchFieldModular name="ehTreinado" label="É treinado?" />
                   <SwitchFieldModular name="requerTreinamento" label="Requer treinamento?" />
                 </FieldsetModular>
                 <Button type="submit">Salvar</Button>
@@ -94,14 +88,11 @@ export const Pericia = ({ pericia, css, exibeTreinamento }: periciaProps): JSX.E
         </DialogTrigger>
         <div className={styles.rolagem}>
           {exibeTreinamento && (
-            <p className={styles.treinamento + ' tormenta20Font'}>
+            <p className={styles.treinamento + ' inter'}>
               {pericia.ehTreinado ? 'Treinado' : 'Destreinado'}
             </p>
           )}
-          <BotaoModular css="rollBtn" font="tormenta20Font" cor="transparente">
-            <img src="./icons/d20 cinza.svg" alt="rolagem" />
-            <p>{pericia.valorAtual}</p>
-          </BotaoModular>
+          <RollBtn valor={pericia.valorAtual} />
         </div>
       </div>
     </>

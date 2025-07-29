@@ -20,9 +20,9 @@ export const prisma = new PrismaClient()
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1060,
+    width: 1000,
     height: 670,
-    minWidth: 1060,
+    minWidth: 1000,
     minHeight: 670,
     show: false,
     autoHideMenuBar: true,

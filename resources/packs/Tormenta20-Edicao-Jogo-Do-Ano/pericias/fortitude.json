@@ -1,11 +1,9 @@
 {
   "key": "T20:pericias:fort",
   "nome": "Fortitude",
-  "treinamento": "destreinado",
   "categoria": "testeResistencia",
   "atributo": "T20:atributos:con",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
-  "descricao": "",
-  "bonus": []
+  "descricao": ""
 }

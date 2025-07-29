@@ -1,11 +1,9 @@
 {
   "key": "T20:pericias:vont",
   "nome": "Vontade",
-  "treinamento": "destreinado",
   "categoria": "testeResistencia",
   "atributo": "T20:atributos:sab",
   "requerTreinamento": false,
   "sofrePenalidadeArmadura": false,
-  "descricao": "",
-  "bonus": []
+  "descricao": ""
 }

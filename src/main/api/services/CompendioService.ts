@@ -1,7 +1,15 @@
 import { app } from 'electron'
 import path from 'path'
 import { extrairJson } from './JsonService'
-import { ICompendio, IClasse, IRaca, IDivindade, IOrigem } from '../../@types/T20 GOTY/ICompendio'
+import {
+  ICompendio,
+  IClasse,
+  IRaca,
+  IDivindade,
+  IOrigem,
+  IAtributoCompendio,
+  IPericiaCompendio
+} from '../../@types/T20 GOTY/ICompendio'
 import { IPoder } from '../../@types/T20 GOTY/IPoder'
 import { IEquipamento } from '../../@types/T20 GOTY/IInventario'
 import { IMagia } from '../../@types/T20 GOTY/IMagia'
@@ -15,6 +23,8 @@ export const getCompendioGeral = async (): Promise<ICompendio> => {
     const magias = await getCompendioMagias()
     const origens = await getCompendioOrigens()
     const divindades = await getCompendioDivindades()
+    const atributos = await getCompendioAtributos()
+    const pericias = await getCompendioPericias()
 
     const compendio: ICompendio = {
       racas: racas,
@@ -23,13 +33,47 @@ export const getCompendioGeral = async (): Promise<ICompendio> => {
       equipamentos: equipamentos,
       magias: magias,
       divindades: divindades,
-      origens: origens
+      origens: origens,
+      atributos: atributos,
+      pericias: pericias
     }
 
     return compendio
   } catch (err) {
     console.log(err)
     throw new Error('Erro ao recuperar compêndio.')
+  }
+}
+
+const getCompendioAtributos = async (): Promise<IAtributoCompendio[]> => {
+  try {
+    const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'atributos')
+    const caminhoBase = app.isPackaged
+      ? path.join(process.resourcesPath, pasta)
+      : path.join(app.getAppPath(), 'resources', pasta)
+
+    const result = await extrairJson<IAtributoCompendio>(caminhoBase)
+
+    return result
+  } catch (err) {
+    console.log(err)
+    throw new Error('Erro ao recuperar atributos.')
+  }
+}
+
+const getCompendioPericias = async (): Promise<IPericiaCompendio[]> => {
+  try {
+    const pasta = path.join('packs', 'Tormenta20-Edicao-Jogo-Do-Ano', 'pericias')
+    const caminhoBase = app.isPackaged
+      ? path.join(process.resourcesPath, pasta)
+      : path.join(app.getAppPath(), 'resources', pasta)
+
+    const result = await extrairJson<IPericiaCompendio>(caminhoBase)
+
+    return result
+  } catch (err) {
+    console.log(err)
+    throw new Error('Erro ao recuperar atributos.')
   }
 }
 

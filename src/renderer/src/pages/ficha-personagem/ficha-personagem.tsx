@@ -5,9 +5,9 @@ import { SidebarFicha } from '@renderer/templates/sidebar/sidebar-ficha'
 import { FichaAtributos } from './ficha-atributos'
 import { FichaPoderes } from './ficha-poderes'
 import { FichaMagias } from './ficha-magias'
-import { BotaoModular } from '@renderer/components/botao-modular/botao-modular'
 import { FichaEfeitos } from './ficha-efeitos'
 import { useParams } from 'react-router-dom'
+import { Button } from 'react-aria-components'
 
 export const FichaPersonagem = (): JSX.Element => {
   const params = useParams()
@@ -22,46 +22,34 @@ export const FichaPersonagem = (): JSX.Element => {
             <SidebarFicha personagem={personagem} />
             <div className={styles.conteudo}>
               <nav className={styles.navButtons}>
-                <BotaoModular
-                  css="botaoExpansivel"
-                  onClickEvent={() => setAba('ATRIBUTOS')}
-                  estaAtivo={aba == 'ATRIBUTOS' ? true : false}
-                  cor="cinzaEscuro02"
-                  font="tormenta20Font"
+                <Button
+                  className={`${styles.botaoExpansivel} ${aba == 'ATRIBUTOS' ? styles.ativo : ''}`}
+                  onClick={() => setAba('ATRIBUTOS')}
                 >
                   <img src="./icons/arsenal.svg" alt="Atributos" />
-                  {aba == 'ATRIBUTOS' && <p>Atributos</p>}
-                </BotaoModular>
-                <BotaoModular
-                  css="botaoExpansivel"
-                  onClickEvent={() => setAba('PODERES')}
-                  estaAtivo={aba == 'PODERES' ? true : false}
-                  cor="cinzaEscuro02"
-                  font="tormenta20Font"
+                  {aba == 'ATRIBUTOS' && <p className="tormenta20Font">Atributos</p>}
+                </Button>
+                <Button
+                  className={`${styles.botaoExpansivel} ${aba == 'PODERES' ? styles.ativo : ''}`}
+                  onClick={() => setAba('PODERES')}
                 >
                   <img src="./icons/thyatis.svg" alt="poderes" />
-                  {aba == 'PODERES' && <p>Poderes</p>}
-                </BotaoModular>
-                <BotaoModular
-                  css="botaoExpansivel"
-                  onClickEvent={() => setAba('MAGIAS')}
-                  estaAtivo={aba == 'MAGIAS' ? true : false}
-                  cor="cinzaEscuro02"
-                  font="tormenta20Font"
+                  {aba == 'PODERES' && <p className="tormenta20Font">Poderes</p>}
+                </Button>
+                <Button
+                  className={`${styles.botaoExpansivel} ${aba == 'MAGIAS' ? styles.ativo : ''}`}
+                  onClick={() => setAba('MAGIAS')}
                 >
                   <img src="./icons/tanna-toh.svg" alt="magias" />
-                  {aba == 'MAGIAS' && <p>Magias</p>}
-                </BotaoModular>
-                <BotaoModular
-                  css="botaoExpansivel"
-                  onClickEvent={() => setAba('EFEITOS')}
-                  estaAtivo={aba == 'EFEITOS' ? true : false}
-                  cor="cinzaEscuro02"
-                  font="tormenta20Font"
+                  {aba == 'MAGIAS' && <p className="tormenta20Font">Magias</p>}
+                </Button>
+                <Button
+                  className={`${styles.botaoExpansivel} ${aba == 'EFEITOS' ? styles.ativo : ''}`}
+                  onClick={() => setAba('EFEITOS')}
                 >
                   <img src="./icons/grimorio.svg" alt="efeitos" />
-                  {aba == 'EFEITOS' && <p>Efeitos</p>}
-                </BotaoModular>
+                  {aba == 'EFEITOS' && <p className="tormenta20Font">Efeitos</p>}
+                </Button>
               </nav>
               {aba == 'ATRIBUTOS' && <FichaAtributos personagem={personagem} />}
               {aba === 'PODERES' && <FichaPoderes personagem={personagem} />}

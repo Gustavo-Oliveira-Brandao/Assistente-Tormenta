@@ -5,8 +5,55 @@
   font-size: 13px;
 }
 
+.atributos {
+  display: flex;
+
+  background-color: variables.$cinza-escuro-2;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
 .botaoTimido:hover {
   color: variables.$amarelo-primario;
+}
+
+.secaoTemplate {
+  width: 100%;
+
+  .header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$vermelho-escuro;
+    border-radius: 5px 5px 0 0;
+    padding: 15px;
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  .multiHeader {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$vermelho-escuro;
+    border-radius: 5px 5px 0 0;
+    padding: 15px;
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  .conteudoSecao {
+    background-color: variables.$cinza-escuro-2;
+    border-radius: 0 0 5px 5px;
+  }
 }
 
 .ficha {
@@ -35,6 +82,27 @@
       position: sticky;
       background-color: variables.$cinza-escuro-2;
       top: 0;
+
+      .botaoExpansivel {
+        background-color: variables.$cinza-escuro-2;
+        min-width: 50px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px 0 15px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+      }
+
+      .ativo {
+        background-color: variables.$vermelho-escuro !important;
+      }
 
       button:first-child {
         border-radius: 0 0 0 20px;
@@ -67,15 +135,17 @@
   flex-direction: column;
   gap: 15px;
 
-  .partePericias {
+  .pericias {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    gap: 15px;
 
-    .combate {
-      width: 100%;
+    .gerais,
+    .outros {
+      width: 50%;
       display: flex;
+      flex-direction: column;
       gap: 15px;
-      margin-bottom: 15px;
     }
   }
 }

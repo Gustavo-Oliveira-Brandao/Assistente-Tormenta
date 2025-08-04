@@ -54,7 +54,7 @@
       }
       .nome:hover {
         h3 {
-          color: variables.$amarelo-primario;
+          color: variables.$vermelho-claro;
         }
       }
     }
@@ -137,21 +137,7 @@
   gap: 10px;
 
   .categoria {
-    font-size: 15px;
+    font-size: 14px;
     color: variables.$cinza-claro-1;
-  }
-}
-
-.modificadores {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-
-  .modificador {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
   }
 }

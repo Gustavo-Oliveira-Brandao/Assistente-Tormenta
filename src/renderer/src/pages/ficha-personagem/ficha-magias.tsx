@@ -50,16 +50,6 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
           <h2 className="tormenta20Font">1º circulo</h2>
-          <Button
-            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
-            onClick={() => {
-              setFiltroNivel(1)
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="Buscar magias" />
-            <p>Buscar magias</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>
@@ -80,16 +70,6 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
           <h2 className="tormenta20Font">2º circulo</h2>
-          <Button
-            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
-            onClick={() => {
-              setFiltroNivel(2)
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="Buscar magias" />
-            <p>Buscar magias</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>
@@ -109,18 +89,7 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
       </div>
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
-          {' '}
           <h2 className="tormenta20Font">3º circulo</h2>
-          <Button
-            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
-            onClick={() => {
-              setFiltroNivel(3)
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="Buscar magias" />
-            <p>Buscar magias</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>
@@ -140,18 +109,7 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
       </div>
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
-          {' '}
           <h2 className="tormenta20Font">4º circulo</h2>
-          <Button
-            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
-            onClick={() => {
-              setFiltroNivel(4)
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="Buscar magias" />
-            <p>Buscar magias</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>
@@ -171,18 +129,7 @@ export const FichaMagias = ({ personagem }: FichaMagiasProps): JSX.Element => {
       </div>
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
-          {' '}
           <h2 className="tormenta20Font">5º circulo</h2>
-          <Button
-            className={`${btnStyles.botaoAcompanhanteHeader} inter`}
-            onClick={() => {
-              setFiltroNivel(5)
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="Buscar magias" />
-            <p>Buscar magias</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>

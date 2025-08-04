@@ -60,7 +60,7 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
         <div className={styles.interacoes}>
           <p className={`${styles.categoria} tormenta20Font`}>{props.magia.escola}</p>
           {props.onInteract && (
-            <Button className={btnStyles.botaoAcao} onClick={props.onInteract}>
+            <Button className={btnStyles.botaoAcao} onPress={props.onInteract}>
               <img src={props.iconeBotaoInteracao} alt={props.magia.nome} />
             </Button>
           )}
@@ -72,7 +72,7 @@ export const CardMagia = (props: cardMagiaProps): JSX.Element => {
           <p className="tormenta20Font">{props.magia.tradicao}</p>
           <p className="tormenta20Font">{props.magia.escola}</p>
         </div>
-        <p className={`${styles.descricao} inter`}>{descricao}</p>
+        {descricao}
         {props.magia.aprimoramentos && props.magia.aprimoramentos.length !== 0 && (
           <div className={styles.subEfeitos}>
             {props.magia.aprimoramentos.map((aprimoramento, index) => (

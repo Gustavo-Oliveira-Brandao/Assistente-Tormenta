@@ -10,7 +10,7 @@ export const RollBtn = ({ valor }: RollBtnProps): JSX.Element => {
   return (
     <Button className={styles.rollBtn}>
       <img src="./icons/d20 cinza.svg" alt="Rolagem" />
-      <p className="tormenta20Font">{valor}</p>
+      <p className="inter">{valor}</p>
     </Button>
   )
 }

@@ -36,9 +36,8 @@
   height: 2rem;
   font-size: 13px;
   font-weight: normal;
-  background-color: transparent;
+  background-color: variables.$cinza-escuro-1;
   color: variables.$cinza-claro-1;
-  background-color: transparent;
 
   text-align: center;
   font-variant-numeric: tabular-nums;
@@ -67,7 +66,7 @@
   background-clip: padding-box;
   color: variables.$cinza-claro-1;
   user-select: none;
-  background-color: transparent;
+  background-color: variables.$cinza-escuro-1;
 }
 
 .diminuir {

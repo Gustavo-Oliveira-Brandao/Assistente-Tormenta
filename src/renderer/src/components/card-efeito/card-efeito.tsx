@@ -86,7 +86,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                         <p>Modificadores</p>
                         <Button
                           className={btnStyles.botaoAcompanhanteHeader}
-                          onClick={() =>
+                          onPress={() =>
                             append({
                               valor: 0,
                               tipo: 'atributos',
@@ -167,7 +167,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
                             name={`modificadores.${index}.ehPorNivel`}
                             label="P/ nivel?"
                           />
-                          <Button className={styles.botaoAcao} onClick={() => remove(index)}>
+                          <Button className={styles.botaoAcao} onPress={() => remove(index)}>
                             <img src="./icons/delete.svg" alt="Remover modificador" />
                           </Button>
                         </div>
@@ -182,7 +182,7 @@ export const CardEfeito = ({ efeito }: CardEfeitosProps): JSX.Element => {
         </div>
         <div className={styles.interacoes}>
           <StandaloneSwitch name="estaAtivo" estadoInicial={efeito.estaAtivo} onChange={onChange} />
-          <Button className={styles.botaoAcao} onClick={() => removerEfeito.mutate(efeito.id)}>
+          <Button className={styles.botaoAcao} onPress={() => removerEfeito.mutate(efeito.id)}>
             <img src="./icons/delete.svg" alt="Remover modificador" />
           </Button>
         </div>

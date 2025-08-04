@@ -21,10 +21,15 @@ type atualizarEfeitoMutation = {
   efeito: IEfeito
 }
 
-export const useAtualizarEfeito = (): UseMutationResult<void, Error, atualizarEfeitoMutation, unknown> => {
+export const useAtualizarEfeito = (): UseMutationResult<
+  void,
+  Error,
+  atualizarEfeitoMutation,
+  unknown
+> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: ({id, efeito}) => atualizarEfeito(id, efeito),
+    mutationFn: ({ id, efeito }) => atualizarEfeito(id, efeito),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['personagem'] })
   })
 }

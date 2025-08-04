@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-button{
+button {
   border: none;
 }
 
@@ -123,12 +123,12 @@ input {
 }
 
 .tormenta20Font {
-  color: white;
+  color: #eee;
   font-family: 'tormenta20font', sans-serif;
 }
 
 .inter {
-  color: white;
+  color: #eee;
   font-family: 'inter', sans-serif;
   line-height: 1.5;
 }
@@ -138,7 +138,7 @@ input {
 }
 
 body {
-  background-color: variables.$cinza-escuro-2;
+  background-color: variables.$cinza-escuro-1;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -166,7 +166,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: variables.$verde-primario;
+  background-color: variables.$verde-secundario;
   border-radius: 5px;
   font-family: 'tormenta20Font';
   color: white;

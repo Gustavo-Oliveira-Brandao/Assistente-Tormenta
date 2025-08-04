@@ -72,7 +72,7 @@ export const CardPoder = ({
           )}
           {exibeFonte && <p className={`${styles.categoria} tormenta20Font`}>{poder.fonte}</p>}
           {onInteract && (
-            <Button className={btnStyles.botaoAcao} onClick={onInteract}>
+            <Button className={btnStyles.botaoAcao} onPress={onInteract}>
               <img src={iconeBotaoInteracao} alt={poder.nome} />
             </Button>
           )}
@@ -90,7 +90,7 @@ export const CardPoder = ({
                 </p>
               ))}
           </div>
-          <p className={`${styles.descricao} inter`}>{descricao}</p>
+          {descricao}
         </DisclosurePanel>
       )}
     </Disclosure>

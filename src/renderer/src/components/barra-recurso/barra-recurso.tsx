@@ -20,32 +20,19 @@ export const BarraRecurso = (props: BarraRecursoProps): JSX.Element => {
     }
   }, [props.valorAtual, props.valorMaximo])
 
-  const calcularCorRecurso = (): string => {
-    if (larguraBarra == 100) {
-      return `${props.categoria}Full`
-    }
-    if (larguraBarra > 75) {
-      return `${props.categoria}Full`
-    }
-    if (larguraBarra > 25) {
-      return `${props.categoria}AboveHalf`
-    }
-    return `${props.categoria}AlmostEmpty`
-  }
-
   return (
     <Button className={styles.button}>
       <div className={styles.barraWrapper}>
-        <div className={`${styles.texto} tormenta20Font`}>
+        <div className={`${styles.texto} inter`}>
           <p>
-            {props.categoria}: {props.valorAtual}/{props.valorMaximo}
+            {props.valorAtual}/{props.valorMaximo}
           </p>
           {props.valorTemporario != null && props.valorTemporario > 0 && (
             <p>Temp: {props.valorTemporario}</p>
           )}
         </div>
         <div
-          className={`${styles.barra} ${styles[calcularCorRecurso()]} tormenta20Font`}
+          className={`${styles.barra} ${styles[props.categoria]}`}
           style={{ width: `${larguraBarra}%` }}
         ></div>
       </div>

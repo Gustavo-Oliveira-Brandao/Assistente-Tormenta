@@ -20,16 +20,25 @@ button:hover {
   width: 100%;
 }
 
-.nome {
-  font-size: 12px;
+.titulo {
   background-color: transparent;
-  font-weight: 500;
+  text-align: start;
+
+  .nome {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .subtexto {
+    font-size: 11px;
+    color: variables.$cinza-claro-1;
+  }
 }
 
-.nome:hover {
-  color: variables.$vermelho-claro;
+.titulo:hover {
+  .nome {
+    color: variables.$vermelho-claro;
+  }
 }
-
 .rolagem {
   display: flex;
   width: fit-content;

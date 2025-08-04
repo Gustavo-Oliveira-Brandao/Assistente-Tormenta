@@ -49,8 +49,14 @@ export const Pericia = ({ pericia, exibeTreinamento }: periciaProps): JSX.Elemen
     <>
       <div className={`${styles.card}`}>
         <DialogTrigger isOpen={edicaoEstaAberta} onOpenChange={setEdicaoEstaAberta}>
-          <Button className={`${styles.nome} inter`}>
-            <p>{pericia.nome}</p>
+          <Button className={`${styles.titulo} inter`}>
+            <p className={styles.nome}>
+              {pericia.nome}
+              {pericia.requerTreinamento ? '*' : ''}
+            </p>
+            <p className={styles.subtexto}>
+              {pericia.sofrePenalidadeArmadura ? 'Penalidade de armadura' : ''}
+            </p>
           </Button>
           <ModalModular
             placement="center"

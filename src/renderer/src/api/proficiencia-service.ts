@@ -8,7 +8,10 @@ export const criarProficiencia = async (
   await window.api.proficiencias.postProficiencia(proficiencia, idPersonagem)
 }
 
-export const atualizarProficiencia = async (id: number, proficiencia: IProficiencia): Promise<void> => {
+export const atualizarProficiencia = async (
+  id: number,
+  proficiencia: IProficiencia
+): Promise<void> => {
   await window.api.proficiencias.putProficiencia(id, proficiencia)
 }
 

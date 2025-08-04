@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: variables.$cinza-escuro-1;
 
   &[data-focus-visible] {
     outline: 2px solid variables.$vermelho-primario;

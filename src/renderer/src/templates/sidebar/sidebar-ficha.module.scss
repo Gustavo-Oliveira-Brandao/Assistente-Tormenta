@@ -1,35 +1,28 @@
 @use '@renderer/assets/variables.scss';
 
 .sidebar {
-  width: 300px;
-  height: 100vh;
-  background-color: variables.$cinza-escuro-2;
+  width: 280px;
+  height: fit-content;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 15px;
 
   .personagemInfo {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .personagemChamada {
-      display: flex;
-      justify-content: space-between;
-      height: 40px;
-      background-color: variables.$vermelho-escuro;
-      align-items: center;
-      padding: 0 5px 0 8px;
+    .personagemNome {
+      text-align: center;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 10px;
 
-      .personagemNome {
-        cursor: pointer;
-        font-size: 14px;
-        width: 80%;
-
-        &:hover {
-          p {
-            color: variables.$amarelo-primario;
-          }
+      &:hover {
+        p {
+          color: variables.$vermelho-claro;
         }
       }
 
@@ -58,8 +51,18 @@
     }
     .recursos {
       width: 100%;
+      gap: 10px;
       display: flex;
+      margin-top: 10px;
       flex-direction: column;
+
+      .recurso {
+        width: 100%;
+        display: flex;
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 5px;
+      }
     }
   }
 }

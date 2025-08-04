@@ -24,28 +24,28 @@ export const FichaPersonagem = (): JSX.Element => {
               <nav className={styles.navButtons}>
                 <Button
                   className={`${styles.botaoExpansivel} ${aba == 'ATRIBUTOS' ? styles.ativo : ''}`}
-                  onClick={() => setAba('ATRIBUTOS')}
+                  onPress={() => setAba('ATRIBUTOS')}
                 >
                   <img src="./icons/arsenal.svg" alt="Atributos" />
                   {aba == 'ATRIBUTOS' && <p className="tormenta20Font">Atributos</p>}
                 </Button>
                 <Button
                   className={`${styles.botaoExpansivel} ${aba == 'PODERES' ? styles.ativo : ''}`}
-                  onClick={() => setAba('PODERES')}
+                  onPress={() => setAba('PODERES')}
                 >
                   <img src="./icons/thyatis.svg" alt="poderes" />
                   {aba == 'PODERES' && <p className="tormenta20Font">Poderes</p>}
                 </Button>
                 <Button
                   className={`${styles.botaoExpansivel} ${aba == 'MAGIAS' ? styles.ativo : ''}`}
-                  onClick={() => setAba('MAGIAS')}
+                  onPress={() => setAba('MAGIAS')}
                 >
                   <img src="./icons/tanna-toh.svg" alt="magias" />
                   {aba == 'MAGIAS' && <p className="tormenta20Font">Magias</p>}
                 </Button>
                 <Button
                   className={`${styles.botaoExpansivel} ${aba == 'EFEITOS' ? styles.ativo : ''}`}
-                  onClick={() => setAba('EFEITOS')}
+                  onPress={() => setAba('EFEITOS')}
                 >
                   <img src="./icons/grimorio.svg" alt="efeitos" />
                   {aba == 'EFEITOS' && <p className="tormenta20Font">Efeitos</p>}

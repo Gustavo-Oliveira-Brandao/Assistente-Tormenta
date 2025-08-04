@@ -1,24 +1,62 @@
 @use '@renderer/assets/variables.scss';
 
 .fotoPersonagem {
-  width: 100%;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   position: relative;
-  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid variables.$ouro;
 
-  img {
+  .foto {
     width: 100%;
+    border-radius: 100%;
     object-fit: cover;
+    cursor: pointer;
     height: 100%;
+    transition: 0.2s opacity ease;
   }
 
-  .opacidade {
-    width: 100%;
-    height: 100%;
+  .foto:hover {
+    opacity: 0.5;
+  }
+
+  .nivel {
     position: absolute;
-    background-color: #2e2e2e77;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    background-color: variables.$cinza-escuro-2;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    right: -10px;
+    bottom: 0;
+    font-weight: bold;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      position: absolute;
+      top: 50%;
+      font-size: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .nivel:hover {
+    p {
+      color: variables.$vermelho-claro;
+    }
   }
 }

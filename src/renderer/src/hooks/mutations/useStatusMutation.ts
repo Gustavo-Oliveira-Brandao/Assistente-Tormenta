@@ -7,7 +7,12 @@ type atualizarStatusMutation = {
   status: IStatus
 }
 
-export const useAtualizarStatus = (): UseMutationResult<void, Error, atualizarStatusMutation, unknown> => {
+export const useAtualizarStatus = (): UseMutationResult<
+  void,
+  Error,
+  atualizarStatusMutation,
+  unknown
+> => {
   const queryClient = useQueryClient()
   return useMutation({
     mutationFn: ({ id, status }) => atualizarStatus(id, status),

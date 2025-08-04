@@ -12,8 +12,7 @@ type criarPoderVariaveis = {
 export const useCriarPoder = (): UseMutationResult<void, Error, criarPoderVariaveis, unknown> => {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: ({ poder, nivel, idPersonagem }) =>
-      criarPoder(poder, nivel, idPersonagem),
+    mutationFn: ({ poder, nivel, idPersonagem }) => criarPoder(poder, nivel, idPersonagem),
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['poderesPersonagem'] })
   })
 }

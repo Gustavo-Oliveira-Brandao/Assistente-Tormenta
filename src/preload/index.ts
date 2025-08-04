@@ -1,19 +1,25 @@
 import { contextBridge, ipcRenderer } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
+import { Atributo, Deslocamento, Personagem, Proficiencia } from '@prisma/client'
 import {
   IPersonagemFinal,
   IPersonagemResponseManyDTO
-} from '../main/@types/T20 GOTY/IPersonagem'
-import { Atributo, Deslocamento, Personagem, Proficiencia } from '@prisma/client'
-import { IRacaRequestPutDTO } from '../main/@types/T20 GOTY/IRaca'
-import { IClasseRequestPostDTO, IClasseRequestPutDTO } from '../main/@types/T20 GOTY/IClasse'
-import { IEfeito, IEfeitoPostRequestDTO } from '../main/@types/T20 GOTY/IEfeito'
-import { IGrimorio, IMagia, IMagiaPostRequestDTO } from '../main/@types/T20 GOTY/IMagia'
-import { ICompendio } from '../main/@types/T20 GOTY/ICompendio'
-import { IPoder, IPoderPostRequestDTO } from '../main/@types/T20 GOTY/IPoder'
-import { IProficienciaPostRequestDTO } from '../main/@types/T20 GOTY/IProficiencia'
-import { IPericia } from '../main/@types/T20 GOTY/IPericia'
-import { IStatus } from '../main/@types/T20 GOTY/IStatus'
+} from '../main/Tormenta20.Application/DTOs/IPersonagem'
+import { IRacaRequestPutDTO } from '../main/Tormenta20.Application/DTOs/IRaca'
+import {
+  IClasseRequestPostDTO,
+  IClasseRequestPutDTO
+} from '../main/Tormenta20.Application/DTOs/IClasse'
+import { IEfeitoPostRequestDTO } from '../main/Tormenta20.Application/DTOs/IEfeito'
+import { IEfeito } from '../main/Tormenta20.Domain/@types/IEfeito'
+import { IGrimorio, IMagia } from '../main/Tormenta20.Domain/@types/IMagia'
+import { IMagiaPostRequestDTO } from '../main/Tormenta20.Application/DTOs/IMagia'
+import { ICompendio } from '../main/Tormenta20.Domain/@types/ICompendio'
+import { IPoder } from '../main/Tormenta20.Domain/@types/IPoder'
+import { IPoderPostRequestDTO } from '../main/Tormenta20.Application/DTOs/IPoder'
+import { IProficienciaPostRequestDTO } from '../main/Tormenta20.Application/DTOs/IProficiencia'
+import { IPericia } from '../main/Tormenta20.Domain/@types/IPericia'
+import { IStatus } from '../main/Tormenta20.Domain/@types/IStatus'
 
 // Custom APIs for renderer
 const api = {

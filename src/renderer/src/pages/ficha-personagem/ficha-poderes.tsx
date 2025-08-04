@@ -83,21 +83,9 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
 
   return (
     <section className={styles.secao}>
-      {' '}
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
-          {' '}
           <h2 className="tormenta20Font">Habilidades</h2>
-          <Button
-            className={btnStyles.botaoAcompanhanteHeader}
-            onClick={() => {
-              setCategoriaPoderes('HABILIDADES_CLASSE')
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="buscar poderes" />
-            <p className="inter">Buscar poderes</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>
@@ -120,16 +108,6 @@ export const FichaPoderes = ({ personagem }: FichaPoderesProps): JSX.Element => 
       <div className={styles.secaoTemplate}>
         <div className={styles.multiHeader}>
           <h2 className="tormenta20Font">Poderes</h2>
-          <Button
-            className={btnStyles.botaoAcompanhanteHeader}
-            onClick={() => {
-              setCategoriaPoderes('RACA')
-              setLojaEstaAberta(true)
-            }}
-          >
-            <img src="./icons/busca.svg" alt="buscar poderes" />
-            <p className="inter">Buscar poderes</p>
-          </Button>
         </div>
         <div className={styles.conteudoSecao}>
           <DisclosureGroup allowsMultipleExpanded>

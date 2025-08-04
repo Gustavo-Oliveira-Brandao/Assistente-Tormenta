@@ -20,7 +20,7 @@ export const FichaEfeitos = ({ personagem }: FichaEfeitosProps): JSX.Element => 
           <h2 className="tormenta20Font">Efeitos</h2>
           <Button
             className={`${btnStyles.botaoAcompanhanteHeader} inter`}
-            onClick={() =>
+            onPress={() =>
               adicionarEfeito.mutate({
                 efeito: {
                   nome: 'Novo efeito',

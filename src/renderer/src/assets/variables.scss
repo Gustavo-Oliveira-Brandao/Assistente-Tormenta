@@ -1,5 +1,5 @@
 $cinza-escuro-1: #181818;
-$cinza-escuro-2: #242831;
+$cinza-escuro-2: rgb(37, 40, 48);
 $cinza-escuro-3: #313642;
 $cinza-claro-1: #e0e0e0;
 
@@ -9,7 +9,8 @@ $vermelho-primario: rgb(182, 41, 46);
 $vermelho-escuro: oklch(39.6% 0.141 25.723);
 $vermelho-claro: #ff4b50;
 
-$verde-primario: oklch(52.7% 0.154 150.069);
+$verde-primario: #1b4b29;
+$verde-secundario: #3ba55d;
 
 $azul-primario: oklch(54.6% 0.245 262.881);
 $azul-claro-1: oklch(62.3% 0.214 259.815);
@@ -18,3 +19,4 @@ $azul-claro-2: oklch(70.7% 0.165 254.624);
 $laranja-primario: oklch(55.5% 0.163 48.998);
 
 $amarelo-primario: rgb(251, 218, 121);
+$ouro: #ad8c44;

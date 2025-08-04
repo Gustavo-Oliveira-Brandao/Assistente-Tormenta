@@ -1,4 +1,4 @@
-import { IPersonagem } from "@renderer/@types/T20 GOTY/IPersonagem"
+import { IPersonagem } from '@renderer/@types/T20 GOTY/IPersonagem'
 
 export const exibirTodosPersonagens = async (): Promise<IPersonagem[]> => {
   return await window.api.personagens.getTodosPersonagem()

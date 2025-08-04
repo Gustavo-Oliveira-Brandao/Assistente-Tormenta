@@ -2,18 +2,22 @@
 
 .button {
   padding: 0;
+  border: 1px solid variables.$ouro;
+  border-radius: 5px;
 }
 
 .barraWrapper {
   position: relative;
   width: 100%;
+  border-radius: 5px;
   background-color: variables.$cinza-escuro-3;
-  height: 26px;
+  height: 32px;
   cursor: pointer;
 
   .barra {
     position: absolute;
     height: 100%;
+    border-radius: 5px;
     max-width: 100%;
     transition: 0.5s width ease-in-out;
   }
@@ -26,8 +30,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
-    font-size: 14px;
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: bold;
   }
 
   &:hover {
@@ -37,26 +42,14 @@
   }
 }
 
-.vidaFull {
-  background-color: variables.$verde-primario;
+.vida {
+  background: linear-gradient(
+    to right,
+    variables.$verde-primario 0%,
+    variables.$verde-secundario 100%
+  );
 }
 
-.vidaAboveHalf {
-  background-color: variables.$laranja-primario;
-}
-
-.vidaAlmostEmpty {
-  background-color: variables.$vermelho-claro;
-}
-
-.manaFull {
-  background-color: variables.$azul-primario;
-}
-
-.manaAboveHalf {
-  background-color: variables.$azul-claro-1;
-}
-
-.manaAlmostEmpty {
-  background-color: variables.$azul-claro-2;
+.mana {
+  background: linear-gradient(to right, variables.$azul-claro-1, variables.$azul-claro-2);
 }

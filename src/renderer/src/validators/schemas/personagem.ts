@@ -15,4 +15,5 @@ export const personagemSchema = z.object({
 export const criacaoPersonagemSchema = z
   .object({
     nome: z.string().nonempty('Campo obrigatório!')
-  }).required()
+  })
+  .required()

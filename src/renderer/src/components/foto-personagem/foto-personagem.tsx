@@ -8,9 +8,12 @@ type FotoPersonagemProps = {
 
 export const FotoPersonagem = ({ personagem }: FotoPersonagemProps): JSX.Element => {
   return (
-    <div onClick={() => console.log('sla')} className={styles.fotoPersonagem}>
-      <img src="./character.png" alt={personagem.nome} />
-      <span className={styles.opacidade}></span>
+    <div className={styles.fotoPersonagem}>
+      <img className={styles.foto} src="./character.png" alt={personagem.nome} />
+      <div className={`${styles.nivel}`}>
+        <img src="./icons/nivel.webp" alt="Nivel" />
+        <p className="inter">{personagem.nivel}</p>
+      </div>
     </div>
   )
 }
